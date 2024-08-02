@@ -1,0 +1,31 @@
+---
+import coffeeroasters from "../data/coffee-roasters.json";
+---
+
+<section id="list-of-roasters">
+  <h2>List of Roasters</h2>
+  <!-- grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 -->
+  <div id="wrapper" class="flex flex-wrap sm:flex-col md:flex-row gap-4 justify-center">
+    {
+      Array.isArray(coffeeroasters) && coffeeroasters.length > 0 ? (
+        coffeeroasters.map((roaster) => (
+          <div class="card bg-base-100 w-96 shadow-2xl">
+            <div class="card-body">
+              <h2 class="card-title">{roaster.Name}</h2>
+              <p>State: {roaster.State}</p>
+              <p>Has Cafe? {roaster.hasCafe ? "Yes" : "No"}</p>
+              <p>Multi Sub? {roaster.multiRoaster ? "Yes" : "No"}</p>
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary">
+                  <a href={roaster.Website}>website</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        ))
+      ) : (
+        <p>No roasters data available.</p>
+      )
+    }
+  </div>
+</section>
