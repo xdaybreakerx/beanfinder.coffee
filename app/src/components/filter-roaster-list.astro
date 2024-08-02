@@ -1,50 +1,55 @@
----
-
----
-
 <!-- HTML for filter selection of state, cafe, and multi-roaster -->
-<section id="filters">
-  <label for="state">Filter by State:</label>
-  <select id="state">
-    <option value="All">All</option>
-    <option value="NSW">New South Wales</option>
-    <option value="VIC">Victoria</option>
-    <option value="QLD">Queensland</option>
-    <option value="WA">Western Australia</option>
-    <option value="SA">South Australia</option>
-    <option value="TAS">Tasmania</option>
-    <option value="ACT">Australian Capital Territory</option>
-    <option value="NT">Northern Territory</option>
-  </select>
+<section id="filters" class="flex flex-row justify-around">
+  <!-- Dropdown for state filter -->
+  <details class="dropdown">
+    <summary class="btn m-1">Filter by State</summary>
+    <ul
+      id="stateDropdown"
+      class="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
+    >
+      <li value="All"><a>All</a></li>
+      <li value="NSW"><a>New South Wales</a></li>
+      <li value="VIC"><a>Victoria</a></li>
+      <li value="QLD"><a>Queensland</a></li>
+      <li value="WA"><a>Western Australia</a></li>
+      <li value="SA"><a>South Australia</a></li>
+      <li value="TAS"><a>Tasmania</a></li>
+      <li value="ACT"><a>Australian Capital Territory</a></li>
+      <li value="NT"><a>Northern Territory</a></li>
+    </ul>
+  </details>
 
-  <label for="hasCafe">Has Cafe:</label>
-  <input type="checkbox" id="hasCafe" />
+  <!-- Checkbox for Has Cafe filter -->
+  <div>
+    <label for="hasCafe">Has Cafe:</label>
+    <input type="checkbox" id="hasCafe" class="toggle" />
+  </div>
 
-  <label for="multiRoaster">Multiple Roaster Subscription:</label>
-  <input type="checkbox" id="multiRoaster" />
+  <!-- Checkbox for Multiple Roaster Subscription filter -->
+  <div>
+    <label for="multiRoaster">Multiple Roaster Subscription:</label>
+    <input type="checkbox" id="multiRoaster" class="toggle" />
+  </div>
 </section>
 
 <!-- JS script for event listeners on filter selection -->
 <script>
   // Load the JSON object via the default export
   import coffeeroasters from "../data/coffee-roasters.json";
-  import coffeeroastersmulti from "../data/coffee-roasters-multi.json"
+  import coffeeroastersmulti from "../data/coffee-roasters-multi.json";
 
-  interface CoffeeRoaster {
-    Name: string;
-    State: string;
-    hasCafe: boolean;
-    multiRoaster: boolean;
-    Website: string;
-  }
-  var coffeeRoasters: CoffeeRoaster[] = coffeeroasters;
-  var coffeeRoastersMulti: CoffeeRoaster[] = coffeeroastersmulti;
+  // Define arrays to hold the coffee roasters data
+  var coffeeRoasters = coffeeroasters;
+  var coffeeRoastersMulti = coffeeroastersmulti;
 
-  // Use the spread operator to concatenate the arrays
+  // Concatenate the two arrays of coffee roasters
   coffeeRoasters = coffeeRoasters.concat(coffeeRoastersMulti);
 
   document.addEventListener("DOMContentLoaded", () => {
-    const stateSelect = document.getElementById("state") as HTMLSelectElement;
+    // Get elements for state dropdown and checkboxes
+    const stateDropdown = document.getElementById(
+      "stateDropdown"
+    ) as HTMLSelectElement;
     const hasCafeCheckbox = document.getElementById(
       "hasCafe"
     ) as HTMLInputElement;
@@ -52,32 +57,39 @@
       "multiRoaster"
     ) as HTMLInputElement;
 
+    let selectedState = "All"; // Default state
+
     // Function to filter the roasters based on the selected filters
     const filterRoasters = () => {
-      const selectedState = stateSelect.value;
+      // Get the values of the checkboxes
       const hasCafe = hasCafeCheckbox.checked;
       const multiRoaster = multiRoasterCheckbox.checked;
 
+      // Start with all roasters
       let filteredRoasters = coffeeRoasters;
 
+      // Filter by selected state
       if (selectedState !== "All") {
         filteredRoasters = filteredRoasters.filter(
           (roaster) => roaster.State === selectedState
         );
       }
 
+      // Filter by hasCafe checkbox
       if (hasCafe) {
         filteredRoasters = filteredRoasters.filter(
           (roaster) => roaster.hasCafe
         );
       }
 
+      // Filter by multiRoaster checkbox
       if (multiRoaster) {
         filteredRoasters = filteredRoasters.filter(
           (roaster) => roaster.multiRoaster
         );
       }
 
+      // Display the filtered roasters
       displayRoasters(filteredRoasters);
     };
 
@@ -86,7 +98,9 @@
       const wrapper = document.getElementById("wrapper");
       wrapper.innerHTML = "";
 
+      // Check if there are any roasters to display
       if (Array.isArray(roasters) && roasters.length > 0) {
+        // Create a card for each roaster
         roasters.forEach((roaster) => {
           const card = `
               <div class="card bg-base-100 w-96 shadow-2xl">
@@ -103,25 +117,37 @@
                 </div>
               </div>
             `;
+          // Add the card to the wrapper
           wrapper.insertAdjacentHTML("beforeend", card);
         });
       } else {
+        // If no roasters match the filter, show a message
         wrapper.innerHTML = "<p>No roasters matching selection.</p>";
       }
     };
 
-    stateSelect.addEventListener("change", filterRoasters);
+    // Event Listeners
+    // Event listener for state dropdown
+    stateDropdown.addEventListener("click", (event) => {
+      const target = event.target as HTMLElement;
+      if (target.tagName === "A") {
+        // Update selected state and filter roasters
+        selectedState = target.parentElement.getAttribute("value");
+        filterRoasters();
+      }
+    });
+
+    // Event listeners for checkboxes
     hasCafeCheckbox.addEventListener("change", filterRoasters);
     multiRoasterCheckbox.addEventListener("change", filterRoasters);
 
-    // Initial display
+    // Initial display of roasters
     displayRoasters(coffeeRoasters);
   });
 </script>
 
 <!-- Show filtered results -->
 <section id="list-of-roasters">
-  <h2>List of Roasters</h2>
   <div
     id="wrapper"
     class="flex flex-wrap sm:flex-col md:flex-row gap-4 justify-center"

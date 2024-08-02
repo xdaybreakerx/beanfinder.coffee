@@ -1,5 +1,6 @@
 ---
 import FilterRoasterList from "../components/filter-roaster-list.astro";
+import Nav from "../components/nav.astro";
 ---
 
 <html lang="en">
@@ -9,14 +10,14 @@ import FilterRoasterList from "../components/filter-roaster-list.astro";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Australian Coffee Roasters</title>
-    <html data-theme="dark"></html>
+    <html data-theme="cupcake"></html>
   </head>
   <body>
     <header>
-      <h1>Australian Coffee Roasters</h1>
+      <Nav /> 
     </header>
     <main>
-      <FilterRoasterList />
+      <FilterRoasterList /> 
     </main>
   </body>
 </html>
