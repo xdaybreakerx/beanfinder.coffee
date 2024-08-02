@@ -1,8 +1,3 @@
----
-
----
-
-<!-- filter list by state, if roaster has cafe, or if is a multi-roaster offering -->
 <section id="filters">
   <label for="state">Filter by State:</label>
   <select id="state">
@@ -23,3 +18,26 @@
   <label for="multiRoaster">Multiple Roaster Subscription:</label>
   <input type="checkbox" id="multiRoaster" />
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const stateSelect = document.getElementById('state') as HTMLSelectElement;
+    const hasCafeCheckbox = document.getElementById('hasCafe') as HTMLInputElement;
+    const multiRoasterCheckbox = document.getElementById('multiRoaster') as HTMLInputElement;
+
+    stateSelect.addEventListener('change', () => {
+      const selectedState = stateSelect.value;
+      console.log(`State selected: ${selectedState}`);
+    });
+
+    hasCafeCheckbox.addEventListener('change', () => {
+      const hasCafe = hasCafeCheckbox.checked;
+      console.log(`Has Cafe: ${hasCafe}`);
+    });
+
+    multiRoasterCheckbox.addEventListener('change', () => {
+      const multiRoaster = multiRoasterCheckbox.checked;
+      console.log(`Multiple Roaster Subscription: ${multiRoaster}`);
+    });
+  });
+</script>

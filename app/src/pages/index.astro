@@ -1,6 +1,5 @@
 ---
-import FilterOptions from "../components/filter-options.astro";
-import RoasterList from "../components/roaster-list.astro";
+import FilterRoasterList from "../components/filter-roaster-list.astro";
 ---
 
 <html lang="en">
@@ -9,7 +8,7 @@ import RoasterList from "../components/roaster-list.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Coffee</title>
+    <title>Australian Coffee Roasters</title>
     <html data-theme="dark"></html>
   </head>
   <body>
@@ -17,11 +16,7 @@ import RoasterList from "../components/roaster-list.astro";
       <h1>Australian Coffee Roasters</h1>
     </header>
     <main>
-      <!-- filter list by state, if roaster has cafe, or if is a multi-roaster offering -->
-      <FilterOptions />
-
-      <!-- result section -->
-	  <RoasterList />
+      <FilterRoasterList />
     </main>
   </body>
 </html>

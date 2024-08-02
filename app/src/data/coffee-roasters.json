@@ -304,7 +304,7 @@
         "Name": "CUP.",
         "Website": "https://www.instagram.com/cup.kilsyth/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
