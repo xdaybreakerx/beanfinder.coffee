@@ -1,0 +1,44 @@
+[
+    {
+        "Name": "Allways Coffee",
+        "Website": "https://allways.coffee/",
+        "State": "all",
+        "hasCafe": false,
+        "multiRoaster": true
+    },
+    {
+        "Name": "Altdrop",
+        "Website": "https://altdrop.com.au/",
+        "State": "all",
+        "hasCafe": false,
+        "multiRoaster": true
+    },
+    {
+        "Name": "Beanz",
+        "Website": "https://www.beanz.com/en-au",
+        "State": "all",
+        "hasCafe": false,
+        "multiRoaster": true
+    },
+    {
+        "Name": "Direct Coffee",
+        "Website": "https://www.directcoffee.com.au/",
+        "State": "all",
+        "hasCafe": false,
+        "multiRoaster": true
+    },
+    {
+        "Name": "Play-Ground",
+        "Website": "https://play-ground.com.au/",
+        "State": "all",
+        "hasCafe": false,
+        "multiRoaster": true
+    },
+    {
+        "Name": "Three Thousand Thieves",
+        "Website": "https://www.threethousandthieves.com/",
+        "State": "all",
+        "hasCafe": false,
+        "multiRoaster": true
+    }
+]

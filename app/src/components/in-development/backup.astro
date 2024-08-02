@@ -1,0 +1,136 @@
+---
+
+---
+
+<!-- HTML for filter selection of state, cafe, and multi-roaster -->
+<section id="filters" class="flex flex-row justify-around">
+    <!-- ugly list -->
+    <label for="state">Filter by State:</label>
+    <select id="state" class="dropdown">
+      <option value="All">All</option>
+      <option value="NSW">New South Wales</option>
+      <option value="VIC">Victoria</option>
+      <option value="QLD">Queensland</option>
+      <option value="WA">Western Australia</option>
+      <option value="SA">South Australia</option>
+      <option value="TAS">Tasmania</option>
+      <option value="ACT">Australian Capital Territory</option>
+      <option value="NT">Northern Territory</option>
+    </select>
+  
+    <div>
+      <label for="hasCafe">Has Cafe:</label>
+      <input type="checkbox" id="hasCafe" class="toggle" />
+    </div>
+  
+    <div>
+      <label for="multiRoaster">Multiple Roaster Subscription:</label>
+      <input type="checkbox" id="multiRoaster" class="toggle" />
+    </div>
+  </section>
+  
+  <!-- JS script for event listeners on filter selection -->
+  <script>
+    // Load the JSON object via the default export
+    import coffeeroasters from "../../data/coffee-roasters.json";
+    import coffeeroastersmulti from "../../data/coffee-roasters-multi.json";
+  
+    interface CoffeeRoaster {
+      Name: string;
+      State: string;
+      hasCafe: boolean;
+      multiRoaster: boolean;
+      Website: string;
+    }
+    var coffeeRoasters: CoffeeRoaster[] = coffeeroasters;
+    var coffeeRoastersMulti: CoffeeRoaster[] = coffeeroastersmulti;
+  
+    // Use the spread operator to concatenate the arrays
+    coffeeRoasters = coffeeRoasters.concat(coffeeRoastersMulti);
+  
+    document.addEventListener("DOMContentLoaded", () => {
+      const stateSelect = document.getElementById("state") as HTMLSelectElement;
+      const hasCafeCheckbox = document.getElementById(
+        "hasCafe"
+      ) as HTMLInputElement;
+      const multiRoasterCheckbox = document.getElementById(
+        "multiRoaster"
+      ) as HTMLInputElement;
+  
+      // Function to filter the roasters based on the selected filters
+      const filterRoasters = () => {
+        const selectedState = stateSelect.value;
+        const hasCafe = hasCafeCheckbox.checked;
+        const multiRoaster = multiRoasterCheckbox.checked;
+  
+        let filteredRoasters = coffeeRoasters;
+  
+        if (selectedState !== "All") {
+          filteredRoasters = filteredRoasters.filter(
+            (roaster) => roaster.State === selectedState
+          );
+        }
+  
+        if (hasCafe) {
+          filteredRoasters = filteredRoasters.filter(
+            (roaster) => roaster.hasCafe
+          );
+        }
+  
+        if (multiRoaster) {
+          filteredRoasters = filteredRoasters.filter(
+            (roaster) => roaster.multiRoaster
+          );
+        }
+  
+        displayRoasters(filteredRoasters);
+      };
+  
+      // Function to display the roasters
+      const displayRoasters = (roasters) => {
+        const wrapper = document.getElementById("wrapper");
+        wrapper.innerHTML = "";
+  
+        if (Array.isArray(roasters) && roasters.length > 0) {
+          roasters.forEach((roaster) => {
+            const card = `
+                <div class="card bg-base-100 w-96 shadow-2xl">
+                  <div class="card-body">
+                    <h2 class="card-title">${roaster.Name}</h2>
+                    <p>State: ${roaster.State}</p>
+                    <p>Has Cafe? ${roaster.hasCafe ? "Yes" : "No"}</p>
+                    <p>Multi Sub? ${roaster.multiRoaster ? "Yes" : "No"}</p>
+                    <div class="card-actions justify-center">
+                      <button class="btn btn-primary">
+                        <a href="${roaster.Website}">website</a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              `;
+            wrapper.insertAdjacentHTML("beforeend", card);
+          });
+        } else {
+          wrapper.innerHTML = "<p>No roasters matching selection.</p>";
+        }
+      };
+  
+      stateSelect.addEventListener("change", filterRoasters);
+      hasCafeCheckbox.addEventListener("change", filterRoasters);
+      multiRoasterCheckbox.addEventListener("change", filterRoasters);
+  
+      // Initial display
+      displayRoasters(coffeeRoasters);
+    });
+  </script>
+  
+  <!-- Show filtered results -->
+  <section id="list-of-roasters">
+    <h2>List of Roasters</h2>
+    <div
+      id="wrapper"
+      class="flex flex-wrap sm:flex-col md:flex-row gap-4 justify-center"
+    >
+    </div>
+  </section>
+  
