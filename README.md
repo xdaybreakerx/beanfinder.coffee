@@ -9,6 +9,7 @@ Your one stop reference to find all the specialty coffee roasters within Austral
 - [x] client side filtering of JSON
 - [x] theme toggle
 - [x] netlify deploy
+- [ ] confirm and update all cafe info entries as required in JSON (︶︹︶)
 
 ## Stretch to-do
 - [ ] theme selection persists between visits
@@ -18,3 +19,6 @@ Your one stop reference to find all the specialty coffee roasters within Austral
 
 ## Add a roaster? 
 - If I've missed a roaster in the site, let me know via email or by opening an issue on this repo. 
+
+## Source
+[This Google Sheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vQMtPdz_le8HBLjTgAMK80IEoeZpZZGlZjcAdXh7Xd9Ld0Zy7zRV9duKyB7u_zHifi8nB9LiZogjXtb/pubhtml) (also by me)
