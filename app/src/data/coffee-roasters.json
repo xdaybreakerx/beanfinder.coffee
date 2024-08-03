@@ -10,14 +10,14 @@
         "Name": "2 Keys Coffee Boutique",
         "Website": "https://www.instagram.com/2_keyscoffee_boutique/",
         "State": "WA",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "ACoffee",
         "Website": "https://acoffee.com.au/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
@@ -31,14 +31,14 @@
         "Name": "Alchemy Coffee",
         "Website": "https://coffeealchemy.com.au/",
         "State": "NSW",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Allpress",
         "Website": "https://www.allpressespresso.com/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
@@ -49,45 +49,38 @@
         "multiRoaster": false
     },
     {
-        "Name": "Altdrop",
-        "Website": "https://altdrop.com.au/",
-        "State": "VIC",
-        "hasCafe": false,
-        "multiRoaster": false
-    },
-    {
         "Name": "Arrosoto Coffee",
         "Website": "https://arrostocoffee.com.au/",
         "State": "SA",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Art Of Espresso",
         "Website": "https://artofespresso.com.au/",
         "State": "NSW",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Artificer Coffee ",
         "Website": "https://artificercoffee.com/",
         "State": "NSW",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Artisti Coffee Roasters",
         "Website": "https://artisti.com.au/",
         "State": "NSW",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "ASLAN Coffee Roasters",
         "Website": "https://www.aslancoffee.com.au/",
         "State": "NSW",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
@@ -101,7 +94,7 @@
         "Name": "Axil Coffee Roasters",
         "Website": "https://axilcoffee.com.au/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
@@ -122,7 +115,7 @@
         "Name": "Bellissimo Coffee",
         "Website": "https://www.bellissimocoffee.com.au/",
         "State": "QLD",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
@@ -136,14 +129,14 @@
         "Name": "Blackbird Espresso",
         "Website": "https://blackbirdespresso.shop/",
         "State": "QLD",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Blacklist Coffee",
         "Website": "https://blacklistcoffee.com.au/",
         "State": "WA",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
@@ -157,28 +150,28 @@
         "Name": "Bliss Coffee Roasters",
         "Website": "https://blisscoffeeroasters.com.au/",
         "State": "NSW",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "BLK MRKT Coffee",
         "Website": "https://blkmrktcoffee.com/",
         "State": "SA",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Block Coffee",
         "Website": "https://blockcoffee.au/",
         "State": "NSW",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Blume Coffee",
         "Website": "https://blumecoffee.com/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
@@ -192,21 +185,21 @@
         "Name": "Bun Coffee",
         "Website": "https://www.buncoffee.com.au/",
         "State": "NSW",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Campos Coffee",
         "Website": "https://camposcoffee.com/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Cartel Coffee Roasters",
         "Website": "https://www.coffeecartel.com.au/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
@@ -220,7 +213,7 @@
         "Name": "Charlie Black Coffee Co",
         "Website": "https://www.charlieblack.co/",
         "State": "SA",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
@@ -234,7 +227,7 @@
         "Name": "Cirelli Coffee Roasting Co",
         "Website": "https://www.cirellicoffee.com.au/",
         "State": "SA",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
@@ -248,7 +241,7 @@
         "Name": "Code Black Coffee",
         "Website": "https://codeblackcoffee.com.au/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
@@ -262,14 +255,14 @@
         "Name": "Coffee Chakra ",
         "Website": "https://coffeechakra.com.au/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Coffee in Common",
         "Website": "https://www.coffeeincommon.com.au/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
@@ -290,14 +283,14 @@
         "Name": "Crema Coffee Co",
         "Website": "https://cremacoffeeco.com.au/",
         "State": "WA",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Cruze",
         "Website": "https://www.cruzecoffee.com.au/",
         "State": "QLD",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
@@ -318,14 +311,14 @@
         "Name": "Darkstar Coffee",
         "Website": "https://www.darkstarcoffee.com.au/",
         "State": "WA",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Dawn Patrol Coffee",
         "Website": "https://www.dawnpatrolcoffee.com.au/",
         "State": "SA",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
@@ -336,45 +329,38 @@
         "multiRoaster": false
     },
     {
-        "Name": "Disciple Coffee",
-        "Website": "https://www.discipleroasters.com.au/",
-        "State": "VIC",
-        "hasCafe": false,
-        "multiRoaster": false
-    },
-    {
         "Name": "Dtown Coffee Roasters",
         "Website": "https://dtowncoffeeroasters.com/",
         "State": "NT",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Dukes Coffee",
         "Website": "https://www.dukescoffee.com.au/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Edition Roasters",
         "Website": "https://editionroasters.com/",
         "State": "NSW",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Elementary Coffee",
         "Website": "https://www.elementarycoffee.com.au/",
         "State": "SA",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Everyday Coffee",
         "Website": "https://everyday-coffee.com/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
