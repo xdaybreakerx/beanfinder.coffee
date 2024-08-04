@@ -112,6 +112,13 @@
         "multiRoaster": false
     },
     {
+        "Name": "Bean Cartel",
+        "Website": "https://www.thebeancartel.com.au/",
+        "State": "VIC",
+        "hasCafe": false,
+        "multiRoaster": false
+    },
+    {
         "Name": "Bellissimo Coffee",
         "Website": "https://www.bellissimocoffee.com.au/",
         "State": "QLD",
@@ -525,6 +532,13 @@
         "multiRoaster": false
     },
     {
+        "Name": "Little Rebel Roastery",
+        "Website": "https://littlerebel.com.au/",
+        "State": "VIC",
+        "hasCafe": true,
+        "multiRoaster": false
+    },
+    {
         "Name": "Locale",
         "Website": "https://localeespresso.com.au/",
         "State": "VIC",
@@ -640,56 +654,56 @@
         "Name": "Only Coffee Project",
         "Website": "https://onlycoffeeproject.square.site/",
         "State": "NSW",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Pablo & Rusty's Coffee Roasters",
         "Website": "https://pabloandrustys.com.au/",
         "State": "NSW",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Padre Coffee",
         "Website": "https://www.padrecoffee.com.au/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Paradox Roasters",
         "Website": "https://paradoxroasters.com/",
-        "State": "NSW",
-        "hasCafe": false,
+        "State": "NSW, QLD",
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Parallel Coffee Roasters",
         "Website": "https://www.parallelroasters.com/",
         "State": "QLD",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Passport",
         "Website": "https://passportcoffee.com.au/",
         "State": "QLD",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Patio Coffee",
         "Website": "https://patiocoffee.com.au/",
         "State": "SA",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Patricia's ",
         "Website": "https://www.patriciacoffee.com.au/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
@@ -703,14 +717,14 @@
         "Name": "Platform 9 Coffee",
         "Website": "https://p9coffee.com.au/",
         "State": "NSW",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Pogo Coffee Roasters",
         "Website": "https://pogocoffee.com.au/",
         "State": "SA",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
@@ -724,35 +738,35 @@
         "Name": "Primary Coffee Roasters",
         "Website": "https://www.primarycoffeeroasters.com/",
         "State": "NSW",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Prodigal Coffee",
         "Website": "https://prodigalcoffeeroasters.com.au/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Project Zero Coffee",
         "Website": "https://www.instagram.com/projectzero.coffee/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Proud Mary",
         "Website": "https://www.proudmarycoffee.com.au/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Puzzle Coffee",
         "Website": "https://www.puzzle.coffee/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
@@ -763,7 +777,7 @@
         "multiRoaster": false
     },
     {
-        "Name": "Rebel Roasters",
+        "Name": "Rebel Alliance Roasters",
         "Website": "https://rebelroasters.com.au/",
         "State": "SA",
         "hasCafe": false,
@@ -773,11 +787,11 @@
         "Name": "Reuben Hills",
         "Website": "https://www.reubenhills.com.au/",
         "State": "NSW",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
-        "Name": "Reverence ",
+        "Name": "Reverence",
         "Website": "https://reverencecoffee.com.au/",
         "State": "VIC",
         "hasCafe": false,
@@ -794,7 +808,7 @@
         "Name": "Ritual Coffee Roasters",
         "Website": "https://ritualcoffee.com.au/",
         "State": "TAS",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
@@ -808,35 +822,35 @@
         "Name": "Roastville",
         "Website": "https://roastville.com.au/",
         "State": "NSW",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Rosso Roasting Co",
         "Website": "https://rossoroastingco.com.au/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Rumble Coffee Roasters",
         "Website": "https://www.rumblecoffee.com.au/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Saazaa",
         "Website": "https://saazaa.coffee/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Sample Coffee ",
         "Website": "https://samplecoffee.com.au/",
         "State": "NSW",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
@@ -850,56 +864,56 @@
         "Name": "Sensory Lab",
         "Website": "https://sensorylab.com.au/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Seven Miles Roasters",
         "Website": "https://www.sevenmiles.com.au/",
-        "State": "VIC",
-        "hasCafe": false,
+        "State": "VIC, NSW",
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Seven Seeds",
         "Website": "https://sevenseeds.com.au/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Single O",
         "Website": "https://singleo.com.au/",
         "State": "NSW",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Sipping Duck Coffee Roasters",
         "Website": "https://www.sippingduck.com.au/",
         "State": "QLD",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Sixpence Coffee",
         "Website": "https://sixpencecoffee.com.au/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Skittle Lane",
         "Website": "https://skittlelane.com/",
         "State": "NSW",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Small Batch Roasting Co",
         "Website": "https://www.smallbatch.com.au/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
@@ -913,42 +927,42 @@
         "Name": "Sparks Coffee Roasters",
         "Website": "https://sparkscoffeeroasters.com/",
         "State": "WA",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "St Ali",
         "Website": "https://stali.com.au/",
-        "State": "VIC",
-        "hasCafe": false,
+        "State": "VIC, QLD",
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Standing Room Coffee",
         "Website": "https://standingroomcoffee.com.au/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Stitch Coffee",
         "Website": "https://www.stitch.coffee/",
         "State": "NSW",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Storehouse Roastery",
         "Website": "https://www.storehouseroastery.com/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Symmetry Coffee Roasters",
         "Website": "https://symmetrycoffeeroasters.com.au/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
@@ -990,14 +1004,14 @@
         "Name": "Vacation",
         "Website": "https://vacationcoffee.com.au/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Veneziano Coffee",
         "Website": "https://venezianocoffee.com.au/",
-        "State": "VIC",
-        "hasCafe": false,
+        "State": "VIC, NSW, QLD, SA",
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
@@ -1011,7 +1025,7 @@
         "Name": "Villino Coffee Roasters",
         "Website": "https://villino.com.au/",
         "State": "TAS",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
@@ -1032,35 +1046,35 @@
         "Name": "White Whale Coffee Roasters",
         "Website": "https://whitewhalecoffee.com.au/",
         "State": "QLD",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Wide Open Road",
         "Website": "https://wideopenroad.com.au/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Will & Co",
         "Website": "https://www.willandco.com.au/",
-        "State": "SA",
-        "hasCafe": false,
+        "State": "NSW",
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Willow Bend Coffee",
         "Website": "https://willowbendcoffee.com.au/",
         "State": "SA",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Withams Coffee",
         "Website": "https://withams.com.au/",
         "State": "NSW",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
@@ -1074,7 +1088,7 @@
         "Name": "Zest Coffee",
         "Website": "https://www.zestcoffee.com.au/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     }
 ]
