@@ -9,7 +9,7 @@ Your one stop reference to find all the specialty coffee roasters within Austral
 - [x] client side filtering of JSON
 - [x] theme toggle
 - [x] netlify deploy
-- [ ] confirm and update all cafe info entries as required in JSON (︶︹︶)
+- [x] confirm and update all cafe info entries as required in JSON (︶︹︶)
 
 ## Stretch to-do
 - [ ] theme selection persists between visits
