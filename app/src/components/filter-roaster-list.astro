@@ -70,8 +70,10 @@
 
       // Filter by selected state
       if (selectedState !== "All") {
-        filteredRoasters = filteredRoasters.filter(
-          (roaster) => roaster.State === selectedState
+        filteredRoasters = filteredRoasters.filter((roaster) =>
+          roaster.State.split(",")
+            .map((state) => state.trim())
+            .includes(selectedState)
         );
       }
 

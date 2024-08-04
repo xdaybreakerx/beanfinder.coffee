@@ -13,8 +13,8 @@ Your one stop reference to find all the specialty coffee roasters within Austral
 
 ## Stretch to-do
 - [ ] theme selection persists between visits
-- [ ] pagination for results array
 - [ ] drawer for filter options 
+- [ ] pagination for results array
 - [ ] Maps integration?
 
 ## Add a roaster? 

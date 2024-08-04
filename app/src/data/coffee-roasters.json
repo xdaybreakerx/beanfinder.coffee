@@ -367,7 +367,7 @@
         "Name": "Fat Cat Coffee Roasters",
         "Website": "https://www.fatcatcoffeeroasters.com/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
@@ -395,14 +395,14 @@
         "Name": "Floozy coffee",
         "Website": "https://floozycoffee.com/",
         "State": "NSW",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Fonzie Abbott",
         "Website": "https://fonzieabbott.com/",
         "State": "QLD",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
@@ -430,7 +430,7 @@
         "Name": "Hark! Coffee",
         "Website": "https://harkcoffee.com.au/",
         "State": "SA",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
@@ -444,7 +444,7 @@
         "Name": "Industry Beans",
         "Website": "https://industrybeans.com/",
         "State": "VIC, NSW, QLD",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
@@ -465,13 +465,13 @@
         "Name": "Inka Coffee Lounge",
         "Website": "https://inkacoffee.com.au/",
         "State": "QLD",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Kindred Coffee",
         "Website": "https://kindredcoffee.com.au/",
-        "State": "VIC",
+        "State": "SA",
         "hasCafe": false,
         "multiRoaster": false
     },
@@ -479,14 +479,14 @@
         "Name": "La Crema",
         "Website": "https://www.lacremacoffee.com.au/",
         "State": "SA",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Leaf Bean Machine",
         "Website": "https://www.leafbeanmachine.com.au/",
         "State": "WA",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
@@ -521,7 +521,7 @@
         "Name": "Little Marionette",
         "Website": "https://thelittlemarionette.com/",
         "State": "NSW",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
@@ -549,42 +549,42 @@
         "Name": "Maillard Project",
         "Website": "https://themaillardproject.com.au/",
         "State": "QLD",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Maker Coffee",
         "Website": "https://makercoffee.com.au/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Manta Ray Coffee",
         "Website": "https://mantaraycoffee.com.au/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Market Lane ",
         "Website": "https://marketlane.com.au/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Mecca Coffee",
         "Website": "https://www.mecca.coffee/",
         "State": "NSW",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Micrology Coffee",
         "Website": "https://micrology.com.au/",
         "State": "WA",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
@@ -626,14 +626,14 @@
         "Name": "Ocean Grind",
         "Website": "https://oceangrind.com.au/",
         "State": "VIC",
-        "hasCafe": false,
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
         "Name": "Ona Coffee",
         "Website": "https://onacoffee.com.au/",
-        "State": "ACT",
-        "hasCafe": false,
+        "State": "ACT, NSW, VIC",
+        "hasCafe": true,
         "multiRoaster": false
     },
     {
