@@ -1,6 +1,7 @@
 ---
-import FilterRoasterList from "../components/filter-roaster-list.astro";
 import Nav from "../components/nav.astro";
+import FilterRoasterList from "../components/filter-roaster-list.astro";
+import Footer from "../components/footer.astro";
 ---
 
 <html lang="en">
@@ -11,12 +12,15 @@ import Nav from "../components/nav.astro";
     <meta name="generator" content={Astro.generator} />
     <title>Australian Coffee Roasters</title>
   </head>
-  <body>
+  <body class="flex flex-col min-h-screen">
     <header>
-      <Nav /> 
+      <Nav />
     </header>
-    <main>
-      <FilterRoasterList /> 
+    <main class="flex-grow">
+      <FilterRoasterList />
     </main>
+    <footer>
+      <Footer />
+    </footer>
   </body>
 </html>
