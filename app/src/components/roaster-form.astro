@@ -2,19 +2,35 @@
 
 ---
 
-<form name="roaster-form" method="POST" data-netlify="true">
+<!-- 
+Netlify automatically sanitises all form submissions
+ https://docs.netlify.com/forms/submissions/ 
+ -->
+<form
+  name="roaster-form"
+  method="POST"
+  netlify-honeypot="bot-field"
+  data-netlify="true"
+>
   <input
     type="hidden"
     name="subject"
     value="Coffee Roaster Update from Netlify submission"
   />
   <div class="space-y-12">
+    <p class="hidden">
+      <label>
+        Don’t fill this out if you’re human: <input name="bot-field" />
+      </label>
+    </p>
     <div class="border-b pb-12">
       <div class="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
         <div class="border-b pb-12">
           <h2 class="text-base font-semibold leading-7">The Roaster</h2>
           <p class="mt-1 text-sm leading-6">
-            Great coffee starts with great beans, from great farms, but the roasting process plays a critical role in your cup. Thank you for making this resource better for everyone.
+            Great coffee starts with great beans, from great farms, but the
+            roasting process plays a critical role in your cup. Thank you for
+            making this resource better for everyone.
           </p>
 
           <div class="mt-10 space-y-10">
