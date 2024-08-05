@@ -14,20 +14,21 @@ Netlify automatically sanitises all form submissions
     method="POST"
     action="/success"
   >
-  <!-- For Netlify form notification -->
+    <!-- Hidden input for the form name, necessary for Netlify to identify the form -->
+    <input type="hidden" name="form-name" value="roaster-form" />
+    <!-- For Netlify form notification -->
     <input
       type="hidden"
       name="subject"
       value="Coffee Roaster Update from Netlify submission"
     />
-    <!-- For netlify form detection bots -->
-    <input type="hidden" name="form-name" value="roaster-form" />
+    <!-- Hidden field for the honeypot technique -->
+    <p class="hidden">
+      <label>
+        Don’t fill this out if you’re human: <input name="bot-field" />
+      </label>
+    </p>
     <div class="space-y-12">
-      <p class="hidden">
-        <label>
-          Don’t fill this out if you’re human: <input name="bot-field" />
-        </label>
-      </p>
       <div class="border-b pb-12">
         <div class="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
           <div class="border-b pb-12">
@@ -37,13 +38,13 @@ Netlify automatically sanitises all form submissions
               roasting process plays a critical role in your cup. Thank you for
               making this resource better for everyone.
             </p>
-
             <div class="mt-10 space-y-10">
               <fieldset>
-                <label class="text-sm font-semibold leading-60"
-                  >I'm letting you know about an...</label
-                >
+                <label class="text-sm font-semibold leading-60">
+                  I'm letting you know about an...
+                </label>
                 <div class="mt-6 space-y-6">
+                  <!-- Issue checkbox -->
                   <div class="relative flex gap-x-3">
                     <div class="flex h-6 items-center">
                       <input
@@ -61,6 +62,7 @@ Netlify automatically sanitises all form submissions
                       </p>
                     </div>
                   </div>
+                  <!-- Recommendation checkbox -->
                   <div class="relative flex gap-x-3">
                     <div class="flex h-6 items-center">
                       <input
@@ -71,9 +73,9 @@ Netlify automatically sanitises all form submissions
                       />
                     </div>
                     <div class="text-sm leading-6">
-                      <label for="recommendation" class="font-medium"
-                        >Recommendation</label
-                      >
+                      <label for="recommendation" class="font-medium">
+                        Recommendation
+                      </label>
                       <p>
                         Got somewhere you can recommend? A new secret Roaster?
                         Share with the rest of us!
@@ -85,10 +87,13 @@ Netlify automatically sanitises all form submissions
             </div>
           </div>
           <div class="sm:col-span-4 p-4 space-y-4">
+            <!-- Roaster Name input -->
             <label
               for="roaster-name"
-              class="block text-sm font-medium leading-6">Roaster Name</label
+              class="block text-sm font-medium leading-6"
             >
+              Roaster Name
+            </label>
             <div class="mt-2">
               <div
                 class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md"
@@ -103,11 +108,13 @@ Netlify automatically sanitises all form submissions
                 />
               </div>
             </div>
-
+            <!-- Roaster Website input -->
             <label
               for="roaster-website"
-              class="block text-sm font-medium leading-6">Roaster Website</label
+              class="block text-sm font-medium leading-6"
             >
+              Roaster Website
+            </label>
             <div class="mt-2">
               <div
                 class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md"
@@ -122,10 +129,11 @@ Netlify automatically sanitises all form submissions
                 />
               </div>
             </div>
+            <!-- Roaster State dropdown -->
             <div class="dropdown-content shadow bg-base-100 rounded-box w-52">
-              <label for="state" class="block text-sm font-medium leading-6"
-                >Select Roaster State</label
-              >
+              <label for="state" class="block text-sm font-medium leading-6">
+                Select Roaster State
+              </label>
               <select
                 id="state"
                 name="state"
@@ -144,6 +152,7 @@ Netlify automatically sanitises all form submissions
             </div>
           </div>
         </div>
+        <!-- Form buttons -->
         <div class="mt-6 flex items-center justify-end gap-x-6">
           <button type="button" class="btn btn-ghost">Cancel</button>
           <button type="submit" class="btn btn-primary">Submit</button>
