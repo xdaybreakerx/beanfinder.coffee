@@ -8,11 +8,11 @@ Netlify automatically sanitises all form submissions
  -->
 <div class="feedback-form">
   <form
-  data-netlify="true"
-  netlify-honeypot="bot-field"
-  name="roaster-form"
-  method="POST"
-  action="/success"
+    data-netlify="true"
+    netlify-honeypot="bot-field"
+    name="roaster-form"
+    method="POST"
+    action="/success"
   >
     <input
       type="hidden"
@@ -24,6 +24,8 @@ Netlify automatically sanitises all form submissions
         <label>
           Don’t fill this out if you’re human: <input name="bot-field" />
         </label>
+        <!-- for netlify form bots -->
+        <input type="hidden" name="feedback-form" value="feedback-form" />
       </p>
       <div class="border-b pb-12">
         <div class="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
