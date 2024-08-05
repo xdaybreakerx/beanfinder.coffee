@@ -1,6 +1,10 @@
 <!-- This is a static file for Netlifys form detection -->
 <html>
-  <head></head>
+  <head>
+    <!-- immediate redirect to astro success page for correct form submission process when hosted on netlify -->
+     <!-- work around per https://answers.netlify.com/t/no-form-submission-with-astro-static-generator/113932 -->
+    <meta http-equiv="refresh" content="0, url='/success'" />
+  </head>
   <body>
     <!-- 
 Netlify automatically sanitises all form submissions
@@ -12,7 +16,7 @@ Netlify automatically sanitises all form submissions
         netlify-honeypot="bot-field"
         name="roaster-form"
         method="POST"
-        action="/thank-you"
+        action="/__forms"
       >
         <!-- Hidden input for the form name, necessary for Netlify to identify the form -->
         <input type="hidden" name="form-name" value="roaster-form" />
