@@ -6,7 +6,7 @@
 Netlify automatically sanitises all form submissions
  https://docs.netlify.com/forms/submissions/ 
  -->
-<div class="feedback-form">
+<div class="roaster-form">
   <form
     data-netlify="true"
     netlify-honeypot="bot-field"
@@ -14,18 +14,19 @@ Netlify automatically sanitises all form submissions
     method="POST"
     action="/success"
   >
+  <!-- For Netlify form notification -->
     <input
       type="hidden"
       name="subject"
       value="Coffee Roaster Update from Netlify submission"
     />
+    <!-- For netlify form detection bots -->
+    <input type="hidden" name="form-name" value="roaster-form" />
     <div class="space-y-12">
       <p class="hidden">
         <label>
           Don’t fill this out if you’re human: <input name="bot-field" />
         </label>
-        <!-- for netlify form bots -->
-        <input type="hidden" name="feedback-form" value="feedback-form" />
       </p>
       <div class="border-b pb-12">
         <div class="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
