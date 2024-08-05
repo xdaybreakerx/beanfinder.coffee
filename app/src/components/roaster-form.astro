@@ -6,14 +6,9 @@
 Netlify automatically sanitises all form submissions
  https://docs.netlify.com/forms/submissions/ 
  -->
+ 
 <div class="roaster-form">
-  <form
-    data-netlify="true"
-    netlify-honeypot="bot-field"
-    name="roaster-form"
-    method="POST"
-    action="/success"
-  >
+  <form id="roaster-form" name="roaster-form" method="POST" action="/__forms">
     <!-- Hidden input for the form name, necessary for Netlify to identify the form -->
     <input type="hidden" name="form-name" value="roaster-form" />
     <!-- For Netlify form notification -->
@@ -22,7 +17,7 @@ Netlify automatically sanitises all form submissions
       name="subject"
       value="Coffee Roaster Update from Netlify submission"
     />
-    <!-- Hidden field for the honeypot technique -->
+    <!-- Hidden field for the honeypot -->
     <p class="hidden">
       <label>
         Don’t fill this out if you’re human: <input name="bot-field" />
@@ -40,9 +35,9 @@ Netlify automatically sanitises all form submissions
             </p>
             <div class="mt-10 space-y-10">
               <fieldset>
-                <label class="text-sm font-semibold leading-60">
-                  I'm letting you know about an...
-                </label>
+                <label class="text-sm font-semibold leading-60"
+                  >I'm letting you know about an...</label
+                >
                 <div class="mt-6 space-y-6">
                   <!-- Issue checkbox -->
                   <div class="relative flex gap-x-3">
@@ -73,9 +68,9 @@ Netlify automatically sanitises all form submissions
                       />
                     </div>
                     <div class="text-sm leading-6">
-                      <label for="recommendation" class="font-medium">
-                        Recommendation
-                      </label>
+                      <label for="recommendation" class="font-medium"
+                        >Recommendation</label
+                      >
                       <p>
                         Got somewhere you can recommend? A new secret Roaster?
                         Share with the rest of us!
@@ -90,10 +85,8 @@ Netlify automatically sanitises all form submissions
             <!-- Roaster Name input -->
             <label
               for="roaster-name"
-              class="block text-sm font-medium leading-6"
+              class="block text-sm font-medium leading-6">Roaster Name</label
             >
-              Roaster Name
-            </label>
             <div class="mt-2">
               <div
                 class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md"
@@ -111,10 +104,8 @@ Netlify automatically sanitises all form submissions
             <!-- Roaster Website input -->
             <label
               for="roaster-website"
-              class="block text-sm font-medium leading-6"
+              class="block text-sm font-medium leading-6">Roaster Website</label
             >
-              Roaster Website
-            </label>
             <div class="mt-2">
               <div
                 class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md"
@@ -131,9 +122,9 @@ Netlify automatically sanitises all form submissions
             </div>
             <!-- Roaster State dropdown -->
             <div class="dropdown-content shadow bg-base-100 rounded-box w-52">
-              <label for="state" class="block text-sm font-medium leading-6">
-                Select Roaster State
-              </label>
+              <label for="state" class="block text-sm font-medium leading-6"
+                >Select Roaster State</label
+              >
               <select
                 id="state"
                 name="state"
@@ -152,7 +143,7 @@ Netlify automatically sanitises all form submissions
             </div>
           </div>
         </div>
-        <!-- Form buttons -->
+        <!-- Form submission buttons -->
         <div class="mt-6 flex items-center justify-end gap-x-6">
           <button type="button" class="btn btn-ghost">Cancel</button>
           <button type="submit" class="btn btn-primary">Submit</button>
@@ -161,3 +152,31 @@ Netlify automatically sanitises all form submissions
     </div>
   </form>
 </div>
+
+<!-- JavaScript for AJAX submission -->
+<script>
+  document.getElementById('roaster-form').addEventListener('submit', async function (event) {
+    event.preventDefault();
+
+    const form = event.target as HTMLFormElement;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/x-www-form-urlencoded'
+        }
+      });
+
+      if (response.ok) {
+        window.location.href = '/success';
+      } else {
+        console.error('Form submission failed');
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+    }
+  });
+</script>
