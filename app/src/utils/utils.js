@@ -18,7 +18,7 @@ export const getRoaster = async (type, options = {}) => {
     //     });
     // }
 
-    console.log(items);
+    // console.log(items); 
     return items;
 };
 
@@ -39,6 +39,6 @@ export const getRoasterFilter = (collection, filters = {}) => {
         filteredItems = filteredItems.filter(item => item.multiRoaster === filters.multiRoaster);
     }
 
-    console.log(filteredItems);
+    // console.log(filteredItems); 
     return filteredItems;
 };
