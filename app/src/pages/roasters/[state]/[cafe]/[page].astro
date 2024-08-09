@@ -5,6 +5,8 @@ import RoasterCard from "../../../../components/RoasterCard.astro";
 import Pagination from "../../../../components/Pagination.astro";
 import { getRoaster, getRoasterFilter } from "../../../../utils/utils.js";
 import Layout from "../../../../layouts/Layout.astro";
+import StateFilter from "../../../../components/state-filter.astro";
+
 
 // Define the interface for the Roaster data
 interface Roaster {
@@ -75,6 +77,9 @@ const nextUrl = Astro.url.pathname.replace(
 ---
 
 <Layout title="Australian Coffee Roasters">
+  <!-- Pass the StateFilter component into the header-content slot -->
+  <StateFilter slot="header-content" />
+  
   <div class="flex justify-between p-4 flex-col sm:flex-row sm:items-start">
     <div class="text-right sm:text-left w-full sm:w-auto">
       <h1 class="text-3xl font-bold mb-4">You're currently viewing:</h1>
