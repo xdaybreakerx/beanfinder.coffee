@@ -1,0 +1,70 @@
+---
+export const prerender = true;
+
+import { getRoaster, getRoasterFilter } from "../../../utils/utils.js";
+import Layout from "../../../layouts/Layout.astro";
+import RoasterCard from "../../../components/RoasterCard.astro";
+import Pagination from "../../../components/Pagination.astro";
+import StateFilter from "../../../components/state-filter.astro";
+
+// Define the interface for the Roaster data
+interface Roaster {
+  Name: string;
+  Website: string;
+  State: string;
+  hasCafe: boolean;
+  multiRoaster: boolean;
+}
+
+interface PaginatedPage {
+  data: Roaster[];
+  currentPage: number;
+  lastPage: number;
+}
+
+export async function getStaticPaths({ paginate }) {
+  // Get the entire collection
+  const roasters = await getRoaster("roasters");
+
+  // Filter and paginate as needed
+  const filteredRoasters = getRoasterFilter(roasters, {
+    multiRoaster: true,
+  });
+
+  // Paginate the filtered collection
+  const pages = paginate(filteredRoasters, { pageSize: 12 });
+
+  return pages;
+}
+
+// Explicitly define the `page` variable
+const page = Astro.props.page as PaginatedPage;
+const totalResults = page.data.length; // Assuming this holds the total number of roasters
+const pageSize = 12;
+---
+
+<Layout>
+  <!-- Pass the StateFilter component into the header-content slot -->
+  <StateFilter slot="header-content" />
+
+  <h1 class="text-3xl font-bold mb-4">Online Coffee Roasters</h1>
+
+  <!-- Roaster Cards -->
+  <section id="list-of-roasters">
+    <div class="flex flex-wrap sm:flex-col md:flex-row gap-4 justify-center">
+      {page.data.map((roaster) => <RoasterCard roaster={roaster} />)}
+    </div>
+  </section>
+
+  <!-- Pagination -->
+  {
+    page.lastPage > 1 && (
+      <Pagination
+        currentPage={page.currentPage}
+        lastPage={page.lastPage}
+        prevUrl={prevUrl}
+        nextUrl={nextUrl}
+      />
+    )
+  }
+</Layout>

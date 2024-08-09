@@ -1,0 +1,36 @@
+---
+export interface Props {
+  currentPage: number;
+  lastPage: number;
+  prevUrl: string;
+  nextUrl: string;
+}
+
+const { currentPage, lastPage, prevUrl, nextUrl } = Astro.props;
+---
+
+<div class="flex justify-center mt-8">
+  <div class="join grid grid-cols-2 max-w-64 center">
+    {
+      currentPage > 1 ? (
+        <a href={prevUrl} class="join-item btn btn-outline">
+          Previous page
+        </a>
+      ) : (
+        <span class="join-item btn btn-outline btn-disabled">
+          Previous page
+        </span>
+      )
+    }
+
+    {
+      currentPage < lastPage ? (
+        <a href={nextUrl} class="join-item btn btn-outline">
+          Next
+        </a>
+      ) : (
+        <span class="join-item btn btn-outline btn-disabled">Next</span>
+      )
+    }
+  </div>
+</div>

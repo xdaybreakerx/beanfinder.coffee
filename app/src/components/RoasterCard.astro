@@ -1,0 +1,34 @@
+---
+interface Roaster {
+  Name: string;
+  Website: string;
+  State: string;
+  hasCafe: boolean;
+  multiRoaster: boolean;
+}
+
+// Define the props the component will accept
+export interface Props {
+  roaster: Roaster;
+}
+
+const { roaster } = Astro.props;
+---
+
+<div
+  id="wrapper"
+  class="flex flex-wrap sm:flex-col md:flex-row gap-4 justify-center"
+>
+</div>
+<div class="card bg-base-100 w-96 shadow-2xl">
+  <div class="card-body">
+    <h2 class="card-title justify-center">{roaster.Name}</h2>
+    <div class="card-actions justify-center">
+      <button class="btn btn-primary">
+        <a href={roaster.Website} target="_blank" rel="noopener noreferrer"
+          >Website</a
+        >
+      </button>
+    </div>
+  </div>
+</div>

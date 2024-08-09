@@ -1,0 +1,125 @@
+---
+export const prerender = true;
+
+import RoasterCard from "../../../../components/RoasterCard.astro";
+import Pagination from "../../../../components/Pagination.astro";
+import { getRoaster, getRoasterFilter } from "../../../../utils/utils.js";
+import Layout from "../../../../layouts/Layout.astro";
+import StateFilter from "../../../../components/state-filter.astro";
+
+
+// Define the interface for the Roaster data
+interface Roaster {
+  Name: string;
+  Website: string;
+  State: string;
+  hasCafe: boolean;
+  multiRoaster: boolean;
+}
+
+interface PaginatedPage {
+  data: Roaster[];
+  currentPage: number;
+  lastPage: number;
+}
+
+export async function getStaticPaths({ paginate }) {
+  const states = ["NSW", "VIC", "QLD", "WA", "SA", "TAS", "ACT", "NT"];
+  const hasCafeOptions = [true, false]; // Options for cafe filter
+
+  const routes = [];
+
+  for (const state of states) {
+    for (const hasCafe of hasCafeOptions) {
+      const roasters = await getRoaster("roasters");
+
+      let filteredRoasters;
+      if (hasCafe) {
+        filteredRoasters = getRoasterFilter(roasters, {
+          state: state,
+          hasCafe: true,
+        });
+      } else {
+        filteredRoasters = getRoasterFilter(roasters, {
+          state: state,
+        });
+      }
+
+      // Skip creating a route if there are no roasters matching the filter
+      if (filteredRoasters.length === 0) {
+        continue;
+      }
+
+      const pages = paginate(filteredRoasters, {
+        pageSize: 12,
+        params: { state, cafe: String(hasCafe) },
+      });
+
+      routes.push(...pages);
+    }
+  }
+
+  return routes;
+}
+
+const page = Astro.props.page as PaginatedPage;
+const { state, cafe } = Astro.params;
+const hasCafe = cafe === "true";
+
+const prevUrl = Astro.url.pathname.replace(
+  /\/\d+$/,
+  `/${page.currentPage - 1}`
+);
+const nextUrl = Astro.url.pathname.replace(
+  /\/\d+$/,
+  `/${page.currentPage + 1}`
+);
+---
+
+<Layout title="Australian Coffee Roasters">
+  <!-- Pass the StateFilter component into the header-content slot -->
+  <StateFilter slot="header-content" />
+  
+  <div class="flex justify-between p-4 flex-col sm:flex-row sm:items-start">
+    <div class="text-right sm:text-left w-full sm:w-auto">
+      <h1 class="text-3xl font-bold mb-4">You're currently viewing:</h1>
+      <h2 class="text-xl font-bold mb-4">
+        {hasCafe ? `Roasters in ${state} with a Cafe` : `All Roasters in ${state}`}
+      </h2>
+    </div>
+    <div class="flex justify-center sm:justify-end w-full sm:w-auto">
+      <a
+        href={`/roasters/${state}/${!hasCafe}/1`}
+        class="btn btn-primary"
+      >
+        {hasCafe ? "Show Roasters without a Cafe" : "Show Roasters with a Cafe"}
+      </a>
+    </div>
+  </div>
+  
+
+  {
+    page.data.length === 0 ? (
+      <p>No roasters found for the selected filters.</p>
+    ) : (
+      <section id="list-of-roasters">
+        <div class="flex flex-wrap sm:flex-col md:flex-row gap-4 justify-center">
+          {page.data.map((roaster) => (
+            <RoasterCard roaster={roaster} />
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  {
+    page.lastPage > 1 && (
+      <Pagination
+        currentPage={page.currentPage}
+        lastPage={page.lastPage}
+        prevUrl={prevUrl}
+        nextUrl={nextUrl}
+      />
+    )
+  }
+</Layout>
