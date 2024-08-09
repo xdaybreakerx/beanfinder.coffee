@@ -1,0 +1,182 @@
+---
+
+---
+
+<!-- 
+Netlify automatically sanitises all form submissions
+ https://docs.netlify.com/forms/submissions/ 
+ -->
+ 
+<div class="roaster-form">
+  <form id="roaster-form" name="roaster-form" method="POST" action="/__forms">
+    <!-- Hidden input for the form name, necessary for Netlify to identify the form -->
+    <input type="hidden" name="form-name" value="roaster-form" />
+    <!-- For Netlify form notification -->
+    <input
+      type="hidden"
+      name="subject"
+      value="Coffee Roaster Update from Netlify submission"
+    />
+    <!-- Hidden field for the honeypot -->
+    <p class="hidden">
+      <label>
+        Don’t fill this out if you’re human: <input name="bot-field" />
+      </label>
+    </p>
+    <div class="space-y-12">
+      <div class="border-b pb-12">
+        <div class="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+          <div class="border-b pb-12">
+            <h2 class="text-base font-semibold leading-7">The Roaster</h2>
+            <p class="mt-1 text-sm leading-6">
+              Great coffee starts with great beans, from great farms, but the
+              roasting process plays a critical role in your cup. Thank you for
+              making this resource better for everyone.
+            </p>
+            <div class="mt-10 space-y-10">
+              <fieldset>
+                <label class="text-sm font-semibold leading-60"
+                  >I'm letting you know about an...</label
+                >
+                <div class="mt-6 space-y-6">
+                  <!-- Issue checkbox -->
+                  <div class="relative flex gap-x-3">
+                    <div class="flex h-6 items-center">
+                      <input
+                        id="issue"
+                        name="issue"
+                        type="checkbox"
+                        class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                      />
+                    </div>
+                    <div class="text-sm leading-6">
+                      <label for="issue" class="font-medium">Issue</label>
+                      <p>
+                        Did I get something wrong? Or maybe the Roaster opened a
+                        new cafe? Let me know!
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Recommendation checkbox -->
+                  <div class="relative flex gap-x-3">
+                    <div class="flex h-6 items-center">
+                      <input
+                        id="recommendation"
+                        name="recommendation"
+                        type="checkbox"
+                        class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                      />
+                    </div>
+                    <div class="text-sm leading-6">
+                      <label for="recommendation" class="font-medium"
+                        >Recommendation</label
+                      >
+                      <p>
+                        Got somewhere you can recommend? A new secret Roaster?
+                        Share with the rest of us!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="sm:col-span-4 p-4 space-y-4">
+            <!-- Roaster Name input -->
+            <label
+              for="roaster-name"
+              class="block text-sm font-medium leading-6">Roaster Name</label
+            >
+            <div class="mt-2">
+              <div
+                class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md"
+              >
+                <input
+                  type="text"
+                  name="roaster-name"
+                  id="roaster-name"
+                  class="block flex-1 border-0 bg-transparent py-1.5 pl-1 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                  placeholder="Coffee Roasting Co"
+                  required
+                />
+              </div>
+            </div>
+            <!-- Roaster Website input -->
+            <label
+              for="roaster-website"
+              class="block text-sm font-medium leading-6">Roaster Website</label
+            >
+            <div class="mt-2">
+              <div
+                class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md"
+              >
+                <input
+                  type="url"
+                  name="roaster-website"
+                  id="roaster-website"
+                  class="block flex-1 border-0 bg-transparent py-1.5 pl-1 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                  placeholder="https://www.coffee.com.au"
+                  required
+                />
+              </div>
+            </div>
+            <!-- Roaster State dropdown -->
+            <div class="dropdown-content shadow bg-base-100 rounded-box w-52">
+              <label for="state" class="block text-sm font-medium leading-6"
+                >Select Roaster State</label
+              >
+              <select
+                id="state"
+                name="state"
+                class="select select-bordered w-full max-w-xs ring-gray-300"
+              >
+                <option value="All">All</option>
+                <option value="NSW">New South Wales</option>
+                <option value="VIC">Victoria</option>
+                <option value="QLD">Queensland</option>
+                <option value="WA">Western Australia</option>
+                <option value="SA">South Australia</option>
+                <option value="TAS">Tasmania</option>
+                <option value="ACT">Australian Capital Territory</option>
+                <option value="NT">Northern Territory</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!-- Form submission buttons -->
+        <div class="mt-6 flex items-center justify-end gap-x-6">
+          <button type="button" class="btn btn-ghost">Cancel</button>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- JavaScript for AJAX submission -->
+<script>
+  document.getElementById('roaster-form').addEventListener('submit', async function (event) {
+    event.preventDefault();
+
+    const form = event.target as HTMLFormElement;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/x-www-form-urlencoded'
+        }
+      });
+
+      if (response.ok) {
+        window.location.href = '/success';
+      } else {
+        console.error('Form submission failed');
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+    }
+  });
+</script>
