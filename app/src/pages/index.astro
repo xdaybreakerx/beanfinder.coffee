@@ -1,8 +1,30 @@
 ---
-import Layout from "../layouts/Layout.astro"
-import FilterRoasterList from "../components/filter-roaster-list.astro"
+const states = ["NSW", "VIC", "QLD", "WA", "SA", "TAS", "ACT", "NT"];
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Australian Coffee Roasters">
-  <FilterRoasterList />
+<Layout>
+  <div class="p-8 text-center">
+    <h1 class="text-4xl font-bold mb-6">Welcome to BeanFinder</h1>
+    <p class="text-lg p-8">Discover the best coffee roasters from around the country. Whether you're looking for roasters in your state or online subscriptions, we've got you covered.</p>
+
+
+    <!-- State Selection Section -->
+    <div>
+      <h2 class="text-2xl font-bold mb-4">Select Your State</h2>
+      <div class="grid sm:grid-cols-2 grid-cols-1 gap-4">
+        {states.map((state) => (
+          <a href={`/roasters/${state}/false/1`} class="btn btn-outline btn-primary">
+            {state}
+          </a>
+        ))}
+      </div>
+    </div>
+    <!-- Quick Links Section -->
+    <div class="flex flex-col sm:flex-row gap-4 justify-center p-8">
+        <a href="/roasters/online-subscriptions/1" class="btn btn-outline btn-secondary">
+          Explore Online Multi-Roaster Subscriptions
+        </a>
+      </div>
+  </div>
 </Layout>
