@@ -1,7 +1,10 @@
 ---
 export const prerender = true;
 
+import RoasterCard from "../../../../components/RoasterCard.astro";
+import Pagination from "../../../../components/Pagination.astro";
 import { getRoaster, getRoasterFilter } from "../../../../utils/utils.js";
+import Layout from "../../../../layouts/Layout.astro";
 
 // Define the interface for the Roaster data
 interface Roaster {
@@ -26,12 +29,8 @@ export async function getStaticPaths({ paginate }) {
 
   for (const state of states) {
     for (const hasCafe of hasCafeOptions) {
-      // Get the entire collection
       const roasters = await getRoaster("roasters");
-      
 
-      // Filter by state and café availability
-      // Adjust filtering logic based on `hasCafe` value
       let filteredRoasters;
       if (hasCafe) {
         filteredRoasters = getRoasterFilter(roasters, {
@@ -44,53 +43,78 @@ export async function getStaticPaths({ paginate }) {
         });
       }
 
-      // Paginate the filtered collection
+      // Skip creating a route if there are no roasters matching the filter
+      if (filteredRoasters.length === 0) {
+        continue;
+      }
+
       const pages = paginate(filteredRoasters, {
         pageSize: 12,
-        params: { state, cafe: String(hasCafe) }, // Pass both state and cafe as params
+        params: { state, cafe: String(hasCafe) },
       });
 
-      routes.push(...pages); // Push each page object directly into the routes array
+      routes.push(...pages);
     }
   }
 
-  return routes; // Return the flat array of routes
+  return routes;
 }
 
-// Get the current page props and state/cafe parameters
 const page = Astro.props.page as PaginatedPage;
 const { state, cafe } = Astro.params;
 const hasCafe = cafe === "true";
+
+const prevUrl = Astro.url.pathname.replace(
+  /\/\d+$/,
+  `/${page.currentPage - 1}`
+);
+const nextUrl = Astro.url.pathname.replace(
+  /\/\d+$/,
+  `/${page.currentPage + 1}`
+);
 ---
 
-<h1>{hasCafe ? `Roasters in ${state} with a Cafe` : `All Roasters in ${state}`}</h1>
-
-<ul>
-  {page.data.map((roaster) => (
-    <li>
-      <a href={roaster.Website} target="_blank" rel="noopener noreferrer">
-        {roaster.Name}
+<Layout title="Australian Coffee Roasters">
+  <div class="flex justify-between p-4 flex-col sm:flex-row sm:items-start">
+    <div class="text-right sm:text-left w-full sm:w-auto">
+      <h1 class="text-3xl font-bold mb-4">You're currently viewing:</h1>
+      <h2 class="text-xl font-bold mb-4">
+        {hasCafe ? `Roasters in ${state} with a Cafe` : `All Roasters in ${state}`}
+      </h2>
+    </div>
+    <div class="flex justify-center sm:justify-end w-full sm:w-auto">
+      <a
+        href={`/roasters/${state}/${!hasCafe}/1`}
+        class="btn btn-primary"
+      >
+        {hasCafe ? "Show Roasters without a Cafe" : "Show Roasters with a Cafe"}
       </a>
-    </li>
-  ))}
-</ul>
+    </div>
+  </div>
+  
 
-<nav>
-  {page.currentPage > 1 && (
-    <a href={Astro.url.pathname.replace(/\/\d+$/, `/${page.currentPage - 1}`)}>
-      Previous
-    </a>
-  )}
-  {page.currentPage < page.lastPage && (
-    <a href={Astro.url.pathname.replace(/\/\d+$/, `/${page.currentPage + 1}`)}>
-      Next
-    </a>
-  )}
-</nav>
+  {
+    page.data.length === 0 ? (
+      <p>No roasters found for the selected filters.</p>
+    ) : (
+      <section id="list-of-roasters">
+        <div class="flex flex-wrap sm:flex-col md:flex-row gap-4 justify-center">
+          {page.data.map((roaster) => (
+            <RoasterCard roaster={roaster} />
+          ))}
+        </div>
+      </section>
+    )
+  }
 
-<div>
-  <!-- Toggle button for switching between cafe options -->
-  <a href={`/roasters/${state}/${!hasCafe}/1`} class="btn btn-primary">
-    {hasCafe ? "Show Roasters without a Cafe" : "Show Roasters with a Cafe"}
-  </a>
-</div>
+  {
+    page.lastPage > 1 && (
+      <Pagination
+        currentPage={page.currentPage}
+        lastPage={page.lastPage}
+        prevUrl={prevUrl}
+        nextUrl={nextUrl}
+      />
+    )
+  }
+</Layout>
