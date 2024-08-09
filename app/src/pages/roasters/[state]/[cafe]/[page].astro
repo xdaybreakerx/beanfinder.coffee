@@ -1,0 +1,96 @@
+---
+export const prerender = true;
+
+import { getRoaster, getRoasterFilter } from "../../../../utils/utils.js";
+
+// Define the interface for the Roaster data
+interface Roaster {
+  Name: string;
+  Website: string;
+  State: string;
+  hasCafe: boolean;
+  multiRoaster: boolean;
+}
+
+interface PaginatedPage {
+  data: Roaster[];
+  currentPage: number;
+  lastPage: number;
+}
+
+export async function getStaticPaths({ paginate }) {
+  const states = ["NSW", "VIC", "QLD", "WA", "SA", "TAS", "ACT", "NT"];
+  const hasCafeOptions = [true, false]; // Options for cafe filter
+
+  const routes = [];
+
+  for (const state of states) {
+    for (const hasCafe of hasCafeOptions) {
+      // Get the entire collection
+      const roasters = await getRoaster("roasters");
+      
+
+      // Filter by state and café availability
+      // Adjust filtering logic based on `hasCafe` value
+      let filteredRoasters;
+      if (hasCafe) {
+        filteredRoasters = getRoasterFilter(roasters, {
+          state: state,
+          hasCafe: true,
+        });
+      } else {
+        filteredRoasters = getRoasterFilter(roasters, {
+          state: state,
+        });
+      }
+
+      // Paginate the filtered collection
+      const pages = paginate(filteredRoasters, {
+        pageSize: 12,
+        params: { state, cafe: String(hasCafe) }, // Pass both state and cafe as params
+      });
+
+      routes.push(...pages); // Push each page object directly into the routes array
+    }
+  }
+
+  return routes; // Return the flat array of routes
+}
+
+// Get the current page props and state/cafe parameters
+const page = Astro.props.page as PaginatedPage;
+const { state, cafe } = Astro.params;
+const hasCafe = cafe === "true";
+---
+
+<h1>{hasCafe ? `Roasters in ${state} with a Cafe` : `All Roasters in ${state}`}</h1>
+
+<ul>
+  {page.data.map((roaster) => (
+    <li>
+      <a href={roaster.Website} target="_blank" rel="noopener noreferrer">
+        {roaster.Name}
+      </a>
+    </li>
+  ))}
+</ul>
+
+<nav>
+  {page.currentPage > 1 && (
+    <a href={Astro.url.pathname.replace(/\/\d+$/, `/${page.currentPage - 1}`)}>
+      Previous
+    </a>
+  )}
+  {page.currentPage < page.lastPage && (
+    <a href={Astro.url.pathname.replace(/\/\d+$/, `/${page.currentPage + 1}`)}>
+      Next
+    </a>
+  )}
+</nav>
+
+<div>
+  <!-- Toggle button for switching between cafe options -->
+  <a href={`/roasters/${state}/${!hasCafe}/1`} class="btn btn-primary">
+    {hasCafe ? "Show Roasters without a Cafe" : "Show Roasters with a Cafe"}
+  </a>
+</div>
