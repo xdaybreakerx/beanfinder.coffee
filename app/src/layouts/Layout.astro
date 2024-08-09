@@ -1,6 +1,5 @@
 ---
 import Nav from "../components/nav.astro";
-import StateFilter from "../components/state-filter.astro";
 import Footer from "../components/footer.astro";
 ---
 
@@ -10,12 +9,13 @@ import Footer from "../components/footer.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>{Astro.props.title || "Australian Coffee Roasters"}</title>
+    <title>{Astro.props.title || "BeanFinder"}</title>
   </head>
   <body class="flex flex-col min-h-svh">
     <header>
       <Nav />
-      <StateFilter /> 
+      <!-- Named slot for dynamic content -->
+      <slot name="header-content" />
     </header>
     <main class="flex-grow p-4">
       <slot />
