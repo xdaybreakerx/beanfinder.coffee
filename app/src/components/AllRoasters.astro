@@ -1,0 +1,17 @@
+---
+import RoasterCard from "../components/RoasterCard.astro";
+import coffeeroasters from "../data/coffee-roasters.json";
+import coffeeroastersmulti from "../data/coffee-roasters-multi.json";
+
+// Combine the two arrays of coffee roasters into one
+let coffeeRoasters = [...coffeeroasters, ...coffeeroastersmulti];
+
+// Sort the roasters alphabetically by name
+coffeeRoasters = coffeeRoasters.sort((a, b) => a.Name.localeCompare(b.Name));
+---
+
+<section id="list-of-roasters">
+  <div class="flex flex-wrap sm:flex-col md:flex-row gap-4 justify-center">
+    {coffeeRoasters.map((roaster) => <RoasterCard roaster={roaster} />)}
+  </div>
+</section>
