@@ -1,5 +1,5 @@
 ---
-import RoasterCard from "../components/RoasterCard.astro";
+import RoasterCardWithState from "../components/RoasterCardWithState.astro";
 import coffeeroasters from "../data/coffee-roasters.json";
 import coffeeroastersmulti from "../data/coffee-roasters-multi.json";
 
@@ -8,10 +8,23 @@ let coffeeRoasters = [...coffeeroasters, ...coffeeroastersmulti];
 
 // Sort the roasters alphabetically by name
 coffeeRoasters = coffeeRoasters.sort((a, b) => a.Name.localeCompare(b.Name));
+
+// Swap the JSON state value "all" to "Online Only" for clarity
+const replaceAllWithOnlineOnly = (roasters) => {
+  return roasters.map(roaster => {
+    if (roaster.State.toLowerCase() === "all") {
+      return { ...roaster, State: "Online Only" };
+    }
+    return roaster;
+  });
+};
+
+// Apply the function to the coffeeRoasters array
+coffeeRoasters = replaceAllWithOnlineOnly(coffeeRoasters);
 ---
 
 <section id="list-of-roasters">
   <div class="flex flex-wrap sm:flex-col md:flex-row gap-4 justify-center">
-    {coffeeRoasters.map((roaster) => <RoasterCard roaster={roaster} />)}
+    {coffeeRoasters.map((roaster) => <RoasterCardWithState roaster={roaster} />)}
   </div>
 </section>
