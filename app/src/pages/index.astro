@@ -6,7 +6,7 @@ import Layout from "../layouts/Layout.astro";
 <Layout>
   <div class="p-8 text-center">
     <h1 class="text-4xl font-bold mb-6">Welcome to BeanFinder</h1>
-    <p class="text-lg p-8">Discover the best coffee roasters from around the country. Whether you're looking for roasters in your state or online subscriptions, we've got you covered.</p>
+    <p class="text-lg p-8">Discover the best coffee roasters from around the country. Whether you're looking for a roaster in your state, or an online subscription where you can try a few different places at once, we've got you covered.</p>
 
 
     <!-- State Selection Section -->
@@ -21,9 +21,12 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </div>
     <!-- Quick Links Section -->
-    <div class="flex flex-col sm:flex-row gap-4 justify-center p-8">
+    <div class="grid sm:grid-cols-2 grid-cols-1 gap-4 p-8">
         <a href="/roasters/online-subscriptions/1" class="btn  btn-primary">
           Explore Online Multi-Roaster Subscriptions
+        </a>
+        <a href="/roasters/" class="btn  btn-primary">
+          Show me everything!
         </a>
       </div>
   </div>
