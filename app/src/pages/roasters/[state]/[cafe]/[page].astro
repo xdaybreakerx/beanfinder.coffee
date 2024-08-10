@@ -67,14 +67,13 @@ const page = Astro.props.page as PaginatedPage;
 const { state, cafe } = Astro.params;
 const hasCafe = cafe === "true";
 
-const prevUrl = Astro.url.pathname.replace(
-  /\/\d+$/,
-  `/${page.currentPage - 1}`
-);
-const nextUrl = Astro.url.pathname.replace(
-  /\/\d+$/,
-  `/${page.currentPage + 1}`
-);
+// Ensure proper base URL formatting
+const baseUrl = import.meta.env.SITE.endsWith('/')
+  ? import.meta.env.SITE.slice(0, -1)
+  : import.meta.env.SITE;
+
+const prevUrl = `${baseUrl}/roasters/${state}/${hasCafe}/${page.currentPage - 1}`;
+const nextUrl = `${baseUrl}/roasters/${state}/${hasCafe}/${page.currentPage + 1}`;
 ---
 
 <Layout title="Australian Coffee Roasters">
