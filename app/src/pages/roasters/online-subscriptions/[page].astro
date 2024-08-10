@@ -2,10 +2,12 @@
 export const prerender = true;
 
 import { getRoaster, getRoasterFilter } from "../../../utils/utils.js";
+
 import Layout from "../../../layouts/Layout.astro";
+
+import FilterDrawer from "../../../components/FilterDrawer.astro";
 import RoasterCard from "../../../components/RoasterCard.astro";
 import Pagination from "../../../components/Pagination.astro";
-import FilterDrawer from "../../../components/FilterDrawer.astro";
 
 // Define the interface for the Roaster data
 interface Roaster {

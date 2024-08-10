@@ -1,6 +1,6 @@
 ---
-import Nav from "../components/nav.astro";
-import Footer from "../components/footer.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en" transition:animate="fade">
@@ -13,7 +13,7 @@ import Footer from "../components/footer.astro";
   </head>
   <body class="flex flex-col min-h-svh">
     <header>
-      <Nav />
+      <Header />
       <!-- Named slot for dynamic content -->
       <slot name="header-content" />
     </header>
