@@ -1,6 +1,6 @@
 ---
 import Header from "../components/Header.astro";
-import FooterComponent from "../components/FooterComponent.astro"
+import FooterComponent from "../components/FooterComponent.astro";
 ---
 
 <html lang="en" transition:animate="fade">
@@ -9,6 +9,10 @@ import FooterComponent from "../components/FooterComponent.astro"
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="Discover Australia's finest coffee roasters with BeanFinder. Explore a curated list of roasters by state or find exclusive online multi-roaster subscriptions. Whether you're looking for a local café or a unique online experience, BeanFinder connects you with the best in Australian coffee."
+    />
     <title>{Astro.props.title || "BeanFinder"}</title>
   </head>
   <body class="flex flex-col min-h-svh mx-auto">
