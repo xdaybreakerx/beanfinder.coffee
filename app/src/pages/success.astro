@@ -1,28 +1,129 @@
 ---
-import Nav from "../components/nav.astro";
-import Footer from "../components/footer.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Australian Coffee Roasters</title>
-  </head>
-  <body class="flex flex-col min-h-svh">
-    <header>
-      <Nav />
-    </header>
-    <main class="flex-grow p-4">
-      <h1>Submission Received!</h1>
-      <p>
-        Thank you for your feedback! Head back to the <a href="/">home page</a>.
+<Layout>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 md:pt-16 mx-auto" id="wrapper">
+    <!-- Column 1 -->
+    <div class="pb-16 flex flex-col justify-center items-center md:items-start" id="submission-received">
+      <h1 class="text-3xl font-bold pb-4 text-center md:text-left">
+        Submission Received!
+      </h1>
+      <p class="text-2xl pb-4 text-center md:text-left">
+        Thank you for your feedback.
       </p>
-    </main>
-    <footer>
-      <Footer />
-    </footer>
-  </body>
-</html>
+      <p class="text-center md:text-left">
+        <a href="/">Head back to the home page?</a>
+      </p>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="pb-16 flex flex-col justify-center items-center" id="next-steps">
+      <h2 class="text-3xl font-bold pb-4 text-center">
+        What's next?
+      </h2>
+      <ul class="timeline timeline-vertical">
+        <li>
+          <div class="timeline-start timeline-box text-center md:text-left">
+            User Submission
+          </div>
+          <div class="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="h-5 w-5"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div class="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="h-5 w-5"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <div class="timeline-end timeline-box text-center md:text-left">
+            Manual Review Process
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div class="timeline-start timeline-box text-center md:text-left">
+            Approval
+          </div>
+          <div class="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="h-5 w-5"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div class="timeline-end timeline-box text-center md:text-left">
+            Website Updated!
+          </div>
+          <div class="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="h-5 w-5"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="flex flex-col justify-center items-center md:items-end w-full">
+      <h3 class="text-3xl font-mono text-center md:text-left">
+        Happy Brewing!
+      </h3>
+      <div style="width:50%;height:0;padding-bottom:50%;position:relative;">
+        <iframe
+          src="https://giphy.com/embed/hPTZgtzfRIB5Nfb5rL"
+          width="100%"
+          height="100%"
+          style="position:absolute"
+          class="giphy-embed"
+          ></iframe>
+      </div>
+      <p class="text-center md:text-left">
+        <a
+          href="https://giphy.com/gifs/UOPX-coffee-uopx-university-of-phoenix-hPTZgtzfRIB5Nfb5rL"
+          >via GIPHY</a
+        >
+      </p>
+    </div>
+  </div>
+</Layout>
