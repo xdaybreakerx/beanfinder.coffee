@@ -16,8 +16,9 @@ const { roaster } = Astro.props;
 ---
 
 <div class="card bg-base-100 w-96 shadow-2xl">
-  <div class="card-body">
+  <div class="card-body text-center">
     <h2 class="card-title justify-center">{roaster.Name}</h2>
+    <p class="justify-center">{roaster.State}</p>
     <div class="card-actions justify-center">
       <a
         href={roaster.Website}

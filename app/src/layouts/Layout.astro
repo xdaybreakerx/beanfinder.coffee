@@ -1,6 +1,6 @@
 ---
-import Nav from "../components/nav.astro";
-import Footer from "../components/footer.astro";
+import Header from "../components/Header.astro";
+import FooterComponent from "../components/FooterComponent.astro"
 ---
 
 <html lang="en" transition:animate="fade">
@@ -11,9 +11,9 @@ import Footer from "../components/footer.astro";
     <meta name="generator" content={Astro.generator} />
     <title>{Astro.props.title || "BeanFinder"}</title>
   </head>
-  <body class="flex flex-col min-h-svh">
+  <body class="flex flex-col min-h-svh mx-auto">
     <header>
-      <Nav />
+      <Header />
       <!-- Named slot for dynamic content -->
       <slot name="header-content" />
     </header>
@@ -21,7 +21,7 @@ import Footer from "../components/footer.astro";
       <slot />
     </main>
     <footer>
-      <Footer />
+      <FooterComponent />
     </footer>
   </body>
 </html>

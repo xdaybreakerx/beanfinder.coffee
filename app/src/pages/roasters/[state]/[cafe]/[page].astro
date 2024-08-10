@@ -1,12 +1,13 @@
 ---
 export const prerender = true;
 
+import { getRoaster, getRoasterFilter } from "../../../../utils/utils.js";
+
+import Layout from "../../../../layouts/Layout.astro";
+
+import FilterDrawer from "../../../../components/FilterDrawer.astro";
 import RoasterCard from "../../../../components/RoasterCard.astro";
 import Pagination from "../../../../components/Pagination.astro";
-import { getRoaster, getRoasterFilter } from "../../../../utils/utils.js";
-import Layout from "../../../../layouts/Layout.astro";
-import StateFilter from "../../../../components/state-filter.astro";
-
 
 // Define the interface for the Roaster data
 interface Roaster {
@@ -66,60 +67,67 @@ const page = Astro.props.page as PaginatedPage;
 const { state, cafe } = Astro.params;
 const hasCafe = cafe === "true";
 
-const prevUrl = Astro.url.pathname.replace(
-  /\/\d+$/,
-  `/${page.currentPage - 1}`
-);
-const nextUrl = Astro.url.pathname.replace(
-  /\/\d+$/,
-  `/${page.currentPage + 1}`
-);
+// Ensure proper base URL formatting
+const baseUrl = import.meta.env.SITE.endsWith('/')
+  ? import.meta.env.SITE.slice(0, -1)
+  : import.meta.env.SITE;
+
+const prevUrl = `${baseUrl}/roasters/${state}/${hasCafe}/${page.currentPage - 1}`;
+const nextUrl = `${baseUrl}/roasters/${state}/${hasCafe}/${page.currentPage + 1}`;
 ---
 
 <Layout title="Australian Coffee Roasters">
-  <!-- Pass the StateFilter component into the header-content slot -->
-  <StateFilter slot="header-content" />
-  
-  <div class="flex justify-between p-4 flex-col sm:flex-row sm:items-start">
-    <div class="text-right sm:text-left w-full sm:w-auto">
-      <h1 class="text-3xl font-bold mb-4">You're currently viewing:</h1>
-      <h2 class="text-xl font-bold mb-4">
-        {hasCafe ? `Roasters in ${state} with a Cafe` : `All Roasters in ${state}`}
-      </h2>
-    </div>
-    <div class="flex justify-center sm:justify-end w-full sm:w-auto">
-      <a
-        href={`/roasters/${state}/${!hasCafe}/1`}
-        class="btn btn-primary"
-      >
-        {hasCafe ? "Show Roasters without a Cafe" : "Show Roasters with a Cafe"}
-      </a>
-    </div>
+  <!-- Dynamic Page Heading -->
+  <div class="text-right p-4 sm:text-left w-full sm:w-auto">
+    <h1 class="text-3xl font-bold">You're currently viewing:</h1>
+    <h2 class="text-xl font-bold">
+      {
+        hasCafe
+          ? `Roasters in ${state} with a Cafe`
+          : `All Roasters in ${state}`
+      }
+    </h2>
   </div>
-  
 
-  {
-    page.data.length === 0 ? (
-      <p>No roasters found for the selected filters.</p>
-    ) : (
-      <section id="list-of-roasters">
-        <div class="flex flex-wrap sm:flex-col md:flex-row gap-4 justify-center">
-          {page.data.map((roaster) => (
-            <RoasterCard roaster={roaster} />
-          ))}
-        </div>
-      </section>
-    )
-  }
+  <FilterDrawer>
+    <div slot="main-content" id="wrapper">
+      <!-- Cafe setting quick toggle -->
+      <div class="flex justify-center md:justify-end w-full p-4">
+        <a href={`/roasters/${state}/${!hasCafe}/1`} class="btn btn-accent">
+          {
+            hasCafe
+              ? "Show Roasters without a Cafe"
+              : "Show Roasters with a Cafe"
+          }
+        </a>
+      </div>
 
-  {
-    page.lastPage > 1 && (
-      <Pagination
-        currentPage={page.currentPage}
-        lastPage={page.lastPage}
-        prevUrl={prevUrl}
-        nextUrl={nextUrl}
-      />
-    )
-  }
+      <!-- Display Roasters -->
+      {
+        page.data.length === 0 ? (
+          <p>No roasters found for the selected filters.</p>
+        ) : (
+          <section id="list-of-roasters">
+            <div class="flex flex-wrap sm:flex-col md:flex-row gap-4 justify-center">
+              {page.data.map((roaster) => (
+                <RoasterCard roaster={roaster} />
+              ))}
+            </div>
+          </section>
+        )
+      }
+
+      <!-- Pagination Control -->
+      {
+        page.lastPage > 1 && (
+          <Pagination
+            currentPage={page.currentPage}
+            lastPage={page.lastPage}
+            prevUrl={prevUrl}
+            nextUrl={nextUrl}
+          />
+        )
+      }
+    </div>
+  </FilterDrawer>
 </Layout>
