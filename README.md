@@ -16,7 +16,7 @@ Your one stop reference to find all the specialty coffee roasters within Austral
 - [x] footer for contact information to update list (ended up going a different direction on this - created a form element for user submission of issues/recommendations)
 - [x] drawer for filter options 
 - [x] pagination for results array
-- [ ] custom 404 page
+- [x] custom 404 page
 - [ ] Maps integration?
 
 ## Add a roaster? 
