@@ -5,7 +5,7 @@ import { getRoaster, getRoasterFilter } from "../../../utils/utils.js";
 import Layout from "../../../layouts/Layout.astro";
 import RoasterCard from "../../../components/RoasterCard.astro";
 import Pagination from "../../../components/Pagination.astro";
-import StateFilter from "../../../components/state-filter.astro";
+import FilterDrawer from "../../../components/FilterDrawer.astro";
 
 // Define the interface for the Roaster data
 interface Roaster {
@@ -43,28 +43,31 @@ const totalResults = page.data.length; // Assuming this holds the total number o
 const pageSize = 12;
 ---
 
-<Layout>
-  <!-- Pass the StateFilter component into the header-content slot -->
-  <StateFilter slot="header-content" />
+<Layout title="Australian Coffee Roasters">
+  <h1 class="text-3xl font-bold p-4">Online Coffee Roasters</h1>
 
-  <h1 class="text-3xl font-bold mb-4">Online Coffee Roasters</h1>
+  <FilterDrawer>
+    <div slot="main-content" id="wrapper">
+      <!-- Roaster Cards -->
+      <section id="list-of-roasters">
+        <div
+          class="flex flex-wrap sm:flex-col md:flex-row gap-4 justify-center"
+        >
+          {page.data.map((roaster) => <RoasterCard roaster={roaster} />)}
+        </div>
+      </section>
 
-  <!-- Roaster Cards -->
-  <section id="list-of-roasters">
-    <div class="flex flex-wrap sm:flex-col md:flex-row gap-4 justify-center">
-      {page.data.map((roaster) => <RoasterCard roaster={roaster} />)}
+      <!-- Pagination -->
+      {
+        page.lastPage > 1 && (
+          <Pagination
+            currentPage={page.currentPage}
+            lastPage={page.lastPage}
+            prevUrl={prevUrl}
+            nextUrl={nextUrl}
+          />
+        )
+      }
     </div>
-  </section>
-
-  <!-- Pagination -->
-  {
-    page.lastPage > 1 && (
-      <Pagination
-        currentPage={page.currentPage}
-        lastPage={page.lastPage}
-        prevUrl={prevUrl}
-        nextUrl={nextUrl}
-      />
-    )
-  }
+  </FilterDrawer>
 </Layout>

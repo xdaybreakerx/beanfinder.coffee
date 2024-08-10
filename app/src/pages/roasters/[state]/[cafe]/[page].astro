@@ -5,7 +5,6 @@ import RoasterCard from "../../../../components/RoasterCard.astro";
 import Pagination from "../../../../components/Pagination.astro";
 import { getRoaster, getRoasterFilter } from "../../../../utils/utils.js";
 import Layout from "../../../../layouts/Layout.astro";
-import StateFilter from "../../../../components/state-filter.astro";
 import FilterDrawer from "../../../../components/FilterDrawer.astro";
 
 // Define the interface for the Roaster data
@@ -78,9 +77,9 @@ const nextUrl = Astro.url.pathname.replace(
 
 <Layout title="Australian Coffee Roasters">
   <!-- Dynamic Page Heading -->
-  <div class="text-right sm:text-left w-full sm:w-auto">
-    <h1 class="text-3xl font-bold mb-4">You're currently viewing:</h1>
-    <h2 class="text-xl font-bold mb-4">
+  <div class="text-right p-4 sm:text-left w-full sm:w-auto">
+    <h1 class="text-3xl font-bold">You're currently viewing:</h1>
+    <h2 class="text-xl font-bold">
       {
         hasCafe
           ? `Roasters in ${state} with a Cafe`
