@@ -9,14 +9,9 @@ export const getRoaster = async (type, options = {}) => {
         items = [...coffeeRoasters, ...coffeeRoastersMulti];
     }
 
-    // Apply any sorting options - NOT IN USE CURRENTLY
-    // if (options.sortBy) {
-    //     items.sort((a, b) => {
-    //         if (a[options.sortBy] < b[options.sortBy]) return -1;
-    //         if (a[options.sortBy] > b[options.sortBy]) return 1;
-    //         return 0;
-    //     });
-    // }
+
+    // Sort the roasters alphabetically by name
+    items = items.sort((a, b) => a.Name.localeCompare(b.Name));
 
     // console.log(items); 
     return items;
