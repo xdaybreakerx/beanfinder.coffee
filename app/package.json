@@ -7,7 +7,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "update-roasters": "src "
   },
   "dependencies": {
     "@astrojs/netlify": "^5.4.0",
@@ -18,6 +19,7 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "astro": "^4.13.0",
+    "dotenv": "^16.4.5",
     "preact": "^10.23.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
