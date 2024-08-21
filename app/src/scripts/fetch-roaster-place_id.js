@@ -24,20 +24,18 @@ import coffeeRoasters from '../data/coffee-roasters.json' assert { type: 'json' 
  * @param {*} roaster The roaster object containing Name and State information
  * @returns {unknown} Function to fetch place_id from Google Maps API using the provided roaster's name and state in Australia.
  */
-async function fetchPlaceData(roaster) {
-    const query = `${roaster.Name} ${roaster.State} Australia`;
+async function fetchPlaceData(roaster, state) {
+    const query = `${roaster.Name} ${state} Australia`;
     const apiUrl = `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=${encodeURIComponent(query)}&inputtype=textquery&fields=place_id&key=${apiKey}`;
 
     try {
         const response = await fetch(apiUrl);
         const data = await response.json();
 
-        console.log('API Response:', JSON.stringify(data, null, 2)); // Log the entire API response
+        console.log('API Response:', JSON.stringify(data, null, 2));
 
         if (data.candidates.length > 0) {
-            const placeId = data.candidates[0].place_id;
-
-            return { placeId };
+            return data.candidates[0].place_id;
         } else {
             return null;
         }
@@ -46,8 +44,6 @@ async function fetchPlaceData(roaster) {
         return null;
     }
 }
-
-// Update all roaster with new data
 
 /**
  * Update all roaster with new data and save the updated JSON back to the file.
@@ -72,6 +68,28 @@ async function fetchPlaceData(roaster) {
 //     console.log(`Data saved to ${filename}`);
 // }
 
+// async function updateRoastersPlaceId() {
+//     for (let roaster of coffeeRoasters) {
+//         const states = roaster.State.split(',').map(state => state.trim());
+
+//         roaster.place_ids = []; // Array to hold place_ids for all states
+
+//         for (const state of states) {
+//             const placeId = await fetchPlaceIdForState(roaster, state);
+
+//             if (placeId) {
+//                 roaster.place_ids.push({ state, place_id: placeId });
+//             } else {
+//                 console.log(`No data found for ${roaster.Name} in ${state}`);
+//             }
+//         }
+//     }
+
+//     // Save the updated JSON back to the file
+//     const filename = path.resolve('src/data/coffee-roasters-updated.json');
+//     fs.writeFileSync(filename, JSON.stringify(coffeeRoasters, null, 2));
+//     console.log(`Data saved to ${filename}`);
+// }
 
 
 /**
@@ -86,13 +104,20 @@ async function fetchPlaceData(roaster) {
  * @returns {*} Update the first 15 roasters with new data by fetching place data for each roaster and updating the place_id. Save the updated JSON data to a new file 'coffee-roasters-update.json'.
  */
 async function testUpdateRoasters() {
-    for (let i = 0; i < 15; i++) {
+    for (let i = 0; i < 15; i++) { // Limit to first 15 roasters for testing
         const roaster = coffeeRoasters[i];
-        const placeData = await fetchPlaceData(roaster);
-        if (placeData) {
-            roaster.place_id = placeData.placeId;
-        } else {
-            console.log(`No data found for ${roaster.Name}`);
+        const states = roaster.State.split(',').map(state => state.trim());
+
+        roaster.place_ids = []; // Array to hold place_ids for all states
+
+        for (const state of states) {
+            const placeId = await fetchPlaceData(roaster, state);
+
+            if (placeId) {
+                roaster.place_ids.push({ state, place_id: placeId });
+            } else {
+                console.log(`No data found for ${roaster.Name} in ${state}`);
+            }
         }
     }
 
