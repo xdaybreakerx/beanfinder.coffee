@@ -1,5 +1,4 @@
-import React, { useEffect, useState, useRef, useCallback } from "react";
-
+import React, { useEffect, useState } from "react";
 import {
   APIProvider,
   Map,
@@ -7,11 +6,9 @@ import {
   useMap,
   Pin,
 } from "@vis.gl/react-google-maps";
-import { MarkerClusterer } from "@googlemaps/markerclusterer";
-import type { Marker } from "@googlemaps/markerclusterer";
-
+import { loadGoogleMaps } from "../utils/googleMapsLoader.js";
 import roasters from "../data/coffee-roasters-updated-from-place_ids.json";
-import PlaceOverviewComponent from "./PlaceOverviewComponent"; // Import the new component
+import PlaceOverviewComponent from "./PlaceOverviewComponent";
 
 // Define the Poi type for Points of Interest
 type Poi = {
@@ -35,8 +32,6 @@ for (let i = 0; i < roasters.length; i++) {
     continue;
   }
 
-  const tempPOI = [];
-
   // Iterate over each place_id
   for (const place of roaster.place_ids) {
     const poi: Poi = {
@@ -50,17 +45,26 @@ for (let i = 0; i < roasters.length; i++) {
       rating: place.rating || "N/A", // Use 'N/A' if no rating is available
       place_id: place.place_id, // Store the place_id for the Place Details request
     };
-    tempPOI.push(poi);
+    roastersPois.push(poi);
   }
-
-  roastersPois.push(...tempPOI);
 }
 
 const ReactGoogleMap = ({ apiKey }) => {
-  const [selectedPlaceId, setSelectedPlaceId] = useState<string | null>(null);
+  const [mapLoaded, setMapLoaded] = useState(false);
+  const [selectedPlaceId, setSelectedPlaceId] = useState<string | null>(null); // State to keep track of the selected marker
+
+  useEffect(() => {
+    loadGoogleMaps(apiKey).then(() => {
+      setMapLoaded(true); // Set the map as loaded when the API is ready
+    });
+  }, [apiKey]);
+
+  if (!mapLoaded) {
+    return <div>Loading map...</div>; // You can display a loading spinner here
+  }
 
   const handleMarkerClick = (placeId: string) => {
-    setSelectedPlaceId(placeId);
+    setSelectedPlaceId(placeId); // Update the selected marker when clicked
   };
 
   return (
@@ -75,8 +79,6 @@ const ReactGoogleMap = ({ apiKey }) => {
       >
         <PoiMarkers pois={roastersPois} onMarkerClick={handleMarkerClick} />
       </Map>
-
-      {/* Render the PlaceOverviewComponent if a place is selected */}
       {selectedPlaceId && (
         <PlaceOverviewComponent apiKey={apiKey} placeId={selectedPlaceId} />
       )}
@@ -84,43 +86,11 @@ const ReactGoogleMap = ({ apiKey }) => {
   );
 };
 
-const PoiMarkers = (props: { pois: Poi[], onMarkerClick: (placeId: string) => void }) => {
+const PoiMarkers = (props: {
+  pois: Poi[];
+  onMarkerClick: (placeId: string) => void;
+}) => {
   const map = useMap();
-  const [markers, setMarkers] = useState<{ [key: string]: Marker }>({});
-  const clusterer = useRef<MarkerClusterer | null>(null);
-
-  const handleClick = useCallback((poi: Poi) => {
-    props.onMarkerClick(poi.place_id);
-  }, [props]);
-
-  // Initialize MarkerClusterer, if the map has changed
-  useEffect(() => {
-    if (!map) return;
-    if (!clusterer.current) {
-      clusterer.current = new MarkerClusterer({ map });
-    }
-  }, [map]);
-
-  // Update markers, if the markers array has changed
-  useEffect(() => {
-    clusterer.current?.clearMarkers();
-    clusterer.current?.addMarkers(Object.values(markers));
-  }, [markers]);
-
-  const setMarkerRef = (marker: Marker | null, key: string) => {
-    if (marker && markers[key]) return;
-    if (!marker && !markers[key]) return;
-
-    setMarkers((prev) => {
-      if (marker) {
-        return { ...prev, [key]: marker };
-      } else {
-        const newMarkers = { ...prev };
-        delete newMarkers[key];
-        return newMarkers;
-      }
-    });
-  };
 
   return (
     <>
@@ -128,9 +98,8 @@ const PoiMarkers = (props: { pois: Poi[], onMarkerClick: (placeId: string) => vo
         <AdvancedMarker
           key={poi.key}
           position={poi.location}
-          ref={(marker) => setMarkerRef(marker, poi.key)}
           clickable={true}
-          onClick={() => handleClick(poi)} // Handle marker click
+          onClick={() => props.onMarkerClick(poi.place_id)} // Pass the placeId to the onMarkerClick handler
         >
           <Pin
             background={"#FBBC04"}

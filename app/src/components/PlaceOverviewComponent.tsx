@@ -1,16 +1,26 @@
-import React from 'react';
-import { APILoader, PlaceOverview, PlaceDirectionsButton } from '@googlemaps/extended-component-library/react';
+import React, { useState, useEffect } from "react";
+import {
+  PlaceOverview,
+  PlaceDirectionsButton,
+} from "@googlemaps/extended-component-library/react";
+import { loadGoogleMaps } from "../utils/googleMapsLoader"; // Import the utility function
 
-type PlaceOverviewComponentProps = {
-  apiKey: string;
-  placeId: string;
-};
+const PlaceOverviewComponent = ({ apiKey, placeId }) => {
+  const [mapLoaded, setMapLoaded] = useState(false);
 
-const PlaceOverviewComponent = ({ apiKey, placeId }: PlaceOverviewComponentProps) => {
+  useEffect(() => {
+    loadGoogleMaps(apiKey).then(() => {
+      setMapLoaded(true); // Set the map as loaded when the API is ready
+    });
+  }, [apiKey]);
+
+  if (!mapLoaded) {
+    return <div>Loading Place Overview...</div>; // You can display a loading spinner here
+  }
+
   return (
-    <div className="place-overview-container">
-      <APILoader apiKey={apiKey} solutionChannel="GMP_GCC_placeoverview_v1_xl" />
-      <PlaceOverview place={placeId} size="medium">
+    <div className="container">
+      <PlaceOverview place={placeId}>
         <PlaceDirectionsButton slot="action">Directions</PlaceDirectionsButton>
       </PlaceOverview>
     </div>
