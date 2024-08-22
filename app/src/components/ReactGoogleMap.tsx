@@ -59,7 +59,7 @@ const ReactGoogleMap = ({ apiKey }) => {
   }, [apiKey]);
 
   if (!mapLoaded) {
-    return <div>Loading map...</div>; // You can display a loading spinner here
+    return <div>Loading map...</div>;
   }
 
   const handleMarkerClick = (placeId: string) => {
@@ -100,11 +100,9 @@ const PoiMarkers = (props: {
     const markerCluster = new MarkerClusterer({ map });
 
     const markers = props.pois.map((poi, i) => {
-      const marker = new google.maps.Marker({
+      const marker = new google.maps.marker.AdvancedMarkerElement({
         position: poi.location,
         title: `${i + 1}. ${poi.name}`, // Accessible title
-        // label: `${i + 1}`, // Optional label 
-        optimized: false, // Ensures the marker is not optimized out of accessibility consideration
       });
 
       // Add a click listener for each marker to open an InfoWindow with accessible content
