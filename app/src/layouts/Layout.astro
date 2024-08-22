@@ -15,25 +15,38 @@ import FooterComponent from "../components/FooterComponent.astro";
     />
 
     <!-- Open Graph meta tags -->
-    <meta property="og:title" content="BeanFinder - Discover Australia's Finest Coffee Roasters" />
-    <meta property="og:description" content="Explore a curated list of the best coffee roasters in Australia." />
-    <meta property="og:image" content="https://beanfinder.coffee/beanfinder-og-image.png" />
+    <meta
+      property="og:title"
+      content="BeanFinder - Discover Australia's Finest Coffee Roasters"
+    />
+    <meta
+      property="og:description"
+      content="Explore a curated list of the best coffee roasters in Australia."
+    />
+    <meta
+      property="og:image"
+      content="https://beanfinder.coffee/beanfinder-og-image.png"
+    />
     <meta property="og:url" content="https://beanfinder.coffee/" />
     <meta property="og:type" content="website" />
 
-    <title>{Astro.props.title || "BeanFinder"}</title>
-  </head>
-    
-    <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XX128J4Z0N"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Google Analytic tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XX128J4Z0N"
+    ></script>
 
-    gtag('config', 'G-XX128J4Z0N');
-  </script>
-  
+    <title>{Astro.props.title || "BeanFinder"}</title>
+    <!-- Google Analytics -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-XX128J4Z0N");
+    </script>
+  </head>
+
   <body class="flex flex-col min-h-svh mx-auto">
     <header>
       <Header />
