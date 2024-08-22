@@ -20,7 +20,7 @@ const PlaceOverviewComponent = ({ apiKey, placeId }) => {
 
   return (
     <div className="container">
-      <PlaceOverview place={placeId}>
+      <PlaceOverview place={placeId} size="medium">
         <PlaceDirectionsButton slot="action">Directions</PlaceDirectionsButton>
       </PlaceOverview>
     </div>
