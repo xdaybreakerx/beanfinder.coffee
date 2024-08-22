@@ -7,7 +7,7 @@ export function usePoiCreation() {
     const roaster = roasters[i];
 
     if (!roaster.place_ids || roaster.place_ids.length === 0) {
-      console.log(`Skipping roaster ${roaster.Name} due to missing place_ids.`);
+      // console.log(`Skipping roaster ${roaster.Name} due to missing place_ids.`); 
       continue;
     }
 
