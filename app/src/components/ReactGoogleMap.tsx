@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useRef, useCallback } from "react";
-
 import {
   APIProvider,
   Map,
@@ -10,7 +9,6 @@ import {
 } from "@vis.gl/react-google-maps";
 import { MarkerClusterer } from "@googlemaps/markerclusterer";
 import type { Marker } from "@googlemaps/markerclusterer";
-
 import roasters from "../data/coffee-roasters-updated-from-place_ids.json";
 
 // Define the Poi type for Points of Interest
@@ -73,14 +71,17 @@ const ReactGoogleMap = ({ apiKey }) => {
 const PoiMarkers = (props: { pois: Poi[] }) => {
   const map = useMap();
   const [markers, setMarkers] = useState<{ [key: string]: Marker }>({});
+  const [openInfoWindow, setOpenInfoWindow] = useState<string | null>(null); // State to track the currently open InfoWindow
   const clusterer = useRef<MarkerClusterer | null>(null);
 
-  const handleClick = useCallback((ev: google.maps.MapMouseEvent) => {
-    if (!map) return;
-    if (!ev.latLng) return;
-    console.log("marker clicked:", ev.latLng.toString());
-    map.panTo(ev.latLng);
-  });
+  const handleClick = useCallback((key: string) => {
+    setOpenInfoWindow(key); // Set the clicked marker's key as the open InfoWindow
+  }, []);
+
+  const handleCloseClick = useCallback(() => {
+    setOpenInfoWindow(null); // Close the InfoWindow
+  }, []);
+
   // Initialize MarkerClusterer, if the map has changed
   useEffect(() => {
     if (!map) return;
@@ -118,17 +119,26 @@ const PoiMarkers = (props: { pois: Poi[] }) => {
           position={poi.location}
           ref={(marker) => setMarkerRef(marker, poi.key)}
           clickable={true}
-          onClick={handleClick}
+          onClick={() => handleClick(poi.key)} // Handle marker click
         >
           <Pin
             background={"#FBBC04"}
             glyphColor={"#000"}
             borderColor={"#000"}
           />
+          {openInfoWindow === poi.key && (
+            <InfoWindow position={poi.location} onCloseClick={handleCloseClick}>
+              <div>
+                <h3>{poi.name}</h3>
+                <p>{poi.address}</p>
+                <p>Rating: {poi.rating}</p>
+              </div>
+            </InfoWindow>
+          )}
         </AdvancedMarker>
       ))}
     </>
   );
 };
-// export default ReactGoogleMapComponent;
+
 export default ReactGoogleMap;
