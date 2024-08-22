@@ -2,11 +2,10 @@ import React, { useEffect, useState } from "react";
 import {
   APIProvider,
   Map,
-  AdvancedMarker,
   useMap,
-  Pin,
 } from "@vis.gl/react-google-maps";
 import { loadGoogleMaps } from "../utils/googleMapsLoader.js";
+import { MarkerClusterer } from "@googlemaps/markerclusterer";
 import roasters from "../data/coffee-roasters-updated-from-place_ids.json";
 import PlaceOverviewComponent from "./PlaceOverviewComponent";
 
@@ -92,24 +91,43 @@ const PoiMarkers = (props: {
 }) => {
   const map = useMap();
 
-  return (
-    <>
-      {props.pois.map((poi: Poi) => (
-        <AdvancedMarker
-          key={poi.key}
-          position={poi.location}
-          clickable={true}
-          onClick={() => props.onMarkerClick(poi.place_id)} // Pass the placeId to the onMarkerClick handler
-        >
-          <Pin
-            background={"#FBBC04"}
-            glyphColor={"#000"}
-            borderColor={"#000"}
-          />
-        </AdvancedMarker>
-      ))}
-    </>
-  );
+  useEffect(() => {
+    if (!map) return;
+
+    const infoWindow = new google.maps.InfoWindow();
+
+    // Initialize MarkerClusterer with map instance
+    const markerCluster = new MarkerClusterer({ map });
+
+    const markers = props.pois.map((poi, i) => {
+      const marker = new google.maps.Marker({
+        position: poi.location,
+        title: `${i + 1}. ${poi.name}`, // Accessible title
+        // label: `${i + 1}`, // Optional label 
+        optimized: false, // Ensures the marker is not optimized out of accessibility consideration
+      });
+
+      // Add a click listener for each marker to open an InfoWindow with accessible content
+      marker.addListener("click", () => {
+        // infoWindow.close();
+        // infoWindow.setContent(marker.getTitle());
+        // infoWindow.open(marker.getMap(), marker);
+        props.onMarkerClick(poi.place_id); // Call the onMarkerClick handler
+      });
+
+      return marker;
+    });
+
+    // Add markers to the clusterer
+    markerCluster.addMarkers(markers);
+
+    return () => {
+      // Cleanup: Remove markers and clusters when component unmounts or pois change
+      markerCluster.clearMarkers();
+    };
+  }, [map, props.pois, props.onMarkerClick]);
+
+  return null; // Returning null as markers are directly managed by Google Maps and MarkerClusterer
 };
 
 export default ReactGoogleMap;
