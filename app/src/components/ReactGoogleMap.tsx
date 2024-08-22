@@ -1,15 +1,17 @@
 import React, { useEffect, useState, useRef, useCallback } from "react";
+
 import {
   APIProvider,
   Map,
   AdvancedMarker,
   useMap,
   Pin,
-  InfoWindow,
 } from "@vis.gl/react-google-maps";
 import { MarkerClusterer } from "@googlemaps/markerclusterer";
 import type { Marker } from "@googlemaps/markerclusterer";
+
 import roasters from "../data/coffee-roasters-updated-from-place_ids.json";
+import PlaceOverviewComponent from "./PlaceOverviewComponent"; // Import the new component
 
 // Define the Poi type for Points of Interest
 type Poi = {
@@ -18,6 +20,7 @@ type Poi = {
   name: string;
   address: string;
   rating: number | string;
+  place_id: string;
 };
 
 // Create an array of POIs from the roasters' data using a for loop
@@ -45,6 +48,7 @@ for (let i = 0; i < roasters.length; i++) {
       name: `${roaster.Name} (${place.state})`, // Include state in the name for clarity
       address: place.address,
       rating: place.rating || "N/A", // Use 'N/A' if no rating is available
+      place_id: place.place_id, // Store the place_id for the Place Details request
     };
     tempPOI.push(poi);
   }
@@ -53,6 +57,12 @@ for (let i = 0; i < roasters.length; i++) {
 }
 
 const ReactGoogleMap = ({ apiKey }) => {
+  const [selectedPlaceId, setSelectedPlaceId] = useState<string | null>(null);
+
+  const handleMarkerClick = (placeId: string) => {
+    setSelectedPlaceId(placeId);
+  };
+
   return (
     <APIProvider apiKey={apiKey}>
       <Map
@@ -62,25 +72,26 @@ const ReactGoogleMap = ({ apiKey }) => {
         gestureHandling={"greedy"}
         disableDefaultUI={true}
         mapId="7b1c394057aa4afc"
-      />
-      <PoiMarkers pois={roastersPois} />
+      >
+        <PoiMarkers pois={roastersPois} onMarkerClick={handleMarkerClick} />
+      </Map>
+
+      {/* Render the PlaceOverviewComponent if a place is selected */}
+      {selectedPlaceId && (
+        <PlaceOverviewComponent apiKey={apiKey} placeId={selectedPlaceId} />
+      )}
     </APIProvider>
   );
 };
 
-const PoiMarkers = (props: { pois: Poi[] }) => {
+const PoiMarkers = (props: { pois: Poi[], onMarkerClick: (placeId: string) => void }) => {
   const map = useMap();
   const [markers, setMarkers] = useState<{ [key: string]: Marker }>({});
-  const [openInfoWindow, setOpenInfoWindow] = useState<string | null>(null); // State to track the currently open InfoWindow
   const clusterer = useRef<MarkerClusterer | null>(null);
 
-  const handleClick = useCallback((key: string) => {
-    setOpenInfoWindow(key); // Set the clicked marker's key as the open InfoWindow
-  }, []);
-
-  const handleCloseClick = useCallback(() => {
-    setOpenInfoWindow(null); // Close the InfoWindow
-  }, []);
+  const handleClick = useCallback((poi: Poi) => {
+    props.onMarkerClick(poi.place_id);
+  }, [props]);
 
   // Initialize MarkerClusterer, if the map has changed
   useEffect(() => {
@@ -119,22 +130,13 @@ const PoiMarkers = (props: { pois: Poi[] }) => {
           position={poi.location}
           ref={(marker) => setMarkerRef(marker, poi.key)}
           clickable={true}
-          onClick={() => handleClick(poi.key)} // Handle marker click
+          onClick={() => handleClick(poi)} // Handle marker click
         >
           <Pin
             background={"#FBBC04"}
             glyphColor={"#000"}
             borderColor={"#000"}
           />
-          {openInfoWindow === poi.key && (
-            <InfoWindow position={poi.location} onCloseClick={handleCloseClick}>
-              <div>
-                <h3>{poi.name}</h3>
-                <p>{poi.address}</p>
-                <p>Rating: {poi.rating}</p>
-              </div>
-            </InfoWindow>
-          )}
         </AdvancedMarker>
       ))}
     </>
