@@ -34,13 +34,13 @@ const MonolithicGoogleMap = ({ apiKey }) => {
 
   return (
     <APIProvider apiKey={apiKey}>
-      <div className="relative">
+      <div className="relative flex flex-col">
         {/* Custom Search Input with Australia Restriction */}
         <PlaceAutocomplete onPlaceSelect={setSelectedPlace} />
 
         {/* Map Configuration */}
         <Map
-          style={{ width: "100%", height: "500px" }}
+          className="flex-grow h-[60vh]"
           defaultCenter={
             userLocation || {
               lat: -24.670940951770845,
@@ -77,7 +77,7 @@ const MapHandler = ({ place }: MapHandlerProps) => {
       map.fitBounds(place.geometry?.viewport);
     } else if (place.geometry?.location) {
       map.panTo(place.geometry.location);
-      map.setZoom(14); 
+      map.setZoom(14);
     }
   }, [map, place]);
 
@@ -126,8 +126,6 @@ const PlaceAutocomplete = ({ onPlaceSelect }: PlaceAutocompleteProps) => {
 
 const PoiMarkers = ({ pois, onMarkerClick }) => {
   const map = useMap();
-
-  console.log("PoiMarkers: useMap result map =", map);
 
   useMarkers(map, pois, onMarkerClick);
 

@@ -7,6 +7,7 @@ import { loadGoogleMaps } from "../utils/googleMapsLoader";
 
 const PlaceOverviewComponent = ({ apiKey, placeId }) => {
   const [mapLoaded, setMapLoaded] = useState(false);
+  // Logic in place to change PlaceOverview size depending on device - currently hardcoded value, however may change in future
   const [size, setSize] = useState<
     "medium" | "small" | "x-small" | "large" | "x-large"
   >("medium");
@@ -42,8 +43,8 @@ const PlaceOverviewComponent = ({ apiKey, placeId }) => {
   }
 
   return (
-    <div className="pt-4">
-      <PlaceOverview place={placeId} size={size}>
+    <div>
+      <PlaceOverview place={placeId} size={"medium"}>
         <PlaceDirectionsButton slot="action">Directions</PlaceDirectionsButton>
       </PlaceOverview>
     </div>
