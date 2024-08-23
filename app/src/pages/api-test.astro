@@ -1,9 +1,0 @@
----
-import Layout from "../layouts/Layout.astro";
-import ReactGoogleMap from "../components/ReactGoogleMap.tsx";
-
-const apiKey = import.meta.env.GOOGLE_MAPS_API_KEY;
----
-<Layout>
-  <ReactGoogleMap apiKey={apiKey} client:only="react" />
-</Layout>
