@@ -6,8 +6,6 @@ import {
   Map,
   useMap,
   useMapsLibrary,
-  useAdvancedMarkerRef,
-  AdvancedMarker,
 } from "@vis.gl/react-google-maps";
 
 import PlaceOverviewComponent from "./PlaceOverviewComponent";
@@ -25,8 +23,6 @@ const MonolithicGoogleMap = ({ apiKey }) => {
   const [selectedPlace, setSelectedPlace] =
     useState<google.maps.places.PlaceResult | null>(null);
 
-  const [markerRef, marker] = useAdvancedMarkerRef();
-
   if (!mapLoaded) {
     return <div>Loading...</div>;
   }
@@ -39,7 +35,7 @@ const MonolithicGoogleMap = ({ apiKey }) => {
   return (
     <APIProvider apiKey={apiKey}>
       <div className="relative">
-        {/* Custom Search Input */}
+        {/* Custom Search Input with Australia Restriction */}
         <PlaceAutocomplete onPlaceSelect={setSelectedPlace} />
 
         {/* Map Configuration */}
@@ -56,10 +52,9 @@ const MonolithicGoogleMap = ({ apiKey }) => {
           disableDefaultUI={true}
           mapId="7b1c394057aa4afc"
         >
-          <AdvancedMarker ref={markerRef} position={null} />
           <PoiMarkers pois={roastersPois} onMarkerClick={handleMarkerClick} />
         </Map>
-        <MapHandler place={selectedPlace} marker={marker} />
+        <MapHandler place={selectedPlace} />
         {selectedPlaceId && (
           <PlaceOverviewComponent apiKey={apiKey} placeId={selectedPlaceId} />
         )}
@@ -70,20 +65,21 @@ const MonolithicGoogleMap = ({ apiKey }) => {
 
 interface MapHandlerProps {
   place: google.maps.places.PlaceResult | null;
-  marker: google.maps.marker.AdvancedMarkerElement | null;
 }
 
-const MapHandler = ({ place, marker }: MapHandlerProps) => {
+const MapHandler = ({ place }: MapHandlerProps) => {
   const map = useMap();
 
   useEffect(() => {
-    if (!map || !place || !marker) return;
+    if (!map || !place) return;
 
     if (place.geometry?.viewport) {
       map.fitBounds(place.geometry?.viewport);
+    } else if (place.geometry?.location) {
+      map.panTo(place.geometry.location);
+      map.setZoom(14); 
     }
-    marker.position = place.geometry?.location;
-  }, [map, place, marker]);
+  }, [map, place]);
 
   return null;
 };
