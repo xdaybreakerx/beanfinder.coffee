@@ -1,0 +1,3515 @@
+[
+  {
+    "Name": "1645 Coffee Roasters",
+    "Website": "https://www.1645.com.au/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJh9Su5zDKsGoRcGfjekhb2ew",
+        "latitude": -34.8954185,
+        "longitude": 138.6525646,
+        "address": "30 Sunbeam Rd, Glynde SA 5070, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "2 Keys Coffee Boutique",
+    "Website": "https://www.instagram.com/2_keyscoffee_boutique/",
+    "State": "WA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJiyYa1pylMioRKk-alGO0RYc",
+        "latitude": -31.9247001,
+        "longitude": 115.8409396,
+        "address": "377 Oxford St, Mount Hawthorn WA 6016, Australia",
+        "rating": 4.6
+      }
+    ]
+  },
+  {
+    "Name": "ACoffee",
+    "Website": "https://acoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJs8sfHx9D1moRJnTIRru0bxk",
+        "latitude": -37.7982136,
+        "longitude": 144.9857192,
+        "address": "30 Sackville St, Collingwood VIC 3066, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "Airjo",
+    "Website": "https://airjo.com/",
+    "State": "QLD",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": []
+  },
+  {
+    "Name": "Alchemy Coffee",
+    "Website": "https://coffeealchemy.com.au/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJ_YbDfEGwEmsRANEuZjL_uSI",
+        "latitude": -33.9110112,
+        "longitude": 151.1644769,
+        "address": "2/87 Sydenham Rd, Marrickville NSW 2204, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "Allpress",
+    "Website": "https://www.allpressespresso.com/",
+    "State": "VIC, QLD, NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ97GV_uNC1moRTHYYvdZInGk",
+        "latitude": -37.8066209,
+        "longitude": 144.9891187,
+        "address": "80 Rupert St, Collingwood VIC 3066, Australia",
+        "rating": 4.5
+      },
+      {
+        "state": "QLD",
+        "place_id": "ChIJbxln8T9akWsRONvz40xPu6w",
+        "latitude": -27.4879431,
+        "longitude": 153.0393798,
+        "address": "26 Wellington Rd, Woolloongabba QLD 4102, Australia",
+        "rating": 4.7
+      },
+      {
+        "state": "NSW",
+        "place_id": "ChIJb-fTM7-xEmsRt8Blg4FxvGk",
+        "latitude": -33.91038,
+        "longitude": 151.204733,
+        "address": "58 Epsom Rd, Zetland NSW 2017, Australia",
+        "rating": 4.1
+      }
+    ]
+  },
+  {
+    "Name": "Almanac Roasters",
+    "Website": "https://almanacroasters.com/",
+    "State": "QLD",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJR3dfIg7ik2sRhiPsuY04CjY",
+        "latitude": -27.4187724,
+        "longitude": 153.0726795,
+        "address": "140B Gerler Rd, Hendra QLD 4011, Australia",
+        "rating": 4.5
+      }
+    ]
+  },
+  {
+    "Name": "Arrosoto Coffee",
+    "Website": "https://arrostocoffee.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJDWY59nMrwWoRpDLCHpM-1DI",
+        "latitude": -34.1746165,
+        "longitude": 140.745065,
+        "address": "152 Eighteenth St, Renmark SA 5341, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "Art Of Espresso",
+    "Website": "https://artofespresso.com.au/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJX59nDaf-GWsRFyI44PAGHYE",
+        "latitude": -34.3119072,
+        "longitude": 148.2953824,
+        "address": "35 Main St, Young NSW 2594, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "Artificer Coffee ",
+    "Website": "https://artificercoffee.com/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJs4Lblh6uEmsRlGsK1tv6qY8",
+        "latitude": -33.8871332,
+        "longitude": 151.2151062,
+        "address": "547 Bourke St, Surry Hills NSW 2010, Australia",
+        "rating": 4.6
+      }
+    ]
+  },
+  {
+    "Name": "Artisti Coffee Roasters",
+    "Website": "https://artisti.com.au/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJcaUFRJMRnGsRKi_uVaIH5ag",
+        "latitude": -30.34319679999999,
+        "longitude": 153.0921173,
+        "address": "Unit 3/11 Craft Cl, Toormina NSW 2452, Australia",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "Name": "ASLAN Coffee Roasters",
+    "Website": "https://www.aslancoffee.com.au/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJ2YdBdXivEmsRvesf9tONMsw",
+        "latitude": -33.860185,
+        "longitude": 151.2081867,
+        "address": "25 Nurses Walk, The Rocks NSW 2000, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "Atypical Coffee",
+    "Website": "https://atypical.coffee/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": []
+  },
+  {
+    "Name": "Axil Coffee Roasters",
+    "Website": "https://axilcoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJgwgMg99D1moR4u3FR8Nq1x8",
+        "latitude": -37.8169329,
+        "longitude": 144.9686883,
+        "address": "180 Flinders St, Melbourne VIC 3000, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "b3 Coffee",
+    "Website": "https://b3coffee.com.au/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJkRH7Y77RsGoR3ZK8JjCZoRQ",
+        "latitude": -35.0196787,
+        "longitude": 138.616618,
+        "address": "2/231 Main Rd, Blackwood SA 5051, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "Barrio",
+    "Website": "https://www.barriocollective.com/",
+    "State": "ACT",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "ACT",
+        "place_id": "ChIJj5Ui02NNFmsRNHH07evNuz0",
+        "latitude": -35.2716207,
+        "longitude": 149.1332611,
+        "address": "59/30 Lonsdale St, Braddon ACT 2612, Australia",
+        "rating": 4.5
+      }
+    ]
+  },
+  {
+    "Name": "Bean Cartel",
+    "Website": "https://www.thebeancartel.com.au/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJX3UXcQ8V1moRb0oFu5rmxfk",
+        "latitude": -37.9103806,
+        "longitude": 145.1478452,
+        "address": "Unit 5/39/43 Duerdin St, Notting Hill VIC 3168, Australia",
+        "rating": 4.9
+      }
+    ]
+  },
+  {
+    "Name": "Bellissimo Coffee",
+    "Website": "https://www.bellissimocoffee.com.au/",
+    "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJ1yRAg5JZkWsRqCZKC6rcNCU",
+        "latitude": -27.4557236,
+        "longitude": 153.0406345,
+        "address": "30 Wandoo St, Fortitude Valley QLD 4006, Australia",
+        "rating": 4.6
+      }
+    ]
+  },
+  {
+    "Name": "Black Mass Roasters",
+    "Website": "https://blackmassroasters.com/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJKRXBsD2xEmsRVe81SfhddGM",
+        "latitude": -33.9103851,
+        "longitude": 151.1657653,
+        "address": "24 Cadogan St, Marrickville NSW 2204, Australia",
+        "rating": 4.9
+      }
+    ]
+  },
+  {
+    "Name": "Blackbird Espresso",
+    "Website": "https://blackbirdespresso.shop/",
+    "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJo0UDfrZbkWsRH9DAyoI73tQ",
+        "latitude": -27.4975,
+        "longitude": 153.0680556,
+        "address": "4 Newman Ave, Camp Hill QLD 4152, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "Blacklist Coffee",
+    "Website": "https://blacklistcoffee.com.au/",
+    "State": "WA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJ12DBA2i7MioRr0TBxQNMpc4",
+        "latitude": -31.9943514,
+        "longitude": 115.9187976,
+        "address": "41 Welshpool Rd, Welshpool WA 6106, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "Blackstone Road",
+    "Website": "https://blackstoneroad.com.au/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJ326-kNq0lmsRsIDe81qjAgU",
+        "latitude": -27.6259862,
+        "longitude": 152.8077665,
+        "address": "Blackstone QLD 4304, Australia",
+        "rating": "N/A"
+      }
+    ]
+  },
+  {
+    "Name": "Bliss Coffee Roasters",
+    "Website": "https://blisscoffeeroasters.com.au/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJAfRu2l5Pc2sRCjVW8H7PTpM",
+        "latitude": -32.7124799,
+        "longitude": 151.5102413,
+        "address": "1/37 Shipley Dr, Rutherford NSW 2320, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "BLK MRKT Coffee",
+    "Website": "https://blkmrktcoffee.com/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJiwk7YPPFsGoRY8ErQYondaI",
+        "latitude": -34.9436237,
+        "longitude": 138.5457675,
+        "address": "360 Richmond Rd, Netley SA 5037, Australia",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "Name": "Block Coffee",
+    "Website": "https://blockcoffee.au/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJGXnDNdOlEmsRnAvD8Z08gtU",
+        "latitude": -33.8863276,
+        "longitude": 151.2295258,
+        "address": "350 Oxford St, Paddington NSW 2021, Australia",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "Name": "Blume Coffee",
+    "Website": "https://blumecoffee.com/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ03KbrrhD1moRgjQPC-NYp6Y",
+        "latitude": -37.80179399999999,
+        "longitude": 144.9932651,
+        "address": "2 Yarra St, Abbotsford VIC 3067, Australia",
+        "rating": 4.6
+      }
+    ]
+  },
+  {
+    "Name": "Brightside Coffee Co",
+    "Website": "https://brightside.coffee/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJL4k3GXdp1moRx5sxIDCAgIM",
+        "latitude": -37.89661580000001,
+        "longitude": 145.0360472,
+        "address": "189a Booran Rd, Caulfield South VIC 3162, Australia",
+        "rating": 4.3
+      }
+    ]
+  },
+  {
+    "Name": "Bun Coffee",
+    "Website": "https://www.buncoffee.com.au/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJZTOS4QtikGsRKHf4srByS80",
+        "latitude": -28.6373612,
+        "longitude": 153.585213,
+        "address": "17/1A Banksia Dr, Byron Bay NSW 2481, Australia",
+        "rating": 4.9
+      }
+    ]
+  },
+  {
+    "Name": "Campos Coffee",
+    "Website": "https://camposcoffee.com/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ0ej2JTRD1moRWDhsQ9v8R-U",
+        "latitude": -37.8403038,
+        "longitude": 144.995597,
+        "address": "572 Chapel St, South Yarra VIC 3141, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "Cartel Coffee Roasters",
+    "Website": "https://www.coffeecartel.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJX3UXcQ8V1moRb0oFu5rmxfk",
+        "latitude": -37.9103806,
+        "longitude": 145.1478452,
+        "address": "Unit 5/39/43 Duerdin St, Notting Hill VIC 3168, Australia",
+        "rating": 4.9
+      }
+    ]
+  },
+  {
+    "Name": "Central Coast Coffee",
+    "Website": "https://www.centralcoastcoffee.com.au/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJEXZjw-LNcmsRfrtI6JQ0IS0",
+        "latitude": -33.41190459999999,
+        "longitude": 151.2824726,
+        "address": "1/80 Somersby Falls Rd, Somersby NSW 2250, Australia",
+        "rating": 4.9
+      }
+    ]
+  },
+  {
+    "Name": "Charlie Black Coffee Co",
+    "Website": "https://www.charlieblack.co/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJAdDqAFTtuWoRm9_sW6Nt41Y",
+        "latitude": -34.8143324,
+        "longitude": 138.6303911,
+        "address": "8/25 Research Rd, Pooraka SA 5095, Australia",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "Name": "Cheeky Devil Coffee Roasters",
+    "Website": "https://cheekydevilcoffee.com.au/",
+    "State": "TAS",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "TAS",
+        "place_id": "ChIJz30D0_vZbaoRFsVw1Pqzb0E",
+        "latitude": -42.95953139999999,
+        "longitude": 147.329415,
+        "address": "229 Albion Heights Dr, Kingston TAS 7050, Australia",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "Name": "Cirelli Coffee Roasting Co",
+    "Website": "https://www.cirellicoffee.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ4Tl8H1jPsGoRX7eQY6mcSkE",
+        "latitude": -34.8941892,
+        "longitude": 138.5541761,
+        "address": "568 Port Rd, Allenby Gardens SA 5009, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "Clark St Coffee Roasters",
+    "Website": "https://www.clarkst.coffee/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ80M2blFC1moRiIMpurSj1o0",
+        "latitude": -37.9495701,
+        "longitude": 145.0616077,
+        "address": "18 Hewitt St, Cheltenham VIC 3192, Australia",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "Name": "Code Black Coffee",
+    "Website": "https://codeblackcoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJbyGMaTpn1moRDl-Dj_Zv_hI",
+        "latitude": -37.83307180000001,
+        "longitude": 144.9567603,
+        "address": "321 Coventry St, South Melbourne VIC 3205, Australia",
+        "rating": 4.2
+      }
+    ]
+  },
+  {
+    "Name": "Coffee Beans Delivered",
+    "Website": "https://coffeebeansdelivered.com.au/",
+    "State": "QLD",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": []
+  },
+  {
+    "Name": "Coffee Chakra ",
+    "Website": "https://coffeechakra.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJY7i3xDu9JmsR2dj-yf1xeRk",
+        "latitude": -36.5544301,
+        "longitude": 146.7190311,
+        "address": "15 McGeehan Cres, Myrtleford VIC 3737, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "Coffee in Common",
+    "Website": "https://www.coffeeincommon.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJNar7yGxd1moRChp3KKWw3Tw",
+        "latitude": -37.81524599999999,
+        "longitude": 144.9542157,
+        "address": "104T/28 Rose Ln, Melbourne VIC 3000, Australia",
+        "rating": 4.4
+      }
+    ]
+  },
+  {
+    "Name": "Coffee Supreme",
+    "Website": "https://shopau.coffeesupreme.com/",
+    "State": "VIC, QLD",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJLbC7N1VC1moRsxcEIQwt5DE",
+        "latitude": -37.8091416,
+        "longitude": 145.006767,
+        "address": "28-36 Grosvenor St, Abbotsford VIC 3067, Australia",
+        "rating": 4.5
+      },
+      {
+        "state": "QLD",
+        "place_id": "ChIJ4YBz0RRakWsREPnjwxmN24I",
+        "latitude": -27.4904541,
+        "longitude": 153.037455,
+        "address": "27 Balaclava St, Woolloongabba QLD 4102, Australia",
+        "rating": 4.6
+      }
+    ]
+  },
+  {
+    "Name": "Coffee Warehouse",
+    "Website": "https://www.coffeewarehouse.com.au/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJDb5G_kl8DWsRlH-0ve10q2w",
+        "latitude": -33.54861679999999,
+        "longitude": 150.6985015,
+        "address": "1398 Kurmond Rd, Kurmond NSW 2757, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "Crema Coffee Co",
+    "Website": "https://cremacoffeeco.com.au/",
+    "State": "WA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJVTzHMCiWMioRjrUP2Dl6F6A",
+        "latitude": -32.0652365,
+        "longitude": 115.9274906,
+        "address": "U2/10 Wittenberg Dr, Canning Vale WA 6155, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "Cruze",
+    "Website": "https://www.cruzecoffee.com.au/",
+    "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJz7-F1JNmeGkRyCqSSG5AcD8",
+        "latitude": -16.9233378,
+        "longitude": 145.7748839,
+        "address": "105 Grafton St, Cairns City QLD 4870, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "CUP.",
+    "Website": "https://www.instagram.com/cup.kilsyth/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJuZbEPNFp1moRG0SB7f8ndHo",
+        "latitude": -37.8727706,
+        "longitude": 145.0238665,
+        "address": "207a Balaclava Rd, Caulfield North VIC 3161, Australia",
+        "rating": 4.5
+      }
+    ]
+  },
+  {
+    "Name": "Danes",
+    "Website": "https://danes.com.au/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJSfatNyqeEmsRT1EOgP20KP8",
+        "latitude": -33.6670152,
+        "longitude": 150.7374082,
+        "address": "143 Whitegates Rd, Londonderry NSW 2753, Australia",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "Name": "Darkstar Coffee",
+    "Website": "https://www.darkstarcoffee.com.au/",
+    "State": "WA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJT_wR1lGiMioR0WAc_j9sQLE",
+        "latitude": -31.9047102,
+        "longitude": 115.8199654,
+        "address": "104 Frobisher St, Osborne Park WA 6017, Australia",
+        "rating": 4.9
+      }
+    ]
+  },
+  {
+    "Name": "Dawn Patrol Coffee",
+    "Website": "https://www.dawnpatrolcoffee.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJNS6Ge_4psWoRpPMqe3XN9Zc",
+        "latitude": -35.2354165,
+        "longitude": 138.5521501,
+        "address": "402 Main Rd, McLaren Vale SA 5171, Australia",
+        "rating": 4.6
+      }
+    ]
+  },
+  {
+    "Name": "Di Bartoli",
+    "Website": "https://dibartoli.com.au/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJzRpCPvKtEmsRxgmAKlpcWnA",
+        "latitude": -33.9166821,
+        "longitude": 151.1937296,
+        "address": "Nick Scali Bldg, Level 1, Unit 23/69 O'Riordan St, Alexandria NSW 2015, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "Dtown Coffee Roasters",
+    "Website": "https://dtowncoffeeroasters.com/",
+    "State": "NT",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NT",
+        "place_id": "ChIJ83RUYZSTwCwRsanfhSLEna8",
+        "latitude": -12.4008164,
+        "longitude": 130.8536428,
+        "address": "U2/9 Travers St, Coconut Grove NT 0810, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "Dukes Coffee",
+    "Website": "https://www.dukescoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJyaNNI7RC1moRQcMRU8Ucz8o",
+        "latitude": -37.81679099999999,
+        "longitude": 144.966162,
+        "address": "247 Flinders Ln, Melbourne VIC 3000, Australia",
+        "rating": 4.5
+      }
+    ]
+  },
+  {
+    "Name": "Edition Roasters",
+    "Website": "https://editionroasters.com/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJJeRjRtmvEmsRvku-OhXBVAI",
+        "latitude": -33.8785445,
+        "longitude": 151.2011511,
+        "address": "60 Darling Dr, Haymarket NSW 2000, Australia",
+        "rating": 4.3
+      }
+    ]
+  },
+  {
+    "Name": "Elementary Coffee",
+    "Website": "https://www.elementarycoffee.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJt-jKTSbPsGoREdQDTJur4Mw",
+        "latitude": -34.9265182,
+        "longitude": 138.5959576,
+        "address": "9-17 Young St, Adelaide SA 5000, Australia",
+        "rating": 4.6
+      }
+    ]
+  },
+  {
+    "Name": "Everyday Coffee",
+    "Website": "https://everyday-coffee.com/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJhb8hqx9D1moREUdvGRuSNic",
+        "latitude": -37.7981641,
+        "longitude": 144.9858767,
+        "address": "36-38 Sackville St, Collingwood VIC 3066, Australia",
+        "rating": 4.4
+      }
+    ]
+  },
+  {
+    "Name": "Fat Cat Coffee Roasters",
+    "Website": "https://www.fatcatcoffeeroasters.com/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJo4D3kmAPKWsRwzxb5JUSG7M",
+        "latitude": -38.17725190000001,
+        "longitude": 146.3005454,
+        "address": "33A Boolarra Ave, Newborough VIC 3825, Australia",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "Name": "FiORi Coffee",
+    "Website": "https://fioricoffee.com/",
+    "State": "WA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJ7fLSHJ6vMioRvSa6tpVcb68",
+        "latitude": -31.8450356,
+        "longitude": 116.0071959,
+        "address": "14 Yukich Cl, Middle Swan WA 6056, Australia",
+        "rating": 3.6
+      }
+    ]
+  },
+  {
+    "Name": "Fish River Roasters",
+    "Website": "https://www.fishriverroasters.com.au/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJzeGGS6_6EWsRGNT8OcgkWwk",
+        "latitude": -33.413571,
+        "longitude": 149.540967,
+        "address": "67 Corporation Ave, Robin Hill NSW 2795, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "Five Senses Coffee",
+    "Website": "https://fivesenses.com.au/",
+    "State": "WA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJ88h-Ec66MioRtW_8mGqhg_0",
+        "latitude": -31.944086,
+        "longitude": 115.859032,
+        "address": "135 Lake St, Northbridge WA 6003, Australia",
+        "rating": 4.9
+      }
+    ]
+  },
+  {
+    "Name": "Floozy coffee",
+    "Website": "https://floozycoffee.com/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJpW4F5ZwVc2sR1NXQJsrdz6Q",
+        "latitude": -32.92797709999999,
+        "longitude": 151.766802,
+        "address": "398 King St, Newcastle West NSW 2302, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "Fonzie Abbott",
+    "Website": "https://fonzieabbott.com/",
+    "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJj-3v2LZZkWsRXG8ff--ORsw",
+        "latitude": -27.4327236,
+        "longitude": 153.0452592,
+        "address": "40 Fox St, Albion QLD 4010, Australia",
+        "rating": 4.4
+      }
+    ]
+  },
+  {
+    "Name": "Four",
+    "Website": "https://fourcoffee.com.au/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJZ934S0KuEmsR_0lxV3PTR4M",
+        "latitude": -33.8615815,
+        "longitude": 151.2076503,
+        "address": "199 George St, The Rocks NSW 2000, Australia",
+        "rating": 4.5
+      }
+    ]
+  },
+  {
+    "Name": "Grand'Cru Coffee",
+    "Website": "https://grandcru.coffee/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJ74bN_uqwEmsRUJGiH1rKwPI",
+        "latitude": -33.9374146,
+        "longitude": 151.1663378,
+        "address": "Departure Plaza, Sydney NSW 2020, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "Griffiths Bros. Coffee Roasters",
+    "Website": "https://griffithsbros.com.au/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJuY8mOF0V1moRdTiqgEVv0GE",
+        "latitude": -37.9058648,
+        "longitude": 145.1580306,
+        "address": "Wurundjeri Country, 10-11 Rosemary Ct, Mulgrave VIC 3170, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "Hark! Coffee",
+    "Website": "https://harkcoffee.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJP3FnbJPPsGoR0stb9gepBH8",
+        "latitude": -34.9567016,
+        "longitude": 138.6149691,
+        "address": "65 Duthy St, Malvern SA 5061, Australia",
+        "rating": 4.6
+      }
+    ]
+  },
+  {
+    "Name": "Honeybird Coffee",
+    "Website": "https://honeybirdcoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJm_OpWS8R1GoRxTAyGxdBFB0",
+        "latitude": -38.1130632,
+        "longitude": 144.3448711,
+        "address": "Unit 2/9 Shepherd Ct, North Geelong VIC 3215, Australia",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "Name": "Industry Beans",
+    "Website": "https://industrybeans.com/",
+    "State": "VIC, NSW, QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJgRXO-rRC1moRwcB73rcSyIE",
+        "latitude": -37.8154635,
+        "longitude": 144.963264,
+        "address": "345 Little Collins St, Melbourne VIC 3000, Australia",
+        "rating": 4.3
+      },
+      {
+        "state": "NSW",
+        "place_id": "ChIJeWDDDNOvEmsRF8SMPUwPbhw",
+        "latitude": -33.8693274,
+        "longitude": 151.2062418,
+        "address": "Shop 2/40 York St, Sydney NSW 2000, Australia",
+        "rating": 4.4
+      },
+      {
+        "state": "QLD",
+        "place_id": "ChIJLT2riqFZkWsRN1Y6UYR6rcs",
+        "latitude": -27.4541007,
+        "longitude": 153.0417814,
+        "address": "18 Proe St, Newstead QLD 4006, Australia",
+        "rating": 4.1
+      }
+    ]
+  },
+  {
+    "Name": "Infinity Coffee Roasters",
+    "Website": "https://www.infinitycoffeeroasters.org/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJ3amKAf1ZDWsRsfpMFJPFT44",
+        "latitude": -33.6959065,
+        "longitude": 151.1116259,
+        "address": "3/16 Salisbury Rd, Hornsby NSW 2077, Australia",
+        "rating": 4.9
+      }
+    ]
+  },
+  {
+    "Name": "Inglewood Coffee Roasters",
+    "Website": "https://inglewoodcoffeeroasters.com.au/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": []
+  },
+  {
+    "Name": "Inka Coffee Lounge",
+    "Website": "https://inkacoffee.com.au/",
+    "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJ_wEIeXJleGkRRXlhkaUM8FY",
+        "latitude": -16.8943977,
+        "longitude": 145.7543487,
+        "address": "5/450 Sheridan St, Cairns North QLD 4870, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "Kindred Coffee",
+    "Website": "https://kindredcoffee.com.au/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJeTPbJ2Jn1moR5OlJF-SN-1k",
+        "latitude": -37.811658,
+        "longitude": 144.900504,
+        "address": "3 Harris St, Yarraville VIC 3013, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "La Crema",
+    "Website": "https://www.lacremacoffee.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": []
+  },
+  {
+    "Name": "Leaf Bean Machine",
+    "Website": "https://www.leafbeanmachine.com.au/",
+    "State": "WA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJi1OUzISZMioR1TQ1Hr1gVoE",
+        "latitude": -32.0959011,
+        "longitude": 115.8125355,
+        "address": "1/12 Horus Bend, Bibra Lake WA 6163, Australia",
+        "rating": 4.9
+      }
+    ]
+  },
+  {
+    "Name": "Leftfield Coffee",
+    "Website": "https://www.leftfieldcoffee.com/",
+    "State": "WA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJbTSUAYmwEmsR2QT8Yb-UE8c",
+        "latitude": -31.90876089999999,
+        "longitude": 115.8166625,
+        "address": "30 Drake St, Osborne Park WA 6017, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "Lifted Coffee Co",
+    "Website": "https://www.liftedcoffeeco.com.au/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJkQez_Tw9c2sRHXAohtTy8RQ",
+        "latitude": -33.01902419999999,
+        "longitude": 151.6830122,
+        "address": "Warrior St, Belmont North NSW 2280, Australia",
+        "rating": "N/A"
+      }
+    ]
+  },
+  {
+    "Name": "Light Coffee",
+    "Website": "https://www.lightcoffee.com.au/",
+    "State": "QLD",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJAdIocJVbkWsRif5TkFupK7w",
+        "latitude": -27.4941906,
+        "longitude": 153.0412322,
+        "address": "199 Logan Rd, Woolloongabba QLD 4102, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "Lime Blue Coffee",
+    "Website": "https://limebluecoffee.com/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": []
+  },
+  {
+    "Name": "Little Marionette",
+    "Website": "https://thelittlemarionette.com/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJ_dMhPrSvEmsRIPQUB7ikav8",
+        "latitude": -33.86483,
+        "longitude": 151.1774597,
+        "address": "26D Mansfield St, Rozelle NSW 2039, Australia",
+        "rating": 4.3
+      }
+    ]
+  },
+  {
+    "Name": "Little Rebel Roastery",
+    "Website": "https://littlerebel.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJtRVgq6TF1WoRnytSstH091o",
+        "latitude": -38.333496,
+        "longitude": 144.989088,
+        "address": "22 Collins Rd, Dromana VIC 3936, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "Locale",
+    "Website": "https://localeespresso.com.au/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJNx0qvBlo1moREbaZuYZoCCI",
+        "latitude": -37.8446381,
+        "longitude": 144.9792762,
+        "address": "517 St Kilda Rd, Melbourne VIC 3004, Australia",
+        "rating": 4.4
+      }
+    ]
+  },
+  {
+    "Name": "Loggerhead Coffee Co",
+    "Website": "https://loggerheadcoffeeco.com/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJ__9vxOKWEmsRgYJFfKfYNjk",
+        "latitude": -33.8514576,
+        "longitude": 150.8943897,
+        "address": "6/1199 The Horsley Dr, Wetherill Park NSW 2164, Australia",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "Name": "Made of Many",
+    "Website": "https://madeofmany.com/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJYw3RdhCuEmsRqZcvClvzEJU",
+        "latitude": -33.8775474,
+        "longitude": 151.2151161,
+        "address": "Unit 10/2 Kings Ln, Darlinghurst NSW 2010, Australia",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "Name": "Maillard Project",
+    "Website": "https://themaillardproject.com.au/",
+    "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJzdB8HM5bkWsRyAbTflt7dy0",
+        "latitude": -27.47098009999999,
+        "longitude": 153.0274528,
+        "address": "119 Charlotte St, Brisbane City QLD 4000, Australia",
+        "rating": 4.6
+      }
+    ]
+  },
+  {
+    "Name": "Maker Coffee",
+    "Website": "https://makercoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJw3ZAzdJD1moRdTHBsWBAcao",
+        "latitude": -37.81378849999999,
+        "longitude": 144.9613945,
+        "address": "387 Little Bourke St, Melbourne VIC 3000, Australia",
+        "rating": 4.6
+      }
+    ]
+  },
+  {
+    "Name": "Manta Ray Coffee",
+    "Website": "https://mantaraycoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ37upB_w51moRIazB4WhVRI8",
+        "latitude": -37.8307756,
+        "longitude": 145.1862751,
+        "address": "12 Beech St, Nunawading VIC 3131, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "Market Lane ",
+    "Website": "https://marketlane.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJT-tyjjRd1moRqeXlykOTVQc",
+        "latitude": -37.8062804,
+        "longitude": 144.9580131,
+        "address": "83-85 Victoria St, Melbourne VIC 3000, Australia",
+        "rating": 4.3
+      }
+    ]
+  },
+  {
+    "Name": "Mecca Coffee",
+    "Website": "https://www.mecca.coffee/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJ92I17cexEmsRQMdkCcGReCI",
+        "latitude": -33.90656499999999,
+        "longitude": 151.19999,
+        "address": "26 Bourke Rd, Alexandria NSW 2015, Australia",
+        "rating": 4.3
+      }
+    ]
+  },
+  {
+    "Name": "Micrology Coffee",
+    "Website": "https://micrology.com.au/",
+    "State": "WA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJ-y168Ca7MioRFct98K2D27E",
+        "latitude": -31.9043648,
+        "longitude": 115.8165447,
+        "address": "1/58 Collingwood St, Osborne Park WA 6017, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "Monastery Coffee",
+    "Website": "https://monastery.coffee/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJr7h2-fa1sGoRhr34eOoE2Lc",
+        "latitude": -34.8641086,
+        "longitude": 138.6523975,
+        "address": "Unit 1/11 Petrova Ave, Windsor Gardens SA 5087, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "Motobean",
+    "Website": "https://www.motobean.com.au/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJpcUC9C4j12oRmmc0Bce1Ths",
+        "latitude": -37.7752765,
+        "longitude": 144.7537277,
+        "address": "Factory 2, 17/21 Barretta Rd, Ravenhall VIC 3023, Australia",
+        "rating": 4.6
+      }
+    ]
+  },
+  {
+    "Name": "My Cuppa",
+    "Website": "https://www.mycuppa.com.au/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJH4jdfnE71moRzj9OlhFmipE",
+        "latitude": -37.81488729999999,
+        "longitude": 145.2930957,
+        "address": "37 Centre Way, Croydon South VIC 3136, Australia",
+        "rating": 4.2
+      }
+    ]
+  },
+  {
+    "Name": "Northbridge Coffee Roasters",
+    "Website": "https://theroasters.com.au/",
+    "State": "WA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJNc5x89G6MioRMv8URxYOH2s",
+        "latitude": -31.90641919999999,
+        "longitude": 115.8199192,
+        "address": "90 Frobisher St, Osborne Park WA 6017, Australia",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "Name": "Ocean Grind",
+    "Website": "https://oceangrind.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ2eNpXeFt1GoRldHTEttmxBg",
+        "latitude": -38.3082777,
+        "longitude": 144.3148507,
+        "address": "2 Sawmills Way, Torquay VIC 3228, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "Ona Coffee",
+    "Website": "https://onacoffee.com.au/",
+    "State": "ACT, NSW, VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "ACT",
+        "place_id": "ChIJk0gvbjNMFmsRmIOvIOLv8CI",
+        "latitude": -35.3240623,
+        "longitude": 149.1798537,
+        "address": "68 Wollongong St, Fyshwick ACT 2603, Australia",
+        "rating": 4.1
+      },
+      {
+        "state": "NSW",
+        "place_id": "ChIJ9--VtvaxEmsR7dk5e90VOLI",
+        "latitude": -33.9073486,
+        "longitude": 151.1673365,
+        "address": "58/60 Smith St, Marrickville NSW 2204, Australia",
+        "rating": 4.5
+      },
+      {
+        "state": "VIC",
+        "place_id": "ChIJ0Rw8XyND1moRlQ3nyEFLcqk",
+        "latitude": -37.764896,
+        "longitude": 144.961662,
+        "address": "22 Ovens St, Brunswick VIC 3056, Australia",
+        "rating": 4.3
+      }
+    ]
+  },
+  {
+    "Name": "Only Coffee Project",
+    "Website": "https://onlycoffeeproject.square.site/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJJWPz6M6vEmsR34uUIX1KxjA",
+        "latitude": -33.8243287,
+        "longitude": 151.200812,
+        "address": "Shop 2/118 Willoughby Rd, Crows Nest NSW 2065, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "Pablo & Rusty's Coffee Roasters",
+    "Website": "https://pabloandrustys.com.au/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJYyHMmwClEmsRrxuKJK2x-yI",
+        "latitude": -33.7943735,
+        "longitude": 151.1418075,
+        "address": "3 Plassey Rd, Macquarie Park NSW 2113, Australia",
+        "rating": 4.6
+      }
+    ]
+  },
+  {
+    "Name": "Padre Coffee",
+    "Website": "https://www.padrecoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJK_V6t_5n1moR_TcAscymyIw",
+        "latitude": -37.8325381,
+        "longitude": 144.9563457,
+        "address": "South Melbourne Market, 33/322-326 Coventry St, South Melbourne VIC 3205, Australia",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "Name": "Paradox Roasters",
+    "Website": "https://paradoxroasters.com/",
+    "State": "NSW, QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJe6c94LOZEmsRQps4EU8sxVE",
+        "latitude": -33.7709446,
+        "longitude": 150.9404277,
+        "address": "3/167 Prospect Hwy, Seven Hills NSW 2147, Australia",
+        "rating": 4.7
+      },
+      {
+        "state": "QLD",
+        "place_id": "ChIJ-3kJqhIFkWsRv2SeguNO9KY",
+        "latitude": -28.00285049999999,
+        "longitude": 153.4267471,
+        "address": "10 Beach Rd, Surfers Paradise QLD 4217, Australia",
+        "rating": 4.2
+      }
+    ]
+  },
+  {
+    "Name": "Parallel Coffee Roasters",
+    "Website": "https://www.parallelroasters.com/",
+    "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJXaG3YWZOkWsR-6j5O7jZvOk",
+        "latitude": -28.0110448,
+        "longitude": 153.3473987,
+        "address": "1/7 Indy Ct, Carrara QLD 4211, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "Passport",
+    "Website": "https://passportcoffee.com.au/",
+    "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJJU1PMB1akWsRQp5AB7MU_n8",
+        "latitude": -27.47002819999999,
+        "longitude": 153.0275975,
+        "address": "Floor 17/150 Charlotte St, Brisbane City QLD 4000, Australia",
+        "rating": 3.1
+      }
+    ]
+  },
+  {
+    "Name": "Patio Coffee",
+    "Website": "https://patiocoffee.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJPbM1M5PPsGoRj9ulonJk6KQ",
+        "latitude": -34.9423599,
+        "longitude": 138.5601891,
+        "address": "217/219 Richmond Rd, Richmond SA 5033, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "Patricia's ",
+    "Website": "https://www.patriciacoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJn1FUnktd1moRgZCDC6aPCcw",
+        "latitude": -37.8146708,
+        "longitude": 144.9582346,
+        "address": "Rear of, 493-495 Little Bourke St, Melbourne VIC 3000, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "Pillar Coffee",
+    "Website": "https://pillarcoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJsRiC5BZt1moR9T888kHE7kg",
+        "latitude": -38.00582399999999,
+        "longitude": 145.111876,
+        "address": "58 Industrial Dr, Braeside VIC 3195, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "Platform 9 Coffee",
+    "Website": "https://p9coffee.com.au/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJQ8CIW1tfIWsROqyEWnoJIaU",
+        "latitude": -36.0897857,
+        "longitude": 146.9109948,
+        "address": "1/315 Townsend St, Albury NSW 2640, Australia",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "Name": "Pogo Coffee Roasters",
+    "Website": "https://pogocoffee.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJA3KnwiHPsGoRET8uRcD_rkc",
+        "latitude": -34.9273193,
+        "longitude": 138.6088866,
+        "address": "82 Ifould St, Adelaide SA 5000, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "Pound Coffee Roastery",
+    "Website": "https://poundcoffeeroastery.com.au/",
+    "State": "WA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJc-mDzEqiMioRbkieopcen2g",
+        "latitude": -32.05709580000001,
+        "longitude": 115.783082,
+        "address": "Unit 3/14 Zeta Cres, O'Connor WA 6163, Australia",
+        "rating": 4.9
+      }
+    ]
+  },
+  {
+    "Name": "Primary Coffee Roasters",
+    "Website": "https://www.primarycoffeeroasters.com/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJB26t3gyuEmsRMwApf2WGBOE",
+        "latitude": -33.8738461,
+        "longitude": 151.22519,
+        "address": "1/9 Ward Ave, Potts Point NSW 2011, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "Prodigal Coffee",
+    "Website": "https://prodigalcoffeeroasters.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJc0iJzTbh1WoRvBF3VluPhIQ",
+        "latitude": -38.2618737,
+        "longitude": 145.190106,
+        "address": "1549 Frankston - Flinders Rd Service Rd, Tyabb VIC 3913, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "Project Zero Coffee",
+    "Website": "https://www.instagram.com/projectzero.coffee/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJidh4n8hd1moRqRURdejMMCM",
+        "latitude": -37.8166278,
+        "longitude": 144.9561879,
+        "address": "Store 1/140 King St, Melbourne VIC 3000, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "Proud Mary",
+    "Website": "https://www.proudmarycoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJQZ-aOeBC1moRuuo3eAh3hGE",
+        "latitude": -37.8023383,
+        "longitude": 144.9851717,
+        "address": "172 Oxford St, Collingwood VIC 3066, Australia",
+        "rating": 4.5
+      }
+    ]
+  },
+  {
+    "Name": "Puzzle Coffee",
+    "Website": "https://www.puzzle.coffee/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJKX5tnkBD1moRwt30NN8sXWU",
+        "latitude": -37.81463089999999,
+        "longitude": 144.965933,
+        "address": "133 Swanston St, Melbourne VIC 3000, Australia",
+        "rating": 4.2
+      }
+    ]
+  },
+  {
+    "Name": "Ransom",
+    "Website": "https://ransomspecialtycoffee.com/",
+    "State": "QLD",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJ8yplLA1ekWsRAJbe81qjAgU",
+        "latitude": -27.4865844,
+        "longitude": 153.1808918,
+        "address": "Ransome QLD 4154, Australia",
+        "rating": "N/A"
+      }
+    ]
+  },
+  {
+    "Name": "Rebel Alliance Roasters",
+    "Website": "https://rebelroasters.com.au/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": []
+  },
+  {
+    "Name": "Reuben Hills",
+    "Website": "https://www.reubenhills.com.au/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJm_F_mhiuEmsR3Ah4Quu1Odg",
+        "latitude": -33.8828778,
+        "longitude": 151.2110278,
+        "address": "61 Albion St, Surry Hills NSW 2010, Australia",
+        "rating": 4.2
+      }
+    ]
+  },
+  {
+    "Name": "Reverence",
+    "Website": "https://reverencecoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJt7-JPBld1moRjMAqzh7ZieM",
+        "latitude": -37.6696285,
+        "longitude": 144.9608051,
+        "address": "30/30A Colbert Rd, Campbellfield VIC 3061, Australia",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "Name": "Revolving Door Roasters",
+    "Website": "https://www.revolvingdoor.com.au/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJC9eYcQ3_nWsRIZF3xnJ89Bg",
+        "latitude": -31.45298769999999,
+        "longitude": 152.8884313,
+        "address": "3/18 Blackbutt Rd, Port Macquarie NSW 2444, Australia",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "Name": "Ritual Coffee Roasters",
+    "Website": "https://ritualcoffee.com.au/",
+    "State": "TAS",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "TAS",
+        "place_id": "ChIJYS7r7QencKoRpyK8JkXjPhU",
+        "latitude": -41.41724889999999,
+        "longitude": 147.142038,
+        "address": "6/31a Churchill Park Dr, Invermay TAS 7248, Australia",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "Name": "Roadtrip Roasters",
+    "Website": "https://roadtriproasters.com.au/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJ5ZrhmG3ldWsRzk-sctyveHA",
+        "latitude": -31.6137102,
+        "longitude": 152.7153732,
+        "address": "38 Kingsford Rd, Logans Crossing NSW 2439, Australia",
+        "rating": "N/A"
+      }
+    ]
+  },
+  {
+    "Name": "Roastville",
+    "Website": "https://roastville.com.au/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJI8_EA2iwEmsRp0c2eElAdS8",
+        "latitude": -33.9078779,
+        "longitude": 151.1633814,
+        "address": "157 Victoria Rd, Marrickville NSW 2204, Australia",
+        "rating": 4.6
+      }
+    ]
+  },
+  {
+    "Name": "Rosso Roasting Co",
+    "Website": "https://rossoroastingco.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJPwIZUdNb1moR5zydvAV6nKU",
+        "latitude": -37.6911459,
+        "longitude": 144.8788031,
+        "address": "3 Catalina Dr, Tullamarine VIC 3043, Australia",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "Name": "Rumble Coffee Roasters",
+    "Website": "https://www.rumblecoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ-0_d7Bld1moRAQmEA8DRWV8",
+        "latitude": -37.7924364,
+        "longitude": 144.9344633,
+        "address": "8 Thompson St, Kensington VIC 3031, Australia",
+        "rating": 4.9
+      }
+    ]
+  },
+  {
+    "Name": "Saazaa",
+    "Website": "https://saazaa.coffee/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ_zOw5uY51moRwndkTFHKB84",
+        "latitude": -37.8177555,
+        "longitude": 145.2216268,
+        "address": "8 Olive Grove, Ringwood VIC 3134, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "Sample Coffee ",
+    "Website": "https://samplecoffee.com.au/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJE7kpAFuwEmsRqc4Eidq0bR0",
+        "latitude": -33.91299429999999,
+        "longitude": 151.1723173,
+        "address": "1.03/75 Mary St, St Peters NSW 2044, Australia",
+        "rating": 4.6
+      }
+    ]
+  },
+  {
+    "Name": "San Pedro Coffee",
+    "Website": "https://sanpedrocoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJiZWJPBld1moRzRRnstRvi9k",
+        "latitude": -37.66451300000001,
+        "longitude": 144.9650126,
+        "address": "44 Killara Rd, Campbellfield VIC 3061, Australia",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "Name": "Sensory Lab",
+    "Website": "https://sensorylab.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJT8vM84Zn1moRRK6blnQpCn4",
+        "latitude": -37.8219832,
+        "longitude": 144.9264802,
+        "address": "Unit 2 B/706 Lorimer St, Port Melbourne VIC 3207, Australia",
+        "rating": 4.3
+      }
+    ]
+  },
+  {
+    "Name": "Seven Miles Roasters",
+    "Website": "https://www.sevenmiles.com.au/",
+    "State": "VIC, NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJZ19eqLhF1moRZ9LmazYfTak",
+        "latitude": -37.76901,
+        "longitude": 145.024248,
+        "address": "7 Montefiore St, Fairfield VIC 3078, Australia",
+        "rating": 5
+      },
+      {
+        "state": "NSW",
+        "place_id": "ChIJXYZl8bGrEmsRKpC6MUMYXEY",
+        "latitude": -33.7869368,
+        "longitude": 151.2677137,
+        "address": "75 Kenneth Rd, Manly Vale NSW 2093, Australia",
+        "rating": 4.2
+      }
+    ]
+  },
+  {
+    "Name": "Seven Seeds",
+    "Website": "https://sevenseeds.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJvdx3kjJd1moRHnjYhByshFo",
+        "latitude": -37.8029711,
+        "longitude": 144.9590027,
+        "address": "114 Berkeley St, Carlton VIC 3053, Australia",
+        "rating": 4.4
+      }
+    ]
+  },
+  {
+    "Name": "Single O",
+    "Website": "https://singleo.com.au/",
+    "State": "NSW, QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJNUOUhSKuEmsRj2F2Arcx_OQ",
+        "latitude": -33.8810973,
+        "longitude": 151.2096465,
+        "address": "60/64 Reservoir St, Surry Hills NSW 2010, Australia",
+        "rating": 4.5
+      },
+      {
+        "state": "QLD",
+        "place_id": "ChIJ26dpFAhakWsRgsJJVzlLAB4",
+        "latitude": -27.4456934,
+        "longitude": 153.0440937,
+        "address": "16 Austin St, Newstead QLD 4006, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "Sipping Duck Coffee Roasters",
+    "Website": "https://www.sippingduck.com.au/",
+    "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJH_f9q6lmeGkRZoG-Uo9X1yM",
+        "latitude": -16.9410126,
+        "longitude": 145.7601533,
+        "address": "15/223 Hartley St, Portsmith, Bungalow QLD 4870, Australia",
+        "rating": 4.6
+      }
+    ]
+  },
+  {
+    "Name": "Sixpence Coffee",
+    "Website": "https://sixpencecoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJJUiNQdcgJGsRrpOUQOEPLPM",
+        "latitude": -36.72865329999999,
+        "longitude": 146.96169,
+        "address": "15 Wills St, Bright VIC 3741, Australia",
+        "rating": 4.9
+      }
+    ]
+  },
+  {
+    "Name": "Skittle Lane",
+    "Website": "https://skittlelane.com/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJ7StpST-uEmsRAj-sK758jE8",
+        "latitude": -33.86860000000001,
+        "longitude": 151.2048,
+        "address": "40 King St, Sydney NSW 2000, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "Small Batch Roasting Co",
+    "Website": "https://www.smallbatch.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ2zpQRjFd1moRr8ns-bIfQhY",
+        "latitude": -37.8043369,
+        "longitude": 144.9545001,
+        "address": "3-9 Little Howard St, North Melbourne VIC 3051, Australia",
+        "rating": 4.6
+      }
+    ]
+  },
+  {
+    "Name": "Soul City Roasters",
+    "Website": "https://soulcityroasters.com/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": []
+  },
+  {
+    "Name": "Sparks Coffee Roasters",
+    "Website": "https://sparkscoffeeroasters.com/",
+    "State": "WA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJjz_mxEGTMioR-r_JMV6p5iE",
+        "latitude": -32.1501699,
+        "longitude": 116.0185929,
+        "address": "89B Jull St, Armadale WA 6112, Australia",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "Name": "St Ali",
+    "Website": "https://stali.com.au/",
+    "State": "VIC, QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJJ5bS6P9n1moRx76U3LjtN1A",
+        "latitude": -37.83124749999999,
+        "longitude": 144.960354,
+        "address": "12-18 Yarra Pl, South Melbourne VIC 3205, Australia",
+        "rating": 4.2
+      },
+      {
+        "state": "QLD",
+        "place_id": "ChIJK5iHlvVZkWsRy_2IO7kIC24",
+        "latitude": -27.4573701,
+        "longitude": 153.0841514,
+        "address": "Unit 3/471 Lytton Rd, Morningside QLD 4170, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "Standing Room Coffee",
+    "Website": "https://standingroomcoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ_9QKsyZD1moRTBnPFR7DF0Q",
+        "latitude": -37.7847929,
+        "longitude": 144.9823376,
+        "address": "187 St Georges Rd, Fitzroy North VIC 3068, Australia",
+        "rating": 4.5
+      }
+    ]
+  },
+  {
+    "Name": "Stitch Coffee",
+    "Website": "https://www.stitch.coffee/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJf-5n3HWvEmsRwrzJ27_9NYs",
+        "latitude": -33.8834258,
+        "longitude": 151.1951103,
+        "address": "80 Bay St, Ultimo NSW 2007, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "Storehouse Roastery",
+    "Website": "https://www.storehouseroastery.com/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ0-DTrPwl1moRWAcBXYg-cog",
+        "latitude": -37.8483478,
+        "longitude": 145.361115,
+        "address": "1544 Mount Dandenong Tourist Rd, Olinda VIC 3788, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "Symmetry Coffee Roasters",
+    "Website": "https://symmetrycoffeeroasters.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJw7GdXrQ41moRqGcQLPhfYeQ",
+        "latitude": -37.81906299999999,
+        "longitude": 145.1557488,
+        "address": "78 Railway Rd, Blackburn VIC 3130, Australia",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "Name": "Tasmanian Coffee Roasters",
+    "Website": "https://tasmaniancoffee.com.au/",
+    "State": "TAS",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "TAS",
+        "place_id": "ChIJrTAZb-zZbaoR1vfohdTtnIM",
+        "latitude": -42.9692266,
+        "longitude": 147.3129744,
+        "address": "7A/54 Browns Rd, Kingston TAS 7050, Australia",
+        "rating": 4.9
+      }
+    ]
+  },
+  {
+    "Name": "Tattooed Sailor Coffee Roasters",
+    "Website": "https://www.tattooedsailor.com.au/",
+    "State": "QLD",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJm4fdhgRkeGkRoHUeOejKG7g",
+        "latitude": -16.9389783,
+        "longitude": 145.7519573,
+        "address": "176 Newell St, Bungalow QLD 4870, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "Tim Adams",
+    "Website": "https://www.timadams.net.au/",
+    "State": "QLD",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJY4rm3uufk2sR-FlMsBt1LEY",
+        "latitude": -26.729457,
+        "longitude": 153.1223552,
+        "address": "9 Machinery Ave, Warana QLD 4575, Australia",
+        "rating": 4.4
+      }
+    ]
+  },
+  {
+    "Name": "Toby's Estate",
+    "Website": "https://www.tobysestate.com.au/",
+    "State": "QLD, NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJK6KHMhFZkWsRD6hBg7FUto4",
+        "latitude": -27.4514024,
+        "longitude": 153.0440679,
+        "address": "1/33 Longland St, Newstead QLD 4006, Australia",
+        "rating": 4.6
+      },
+      {
+        "state": "NSW",
+        "place_id": "ChIJR-S-I9axEmsRGjjcmNfvx6k",
+        "latitude": -33.8858584,
+        "longitude": 151.1944136,
+        "address": "32-36 City Rd, Chippendale NSW 2008, Australia",
+        "rating": 4.2
+      }
+    ]
+  },
+  {
+    "Name": "Twofish Coffee",
+    "Website": "https://twofishcoffee.com.au/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": []
+  },
+  {
+    "Name": "Vacation",
+    "Website": "https://vacationcoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJT5UYfksx1GoRNJWCvuL8Tlo",
+        "latitude": -36.9847807,
+        "longitude": 143.3906074,
+        "address": "Victoria, Australia",
+        "rating": "N/A"
+      }
+    ]
+  },
+  {
+    "Name": "Veneziano Coffee",
+    "Website": "https://venezianocoffee.com.au/",
+    "State": "VIC, NSW, QLD, SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJvUxMiP9C1moRWm5_z4LcMAc",
+        "latitude": -37.8169555,
+        "longitude": 145.0131324,
+        "address": "16 River St, Richmond VIC 3121, Australia",
+        "rating": 4.2
+      },
+      {
+        "state": "NSW",
+        "place_id": "ChIJq6qWLhquEmsRjiPx-mY99rQ",
+        "latitude": -33.88302669999999,
+        "longitude": 151.2163554,
+        "address": "352 Bourke St, Surry Hills NSW 2010, Australia",
+        "rating": 4.5
+      },
+      {
+        "state": "QLD",
+        "place_id": "ChIJe44AfJdQkWsRIFkjGqlNNzs",
+        "latitude": -27.4836962,
+        "longitude": 153.0026241,
+        "address": "369 Montague Rd, West End QLD 4101, Australia",
+        "rating": 4.5
+      },
+      {
+        "state": "SA",
+        "place_id": "ChIJV5bw9OZZ1moRt3gR-1Sckmg",
+        "latitude": -37.66888329999999,
+        "longitude": 144.8513624,
+        "address": "Melbourne Airport, Shop T1, Departure Dr, Melbourne Airport VIC 3045, Australia",
+        "rating": 2.7
+      }
+    ]
+  },
+  {
+    "Name": "Vice Coffee Roasters",
+    "Website": "https://shopvicecoffeeroasters.com/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ_XAxQxjJsGoRIBGeNraBipo",
+        "latitude": -34.89702909999999,
+        "longitude": 138.5648557,
+        "address": "10 Elizabeth St, Croydon SA 5008, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "Villino Coffee Roasters",
+    "Website": "https://villino.com.au/",
+    "State": "TAS",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "TAS",
+        "place_id": "ChIJLVVHO5t1bqoRx2GfeboXBcU",
+        "latitude": -42.8813589,
+        "longitude": 147.3256386,
+        "address": "30 Criterion St, Hobart TAS 7000, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "White Horse Coffee",
+    "Website": "https://whitehorsecoffee.com.au/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJe4CkhkjHEmsRMeGGmX8POLY",
+        "latitude": -34.03126619999999,
+        "longitude": 151.0587237,
+        "address": "137 Flora St, Kirrawee NSW 2232, Australia",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "Name": "White Owl Coffee",
+    "Website": "https://www.whiteowlcoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJCc3q40A31moRY521iIIgnsM",
+        "latitude": -37.74763100000001,
+        "longitude": 145.2077331,
+        "address": "402 Heidelberg-Warrandyte Rd, Warrandyte VIC 3113, Australia",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "Name": "White Whale Coffee Roasters",
+    "Website": "https://whitewhalecoffee.com.au/",
+    "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJ8cfu6LBmeGkRe1o1y6fwnqI",
+        "latitude": -16.9425092,
+        "longitude": 145.7730616,
+        "address": "Shed 2, 4/16 Tingira St, Portsmith QLD 4870, Australia",
+        "rating": 4.9
+      }
+    ]
+  },
+  {
+    "Name": "Wide Open Road",
+    "Website": "https://wideopenroad.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJt_EqLTVD1moRpkK9XYJ9y4A",
+        "latitude": -37.7763047,
+        "longitude": 144.9612147,
+        "address": "274 Barkly St, Brunswick VIC 3056, Australia",
+        "rating": 4.3
+      }
+    ]
+  },
+  {
+    "Name": "Will & Co",
+    "Website": "https://www.willandco.com.au/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJQw3XQS-uEmsRWSAo6K-Jx28",
+        "latitude": -33.8798342,
+        "longitude": 151.1973423,
+        "address": "103 Jones St, Ultimo NSW 2007, Australia",
+        "rating": 3.7
+      }
+    ]
+  },
+  {
+    "Name": "Willow Bend Coffee",
+    "Website": "https://willowbendcoffee.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ_XAxQxjJsGoRIBGeNraBipo",
+        "latitude": -34.89702909999999,
+        "longitude": 138.5648557,
+        "address": "10 Elizabeth St, Croydon SA 5008, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "Withams Coffee",
+    "Website": "https://withams.com.au/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJKwCCfnZYDWsRb9b9WnoobZU",
+        "latitude": -33.6980561,
+        "longitude": 151.1108073,
+        "address": "5 Salisbury Rd, Hornsby NSW 2077, Australia",
+        "rating": 4.5
+      }
+    ]
+  },
+  {
+    "Name": "Wolff Coffee Roasters",
+    "Website": "https://wolffcoffeeroasters.com.au/",
+    "State": "QLD",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJR3dfIg7ik2sRhiPsuY04CjY",
+        "latitude": -27.4187724,
+        "longitude": 153.0726795,
+        "address": "140B Gerler Rd, Hendra QLD 4011, Australia",
+        "rating": 4.5
+      }
+    ]
+  },
+  {
+    "Name": "Zest Coffee",
+    "Website": "https://www.zestcoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJfWVX5S1D1moRFXmqAP7fzaw",
+        "latitude": -37.816371,
+        "longitude": 145.012307,
+        "address": "67 North St, Richmond VIC 3121, Australia",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "Name": "121 Coffee",
+    "Website": "https://121coffee.com.au/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJ_RuFZyRmC2sRisdbGydMoeE",
+        "latitude": -32.1672245,
+        "longitude": 150.8914303,
+        "address": "121 Macqueen St, Aberdeen NSW 2336, Australia",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "Name": "Supernumerary Coffee",
+    "Website": "https://www.facebook.com/supernumerarycoffee/",
+    "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJUV8d8lBbkWsRa-W0jmcN6pM",
+        "latitude": -27.54532,
+        "longitude": 153.0385832,
+        "address": "Unit 13/655 Toohey Rd, Salisbury QLD 4107, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "Karon Farm Coffee",
+    "Website": "https://karonfarmcoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJpQ8_w8ZM0WoRi7zVVdrumOA",
+        "latitude": -37.5291688,
+        "longitude": 143.8451042,
+        "address": "Shed 5/10 Builders Cl, Wendouree VIC 3355, Australia",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "Name": "Coffee Peeps Pty Ltd",
+    "Website": "https://coffeepeeps.com.au/",
+    "State": "WA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJTVN4VlilMioRq4WBRtvJA7g",
+        "latitude": -31.920182,
+        "longitude": 115.837642,
+        "address": "77 Coogee St, Mount Hawthorn WA 6016, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "Ballarat Coffee Roasters",
+    "Website": "https://ballaratcoffeeroasters.com.au",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJO3mOYPRF0WoRHHIKsOnr0Vw",
+        "latitude": -37.56228900000001,
+        "longitude": 143.8575021,
+        "address": "2 Lydiard St S, Ballarat Central VIC 3350, Australia",
+        "rating": 4.9
+      }
+    ]
+  },
+  {
+    "Name": "Offshoot Coffee",
+    "Website": "https://www.offshootcoffee.com.au/",
+    "State": "WA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJM-VbI8K7MioRjfdTbEtrN_0",
+        "latitude": -31.95559299999999,
+        "longitude": 115.8637877,
+        "address": "Shop 2/480 Hay St, Perth WA 6000, Australia",
+        "rating": 4.5
+      }
+    ]
+  },
+  {
+    "Name": "Simply Coffee",
+    "Website": "https://www.simplycoffee.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJi0yu4jXJsGoR8m7ow_X4nHE",
+        "latitude": -34.920362,
+        "longitude": 138.617948,
+        "address": "43A Rundle St, Kent Town SA 5067, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "CBTB Coffee",
+    "Website": "https://shop.cbtb.coffee/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ6zzfpKDFsGoRc08yfUks80I",
+        "latitude": -34.9265289,
+        "longitude": 138.5346484,
+        "address": "394 Henley Beach Rd, Lockleys SA 5032, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "Mikro Coffee Roasters",
+    "Website": "https://mikro.coffee/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJpUFv1RNv1GoRz6Jex4iJHCQ",
+        "latitude": -38.3280786,
+        "longitude": 144.3167118,
+        "address": "SHOP 3/57 Geelong Rd, Torquay VIC 3228, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "CoffeeSnobs BeanBay",
+    "Website": "https://beanbay.coffeesnobs.com.au/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJB5SKbCsX1GoR_RWGiuPBCR4",
+        "latitude": -38.0998056,
+        "longitude": 144.3484792,
+        "address": "59 Morgan St, North Geelong VIC 3215, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "No Label Coffee",
+    "Website": "https://nolabelcoffee.com/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJkxjDBPxTDWsR3xCjQyjChKA",
+        "latitude": -33.664956,
+        "longitude": 151.2987183,
+        "address": "24 Beaumont Cres, Bayview NSW 2104, Australia",
+        "rating": "N/A"
+      }
+    ]
+  },
+  {
+    "Name": "Altura Coffee",
+    "Website": "https://alturacoffee.com.au/collections/coffee",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJp9uyyvrFsGoRNXqJm-F2kz0",
+        "latitude": -34.9048639,
+        "longitude": 138.5378779,
+        "address": "253 Grange Rd, Findon SA 5023, Australia",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "Name": "Coffee By Ross",
+    "Website": "https://coffeebyross.com.au/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJpxVQtUDFsGoRC48iV5p5nZQ",
+        "latitude": -34.9182878,
+        "longitude": 138.5523586,
+        "address": "124 Ashley St, Underdale SA 5032, Australia",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "Name": "Ricca Coffee",
+    "Website": "https://www.riccacoffee.com.au/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ60X0GU_PsGoRdFCNCAlVomk",
+        "latitude": -34.9134166,
+        "longitude": 138.5723377,
+        "address": "2 W Thebarton Rd, Thebarton SA 5031, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "Dimattina Coffee",
+    "Website": "https://dimattinacoffee.com.au/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ5UhHhAtF1moRmPMz5ZahtwE",
+        "latitude": -37.7152908,
+        "longitude": 145.0003315,
+        "address": "126-128 Edwardes St, Reservoir VIC 3073, Australia",
+        "rating": 4.6
+      }
+    ]
+  },
+  {
+    "Name": "Lonsdale Roaster St",
+    "Website": "https://lonsdalestreetroasters.com/",
+    "State": "ACT",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "ACT",
+        "place_id": "ChIJ7wlSM9ZNFmsRy_jffbrG4oQ",
+        "latitude": -35.32347040000001,
+        "longitude": 149.1649785,
+        "address": "Building 2, Tenancy 5/1 Dairy Rd, Fyshwick ACT 2609, Australia",
+        "rating": 4.9
+      }
+    ]
+  },
+  {
+    "Name": "Jasper Coffee",
+    "Website": "https://www.jaspercoffee.com/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJNZsvUd9C1moRY00nWdYBy9k",
+        "latitude": -37.799384,
+        "longitude": 144.9781281,
+        "address": "267 Brunswick St, Fitzroy VIC 3065, Australia",
+        "rating": 4.6
+      }
+    ]
+  },
+  {
+    "Name": "River City Coffee",
+    "Website": "https://rivercitycoffee.com.au/",
+    "State": "QLD",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJyUUuJZVnkWsRb7Susbk4AIM",
+        "latitude": -27.52340109999999,
+        "longitude": 153.254215,
+        "address": "5/30 Shore St W, Ormiston QLD 4160, Australia",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "Name": "Super Roast Coffee",
+    "Website": "https://superroast.com.au/",
+    "State": "QLD",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJFW5RJ6lDkWsRbws2fgqlXHs",
+        "latitude": -27.6210789,
+        "longitude": 153.1145937,
+        "address": "b6/10/14 Compton Rd, Underwood QLD 4119, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "Cavalier Roasters",
+    "Website": "https://www.cavalierroasters.com/",
+    "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJq6qqqgHwk2sRHPPJPYovImo",
+        "latitude": -27.3741143,
+        "longitude": 153.0612139,
+        "address": "Cafe entrance, Unit 1/9 Pritchard Rd, Virginia QLD 4014, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "First Fruit Coffee",
+    "Website": "https://firstfruits.coffee/",
+    "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJ-xalUiEQkWsRipkmRZjYDC8",
+        "latitude": -27.9455261,
+        "longitude": 153.3864623,
+        "address": "129 Olsen Ave, Labrador QLD 4215, Australia",
+        "rating": 4.6
+      }
+    ]
+  },
+  {
+    "Name": "Blue Sky Coffee Roasters",
+    "Website": "https://blueskycoffee.coffee/",
+    "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJk5ZUt5NZkWsRrsV-kqOBhU4",
+        "latitude": -27.4917365,
+        "longitude": 153.0455718,
+        "address": "9/25 Lerna St, Woolloongabba QLD 4102, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "Bear Bones",
+    "Website": "https://bearbones.com.au/",
+    "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJTRJh5_JZkWsRKOpqv-0f_JM",
+        "latitude": -27.4575116,
+        "longitude": 153.0368463,
+        "address": "2/66 McLachlan St, Fortitude Valley QLD 4006, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "Bear Bones",
+    "Website": "https://bearbones.com.au/",
+    "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJTRJh5_JZkWsRKOpqv-0f_JM",
+        "latitude": -27.4575116,
+        "longitude": 153.0368463,
+        "address": "2/66 McLachlan St, Fortitude Valley QLD 4006, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "Foaster and Black",
+    "Website": "https://fosterandblack.com/",
+    "State": "QLD, NSW, VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJW9F8FIVZkWsR_dCAeLdJnk8",
+        "latitude": -27.4510021,
+        "longitude": 153.0399387,
+        "address": "628 Wickham St, Fortitude Valley QLD 4006, Australia",
+        "rating": 4.7
+      },
+      {
+        "state": "NSW",
+        "place_id": "ChIJAU6Yrb-rEmsRAnA9BCpYcYk",
+        "latitude": -33.7670481,
+        "longitude": 151.2653916,
+        "address": "Kiosk 10K02, Westfield Warringah Mall, Brookvale NSW 2100, Australia",
+        "rating": 4.7
+      },
+      {
+        "state": "VIC",
+        "place_id": "ChIJX7ZmCUNH1moRnqVKkByP9D4",
+        "latitude": -37.7851115,
+        "longitude": 145.1262028,
+        "address": "Westfield Doncaster, Kiosk K110/619 Doncaster Rd, Doncaster VIC 3108, Australia",
+        "rating": 4.1
+      }
+    ]
+  },
+  {
+    "Name": "Craftwork Roasting Co",
+    "Website": "https://www.craftworkroasting.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJu7t0vkE31moRFjkPI4di-Jc",
+        "latitude": -37.7198421,
+        "longitude": 145.1400391,
+        "address": "1/27 Peel St, Eltham VIC 3095, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "Constance Coffee",
+    "Website": "https://constance.coffee/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": []
+  },
+  {
+    "Name": "Taylor's Blend",
+    "Website": "https://www.taylorblend.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJcY1R-ZjLsGoRze9TUKwj2Ok",
+        "latitude": -34.931827,
+        "longitude": 138.6689063,
+        "address": "Unit 1/38 Hallett Rd, Stonyfell SA 5066, Australia",
+        "rating": 4.5
+      }
+    ]
+  },
+  {
+    "Name": "Coffee Bean Trading Co",
+    "Website": "https://coffeebeantrading.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJk4jjljTRsGoRx4xreh4x2PY",
+        "latitude": -34.9898121,
+        "longitude": 138.5743535,
+        "address": "1080 South Rd, Edwardstown SA 5039, Australia",
+        "rating": 4.3
+      }
+    ]
+  },
+  {
+    "Name": "SoHo Coffee Roasters",
+    "Website": "https://sohocoffeeroasters.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ829n_yPPsGoRiJ8ZmCogE38",
+        "latitude": -34.9286507,
+        "longitude": 138.5934349,
+        "address": "Addie Pl, Adelaide SA 5000, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "Kicco",
+    "Website": "https://www.kicco.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ0TAxWqXFsGoRuDHhxlG_1Pw",
+        "latitude": -35.1506606,
+        "longitude": 138.5328636,
+        "address": "1/54 Cottage Ln, Hackham SA 5163, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "West Beach Coffee Co",
+    "Website": "https://www.facebook.com/p/The-West-Beach-Coffee-Co-100092129446635/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ3YfhmsfEsGoR368LZAxTsqU",
+        "latitude": -34.9379536,
+        "longitude": 138.4995354,
+        "address": "1 Seaview Rd, West Beach SA 5024, Australia",
+        "rating": 4.5
+      }
+    ]
+  },
+  {
+    "Name": "D'Angelo Coffee",
+    "Website": "https://dangelocoffee.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ3SYKP0nPsGoR6NBdvS9kFWA",
+        "latitude": -34.9129118,
+        "longitude": 138.5748483,
+        "address": "35 Cawthorne St, Thebarton SA 5031, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "My Kingdom For A Horse",
+    "Website": "https://www.mykingdomforahorse.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJa76_EyLPsGoR8AnZI-9H0s4",
+        "latitude": -34.932057,
+        "longitude": 138.592773,
+        "address": "191 Wright St, Adelaide SA 5000, Australia",
+        "rating": 4.2
+      }
+    ]
+  },
+  {
+    "Name": "Rio Coffee",
+    "Website": "https://riocoffee.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ2bcWG13JsGoRZ5i7m0Hqjmc",
+        "latitude": -34.9137796,
+        "longitude": 138.6304913,
+        "address": "22 Nelson St, Stepney SA 5069, Australia",
+        "rating": 4.1
+      }
+    ]
+  },
+  {
+    "Name": "Faithful Hound",
+    "Website": "https://faithfulhoundcoffee.com.au/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJAQBsKVTasGoRHtd-4kR-EV0",
+        "latitude": -34.99829,
+        "longitude": 138.523509,
+        "address": "13 Byre Ave, Somerton Park SA 5044, Australia",
+        "rating": "N/A"
+      }
+    ]
+  },
+  {
+    "Name": "De Groot Coffee Co",
+    "Website": "https://www.degrootcoffeeco.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJbUcfH5tLsWoR8CYfxqvSF2M",
+        "latitude": -35.52139390000001,
+        "longitude": 138.6714429,
+        "address": "Shed 5, Factory 9/89-91 Hill St, Port Elliot SA 5212, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "Cherry Pickers Coffee",
+    "Website": "https://cherrypickerscoffee.com.au/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ-6q7elth1moRtFzJWny4fYY",
+        "latitude": -37.8517644,
+        "longitude": 144.8674063,
+        "address": "2/110 Maddox Rd, Williamstown North VIC 3016, Australia",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "Name": "Cherry Pickers Coffee",
+    "Website": "https://cherrypickerscoffee.com.au/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ-6q7elth1moRtFzJWny4fYY",
+        "latitude": -37.8517644,
+        "longitude": 144.8674063,
+        "address": "2/110 Maddox Rd, Williamstown North VIC 3016, Australia",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "Name": "Red Berry",
+    "Website": "https://redberryespresso.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ_6a2W-JC1moRYxTBkMVelLo",
+        "latitude": -37.804982,
+        "longitude": 144.9911033,
+        "address": "103/109 Gipps St, Collingwood VIC 3066, Australia",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "Name": "Flying Chaff",
+    "Website": "https://www.theflyingchaff.com/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJF8AJaNDIsGoREZStkSsOW98",
+        "latitude": -34.9055204,
+        "longitude": 138.5905655,
+        "address": "161 Jeffcott St, North Adelaide SA 5006, Australia",
+        "rating": 4.5
+      }
+    ]
+  },
+  {
+    "Name": "Mila Coffee Co",
+    "Website": "https://www.milacoffeeco.com.au/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJqWCgNkjJsGoR6UmIPMSOV60",
+        "latitude": -34.91858049999999,
+        "longitude": 138.6199188,
+        "address": "10 College Rd, Kent Town SA 5067, Australia",
+        "rating": 4.9
+      }
+    ]
+  },
+  {
+    "Name": "Fleurieu Roast",
+    "Website": "https://fleurieuroast.com.au/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJu9XUMn47sWoRdseS8b2ifdI",
+        "latitude": -35.26710509999999,
+        "longitude": 138.4795344,
+        "address": "Rear of Lot, 10/173 Port Rd, Aldinga SA 5173, Australia",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "Name": "Coffee Journey",
+    "Website": "https://www.instagram.com/coffeejourneyadelaide/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJQa52MmLEsGoRJGxZJ_Nachw",
+        "latitude": -34.9076891,
+        "longitude": 138.4930705,
+        "address": "640 Grange Rd, Henley Beach SA 5022, Australia",
+        "rating": 4.1
+      }
+    ]
+  },
+  {
+    "Name": "Mid Coast Coffee",
+    "Website": "https://midcoastroast.ecwid.com/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": []
+  },
+  {
+    "Name": "+55 (Plus Fifty Five)",
+    "Website": "https://plusfiftyfive.com/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": []
+  },
+  {
+    "Name": "Bray St Roasters",
+    "Website": "https://www.braystcoffee.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ0ToTLaXasGoR0XfX2ggYHDU",
+        "latitude": -34.9806305,
+        "longitude": 138.5488167,
+        "address": "59A Bray St, Plympton Park SA 5038, Australia",
+        "rating": 4.9
+      }
+    ]
+  },
+  {
+    "Name": "Coffee Barun",
+    "Website": "https://www.thecoffeebarun.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJI8IHKXa1sGoRKMMsVCyL-L0",
+        "latitude": -34.8295232,
+        "longitude": 138.7065048,
+        "address": "132a Tolley Rd, St Agnes SA 5097, Australia",
+        "rating": 4.6
+      }
+    ]
+  },
+  {
+    "Name": "KWILA Coffee",
+    "Website": "https://www.kwila.coffee/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJ4xyfmSKuEmsR4Q8cYHVhTlc",
+        "latitude": -33.8806952,
+        "longitude": 151.2095523,
+        "address": "7/46-54 Foster St, Surry Hills NSW 2010, Australia",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "Name": "Pirate Coffee",
+    "Website": "https://www.drinkpirate.coffee/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJ4QcD4Bd5c2sRGevBoPnVTsg",
+        "latitude": -32.7530544,
+        "longitude": 152.0715757,
+        "address": "35 Shearwater Dr, Taylors Beach NSW 2316, Australia",
+        "rating": 5
+      }
+    ]
+  }
+]
