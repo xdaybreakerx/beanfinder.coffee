@@ -1,0 +1,16 @@
+---
+import Layout from "../layouts/Layout.astro";
+import FilterDrawer from "../components/FilterDrawer.astro";
+import MonolithicGoogleMap from "../components/ReactGoogleMap";
+
+const apiKey = import.meta.env.GOOGLE_MAPS_API_KEY;
+---
+
+<Layout title="Australian Coffee Roasters">
+  <h1 class="text-3xl font-bold p-4">Find a nearby Roaster</h1>
+  <FilterDrawer>
+    <div slot="main-content" id="wrapper">
+      <MonolithicGoogleMap apiKey={apiKey} client:only="react" />
+    </div>
+  </FilterDrawer>
+</Layout>

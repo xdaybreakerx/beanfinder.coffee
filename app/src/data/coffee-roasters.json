@@ -84,7 +84,7 @@
         "multiRoaster": false
     },
     {
-        "Name": "Atypical",
+        "Name": "Atypical Coffee",
         "Website": "https://atypical.coffee/",
         "State": "VIC",
         "hasCafe": false,
@@ -301,7 +301,7 @@
         "multiRoaster": false
     },
     {
-        "Name": "CUP.",
+        "Name": "CUP. Kilsyth",
         "Website": "https://www.instagram.com/cup.kilsyth/",
         "State": "VIC",
         "hasCafe": true,

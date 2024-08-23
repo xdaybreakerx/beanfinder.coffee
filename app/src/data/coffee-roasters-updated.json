@@ -1,0 +1,2675 @@
+[
+  {
+    "Name": "1645 Coffee Roasters",
+    "Website": "https://www.1645.com.au/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJh9Su5zDKsGoRcGfjekhb2ew"
+      }
+    ]
+  },
+  {
+    "Name": "2 Keys Coffee Boutique",
+    "Website": "https://www.instagram.com/2_keyscoffee_boutique/",
+    "State": "WA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJiyYa1pylMioRKk-alGO0RYc"
+      }
+    ]
+  },
+  {
+    "Name": "ACoffee",
+    "Website": "https://acoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJs8sfHx9D1moRJnTIRru0bxk"
+      }
+    ]
+  },
+  {
+    "Name": "Airjo",
+    "Website": "https://airjo.com/",
+    "State": "QLD",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": []
+  },
+  {
+    "Name": "Alchemy Coffee",
+    "Website": "https://coffeealchemy.com.au/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJ_YbDfEGwEmsRANEuZjL_uSI"
+      }
+    ]
+  },
+  {
+    "Name": "Allpress",
+    "Website": "https://www.allpressespresso.com/",
+    "State": "VIC, QLD, NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ97GV_uNC1moRTHYYvdZInGk"
+      },
+      {
+        "state": "QLD",
+        "place_id": "ChIJbxln8T9akWsRONvz40xPu6w"
+      },
+      {
+        "state": "NSW",
+        "place_id": "ChIJb-fTM7-xEmsRt8Blg4FxvGk"
+      }
+    ]
+  },
+  {
+    "Name": "Almanac Roasters",
+    "Website": "https://almanacroasters.com/",
+    "State": "QLD",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJR3dfIg7ik2sRhiPsuY04CjY"
+      }
+    ]
+  },
+  {
+    "Name": "Arrosoto Coffee",
+    "Website": "https://arrostocoffee.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJDWY59nMrwWoRpDLCHpM-1DI"
+      }
+    ]
+  },
+  {
+    "Name": "Art Of Espresso",
+    "Website": "https://artofespresso.com.au/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJX59nDaf-GWsRFyI44PAGHYE"
+      }
+    ]
+  },
+  {
+    "Name": "Artificer Coffee ",
+    "Website": "https://artificercoffee.com/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJs4Lblh6uEmsRlGsK1tv6qY8"
+      }
+    ]
+  },
+  {
+    "Name": "Artisti Coffee Roasters",
+    "Website": "https://artisti.com.au/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJcaUFRJMRnGsRKi_uVaIH5ag"
+      }
+    ]
+  },
+  {
+    "Name": "ASLAN Coffee Roasters",
+    "Website": "https://www.aslancoffee.com.au/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJ2YdBdXivEmsRvesf9tONMsw"
+      }
+    ]
+  },
+  {
+    "Name": "Atypical Coffee",
+    "Website": "https://atypical.coffee/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": []
+  },
+  {
+    "Name": "Axil Coffee Roasters",
+    "Website": "https://axilcoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJgwgMg99D1moR4u3FR8Nq1x8"
+      }
+    ]
+  },
+  {
+    "Name": "b3 Coffee",
+    "Website": "https://b3coffee.com.au/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJkRH7Y77RsGoR3ZK8JjCZoRQ"
+      }
+    ]
+  },
+  {
+    "Name": "Barrio",
+    "Website": "https://www.barriocollective.com/",
+    "State": "ACT",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "ACT",
+        "place_id": "ChIJj5Ui02NNFmsRNHH07evNuz0"
+      }
+    ]
+  },
+  {
+    "Name": "Bean Cartel",
+    "Website": "https://www.thebeancartel.com.au/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJX3UXcQ8V1moRb0oFu5rmxfk"
+      }
+    ]
+  },
+  {
+    "Name": "Bellissimo Coffee",
+    "Website": "https://www.bellissimocoffee.com.au/",
+    "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJ1yRAg5JZkWsRqCZKC6rcNCU"
+      }
+    ]
+  },
+  {
+    "Name": "Black Mass Roasters",
+    "Website": "https://blackmassroasters.com/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJKRXBsD2xEmsRVe81SfhddGM"
+      }
+    ]
+  },
+  {
+    "Name": "Blackbird Espresso",
+    "Website": "https://blackbirdespresso.shop/",
+    "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJo0UDfrZbkWsRH9DAyoI73tQ"
+      }
+    ]
+  },
+  {
+    "Name": "Blacklist Coffee",
+    "Website": "https://blacklistcoffee.com.au/",
+    "State": "WA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJ12DBA2i7MioRr0TBxQNMpc4"
+      }
+    ]
+  },
+  {
+    "Name": "Blackstone Road",
+    "Website": "https://blackstoneroad.com.au/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJ326-kNq0lmsRsIDe81qjAgU"
+      }
+    ]
+  },
+  {
+    "Name": "Bliss Coffee Roasters",
+    "Website": "https://blisscoffeeroasters.com.au/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJAfRu2l5Pc2sRCjVW8H7PTpM"
+      }
+    ]
+  },
+  {
+    "Name": "BLK MRKT Coffee",
+    "Website": "https://blkmrktcoffee.com/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJiwk7YPPFsGoRY8ErQYondaI"
+      }
+    ]
+  },
+  {
+    "Name": "Block Coffee",
+    "Website": "https://blockcoffee.au/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJGXnDNdOlEmsRnAvD8Z08gtU"
+      }
+    ]
+  },
+  {
+    "Name": "Blume Coffee",
+    "Website": "https://blumecoffee.com/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ03KbrrhD1moRgjQPC-NYp6Y"
+      }
+    ]
+  },
+  {
+    "Name": "Brightside Coffee Co",
+    "Website": "https://brightside.coffee/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJL4k3GXdp1moRx5sxIDCAgIM"
+      }
+    ]
+  },
+  {
+    "Name": "Bun Coffee",
+    "Website": "https://www.buncoffee.com.au/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJZTOS4QtikGsRKHf4srByS80"
+      }
+    ]
+  },
+  {
+    "Name": "Campos Coffee",
+    "Website": "https://camposcoffee.com/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ0ej2JTRD1moRWDhsQ9v8R-U"
+      }
+    ]
+  },
+  {
+    "Name": "Cartel Coffee Roasters",
+    "Website": "https://www.coffeecartel.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJX3UXcQ8V1moRb0oFu5rmxfk"
+      }
+    ]
+  },
+  {
+    "Name": "Central Coast Coffee",
+    "Website": "https://www.centralcoastcoffee.com.au/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJEXZjw-LNcmsRfrtI6JQ0IS0"
+      }
+    ]
+  },
+  {
+    "Name": "Charlie Black Coffee Co",
+    "Website": "https://www.charlieblack.co/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJAdDqAFTtuWoRm9_sW6Nt41Y"
+      }
+    ]
+  },
+  {
+    "Name": "Cheeky Devil Coffee Roasters",
+    "Website": "https://cheekydevilcoffee.com.au/",
+    "State": "TAS",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "TAS",
+        "place_id": "ChIJz30D0_vZbaoRFsVw1Pqzb0E"
+      }
+    ]
+  },
+  {
+    "Name": "Cirelli Coffee Roasting Co",
+    "Website": "https://www.cirellicoffee.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ4Tl8H1jPsGoRX7eQY6mcSkE"
+      }
+    ]
+  },
+  {
+    "Name": "Clark St Coffee Roasters",
+    "Website": "https://www.clarkst.coffee/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ80M2blFC1moRiIMpurSj1o0"
+      }
+    ]
+  },
+  {
+    "Name": "Code Black Coffee",
+    "Website": "https://codeblackcoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJbyGMaTpn1moRDl-Dj_Zv_hI"
+      }
+    ]
+  },
+  {
+    "Name": "Coffee Beans Delivered",
+    "Website": "https://coffeebeansdelivered.com.au/",
+    "State": "QLD",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": []
+  },
+  {
+    "Name": "Coffee Chakra ",
+    "Website": "https://coffeechakra.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJY7i3xDu9JmsR2dj-yf1xeRk"
+      }
+    ]
+  },
+  {
+    "Name": "Coffee in Common",
+    "Website": "https://www.coffeeincommon.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJNar7yGxd1moRChp3KKWw3Tw"
+      }
+    ]
+  },
+  {
+    "Name": "Coffee Supreme",
+    "Website": "https://shopau.coffeesupreme.com/",
+    "State": "VIC, QLD",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJLbC7N1VC1moRsxcEIQwt5DE"
+      },
+      {
+        "state": "QLD",
+        "place_id": "ChIJ4YBz0RRakWsREPnjwxmN24I"
+      }
+    ]
+  },
+  {
+    "Name": "Coffee Warehouse",
+    "Website": "https://www.coffeewarehouse.com.au/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJDb5G_kl8DWsRlH-0ve10q2w"
+      }
+    ]
+  },
+  {
+    "Name": "Crema Coffee Co",
+    "Website": "https://cremacoffeeco.com.au/",
+    "State": "WA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJVTzHMCiWMioRjrUP2Dl6F6A"
+      }
+    ]
+  },
+  {
+    "Name": "Cruze",
+    "Website": "https://www.cruzecoffee.com.au/",
+    "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJz7-F1JNmeGkRyCqSSG5AcD8"
+      }
+    ]
+  },
+  {
+    "Name": "CUP.",
+    "Website": "https://www.instagram.com/cup.kilsyth/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJuZbEPNFp1moRG0SB7f8ndHo"
+      }
+    ]
+  },
+  {
+    "Name": "Danes",
+    "Website": "https://danes.com.au/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJSfatNyqeEmsRT1EOgP20KP8"
+      }
+    ]
+  },
+  {
+    "Name": "Darkstar Coffee",
+    "Website": "https://www.darkstarcoffee.com.au/",
+    "State": "WA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJT_wR1lGiMioR0WAc_j9sQLE"
+      }
+    ]
+  },
+  {
+    "Name": "Dawn Patrol Coffee",
+    "Website": "https://www.dawnpatrolcoffee.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJNS6Ge_4psWoRpPMqe3XN9Zc"
+      }
+    ]
+  },
+  {
+    "Name": "Di Bartoli",
+    "Website": "https://dibartoli.com.au/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJzRpCPvKtEmsRxgmAKlpcWnA"
+      }
+    ]
+  },
+  {
+    "Name": "Dtown Coffee Roasters",
+    "Website": "https://dtowncoffeeroasters.com/",
+    "State": "NT",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NT",
+        "place_id": "ChIJ83RUYZSTwCwRsanfhSLEna8"
+      }
+    ]
+  },
+  {
+    "Name": "Dukes Coffee",
+    "Website": "https://www.dukescoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJyaNNI7RC1moRQcMRU8Ucz8o"
+      }
+    ]
+  },
+  {
+    "Name": "Edition Roasters",
+    "Website": "https://editionroasters.com/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJJeRjRtmvEmsRvku-OhXBVAI"
+      }
+    ]
+  },
+  {
+    "Name": "Elementary Coffee",
+    "Website": "https://www.elementarycoffee.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJt-jKTSbPsGoREdQDTJur4Mw"
+      }
+    ]
+  },
+  {
+    "Name": "Everyday Coffee",
+    "Website": "https://everyday-coffee.com/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJhb8hqx9D1moREUdvGRuSNic"
+      }
+    ]
+  },
+  {
+    "Name": "Fat Cat Coffee Roasters",
+    "Website": "https://www.fatcatcoffeeroasters.com/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJo4D3kmAPKWsRwzxb5JUSG7M"
+      }
+    ]
+  },
+  {
+    "Name": "FiORi Coffee",
+    "Website": "https://fioricoffee.com/",
+    "State": "WA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJ7fLSHJ6vMioRvSa6tpVcb68"
+      }
+    ]
+  },
+  {
+    "Name": "Fish River Roasters",
+    "Website": "https://www.fishriverroasters.com.au/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJzeGGS6_6EWsRGNT8OcgkWwk"
+      }
+    ]
+  },
+  {
+    "Name": "Five Senses Coffee",
+    "Website": "https://fivesenses.com.au/",
+    "State": "WA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJ88h-Ec66MioRtW_8mGqhg_0"
+      }
+    ]
+  },
+  {
+    "Name": "Floozy coffee",
+    "Website": "https://floozycoffee.com/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJpW4F5ZwVc2sR1NXQJsrdz6Q"
+      }
+    ]
+  },
+  {
+    "Name": "Fonzie Abbott",
+    "Website": "https://fonzieabbott.com/",
+    "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJj-3v2LZZkWsRXG8ff--ORsw"
+      }
+    ]
+  },
+  {
+    "Name": "Four",
+    "Website": "https://fourcoffee.com.au/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJZ934S0KuEmsR_0lxV3PTR4M"
+      }
+    ]
+  },
+  {
+    "Name": "Grand'Cru Coffee",
+    "Website": "https://grandcru.coffee/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJ74bN_uqwEmsRUJGiH1rKwPI"
+      }
+    ]
+  },
+  {
+    "Name": "Griffiths Bros. Coffee Roasters",
+    "Website": "https://griffithsbros.com.au/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJuY8mOF0V1moRdTiqgEVv0GE"
+      }
+    ]
+  },
+  {
+    "Name": "Hark! Coffee",
+    "Website": "https://harkcoffee.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJP3FnbJPPsGoR0stb9gepBH8"
+      }
+    ]
+  },
+  {
+    "Name": "Honeybird Coffee",
+    "Website": "https://honeybirdcoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJm_OpWS8R1GoRxTAyGxdBFB0"
+      }
+    ]
+  },
+  {
+    "Name": "Industry Beans",
+    "Website": "https://industrybeans.com/",
+    "State": "VIC, NSW, QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJgRXO-rRC1moRwcB73rcSyIE"
+      },
+      {
+        "state": "NSW",
+        "place_id": "ChIJeWDDDNOvEmsRF8SMPUwPbhw"
+      },
+      {
+        "state": "QLD",
+        "place_id": "ChIJLT2riqFZkWsRN1Y6UYR6rcs"
+      }
+    ]
+  },
+  {
+    "Name": "Infinity Coffee Roasters",
+    "Website": "https://www.infinitycoffeeroasters.org/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJ3amKAf1ZDWsRsfpMFJPFT44"
+      }
+    ]
+  },
+  {
+    "Name": "Inglewood Coffee Roasters",
+    "Website": "https://inglewoodcoffeeroasters.com.au/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": []
+  },
+  {
+    "Name": "Inka Coffee Lounge",
+    "Website": "https://inkacoffee.com.au/",
+    "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJ_wEIeXJleGkRRXlhkaUM8FY"
+      }
+    ]
+  },
+  {
+    "Name": "Kindred Coffee",
+    "Website": "https://kindredcoffee.com.au/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJeTPbJ2Jn1moR5OlJF-SN-1k"
+      }
+    ]
+  },
+  {
+    "Name": "La Crema",
+    "Website": "https://www.lacremacoffee.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": []
+  },
+  {
+    "Name": "Leaf Bean Machine",
+    "Website": "https://www.leafbeanmachine.com.au/",
+    "State": "WA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJi1OUzISZMioR1TQ1Hr1gVoE"
+      }
+    ]
+  },
+  {
+    "Name": "Leftfield Coffee",
+    "Website": "https://www.leftfieldcoffee.com/",
+    "State": "WA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJbTSUAYmwEmsR2QT8Yb-UE8c"
+      }
+    ]
+  },
+  {
+    "Name": "Lifted Coffee Co",
+    "Website": "https://www.liftedcoffeeco.com.au/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJkQez_Tw9c2sRHXAohtTy8RQ"
+      }
+    ]
+  },
+  {
+    "Name": "Light Coffee",
+    "Website": "https://www.lightcoffee.com.au/",
+    "State": "QLD",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJAdIocJVbkWsRif5TkFupK7w"
+      }
+    ]
+  },
+  {
+    "Name": "Lime Blue Coffee",
+    "Website": "https://limebluecoffee.com/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": []
+  },
+  {
+    "Name": "Little Marionette",
+    "Website": "https://thelittlemarionette.com/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJ_dMhPrSvEmsRIPQUB7ikav8"
+      }
+    ]
+  },
+  {
+    "Name": "Little Rebel Roastery",
+    "Website": "https://littlerebel.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJtRVgq6TF1WoRnytSstH091o"
+      }
+    ]
+  },
+  {
+    "Name": "Locale",
+    "Website": "https://localeespresso.com.au/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJNx0qvBlo1moREbaZuYZoCCI"
+      }
+    ]
+  },
+  {
+    "Name": "Loggerhead Coffee Co",
+    "Website": "https://loggerheadcoffeeco.com/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJ__9vxOKWEmsRgYJFfKfYNjk"
+      }
+    ]
+  },
+  {
+    "Name": "Made of Many",
+    "Website": "https://madeofmany.com/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJYw3RdhCuEmsRqZcvClvzEJU"
+      }
+    ]
+  },
+  {
+    "Name": "Maillard Project",
+    "Website": "https://themaillardproject.com.au/",
+    "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJzdB8HM5bkWsRyAbTflt7dy0"
+      }
+    ]
+  },
+  {
+    "Name": "Maker Coffee",
+    "Website": "https://makercoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJw3ZAzdJD1moRdTHBsWBAcao"
+      }
+    ]
+  },
+  {
+    "Name": "Manta Ray Coffee",
+    "Website": "https://mantaraycoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ37upB_w51moRIazB4WhVRI8"
+      }
+    ]
+  },
+  {
+    "Name": "Market Lane ",
+    "Website": "https://marketlane.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJT-tyjjRd1moRqeXlykOTVQc"
+      }
+    ]
+  },
+  {
+    "Name": "Mecca Coffee",
+    "Website": "https://www.mecca.coffee/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJ92I17cexEmsRQMdkCcGReCI"
+      }
+    ]
+  },
+  {
+    "Name": "Micrology Coffee",
+    "Website": "https://micrology.com.au/",
+    "State": "WA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJ-y168Ca7MioRFct98K2D27E"
+      }
+    ]
+  },
+  {
+    "Name": "Monastery Coffee",
+    "Website": "https://monastery.coffee/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJr7h2-fa1sGoRhr34eOoE2Lc"
+      }
+    ]
+  },
+  {
+    "Name": "Motobean",
+    "Website": "https://www.motobean.com.au/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJpcUC9C4j12oRmmc0Bce1Ths"
+      }
+    ]
+  },
+  {
+    "Name": "My Cuppa",
+    "Website": "https://www.mycuppa.com.au/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJH4jdfnE71moRzj9OlhFmipE"
+      }
+    ]
+  },
+  {
+    "Name": "Northbridge Coffee Roasters",
+    "Website": "https://theroasters.com.au/",
+    "State": "WA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJNc5x89G6MioRMv8URxYOH2s"
+      }
+    ]
+  },
+  {
+    "Name": "Ocean Grind",
+    "Website": "https://oceangrind.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ2eNpXeFt1GoRldHTEttmxBg"
+      }
+    ]
+  },
+  {
+    "Name": "Ona Coffee",
+    "Website": "https://onacoffee.com.au/",
+    "State": "ACT, NSW, VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "ACT",
+        "place_id": "ChIJk0gvbjNMFmsRmIOvIOLv8CI"
+      },
+      {
+        "state": "NSW",
+        "place_id": "ChIJ9--VtvaxEmsR7dk5e90VOLI"
+      },
+      {
+        "state": "VIC",
+        "place_id": "ChIJ0Rw8XyND1moRlQ3nyEFLcqk"
+      }
+    ]
+  },
+  {
+    "Name": "Only Coffee Project",
+    "Website": "https://onlycoffeeproject.square.site/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJJWPz6M6vEmsR34uUIX1KxjA"
+      }
+    ]
+  },
+  {
+    "Name": "Pablo & Rusty's Coffee Roasters",
+    "Website": "https://pabloandrustys.com.au/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJYyHMmwClEmsRrxuKJK2x-yI"
+      }
+    ]
+  },
+  {
+    "Name": "Padre Coffee",
+    "Website": "https://www.padrecoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJK_V6t_5n1moR_TcAscymyIw"
+      }
+    ]
+  },
+  {
+    "Name": "Paradox Roasters",
+    "Website": "https://paradoxroasters.com/",
+    "State": "NSW, QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJe6c94LOZEmsRQps4EU8sxVE"
+      },
+      {
+        "state": "QLD",
+        "place_id": "ChIJ-3kJqhIFkWsRv2SeguNO9KY"
+      }
+    ]
+  },
+  {
+    "Name": "Parallel Coffee Roasters",
+    "Website": "https://www.parallelroasters.com/",
+    "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJXaG3YWZOkWsR-6j5O7jZvOk"
+      }
+    ]
+  },
+  {
+    "Name": "Passport",
+    "Website": "https://passportcoffee.com.au/",
+    "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJJU1PMB1akWsRQp5AB7MU_n8"
+      }
+    ]
+  },
+  {
+    "Name": "Patio Coffee",
+    "Website": "https://patiocoffee.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJPbM1M5PPsGoRj9ulonJk6KQ"
+      }
+    ]
+  },
+  {
+    "Name": "Patricia's ",
+    "Website": "https://www.patriciacoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJn1FUnktd1moRgZCDC6aPCcw"
+      }
+    ]
+  },
+  {
+    "Name": "Pillar Coffee",
+    "Website": "https://pillarcoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJsRiC5BZt1moR9T888kHE7kg"
+      }
+    ]
+  },
+  {
+    "Name": "Platform 9 Coffee",
+    "Website": "https://p9coffee.com.au/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJQ8CIW1tfIWsROqyEWnoJIaU"
+      }
+    ]
+  },
+  {
+    "Name": "Pogo Coffee Roasters",
+    "Website": "https://pogocoffee.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJA3KnwiHPsGoRET8uRcD_rkc"
+      }
+    ]
+  },
+  {
+    "Name": "Pound Coffee Roastery",
+    "Website": "https://poundcoffeeroastery.com.au/",
+    "State": "WA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJc-mDzEqiMioRbkieopcen2g"
+      }
+    ]
+  },
+  {
+    "Name": "Primary Coffee Roasters",
+    "Website": "https://www.primarycoffeeroasters.com/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJB26t3gyuEmsRMwApf2WGBOE"
+      }
+    ]
+  },
+  {
+    "Name": "Prodigal Coffee",
+    "Website": "https://prodigalcoffeeroasters.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJc0iJzTbh1WoRvBF3VluPhIQ"
+      }
+    ]
+  },
+  {
+    "Name": "Project Zero Coffee",
+    "Website": "https://www.instagram.com/projectzero.coffee/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJidh4n8hd1moRqRURdejMMCM"
+      }
+    ]
+  },
+  {
+    "Name": "Proud Mary",
+    "Website": "https://www.proudmarycoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJQZ-aOeBC1moRuuo3eAh3hGE"
+      }
+    ]
+  },
+  {
+    "Name": "Puzzle Coffee",
+    "Website": "https://www.puzzle.coffee/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJKX5tnkBD1moRwt30NN8sXWU"
+      }
+    ]
+  },
+  {
+    "Name": "Ransom",
+    "Website": "https://ransomspecialtycoffee.com/",
+    "State": "QLD",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJ8yplLA1ekWsRAJbe81qjAgU"
+      }
+    ]
+  },
+  {
+    "Name": "Rebel Alliance Roasters",
+    "Website": "https://rebelroasters.com.au/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": []
+  },
+  {
+    "Name": "Reuben Hills",
+    "Website": "https://www.reubenhills.com.au/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJm_F_mhiuEmsR3Ah4Quu1Odg"
+      }
+    ]
+  },
+  {
+    "Name": "Reverence",
+    "Website": "https://reverencecoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJt7-JPBld1moRjMAqzh7ZieM"
+      }
+    ]
+  },
+  {
+    "Name": "Revolving Door Roasters",
+    "Website": "https://www.revolvingdoor.com.au/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJC9eYcQ3_nWsRIZF3xnJ89Bg"
+      }
+    ]
+  },
+  {
+    "Name": "Ritual Coffee Roasters",
+    "Website": "https://ritualcoffee.com.au/",
+    "State": "TAS",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "TAS",
+        "place_id": "ChIJYS7r7QencKoRpyK8JkXjPhU"
+      }
+    ]
+  },
+  {
+    "Name": "Roadtrip Roasters",
+    "Website": "https://roadtriproasters.com.au/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJ5ZrhmG3ldWsRzk-sctyveHA"
+      }
+    ]
+  },
+  {
+    "Name": "Roastville",
+    "Website": "https://roastville.com.au/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJI8_EA2iwEmsRp0c2eElAdS8"
+      }
+    ]
+  },
+  {
+    "Name": "Rosso Roasting Co",
+    "Website": "https://rossoroastingco.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJPwIZUdNb1moR5zydvAV6nKU"
+      }
+    ]
+  },
+  {
+    "Name": "Rumble Coffee Roasters",
+    "Website": "https://www.rumblecoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ-0_d7Bld1moRAQmEA8DRWV8"
+      }
+    ]
+  },
+  {
+    "Name": "Saazaa",
+    "Website": "https://saazaa.coffee/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ_zOw5uY51moRwndkTFHKB84"
+      }
+    ]
+  },
+  {
+    "Name": "Sample Coffee ",
+    "Website": "https://samplecoffee.com.au/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJE7kpAFuwEmsRqc4Eidq0bR0"
+      }
+    ]
+  },
+  {
+    "Name": "San Pedro Coffee",
+    "Website": "https://sanpedrocoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJiZWJPBld1moRzRRnstRvi9k"
+      }
+    ]
+  },
+  {
+    "Name": "Sensory Lab",
+    "Website": "https://sensorylab.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJT8vM84Zn1moRRK6blnQpCn4"
+      }
+    ]
+  },
+  {
+    "Name": "Seven Miles Roasters",
+    "Website": "https://www.sevenmiles.com.au/",
+    "State": "VIC, NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJZ19eqLhF1moRZ9LmazYfTak"
+      },
+      {
+        "state": "NSW",
+        "place_id": "ChIJXYZl8bGrEmsRKpC6MUMYXEY"
+      }
+    ]
+  },
+  {
+    "Name": "Seven Seeds",
+    "Website": "https://sevenseeds.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJvdx3kjJd1moRHnjYhByshFo"
+      }
+    ]
+  },
+  {
+    "Name": "Single O",
+    "Website": "https://singleo.com.au/",
+    "State": "NSW, QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJNUOUhSKuEmsRj2F2Arcx_OQ"
+      },
+      {
+        "state": "QLD",
+        "place_id": "ChIJ26dpFAhakWsRgsJJVzlLAB4"
+      }
+    ]
+  },
+  {
+    "Name": "Sipping Duck Coffee Roasters",
+    "Website": "https://www.sippingduck.com.au/",
+    "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJH_f9q6lmeGkRZoG-Uo9X1yM"
+      }
+    ]
+  },
+  {
+    "Name": "Sixpence Coffee",
+    "Website": "https://sixpencecoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJJUiNQdcgJGsRrpOUQOEPLPM"
+      }
+    ]
+  },
+  {
+    "Name": "Skittle Lane",
+    "Website": "https://skittlelane.com/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJ7StpST-uEmsRAj-sK758jE8"
+      }
+    ]
+  },
+  {
+    "Name": "Small Batch Roasting Co",
+    "Website": "https://www.smallbatch.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ2zpQRjFd1moRr8ns-bIfQhY"
+      }
+    ]
+  },
+  {
+    "Name": "Soul City Roasters",
+    "Website": "https://soulcityroasters.com/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": []
+  },
+  {
+    "Name": "Sparks Coffee Roasters",
+    "Website": "https://sparkscoffeeroasters.com/",
+    "State": "WA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJjz_mxEGTMioR-r_JMV6p5iE"
+      }
+    ]
+  },
+  {
+    "Name": "St Ali",
+    "Website": "https://stali.com.au/",
+    "State": "VIC, QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJJ5bS6P9n1moRx76U3LjtN1A"
+      },
+      {
+        "state": "QLD",
+        "place_id": "ChIJK5iHlvVZkWsRy_2IO7kIC24"
+      }
+    ]
+  },
+  {
+    "Name": "Standing Room Coffee",
+    "Website": "https://standingroomcoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ_9QKsyZD1moRTBnPFR7DF0Q"
+      }
+    ]
+  },
+  {
+    "Name": "Stitch Coffee",
+    "Website": "https://www.stitch.coffee/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJf-5n3HWvEmsRwrzJ27_9NYs"
+      }
+    ]
+  },
+  {
+    "Name": "Storehouse Roastery",
+    "Website": "https://www.storehouseroastery.com/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ0-DTrPwl1moRWAcBXYg-cog"
+      }
+    ]
+  },
+  {
+    "Name": "Symmetry Coffee Roasters",
+    "Website": "https://symmetrycoffeeroasters.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJw7GdXrQ41moRqGcQLPhfYeQ"
+      }
+    ]
+  },
+  {
+    "Name": "Tasmanian Coffee Roasters",
+    "Website": "https://tasmaniancoffee.com.au/",
+    "State": "TAS",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "TAS",
+        "place_id": "ChIJrTAZb-zZbaoR1vfohdTtnIM"
+      }
+    ]
+  },
+  {
+    "Name": "Tattooed Sailor Coffee Roasters",
+    "Website": "https://www.tattooedsailor.com.au/",
+    "State": "QLD",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJm4fdhgRkeGkRoHUeOejKG7g"
+      }
+    ]
+  },
+  {
+    "Name": "Tim Adams",
+    "Website": "https://www.timadams.net.au/",
+    "State": "QLD",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJY4rm3uufk2sR-FlMsBt1LEY"
+      }
+    ]
+  },
+  {
+    "Name": "Toby's Estate",
+    "Website": "https://www.tobysestate.com.au/",
+    "State": "QLD, NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJK6KHMhFZkWsRD6hBg7FUto4"
+      },
+      {
+        "state": "NSW",
+        "place_id": "ChIJR-S-I9axEmsRGjjcmNfvx6k"
+      }
+    ]
+  },
+  {
+    "Name": "Twofish Coffee",
+    "Website": "https://twofishcoffee.com.au/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": []
+  },
+  {
+    "Name": "Vacation",
+    "Website": "https://vacationcoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJT5UYfksx1GoRNJWCvuL8Tlo"
+      }
+    ]
+  },
+  {
+    "Name": "Veneziano Coffee",
+    "Website": "https://venezianocoffee.com.au/",
+    "State": "VIC, NSW, QLD, SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJvUxMiP9C1moRWm5_z4LcMAc"
+      },
+      {
+        "state": "NSW",
+        "place_id": "ChIJq6qWLhquEmsRjiPx-mY99rQ"
+      },
+      {
+        "state": "QLD",
+        "place_id": "ChIJe44AfJdQkWsRIFkjGqlNNzs"
+      },
+      {
+        "state": "SA",
+        "place_id": "ChIJV5bw9OZZ1moRt3gR-1Sckmg"
+      }
+    ]
+  },
+  {
+    "Name": "Vice Coffee Roasters",
+    "Website": "https://shopvicecoffeeroasters.com/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ_XAxQxjJsGoRIBGeNraBipo"
+      }
+    ]
+  },
+  {
+    "Name": "Villino Coffee Roasters",
+    "Website": "https://villino.com.au/",
+    "State": "TAS",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "TAS",
+        "place_id": "ChIJLVVHO5t1bqoRx2GfeboXBcU"
+      }
+    ]
+  },
+  {
+    "Name": "White Horse Coffee",
+    "Website": "https://whitehorsecoffee.com.au/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJe4CkhkjHEmsRMeGGmX8POLY"
+      }
+    ]
+  },
+  {
+    "Name": "White Owl Coffee",
+    "Website": "https://www.whiteowlcoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJCc3q40A31moRY521iIIgnsM"
+      }
+    ]
+  },
+  {
+    "Name": "White Whale Coffee Roasters",
+    "Website": "https://whitewhalecoffee.com.au/",
+    "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJ8cfu6LBmeGkRe1o1y6fwnqI"
+      }
+    ]
+  },
+  {
+    "Name": "Wide Open Road",
+    "Website": "https://wideopenroad.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJt_EqLTVD1moRpkK9XYJ9y4A"
+      }
+    ]
+  },
+  {
+    "Name": "Will & Co",
+    "Website": "https://www.willandco.com.au/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJQw3XQS-uEmsRWSAo6K-Jx28"
+      }
+    ]
+  },
+  {
+    "Name": "Willow Bend Coffee",
+    "Website": "https://willowbendcoffee.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ_XAxQxjJsGoRIBGeNraBipo"
+      }
+    ]
+  },
+  {
+    "Name": "Withams Coffee",
+    "Website": "https://withams.com.au/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJKwCCfnZYDWsRb9b9WnoobZU"
+      }
+    ]
+  },
+  {
+    "Name": "Wolff Coffee Roasters",
+    "Website": "https://wolffcoffeeroasters.com.au/",
+    "State": "QLD",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJR3dfIg7ik2sRhiPsuY04CjY"
+      }
+    ]
+  },
+  {
+    "Name": "Zest Coffee",
+    "Website": "https://www.zestcoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJfWVX5S1D1moRFXmqAP7fzaw"
+      }
+    ]
+  },
+  {
+    "Name": "121 Coffee",
+    "Website": "https://121coffee.com.au/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJ_RuFZyRmC2sRisdbGydMoeE"
+      }
+    ]
+  },
+  {
+    "Name": "Supernumerary Coffee",
+    "Website": "https://www.facebook.com/supernumerarycoffee/",
+    "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJUV8d8lBbkWsRa-W0jmcN6pM"
+      }
+    ]
+  },
+  {
+    "Name": "Karon Farm Coffee",
+    "Website": "https://karonfarmcoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJpQ8_w8ZM0WoRi7zVVdrumOA"
+      }
+    ]
+  },
+  {
+    "Name": "Coffee Peeps Pty Ltd",
+    "Website": "https://coffeepeeps.com.au/",
+    "State": "WA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJTVN4VlilMioRq4WBRtvJA7g"
+      }
+    ]
+  },
+  {
+    "Name": "Ballarat Coffee Roasters",
+    "Website": "https://ballaratcoffeeroasters.com.au",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJO3mOYPRF0WoRHHIKsOnr0Vw"
+      }
+    ]
+  },
+  {
+    "Name": "Offshoot Coffee",
+    "Website": "https://www.offshootcoffee.com.au/",
+    "State": "WA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJM-VbI8K7MioRjfdTbEtrN_0"
+      }
+    ]
+  },
+  {
+    "Name": "Simply Coffee",
+    "Website": "https://www.simplycoffee.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJi0yu4jXJsGoR8m7ow_X4nHE"
+      }
+    ]
+  },
+  {
+    "Name": "CBTB Coffee",
+    "Website": "https://shop.cbtb.coffee/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ6zzfpKDFsGoRc08yfUks80I"
+      }
+    ]
+  },
+  {
+    "Name": "Mikro Coffee Roasters",
+    "Website": "https://mikro.coffee/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJpUFv1RNv1GoRz6Jex4iJHCQ"
+      }
+    ]
+  },
+  {
+    "Name": "CoffeeSnobs BeanBay",
+    "Website": "https://beanbay.coffeesnobs.com.au/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJB5SKbCsX1GoR_RWGiuPBCR4"
+      }
+    ]
+  },
+  {
+    "Name": "No Label Coffee",
+    "Website": "https://nolabelcoffee.com/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJkxjDBPxTDWsR3xCjQyjChKA"
+      }
+    ]
+  },
+  {
+    "Name": "Altura Coffee",
+    "Website": "https://alturacoffee.com.au/collections/coffee",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJp9uyyvrFsGoRNXqJm-F2kz0"
+      }
+    ]
+  },
+  {
+    "Name": "Coffee By Ross",
+    "Website": "https://coffeebyross.com.au/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJpxVQtUDFsGoRC48iV5p5nZQ"
+      }
+    ]
+  },
+  {
+    "Name": "Ricca Coffee",
+    "Website": "https://www.riccacoffee.com.au/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ60X0GU_PsGoRdFCNCAlVomk"
+      }
+    ]
+  },
+  {
+    "Name": "Dimattina Coffee",
+    "Website": "https://dimattinacoffee.com.au/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ5UhHhAtF1moRmPMz5ZahtwE"
+      }
+    ]
+  },
+  {
+    "Name": "Lonsdale Roaster St",
+    "Website": "https://lonsdalestreetroasters.com/",
+    "State": "ACT",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "ACT",
+        "place_id": "ChIJ7wlSM9ZNFmsRy_jffbrG4oQ"
+      }
+    ]
+  },
+  {
+    "Name": "Jasper Coffee",
+    "Website": "https://www.jaspercoffee.com/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJNZsvUd9C1moRY00nWdYBy9k"
+      }
+    ]
+  },
+  {
+    "Name": "River City Coffee",
+    "Website": "https://rivercitycoffee.com.au/",
+    "State": "QLD",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJyUUuJZVnkWsRb7Susbk4AIM"
+      }
+    ]
+  },
+  {
+    "Name": "Super Roast Coffee",
+    "Website": "https://superroast.com.au/",
+    "State": "QLD",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJFW5RJ6lDkWsRbws2fgqlXHs"
+      }
+    ]
+  },
+  {
+    "Name": "Cavalier Roasters",
+    "Website": "https://www.cavalierroasters.com/",
+    "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJq6qqqgHwk2sRHPPJPYovImo"
+      }
+    ]
+  },
+  {
+    "Name": "First Fruit Coffee",
+    "Website": "https://firstfruits.coffee/",
+    "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJ-xalUiEQkWsRipkmRZjYDC8"
+      }
+    ]
+  },
+  {
+    "Name": "Blue Sky Coffee Roasters",
+    "Website": "https://blueskycoffee.coffee/",
+    "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJk5ZUt5NZkWsRrsV-kqOBhU4"
+      }
+    ]
+  },
+  {
+    "Name": "Bear Bones",
+    "Website": "https://bearbones.com.au/",
+    "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJTRJh5_JZkWsRKOpqv-0f_JM"
+      }
+    ]
+  },
+  {
+    "Name": "Bear Bones",
+    "Website": "https://bearbones.com.au/",
+    "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJTRJh5_JZkWsRKOpqv-0f_JM"
+      }
+    ]
+  },
+  {
+    "Name": "Foaster and Black",
+    "Website": "https://fosterandblack.com/",
+    "State": "QLD, NSW, VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJW9F8FIVZkWsR_dCAeLdJnk8"
+      },
+      {
+        "state": "NSW",
+        "place_id": "ChIJAU6Yrb-rEmsRAnA9BCpYcYk"
+      },
+      {
+        "state": "VIC",
+        "place_id": "ChIJX7ZmCUNH1moRnqVKkByP9D4"
+      }
+    ]
+  },
+  {
+    "Name": "Craftwork Roasting Co",
+    "Website": "https://www.craftworkroasting.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJu7t0vkE31moRFjkPI4di-Jc"
+      }
+    ]
+  },
+  {
+    "Name": "Constance Coffee",
+    "Website": "https://constance.coffee/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": []
+  },
+  {
+    "Name": "Taylor's Blend",
+    "Website": "https://www.taylorblend.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJcY1R-ZjLsGoRze9TUKwj2Ok"
+      }
+    ]
+  },
+  {
+    "Name": "Coffee Bean Trading Co",
+    "Website": "https://coffeebeantrading.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJk4jjljTRsGoRx4xreh4x2PY"
+      }
+    ]
+  },
+  {
+    "Name": "SoHo Coffee Roasters",
+    "Website": "https://sohocoffeeroasters.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ829n_yPPsGoRiJ8ZmCogE38"
+      }
+    ]
+  },
+  {
+    "Name": "Kicco",
+    "Website": "https://www.kicco.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ0TAxWqXFsGoRuDHhxlG_1Pw"
+      }
+    ]
+  },
+  {
+    "Name": "West Beach Coffee Co",
+    "Website": "https://www.facebook.com/p/The-West-Beach-Coffee-Co-100092129446635/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ3YfhmsfEsGoR368LZAxTsqU"
+      }
+    ]
+  },
+  {
+    "Name": "D'Angelo Coffee",
+    "Website": "https://dangelocoffee.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ3SYKP0nPsGoR6NBdvS9kFWA"
+      }
+    ]
+  },
+  {
+    "Name": "My Kingdom For A Horse",
+    "Website": "https://www.mykingdomforahorse.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJa76_EyLPsGoR8AnZI-9H0s4"
+      }
+    ]
+  },
+  {
+    "Name": "Rio Coffee",
+    "Website": "https://riocoffee.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ2bcWG13JsGoRZ5i7m0Hqjmc"
+      }
+    ]
+  },
+  {
+    "Name": "Faithful Hound",
+    "Website": "https://faithfulhoundcoffee.com.au/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJAQBsKVTasGoRHtd-4kR-EV0"
+      }
+    ]
+  },
+  {
+    "Name": "De Groot Coffee Co",
+    "Website": "https://www.degrootcoffeeco.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJbUcfH5tLsWoR8CYfxqvSF2M"
+      }
+    ]
+  },
+  {
+    "Name": "Cherry Pickers Coffee",
+    "Website": "https://cherrypickerscoffee.com.au/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ-6q7elth1moRtFzJWny4fYY"
+      }
+    ]
+  },
+  {
+    "Name": "Cherry Pickers Coffee",
+    "Website": "https://cherrypickerscoffee.com.au/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ-6q7elth1moRtFzJWny4fYY"
+      }
+    ]
+  },
+  {
+    "Name": "Red Berry",
+    "Website": "https://redberryespresso.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ_6a2W-JC1moRYxTBkMVelLo"
+      }
+    ]
+  },
+  {
+    "Name": "Flying Chaff",
+    "Website": "https://www.theflyingchaff.com/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJF8AJaNDIsGoREZStkSsOW98"
+      }
+    ]
+  },
+  {
+    "Name": "Mila Coffee Co",
+    "Website": "https://www.milacoffeeco.com.au/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJqWCgNkjJsGoR6UmIPMSOV60"
+      }
+    ]
+  },
+  {
+    "Name": "Fleurieu Roast",
+    "Website": "https://fleurieuroast.com.au/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJu9XUMn47sWoRdseS8b2ifdI"
+      }
+    ]
+  },
+  {
+    "Name": "Coffee Journey",
+    "Website": "https://www.instagram.com/coffeejourneyadelaide/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJQa52MmLEsGoRJGxZJ_Nachw"
+      }
+    ]
+  },
+  {
+    "Name": "Mid Coast Coffee",
+    "Website": "https://midcoastroast.ecwid.com/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": []
+  },
+  {
+    "Name": "+55 (Plus Fifty Five)",
+    "Website": "https://plusfiftyfive.com/",
+    "State": "SA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": []
+  },
+  {
+    "Name": "Bray St Roasters",
+    "Website": "https://www.braystcoffee.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ0ToTLaXasGoR0XfX2ggYHDU"
+      }
+    ]
+  },
+  {
+    "Name": "Coffee Barun",
+    "Website": "https://www.thecoffeebarun.com.au/",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJI8IHKXa1sGoRKMMsVCyL-L0"
+      }
+    ]
+  },
+  {
+    "Name": "KWILA Coffee",
+    "Website": "https://www.kwila.coffee/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJ4xyfmSKuEmsR4Q8cYHVhTlc"
+      }
+    ]
+  },
+  {
+    "Name": "Pirate Coffee",
+    "Website": "https://www.drinkpirate.coffee/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJ4QcD4Bd5c2sRGevBoPnVTsg"
+      }
+    ]
+  }
+]

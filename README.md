@@ -55,6 +55,11 @@ Abstracting the filter options, we have a `state` selector as array of predefine
 ### Netlify Form Detection
 This was one of those features that should have been pretty much build-and-go. Netlify auto-detects any forms in your site and handles submission through their back-end services. However, this wasn’t happening (and from their support forums, I'm not the only one facing this issue when using Astro). I ended up using a combination of a __form.html file in the /public folder to help Netlify's form detection bots, and then AJAX for data submission. There was a lot of trial and error involved, but it was nice to handle this internally without adding another third-party tool to the project.
 
+### Handling Race Conditions with React Hooks
+One of the unexpected challenges I faced during development was managing the Google Maps integration using React components and hooks. Initially, I designed the map functionality to be highly modular, with each aspect (such as geolocation, markers, and search) handled by separate hooks. This seemed like the right approach to keep the code clean and maintainable. However, I soon encountered a persistent race condition due to Astro’s partial hydration process. Different hooks were being initialized at different times, leading to inconsistent state and unreliable map behavior.
+
+After several attempts to synchronize the hooks, I realized that the complexity of managing these asynchronous operations across multiple components was causing more issues than it was solving. The solution was to refactor the code into more of a monolithic component that handles all the map logic internally. This approach, while less modular, eliminated the race condition and provided a more reliable user experience. Although it was a shift from the initial plan, it reinforced the importance of flexibility in project development, especially when working with frameworks that introduce unique challenges like Astro’s partial hydration.
+
 ### Reflection
 Astro's approach to SSG was a fantastic match for this project, and I found learning the framework straightforward - allowing me to focus on what I wanted. Dynamic routing took a *long* time to get functional, and working but was the most rewarding part of the project once it was complete. Netlify (minus the form detection) made a quick and easy CD cycle for the project. All in all I'm happy with how this project came together and I'm excited to start spending my time trying new roasters instead of building this website. 
 
@@ -79,6 +84,7 @@ Astro's approach to SSG was a fantastic match for this project, and I found lear
 │
 ├── src/
 │   ├── components/
+│   ├── hooks/
 │   ├── data/
 │   ├── layouts/
 │   └── pages/
@@ -88,6 +94,7 @@ Astro's approach to SSG was a fantastic match for this project, and I found lear
 │   │     │              └── [page]
 │   │     └── online-subscriptions
 │   │            └── [page]
+│   ├── scripts/
 │   └── utils/
 └── package.json et al
 ```
@@ -147,6 +154,7 @@ All commands are run from the root of the project, from a terminal:
 - [x] drawer for filter options
 - [x] pagination for results array
 - [x] custom 404 page
-- [ ] Google Maps integration?
+- [x] Google Maps integration
+- [ ] Sort by rating or alphabetical in list view
 
 </details>
