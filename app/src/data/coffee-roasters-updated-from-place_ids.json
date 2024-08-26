@@ -117,11 +117,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJU2HEJQZvk2sRgMG5kCWn4lQ",
-        "latitude": -26.44499699999999,
-        "longitude": 153.0243779,
-        "address": "9 Fellowship Dr, Doonan QLD 4562, Australia",
-        "rating": 4.7
+        "place_id": "ChIJR3dfIg7ik2sRhiPsuY04CjY",
+        "latitude": -27.4187724,
+        "longitude": 153.0726795,
+        "address": "140B Gerler Rd, Hendra QLD 4011, Australia",
+        "rating": 4.5
       }
     ]
   },
@@ -216,7 +216,16 @@
     "State": "VIC",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ11nLXkhD1moRBvdu1MFSJpE",
+        "latitude": -37.8088841,
+        "longitude": 144.9615654,
+        "address": "62 A'Beckett St, Melbourne VIC 3000, Australia",
+        "rating": 4.7
+      }
+    ]
   },
   {
     "Name": "Axil Coffee Roasters",
@@ -741,7 +750,16 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJSfatNyqeEmsRT1EOgP20KP8",
+        "latitude": -33.6670152,
+        "longitude": 150.7374082,
+        "address": "143 Whitegates Rd, Londonderry NSW 2753, Australia",
+        "rating": 5
+      }
+    ]
   },
   {
     "Name": "Darkstar Coffee",
@@ -875,7 +893,7 @@
         "latitude": -37.7981641,
         "longitude": 144.9858767,
         "address": "36-38 Sackville St, Collingwood VIC 3066, Australia",
-        "rating": 4.4
+        "rating": 4.5
       }
     ]
   },
@@ -1159,11 +1177,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ3cdmrifPsGoRM3IfF0YHVoc",
-        "latitude": -34.9271888,
-        "longitude": 138.5967559,
-        "address": "70 Franklin St, Adelaide SA 5000, Australia",
-        "rating": 4.5
+        "place_id": "ChIJp7ODnLX_DogRpoSDGWWqMkI",
+        "latitude": 41.8839247,
+        "longitude": -88.2065439,
+        "address": "148 W Washington St, West Chicago, IL 60185, USA",
+        "rating": 4.8
       }
     ]
   },
@@ -1176,11 +1194,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ2wNPCxXQsGoRhSSM5dC7e2s",
-        "latitude": -34.9970498,
-        "longitude": 138.5773256,
-        "address": "8 Denis St, St Marys SA 5042, Australia",
-        "rating": 4.7
+        "place_id": "ChIJGw59ddbRsGoRLpV_oBAA-8U",
+        "latitude": -34.9975161,
+        "longitude": 138.5774868,
+        "address": "12 Denis St, St Marys SA 5042, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -1828,11 +1846,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJQZ-aOeBC1moRuuo3eAh3hGE",
-        "latitude": -37.8023383,
-        "longitude": 144.9851717,
-        "address": "172 Oxford St, Collingwood VIC 3066, Australia",
-        "rating": 4.5
+        "place_id": "ChIJTf9wo5xC1moRA4SnXIUrWr0",
+        "latitude": -37.837264,
+        "longitude": 144.9931451,
+        "address": "6/10 Yarra St, South Yarra VIC 3141, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -2091,11 +2109,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJvdx3kjJd1moRHnjYhByshFo",
-        "latitude": -37.8029711,
-        "longitude": 144.9590027,
-        "address": "114 Berkeley St, Carlton VIC 3053, Australia",
-        "rating": 4.4
+        "place_id": "ChIJZ19eqLhF1moRZ9LmazYfTak",
+        "latitude": -37.76901,
+        "longitude": 145.024248,
+        "address": "7 Montefiore St, Fairfield VIC 3078, Australia",
+        "rating": 5
       },
       {
         "state": "NSW",
@@ -2428,11 +2446,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJM_gOT_tq1moRm_qHcd6oUxM",
-        "latitude": -37.9109051,
-        "longitude": 145.1038017,
-        "address": "Shop 2/318 Huntingdale Rd, Huntingdale VIC 3166, Australia",
-        "rating": 4
+        "place_id": "ChIJT5UYfksx1GoRNJWCvuL8Tlo",
+        "latitude": -36.9847807,
+        "longitude": 143.3906074,
+        "address": "Victoria, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -3080,11 +3098,11 @@
       },
       {
         "state": "NSW",
-        "place_id": "ChIJAU6Yrb-rEmsRAnA9BCpYcYk",
-        "latitude": -33.7670481,
-        "longitude": 151.2653916,
-        "address": "Kiosk 10K02, Westfield Warringah Mall, Brookvale NSW 2100, Australia",
-        "rating": 4.7
+        "place_id": "ChIJKZ5FmRcdkWsRVzMKoQ4Ax7o",
+        "latitude": -28.077307,
+        "longitude": 153.3853076,
+        "address": "Shop 4305/19 Robina Town Centre Dr, Robina QLD 4226, Australia",
+        "rating": 4.1
       },
       {
         "state": "VIC",
@@ -3348,16 +3366,7 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "SA",
-        "place_id": "ChIJ6ycGOuPsuWoRaslMR5lt8q0",
-        "latitude": -34.4169992,
-        "longitude": 138.9218495,
-        "address": "521 Greenock Rd, Greenock SA 5360, Australia",
-        "rating": 3.7
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Mila Coffee Co",
