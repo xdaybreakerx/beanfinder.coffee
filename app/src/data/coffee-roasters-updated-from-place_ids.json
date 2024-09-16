@@ -117,11 +117,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJa3mOGYt8gmkRusJ2N2kY2KI",
-        "latitude": -17.010049,
-        "longitude": 145.337257,
-        "address": "136 Ivicevic Rd, Paddys Green QLD 4880, Australia",
-        "rating": 4.7
+        "place_id": "ChIJgUfMDSoQkWsRy2d2NrjKb44",
+        "latitude": -27.9313449,
+        "longitude": 153.3709203,
+        "address": "Unit 5/8 Technology Dr, Arundel QLD 4214, Australia",
+        "rating": 3.7
       }
     ]
   },
@@ -219,11 +219,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJ11nLXkhD1moRBvdu1MFSJpE",
-        "latitude": -37.8088841,
-        "longitude": 144.9615654,
-        "address": "62 A'Beckett St, Melbourne VIC 3000, Australia",
-        "rating": 4.7
+        "place_id": "ChIJ2zpQRjFd1moRr8ns-bIfQhY",
+        "latitude": -37.8043369,
+        "longitude": 144.9545001,
+        "address": "3-9 Little Howard St, North Melbourne VIC 3051, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -448,11 +448,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJj_3RCBGdlVQR8Zpotnav_sk",
-        "latitude": 45.3892786,
-        "longitude": -122.4083161,
-        "address": "Boring, OR 97009, USA",
-        "rating": 4.6
+        "place_id": "ChIJL4k3GXdp1moRx5sxIDCAgIM",
+        "latitude": -37.89661580000001,
+        "longitude": 145.0360472,
+        "address": "189a Booran Rd, Caulfield South VIC 3162, Australia",
+        "rating": 4.3
       }
     ]
   },
@@ -723,7 +723,7 @@
         "latitude": -16.9248814,
         "longitude": 145.7720297,
         "address": "1/21 McLeod St, Cairns City QLD 4870, Australia",
-        "rating": 4
+        "rating": 4.2
       }
     ]
   },
@@ -1051,8 +1051,8 @@
       {
         "state": "SA",
         "place_id": "ChIJP3FnbJPPsGoR0stb9gepBH8",
-        "latitude": -34.9567016,
-        "longitude": 138.6149691,
+        "latitude": -34.956869,
+        "longitude": 138.6148902,
         "address": "65 Duthy St, Malvern SA 5061, Australia",
         "rating": 4.6
       }
@@ -1168,11 +1168,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJp7ODnLX_DogRpoSDGWWqMkI",
-        "latitude": 41.8839247,
-        "longitude": -88.2065439,
-        "address": "148 W Washington St, West Chicago, IL 60185, USA",
-        "rating": 4.8
+        "place_id": "ChIJwb9WhU5RFGsRJ3KMrneonl8",
+        "latitude": -35.3178373,
+        "longitude": 150.4366261,
+        "address": "109 Princes Hwy, Milton NSW 2538, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -1258,16 +1258,7 @@
     "State": "VIC",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "VIC",
-        "place_id": "ChIJSb_QGK1MDogRTn_pOlBvM4M",
-        "latitude": 41.89979599999999,
-        "longitude": -87.94085199999999,
-        "address": "128 W 1st St, Elmhurst, IL 60126, USA",
-        "rating": 4.9
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Little Marionette",
@@ -1499,11 +1490,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJH4jdfnE71moRzj9OlhFmipE",
-        "latitude": -37.81488729999999,
-        "longitude": 145.2930957,
-        "address": "37 Centre Way, Croydon South VIC 3136, Australia",
-        "rating": 4.2
+        "place_id": "ChIJEaXJ2gbb2okRjN9JvsspWD4",
+        "latitude": 41.8327915,
+        "longitude": -75.8790136,
+        "address": "503 S Main St, Montrose, PA 18801, USA",
+        "rating": 4.9
       }
     ]
   },
@@ -1830,8 +1821,8 @@
       {
         "state": "VIC",
         "place_id": "ChIJidh4n8hd1moRqRURdejMMCM",
-        "latitude": -37.8166278,
-        "longitude": 144.9561879,
+        "latitude": -37.81688,
+        "longitude": 144.9561555,
         "address": "Store 1/140 King St, Melbourne VIC 3000, Australia",
         "rating": 4.8
       }
@@ -2058,11 +2049,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJE7kpAFuwEmsRqc4Eidq0bR0",
-        "latitude": -33.91299429999999,
-        "longitude": 151.1723173,
-        "address": "1.03/75 Mary St, St Peters NSW 2044, Australia",
-        "rating": 4.6
+        "place_id": "ChIJHUVSMyCuEmsRcOVnCCEwodc",
+        "latitude": -33.8866783,
+        "longitude": 151.2090638,
+        "address": "Shop 1a, 118 Devonshire Street (cnr, Holt St, Surry Hills NSW 2010, Australia",
+        "rating": 4.7
       }
     ]
   },
@@ -2417,7 +2408,7 @@
         "latitude": -27.4514024,
         "longitude": 153.0440679,
         "address": "1/33 Longland St, Newstead QLD 4006, Australia",
-        "rating": 4.5
+        "rating": 4.6
       },
       {
         "state": "NSW",
@@ -2552,7 +2543,16 @@
     "State": "VIC",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJKbpHd32BwYkRVgx2qNB-IhE",
+        "latitude": 40.105405,
+        "longitude": -74.14108999999999,
+        "address": "1198 Baylis Ct, Brick Township, NJ 08724, USA",
+        "rating": "N/A"
+      }
+    ]
   },
   {
     "Name": "White Whale Coffee Roasters",
@@ -3043,7 +3043,7 @@
         "latitude": -27.4917365,
         "longitude": 153.0455718,
         "address": "9/25 Lerna St, Woolloongabba QLD 4102, Australia",
-        "rating": 4.7
+        "rating": 4.8
       }
     ]
   },
@@ -3098,11 +3098,11 @@
       },
       {
         "state": "NSW",
-        "place_id": "ChIJAU6Yrb-rEmsRAnA9BCpYcYk",
-        "latitude": -33.7670481,
-        "longitude": 151.2653916,
-        "address": "Kiosk 10K02, Westfield Warringah Mall, Brookvale NSW 2100, Australia",
-        "rating": 4.7
+        "place_id": "ChIJKZ5FmRcdkWsRVzMKoQ4Ax7o",
+        "latitude": -28.077307,
+        "longitude": 153.3853076,
+        "address": "Shop 4305/19 Robina Town Centre Dr, Robina QLD 4226, Australia",
+        "rating": 4.1
       },
       {
         "state": "VIC",
@@ -3284,10 +3284,10 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJAQBsKVTasGoRHtd-4kR-EV0",
-        "latitude": -34.99829,
-        "longitude": 138.523509,
-        "address": "13 Byre Ave, Somerton Park SA 5044, Australia",
+        "place_id": "ChIJOXPUYRRAEmsRuVYeI1jz-Zc",
+        "latitude": -33.8179088,
+        "longitude": 150.2304159,
+        "address": "Faithful Hound Gully, New South Wales 2787, Australia",
         "rating": "N/A"
       }
     ]
