@@ -533,7 +533,7 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJ90mc0AvTD4gRjOgxYKxxprM"
+        "place_id": "ChIJVTzHMCiWMioRjrUP2Dl6F6A"
       }
     ]
   },
@@ -892,7 +892,7 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ3cdmrifPsGoRM3IfF0YHVoc"
+        "place_id": "ChIJxRQt-2jWTYYR9hEqtfVueZM"
       }
     ]
   },
@@ -905,7 +905,7 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJGw59ddbRsGoRLpV_oBAA-8U"
+        "place_id": "ChIJ2wNPCxXQsGoRhSSM5dC7e2s"
       }
     ]
   },
@@ -954,7 +954,12 @@
     "State": "QLD",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJAdIocJVbkWsRif5TkFupK7w"
+      }
+    ]
   },
   {
     "Name": "Lime Blue Coffee",
@@ -1228,7 +1233,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJK_V6t_5n1moR_TcAscymyIw"
+        "place_id": "ChIJYeSX8llD1moReVgb27XXvqY"
       }
     ]
   },
@@ -1857,7 +1862,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJT5UYfksx1GoRNJWCvuL8Tlo"
+        "place_id": "ChIJM_gOT_tq1moRm_qHcd6oUxM"
       }
     ]
   },
@@ -1895,7 +1900,7 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJU4NCID011moRLsHU_g9lhww"
+        "place_id": "ChIJicMduTfuuWoRtiRoWWN8Oi0"
       }
     ]
   },
@@ -1931,7 +1936,12 @@
     "State": "VIC",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJxbKM-Z1HIWsRDxDUW7W9pUg"
+      }
+    ]
   },
   {
     "Name": "White Whale Coffee Roasters",
@@ -1968,7 +1978,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ4_Ak3iKtEmsR6uPK8jv_Z7I"
+        "place_id": "ChIJQw3XQS-uEmsRWSAo6K-Jx28"
       }
     ]
   },

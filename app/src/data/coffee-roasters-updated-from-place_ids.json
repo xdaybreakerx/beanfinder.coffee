@@ -693,11 +693,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJ90mc0AvTD4gRjOgxYKxxprM",
-        "latitude": 41.9650971,
-        "longitude": -87.6656979,
-        "address": "1401 W Wilson Ave, Chicago, IL 60640, USA",
-        "rating": 4.6
+        "place_id": "ChIJVTzHMCiWMioRjrUP2Dl6F6A",
+        "latitude": -32.0652365,
+        "longitude": 115.9274906,
+        "address": "U2/10 Wittenberg Dr, Canning Vale WA 6155, Australia",
+        "rating": 4.8
       }
     ]
   },
@@ -1168,11 +1168,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ3cdmrifPsGoRM3IfF0YHVoc",
-        "latitude": -34.9271888,
-        "longitude": 138.5967559,
-        "address": "70 Franklin St, Adelaide SA 5000, Australia",
-        "rating": 4.5
+        "place_id": "ChIJxRQt-2jWTYYR9hEqtfVueZM",
+        "latitude": 32.903244,
+        "longitude": -97.19726299999999,
+        "address": "8700 N Tarrant Pkwy #109, North Richland Hills, TX 76182, USA",
+        "rating": 4.6
       }
     ]
   },
@@ -1185,11 +1185,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJGw59ddbRsGoRLpV_oBAA-8U",
-        "latitude": -34.9975161,
-        "longitude": 138.5774868,
-        "address": "12 Denis St, St Marys SA 5042, Australia",
-        "rating": 4.6
+        "place_id": "ChIJ2wNPCxXQsGoRhSSM5dC7e2s",
+        "latitude": -34.9970498,
+        "longitude": 138.5773256,
+        "address": "8 Denis St, St Marys SA 5042, Australia",
+        "rating": 4.7
       }
     ]
   },
@@ -1250,7 +1250,16 @@
     "State": "QLD",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJAdIocJVbkWsRif5TkFupK7w",
+        "latitude": -27.4941906,
+        "longitude": 153.0412322,
+        "address": "199 Logan Rd, Woolloongabba QLD 4102, Australia",
+        "rating": 4.8
+      }
+    ]
   },
   {
     "Name": "Lime Blue Coffee",
@@ -1608,11 +1617,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJK_V6t_5n1moR_TcAscymyIw",
-        "latitude": -37.8325381,
-        "longitude": 144.9563457,
-        "address": "South Melbourne Market, 33/322-326 Coventry St, South Melbourne VIC 3205, Australia",
-        "rating": 4
+        "place_id": "ChIJYeSX8llD1moReVgb27XXvqY",
+        "latitude": -37.7641144,
+        "longitude": 144.9732824,
+        "address": "438 Lygon St, Brunswick East VIC 3057, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -1824,7 +1833,7 @@
         "latitude": -37.81688,
         "longitude": 144.9561555,
         "address": "Store 1/140 King St, Melbourne VIC 3000, Australia",
-        "rating": 4.8
+        "rating": 4.9
       }
     ]
   },
@@ -2036,7 +2045,7 @@
         "latitude": -37.8177555,
         "longitude": 145.2216268,
         "address": "8 Olive Grove, Ringwood VIC 3134, Australia",
-        "rating": 4.8
+        "rating": 4.9
       }
     ]
   },
@@ -2188,7 +2197,7 @@
         "latitude": -36.72865329999999,
         "longitude": 146.96169,
         "address": "15 Wills St, Bright VIC 3741, Australia",
-        "rating": 4.8
+        "rating": 4.9
       }
     ]
   },
@@ -2437,11 +2446,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJT5UYfksx1GoRNJWCvuL8Tlo",
-        "latitude": -36.9847807,
-        "longitude": 143.3906074,
-        "address": "Victoria, Australia",
-        "rating": "N/A"
+        "place_id": "ChIJM_gOT_tq1moRm_qHcd6oUxM",
+        "latitude": -37.9109051,
+        "longitude": 145.1038017,
+        "address": "Shop 2/318 Huntingdale Rd, Huntingdale VIC 3166, Australia",
+        "rating": 4
       }
     ]
   },
@@ -2495,11 +2504,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJU4NCID011moRLsHU_g9lhww",
-        "latitude": -37.63703,
-        "longitude": 145.196518,
-        "address": "946 Heidelberg - Kinglake Rd, Hurstbridge VIC 3099, Australia",
-        "rating": 4.5
+        "place_id": "ChIJicMduTfuuWoRtiRoWWN8Oi0",
+        "latitude": -34.48069949999999,
+        "longitude": 138.8984266,
+        "address": "85 Krieg Rd, Seppeltsfield SA 5355, Australia",
+        "rating": 5
       }
     ]
   },
@@ -2543,7 +2552,16 @@
     "State": "VIC",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJxbKM-Z1HIWsRDxDUW7W9pUg",
+        "latitude": -36.05180560000001,
+        "longitude": 146.5862866,
+        "address": "105 Fraser Rd, Rutherglen VIC 3685, Australia",
+        "rating": "N/A"
+      }
+    ]
   },
   {
     "Name": "White Whale Coffee Roasters",
@@ -2588,11 +2606,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ4_Ak3iKtEmsR6uPK8jv_Z7I",
-        "latitude": -33.88865729999999,
-        "longitude": 151.2756322,
-        "address": "Corner of Beach Road and, Gould St, Bondi Beach NSW 2026, Australia",
-        "rating": 4.2
+        "place_id": "ChIJQw3XQS-uEmsRWSAo6K-Jx28",
+        "latitude": -33.8798342,
+        "longitude": 151.1973423,
+        "address": "103 Jones St, Ultimo NSW 2007, Australia",
+        "rating": 3.8
       }
     ]
   },
@@ -2660,7 +2678,7 @@
         "latitude": -37.816371,
         "longitude": 145.012307,
         "address": "67 North St, Richmond VIC 3121, Australia",
-        "rating": 4.9
+        "rating": 5
       }
     ]
   },
@@ -2864,7 +2882,7 @@
         "latitude": -34.9048639,
         "longitude": 138.5378779,
         "address": "253 Grange Rd, Findon SA 5023, Australia",
-        "rating": 4.9
+        "rating": 4.8
       }
     ]
   },
