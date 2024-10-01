@@ -12,7 +12,6 @@ BeanFinder is a curated directory of Australian coffee roasters designed to help
 ## 💻 Tech Stack and tools
 
 - **Main Framework** - [Astro](https://astro.build/)
-- **Type Checking** - [TypeScript](https://www.typescriptlang.org/)
 - **Styling** - [TailwindCSS](https://tailwindcss.com/)
 - **Component Library** - [DaisyUI](https://daisyui.com/)
 - **Deployment** - [Netlify](https://www.netlify.com/)
