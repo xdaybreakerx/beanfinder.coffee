@@ -39,7 +39,7 @@ const PlaceOverviewComponent = ({ apiKey, placeId }) => {
   }, [apiKey]);
 
   if (!mapLoaded) {
-    return <div>Loading Place Overview...</div>; 
+    return <div>Loading Place Overview...</div>;
   }
 
   return (
