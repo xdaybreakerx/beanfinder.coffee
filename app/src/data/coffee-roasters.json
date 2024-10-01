@@ -1489,5 +1489,26 @@
     "State": "VIC",
     "hasCafe": false,
     "multiRoaster": true
+  },
+  {
+    "Name": "Chalk Coffee Roasters",
+    "Website": "https://www.chalkcoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false
+  },
+  {
+    "Name": "Bay Beans",
+    "Website": "https://www.baybeans.com.au/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false
+  },
+  {
+    "Name": "Fieldwork Coffee",
+    "Website": "https://www.baybeans.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false
   }
 ]
