@@ -89,7 +89,7 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJR3dfIg7ik2sRhiPsuY04CjY"
+        "place_id": "ChIJozhY3ze0lmsRZMP6IYaSKec"
       }
     ]
   },
@@ -164,7 +164,12 @@
     "State": "VIC",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ11nLXkhD1moRBvdu1MFSJpE"
+      }
+    ]
   },
   {
     "Name": "Axil Coffee Roasters",
@@ -339,7 +344,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJL4k3GXdp1moRx5sxIDCAgIM"
+        "place_id": "ChIJ10U3NNLZqQURLNbnYN5ui0I"
       }
     ]
   },
@@ -892,7 +897,7 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJxRQt-2jWTYYR9hEqtfVueZM"
+        "place_id": "ChIJp7ODnLX_DogRpoSDGWWqMkI"
       }
     ]
   },
@@ -905,7 +910,7 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ2wNPCxXQsGoRhSSM5dC7e2s"
+        "place_id": "ChIJGw59ddbRsGoRLpV_oBAA-8U"
       }
     ]
   },
@@ -1082,7 +1087,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJMzrwAslC1moRKuXaN2eeaXw"
+        "place_id": "ChIJT-tyjjRd1moRqeXlykOTVQc"
       }
     ]
   },
@@ -1862,7 +1867,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJM_gOT_tq1moRm_qHcd6oUxM"
+        "place_id": "ChIJT5UYfksx1GoRNJWCvuL8Tlo"
       }
     ]
   },
@@ -1900,7 +1905,7 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJicMduTfuuWoRtiRoWWN8Oi0"
+        "place_id": "ChIJU4NCID011moRLsHU_g9lhww"
       }
     ]
   },
@@ -2251,7 +2256,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJ3wJC8ctd1moRkbLKlZPCEgQ"
+        "place_id": "ChIJNZsvUd9C1moRY00nWdYBy9k"
       }
     ]
   },
@@ -2277,7 +2282,7 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJFW5RJ6lDkWsRbws2fgqlXHs"
+        "place_id": "ChIJG4g1k6NQkWsRSkU5aky0v-E"
       }
     ]
   },
@@ -2449,7 +2454,7 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ3YfhmsfEsGoR368LZAxTsqU"
+        "place_id": "ChIJnQ6JLczEsGoRKlz6xiCbY2U"
       }
     ]
   },
@@ -2553,7 +2558,7 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ4_pYsdEox2oRUPuOYlQ2AwU"
+        "place_id": "ChIJbzzL76jOsGoRS-dKvFZhdI8"
       }
     ]
   },
@@ -2669,6 +2674,134 @@
       {
         "state": "NSW",
         "place_id": "ChIJ4QcD4Bd5c2sRGevBoPnVTsg"
+      }
+    ]
+  },
+  {
+    "Name": "Common Folk Coffee",
+    "Website": "https://www.commonfolkcoffee.com.au",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJG0U9S6je1WoRJ98FU1986fA"
+      }
+    ]
+  },
+  {
+    "Name": "Coffee Hit",
+    "Website": "https://coffeehit.com.au",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": []
+  },
+  {
+    "Name": "Coffee in Common",
+    "Website": "https://www.coffeeincommon.com.au",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJh9DFoDfHsGoR_L_Jf8N-iZ4"
+      }
+    ]
+  },
+  {
+    "Name": "A+ Coffee Roasters",
+    "Website": "https://apluscoffee.com.au",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJFfuagElD1moRfHn5PWOZDqE"
+      }
+    ]
+  },
+  {
+    "Name": "Cottle Coffee",
+    "Website": "https://www.cottlecoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ21Gq_v5n1moR1OdEz9HJ1c4"
+      }
+    ]
+  },
+  {
+    "Name": "Niccolo Coffee Store",
+    "Website": "https://www.niccolo.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ0cLKLiVo1moRApTXKB5I_jM"
+      }
+    ]
+  },
+  {
+    "Name": "a.k.a Coffee",
+    "Website": "https://akacoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJs8sfHx9D1moRJnTIRru0bxk"
+      }
+    ]
+  },
+  {
+    "Name": "Acuratore",
+    "Website": "https://au.acuratore.com/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": true,
+    "place_ids": []
+  },
+  {
+    "Name": "Chalk Coffee Roasters",
+    "Website": "https://www.chalkcoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJaYBieU9d1moRDzb_6sUdEFs"
+      }
+    ]
+  },
+  {
+    "Name": "Bay Beans",
+    "Website": "https://www.baybeans.com.au/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": []
+  },
+  {
+    "Name": "Fieldwork Coffee",
+    "Website": "https://www.baybeans.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJLVMs95FC1moRAGLTuLPqJnA"
       }
     ]
   }

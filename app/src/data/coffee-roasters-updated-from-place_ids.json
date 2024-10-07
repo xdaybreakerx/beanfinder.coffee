@@ -117,11 +117,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJR3dfIg7ik2sRhiPsuY04CjY",
-        "latitude": -27.4187724,
-        "longitude": 153.0726795,
-        "address": "140B Gerler Rd, Hendra QLD 4011, Australia",
-        "rating": 4.5
+        "place_id": "ChIJozhY3ze0lmsRZMP6IYaSKec",
+        "latitude": -27.6147409,
+        "longitude": 152.7559026,
+        "address": "164 Brisbane St, Ipswich QLD 4305, Australia",
+        "rating": 4.7
       }
     ]
   },
@@ -216,7 +216,16 @@
     "State": "VIC",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ11nLXkhD1moRBvdu1MFSJpE",
+        "latitude": -37.8088841,
+        "longitude": 144.9615654,
+        "address": "62 A'Beckett St, Melbourne VIC 3000, Australia",
+        "rating": 4.7
+      }
+    ]
   },
   {
     "Name": "Axil Coffee Roasters",
@@ -439,11 +448,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJL4k3GXdp1moRx5sxIDCAgIM",
-        "latitude": -37.89661580000001,
-        "longitude": 145.0360472,
-        "address": "189a Booran Rd, Caulfield South VIC 3162, Australia",
-        "rating": 4.3
+        "place_id": "ChIJ10U3NNLZqQURLNbnYN5ui0I",
+        "latitude": -31.9078838,
+        "longitude": 115.801757,
+        "address": "9 Pearson Way, Osborne Park WA 6017, Australia",
+        "rating": 5
       }
     ]
   },
@@ -833,7 +842,7 @@
         "latitude": -37.81679099999999,
         "longitude": 144.966162,
         "address": "247 Flinders Ln, Melbourne VIC 3000, Australia",
-        "rating": 4.5
+        "rating": 4.6
       }
     ]
   },
@@ -850,7 +859,7 @@
         "latitude": -33.8785445,
         "longitude": 151.2011511,
         "address": "60 Darling Dr, Haymarket NSW 2000, Australia",
-        "rating": 4.3
+        "rating": 4.4
       }
     ]
   },
@@ -1168,11 +1177,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJxRQt-2jWTYYR9hEqtfVueZM",
-        "latitude": 32.903244,
-        "longitude": -97.19726299999999,
-        "address": "8700 N Tarrant Pkwy #109, North Richland Hills, TX 76182, USA",
-        "rating": 4.6
+        "place_id": "ChIJp7ODnLX_DogRpoSDGWWqMkI",
+        "latitude": 41.8839247,
+        "longitude": -88.2065439,
+        "address": "148 W Washington St, West Chicago, IL 60185, USA",
+        "rating": 4.8
       }
     ]
   },
@@ -1185,11 +1194,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ2wNPCxXQsGoRhSSM5dC7e2s",
-        "latitude": -34.9970498,
-        "longitude": 138.5773256,
-        "address": "8 Denis St, St Marys SA 5042, Australia",
-        "rating": 4.7
+        "place_id": "ChIJGw59ddbRsGoRLpV_oBAA-8U",
+        "latitude": -34.9975161,
+        "longitude": 138.5774868,
+        "address": "12 Denis St, St Marys SA 5042, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -1414,11 +1423,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJMzrwAslC1moRKuXaN2eeaXw",
-        "latitude": -37.8118922,
-        "longitude": 144.9693252,
-        "address": "Market Ln, Melbourne VIC 3000, Australia",
-        "rating": "N/A"
+        "place_id": "ChIJT-tyjjRd1moRqeXlykOTVQc",
+        "latitude": -37.8062804,
+        "longitude": 144.9580131,
+        "address": "83-85 Victoria St, Melbourne VIC 3000, Australia",
+        "rating": 4.3
       }
     ]
   },
@@ -2045,7 +2054,7 @@
         "latitude": -37.8177555,
         "longitude": 145.2216268,
         "address": "8 Olive Grove, Ringwood VIC 3134, Australia",
-        "rating": 4.9
+        "rating": 4.8
       }
     ]
   },
@@ -2163,7 +2172,7 @@
         "latitude": -27.4456934,
         "longitude": 153.0440937,
         "address": "16 Austin St, Newstead QLD 4006, Australia",
-        "rating": 4.7
+        "rating": 4.8
       }
     ]
   },
@@ -2197,7 +2206,7 @@
         "latitude": -36.72865329999999,
         "longitude": 146.96169,
         "address": "15 Wills St, Bright VIC 3741, Australia",
-        "rating": 4.9
+        "rating": 4.8
       }
     ]
   },
@@ -2332,7 +2341,7 @@
         "latitude": -37.8483478,
         "longitude": 145.361115,
         "address": "1544 Mount Dandenong Tourist Rd, Olinda VIC 3788, Australia",
-        "rating": 4.7
+        "rating": 4.8
       }
     ]
   },
@@ -2446,11 +2455,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJM_gOT_tq1moRm_qHcd6oUxM",
-        "latitude": -37.9109051,
-        "longitude": 145.1038017,
-        "address": "Shop 2/318 Huntingdale Rd, Huntingdale VIC 3166, Australia",
-        "rating": 4
+        "place_id": "ChIJT5UYfksx1GoRNJWCvuL8Tlo",
+        "latitude": -36.9847807,
+        "longitude": 143.3906074,
+        "address": "Victoria, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -2504,11 +2513,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJicMduTfuuWoRtiRoWWN8Oi0",
-        "latitude": -34.48069949999999,
-        "longitude": 138.8984266,
-        "address": "85 Krieg Rd, Seppeltsfield SA 5355, Australia",
-        "rating": 5
+        "place_id": "ChIJU4NCID011moRLsHU_g9lhww",
+        "latitude": -37.63703,
+        "longitude": 145.196518,
+        "address": "946 Heidelberg - Kinglake Rd, Hurstbridge VIC 3099, Australia",
+        "rating": 4.5
       }
     ]
   },
@@ -2525,7 +2534,7 @@
         "latitude": -42.8813589,
         "longitude": 147.3256386,
         "address": "30 Criterion St, Hobart TAS 7000, Australia",
-        "rating": 4.7
+        "rating": 4.8
       }
     ]
   },
@@ -2963,11 +2972,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJ3wJC8ctd1moRkbLKlZPCEgQ",
-        "latitude": -37.7728983,
-        "longitude": 144.890055,
-        "address": "Highpoint Shopping Centre, Unit 2552/200 Rosamond Rd, Maribyrnong VIC 3032, Australia",
-        "rating": 3.5
+        "place_id": "ChIJNZsvUd9C1moRY00nWdYBy9k",
+        "latitude": -37.799384,
+        "longitude": 144.9781281,
+        "address": "267 Brunswick St, Fitzroy VIC 3065, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -2997,11 +3006,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJFW5RJ6lDkWsRbws2fgqlXHs",
-        "latitude": -27.6210789,
-        "longitude": 153.1145937,
-        "address": "b6/10/14 Compton Rd, Underwood QLD 4119, Australia",
-        "rating": 4.7
+        "place_id": "ChIJG4g1k6NQkWsRSkU5aky0v-E",
+        "latitude": -27.4772055,
+        "longitude": 153.007408,
+        "address": "1/7 Anthony St, West End QLD 4101, Australia",
+        "rating": 4.8
       }
     ]
   },
@@ -3225,11 +3234,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ3YfhmsfEsGoR368LZAxTsqU",
-        "latitude": -34.9379536,
-        "longitude": 138.4995354,
-        "address": "1 Seaview Rd, West Beach SA 5024, Australia",
-        "rating": 4.5
+        "place_id": "ChIJnQ6JLczEsGoRKlz6xiCbY2U",
+        "latitude": -34.947988,
+        "longitude": 138.505057,
+        "address": "1 Military Rd, West Beach SA 5024, Australia",
+        "rating": 4.2
       }
     ]
   },
@@ -3361,11 +3370,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ4_pYsdEox2oRUPuOYlQ2AwU",
-        "latitude": -34.2726782,
-        "longitude": 140.6066875,
-        "address": "Berri SA 5343, Australia",
-        "rating": "N/A"
+        "place_id": "ChIJbzzL76jOsGoRS-dKvFZhdI8",
+        "latitude": -34.9398083,
+        "longitude": 138.6354806,
+        "address": "2 L'Estrange St, Glenside SA 5065, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -3509,6 +3518,166 @@
         "longitude": 152.0715757,
         "address": "35 Shearwater Dr, Taylors Beach NSW 2316, Australia",
         "rating": 5
+      }
+    ]
+  },
+  {
+    "Name": "Common Folk Coffee",
+    "Website": "https://www.commonfolkcoffee.com.au",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJG0U9S6je1WoRJ98FU1986fA",
+        "latitude": -38.2347384,
+        "longitude": 145.0576498,
+        "address": "16 Progress St, Mornington VIC 3931, Australia",
+        "rating": 4.4
+      }
+    ]
+  },
+  {
+    "Name": "Coffee Hit",
+    "Website": "https://coffeehit.com.au",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": []
+  },
+  {
+    "Name": "Coffee in Common",
+    "Website": "https://www.coffeeincommon.com.au",
+    "State": "SA",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJh9DFoDfHsGoR_L_Jf8N-iZ4",
+        "latitude": -34.9055804,
+        "longitude": 138.5665504,
+        "address": "7 Bacon St, Hindmarsh SA 5007, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "A+ Coffee Roasters",
+    "Website": "https://apluscoffee.com.au",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJFfuagElD1moRfHn5PWOZDqE",
+        "latitude": -37.8171645,
+        "longitude": 144.9648549,
+        "address": "Shop 1D/289 Flinders Ln, Melbourne VIC 3000, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "Cottle Coffee",
+    "Website": "https://www.cottlecoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ21Gq_v5n1moR1OdEz9HJ1c4",
+        "latitude": -37.832185,
+        "longitude": 144.958095,
+        "address": "300 Coventry St, South Melbourne VIC 3205, Australia",
+        "rating": 4.5
+      }
+    ]
+  },
+  {
+    "Name": "Niccolo Coffee Store",
+    "Website": "https://www.niccolo.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ0cLKLiVo1moRApTXKB5I_jM",
+        "latitude": -37.8291294,
+        "longitude": 144.9936003,
+        "address": "57-59 Stephenson St, Cremorne VIC 3121, Australia",
+        "rating": 4.9
+      }
+    ]
+  },
+  {
+    "Name": "a.k.a Coffee",
+    "Website": "https://akacoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJs8sfHx9D1moRJnTIRru0bxk",
+        "latitude": -37.7982136,
+        "longitude": 144.9857192,
+        "address": "30 Sackville St, Collingwood VIC 3066, Australia",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "Name": "Acuratore",
+    "Website": "https://au.acuratore.com/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": true,
+    "place_ids": []
+  },
+  {
+    "Name": "Chalk Coffee Roasters",
+    "Website": "https://www.chalkcoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJaYBieU9d1moRDzb_6sUdEFs",
+        "latitude": -37.876767,
+        "longitude": 144.7106372,
+        "address": "1/11 Nevada Ct, Hoppers Crossing VIC 3029, Australia",
+        "rating": 4.9
+      }
+    ]
+  },
+  {
+    "Name": "Bay Beans",
+    "Website": "https://www.baybeans.com.au/",
+    "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "place_ids": []
+  },
+  {
+    "Name": "Fieldwork Coffee",
+    "Website": "https://www.baybeans.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJLVMs95FC1moRAGLTuLPqJnA",
+        "latitude": -37.8097275,
+        "longitude": 145.0059353,
+        "address": "14 Duke St, Abbotsford VIC 3067, Australia",
+        "rating": 4.9
       }
     ]
   }
