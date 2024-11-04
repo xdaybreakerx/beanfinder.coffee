@@ -56,16 +56,7 @@
     "State": "QLD",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "QLD",
-        "place_id": "ChIJgcOSTc1bkWsRCxhhIPYByZ8",
-        "latitude": -27.4932579,
-        "longitude": 153.047092,
-        "address": "85 Deshon St, Woolloongabba QLD 4102, Australia",
-        "rating": 4.8
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Alchemy Coffee",
@@ -126,10 +117,10 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJU2HEJQZvk2sRgMG5kCWn4lQ",
-        "latitude": -26.44499699999999,
-        "longitude": 153.0243779,
-        "address": "9 Fellowship Dr, Doonan QLD 4562, Australia",
+        "place_id": "ChIJz4erIIRpkWsRFn_RlXnPp54",
+        "latitude": -27.6265683,
+        "longitude": 153.2842428,
+        "address": "2/5-11 Jardine Dr, Redland Bay QLD 4165, Australia",
         "rating": 4.8
       }
     ]
@@ -225,7 +216,16 @@
     "State": "VIC",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ7YfR6PJD1moRQWnNJWY70sI",
+        "latitude": -37.81553069999999,
+        "longitude": 144.9619365,
+        "address": "382 Little Collins St, Melbourne VIC 3000, Australia",
+        "rating": 4.6
+      }
+    ]
   },
   {
     "Name": "Axil Coffee Roasters",
@@ -448,11 +448,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJL4k3GXdp1moRx5sxIDCAgIM",
-        "latitude": -37.89661580000001,
-        "longitude": 145.0360472,
-        "address": "189a Booran Rd, Caulfield South VIC 3162, Australia",
-        "rating": 4.3
+        "place_id": "ChIJA8fPSJ9ZwokRDQyUg27HU2I",
+        "latitude": 40.7187849,
+        "longitude": -73.96416169999999,
+        "address": "184 Kent Ave, Brooklyn, NY 11249, USA",
+        "rating": 4.1
       }
     ]
   },
@@ -601,11 +601,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJbyGMaTpn1moRDl-Dj_Zv_hI",
-        "latitude": -37.83307180000001,
-        "longitude": 144.9567603,
-        "address": "321 Coventry St, South Melbourne VIC 3205, Australia",
-        "rating": 4.2
+        "place_id": "ChIJT3I-okpD1moRBNshH62Qt7Q",
+        "latitude": -37.774643,
+        "longitude": 144.962468,
+        "address": "15/17 Weston St, Brunswick VIC 3056, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -753,11 +753,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ_c_h1EKqEmsRDqk19J_F-Sk",
-        "latitude": -33.763324,
-        "longitude": 151.268433,
-        "address": "28 Dale St, Brookvale NSW 2100, Australia",
-        "rating": 4.7
+        "place_id": "ChIJSfatNyqeEmsRT1EOgP20KP8",
+        "latitude": -33.6670152,
+        "longitude": 150.7374082,
+        "address": "143 Whitegates Rd, Londonderry NSW 2753, Australia",
+        "rating": 5
       }
     ]
   },
@@ -1093,11 +1093,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJgRXO-rRC1moRwcB73rcSyIE",
-        "latitude": -37.8154635,
-        "longitude": 144.963264,
-        "address": "345 Little Collins St, Melbourne VIC 3000, Australia",
-        "rating": 4.3
+        "place_id": "ChIJ_7ffMiFD1moR5NCnlSFhECk",
+        "latitude": -37.7948113,
+        "longitude": 144.9781341,
+        "address": "70-76 Westgarth St, Fitzroy VIC 3065, Australia",
+        "rating": 4.4
       },
       {
         "state": "NSW",
@@ -1105,7 +1105,7 @@
         "latitude": -33.8693274,
         "longitude": 151.2062418,
         "address": "Shop 2/40 York St, Sydney NSW 2000, Australia",
-        "rating": 4.4
+        "rating": 4.5
       },
       {
         "state": "QLD",
@@ -1177,11 +1177,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJeTPbJ2Jn1moR5OlJF-SN-1k",
-        "latitude": -37.811658,
-        "longitude": 144.900504,
-        "address": "3 Harris St, Yarraville VIC 3013, Australia",
-        "rating": 4.8
+        "place_id": "ChIJxRQt-2jWTYYR9hEqtfVueZM",
+        "latitude": 32.903244,
+        "longitude": -97.19726299999999,
+        "address": "8700 N Tarrant Pkwy #109, North Richland Hills, TX 76182, USA",
+        "rating": 4.6
       }
     ]
   },
@@ -1267,7 +1267,16 @@
     "State": "VIC",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJlynKM5fHt4kRG-vUytHpr28",
+        "latitude": 38.9077192,
+        "longitude": -77.035766,
+        "address": "1515 Rhode Island Ave NW, Washington, DC 20005, USA",
+        "rating": 4
+      }
+    ]
   },
   {
     "Name": "Little Marionette",
@@ -1346,11 +1355,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJWwkUHEKuEmsRHpNpvRcQldQ",
-        "latitude": -33.8697227,
-        "longitude": 151.2694598,
-        "address": "712 New South Head Rd, Rose Bay NSW 2029, Australia",
-        "rating": 4.6
+        "place_id": "ChIJfX8VVbCrEmsRsL8yFmh9AQU",
+        "latitude": -33.7968627,
+        "longitude": 151.2850167,
+        "address": "Manly NSW 2095, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -1731,7 +1740,7 @@
         "latitude": -38.00582399999999,
         "longitude": 145.111876,
         "address": "58 Industrial Dr, Braeside VIC 3195, Australia",
-        "rating": 4.8
+        "rating": 4.7
       }
     ]
   },
@@ -2028,7 +2037,7 @@
         "latitude": -37.7924364,
         "longitude": 144.9344633,
         "address": "8 Thompson St, Kensington VIC 3031, Australia",
-        "rating": 4.9
+        "rating": 4.8
       }
     ]
   },
@@ -2109,11 +2118,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJZ19eqLhF1moRZ9LmazYfTak",
-        "latitude": -37.76901,
-        "longitude": 145.024248,
-        "address": "7 Montefiore St, Fairfield VIC 3078, Australia",
-        "rating": 5
+        "place_id": "ChIJvdx3kjJd1moRHnjYhByshFo",
+        "latitude": -37.8029711,
+        "longitude": 144.9590027,
+        "address": "114 Berkeley St, Carlton VIC 3053, Australia",
+        "rating": 4.4
       },
       {
         "state": "NSW",
@@ -2214,7 +2223,7 @@
         "latitude": -33.86860000000001,
         "longitude": 151.2048,
         "address": "40 King St, Sydney NSW 2000, Australia",
-        "rating": 4.6
+        "rating": 4.7
       }
     ]
   },
@@ -2413,11 +2422,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJ5xhqTRdbkWsRgkxK2LdQ6MA",
-        "latitude": -27.5337401,
-        "longitude": 153.0744398,
-        "address": "Mount Gravatt QLD 4122, Australia",
-        "rating": 5
+        "place_id": "ChIJK6KHMhFZkWsRD6hBg7FUto4",
+        "latitude": -27.4514024,
+        "longitude": 153.0440679,
+        "address": "1/33 Longland St, Newstead QLD 4006, Australia",
+        "rating": 4.6
       },
       {
         "state": "NSW",
@@ -2539,9 +2548,9 @@
       {
         "state": "NSW",
         "place_id": "ChIJe4CkhkjHEmsRMeGGmX8POLY",
-        "latitude": -34.03126619999999,
-        "longitude": 151.0587237,
-        "address": "137 Flora St, Kirrawee NSW 2232, Australia",
+        "latitude": -34.0313738,
+        "longitude": 151.0582795,
+        "address": "756/760 Old Princes Hwy, Sutherland NSW 2232, Australia",
         "rating": 4.3
       }
     ]
@@ -2963,11 +2972,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJ3wJC8ctd1moRkbLKlZPCEgQ",
-        "latitude": -37.7728983,
-        "longitude": 144.890055,
-        "address": "Highpoint Shopping Centre, Unit 2552/200 Rosamond Rd, Maribyrnong VIC 3032, Australia",
-        "rating": 3.5
+        "place_id": "ChIJNZsvUd9C1moRY00nWdYBy9k",
+        "latitude": -37.799384,
+        "longitude": 144.9781281,
+        "address": "267 Brunswick St, Fitzroy VIC 3065, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -3293,10 +3302,10 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJOXPUYRRAEmsRuVYeI1jz-Zc",
-        "latitude": -33.8179088,
-        "longitude": 150.2304159,
-        "address": "Faithful Hound Gully, New South Wales 2787, Australia",
+        "place_id": "ChIJAQBsKVTasGoRHtd-4kR-EV0",
+        "latitude": -34.99829,
+        "longitude": 138.523509,
+        "address": "13 Byre Ave, Somerton Park SA 5044, Australia",
         "rating": "N/A"
       }
     ]
@@ -3521,11 +3530,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJnZUptp1C1moRMOdeTMfQOs8",
-        "latitude": -37.838518,
-        "longitude": 144.990105,
-        "address": "1C Murphy St, South Yarra VIC 3141, Australia",
-        "rating": 4.4
+        "place_id": "ChIJxRGxLN901moRSUDfwUb32Cs",
+        "latitude": -38.1439868,
+        "longitude": 145.1209904,
+        "address": "465 Nepean Hwy, Frankston VIC 3199, Australia",
+        "rating": 4.6
       }
     ]
   },
