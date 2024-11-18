@@ -448,11 +448,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJL4k3GXdp1moRx5sxIDCAgIM",
-        "latitude": -37.89661580000001,
-        "longitude": 145.0360472,
-        "address": "189a Booran Rd, Caulfield South VIC 3162, Australia",
-        "rating": 4.3
+        "place_id": "ChIJA8fPSJ9ZwokRDQyUg27HU2I",
+        "latitude": 40.7187849,
+        "longitude": -73.96416169999999,
+        "address": "184 Kent Ave, Brooklyn, NY 11249, USA",
+        "rating": 4.1
       }
     ]
   },
@@ -601,11 +601,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJT3I-okpD1moRBNshH62Qt7Q",
-        "latitude": -37.774643,
-        "longitude": 144.962468,
-        "address": "15/17 Weston St, Brunswick VIC 3056, Australia",
-        "rating": 4.4
+        "place_id": "ChIJbyGMaTpn1moRDl-Dj_Zv_hI",
+        "latitude": -37.83307180000001,
+        "longitude": 144.9567603,
+        "address": "321 Coventry St, South Melbourne VIC 3205, Australia",
+        "rating": 4.2
       }
     ]
   },
@@ -791,7 +791,7 @@
         "latitude": -35.2354165,
         "longitude": 138.5521501,
         "address": "402 Main Rd, McLaren Vale SA 5171, Australia",
-        "rating": 4.7
+        "rating": 4.6
       }
     ]
   },
@@ -889,11 +889,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJhb8hqx9D1moREUdvGRuSNic",
-        "latitude": -37.7981641,
-        "longitude": 144.9858767,
-        "address": "36-38 Sackville St, Collingwood VIC 3066, Australia",
-        "rating": 4.5
+        "place_id": "ChIJtyI6BLZC1moRu6xxPLA5wzc",
+        "latitude": -37.8143405,
+        "longitude": 144.9670967,
+        "address": "213 Little Collins St, Melbourne VIC 3000, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -1312,10 +1312,10 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJ-7F4Ca_W12oRcWP4Rb7yj00",
-        "latitude": -37.6006591,
-        "longitude": 145.4121861,
-        "address": "58 Pinnacle Ln, Dixons Creek VIC 3775, Australia",
+        "place_id": "ChIJNx0qvBlo1moREbaZuYZoCCI",
+        "latitude": -37.8446381,
+        "longitude": 144.9792762,
+        "address": "517 St Kilda Rd, Melbourne VIC 3004, Australia",
         "rating": 4.4
       }
     ]
@@ -1346,11 +1346,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJYw3RdhCuEmsRqZcvClvzEJU",
-        "latitude": -33.8775474,
-        "longitude": 151.2151161,
-        "address": "Unit 10/2 Kings Ln, Darlinghurst NSW 2010, Australia",
-        "rating": 5
+        "place_id": "ChIJfX8VVbCrEmsRsL8yFmh9AQU",
+        "latitude": -33.7968627,
+        "longitude": 151.2850167,
+        "address": "Manly NSW 2095, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -1503,7 +1503,7 @@
         "latitude": -37.81488729999999,
         "longitude": 145.2930957,
         "address": "37 Centre Way, Croydon South VIC 3136, Australia",
-        "rating": 4.2
+        "rating": 4.1
       }
     ]
   },
@@ -2163,7 +2163,7 @@
         "latitude": -27.4456934,
         "longitude": 153.0440937,
         "address": "16 Austin St, Newstead QLD 4006, Australia",
-        "rating": 4.6
+        "rating": 4.7
       }
     ]
   },
@@ -2542,7 +2542,7 @@
         "latitude": -34.0343329,
         "longitude": 151.0719338,
         "address": "Unit 10/44-46 Flora St, Kirrawee NSW 2232, Australia",
-        "rating": 4.4
+        "rating": 4.2
       }
     ]
   },
@@ -3111,7 +3111,7 @@
         "latitude": -33.7670481,
         "longitude": 151.2653916,
         "address": "Kiosk 10K02, Westfield Warringah Mall, Brookvale NSW 2100, Australia",
-        "rating": 4.7
+        "rating": 4.8
       },
       {
         "state": "VIC",
@@ -3161,7 +3161,7 @@
         "latitude": -34.931827,
         "longitude": 138.6689063,
         "address": "Unit 1/38 Hallett Rd, Stonyfell SA 5066, Australia",
-        "rating": 4.5
+        "rating": 4.4
       }
     ]
   },
@@ -3208,11 +3208,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJid5FW_QnsWoR2zwBLzoyfSY",
-        "latitude": -34.8954792,
-        "longitude": 138.6383096,
-        "address": "Shop 6, Marden Shopping Centre 9-21 Lower, Portrush Rd, Marden SA 5070, Australia",
-        "rating": 4.5
+        "place_id": "ChIJ0TAxWqXFsGoRuDHhxlG_1Pw",
+        "latitude": -35.1506606,
+        "longitude": 138.5328636,
+        "address": "1/54 Cottage Ln, Hackham SA 5163, Australia",
+        "rating": 4.9
       }
     ]
   },
@@ -3375,7 +3375,16 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ_dAXkQHsuWoRNlrIWmTAS10",
+        "latitude": -34.4739534,
+        "longitude": 138.9559782,
+        "address": "71 Stonewell Rd, Nuriootpa SA 5355, Australia",
+        "rating": 4.4
+      }
+    ]
   },
   {
     "Name": "Mila Coffee Co",
@@ -3386,10 +3395,10 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJN0UshUH1XIYRKCo5hVtswG8",
-        "latitude": 29.4326534,
-        "longitude": -98.4840668,
-        "address": "203 8th St Bldg. 2, San Antonio, TX 78215, USA",
+        "place_id": "ChIJV8HqWPL1XIYRYFmn-AoiCNs",
+        "latitude": 29.4464843,
+        "longitude": -98.4752338,
+        "address": "2202 Broadway, San Antonio, TX 78215, USA",
         "rating": 4.8
       }
     ]
@@ -3521,11 +3530,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJxRGxLN901moRSUDfwUb32Cs",
-        "latitude": -38.1439868,
-        "longitude": 145.1209904,
-        "address": "465 Nepean Hwy, Frankston VIC 3199, Australia",
-        "rating": 4.6
+        "place_id": "ChIJnZUptp1C1moRMOdeTMfQOs8",
+        "latitude": -37.838518,
+        "longitude": 144.990105,
+        "address": "1C Murphy St, South Yarra VIC 3141, Australia",
+        "rating": 4.4
       }
     ]
   },

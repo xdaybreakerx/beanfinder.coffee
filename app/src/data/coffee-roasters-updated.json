@@ -344,7 +344,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJL4k3GXdp1moRx5sxIDCAgIM"
+        "place_id": "ChIJA8fPSJ9ZwokRDQyUg27HU2I"
       }
     ]
   },
@@ -461,7 +461,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJT3I-okpD1moRBNshH62Qt7Q"
+        "place_id": "ChIJbyGMaTpn1moRDl-Dj_Zv_hI"
       }
     ]
   },
@@ -681,7 +681,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJhb8hqx9D1moREUdvGRuSNic"
+        "place_id": "ChIJtyI6BLZC1moRu6xxPLA5wzc"
       }
     ]
   },
@@ -1004,7 +1004,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJ-7F4Ca_W12oRcWP4Rb7yj00"
+        "place_id": "ChIJNx0qvBlo1moREbaZuYZoCCI"
       }
     ]
   },
@@ -1030,7 +1030,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJYw3RdhCuEmsRqZcvClvzEJU"
+        "place_id": "ChIJfX8VVbCrEmsRsL8yFmh9AQU"
       }
     ]
   },
@@ -2436,7 +2436,7 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJid5FW_QnsWoR2zwBLzoyfSY"
+        "place_id": "ChIJ0TAxWqXFsGoRuDHhxlG_1Pw"
       }
     ]
   },
@@ -2563,7 +2563,12 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ_dAXkQHsuWoRNlrIWmTAS10"
+      }
+    ]
   },
   {
     "Name": "Mila Coffee Co",
@@ -2574,7 +2579,7 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJN0UshUH1XIYRKCo5hVtswG8"
+        "place_id": "ChIJV8HqWPL1XIYRYFmn-AoiCNs"
       }
     ]
   },
@@ -2681,7 +2686,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJxRGxLN901moRSUDfwUb32Cs"
+        "place_id": "ChIJnZUptp1C1moRMOdeTMfQOs8"
       }
     ]
   },
