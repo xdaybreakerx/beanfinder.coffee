@@ -592,11 +592,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJ__k7MDFd1moRjnVCIJLqaq8",
-        "latitude": -37.804227,
-        "longitude": 144.953643,
-        "address": "119 Howard St, North Melbourne VIC 3051, Australia",
-        "rating": 4.5
+        "place_id": "ChIJNTLUqU1d1moRb6VSFvhYhKI",
+        "latitude": -37.8163265,
+        "longitude": 144.9623384,
+        "address": "Foyer/360 Collins St, Melbourne VIC 3000, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -710,11 +710,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJo8t_lYhbkWsRQZS4WWB-kNQ",
-        "latitude": -27.5031743,
-        "longitude": 153.1016795,
-        "address": "1151 Creek Rd, Carindale QLD 4152, Australia",
-        "rating": 5
+        "place_id": "ChIJz7-F1JNmeGkRyCqSSG5AcD8",
+        "latitude": -16.9233378,
+        "longitude": 145.7748839,
+        "address": "105 Grafton St, Cairns City QLD 4870, Australia",
+        "rating": 4.8
       }
     ]
   },
@@ -1016,11 +1016,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ74bN_uqwEmsRUJGiH1rKwPI",
-        "latitude": -33.9374146,
-        "longitude": 151.1663378,
-        "address": "Departure Plaza, Sydney NSW 2020, Australia",
-        "rating": 4.8
+        "place_id": "ChIJQWKMHaipEmsRGAyZW4Cwg6g",
+        "latitude": -33.7903172,
+        "longitude": 151.2009465,
+        "address": "7/3 Gibbes St, Chatswood NSW 2067, Australia",
+        "rating": 4.3
       }
     ]
   },
@@ -1037,7 +1037,7 @@
         "latitude": -37.9058648,
         "longitude": 145.1580306,
         "address": "Wurundjeri Country, 10-11 Rosemary Ct, Mulgrave VIC 3170, Australia",
-        "rating": 4.8
+        "rating": 4.7
       }
     ]
   },
@@ -1312,10 +1312,10 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJ-7F4Ca_W12oRcWP4Rb7yj00",
-        "latitude": -37.6006591,
-        "longitude": 145.4121861,
-        "address": "58 Pinnacle Ln, Dixons Creek VIC 3775, Australia",
+        "place_id": "ChIJNx0qvBlo1moREbaZuYZoCCI",
+        "latitude": -37.8446381,
+        "longitude": 144.9792762,
+        "address": "517 St Kilda Rd, Melbourne VIC 3004, Australia",
         "rating": 4.4
       }
     ]
@@ -1329,11 +1329,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJtYDRceT3mWsRe0JkWvMlI4w",
-        "latitude": -28.88043609999999,
-        "longitude": 152.8209294,
-        "address": "48 Hayward Ridge, Hogarth Range NSW 2469, Australia",
-        "rating": 5
+        "place_id": "ChIJ_36JuaakEmsRG08QSuYNtQU",
+        "latitude": -33.834486,
+        "longitude": 151.051854,
+        "address": "26 Fariola St, Silverwater NSW 2128, Australia",
+        "rating": 4.7
       }
     ]
   },
@@ -1346,11 +1346,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJfX8VVbCrEmsRsL8yFmh9AQU",
-        "latitude": -33.7968627,
-        "longitude": 151.2850167,
-        "address": "Manly NSW 2095, Australia",
-        "rating": "N/A"
+        "place_id": "ChIJWwkUHEKuEmsRHpNpvRcQldQ",
+        "latitude": -33.8697227,
+        "longitude": 151.2694598,
+        "address": "712 New South Head Rd, Rose Bay NSW 2029, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -1414,11 +1414,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJT-tyjjRd1moRqeXlykOTVQc",
-        "latitude": -37.8062804,
-        "longitude": 144.9580131,
-        "address": "83-85 Victoria St, Melbourne VIC 3000, Australia",
-        "rating": 4.3
+        "place_id": "ChIJMzrwAslC1moRKuXaN2eeaXw",
+        "latitude": -37.8118922,
+        "longitude": 144.9693252,
+        "address": "Market Ln, Melbourne VIC 3000, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -2210,11 +2210,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ7StpST-uEmsRAj-sK758jE8",
-        "latitude": -33.86860000000001,
-        "longitude": 151.2048,
-        "address": "40 King St, Sydney NSW 2000, Australia",
-        "rating": 4.7
+        "place_id": "ChIJa7nJTj-uEmsRwbabmz9toOI",
+        "latitude": -33.8687444,
+        "longitude": 151.2049307,
+        "address": "Skittle Ln, Sydney NSW 2000, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -2241,7 +2241,16 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJzeS5JJ97j4AR1YU0jwL9A5s",
+        "latitude": 37.5951554,
+        "longitude": -122.506112,
+        "address": "5400 CA-1, Pacifica, CA 94044, USA",
+        "rating": 4.6
+      }
+    ]
   },
   {
     "Name": "Sparks Coffee Roasters",
@@ -2294,10 +2303,10 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJxQdnwNRC1moR8gXHMP_ZOpg",
-        "latitude": -37.7970636,
-        "longitude": 144.9623774,
-        "address": "Melbourne School of Design University of Melbourne, Room G01, Building 133, Parkville VIC 3010, Australia",
+        "place_id": "ChIJ_9QKsyZD1moRTBnPFR7DF0Q",
+        "latitude": -37.7847929,
+        "longitude": 144.9823376,
+        "address": "187 St Georges Rd, Fitzroy North VIC 3068, Australia",
         "rating": 4.5
       }
     ]
@@ -2400,7 +2409,7 @@
         "latitude": -26.729457,
         "longitude": 153.1223552,
         "address": "9 Machinery Ave, Warana QLD 4575, Australia",
-        "rating": 4.5
+        "rating": 4.6
       }
     ]
   },
@@ -2446,11 +2455,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJT5UYfksx1GoRNJWCvuL8Tlo",
-        "latitude": -36.9847807,
-        "longitude": 143.3906074,
-        "address": "Victoria, Australia",
-        "rating": "N/A"
+        "place_id": "ChIJM_gOT_tq1moRm_qHcd6oUxM",
+        "latitude": -37.9109051,
+        "longitude": 145.1038017,
+        "address": "Shop 2/318 Huntingdale Rd, Huntingdale VIC 3166, Australia",
+        "rating": 4
       }
     ]
   },
@@ -3018,7 +3027,7 @@
         "latitude": -27.3741143,
         "longitude": 153.0612139,
         "address": "Cafe entrance, Unit 1/9 Pritchard Rd, Virginia QLD 4014, Australia",
-        "rating": 4.8
+        "rating": 4.7
       }
     ]
   },
@@ -3293,10 +3302,10 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJOXPUYRRAEmsRuVYeI1jz-Zc",
-        "latitude": -33.8179088,
-        "longitude": 150.2304159,
-        "address": "Faithful Hound Gully, New South Wales 2787, Australia",
+        "place_id": "ChIJAQBsKVTasGoRHtd-4kR-EV0",
+        "latitude": -34.99829,
+        "longitude": 138.523509,
+        "address": "13 Byre Ave, Somerton Park SA 5044, Australia",
         "rating": "N/A"
       }
     ]
@@ -3392,7 +3401,16 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJN0UshUH1XIYRKCo5hVtswG8",
+        "latitude": 29.4326534,
+        "longitude": -98.4840668,
+        "address": "203 8th St Bldg. 2, San Antonio, TX 78215, USA",
+        "rating": 4.8
+      }
+    ]
   },
   {
     "Name": "Fleurieu Roast",
@@ -3442,7 +3460,16 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJdaoGEDROsWoRYidJ9nU_uKQ",
+        "latitude": -35.5624943,
+        "longitude": 138.5998684,
+        "address": "1/27 Maude St, Victor Harbor SA 5211, Australia",
+        "rating": 4.5
+      }
+    ]
   },
   {
     "Name": "Bray St Roasters",
@@ -3521,11 +3548,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJxRGxLN901moRSUDfwUb32Cs",
-        "latitude": -38.1439868,
-        "longitude": 145.1209904,
-        "address": "465 Nepean Hwy, Frankston VIC 3199, Australia",
-        "rating": 4.6
+        "place_id": "ChIJnZUptp1C1moRMOdeTMfQOs8",
+        "latitude": -37.838518,
+        "longitude": 144.990105,
+        "address": "1C Murphy St, South Yarra VIC 3141, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -3563,10 +3590,10 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJFfuagElD1moRfHn5PWOZDqE",
-        "latitude": -37.8171645,
-        "longitude": 144.9648549,
-        "address": "Shop 1D/289 Flinders Ln, Melbourne VIC 3000, Australia",
+        "place_id": "ChIJs8sfHx9D1moRJnTIRru0bxk",
+        "latitude": -37.7982136,
+        "longitude": 144.9857192,
+        "address": "30 Sackville St, Collingwood VIC 3066, Australia",
         "rating": 4.7
       }
     ]
@@ -3611,16 +3638,7 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "VIC",
-        "place_id": "ChIJs8sfHx9D1moRJnTIRru0bxk",
-        "latitude": -37.7982136,
-        "longitude": 144.9857192,
-        "address": "30 Sackville St, Collingwood VIC 3066, Australia",
-        "rating": 4.7
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Acuratore",
