@@ -117,11 +117,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJq6qqqgHwk2sRHPPJPYovImo",
-        "latitude": -27.3741143,
-        "longitude": 153.0612139,
-        "address": "Cafe entrance, Unit 1/9 Pritchard Rd, Virginia QLD 4014, Australia",
-        "rating": 4.7
+        "place_id": "ChIJO3rqvldNrlIRdN8X7uCSi8Y",
+        "latitude": 46.768511,
+        "longitude": -92.12276899999999,
+        "address": "1917 W Superior St, Duluth, MN 55806, USA",
+        "rating": 5
       }
     ]
   },
@@ -318,16 +318,7 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "NSW",
-        "place_id": "ChIJKRXBsD2xEmsRVe81SfhddGM",
-        "latitude": -33.9103851,
-        "longitude": 151.1657653,
-        "address": "24 Cadogan St, Marrickville NSW 2204, Australia",
-        "rating": 4.9
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Blackbird Espresso",
@@ -1186,11 +1177,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJp7ODnLX_DogRpoSDGWWqMkI",
-        "latitude": 41.8839247,
-        "longitude": -88.2065439,
-        "address": "148 W Washington St, West Chicago, IL 60185, USA",
-        "rating": 4.8
+        "place_id": "ChIJxRQt-2jWTYYR9hEqtfVueZM",
+        "latitude": 32.903244,
+        "longitude": -97.19726299999999,
+        "address": "8700 N Tarrant Pkwy #109, North Richland Hills, TX 76182, USA",
+        "rating": 4.6
       }
     ]
   },
@@ -1296,11 +1287,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJGdcv2FCvEmsRx35ABkpeZr4",
-        "latitude": -33.8853958,
-        "longitude": 151.2111378,
-        "address": "10/14 Waterloo St, Surry Hills NSW 2010, Australia",
-        "rating": 4.8
+        "place_id": "ChIJ_dMhPrSvEmsRIPQUB7ikav8",
+        "latitude": -33.86483,
+        "longitude": 151.1774597,
+        "address": "26D Mansfield St, Rozelle NSW 2039, Australia",
+        "rating": 4.2
       }
     ]
   },
@@ -1330,10 +1321,10 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJNx0qvBlo1moREbaZuYZoCCI",
-        "latitude": -37.8446381,
-        "longitude": 144.9792762,
-        "address": "517 St Kilda Rd, Melbourne VIC 3004, Australia",
+        "place_id": "ChIJ-7F4Ca_W12oRcWP4Rb7yj00",
+        "latitude": -37.6006591,
+        "longitude": 145.4121861,
+        "address": "58 Pinnacle Ln, Dixons Creek VIC 3775, Australia",
         "rating": 4.4
       }
     ]
@@ -3226,11 +3217,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJid5FW_QnsWoR2zwBLzoyfSY",
-        "latitude": -34.8954792,
-        "longitude": 138.6383096,
-        "address": "Shop 6, Marden Shopping Centre 9-21 Lower, Portrush Rd, Marden SA 5070, Australia",
-        "rating": 4.5
+        "place_id": "ChIJ0TAxWqXFsGoRuDHhxlG_1Pw",
+        "latitude": -35.1506606,
+        "longitude": 138.5328636,
+        "address": "1/54 Cottage Ln, Hackham SA 5163, Australia",
+        "rating": 4.9
       }
     ]
   },
@@ -3311,10 +3302,10 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJOXPUYRRAEmsRuVYeI1jz-Zc",
-        "latitude": -33.8179088,
-        "longitude": 150.2304159,
-        "address": "Faithful Hound Gully, New South Wales 2787, Australia",
+        "place_id": "ChIJAQBsKVTasGoRHtd-4kR-EV0",
+        "latitude": -34.99829,
+        "longitude": 138.523509,
+        "address": "13 Byre Ave, Somerton Park SA 5044, Australia",
         "rating": "N/A"
       }
     ]
@@ -3557,11 +3548,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJnZUptp1C1moRMOdeTMfQOs8",
-        "latitude": -37.838518,
-        "longitude": 144.990105,
-        "address": "1C Murphy St, South Yarra VIC 3141, Australia",
-        "rating": 4.4
+        "place_id": "ChIJxRGxLN901moRSUDfwUb32Cs",
+        "latitude": -38.1439868,
+        "longitude": 145.1209904,
+        "address": "465 Nepean Hwy, Frankston VIC 3199, Australia",
+        "rating": 4.6
       }
     ]
   },
