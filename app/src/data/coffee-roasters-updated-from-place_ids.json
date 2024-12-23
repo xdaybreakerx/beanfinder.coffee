@@ -117,11 +117,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJO3rqvldNrlIRdN8X7uCSi8Y",
-        "latitude": 46.768511,
-        "longitude": -92.12276899999999,
-        "address": "1917 W Superior St, Duluth, MN 55806, USA",
-        "rating": 5
+        "place_id": "ChIJq6qqqgHwk2sRHPPJPYovImo",
+        "latitude": -27.3741143,
+        "longitude": 153.0612139,
+        "address": "Cafe entrance, Unit 1/9 Pritchard Rd, Virginia QLD 4014, Australia",
+        "rating": 4.7
       }
     ]
   },
@@ -318,7 +318,16 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJKRXBsD2xEmsRVe81SfhddGM",
+        "latitude": -33.9103851,
+        "longitude": 151.1657653,
+        "address": "24 Cadogan St, Marrickville NSW 2204, Australia",
+        "rating": 4.9
+      }
+    ]
   },
   {
     "Name": "Blackbird Espresso",
@@ -445,16 +454,7 @@
     "State": "VIC",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "VIC",
-        "place_id": "ChIJ10U3NNLZqQURLNbnYN5ui0I",
-        "latitude": -31.9078838,
-        "longitude": 115.801757,
-        "address": "9 Pearson Way, Osborne Park WA 6017, Australia",
-        "rating": 5
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Bun Coffee",
@@ -702,11 +702,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJ_4Wj1y-lMioR3fH9kfuCB8c",
-        "latitude": -31.94867899999999,
-        "longitude": 115.842608,
-        "address": "1204 Hay St, West Perth WA 6005, Australia",
-        "rating": 4.2
+        "place_id": "ChIJIfS2Z15TzSsRHlCo9hzlvFY",
+        "latitude": -31.7452436,
+        "longitude": 115.7621037,
+        "address": "Unit 8/7 Delage St, Joondalup WA 6027, Australia",
+        "rating": 4
       }
     ]
   },
@@ -889,10 +889,10 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJhb8hqx9D1moREUdvGRuSNic",
-        "latitude": -37.7981641,
-        "longitude": 144.9858767,
-        "address": "36-38 Sackville St, Collingwood VIC 3066, Australia",
+        "place_id": "ChIJtyI6BLZC1moRu6xxPLA5wzc",
+        "latitude": -37.8143405,
+        "longitude": 144.9670967,
+        "address": "213 Little Collins St, Melbourne VIC 3000, Australia",
         "rating": 4.4
       }
     ]
@@ -1321,10 +1321,10 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJ-7F4Ca_W12oRcWP4Rb7yj00",
-        "latitude": -37.6006591,
-        "longitude": 145.4121861,
-        "address": "58 Pinnacle Ln, Dixons Creek VIC 3775, Australia",
+        "place_id": "ChIJNx0qvBlo1moREbaZuYZoCCI",
+        "latitude": -37.8446381,
+        "longitude": 144.9792762,
+        "address": "517 St Kilda Rd, Melbourne VIC 3004, Australia",
         "rating": 4.4
       }
     ]
@@ -1355,11 +1355,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJfX8VVbCrEmsRsL8yFmh9AQU",
-        "latitude": -33.7968627,
-        "longitude": 151.2850167,
-        "address": "Manly NSW 2095, Australia",
-        "rating": "N/A"
+        "place_id": "ChIJWwkUHEKuEmsRHpNpvRcQldQ",
+        "latitude": -33.8697227,
+        "longitude": 151.2694598,
+        "address": "712 New South Head Rd, Rose Bay NSW 2029, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -1609,11 +1609,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJYyHMmwClEmsRrxuKJK2x-yI",
-        "latitude": -33.7943735,
-        "longitude": 151.1418075,
-        "address": "3 Plassey Rd, Macquarie Park NSW 2113, Australia",
-        "rating": 4.5
+        "place_id": "ChIJlQzbPT6uEmsRdMutKU9hWds",
+        "latitude": -33.8723764,
+        "longitude": 151.209149,
+        "address": "161 Castlereagh St, Sydney NSW 2000, Australia",
+        "rating": 4.3
       }
     ]
   },
@@ -1626,11 +1626,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJYeSX8llD1moReVgb27XXvqY",
-        "latitude": -37.7641144,
-        "longitude": 144.9732824,
-        "address": "438 Lygon St, Brunswick East VIC 3057, Australia",
-        "rating": 4.4
+        "place_id": "ChIJK_V6t_5n1moR_TcAscymyIw",
+        "latitude": -37.8325381,
+        "longitude": 144.9563457,
+        "address": "South Melbourne Market, 33/322-326 Coventry St, South Melbourne VIC 3205, Australia",
+        "rating": 4
       }
     ]
   },
@@ -1719,11 +1719,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJn1FUnktd1moRgZCDC6aPCcw",
-        "latitude": -37.8146708,
-        "longitude": 144.9582346,
-        "address": "Rear of, 493-495 Little Bourke St, Melbourne VIC 3000, Australia",
-        "rating": 4.8
+        "place_id": "ChIJFcx-D65F1moR8x5K69l4N5w",
+        "latitude": -37.77870819999999,
+        "longitude": 145.0313193,
+        "address": "26 Miller St, Alphington VIC 3078, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -2118,11 +2118,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJvdx3kjJd1moRHnjYhByshFo",
-        "latitude": -37.8029711,
-        "longitude": 144.9590027,
-        "address": "114 Berkeley St, Carlton VIC 3053, Australia",
-        "rating": 4.4
+        "place_id": "ChIJXYZl8bGrEmsRKpC6MUMYXEY",
+        "latitude": -33.7869368,
+        "longitude": 151.2677137,
+        "address": "75 Kenneth Rd, Balgowlah NSW 2093, Australia",
+        "rating": 4.2
       },
       {
         "state": "NSW",
@@ -2683,11 +2683,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJfWVX5S1D1moRFXmqAP7fzaw",
-        "latitude": -37.816371,
-        "longitude": 145.012307,
-        "address": "67 North St, Richmond VIC 3121, Australia",
-        "rating": 5
+        "place_id": "ChIJgzsPqq9n1moRc-w2TdDxWWs",
+        "latitude": -37.84224940000001,
+        "longitude": 144.9369379,
+        "address": "1 Nott St, Port Melbourne VIC 3207, Australia",
+        "rating": 4
       }
     ]
   },
@@ -2704,7 +2704,7 @@
         "latitude": 46.1130714,
         "longitude": -60.1720174,
         "address": "121 Reservoir Rd, Sydney, NS B1P 3H6, Canada",
-        "rating": 5
+        "rating": 4.9
       }
     ]
   },
@@ -2959,7 +2959,7 @@
         "latitude": -35.32347040000001,
         "longitude": 149.1649785,
         "address": "Building 2, Tenancy 5/1 Dairy Rd, Fyshwick ACT 2609, Australia",
-        "rating": 4.6
+        "rating": 4.5
       }
     ]
   },
@@ -2972,11 +2972,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJNZsvUd9C1moRY00nWdYBy9k",
-        "latitude": -37.799384,
-        "longitude": 144.9781281,
-        "address": "267 Brunswick St, Fitzroy VIC 3065, Australia",
-        "rating": 4.6
+        "place_id": "ChIJ3wJC8ctd1moRkbLKlZPCEgQ",
+        "latitude": -37.7728983,
+        "longitude": 144.890055,
+        "address": "Highpoint Shopping Centre, Unit 2552/200 Rosamond Rd, Maribyrnong VIC 3032, Australia",
+        "rating": 3.5
       }
     ]
   },
@@ -3217,11 +3217,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ0TAxWqXFsGoRuDHhxlG_1Pw",
-        "latitude": -35.1506606,
-        "longitude": 138.5328636,
-        "address": "1/54 Cottage Ln, Hackham SA 5163, Australia",
-        "rating": 4.9
+        "place_id": "ChIJid5FW_QnsWoR2zwBLzoyfSY",
+        "latitude": -34.8954792,
+        "longitude": 138.6383096,
+        "address": "Shop 6, Marden Shopping Centre 9-21 Lower, Portrush Rd, Marden SA 5070, Australia",
+        "rating": 4.5
       }
     ]
   },
@@ -3320,9 +3320,9 @@
       {
         "state": "SA",
         "place_id": "ChIJbUcfH5tLsWoR8CYfxqvSF2M",
-        "latitude": -35.52139390000001,
-        "longitude": 138.6714429,
-        "address": "Shed 5, Factory 9/89-91 Hill St, Port Elliot SA 5212, Australia",
+        "latitude": -35.52132840000001,
+        "longitude": 138.6710267,
+        "address": "89 Hill St, Port Elliot SA 5212, Australia",
         "rating": 4.7
       }
     ]
@@ -3532,9 +3532,9 @@
       {
         "state": "NSW",
         "place_id": "ChIJ4QcD4Bd5c2sRGevBoPnVTsg",
-        "latitude": -32.7530544,
-        "longitude": 152.0715757,
-        "address": "35 Shearwater Dr, Taylors Beach NSW 2316, Australia",
+        "latitude": -32.7279697,
+        "longitude": 152.0780748,
+        "address": "11/9 George Rd, Salamander Bay NSW 2317, Australia",
         "rating": 5
       }
     ]
