@@ -329,11 +329,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJZcEztpNmeGkRBAzqOEqHgNk",
-        "latitude": -16.9236687,
-        "longitude": 145.776031,
-        "address": "Oceana Walk Arcade, 13/62 Grafton St, Cairns City QLD 4870, Australia",
-        "rating": 4.8
+        "place_id": "ChIJo0UDfrZbkWsRH9DAyoI73tQ",
+        "latitude": -27.4975,
+        "longitude": 153.0680556,
+        "address": "4 Newman Ave, Camp Hill QLD 4152, Australia",
+        "rating": 4.7
       }
     ]
   },
@@ -360,16 +360,7 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "NSW",
-        "place_id": "ChIJ326-kNq0lmsRsIDe81qjAgU",
-        "latitude": -27.6259862,
-        "longitude": 152.8077665,
-        "address": "Blackstone QLD 4304, Australia",
-        "rating": "N/A"
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Bliss Coffee Roasters",
@@ -435,7 +426,7 @@
         "latitude": -37.80179399999999,
         "longitude": 144.9932651,
         "address": "2 Yarra St, Abbotsford VIC 3067, Australia",
-        "rating": 4.6
+        "rating": 4.7
       }
     ]
   },
@@ -448,11 +439,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJA8fPSJ9ZwokRDQyUg27HU2I",
-        "latitude": 40.7187849,
-        "longitude": -73.96416169999999,
-        "address": "184 Kent Ave, Brooklyn, NY 11249, USA",
-        "rating": 4.1
+        "place_id": "ChIJL4k3GXdp1moRx5sxIDCAgIM",
+        "latitude": -37.89661580000001,
+        "longitude": 145.0360472,
+        "address": "189a Booran Rd, Caulfield South VIC 3162, Australia",
+        "rating": 4.3
       }
     ]
   },
@@ -517,9 +508,9 @@
       {
         "state": "NSW",
         "place_id": "ChIJEXZjw-LNcmsRfrtI6JQ0IS0",
-        "latitude": -33.41190459999999,
-        "longitude": 151.2824726,
-        "address": "1/80 Somersby Falls Rd, Somersby NSW 2250, Australia",
+        "latitude": -33.412302,
+        "longitude": 151.28249,
+        "address": "INSIDE PHASER FPV, 1/80 Somersby Falls Rd, Somersby NSW 2250, Australia",
         "rating": 4.9
       }
     ]
@@ -1008,10 +999,10 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJUSG3ufz232oR8MpDkLQJBgQ",
-        "latitude": -34.8834117,
-        "longitude": 145.4679106,
-        "address": "Four Corners NSW 2716, Australia",
+        "place_id": "ChIJmZN-nuA5dGsRcKFDkLQJBgQ",
+        "latitude": -32.1943225,
+        "longitude": 152.5142797,
+        "address": "Forster NSW 2428, Australia",
         "rating": "N/A"
       }
     ]
@@ -1177,11 +1168,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJxRQt-2jWTYYR9hEqtfVueZM",
-        "latitude": 32.903244,
-        "longitude": -97.19726299999999,
-        "address": "8700 N Tarrant Pkwy #109, North Richland Hills, TX 76182, USA",
-        "rating": 4.6
+        "place_id": "ChIJp7ODnLX_DogRpoSDGWWqMkI",
+        "latitude": 41.8839247,
+        "longitude": -88.2065439,
+        "address": "148 W Washington St, West Chicago, IL 60185, USA",
+        "rating": 4.8
       }
     ]
   },
@@ -1321,11 +1312,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJoaRoqA9d1moRveygOp9bniA",
-        "latitude": -37.79220970000001,
-        "longitude": 144.9257042,
-        "address": "43 Epsom Rd, Kensington VIC 3031, Australia",
-        "rating": 4.4
+        "place_id": "ChIJNx0qvBlo1moREbaZuYZoCCI",
+        "latitude": -37.8446381,
+        "longitude": 144.9792762,
+        "address": "517 St Kilda Rd, Melbourne VIC 3004, Australia",
+        "rating": 4.5
       }
     ]
   },
@@ -1355,11 +1346,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJIdaGSgGrEmsRA5A4TQaNXWI",
-        "latitude": -33.79797829999999,
-        "longitude": 151.2869726,
-        "address": "66 The Corso, Manly NSW 2095, Australia",
-        "rating": 4.1
+        "place_id": "ChIJWwkUHEKuEmsRHpNpvRcQldQ",
+        "latitude": -33.8697227,
+        "longitude": 151.2694598,
+        "address": "712 New South Head Rd, Rose Bay NSW 2029, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -1609,11 +1600,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJlQzbPT6uEmsRdMutKU9hWds",
-        "latitude": -33.8723764,
-        "longitude": 151.209149,
-        "address": "161 Castlereagh St, Sydney NSW 2000, Australia",
-        "rating": 4.3
+        "place_id": "ChIJYyHMmwClEmsRrxuKJK2x-yI",
+        "latitude": -33.7943735,
+        "longitude": 151.1418075,
+        "address": "3 Plassey Rd, Macquarie Park NSW 2113, Australia",
+        "rating": 4.5
       }
     ]
   },
@@ -2071,7 +2062,7 @@
         "latitude": -33.8866783,
         "longitude": 151.2090638,
         "address": "Shop 1a, 118 Devonshire Street (cnr, Holt St, Surry Hills NSW 2010, Australia",
-        "rating": 4.7
+        "rating": 4.6
       }
     ]
   },
@@ -2430,11 +2421,11 @@
       },
       {
         "state": "NSW",
-        "place_id": "ChIJIykYdOyxEmsRNDoL-40iQcA",
-        "latitude": -33.8960805,
-        "longitude": 151.1953529,
-        "address": "Shop 13/2 Central Ave, Eveleigh NSW 2015, Australia",
-        "rating": 4.9
+        "place_id": "ChIJR-S-I9axEmsRGjjcmNfvx6k",
+        "latitude": -33.8858584,
+        "longitude": 151.1944136,
+        "address": "32-36 City Rd, Chippendale NSW 2008, Australia",
+        "rating": 4.2
       }
     ]
   },
@@ -2513,11 +2504,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJU4NCID011moRLsHU_g9lhww",
-        "latitude": -37.63703,
-        "longitude": 145.196518,
-        "address": "946 Heidelberg - Kinglake Rd, Hurstbridge VIC 3099, Australia",
-        "rating": 4.5
+        "place_id": "ChIJP3FnbJPPsGoR0stb9gepBH8",
+        "latitude": -34.956869,
+        "longitude": 138.6148902,
+        "address": "65 Duthy St, Malvern SA 5061, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -3006,11 +2997,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJFW5RJ6lDkWsRbws2fgqlXHs",
-        "latitude": -27.6210789,
-        "longitude": 153.1145937,
-        "address": "b6/10/14 Compton Rd, Underwood QLD 4119, Australia",
-        "rating": 4.7
+        "place_id": "ChIJme0Qzb1qkWsRgG4cVLfHaFQ",
+        "latitude": -27.7455513,
+        "longitude": 153.2200233,
+        "address": "5 Commerce Cct, Yatala QLD 4207, Australia",
+        "rating": 5
       }
     ]
   },
@@ -3370,11 +3361,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJbzzL76jOsGoRS-dKvFZhdI8",
-        "latitude": -34.9398083,
-        "longitude": 138.6354806,
-        "address": "2 L'Estrange St, Glenside SA 5065, Australia",
-        "rating": 4.4
+        "place_id": "ChIJ4_pYsdEox2oRUPuOYlQ2AwU",
+        "latitude": -34.2726441,
+        "longitude": 140.6065832,
+        "address": "Berri SA 5343, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -3404,10 +3395,10 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJocugXke2sGoR0wyAbqesCHI",
-        "latitude": -34.8309076,
-        "longitude": 138.6128317,
-        "address": "821 Main N Rd, Pooraka SA 5095, Australia",
+        "place_id": "ChIJN0UshUH1XIYRKCo5hVtswG8",
+        "latitude": 29.4326534,
+        "longitude": -98.4840668,
+        "address": "203 8th St Bldg. 2, San Antonio, TX 78215, USA",
         "rating": 4.8
       }
     ]
@@ -3548,10 +3539,10 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJnZUptp1C1moRMOdeTMfQOs8",
-        "latitude": -37.838518,
-        "longitude": 144.990105,
-        "address": "1C Murphy St, South Yarra VIC 3141, Australia",
+        "place_id": "ChIJG0U9S6je1WoRJ98FU1986fA",
+        "latitude": -38.2347384,
+        "longitude": 145.0576498,
+        "address": "16 Progress St, Mornington VIC 3931, Australia",
         "rating": 4.4
       }
     ]
@@ -3562,7 +3553,16 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ7yC4-45P1moR2YOzj-lfkRk",
+        "latitude": -37.6555655,
+        "longitude": 145.0165111,
+        "address": "Pacific Epping, Shop 245C/571-583 High St, Epping VIC 3076, Australia",
+        "rating": 4
+      }
+    ]
   },
   {
     "Name": "Coffee in Common",
