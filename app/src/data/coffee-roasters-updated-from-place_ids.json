@@ -240,7 +240,7 @@
         "latitude": -37.8106637,
         "longitude": 144.9617933,
         "address": "GD089/360 Elizabeth St, Melbourne VIC 3000, Australia",
-        "rating": 4.1
+        "rating": 4
       }
     ]
   },
@@ -884,7 +884,7 @@
         "latitude": -37.7981641,
         "longitude": 144.9858767,
         "address": "36-38 Sackville St, Collingwood VIC 3066, Australia",
-        "rating": 4.5
+        "rating": 4.4
       }
     ]
   },
@@ -999,11 +999,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJmZN-nuA5dGsRcKFDkLQJBgQ",
-        "latitude": -32.1943225,
-        "longitude": 152.5142797,
-        "address": "Forster NSW 2428, Australia",
-        "rating": "N/A"
+        "place_id": "ChIJZ934S0KuEmsR_0lxV3PTR4M",
+        "latitude": -33.8615815,
+        "longitude": 151.2076503,
+        "address": "199 George St, The Rocks NSW 2000, Australia",
+        "rating": 4.5
       }
     ]
   },
@@ -1240,7 +1240,7 @@
         "latitude": -33.0187853,
         "longitude": 151.6829277,
         "address": "15 Warrior St, Belmont North NSW 2280, Australia",
-        "rating": "N/A"
+        "rating": 5
       }
     ]
   },
@@ -1312,11 +1312,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJNx0qvBlo1moREbaZuYZoCCI",
-        "latitude": -37.8446381,
-        "longitude": 144.9792762,
-        "address": "517 St Kilda Rd, Melbourne VIC 3004, Australia",
-        "rating": 4.5
+        "place_id": "ChIJoaRoqA9d1moRveygOp9bniA",
+        "latitude": -37.79220970000001,
+        "longitude": 144.9257042,
+        "address": "43 Epsom Rd, Kensington VIC 3031, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -1414,11 +1414,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJT-tyjjRd1moRqeXlykOTVQc",
-        "latitude": -37.8062804,
-        "longitude": 144.9580131,
-        "address": "83-85 Victoria St, Melbourne VIC 3000, Australia",
-        "rating": 4.3
+        "place_id": "ChIJMzrwAslC1moRKuXaN2eeaXw",
+        "latitude": -37.8118922,
+        "longitude": 144.9693252,
+        "address": "Market Ln, Melbourne VIC 3000, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -1863,11 +1863,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJKX5tnkBD1moRwt30NN8sXWU",
-        "latitude": -37.81463089999999,
-        "longitude": 144.965933,
-        "address": "133 Swanston St, Melbourne VIC 3000, Australia",
-        "rating": 4.2
+        "place_id": "ChIJcY8EpTtD1moRfdZIbMy-FX0",
+        "latitude": -37.8108792,
+        "longitude": 144.9627477,
+        "address": "140 La Trobe St, Melbourne VIC 3000, Australia",
+        "rating": 4.1
       }
     ]
   },
@@ -2504,11 +2504,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJP3FnbJPPsGoR0stb9gepBH8",
-        "latitude": -34.956869,
-        "longitude": 138.6148902,
-        "address": "65 Duthy St, Malvern SA 5061, Australia",
-        "rating": 4.6
+        "place_id": "ChIJU4NCID011moRLsHU_g9lhww",
+        "latitude": -37.63703,
+        "longitude": 145.196518,
+        "address": "946 Heidelberg - Kinglake Rd, Hurstbridge VIC 3099, Australia",
+        "rating": 4.5
       }
     ]
   },
@@ -2963,11 +2963,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJ3wJC8ctd1moRkbLKlZPCEgQ",
-        "latitude": -37.7728983,
-        "longitude": 144.890055,
-        "address": "Highpoint Shopping Centre, Unit 2552/200 Rosamond Rd, Maribyrnong VIC 3032, Australia",
-        "rating": 3.5
+        "place_id": "ChIJNZsvUd9C1moRY00nWdYBy9k",
+        "latitude": -37.799384,
+        "longitude": 144.9781281,
+        "address": "267 Brunswick St, Fitzroy VIC 3065, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -2997,11 +2997,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJme0Qzb1qkWsRgG4cVLfHaFQ",
-        "latitude": -27.7455513,
-        "longitude": 153.2200233,
-        "address": "5 Commerce Cct, Yatala QLD 4207, Australia",
-        "rating": 5
+        "place_id": "ChIJFW5RJ6lDkWsRbws2fgqlXHs",
+        "latitude": -27.6210789,
+        "longitude": 153.1145937,
+        "address": "b6/10/14 Compton Rd, Underwood QLD 4119, Australia",
+        "rating": 4.7
       }
     ]
   },
@@ -3539,11 +3539,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJG0U9S6je1WoRJ98FU1986fA",
-        "latitude": -38.2347384,
-        "longitude": 145.0576498,
-        "address": "16 Progress St, Mornington VIC 3931, Australia",
-        "rating": 4.4
+        "place_id": "ChIJxRGxLN901moRSUDfwUb32Cs",
+        "latitude": -38.1439868,
+        "longitude": 145.1209904,
+        "address": "465 Nepean Hwy, Frankston VIC 3199, Australia",
+        "rating": 4.6
       }
     ]
   },
