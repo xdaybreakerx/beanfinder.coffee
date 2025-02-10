@@ -104,7 +104,7 @@
         "latitude": -33.91038,
         "longitude": 151.204733,
         "address": "58 Epsom Rd, Zetland NSW 2017, Australia",
-        "rating": 4.1
+        "rating": 4.2
       }
     ]
   },
@@ -426,7 +426,7 @@
         "latitude": -37.80179399999999,
         "longitude": 144.9932651,
         "address": "2 Yarra St, Abbotsford VIC 3067, Australia",
-        "rating": 4.7
+        "rating": 4.6
       }
     ]
   },
@@ -456,11 +456,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJZTOS4QtikGsRKHf4srByS80",
-        "latitude": -28.6373612,
-        "longitude": 153.585213,
-        "address": "17/1A Banksia Dr, Byron Bay NSW 2481, Australia",
-        "rating": 4.9
+        "place_id": "ChIJmfeUCzyBkGsRaBlQHhB_AUo",
+        "latitude": -28.8465389,
+        "longitude": 153.5567981,
+        "address": "5 Cessna Cres, Ballina NSW 2478, Australia",
+        "rating": 5
       }
     ]
   },
@@ -562,7 +562,7 @@
         "latitude": -34.8941892,
         "longitude": 138.5541761,
         "address": "568 Port Rd, Allenby Gardens SA 5009, Australia",
-        "rating": 4.8
+        "rating": 4.9
       }
     ]
   },
@@ -680,7 +680,7 @@
         "latitude": -33.54861679999999,
         "longitude": 150.6985015,
         "address": "1398 Kurmond Rd, Kurmond NSW 2757, Australia",
-        "rating": 4.8
+        "rating": 4.9
       }
     ]
   },
@@ -748,7 +748,7 @@
         "latitude": -33.763324,
         "longitude": 151.268433,
         "address": "28 Dale St, Brookvale NSW 2100, Australia",
-        "rating": 4.7
+        "rating": 4.6
       }
     ]
   },
@@ -833,7 +833,7 @@
         "latitude": -37.81679099999999,
         "longitude": 144.966162,
         "address": "247 Flinders Ln, Melbourne VIC 3000, Australia",
-        "rating": 4.5
+        "rating": 4.6
       }
     ]
   },
@@ -884,7 +884,7 @@
         "latitude": -37.7981641,
         "longitude": 144.9858767,
         "address": "36-38 Sackville St, Collingwood VIC 3066, Australia",
-        "rating": 4.4
+        "rating": 4.5
       }
     ]
   },
@@ -999,11 +999,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJZ934S0KuEmsR_0lxV3PTR4M",
-        "latitude": -33.8615815,
-        "longitude": 151.2076503,
-        "address": "199 George St, The Rocks NSW 2000, Australia",
-        "rating": 4.5
+        "place_id": "ChIJmZN-nuA5dGsRcKFDkLQJBgQ",
+        "latitude": -32.1943225,
+        "longitude": 152.5142797,
+        "address": "Forster NSW 2428, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -1071,7 +1071,7 @@
         "latitude": -36.7343447,
         "longitude": 147.1688094,
         "address": "21 Embankment Dr, Mount Beauty VIC 3699, Australia",
-        "rating": 5
+        "rating": 4.9
       }
     ]
   },
@@ -1104,7 +1104,7 @@
         "latitude": -27.4675273,
         "longitude": 153.0265775,
         "address": "Shop 6/243 Edward St, Brisbane City QLD 4000, Australia",
-        "rating": 4.4
+        "rating": 4.5
       }
     ]
   },
@@ -1138,7 +1138,7 @@
         "latitude": -37.8982775,
         "longitude": 145.1403857,
         "address": "23 Lionel Rd, Mount Waverley VIC 3149, Australia",
-        "rating": 4.2
+        "rating": 4.1
       }
     ]
   },
@@ -1168,11 +1168,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJp7ODnLX_DogRpoSDGWWqMkI",
-        "latitude": 41.8839247,
-        "longitude": -88.2065439,
-        "address": "148 W Washington St, West Chicago, IL 60185, USA",
-        "rating": 4.8
+        "place_id": "ChIJxRQt-2jWTYYR9hEqtfVueZM",
+        "latitude": 32.903244,
+        "longitude": -97.19726299999999,
+        "address": "8700 N Tarrant Pkwy #109, North Richland Hills, TX 76182, USA",
+        "rating": 4.6
       }
     ]
   },
@@ -1282,7 +1282,7 @@
         "latitude": -33.86483,
         "longitude": 151.1774597,
         "address": "26D Mansfield St, Rozelle NSW 2039, Australia",
-        "rating": 4.2
+        "rating": 4.3
       }
     ]
   },
@@ -1299,7 +1299,7 @@
         "latitude": -38.333496,
         "longitude": 144.989088,
         "address": "22 Collins Rd, Dromana VIC 3936, Australia",
-        "rating": 4.8
+        "rating": 4.7
       }
     ]
   },
@@ -1346,11 +1346,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJWwkUHEKuEmsRHpNpvRcQldQ",
-        "latitude": -33.8697227,
-        "longitude": 151.2694598,
-        "address": "712 New South Head Rd, Rose Bay NSW 2029, Australia",
-        "rating": 4.6
+        "place_id": "ChIJIdaGSgGrEmsRA5A4TQaNXWI",
+        "latitude": -33.79797829999999,
+        "longitude": 151.2869726,
+        "address": "66 The Corso, Manly NSW 2095, Australia",
+        "rating": 4.1
       }
     ]
   },
@@ -1401,7 +1401,7 @@
         "latitude": -37.8307756,
         "longitude": 145.1862751,
         "address": "12 Beech St, Nunawading VIC 3131, Australia",
-        "rating": 4.8
+        "rating": 4.9
       }
     ]
   },
@@ -1414,11 +1414,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJMzrwAslC1moRKuXaN2eeaXw",
-        "latitude": -37.8118922,
-        "longitude": 144.9693252,
-        "address": "Market Ln, Melbourne VIC 3000, Australia",
-        "rating": "N/A"
+        "place_id": "ChIJT-tyjjRd1moRqeXlykOTVQc",
+        "latitude": -37.8062804,
+        "longitude": 144.9580131,
+        "address": "83-85 Victoria St, Melbourne VIC 3000, Australia",
+        "rating": 4.3
       }
     ]
   },
@@ -1621,7 +1621,7 @@
         "latitude": -37.7641144,
         "longitude": 144.9732824,
         "address": "438 Lygon St, Brunswick East VIC 3057, Australia",
-        "rating": 4.4
+        "rating": 4.5
       }
     ]
   },
@@ -1863,11 +1863,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJcY8EpTtD1moRfdZIbMy-FX0",
-        "latitude": -37.8108792,
-        "longitude": 144.9627477,
-        "address": "140 La Trobe St, Melbourne VIC 3000, Australia",
-        "rating": 4.1
+        "place_id": "ChIJKX5tnkBD1moRwt30NN8sXWU",
+        "latitude": -37.81463089999999,
+        "longitude": 144.965933,
+        "address": "133 Swanston St, Melbourne VIC 3000, Australia",
+        "rating": 4.2
       }
     ]
   },
@@ -2096,7 +2096,7 @@
         "latitude": -37.8219832,
         "longitude": 144.9264802,
         "address": "Unit 2 B/706 Lorimer St, Port Melbourne VIC 3207, Australia",
-        "rating": 4.2
+        "rating": 4.3
       }
     ]
   },
@@ -2109,11 +2109,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJXYZl8bGrEmsRKpC6MUMYXEY",
-        "latitude": -33.7869368,
-        "longitude": 151.2677137,
-        "address": "75 Kenneth Rd, Balgowlah NSW 2093, Australia",
-        "rating": 4.2
+        "place_id": "ChIJvdx3kjJd1moRHnjYhByshFo",
+        "latitude": -37.8029711,
+        "longitude": 144.9590027,
+        "address": "114 Berkeley St, Carlton VIC 3053, Australia",
+        "rating": 4.4
       },
       {
         "state": "NSW",
@@ -2155,7 +2155,7 @@
         "latitude": -33.8810973,
         "longitude": 151.2096465,
         "address": "60/64 Reservoir St, Surry Hills NSW 2010, Australia",
-        "rating": 4.5
+        "rating": 4.6
       },
       {
         "state": "QLD",
@@ -2400,7 +2400,7 @@
         "latitude": -26.729457,
         "longitude": 153.1223552,
         "address": "9 Machinery Ave, Warana QLD 4575, Australia",
-        "rating": 4.6
+        "rating": 4.7
       }
     ]
   },
@@ -2463,11 +2463,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJvUxMiP9C1moRWm5_z4LcMAc",
-        "latitude": -37.8169555,
-        "longitude": 145.0131324,
-        "address": "16 River St, Richmond VIC 3121, Australia",
-        "rating": 4.2
+        "place_id": "ChIJV5bw9OZZ1moRt3gR-1Sckmg",
+        "latitude": -37.66888329999999,
+        "longitude": 144.8513624,
+        "address": "Melbourne Airport, Shop T1, Departure Dr, Melbourne Airport VIC 3045, Australia",
+        "rating": 2.7
       },
       {
         "state": "NSW",
@@ -2610,7 +2610,7 @@
         "latitude": -33.8798342,
         "longitude": 151.1973423,
         "address": "103 Jones St, Ultimo NSW 2007, Australia",
-        "rating": 3.8
+        "rating": 3.5
       }
     ]
   },
@@ -2644,7 +2644,7 @@
         "latitude": -33.6980561,
         "longitude": 151.1108073,
         "address": "5 Salisbury Rd, Hornsby NSW 2077, Australia",
-        "rating": 4.5
+        "rating": 4.4
       }
     ]
   },
@@ -3433,7 +3433,7 @@
         "latitude": -34.9076891,
         "longitude": 138.4930705,
         "address": "640 Grange Rd, Henley Beach SA 5022, Australia",
-        "rating": 4.2
+        "rating": 4.1
       }
     ]
   },
@@ -3539,11 +3539,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJxRGxLN901moRSUDfwUb32Cs",
-        "latitude": -38.1439868,
-        "longitude": 145.1209904,
-        "address": "465 Nepean Hwy, Frankston VIC 3199, Australia",
-        "rating": 4.6
+        "place_id": "ChIJnZUptp1C1moRMOdeTMfQOs8",
+        "latitude": -37.838518,
+        "longitude": 144.990105,
+        "address": "1C Murphy St, South Yarra VIC 3141, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -3553,16 +3553,7 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "VIC",
-        "place_id": "ChIJ7yC4-45P1moR2YOzj-lfkRk",
-        "latitude": -37.6555655,
-        "longitude": 145.0165111,
-        "address": "Pacific Epping, Shop 245C/571-583 High St, Epping VIC 3076, Australia",
-        "rating": 4
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Coffee in Common",
@@ -3590,10 +3581,10 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJFfuagElD1moRfHn5PWOZDqE",
-        "latitude": -37.8171645,
-        "longitude": 144.9648549,
-        "address": "Shop 1D/289 Flinders Ln, Melbourne VIC 3000, Australia",
+        "place_id": "ChIJs8sfHx9D1moRJnTIRru0bxk",
+        "latitude": -37.7982136,
+        "longitude": 144.9857192,
+        "address": "30 Sackville St, Collingwood VIC 3066, Australia",
         "rating": 4.7
       }
     ]
@@ -3691,11 +3682,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJLVMs95FC1moRAGLTuLPqJnA",
-        "latitude": -37.8097275,
-        "longitude": 145.0059353,
-        "address": "14 Duke St, Abbotsford VIC 3067, Australia",
-        "rating": 4.9
+        "place_id": "ChIJJ8fMLwBD1moRSaK6mwaQEUM",
+        "latitude": -37.7798158,
+        "longitude": 144.9870757,
+        "address": "336 St Georges Rd, Fitzroy North VIC 3068, Australia",
+        "rating": 4.6
       }
     ]
   }

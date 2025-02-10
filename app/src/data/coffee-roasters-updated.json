@@ -352,7 +352,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJZTOS4QtikGsRKHf4srByS80"
+        "place_id": "ChIJmfeUCzyBkGsRaBlQHhB_AUo"
       }
     ]
   },
@@ -767,7 +767,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJZ934S0KuEmsR_0lxV3PTR4M"
+        "place_id": "ChIJmZN-nuA5dGsRcKFDkLQJBgQ"
       }
     ]
   },
@@ -892,7 +892,7 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJp7ODnLX_DogRpoSDGWWqMkI"
+        "place_id": "ChIJxRQt-2jWTYYR9hEqtfVueZM"
       }
     ]
   },
@@ -1030,7 +1030,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJWwkUHEKuEmsRHpNpvRcQldQ"
+        "place_id": "ChIJIdaGSgGrEmsRA5A4TQaNXWI"
       }
     ]
   },
@@ -1082,7 +1082,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJMzrwAslC1moRKuXaN2eeaXw"
+        "place_id": "ChIJT-tyjjRd1moRqeXlykOTVQc"
       }
     ]
   },
@@ -1419,7 +1419,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJcY8EpTtD1moRfdZIbMy-FX0"
+        "place_id": "ChIJKX5tnkBD1moRwt30NN8sXWU"
       }
     ]
   },
@@ -1609,7 +1609,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJXYZl8bGrEmsRKpC6MUMYXEY"
+        "place_id": "ChIJvdx3kjJd1moRHnjYhByshFo"
       },
       {
         "state": "NSW",
@@ -1875,7 +1875,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJvUxMiP9C1moRWm5_z4LcMAc"
+        "place_id": "ChIJV5bw9OZZ1moRt3gR-1Sckmg"
       },
       {
         "state": "NSW",
@@ -2691,7 +2691,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJxRGxLN901moRSUDfwUb32Cs"
+        "place_id": "ChIJnZUptp1C1moRMOdeTMfQOs8"
       }
     ]
   },
@@ -2701,12 +2701,7 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "VIC",
-        "place_id": "ChIJ7yC4-45P1moR2YOzj-lfkRk"
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Coffee in Common",
@@ -2730,7 +2725,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJFfuagElD1moRfHn5PWOZDqE"
+        "place_id": "ChIJs8sfHx9D1moRJnTIRru0bxk"
       }
     ]
   },
@@ -2811,7 +2806,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJLVMs95FC1moRAGLTuLPqJnA"
+        "place_id": "ChIJJ8fMLwBD1moRSaK6mwaQEUM"
       }
     ]
   }
