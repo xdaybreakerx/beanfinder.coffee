@@ -117,11 +117,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJ0_3cGIBXkWsRvIe1EuQUdRk",
-        "latitude": -27.4173366,
-        "longitude": 153.0135134,
-        "address": "44 Wolverhampton St, Stafford QLD 4053, Australia",
-        "rating": 4.8
+        "place_id": "ChIJO3rqvldNrlIRdN8X7uCSi8Y",
+        "latitude": 46.768511,
+        "longitude": -92.12276899999999,
+        "address": "1917 W Superior St, Duluth, MN 55806, USA",
+        "rating": 5
       }
     ]
   },
@@ -219,10 +219,10 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJzTYSmmLpST4RJt1g8yJvdeM",
-        "latitude": 26.3059554,
-        "longitude": 50.1902352,
-        "address": "6391 Prince Faisal Bin Fahd Road, Hizam Al Akhdar، Al Khobar 34436, Saudi Arabia",
+        "place_id": "ChIJJ5bS6P9n1moRx76U3LjtN1A",
+        "latitude": -37.83124749999999,
+        "longitude": 144.960354,
+        "address": "12-18 Yarra Pl, South Melbourne VIC 3205, Australia",
         "rating": 4.2
       }
     ]
@@ -318,16 +318,7 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "NSW",
-        "place_id": "ChIJKRXBsD2xEmsRVe81SfhddGM",
-        "latitude": -33.9103851,
-        "longitude": 151.1657653,
-        "address": "24 Cadogan St, Marrickville NSW 2204, Australia",
-        "rating": 4.9
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Blackbird Espresso",
@@ -728,11 +719,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJ3YWXACAbkWsR2YzDqyJRgwQ",
-        "latitude": -27.966641,
-        "longitude": 153.370403,
-        "address": "Unit 2/14 Mercantile Ct, Molendinar QLD 4214, Australia",
-        "rating": 4.6
+        "place_id": "ChIJz7-F1JNmeGkRyCqSSG5AcD8",
+        "latitude": -16.9233378,
+        "longitude": 145.7748839,
+        "address": "105 Grafton St, Cairns City QLD 4870, Australia",
+        "rating": 4.8
       }
     ]
   },
@@ -1017,11 +1008,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJmZN-nuA5dGsRcKFDkLQJBgQ",
-        "latitude": -32.1943225,
-        "longitude": 152.5142797,
-        "address": "Forster NSW 2428, Australia",
-        "rating": "N/A"
+        "place_id": "ChIJZ934S0KuEmsR_0lxV3PTR4M",
+        "latitude": -33.8615815,
+        "longitude": 151.2076503,
+        "address": "199 George St, The Rocks NSW 2000, Australia",
+        "rating": 4.5
       }
     ]
   },
@@ -1364,11 +1355,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJWwkUHEKuEmsRHpNpvRcQldQ",
-        "latitude": -33.8697227,
-        "longitude": 151.2694598,
-        "address": "712 New South Head Rd, Rose Bay NSW 2029, Australia",
-        "rating": 4.6
+        "place_id": "ChIJfX8VVbCrEmsRsL8yFmh9AQU",
+        "latitude": -33.7968627,
+        "longitude": 151.2850167,
+        "address": "Manly NSW 2095, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -1432,11 +1423,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJT-tyjjRd1moRqeXlykOTVQc",
-        "latitude": -37.8062804,
-        "longitude": 144.9580131,
-        "address": "83-85 Victoria St, Melbourne VIC 3000, Australia",
-        "rating": 4.3
+        "place_id": "ChIJMzrwAslC1moRKuXaN2eeaXw",
+        "latitude": -37.8118922,
+        "longitude": 144.9693252,
+        "address": "Market Ln, Melbourne VIC 3000, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -1940,11 +1931,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJU6iaAuDT1moRqKo0oL6lEOU",
-        "latitude": -37.85483550000001,
-        "longitude": 144.9926234,
-        "address": "81A Chapel St, Windsor VIC 3181, Australia",
-        "rating": 4.7
+        "place_id": "ChIJt7-JPBld1moRjMAqzh7ZieM",
+        "latitude": -37.6696285,
+        "longitude": 144.9608051,
+        "address": "30/30A Colbert Rd, Campbellfield VIC 3061, Australia",
+        "rating": 5
       }
     ]
   },
@@ -2624,11 +2615,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ4_Ak3iKtEmsR6uPK8jv_Z7I",
-        "latitude": -33.88865729999999,
-        "longitude": 151.2756322,
-        "address": "Corner of Beach Road and, Gould St, Bondi Beach NSW 2026, Australia",
-        "rating": 4.2
+        "place_id": "ChIJQw3XQS-uEmsRWSAo6K-Jx28",
+        "latitude": -33.8798342,
+        "longitude": 151.1973423,
+        "address": "103 Jones St, Ultimo NSW 2007, Australia",
+        "rating": 3.8
       }
     ]
   },
@@ -2744,9 +2735,9 @@
       {
         "state": "VIC",
         "place_id": "ChIJpQ8_w8ZM0WoRi7zVVdrumOA",
-        "latitude": -37.52933489999999,
-        "longitude": 143.8445743,
-        "address": "Shed 5/10 Builders Cl, Wendouree VIC 3355, Australia",
+        "latitude": -37.5293696,
+        "longitude": 143.844328,
+        "address": "10 Builders Cl, Wendouree VIC 3355, Australia",
         "rating": 5
       }
     ]
@@ -3053,7 +3044,7 @@
         "latitude": -27.9455261,
         "longitude": 153.3864623,
         "address": "129 Olsen Ave, Labrador QLD 4215, Australia",
-        "rating": 4.7
+        "rating": 4.6
       }
     ]
   },
@@ -3599,10 +3590,10 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJs8sfHx9D1moRJnTIRru0bxk",
-        "latitude": -37.7982136,
-        "longitude": 144.9857192,
-        "address": "30 Sackville St, Collingwood VIC 3066, Australia",
+        "place_id": "ChIJFfuagElD1moRfHn5PWOZDqE",
+        "latitude": -37.8171645,
+        "longitude": 144.9648549,
+        "address": "Shop 1D/289 Flinders Ln, Melbourne VIC 3000, Australia",
         "rating": 4.7
       }
     ]
