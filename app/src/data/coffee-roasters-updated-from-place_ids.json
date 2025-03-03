@@ -117,11 +117,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJO3rqvldNrlIRdN8X7uCSi8Y",
-        "latitude": 46.768511,
-        "longitude": -92.12276899999999,
-        "address": "1917 W Superior St, Duluth, MN 55806, USA",
-        "rating": 5
+        "place_id": "ChIJ0_3cGIBXkWsRvIe1EuQUdRk",
+        "latitude": -27.4173366,
+        "longitude": 153.0135134,
+        "address": "44 Wolverhampton St, Stafford QLD 4053, Australia",
+        "rating": 4.8
       }
     ]
   },
@@ -219,11 +219,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJJ5bS6P9n1moRx76U3LjtN1A",
-        "latitude": -37.83124749999999,
-        "longitude": 144.960354,
-        "address": "12-18 Yarra Pl, South Melbourne VIC 3205, Australia",
-        "rating": 4.2
+        "place_id": "ChIJs8sfHx9D1moRJnTIRru0bxk",
+        "latitude": -37.7982136,
+        "longitude": 144.9857192,
+        "address": "30 Sackville St, Collingwood VIC 3066, Australia",
+        "rating": 4.7
       }
     ]
   },
@@ -318,7 +318,16 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJKRXBsD2xEmsRVe81SfhddGM",
+        "latitude": -33.9103851,
+        "longitude": 151.1657653,
+        "address": "24 Cadogan St, Marrickville NSW 2204, Australia",
+        "rating": 4.9
+      }
+    ]
   },
   {
     "Name": "Blackbird Espresso",
@@ -702,11 +711,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJIfS2Z15TzSsRHlCo9hzlvFY",
-        "latitude": -31.7452436,
-        "longitude": 115.7621037,
-        "address": "Unit 8/7 Delage St, Joondalup WA 6027, Australia",
-        "rating": 4
+        "place_id": "ChIJ8RvSwm63MioRpXpPWzYe0dM",
+        "latitude": -31.8732624,
+        "longitude": 115.9777724,
+        "address": "W Swan Rd, Caversham WA 6055, Australia",
+        "rating": 4.7
       }
     ]
   },
@@ -1029,7 +1038,7 @@
         "latitude": -33.7903172,
         "longitude": 151.2009465,
         "address": "7/3 Gibbes St, Chatswood NSW 2067, Australia",
-        "rating": 4.3
+        "rating": 4.2
       }
     ]
   },
@@ -1177,11 +1186,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJxRQt-2jWTYYR9hEqtfVueZM",
-        "latitude": 32.903244,
-        "longitude": -97.19726299999999,
-        "address": "8700 N Tarrant Pkwy #109, North Richland Hills, TX 76182, USA",
-        "rating": 4.6
+        "place_id": "ChIJp7ODnLX_DogRpoSDGWWqMkI",
+        "latitude": 41.8839247,
+        "longitude": -88.2065439,
+        "address": "148 W Washington St, West Chicago, IL 60185, USA",
+        "rating": 4.8
       }
     ]
   },
@@ -1321,11 +1330,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJoaRoqA9d1moRveygOp9bniA",
-        "latitude": -37.79220970000001,
-        "longitude": 144.9257042,
-        "address": "43 Epsom Rd, Kensington VIC 3031, Australia",
-        "rating": 4.4
+        "place_id": "ChIJNx0qvBlo1moREbaZuYZoCCI",
+        "latitude": -37.8446381,
+        "longitude": 144.9792762,
+        "address": "517 St Kilda Rd, Melbourne VIC 3004, Australia",
+        "rating": 4.5
       }
     ]
   },
@@ -1423,11 +1432,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJMzrwAslC1moRKuXaN2eeaXw",
-        "latitude": -37.8118922,
-        "longitude": 144.9693252,
-        "address": "Market Ln, Melbourne VIC 3000, Australia",
-        "rating": "N/A"
+        "place_id": "ChIJT-tyjjRd1moRqeXlykOTVQc",
+        "latitude": -37.8062804,
+        "longitude": 144.9580131,
+        "address": "83-85 Victoria St, Melbourne VIC 3000, Australia",
+        "rating": 4.3
       }
     ]
   },
@@ -1609,11 +1618,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJYyHMmwClEmsRrxuKJK2x-yI",
-        "latitude": -33.7943735,
-        "longitude": 151.1418075,
-        "address": "3 Plassey Rd, Macquarie Park NSW 2113, Australia",
-        "rating": 4.5
+        "place_id": "ChIJlQzbPT6uEmsRdMutKU9hWds",
+        "latitude": -33.8723764,
+        "longitude": 151.209149,
+        "address": "161 Castlereagh St, Sydney NSW 2000, Australia",
+        "rating": 4.3
       }
     ]
   },
@@ -2444,7 +2453,16 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJg-77U-HHsGoRibuq8cYIGg8",
+        "latitude": -34.879114,
+        "longitude": 138.5370598,
+        "address": "68B Woodville Rd, Woodville South SA 5011, Australia",
+        "rating": 4.5
+      }
+    ]
   },
   {
     "Name": "Vacation",
@@ -2510,16 +2528,7 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "SA",
-        "place_id": "ChIJU4NCID011moRLsHU_g9lhww",
-        "latitude": -37.63703,
-        "longitude": 145.196518,
-        "address": "946 Heidelberg - Kinglake Rd, Hurstbridge VIC 3099, Australia",
-        "rating": 4.5
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Villino Coffee Roasters",
@@ -2561,16 +2570,7 @@
     "State": "VIC",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "VIC",
-        "place_id": "ChIJxbKM-Z1HIWsRDxDUW7W9pUg",
-        "latitude": -36.05180560000001,
-        "longitude": 146.5862866,
-        "address": "105 Fraser Rd, Rutherglen VIC 3685, Australia",
-        "rating": 5
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "White Whale Coffee Roasters",
@@ -2615,11 +2615,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJQw3XQS-uEmsRWSAo6K-Jx28",
-        "latitude": -33.8798342,
-        "longitude": 151.1973423,
-        "address": "103 Jones St, Ultimo NSW 2007, Australia",
-        "rating": 3.8
+        "place_id": "ChIJ4_Ak3iKtEmsR6uPK8jv_Z7I",
+        "latitude": -33.88865729999999,
+        "longitude": 151.2756322,
+        "address": "Corner of Beach Road and, Gould St, Bondi Beach NSW 2026, Australia",
+        "rating": 4.2
       }
     ]
   },
@@ -3187,7 +3187,7 @@
         "latitude": -34.9898121,
         "longitude": 138.5743535,
         "address": "1080 South Rd, Edwardstown SA 5039, Australia",
-        "rating": 4.3
+        "rating": 4.4
       }
     ]
   },
@@ -3370,11 +3370,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ4_pYsdEox2oRUPuOYlQ2AwU",
-        "latitude": -34.2726441,
-        "longitude": 140.6065832,
-        "address": "Berri SA 5343, Australia",
-        "rating": "N/A"
+        "place_id": "ChIJbzzL76jOsGoRS-dKvFZhdI8",
+        "latitude": -34.9398083,
+        "longitude": 138.6354806,
+        "address": "2 L'Estrange St, Glenside SA 5065, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -3691,10 +3691,10 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJLVMs95FC1moRAGLTuLPqJnA",
-        "latitude": -37.8097275,
-        "longitude": 145.0059353,
-        "address": "14 Duke St, Abbotsford VIC 3067, Australia",
+        "place_id": "ChIJWR4AJIpD1moRqnRC9abE3To",
+        "latitude": -37.8175798,
+        "longitude": 144.9658243,
+        "address": "7a Degraves St, Melbourne VIC 3000, Australia",
         "rating": 4.9
       }
     ]
