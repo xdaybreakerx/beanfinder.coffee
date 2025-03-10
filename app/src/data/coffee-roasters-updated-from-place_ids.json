@@ -117,11 +117,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJ0_3cGIBXkWsRvIe1EuQUdRk",
-        "latitude": -27.4173366,
-        "longitude": 153.0135134,
-        "address": "44 Wolverhampton St, Stafford QLD 4053, Australia",
-        "rating": 4.8
+        "place_id": "ChIJO3rqvldNrlIRdN8X7uCSi8Y",
+        "latitude": 46.768511,
+        "longitude": -92.12276899999999,
+        "address": "1917 W Superior St, Duluth, MN 55806, USA",
+        "rating": 5
       }
     ]
   },
@@ -457,11 +457,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJ10U3NNLZqQURLNbnYN5ui0I",
-        "latitude": -31.9078838,
-        "longitude": 115.801757,
-        "address": "3/9 Pearson Way, Osborne Park WA 6017, Australia",
-        "rating": 5
+        "place_id": "ChIJL4k3GXdp1moRx5sxIDCAgIM",
+        "latitude": -37.89661580000001,
+        "longitude": 145.0360472,
+        "address": "189a Booran Rd, Caulfield South VIC 3162, Australia",
+        "rating": 4.3
       }
     ]
   },
@@ -1017,11 +1017,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJZ934S0KuEmsR_0lxV3PTR4M",
-        "latitude": -33.8615815,
-        "longitude": 151.2076503,
-        "address": "199 George St, The Rocks NSW 2000, Australia",
-        "rating": 4.5
+        "place_id": "ChIJmZN-nuA5dGsRcKFDkLQJBgQ",
+        "latitude": -32.1943225,
+        "longitude": 152.5142797,
+        "address": "Forster NSW 2428, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -1300,7 +1300,7 @@
         "latitude": -33.86483,
         "longitude": 151.1774597,
         "address": "26D Mansfield St, Rozelle NSW 2039, Australia",
-        "rating": 4.2
+        "rating": 4.3
       }
     ]
   },
@@ -1330,11 +1330,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJNx0qvBlo1moREbaZuYZoCCI",
-        "latitude": -37.8446381,
-        "longitude": 144.9792762,
-        "address": "517 St Kilda Rd, Melbourne VIC 3004, Australia",
-        "rating": 4.5
+        "place_id": "ChIJoaRoqA9d1moRveygOp9bniA",
+        "latitude": -37.79220970000001,
+        "longitude": 144.9257042,
+        "address": "43 Epsom Rd, Kensington VIC 3031, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -1851,7 +1851,7 @@
         "latitude": -37.81688,
         "longitude": 144.9561555,
         "address": "Store 1/140 King St, Melbourne VIC 3000, Australia",
-        "rating": 4.9
+        "rating": 4.8
       }
     ]
   },
@@ -2418,7 +2418,7 @@
         "latitude": -26.729457,
         "longitude": 153.1223552,
         "address": "9 Machinery Ave, Warana QLD 4575, Australia",
-        "rating": 4.6
+        "rating": 4.5
       }
     ]
   },
@@ -2528,7 +2528,16 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJU4NCID011moRLsHU_g9lhww",
+        "latitude": -37.63703,
+        "longitude": 145.196518,
+        "address": "946 Heidelberg - Kinglake Rd, Hurstbridge VIC 3099, Australia",
+        "rating": 4.5
+      }
+    ]
   },
   {
     "Name": "Villino Coffee Roasters",
@@ -2570,7 +2579,16 @@
     "State": "VIC",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJxbKM-Z1HIWsRDxDUW7W9pUg",
+        "latitude": -36.05180560000001,
+        "longitude": 146.5862866,
+        "address": "105 Fraser Rd, Rutherglen VIC 3685, Australia",
+        "rating": 5
+      }
+    ]
   },
   {
     "Name": "White Whale Coffee Roasters",
@@ -3548,11 +3566,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJnZUptp1C1moRMOdeTMfQOs8",
-        "latitude": -37.838518,
-        "longitude": 144.990105,
-        "address": "1C Murphy St, South Yarra VIC 3141, Australia",
-        "rating": 4.4
+        "place_id": "ChIJxRGxLN901moRSUDfwUb32Cs",
+        "latitude": -38.1439868,
+        "longitude": 145.1209904,
+        "address": "465 Nepean Hwy, Frankston VIC 3199, Australia",
+        "rating": 4.6
       }
     ]
   },
