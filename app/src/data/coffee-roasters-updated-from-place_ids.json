@@ -117,11 +117,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJ8cfu6LBmeGkRe1o1y6fwnqI",
-        "latitude": -16.9425092,
-        "longitude": 145.7730616,
-        "address": "Shed 2, 4/16 Tingira St, Portsmith QLD 4870, Australia",
-        "rating": 4.9
+        "place_id": "ChIJO3rqvldNrlIRdN8X7uCSi8Y",
+        "latitude": 46.768511,
+        "longitude": -92.12276899999999,
+        "address": "1917 W Superior St, Duluth, MN 55806, USA",
+        "rating": 5
       }
     ]
   },
@@ -338,11 +338,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJZcEztpNmeGkRBAzqOEqHgNk",
-        "latitude": -16.9236687,
-        "longitude": 145.776031,
-        "address": "Oceana Walk Arcade, 13/62 Grafton St, Cairns City QLD 4870, Australia",
-        "rating": 4.8
+        "place_id": "ChIJo0UDfrZbkWsRH9DAyoI73tQ",
+        "latitude": -27.4975,
+        "longitude": 153.0680556,
+        "address": "4 Newman Ave, Camp Hill QLD 4152, Australia",
+        "rating": 4.7
       }
     ]
   },
@@ -372,10 +372,10 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ326-kNq0lmsRsIDe81qjAgU",
-        "latitude": -27.6259862,
-        "longitude": 152.8077665,
-        "address": "Blackstone QLD 4304, Australia",
+        "place_id": "ChIJGWawcEKuEmsRAZpnB16LmXs",
+        "latitude": -33.867247,
+        "longitude": 151.2115647,
+        "address": "l20/126 Phillip St, Sydney NSW 2000, Australia",
         "rating": "N/A"
       }
     ]
@@ -508,11 +508,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJG7NvPrVC1moRsKRHrZ0JnVg",
-        "latitude": -37.8137583,
-        "longitude": 144.9624703,
-        "address": "19 Somerset Pl, Melbourne VIC 3000, Australia",
-        "rating": 4.4
+        "place_id": "ChIJNQQO_14U1GoRFyUqiTsdokc",
+        "latitude": -38.1480474,
+        "longitude": 144.358973,
+        "address": "1/80 Little Malop St, Geelong VIC 3220, Australia",
+        "rating": 4.3
       }
     ]
   },
@@ -711,11 +711,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJASf7QV3Lj4ARSLxJNklJsSc",
-        "latitude": 37.33175260000001,
-        "longitude": -121.9117863,
-        "address": "1202 The Alameda, San Jose, CA 95126, USA",
-        "rating": 4.3
+        "place_id": "ChIJ8RvSwm63MioRpXpPWzYe0dM",
+        "latitude": -31.8732624,
+        "longitude": 115.9777724,
+        "address": "W Swan Rd, Caversham WA 6055, Australia",
+        "rating": 4.7
       }
     ]
   },
@@ -1017,11 +1017,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJZ934S0KuEmsR_0lxV3PTR4M",
-        "latitude": -33.8615815,
-        "longitude": 151.2076503,
-        "address": "199 George St, The Rocks NSW 2000, Australia",
-        "rating": 4.5
+        "place_id": "ChIJmZN-nuA5dGsRcKFDkLQJBgQ",
+        "latitude": -32.1943225,
+        "longitude": 152.5142797,
+        "address": "Forster NSW 2428, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -1203,11 +1203,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJGw59ddbRsGoRLpV_oBAA-8U",
-        "latitude": -34.9975161,
-        "longitude": 138.5774868,
-        "address": "12 Denis St, St Marys SA 5042, Australia",
-        "rating": 4.6
+        "place_id": "ChIJ2wNPCxXQsGoRhSSM5dC7e2s",
+        "latitude": -34.9970498,
+        "longitude": 138.5773256,
+        "address": "8 Denis St, St Marys SA 5042, Australia",
+        "rating": 4.7
       }
     ]
   },
@@ -1330,11 +1330,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJNx0qvBlo1moREbaZuYZoCCI",
-        "latitude": -37.8446381,
-        "longitude": 144.9792762,
-        "address": "517 St Kilda Rd, Melbourne VIC 3004, Australia",
-        "rating": 4.5
+        "place_id": "ChIJoaRoqA9d1moRveygOp9bniA",
+        "latitude": -37.79220970000001,
+        "longitude": 144.9257042,
+        "address": "43 Epsom Rd, Kensington VIC 3031, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -1364,11 +1364,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJfX8VVbCrEmsRsL8yFmh9AQU",
-        "latitude": -33.7968627,
-        "longitude": 151.2850167,
-        "address": "Manly NSW 2095, Australia",
-        "rating": "N/A"
+        "place_id": "ChIJIdaGSgGrEmsRA5A4TQaNXWI",
+        "latitude": -33.79797829999999,
+        "longitude": 151.2869726,
+        "address": "66 The Corso, Manly NSW 2095, Australia",
+        "rating": 4.2
       }
     ]
   },
@@ -2076,10 +2076,10 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJHUVSMyCuEmsRcOVnCCEwodc",
-        "latitude": -33.8866783,
-        "longitude": 151.2090638,
-        "address": "Shop 1a, 118 Devonshire Street (cnr, Holt St, Surry Hills NSW 2010, Australia",
+        "place_id": "ChIJE7kpAFuwEmsRqc4Eidq0bR0",
+        "latitude": -33.91299429999999,
+        "longitude": 151.1723173,
+        "address": "1.03/75 Mary St, St Peters NSW 2044, Australia",
         "rating": 4.6
       }
     ]
@@ -2110,11 +2110,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJ2dph0aJD1moRhxS2CC34T5c",
-        "latitude": -37.81338289999999,
-        "longitude": 144.9725598,
-        "address": "Shop 1, 30 Collins Street Melbourne Entrance via Collins Street or, Ridgway Pl, Melbourne VIC 3000, Australia",
-        "rating": 4.4
+        "place_id": "ChIJT8vM84Zn1moRRK6blnQpCn4",
+        "latitude": -37.8219832,
+        "longitude": 144.9264802,
+        "address": "Unit 2 B/706 Lorimer St, Port Melbourne VIC 3207, Australia",
+        "rating": 4.2
       }
     ]
   },
@@ -2127,11 +2127,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJvdx3kjJd1moRHnjYhByshFo",
-        "latitude": -37.8029711,
-        "longitude": 144.9590027,
-        "address": "114 Berkeley St, Carlton VIC 3053, Australia",
-        "rating": 4.4
+        "place_id": "ChIJXYZl8bGrEmsRKpC6MUMYXEY",
+        "latitude": -33.7869368,
+        "longitude": 151.2677137,
+        "address": "75 Kenneth Rd, Balgowlah NSW 2093, Australia",
+        "rating": 4.2
       },
       {
         "state": "NSW",
@@ -2333,7 +2333,7 @@
         "latitude": -33.8834258,
         "longitude": 151.1951103,
         "address": "80 Bay St, Ultimo NSW 2007, Australia",
-        "rating": 4.7
+        "rating": 4.6
       }
     ]
   },
@@ -2418,7 +2418,7 @@
         "latitude": -26.729457,
         "longitude": 153.1223552,
         "address": "9 Machinery Ave, Warana QLD 4575, Australia",
-        "rating": 4.5
+        "rating": 4.4
       }
     ]
   },
@@ -2439,11 +2439,11 @@
       },
       {
         "state": "NSW",
-        "place_id": "ChIJXcaCVeqwEmsRfPB4BGh1-Gs",
-        "latitude": -33.93734159999999,
-        "longitude": 151.1666105,
-        "address": "Sydney NSW 2020, Australia",
-        "rating": 4.9
+        "place_id": "ChIJR-S-I9axEmsRGjjcmNfvx6k",
+        "latitude": -33.8858584,
+        "longitude": 151.1944136,
+        "address": "32-36 City Rd, Chippendale NSW 2008, Australia",
+        "rating": 4.2
       }
     ]
   },
@@ -2460,7 +2460,7 @@
         "latitude": -34.879114,
         "longitude": 138.5370598,
         "address": "68B Woodville Rd, Woodville South SA 5011, Australia",
-        "rating": 4.5
+        "rating": 4.6
       }
     ]
   },
@@ -2766,16 +2766,7 @@
     "State": "WA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "WA",
-        "place_id": "ChIJTVN4VlilMioRq4WBRtvJA7g",
-        "latitude": -31.920182,
-        "longitude": 115.837642,
-        "address": "77 Coogee St, Mount Hawthorn WA 6016, Australia",
-        "rating": 4.7
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Ballarat Coffee Roasters",
@@ -3024,11 +3015,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJme0Qzb1qkWsRgG4cVLfHaFQ",
-        "latitude": -27.7455513,
-        "longitude": 153.2200233,
-        "address": "5 Commerce Cct, Yatala QLD 4207, Australia",
-        "rating": 5
+        "place_id": "ChIJ0_3cGIBXkWsRvIe1EuQUdRk",
+        "latitude": -27.4173366,
+        "longitude": 153.0135134,
+        "address": "44 Wolverhampton St, Stafford QLD 4053, Australia",
+        "rating": 4.8
       }
     ]
   },
@@ -3198,16 +3189,7 @@
     "State": "SA",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "SA",
-        "place_id": "ChIJk4jjljTRsGoRx4xreh4x2PY",
-        "latitude": -34.9898121,
-        "longitude": 138.5743535,
-        "address": "1080 South Rd, Edwardstown SA 5039, Australia",
-        "rating": 4.4
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "SoHo Coffee Roasters",
@@ -3307,7 +3289,7 @@
         "latitude": -34.9137796,
         "longitude": 138.6304913,
         "address": "22 Nelson St, Stepney SA 5069, Australia",
-        "rating": 4.1
+        "rating": "N/A"
       }
     ]
   },
@@ -3423,8 +3405,8 @@
       {
         "state": "SA",
         "place_id": "ChIJN0UshUH1XIYRKCo5hVtswG8",
-        "latitude": 29.4326534,
-        "longitude": -98.4840668,
+        "latitude": 29.4876987,
+        "longitude": -98.7238132,
         "address": "203 8th St Bldg. 2, San Antonio, TX 78215, USA",
         "rating": 4.8
       }
@@ -3478,7 +3460,16 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ0cg8_mbbsGoRRCR2QlRXVgM",
+        "latitude": -34.9779608,
+        "longitude": 138.5215995,
+        "address": "Unit 4/45 Augusta St, Glenelg East SA 5045, Australia",
+        "rating": 5
+      }
+    ]
   },
   {
     "Name": "Bray St Roasters",
@@ -3557,11 +3548,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJxRGxLN901moRSUDfwUb32Cs",
-        "latitude": -38.1439868,
-        "longitude": 145.1209904,
-        "address": "465 Nepean Hwy, Frankston VIC 3199, Australia",
-        "rating": 4.6
+        "place_id": "ChIJnZUptp1C1moRMOdeTMfQOs8",
+        "latitude": -37.838518,
+        "longitude": 144.990105,
+        "address": "1C Murphy St, South Yarra VIC 3141, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -3599,10 +3590,10 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJFfuagElD1moRfHn5PWOZDqE",
-        "latitude": -37.8171645,
-        "longitude": 144.9648549,
-        "address": "Shop 1D/289 Flinders Ln, Melbourne VIC 3000, Australia",
+        "place_id": "ChIJs8sfHx9D1moRJnTIRru0bxk",
+        "latitude": -37.7982136,
+        "longitude": 144.9857192,
+        "address": "30 Sackville St, Collingwood VIC 3066, Australia",
         "rating": 4.7
       }
     ]
