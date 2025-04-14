@@ -219,11 +219,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJs8sfHx9D1moRJnTIRru0bxk",
-        "latitude": -37.7982136,
-        "longitude": 144.9857192,
-        "address": "30 Sackville St, Collingwood VIC 3066, Australia",
-        "rating": 4.7
+        "place_id": "ChIJJ5bS6P9n1moRx76U3LjtN1A",
+        "latitude": -37.83124749999999,
+        "longitude": 144.960354,
+        "address": "12-18 Yarra Pl, South Melbourne VIC 3205, Australia",
+        "rating": 4.2
       }
     ]
   },
@@ -711,11 +711,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJ8RvSwm63MioRpXpPWzYe0dM",
-        "latitude": -31.8732624,
-        "longitude": 115.9777724,
-        "address": "W Swan Rd, Caversham WA 6055, Australia",
-        "rating": 4.7
+        "place_id": "ChIJ90mc0AvTD4gRjOgxYKxxprM",
+        "latitude": 41.9650971,
+        "longitude": -87.6656979,
+        "address": "1401 W Wilson Ave, Chicago, IL 60640, USA",
+        "rating": 4.6
       }
     ]
   },
@@ -1038,7 +1038,7 @@
         "latitude": -33.7903172,
         "longitude": 151.2009465,
         "address": "7/3 Gibbes St, Chatswood NSW 2067, Australia",
-        "rating": 4.2
+        "rating": 4.1
       }
     ]
   },
@@ -1186,11 +1186,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJxRQt-2jWTYYR9hEqtfVueZM",
-        "latitude": 32.903244,
-        "longitude": -97.19726299999999,
-        "address": "8700 N Tarrant Pkwy #109, North Richland Hills, TX 76182, USA",
-        "rating": 4.6
+        "place_id": "ChIJp7ODnLX_DogRpoSDGWWqMkI",
+        "latitude": 41.8839247,
+        "longitude": -88.2065439,
+        "address": "148 W Washington St, West Chicago, IL 60185, USA",
+        "rating": 4.8
       }
     ]
   },
@@ -1432,11 +1432,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJT-tyjjRd1moRqeXlykOTVQc",
-        "latitude": -37.8062804,
-        "longitude": 144.9580131,
-        "address": "83-85 Victoria St, Melbourne VIC 3000, Australia",
-        "rating": 4.3
+        "place_id": "ChIJMzrwAslC1moRKuXaN2eeaXw",
+        "latitude": -37.8118922,
+        "longitude": 144.9693252,
+        "address": "Market Ln, Melbourne VIC 3000, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -2333,7 +2333,7 @@
         "latitude": -33.8834258,
         "longitude": 151.1951103,
         "address": "80 Bay St, Ultimo NSW 2007, Australia",
-        "rating": 4.6
+        "rating": 4.7
       }
     ]
   },
@@ -2528,16 +2528,7 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "SA",
-        "place_id": "ChIJU4NCID011moRLsHU_g9lhww",
-        "latitude": -37.63703,
-        "longitude": 145.196518,
-        "address": "946 Heidelberg - Kinglake Rd, Hurstbridge VIC 3099, Australia",
-        "rating": 4.5
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Villino Coffee Roasters",
@@ -2633,11 +2624,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ4_Ak3iKtEmsR6uPK8jv_Z7I",
-        "latitude": -33.88865729999999,
-        "longitude": 151.2756322,
-        "address": "Corner of Beach Road and, Gould St, Bondi Beach NSW 2026, Australia",
-        "rating": 4.3
+        "place_id": "ChIJQw3XQS-uEmsRWSAo6K-Jx28",
+        "latitude": -33.8798342,
+        "longitude": 151.1973423,
+        "address": "103 Jones St, Ultimo NSW 2007, Australia",
+        "rating": 3.8
       }
     ]
   },
@@ -2766,7 +2757,16 @@
     "State": "WA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJTVN4VlilMioRq4WBRtvJA7g",
+        "latitude": -31.920182,
+        "longitude": 115.837642,
+        "address": "77 Coogee St, Mount Hawthorn WA 6016, Australia",
+        "rating": 4.7
+      }
+    ]
   },
   {
     "Name": "Ballarat Coffee Roasters",
@@ -3015,11 +3015,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJ0_3cGIBXkWsRvIe1EuQUdRk",
-        "latitude": -27.4173366,
-        "longitude": 153.0135134,
-        "address": "44 Wolverhampton St, Stafford QLD 4053, Australia",
-        "rating": 4.8
+        "place_id": "ChIJme0Qzb1qkWsRgG4cVLfHaFQ",
+        "latitude": -27.7455513,
+        "longitude": 153.2200233,
+        "address": "5 Commerce Cct, Yatala QLD 4207, Australia",
+        "rating": 5
       }
     ]
   },
@@ -3289,7 +3289,7 @@
         "latitude": -34.9137796,
         "longitude": 138.6304913,
         "address": "22 Nelson St, Stepney SA 5069, Australia",
-        "rating": "N/A"
+        "rating": 4.1
       }
     ]
   },
@@ -3691,11 +3691,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJWR4AJIpD1moRqnRC9abE3To",
-        "latitude": -37.8175798,
-        "longitude": 144.9658243,
-        "address": "7a Degraves St, Melbourne VIC 3000, Australia",
-        "rating": 4.9
+        "place_id": "ChIJJ8fMLwBD1moRSaK6mwaQEUM",
+        "latitude": -37.7798158,
+        "longitude": 144.9870757,
+        "address": "336 St Georges Rd, Fitzroy North VIC 3068, Australia",
+        "rating": 4.8
       }
     ]
   }
