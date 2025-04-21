@@ -167,7 +167,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJJ5bS6P9n1moRx76U3LjtN1A"
+        "place_id": "ChIJzTYSmmLpST4RJt1g8yJvdeM"
       }
     ]
   },
@@ -476,7 +476,12 @@
     "State": "QLD",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJFW5RJ6lDkWsRbws2fgqlXHs"
+      }
+    ]
   },
   {
     "Name": "Coffee Chakra ",
@@ -543,7 +548,7 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJ90mc0AvTD4gRjOgxYKxxprM"
+        "place_id": "ChIJ8RvSwm63MioRpXpPWzYe0dM"
       }
     ]
   },
@@ -673,7 +678,7 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJt-jKTSbPsGoREdQDTJur4Mw"
+        "place_id": "ChIJEdMxwSjPsGoRmpx3VKziEJc"
       }
     ]
   },
@@ -777,7 +782,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJmZN-nuA5dGsRcKFDkLQJBgQ"
+        "place_id": "ChIJ65wxKT69GWsRr7ExNClClY4"
       }
     ]
   },
@@ -850,7 +855,7 @@
       },
       {
         "state": "QLD",
-        "place_id": "ChIJc8Lw97pbkWsRcoV4OzfDIf4"
+        "place_id": "ChIJLT2riqFZkWsRN1Y6UYR6rcs"
       }
     ]
   },
@@ -1014,7 +1019,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJoaRoqA9d1moRveygOp9bniA"
+        "place_id": "ChIJ-7F4Ca_W12oRcWP4Rb7yj00"
       }
     ]
   },
@@ -1027,7 +1032,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ__9vxOKWEmsRgYJFfKfYNjk"
+        "place_id": "ChIJV4QzSJWxEmsR0ODiJI4LWBU"
       }
     ]
   },
@@ -1040,7 +1045,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJIdaGSgGrEmsRA5A4TQaNXWI"
+        "place_id": "ChIJWwkUHEKuEmsRHpNpvRcQldQ"
       }
     ]
   },
@@ -1243,7 +1248,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJYeSX8llD1moReVgb27XXvqY"
+        "place_id": "ChIJK_V6t_5n1moR_TcAscymyIw"
       }
     ]
   },
@@ -1988,7 +1993,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJQw3XQS-uEmsRWSAo6K-Jx28"
+        "place_id": "ChIJ4_Ak3iKtEmsR6uPK8jv_Z7I"
       }
     ]
   },
@@ -2261,7 +2266,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJNZsvUd9C1moRY00nWdYBy9k"
+        "place_id": "ChIJwRNQEh1D1moR9CGBmWaxvoc"
       }
     ]
   },
@@ -2287,7 +2292,7 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJme0Qzb1qkWsRgG4cVLfHaFQ"
+        "place_id": "ChIJ89RWR3Hjk2sRY74mVX0xGHs"
       }
     ]
   },
@@ -2369,11 +2374,11 @@
       },
       {
         "state": "NSW",
-        "place_id": "ChIJAU6Yrb-rEmsRAnA9BCpYcYk"
+        "place_id": "ChIJKZ5FmRcdkWsRVzMKoQ4Ax7o"
       },
       {
         "state": "VIC",
-        "place_id": "ChIJX7ZmCUNH1moRnqVKkByP9D4"
+        "place_id": "ChIJXTfkDIjSK2sRdTQTgT2PDfI"
       }
     ]
   },
@@ -2571,7 +2576,7 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJF8AJaNDIsGoREZStkSsOW98"
+        "place_id": "ChIJ6ycGOuPsuWoRaslMR5lt8q0"
       }
     ]
   },
@@ -2628,12 +2633,7 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "SA",
-        "place_id": "ChIJ0cg8_mbbsGoRRCR2QlRXVgM"
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Bray St Roasters",
@@ -2696,7 +2696,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJnZUptp1C1moRMOdeTMfQOs8"
+        "place_id": "ChIJG0U9S6je1WoRJ98FU1986fA"
       }
     ]
   },
@@ -2706,7 +2706,12 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJQc1_I1IX1moRxoKRQkgK6-o"
+      }
+    ]
   },
   {
     "Name": "Coffee in Common",
@@ -2730,7 +2735,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJs8sfHx9D1moRJnTIRru0bxk"
+        "place_id": "ChIJFfuagElD1moRfHn5PWOZDqE"
       }
     ]
   },
@@ -2811,7 +2816,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJJ8fMLwBD1moRSaK6mwaQEUM"
+        "place_id": "ChIJWR4AJIpD1moRqnRC9abE3To"
       }
     ]
   }
