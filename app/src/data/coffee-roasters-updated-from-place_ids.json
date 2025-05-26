@@ -29,7 +29,7 @@
         "latitude": -31.9247001,
         "longitude": 115.8409396,
         "address": "377 Oxford St, Mount Hawthorn WA 6016, Australia",
-        "rating": 4.6
+        "rating": 4.7
       }
     ]
   },
@@ -318,7 +318,16 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJKRXBsD2xEmsRVe81SfhddGM",
+        "latitude": -33.9103851,
+        "longitude": 151.1657653,
+        "address": "24 Cadogan St, Marrickville NSW 2204, Australia",
+        "rating": 4.9
+      }
+    ]
   },
   {
     "Name": "Blackbird Espresso",
@@ -699,16 +708,7 @@
     "State": "WA",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "WA",
-        "place_id": "ChIJUXPJvKAEyIkRaW70Qn09Fgw",
-        "latitude": 39.2895478,
-        "longitude": -76.6227561,
-        "address": "500 W Baltimore St, Baltimore, MD 21201, USA",
-        "rating": 3.5
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Cruze",
@@ -1029,7 +1029,7 @@
         "latitude": -33.7903172,
         "longitude": 151.2009465,
         "address": "7/3 Gibbes St, Chatswood NSW 2067, Australia",
-        "rating": 3.9
+        "rating": 4
       }
     ]
   },
@@ -1423,11 +1423,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJMzrwAslC1moRKuXaN2eeaXw",
-        "latitude": -37.8118922,
-        "longitude": 144.9693252,
-        "address": "Market Ln, Melbourne VIC 3000, Australia",
-        "rating": "N/A"
+        "place_id": "ChIJT-tyjjRd1moRqeXlykOTVQc",
+        "latitude": -37.8062804,
+        "longitude": 144.9580131,
+        "address": "83-85 Victoria St, Melbourne VIC 3000, Australia",
+        "rating": 4.3
       }
     ]
   },
@@ -1512,7 +1512,7 @@
         "latitude": -37.81488729999999,
         "longitude": 145.2930957,
         "address": "37 Centre Way, Croydon South VIC 3136, Australia",
-        "rating": 4.2
+        "rating": 4.1
       }
     ]
   },
@@ -1626,11 +1626,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJYeSX8llD1moReVgb27XXvqY",
-        "latitude": -37.7641144,
-        "longitude": 144.9732824,
-        "address": "438 Lygon St, Brunswick East VIC 3057, Australia",
-        "rating": 4.4
+        "place_id": "ChIJK_V6t_5n1moR_TcAscymyIw",
+        "latitude": -37.8325381,
+        "longitude": 144.9563457,
+        "address": "South Melbourne Market, 33/322-326 Coventry St, South Melbourne VIC 3205, Australia",
+        "rating": 4
       }
     ]
   },
@@ -1859,7 +1859,7 @@
         "latitude": -37.8023383,
         "longitude": 144.9851717,
         "address": "172 Oxford St, Collingwood VIC 3066, Australia",
-        "rating": 4.4
+        "rating": 4.5
       }
     ]
   },
@@ -2101,11 +2101,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJ2dph0aJD1moRhxS2CC34T5c",
-        "latitude": -37.81338289999999,
-        "longitude": 144.9725598,
-        "address": "Shop 1, 30 Collins Street Melbourne Entrance via Collins Street or, Ridgway Pl, Melbourne VIC 3000, Australia",
-        "rating": 4.4
+        "place_id": "ChIJl3eJXbhp1moRA_i9x9BYWE0",
+        "latitude": -37.84349419999999,
+        "longitude": 144.995713,
+        "address": "6 Garden Ln, South Yarra VIC 3141, Australia",
+        "rating": 5
       }
     ]
   },
@@ -2498,8 +2498,8 @@
       {
         "state": "QLD",
         "place_id": "ChIJe44AfJdQkWsRIFkjGqlNNzs",
-        "latitude": -27.4836962,
-        "longitude": 153.0026241,
+        "latitude": -27.4838301,
+        "longitude": 153.0026543,
         "address": "369 Montague Rd, West End QLD 4101, Australia",
         "rating": 4.5
       },
@@ -2697,16 +2697,7 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "NSW",
-        "place_id": "ChIJgQgzLSD9Z0sRfh11onLJ8NY",
-        "latitude": 46.1130714,
-        "longitude": -60.1720174,
-        "address": "121 Reservoir Rd, Sydney, NS B1P 3H6, Canada",
-        "rating": 4.9
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Supernumerary Coffee",
@@ -2751,11 +2742,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJ2QDEtR-kxCoRPOyaY7GyXzs",
-        "latitude": -32.0377335,
-        "longitude": 115.8243341,
-        "address": "10/14 Shields Cres, Booragoon WA 6154, Australia",
-        "rating": 5
+        "place_id": "ChIJKVfMiTQZ2jERk7IpVMwaF4c",
+        "latitude": 1.2819562,
+        "longitude": 103.8439381,
+        "address": "34 Sago St, #01-01, Singapore 059026",
+        "rating": 4.6
       }
     ]
   },
@@ -2768,11 +2759,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJpQ8_w8ZM0WoRi7zVVdrumOA",
-        "latitude": -37.5293696,
-        "longitude": 143.844328,
-        "address": "10 Builders Cl, Wendouree VIC 3355, Australia",
-        "rating": 5
+        "place_id": "ChIJO3mOYPRF0WoRHHIKsOnr0Vw",
+        "latitude": -37.56228900000001,
+        "longitude": 143.8575021,
+        "address": "2 Lydiard St S, Ballarat Central VIC 3350, Australia",
+        "rating": 4.9
       }
     ]
   },
@@ -3006,11 +2997,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJme0Qzb1qkWsRgG4cVLfHaFQ",
-        "latitude": -27.7455513,
-        "longitude": 153.2200233,
-        "address": "5 Commerce Cct, Yatala QLD 4207, Australia",
-        "rating": 5
+        "place_id": "ChIJ89RWR3Hjk2sRY74mVX0xGHs",
+        "latitude": -27.36450899999999,
+        "longitude": 153.0489434,
+        "address": "449 Newman Rd, Geebung QLD 4034, Australia",
+        "rating": 4.8
       }
     ]
   },
@@ -3044,7 +3035,7 @@
         "latitude": -27.9455261,
         "longitude": 153.3864623,
         "address": "129 Olsen Ave, Labrador QLD 4215, Australia",
-        "rating": 4.7
+        "rating": 4.6
       }
     ]
   },
@@ -3124,11 +3115,11 @@
       },
       {
         "state": "VIC",
-        "place_id": "ChIJAU6Yrb-rEmsRAnA9BCpYcYk",
-        "latitude": -33.7670481,
-        "longitude": 151.2653916,
-        "address": "Kiosk 10K02, Westfield Warringah Mall, Brookvale NSW 2100, Australia",
-        "rating": 4.7
+        "place_id": "ChIJkwDmvbxt1moRo1b6y0BVLSQ",
+        "latitude": -37.95833289999999,
+        "longitude": 145.0529828,
+        "address": "1239 Nepean Hwy, Cheltenham VIC 3192, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -3460,7 +3451,16 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ0cg8_mbbsGoRRCR2QlRXVgM",
+        "latitude": -34.9779608,
+        "longitude": 138.5215995,
+        "address": "Unit 4/45 Augusta St, Glenelg East SA 5045, Australia",
+        "rating": 5
+      }
+    ]
   },
   {
     "Name": "Bray St Roasters",
@@ -3629,16 +3629,7 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "VIC",
-        "place_id": "ChIJs8sfHx9D1moRJnTIRru0bxk",
-        "latitude": -37.7982136,
-        "longitude": 144.9857192,
-        "address": "30 Sackville St, Collingwood VIC 3066, Australia",
-        "rating": 4.7
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Acuratore",
