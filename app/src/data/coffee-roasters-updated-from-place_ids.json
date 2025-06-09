@@ -699,7 +699,16 @@
     "State": "WA",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJtbERhvmDMioRUeIcPPux54U",
+        "latitude": -32.28996889999999,
+        "longitude": 115.7436128,
+        "address": "GO41, 1 Council Ave, Rockingham WA 6168, Australia",
+        "rating": 4.5
+      }
+    ]
   },
   {
     "Name": "Cruze",
@@ -948,11 +957,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJ88h-Ec66MioRtW_8mGqhg_0",
-        "latitude": -31.944086,
-        "longitude": 115.859032,
-        "address": "135 Lake St, Northbridge WA 6003, Australia",
-        "rating": 4.9
+        "place_id": "ChIJ0dK-wK2EMioRhWTIPhQwXe0",
+        "latitude": -32.2761111,
+        "longitude": 115.7675,
+        "address": "3 Arkwright Rd, Rockingham WA 6168, Australia",
+        "rating": 4.8
       }
     ]
   },
@@ -986,7 +995,7 @@
         "latitude": -27.4327236,
         "longitude": 153.0452592,
         "address": "40 Fox St, Albion QLD 4010, Australia",
-        "rating": 4.3
+        "rating": 4.4
       }
     ]
   },
@@ -999,11 +1008,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJreKKDyUkA2sRPkqWp8h0H_o",
-        "latitude": -32.150872,
-        "longitude": 146.301927,
-        "address": "Nymagee-Burthong Rd, Nymagee NSW 2831, Australia",
-        "rating": 4.5
+        "place_id": "ChIJ5_rQOQmrEmsRSAe4RJKUwh0",
+        "latitude": -33.7995123,
+        "longitude": 151.2853739,
+        "address": "29/43-45 E Esplanade, Manly NSW 2095, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -1168,11 +1177,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJxRQt-2jWTYYR9hEqtfVueZM",
-        "latitude": 32.903244,
-        "longitude": -97.19726299999999,
-        "address": "8700 N Tarrant Pkwy #109, North Richland Hills, TX 76182, USA",
-        "rating": 4.6
+        "place_id": "ChIJ8yO43AdB5IcRKsF4BZ3KPzs",
+        "latitude": 41.6644564,
+        "longitude": -91.53175979999999,
+        "address": "287 N Linn St, Iowa City, IA 52245, USA",
+        "rating": 4.8
       }
     ]
   },
@@ -1329,11 +1338,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJIZ2VhCCzEmsR6hdBAPqVhlE",
-        "latitude": -33.9230386,
-        "longitude": 151.2562059,
-        "address": "256 Arden St, Coogee NSW 2034, Australia",
-        "rating": 4.4
+        "place_id": "ChIJ__9vxOKWEmsRgYJFfKfYNjk",
+        "latitude": -33.8514576,
+        "longitude": 150.8943897,
+        "address": "6/1199 The Horsley Dr, Wetherill Park NSW 2164, Australia",
+        "rating": 5
       }
     ]
   },
@@ -1680,7 +1689,7 @@
         "latitude": -27.47002819999999,
         "longitude": 153.0275975,
         "address": "Floor 17/150 Charlotte St, Brisbane City QLD 4000, Australia",
-        "rating": 3.1
+        "rating": 3.2
       }
     ]
   },
@@ -2025,9 +2034,9 @@
       {
         "state": "VIC",
         "place_id": "ChIJ-0_d7Bld1moRAQmEA8DRWV8",
-        "latitude": -37.7924364,
-        "longitude": 144.9344633,
-        "address": "8 Thompson St, Kensington VIC 3031, Australia",
+        "latitude": -37.7923272,
+        "longitude": 144.934491,
+        "address": "10 Thompson St, Kensington VIC 3031, Australia",
         "rating": 4.8
       }
     ]
@@ -2109,11 +2118,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJndRA471ZkWsRzeQOnQ6yhp8",
-        "latitude": -27.4334043,
-        "longitude": 153.0446753,
-        "address": "1/31 Collingwood St, Albion QLD 4010, Australia",
-        "rating": 4.6
+        "place_id": "ChIJXYZl8bGrEmsRKpC6MUMYXEY",
+        "latitude": -33.7869368,
+        "longitude": 151.2677137,
+        "address": "75 Kenneth Rd, Balgowlah NSW 2093, Australia",
+        "rating": 4.2
       },
       {
         "state": "NSW",
@@ -2349,7 +2358,7 @@
         "latitude": -37.81906299999999,
         "longitude": 145.1557488,
         "address": "78 Railway Rd, Blackburn VIC 3130, Australia",
-        "rating": 5
+        "rating": 4.8
       }
     ]
   },
@@ -2733,11 +2742,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJ2QDEtR-kxCoRPOyaY7GyXzs",
-        "latitude": -32.0377335,
-        "longitude": 115.8243341,
-        "address": "10/14 Shields Cres, Booragoon WA 6154, Australia",
-        "rating": 5
+        "place_id": "ChIJKVfMiTQZ2jERk7IpVMwaF4c",
+        "latitude": 1.2819562,
+        "longitude": 103.8439381,
+        "address": "34 Sago St, #01-01, Singapore 059026",
+        "rating": 4.6
       }
     ]
   },
@@ -2805,7 +2814,7 @@
         "latitude": -34.9265289,
         "longitude": 138.5346484,
         "address": "394 Henley Beach Rd, Lockleys SA 5032, Australia",
-        "rating": 4.7
+        "rating": 4.6
       }
     ]
   },
@@ -3390,7 +3399,7 @@
         "latitude": 29.43266970000001,
         "longitude": -98.4841074,
         "address": "203 8th St Bldg. 2, San Antonio, TX 78215, USA",
-        "rating": 4.8
+        "rating": 4.7
       }
     ]
   },
@@ -3521,11 +3530,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJnZUptp1C1moRMOdeTMfQOs8",
-        "latitude": -37.838518,
-        "longitude": 144.990105,
-        "address": "1C Murphy St, South Yarra VIC 3141, Australia",
-        "rating": 4.4
+        "place_id": "ChIJxRGxLN901moRSUDfwUb32Cs",
+        "latitude": -38.1439868,
+        "longitude": 145.1209904,
+        "address": "465 Nepean Hwy, Frankston VIC 3199, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -3535,7 +3544,16 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJQc1_I1IX1moRxoKRQkgK6-o",
+        "latitude": -38.01726399999999,
+        "longitude": 145.3050076,
+        "address": "K131/25-55 Magid Dr, Narre Warren VIC 3805, Australia",
+        "rating": 3.9
+      }
+    ]
   },
   {
     "Name": "Coffee in Common",
