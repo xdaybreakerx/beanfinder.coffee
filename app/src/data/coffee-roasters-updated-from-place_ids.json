@@ -219,10 +219,10 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJzTYSmmLpST4RJt1g8yJvdeM",
-        "latitude": 26.3059554,
-        "longitude": 50.1902352,
-        "address": "6391 Prince Faisal Bin Fahd Road, Hizam Al Akhdar، Al Khobar 34436, Saudi Arabia",
+        "place_id": "ChIJJ5bS6P9n1moRx76U3LjtN1A",
+        "latitude": -37.83124749999999,
+        "longitude": 144.960354,
+        "address": "12-18 Yarra Pl, South Melbourne VIC 3205, Australia",
         "rating": 4.2
       }
     ]
@@ -318,7 +318,16 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJKRXBsD2xEmsRVe81SfhddGM",
+        "latitude": -33.9103851,
+        "longitude": 151.1657653,
+        "address": "24 Cadogan St, Marrickville NSW 2204, Australia",
+        "rating": 4.9
+      }
+    ]
   },
   {
     "Name": "Blackbird Espresso",
@@ -520,7 +529,7 @@
         "latitude": -33.412302,
         "longitude": 151.28249,
         "address": "INSIDE PHASER FPV, 1/80 Somersby Falls Rd, Somersby NSW 2250, Australia",
-        "rating": 4.9
+        "rating": 5
       }
     ]
   },
@@ -1008,11 +1017,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ5_rQOQmrEmsRSAe4RJKUwh0",
-        "latitude": -33.7995123,
-        "longitude": 151.2853739,
-        "address": "29/43-45 E Esplanade, Manly NSW 2095, Australia",
-        "rating": 4.6
+        "place_id": "ChIJUSG3ufz232oR8MpDkLQJBgQ",
+        "latitude": -34.8834117,
+        "longitude": 145.4679106,
+        "address": "Four Corners NSW 2716, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -1147,7 +1156,7 @@
         "latitude": -37.8982775,
         "longitude": 145.1403857,
         "address": "23 Lionel Rd, Mount Waverley VIC 3149, Australia",
-        "rating": 4.1
+        "rating": 4.2
       }
     ]
   },
@@ -1177,11 +1186,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ8yO43AdB5IcRKsF4BZ3KPzs",
-        "latitude": 41.6644564,
-        "longitude": -91.53175979999999,
-        "address": "287 N Linn St, Iowa City, IA 52245, USA",
-        "rating": 4.8
+        "place_id": "ChIJ4dh392TEsGoRxO69chF6mdo",
+        "latitude": -34.8445964,
+        "longitude": 138.5018082,
+        "address": "16 Nile St, Port Adelaide SA 5015, Australia",
+        "rating": 5
       }
     ]
   },
@@ -1338,11 +1347,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ__9vxOKWEmsRgYJFfKfYNjk",
-        "latitude": -33.8514576,
-        "longitude": 150.8943897,
-        "address": "6/1199 The Horsley Dr, Wetherill Park NSW 2164, Australia",
-        "rating": 5
+        "place_id": "ChIJIZ2VhCCzEmsR6hdBAPqVhlE",
+        "latitude": -33.9230386,
+        "longitude": 151.2562059,
+        "address": "256 Arden St, Coogee NSW 2034, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -1626,11 +1635,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJK_V6t_5n1moR_TcAscymyIw",
-        "latitude": -37.8325381,
-        "longitude": 144.9563457,
-        "address": "South Melbourne Market, 33/322-326 Coventry St, South Melbourne VIC 3205, Australia",
-        "rating": 4
+        "place_id": "ChIJYeSX8llD1moReVgb27XXvqY",
+        "latitude": -37.7641144,
+        "longitude": 144.9732824,
+        "address": "438 Lygon St, Brunswick East VIC 3057, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -1647,7 +1656,7 @@
         "latitude": -33.7709446,
         "longitude": 150.9404277,
         "address": "3/167 Prospect Hwy, Seven Hills NSW 2147, Australia",
-        "rating": 4.7
+        "rating": 4.8
       },
       {
         "state": "QLD",
@@ -2118,11 +2127,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJXYZl8bGrEmsRKpC6MUMYXEY",
-        "latitude": -33.7869368,
-        "longitude": 151.2677137,
-        "address": "75 Kenneth Rd, Balgowlah NSW 2093, Australia",
-        "rating": 4.2
+        "place_id": "ChIJndRA471ZkWsRzeQOnQ6yhp8",
+        "latitude": -27.4334043,
+        "longitude": 153.0446753,
+        "address": "1/31 Collingwood St, Albion QLD 4010, Australia",
+        "rating": 4.6
       },
       {
         "state": "NSW",
@@ -2240,7 +2249,7 @@
         "latitude": -37.8043369,
         "longitude": 144.9545001,
         "address": "3-9 Little Howard St, North Melbourne VIC 3051, Australia",
-        "rating": 4.6
+        "rating": 4.5
       }
     ]
   },
@@ -2726,8 +2735,8 @@
       {
         "state": "VIC",
         "place_id": "ChIJpQ8_w8ZM0WoRi7zVVdrumOA",
-        "latitude": -37.5293696,
-        "longitude": 143.844328,
+        "latitude": -37.5292973,
+        "longitude": 143.844958,
         "address": "10 Builders Cl, Wendouree VIC 3355, Australia",
         "rating": 5
       }
@@ -2879,8 +2888,8 @@
       {
         "state": "SA",
         "place_id": "ChIJp9uyyvrFsGoRNXqJm-F2kz0",
-        "latitude": -34.9048639,
-        "longitude": 138.5378779,
+        "latitude": -34.9048904,
+        "longitude": 138.5379106,
         "address": "253 Grange Rd, Findon SA 5023, Australia",
         "rating": 4.8
       }
@@ -2997,11 +3006,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJ89RWR3Hjk2sRY74mVX0xGHs",
-        "latitude": -27.36450899999999,
-        "longitude": 153.0489434,
-        "address": "449 Newman Rd, Geebung QLD 4034, Australia",
-        "rating": 4.8
+        "place_id": "ChIJFW5RJ6lDkWsRbws2fgqlXHs",
+        "latitude": -27.6210789,
+        "longitude": 153.1145937,
+        "address": "b6/10/14 Compton Rd, Underwood QLD 4119, Australia",
+        "rating": 4.7
       }
     ]
   },
@@ -3451,7 +3460,16 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ0cg8_mbbsGoRRCR2QlRXVgM",
+        "latitude": -34.9779608,
+        "longitude": 138.5215995,
+        "address": "Unit 4/45 Augusta St, Glenelg East SA 5045, Australia",
+        "rating": 5
+      }
+    ]
   },
   {
     "Name": "Bray St Roasters",
@@ -3530,11 +3548,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJxRGxLN901moRSUDfwUb32Cs",
-        "latitude": -38.1439868,
-        "longitude": 145.1209904,
-        "address": "465 Nepean Hwy, Frankston VIC 3199, Australia",
-        "rating": 4.6
+        "place_id": "ChIJnZUptp1C1moRMOdeTMfQOs8",
+        "latitude": -37.838518,
+        "longitude": 144.990105,
+        "address": "1C Murphy St, South Yarra VIC 3141, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -3544,16 +3562,7 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "VIC",
-        "place_id": "ChIJQc1_I1IX1moRxoKRQkgK6-o",
-        "latitude": -38.01726399999999,
-        "longitude": 145.3050076,
-        "address": "K131/25-55 Magid Dr, Narre Warren VIC 3805, Australia",
-        "rating": 3.9
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Coffee in Common",
@@ -3629,7 +3638,16 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJs8sfHx9D1moRJnTIRru0bxk",
+        "latitude": -37.7982136,
+        "longitude": 144.9857192,
+        "address": "30 Sackville St, Collingwood VIC 3066, Australia",
+        "rating": 4.7
+      }
+    ]
   },
   {
     "Name": "Acuratore",
@@ -3673,11 +3691,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJWR4AJIpD1moRqnRC9abE3To",
-        "latitude": -37.8175798,
-        "longitude": 144.9658243,
-        "address": "7a Degraves St, Melbourne VIC 3000, Australia",
-        "rating": 4.9
+        "place_id": "ChIJJ8fMLwBD1moRSaK6mwaQEUM",
+        "latitude": -37.7798158,
+        "longitude": 144.9870757,
+        "address": "336 St Georges Rd, Fitzroy North VIC 3068, Australia",
+        "rating": 4.8
       }
     ]
   }
