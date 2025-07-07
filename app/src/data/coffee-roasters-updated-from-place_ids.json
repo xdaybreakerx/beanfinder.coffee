@@ -88,7 +88,7 @@
         "latitude": -37.80655230000001,
         "longitude": 144.9893899,
         "address": "80 Rupert St, Collingwood VIC 3066, Australia",
-        "rating": 4.5
+        "rating": 4.4
       },
       {
         "state": "QLD",
@@ -318,16 +318,7 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "NSW",
-        "place_id": "ChIJKRXBsD2xEmsRVe81SfhddGM",
-        "latitude": -33.9103851,
-        "longitude": 151.1657653,
-        "address": "24 Cadogan St, Marrickville NSW 2204, Australia",
-        "rating": 4.9
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Blackbird Espresso",
@@ -1156,7 +1147,7 @@
         "latitude": -37.8982775,
         "longitude": 145.1403857,
         "address": "23 Lionel Rd, Mount Waverley VIC 3149, Australia",
-        "rating": 4.1
+        "rating": 4.2
       }
     ]
   },
@@ -1347,11 +1338,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ__9vxOKWEmsRgYJFfKfYNjk",
-        "latitude": -33.8514576,
-        "longitude": 150.8943897,
-        "address": "6/1199 The Horsley Dr, Wetherill Park NSW 2164, Australia",
-        "rating": 5
+        "place_id": "ChIJIZ2VhCCzEmsR6hdBAPqVhlE",
+        "latitude": -33.9230386,
+        "longitude": 151.2562059,
+        "address": "256 Arden St, Coogee NSW 2034, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -1364,11 +1355,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJYw3RdhCuEmsRqZcvClvzEJU",
-        "latitude": -33.88141629999999,
-        "longitude": 151.2109532,
-        "address": "Level 3/69 Reservoir St, Surry Hills NSW 2010, Australia",
-        "rating": 5
+        "place_id": "ChIJHSURaz-XE2sR5xVkuRl27PY",
+        "latitude": -34.54950699999999,
+        "longitude": 150.3721111,
+        "address": "2/366 Argyle St, Moss Vale NSW 2577, Australia",
+        "rating": 3.9
       }
     ]
   },
@@ -1432,11 +1423,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJT-tyjjRd1moRqeXlykOTVQc",
-        "latitude": -37.8062804,
-        "longitude": 144.9580131,
-        "address": "83-85 Victoria St, Melbourne VIC 3000, Australia",
-        "rating": 4.3
+        "place_id": "ChIJMzrwAslC1moRKuXaN2eeaXw",
+        "latitude": -37.8118922,
+        "longitude": 144.9693252,
+        "address": "Market Ln, Melbourne VIC 3000, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -1470,7 +1461,7 @@
         "latitude": -31.9043648,
         "longitude": 115.8165447,
         "address": "1/58 Collingwood St, Osborne Park WA 6017, Australia",
-        "rating": 4.7
+        "rating": 4.8
       }
     ]
   },
@@ -2114,7 +2105,7 @@
         "latitude": -37.8219832,
         "longitude": 144.9264802,
         "address": "Unit 2 B/706 Lorimer St, Port Melbourne VIC 3207, Australia",
-        "rating": 4.2
+        "rating": 4.1
       }
     ]
   },
@@ -3217,11 +3208,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJeXnRP5klsWoRsERurEpXaL4",
-        "latitude": -35.2175474,
-        "longitude": 138.5425182,
-        "address": "Shop 3/130 Main Rd, McLaren Vale SA 5171, Australia",
-        "rating": 4.7
+        "place_id": "ChIJ0TAxWqXFsGoRuDHhxlG_1Pw",
+        "latitude": -35.1506606,
+        "longitude": 138.5328636,
+        "address": "1/54 Cottage Ln, Hackham SA 5163, Australia",
+        "rating": 4.9
       }
     ]
   },
@@ -3370,11 +3361,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJbzzL76jOsGoRS-dKvFZhdI8",
-        "latitude": -34.9398083,
-        "longitude": 138.6354806,
-        "address": "2 L'Estrange St, Glenside SA 5065, Australia",
-        "rating": 4.4
+        "place_id": "ChIJAAAAAAAAAAARUPuOYlQ2AwU",
+        "latitude": -34.2726441,
+        "longitude": 140.6065832,
+        "address": "Berri SA 5343, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -3404,10 +3395,10 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJV8HqWPL1XIYRYFmn-AoiCNs",
-        "latitude": 29.4464843,
-        "longitude": -98.4752338,
-        "address": "2202 Broadway, San Antonio, TX 78215, USA",
+        "place_id": "ChIJN0UshUH1XIYRKCo5hVtswG8",
+        "latitude": 29.43266970000001,
+        "longitude": -98.4841074,
+        "address": "203 8th St Bldg. 2, San Antonio, TX 78215, USA",
         "rating": 4.8
       }
     ]
@@ -3682,11 +3673,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJWR4AJIpD1moRqnRC9abE3To",
-        "latitude": -37.8175798,
-        "longitude": 144.9658243,
-        "address": "7a Degraves St, Melbourne VIC 3000, Australia",
-        "rating": 4.9
+        "place_id": "ChIJJ8fMLwBD1moRSaK6mwaQEUM",
+        "latitude": -37.7798158,
+        "longitude": 144.9870757,
+        "address": "336 St Georges Rd, Fitzroy North VIC 3068, Australia",
+        "rating": 4.8
       }
     ]
   }
