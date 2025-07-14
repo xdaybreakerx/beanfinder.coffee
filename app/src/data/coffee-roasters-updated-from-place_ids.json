@@ -96,7 +96,7 @@
         "latitude": -27.4879431,
         "longitude": 153.0393798,
         "address": "26 Wellington Rd, East Brisbane QLD 4102, Australia",
-        "rating": 4.7
+        "rating": "N/A"
       },
       {
         "state": "NSW",
@@ -346,10 +346,10 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJ12DBA2i7MioRr0TBxQNMpc4",
-        "latitude": -31.9943514,
-        "longitude": 115.9187976,
-        "address": "41 Welshpool Rd, Welshpool WA 6106, Australia",
+        "place_id": "ChIJWT-rgHClMioRqGpcWYDsm_c",
+        "latitude": -31.9473,
+        "longitude": 115.82488,
+        "address": "439D Hay St, Subiaco WA 6008, Australia",
         "rating": 4.7
       }
     ]
@@ -486,7 +486,7 @@
         "latitude": -37.8403038,
         "longitude": 144.995597,
         "address": "572 Chapel St, South Yarra VIC 3141, Australia",
-        "rating": 4.7
+        "rating": "N/A"
       }
     ]
   },
@@ -537,7 +537,7 @@
         "latitude": -34.8143324,
         "longitude": 138.6303911,
         "address": "8/25 Research Rd, Pooraka SA 5095, Australia",
-        "rating": 5
+        "rating": "N/A"
       }
     ]
   },
@@ -689,7 +689,7 @@
         "latitude": -33.54861679999999,
         "longitude": 150.6985015,
         "address": "1398 Kurmond Rd, Kurmond NSW 2757, Australia",
-        "rating": 4.8
+        "rating": "N/A"
       }
     ]
   },
@@ -699,16 +699,7 @@
     "State": "WA",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "WA",
-        "place_id": "ChIJtbERhvmDMioRUeIcPPux54U",
-        "latitude": -32.28996889999999,
-        "longitude": 115.7436128,
-        "address": "GO41, 1 Council Ave, Rockingham WA 6168, Australia",
-        "rating": 4.5
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Cruze",
@@ -978,7 +969,7 @@
         "latitude": -32.92797709999999,
         "longitude": 151.766802,
         "address": "398 King St, Newcastle West NSW 2302, Australia",
-        "rating": 4.8
+        "rating": "N/A"
       }
     ]
   },
@@ -995,7 +986,7 @@
         "latitude": -27.4327236,
         "longitude": 153.0452592,
         "address": "40 Fox St, Albion QLD 4010, Australia",
-        "rating": 4.3
+        "rating": 4.4
       }
     ]
   },
@@ -1177,11 +1168,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ4dh392TEsGoRxO69chF6mdo",
-        "latitude": -34.8445964,
-        "longitude": 138.5018082,
-        "address": "16 Nile St, Port Adelaide SA 5015, Australia",
-        "rating": 5
+        "place_id": "ChIJp7ODnLX_DogRpoSDGWWqMkI",
+        "latitude": 41.8839247,
+        "longitude": -88.2065439,
+        "address": "148 W Washington St, West Chicago, IL 60185, USA",
+        "rating": 4.8
       }
     ]
   },
@@ -1194,11 +1185,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ2wNPCxXQsGoRhSSM5dC7e2s",
-        "latitude": -34.9970498,
-        "longitude": 138.5773256,
-        "address": "8 Denis St, St Marys SA 5042, Australia",
-        "rating": 4.7
+        "place_id": "ChIJGw59ddbRsGoRLpV_oBAA-8U",
+        "latitude": -34.9975161,
+        "longitude": 138.5774868,
+        "address": "12 Denis St, St Marys SA 5042, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -1338,11 +1329,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJIZ2VhCCzEmsR6hdBAPqVhlE",
-        "latitude": -33.9230386,
-        "longitude": 151.2562059,
-        "address": "256 Arden St, Coogee NSW 2034, Australia",
-        "rating": 4.4
+        "place_id": "ChIJ__9vxOKWEmsRgYJFfKfYNjk",
+        "latitude": -33.8514576,
+        "longitude": 150.8943897,
+        "address": "6/1199 The Horsley Dr, Wetherill Park NSW 2164, Australia",
+        "rating": 5
       }
     ]
   },
@@ -1355,11 +1346,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJHSURaz-XE2sR5xVkuRl27PY",
-        "latitude": -34.54950699999999,
-        "longitude": 150.3721111,
-        "address": "2/366 Argyle St, Moss Vale NSW 2577, Australia",
-        "rating": 3.9
+        "place_id": "ChIJYw3RdhCuEmsRqZcvClvzEJU",
+        "latitude": -33.88141629999999,
+        "longitude": 151.2109532,
+        "address": "Level 3/69 Reservoir St, Surry Hills NSW 2010, Australia",
+        "rating": 5
       }
     ]
   },
@@ -1423,11 +1414,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJMzrwAslC1moRKuXaN2eeaXw",
-        "latitude": -37.8118922,
-        "longitude": 144.9693252,
-        "address": "Market Ln, Melbourne VIC 3000, Australia",
-        "rating": "N/A"
+        "place_id": "ChIJT-tyjjRd1moRqeXlykOTVQc",
+        "latitude": -37.8062804,
+        "longitude": 144.9580131,
+        "address": "83-85 Victoria St, Melbourne VIC 3000, Australia",
+        "rating": 4.3
       }
     ]
   },
@@ -1461,7 +1452,7 @@
         "latitude": -31.9043648,
         "longitude": 115.8165447,
         "address": "1/58 Collingwood St, Osborne Park WA 6017, Australia",
-        "rating": 4.8
+        "rating": 4.7
       }
     ]
   },
@@ -1609,11 +1600,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJYyHMmwClEmsRrxuKJK2x-yI",
-        "latitude": -33.7943735,
-        "longitude": 151.1418075,
-        "address": "3 Plassey Rd, Macquarie Park NSW 2113, Australia",
-        "rating": 4.6
+        "place_id": "ChIJlQzbPT6uEmsRdMutKU9hWds",
+        "latitude": -33.8723764,
+        "longitude": 151.209149,
+        "address": "161 Castlereagh St, Sydney NSW 2000, Australia",
+        "rating": 4.3
       }
     ]
   },
@@ -1626,11 +1617,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJYeSX8llD1moReVgb27XXvqY",
-        "latitude": -37.7641144,
-        "longitude": 144.9732824,
-        "address": "438 Lygon St, Brunswick East VIC 3057, Australia",
-        "rating": 4.4
+        "place_id": "ChIJK_V6t_5n1moR_TcAscymyIw",
+        "latitude": -37.8325381,
+        "longitude": 144.9563457,
+        "address": "South Melbourne Market, 33/322-326 Coventry St, South Melbourne VIC 3205, Australia",
+        "rating": 4
       }
     ]
   },
@@ -1706,7 +1697,7 @@
         "latitude": -34.9423599,
         "longitude": 138.5601891,
         "address": "217/219 Richmond Rd, Richmond SA 5033, Australia",
-        "rating": 4.7
+        "rating": 4.6
       }
     ]
   },
@@ -2172,7 +2163,7 @@
         "latitude": -27.4456934,
         "longitude": 153.0440937,
         "address": "16 Austin St, Newstead QLD 4006, Australia",
-        "rating": 4.6
+        "rating": 4.5
       }
     ]
   },
@@ -2409,7 +2400,7 @@
         "latitude": -26.729457,
         "longitude": 153.1223552,
         "address": "9 Machinery Ave, Warana QLD 4575, Australia",
-        "rating": 4.4
+        "rating": 4.5
       }
     ]
   },
@@ -2615,11 +2606,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ4_Ak3iKtEmsR6uPK8jv_Z7I",
-        "latitude": -33.88865729999999,
-        "longitude": 151.2756322,
-        "address": "Corner of Beach Road and, Gould St, Bondi Beach NSW 2026, Australia",
-        "rating": 4.3
+        "place_id": "ChIJQw3XQS-uEmsRWSAo6K-Jx28",
+        "latitude": -33.8798342,
+        "longitude": 151.1973423,
+        "address": "103 Jones St, Ultimo NSW 2007, Australia",
+        "rating": 3.9
       }
     ]
   },
@@ -2997,11 +2988,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJ89RWR3Hjk2sRY74mVX0xGHs",
-        "latitude": -27.36450899999999,
-        "longitude": 153.0489434,
-        "address": "449 Newman Rd, Geebung QLD 4034, Australia",
-        "rating": 4.8
+        "place_id": "ChIJFW5RJ6lDkWsRbws2fgqlXHs",
+        "latitude": -27.6210789,
+        "longitude": 153.1145937,
+        "address": "b6/10/14 Compton Rd, Underwood QLD 4119, Australia",
+        "rating": 4.7
       }
     ]
   },
@@ -3035,7 +3026,7 @@
         "latitude": -27.9455261,
         "longitude": 153.3864623,
         "address": "129 Olsen Ave, Labrador QLD 4215, Australia",
-        "rating": 4.7
+        "rating": 4.6
       }
     ]
   },
@@ -3361,7 +3352,7 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJAAAAAAAAAAARUPuOYlQ2AwU",
+        "place_id": "ChIJ4_pYsdEox2oRUPuOYlQ2AwU",
         "latitude": -34.2726441,
         "longitude": 140.6065832,
         "address": "Berri SA 5343, Australia",
@@ -3451,7 +3442,16 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ0cg8_mbbsGoRRCR2QlRXVgM",
+        "latitude": -34.9779608,
+        "longitude": 138.5215995,
+        "address": "Unit 4/45 Augusta St, Glenelg East SA 5045, Australia",
+        "rating": 5
+      }
+    ]
   },
   {
     "Name": "Bray St Roasters",
