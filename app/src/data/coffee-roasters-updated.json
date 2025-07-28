@@ -253,7 +253,7 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJZcEztpNmeGkRBAzqOEqHgNk"
+        "place_id": "ChIJo0UDfrZbkWsRH9DAyoI73tQ"
       }
     ]
   },
@@ -266,7 +266,7 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJ12DBA2i7MioRr0TBxQNMpc4"
+        "place_id": "ChIJWT-rgHClMioRqGpcWYDsm_c"
       }
     ]
   },
@@ -279,7 +279,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ326-kNq0lmsRsIDe81qjAgU"
+        "place_id": "ChIJGWawcEKuEmsRAZpnB16LmXs"
       }
     ]
   },
@@ -572,7 +572,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJHWZrb3OuEmsRL21KBmHAB9Y"
+        "place_id": "ChIJ_c_h1EKqEmsRDqk19J_F-Sk"
       }
     ]
   },
@@ -892,7 +892,7 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ8yO43AdB5IcRKsF4BZ3KPzs"
+        "place_id": "ChIJxRQt-2jWTYYR9hEqtfVueZM"
       }
     ]
   },
@@ -1030,7 +1030,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJWwkUHEKuEmsRHpNpvRcQldQ"
+        "place_id": "ChIJYw3RdhCuEmsRqZcvClvzEJU"
       }
     ]
   },
@@ -2282,7 +2282,7 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJ89RWR3Hjk2sRY74mVX0xGHs"
+        "place_id": "ChIJFW5RJ6lDkWsRbws2fgqlXHs"
       }
     ]
   },
@@ -2368,7 +2368,7 @@
       },
       {
         "state": "VIC",
-        "place_id": "ChIJkYOrU0wX1moRUSU57Zhw2Lc"
+        "place_id": "ChIJAU6Yrb-rEmsRAnA9BCpYcYk"
       }
     ]
   },
@@ -2441,7 +2441,7 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJid5FW_QnsWoR2zwBLzoyfSY"
+        "place_id": "ChIJ0TAxWqXFsGoRuDHhxlG_1Pw"
       }
     ]
   },
@@ -2584,7 +2584,7 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJN0UshUH1XIYRKCo5hVtswG8"
+        "place_id": "ChIJV8HqWPL1XIYRYFmn-AoiCNs"
       }
     ]
   },
@@ -2628,12 +2628,7 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "SA",
-        "place_id": "ChIJ0cg8_mbbsGoRRCR2QlRXVgM"
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Bray St Roasters",
