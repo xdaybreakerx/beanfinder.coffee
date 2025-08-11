@@ -219,10 +219,10 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJJ5bS6P9n1moRx76U3LjtN1A",
-        "latitude": -37.8312475,
-        "longitude": 144.960354,
-        "address": "12-18 Yarra Pl, South Melbourne VIC 3205, Australia",
+        "place_id": "ChIJzTYSmmLpST4RJt1g8yJvdeM",
+        "latitude": 26.3059554,
+        "longitude": 50.1902352,
+        "address": "6391 Prince Faisal Bin Fahd Road, Hizam Al Akhdar، Al Khobar 34436, Saudi Arabia",
         "rating": 4.2
       }
     ]
@@ -329,11 +329,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJZcEztpNmeGkRBAzqOEqHgNk",
-        "latitude": -16.9236687,
-        "longitude": 145.776031,
-        "address": "Oceana Walk Arcade, 13/62 Grafton St, Cairns City QLD 4870, Australia",
-        "rating": 4.8
+        "place_id": "ChIJo0UDfrZbkWsRH9DAyoI73tQ",
+        "latitude": -27.4975,
+        "longitude": 153.0680556,
+        "address": "4 Newman Ave, Camp Hill QLD 4152, Australia",
+        "rating": 4.7
       }
     ]
   },
@@ -380,11 +380,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJa57QtyTjdWsRSo14BXRnPm8",
-        "latitude": -31.6348765,
-        "longitude": 152.7558053,
-        "address": "106 Sirius Dr, Lakewood NSW 2443, Australia",
-        "rating": 5
+        "place_id": "ChIJQ2y1cK5Xv4kRuKsqY1n2iFQ",
+        "latitude": 38.98075499999999,
+        "longitude": -74.82044599999999,
+        "address": "4800 Ocean Ave, Wildwood, NJ 08260, USA",
+        "rating": 4.7
       }
     ]
   },
@@ -601,11 +601,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJ__k7MDFd1moRjnVCIJLqaq8",
-        "latitude": -37.804227,
-        "longitude": 144.953643,
-        "address": "119 Howard St, North Melbourne VIC 3051, Australia",
-        "rating": 4.5
+        "place_id": "ChIJT3I-okpD1moRBNshH62Qt7Q",
+        "latitude": -37.774643,
+        "longitude": 144.962468,
+        "address": "15/17 Weston St, Brunswick VIC 3056, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -699,16 +699,7 @@
     "State": "WA",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "WA",
-        "place_id": "ChIJASf7QV3Lj4ARSLxJNklJsSc",
-        "latitude": 37.3317526,
-        "longitude": -121.9117863,
-        "address": "1202 The Alameda, San Jose, CA 95126, USA",
-        "rating": 4.3
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Cruze",
@@ -1194,11 +1185,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ2wNPCxXQsGoRhSSM5dC7e2s",
-        "latitude": -34.9970498,
-        "longitude": 138.5773256,
-        "address": "8 Denis St, St Marys SA 5042, Australia",
-        "rating": 4.7
+        "place_id": "ChIJGw59ddbRsGoRLpV_oBAA-8U",
+        "latitude": -34.9975161,
+        "longitude": 138.5774868,
+        "address": "12 Denis St, St Marys SA 5042, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -1259,7 +1250,16 @@
     "State": "QLD",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJAdIocJVbkWsRif5TkFupK7w",
+        "latitude": -27.4941906,
+        "longitude": 153.0412322,
+        "address": "199 Logan Rd, Woolloongabba QLD 4102, Australia",
+        "rating": 4.8
+      }
+    ]
   },
   {
     "Name": "Lime Blue Coffee",
@@ -1329,10 +1329,10 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJtYDRceT3mWsRe0JkWvMlI4w",
-        "latitude": -28.88043609999999,
-        "longitude": 152.8209294,
-        "address": "48 Hayward Ridge, Hogarth Range NSW 2469, Australia",
+        "place_id": "ChIJ__9vxOKWEmsRgYJFfKfYNjk",
+        "latitude": -33.8514576,
+        "longitude": 150.8943897,
+        "address": "6/1199 The Horsley Dr, Wetherill Park NSW 2164, Australia",
         "rating": 5
       }
     ]
@@ -2089,7 +2089,16 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJT8vM84Zn1moRRK6blnQpCn4",
+        "latitude": -37.8219832,
+        "longitude": 144.9264802,
+        "address": "Unit 2 B/706 Lorimer St, Port Melbourne VIC 3207, Australia",
+        "rating": 4.1
+      }
+    ]
   },
   {
     "Name": "Seven Miles Roasters",
@@ -2433,7 +2442,7 @@
         "latitude": -34.9270495,
         "longitude": 138.6063566,
         "address": "149 Flinders St, Adelaide SA 5000, Australia",
-        "rating": 5
+        "rating": 4.9
       }
     ]
   },
@@ -2501,7 +2510,16 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJU4NCID011moRLsHU_g9lhww",
+        "latitude": -37.63703,
+        "longitude": 145.196518,
+        "address": "946 Heidelberg - Kinglake Rd, Hurstbridge VIC 3099, Australia",
+        "rating": 4.5
+      }
+    ]
   },
   {
     "Name": "Villino Coffee Roasters",
@@ -2679,7 +2697,16 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJgQgzLSD9Z0sRfh11onLJ8NY",
+        "latitude": 46.1130714,
+        "longitude": -60.1720174,
+        "address": "121 Reservoir Rd, Sydney, NS B1P 3H6, Canada",
+        "rating": 5
+      }
+    ]
   },
   {
     "Name": "Supernumerary Coffee",
@@ -2898,7 +2925,7 @@
         "latitude": -34.9134166,
         "longitude": 138.5723377,
         "address": "2 W Thebarton Rd, Thebarton SA 5031, Australia",
-        "rating": 4.7
+        "rating": 4.8
       }
     ]
   },
@@ -2979,11 +3006,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJme0Qzb1qkWsRgG4cVLfHaFQ",
-        "latitude": -27.7455513,
-        "longitude": 153.2200233,
-        "address": "5 Commerce Cct, Yatala QLD 4207, Australia",
-        "rating": 5
+        "place_id": "ChIJ89RWR3Hjk2sRY74mVX0xGHs",
+        "latitude": -27.364509,
+        "longitude": 153.0489434,
+        "address": "449 Newman Rd, Geebung QLD 4034, Australia",
+        "rating": 4.8
       }
     ]
   },
@@ -3097,11 +3124,11 @@
       },
       {
         "state": "VIC",
-        "place_id": "ChIJkYOrU0wX1moRUSU57Zhw2Lc",
-        "latitude": -38.0175702,
-        "longitude": 145.3042624,
-        "address": "K127, Westfield Fountain Gate, 25/55 Overland Dr, Narre Warren VIC 3805, Australia",
-        "rating": 4.4
+        "place_id": "ChIJzX3YV0Q71moRlw9RSKbqfHA",
+        "latitude": -37.8131778,
+        "longitude": 145.2297543,
+        "address": "Kiosk K218/175 Maroondah Hwy, Ringwood VIC 3134, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -3377,10 +3404,10 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJV8HqWPL1XIYRYFmn-AoiCNs",
-        "latitude": 29.4464843,
-        "longitude": -98.4752338,
-        "address": "2202 Broadway, San Antonio, TX 78215, USA",
+        "place_id": "ChIJN0UshUH1XIYRKCo5hVtswG8",
+        "latitude": 29.4326697,
+        "longitude": -98.4841074,
+        "address": "203 8th St Bldg. 2, San Antonio, TX 78215, USA",
         "rating": 4.8
       }
     ]
@@ -3433,7 +3460,16 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ0cg8_mbbsGoRRCR2QlRXVgM",
+        "latitude": -34.9779608,
+        "longitude": 138.5215995,
+        "address": "Unit 4/45 Augusta St, Glenelg East SA 5045, Australia",
+        "rating": 5
+      }
+    ]
   },
   {
     "Name": "Bray St Roasters",
