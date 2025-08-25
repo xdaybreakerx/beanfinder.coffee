@@ -56,7 +56,16 @@
     "State": "QLD",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJf2tsB1jqrkwRy6lf_8QnHSU",
+        "latitude": -27.6200901,
+        "longitude": 153.1232136,
+        "address": "Unit 3/9 Allgas St, Slacks Creek QLD 4127, Australia",
+        "rating": "N/A"
+      }
+    ]
   },
   {
     "Name": "Alchemy Coffee",
@@ -219,10 +228,10 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJJ5bS6P9n1moRx76U3LjtN1A",
-        "latitude": -37.8312475,
-        "longitude": 144.960354,
-        "address": "12-18 Yarra Pl, South Melbourne VIC 3205, Australia",
+        "place_id": "ChIJzTYSmmLpST4RJt1g8yJvdeM",
+        "latitude": 26.3059554,
+        "longitude": 50.1902352,
+        "address": "6391 Prince Faisal Bin Fahd Road, Hizam Al Akhdar، Al Khobar 34436, Saudi Arabia",
         "rating": 4.2
       }
     ]
@@ -360,7 +369,16 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJGWawcEKuEmsRAZpnB16LmXs",
+        "latitude": -33.867247,
+        "longitude": 151.2115647,
+        "address": "l20/126 Phillip St, Sydney NSW 2000, Australia",
+        "rating": "N/A"
+      }
+    ]
   },
   {
     "Name": "Bliss Coffee Roasters",
@@ -634,11 +652,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJh9DFoDfHsGoR_L_Jf8N-iZ4",
-        "latitude": -34.9055804,
-        "longitude": 138.5665504,
-        "address": "7 Bacon St, Hindmarsh SA 5007, Australia",
-        "rating": 4.7
+        "place_id": "ChIJNar7yGxd1moRChp3KKWw3Tw",
+        "latitude": -37.81524599999999,
+        "longitude": 144.9542157,
+        "address": "104T/28 Rose Ln, Melbourne VIC 3000, Australia",
+        "rating": 4.3
       }
     ]
   },
@@ -841,7 +859,7 @@
         "latitude": -33.8785445,
         "longitude": 151.2011511,
         "address": "60 Darling Dr, Haymarket NSW 2000, Australia",
-        "rating": 4.4
+        "rating": 4.3
       }
     ]
   },
@@ -906,9 +924,9 @@
       {
         "state": "WA",
         "place_id": "ChIJ7fLSHJ6vMioRvSa6tpVcb68",
-        "latitude": -31.8534054,
-        "longitude": 115.9986129,
-        "address": "148 Dale Rd, Middle Swan WA 6056, Australia",
+        "latitude": -31.845606,
+        "longitude": 116.0053002,
+        "address": "80 Yukich Cl, Middle Swan WA 6056, Australia",
         "rating": 3.4
       }
     ]
@@ -939,11 +957,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJ0dK-wK2EMioRhWTIPhQwXe0",
-        "latitude": -32.2761111,
-        "longitude": 115.7675,
-        "address": "3 Arkwright Rd, Rockingham WA 6168, Australia",
-        "rating": 4.8
+        "place_id": "ChIJ88h-Ec66MioRtW_8mGqhg_0",
+        "latitude": -31.944086,
+        "longitude": 115.859032,
+        "address": "135 Lake St, Northbridge WA 6003, Australia",
+        "rating": 4.9
       }
     ]
   },
@@ -990,10 +1008,10 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJDUte93TLDWsRLZ_EIhGvgBc",
-        "latitude": -31.2532183,
-        "longitude": 146.921099,
-        "address": "New South Wales, Australia",
+        "place_id": "ChIJUSG3ufz232oR8MpDkLQJBgQ",
+        "latitude": -34.8834117,
+        "longitude": 145.4679106,
+        "address": "Four Corners NSW 2716, Australia",
         "rating": "N/A"
       }
     ]
@@ -1320,10 +1338,10 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJtYDRceT3mWsRe0JkWvMlI4w",
-        "latitude": -28.88043609999999,
-        "longitude": 152.8209294,
-        "address": "48 Hayward Ridge, Hogarth Range NSW 2469, Australia",
+        "place_id": "ChIJ__9vxOKWEmsRgYJFfKfYNjk",
+        "latitude": -33.8514576,
+        "longitude": 150.8943897,
+        "address": "6/1199 The Horsley Dr, Wetherill Park NSW 2164, Australia",
         "rating": 5
       }
     ]
@@ -1494,7 +1512,7 @@
         "latitude": -37.8148873,
         "longitude": 145.2930957,
         "address": "37 Centre Way, Croydon South VIC 3136, Australia",
-        "rating": 4
+        "rating": 4.1
       }
     ]
   },
@@ -1913,11 +1931,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJt7-JPBld1moRjMAqzh7ZieM",
-        "latitude": -37.6696285,
-        "longitude": 144.9608051,
-        "address": "30/30A Colbert Rd, Campbellfield VIC 3061, Australia",
-        "rating": 5
+        "place_id": "ChIJU6iaAuDT1moRqKo0oL6lEOU",
+        "latitude": -37.768881,
+        "longitude": 144.9993745,
+        "address": "378 High St, Northcote VIC 3070, Australia",
+        "rating": 4.7
       }
     ]
   },
@@ -2357,7 +2375,7 @@
         "latitude": -42.9692266,
         "longitude": 147.3129744,
         "address": "7A/54 Browns Rd, Kingston TAS 7050, Australia",
-        "rating": 4.9
+        "rating": 4.8
       }
     ]
   },
@@ -2408,7 +2426,7 @@
         "latitude": -27.4514024,
         "longitude": 153.0440679,
         "address": "1/33 Longland St, Newstead QLD 4006, Australia",
-        "rating": 4.5
+        "rating": 4.4
       },
       {
         "state": "NSW",
@@ -2771,7 +2789,7 @@
         "latitude": -31.95559299999999,
         "longitude": 115.8637877,
         "address": "Shop 2/480 Hay St, Perth WA 6000, Australia",
-        "rating": 4.5
+        "rating": 4.6
       }
     ]
   },
@@ -2954,11 +2972,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJNZsvUd9C1moRY00nWdYBy9k",
-        "latitude": -37.799384,
-        "longitude": 144.9781281,
-        "address": "267 Brunswick St, Fitzroy VIC 3065, Australia",
-        "rating": 4.6
+        "place_id": "ChIJwRNQEh1D1moR9CGBmWaxvoc",
+        "latitude": -37.7986379,
+        "longitude": 144.9940429,
+        "address": "UNit 3, Rear/260 Hoddle St, Collingwood VIC 3066, Australia",
+        "rating": 4.8
       }
     ]
   },
@@ -3106,11 +3124,11 @@
       },
       {
         "state": "VIC",
-        "place_id": "ChIJkYOrU0wX1moRUSU57Zhw2Lc",
-        "latitude": -38.0175702,
-        "longitude": 145.3042624,
-        "address": "K127, Westfield Fountain Gate, 25/55 Overland Dr, Narre Warren VIC 3805, Australia",
-        "rating": 4.4
+        "place_id": "ChIJvTGCHNUsKmsRKeRI4fFD_eE",
+        "latitude": -38.65238739999999,
+        "longitude": 146.2014809,
+        "address": "43 Main St, Foster VIC 3960, Australia",
+        "rating": 4.2
       }
     ]
   },
@@ -3352,11 +3370,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ16cqjSGuEmsRgzuSZ7za4i0",
-        "latitude": -33.8844681,
-        "longitude": 151.2093771,
-        "address": "Shop 3/26/44 Kippax St, Surry Hills NSW 2010, Australia",
-        "rating": 5
+        "place_id": "ChIJ4_pYsdEox2oRUPuOYlQ2AwU",
+        "latitude": -34.2726441,
+        "longitude": 140.6065832,
+        "address": "Berri SA 5343, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -3535,16 +3553,7 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "VIC",
-        "place_id": "ChIJQc1_I1IX1moRxoKRQkgK6-o",
-        "latitude": -38.017264,
-        "longitude": 145.3050076,
-        "address": "K131/25-55 Magid Dr, Narre Warren VIC 3805, Australia",
-        "rating": 3.9
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Coffee in Common",
