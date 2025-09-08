@@ -280,8 +280,8 @@
       {
         "state": "ACT",
         "place_id": "ChIJj5Ui02NNFmsRNHH07evNuz0",
-        "latitude": -35.2716207,
-        "longitude": 149.1332611,
+        "latitude": -35.2717067,
+        "longitude": 149.1332419,
         "address": "59/30 Lonsdale St, Braddon ACT 2612, Australia",
         "rating": 4.5
       }
@@ -454,16 +454,7 @@
     "State": "VIC",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "VIC",
-        "place_id": "ChIJ10U3NNLZqQURLNbnYN5ui0I",
-        "latitude": -31.9078838,
-        "longitude": 115.801757,
-        "address": "Unit 3/9 Pearson Way, Osborne Park WA 6017, Australia",
-        "rating": 5
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Bun Coffee",
@@ -750,16 +741,7 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "NSW",
-        "place_id": "ChIJ_c_h1EKqEmsRDqk19J_F-Sk",
-        "latitude": -33.763324,
-        "longitude": 151.268433,
-        "address": "28 Dale St, Brookvale NSW 2100, Australia",
-        "rating": 4.6
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Darkstar Coffee",
@@ -1821,11 +1803,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJ3R3_lY_h1WoR4MZj3p49kr8",
-        "latitude": -38.2866445,
-        "longitude": 145.1840318,
-        "address": "Unit 1/1855 Frankston - Flinders Rd, Hastings VIC 3915, Australia",
-        "rating": 5
+        "place_id": "ChIJc0iJzTbh1WoRvBF3VluPhIQ",
+        "latitude": -38.2618737,
+        "longitude": 145.190106,
+        "address": "1549 Frankston - Flinders Rd Service Rd, Tyabb VIC 3913, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -2098,16 +2080,7 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "VIC",
-        "place_id": "ChIJT8vM84Zn1moRRK6blnQpCn4",
-        "latitude": -37.8219832,
-        "longitude": 144.9264802,
-        "address": "Unit 2 B/706 Lorimer St, Port Melbourne VIC 3207, Australia",
-        "rating": 4.1
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Seven Miles Roasters",
@@ -2372,9 +2345,9 @@
       {
         "state": "TAS",
         "place_id": "ChIJrTAZb-zZbaoR1vfohdTtnIM",
-        "latitude": -42.9692266,
-        "longitude": 147.3129744,
-        "address": "7A/54 Browns Rd, Kingston TAS 7050, Australia",
+        "latitude": -42.9691203,
+        "longitude": 147.3132223,
+        "address": "Flat 6/54 Browns Rd, Kingston TAS 7050, Australia",
         "rating": 4.8
       }
     ]
@@ -3006,11 +2979,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJFW5RJ6lDkWsRbws2fgqlXHs",
-        "latitude": -27.6210789,
-        "longitude": 153.1145937,
-        "address": "b6/10/14 Compton Rd, Underwood QLD 4119, Australia",
-        "rating": 4.7
+        "place_id": "ChIJ89RWR3Hjk2sRY74mVX0xGHs",
+        "latitude": -27.364509,
+        "longitude": 153.0489434,
+        "address": "449 Newman Rd, Geebung QLD 4034, Australia",
+        "rating": 4.9
       }
     ]
   },
@@ -3539,10 +3512,10 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJnZUptp1C1moRMOdeTMfQOs8",
-        "latitude": -37.838518,
-        "longitude": 144.990105,
-        "address": "1C Murphy St, South Yarra VIC 3141, Australia",
+        "place_id": "ChIJG0U9S6je1WoRJ98FU1986fA",
+        "latitude": -38.2347384,
+        "longitude": 145.0576498,
+        "address": "16 Progress St, Mornington VIC 3931, Australia",
         "rating": 4.4
       }
     ]

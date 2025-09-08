@@ -346,12 +346,7 @@
     "State": "VIC",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "VIC",
-        "place_id": "ChIJ10U3NNLZqQURLNbnYN5ui0I"
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Bun Coffee",
@@ -574,12 +569,7 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "NSW",
-        "place_id": "ChIJ_c_h1EKqEmsRDqk19J_F-Sk"
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Darkstar Coffee",
@@ -1385,7 +1375,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJ3R3_lY_h1WoR4MZj3p49kr8"
+        "place_id": "ChIJc0iJzTbh1WoRvBF3VluPhIQ"
       }
     ]
   },
@@ -1598,12 +1588,7 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "VIC",
-        "place_id": "ChIJT8vM84Zn1moRRK6blnQpCn4"
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Seven Miles Roasters",
@@ -2282,7 +2267,7 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJFW5RJ6lDkWsRbws2fgqlXHs"
+        "place_id": "ChIJ89RWR3Hjk2sRY74mVX0xGHs"
       }
     ]
   },
@@ -2691,7 +2676,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJnZUptp1C1moRMOdeTMfQOs8"
+        "place_id": "ChIJG0U9S6je1WoRJ98FU1986fA"
       }
     ]
   },
