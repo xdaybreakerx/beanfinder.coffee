@@ -297,7 +297,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJa57QtyTjdWsRSo14BXRnPm8"
+        "place_id": "ChIJAfRu2l5Pc2sRCjVW8H7PTpM"
       }
     ]
   },
@@ -346,7 +346,12 @@
     "State": "VIC",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ10U3NNLZqQURLNbnYN5ui0I"
+      }
+    ]
   },
   {
     "Name": "Bun Coffee",
@@ -569,7 +574,12 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJ_c_h1EKqEmsRDqk19J_F-Sk"
+      }
+    ]
   },
   {
     "Name": "Darkstar Coffee",
@@ -723,7 +733,7 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJ0dK-wK2EMioRhWTIPhQwXe0"
+        "place_id": "ChIJ88h-Ec66MioRtW_8mGqhg_0"
       }
     ]
   },
@@ -762,7 +772,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJUSG3ufz232oR8MpDkLQJBgQ"
+        "place_id": "ChIJDUte93TLDWsRLZ_EIhGvgBc"
       }
     ]
   },
@@ -887,7 +897,7 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJxRQt-2jWTYYR9hEqtfVueZM"
+        "place_id": "ChIJ_VVvunEPU4gRQRhz0irfWco"
       }
     ]
   },
@@ -1012,7 +1022,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ__9vxOKWEmsRgYJFfKfYNjk"
+        "place_id": "ChIJtYDRceT3mWsRe0JkWvMlI4w"
       }
     ]
   },
@@ -1025,7 +1035,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJYw3RdhCuEmsRqZcvClvzEJU"
+        "place_id": "ChIJfX8VVbCrEmsRsL8yFmh9AQU"
       }
     ]
   },
@@ -1375,7 +1385,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJc0iJzTbh1WoRvBF3VluPhIQ"
+        "place_id": "ChIJ3R3_lY_h1WoR4MZj3p49kr8"
       }
     ]
   },
@@ -1588,7 +1598,12 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJT8vM84Zn1moRRK6blnQpCn4"
+      }
+    ]
   },
   {
     "Name": "Seven Miles Roasters",
@@ -2267,7 +2282,7 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJ89RWR3Hjk2sRY74mVX0xGHs"
+        "place_id": "ChIJFW5RJ6lDkWsRbws2fgqlXHs"
       }
     ]
   },
@@ -2353,7 +2368,7 @@
       },
       {
         "state": "VIC",
-        "place_id": "ChIJAU6Yrb-rEmsRAnA9BCpYcYk"
+        "place_id": "ChIJH4uAVPNbkWsRKvhdv7tcA3c"
       }
     ]
   },
@@ -2676,7 +2691,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJG0U9S6je1WoRJ98FU1986fA"
+        "place_id": "ChIJnZUptp1C1moRMOdeTMfQOs8"
       }
     ]
   },
@@ -2686,7 +2701,12 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJQc1_I1IX1moRxoKRQkgK6-o"
+      }
+    ]
   },
   {
     "Name": "Coffee in Common",
@@ -2786,7 +2806,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJJ8fMLwBD1moRSaK6mwaQEUM"
+        "place_id": "ChIJWR4AJIpD1moRqnRC9abE3To"
       }
     ]
   }
