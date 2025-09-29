@@ -708,7 +708,16 @@
     "State": "WA",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJV9eP2ZXLSYYR6xwpA4DcXZ8",
+        "latitude": 32.2711895,
+        "longitude": -95.3416369,
+        "address": "2251 Three Lakes Pkwy #107, Tyler, TX 75703, USA",
+        "rating": 4.6
+      }
+    ]
   },
   {
     "Name": "Cruze",
@@ -944,7 +953,7 @@
         "latitude": -33.413571,
         "longitude": 149.540967,
         "address": "67 Corporation Ave, Robin Hill NSW 2795, Australia",
-        "rating": 4.8
+        "rating": 4.7
       }
     ]
   },
@@ -1291,7 +1300,7 @@
         "latitude": -33.86483,
         "longitude": 151.1774597,
         "address": "26D Mansfield St, Rozelle NSW 2039, Australia",
-        "rating": 4.3
+        "rating": 4.2
       }
     ]
   },
@@ -1609,11 +1618,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJlQzbPT6uEmsRdMutKU9hWds",
-        "latitude": -33.8723764,
-        "longitude": 151.209149,
-        "address": "161 Castlereagh St, Sydney NSW 2000, Australia",
-        "rating": 4.3
+        "place_id": "ChIJYyHMmwClEmsRrxuKJK2x-yI",
+        "latitude": -33.7943735,
+        "longitude": 151.1418075,
+        "address": "3 Plassey Rd, Macquarie Park NSW 2113, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -1688,7 +1697,7 @@
         "place_id": "ChIJJU1PMB1akWsRQp5AB7MU_n8",
         "latitude": -27.4666091,
         "longitude": 153.0289822,
-        "address": "340 Queen St, Brisbane City QLD 4000, Australia",
+        "address": "Ground Floor/340 Queen St, Brisbane City QLD 4000, Australia",
         "rating": 3.2
       }
     ]
@@ -1949,9 +1958,9 @@
       {
         "state": "NSW",
         "place_id": "ChIJC9eYcQ3_nWsRIZF3xnJ89Bg",
-        "latitude": -31.43415999999999,
-        "longitude": 152.9224906,
-        "address": "Oxley Hwy, Port Macquarie NSW 2444, Australia",
+        "latitude": -31.452912,
+        "longitude": 152.8886254,
+        "address": "Unit 3/18 Blackbutt Rd, Port Macquarie NSW 2444, Australia",
         "rating": 5
       }
     ]
@@ -3124,11 +3133,11 @@
       },
       {
         "state": "VIC",
-        "place_id": "ChIJX7ZmCUNH1moRnqVKkByP9D4",
-        "latitude": -37.7851115,
-        "longitude": 145.1262028,
-        "address": "Westfield Doncaster, Kiosk K110/619 Doncaster Rd, Doncaster VIC 3108, Australia",
-        "rating": 4.2
+        "place_id": "ChIJzX3YV0Q71moRlw9RSKbqfHA",
+        "latitude": -37.8131778,
+        "longitude": 145.2297543,
+        "address": "Kiosk K218/175 Maroondah Hwy, Ringwood VIC 3134, Australia",
+        "rating": 4.5
       }
     ]
   },
@@ -3404,11 +3413,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJV8HqWPL1XIYRYFmn-AoiCNs",
-        "latitude": 29.4464843,
-        "longitude": -98.4752338,
-        "address": "2202 Broadway, San Antonio, TX 78215, USA",
-        "rating": 4.8
+        "place_id": "ChIJJYUNAYrBuWoR40ss96UbQ38",
+        "latitude": -34.50108640000001,
+        "longitude": 139.0481575,
+        "address": "37a Murray St, Angaston SA 5353, Australia",
+        "rating": 4.7
       }
     ]
   },

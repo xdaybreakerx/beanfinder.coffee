@@ -540,7 +540,12 @@
     "State": "WA",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJV9eP2ZXLSYYR6xwpA4DcXZ8"
+      }
+    ]
   },
   {
     "Name": "Cruze",
@@ -1225,7 +1230,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJlQzbPT6uEmsRdMutKU9hWds"
+        "place_id": "ChIJYyHMmwClEmsRrxuKJK2x-yI"
       }
     ]
   },
@@ -2368,7 +2373,7 @@
       },
       {
         "state": "VIC",
-        "place_id": "ChIJX7ZmCUNH1moRnqVKkByP9D4"
+        "place_id": "ChIJzX3YV0Q71moRlw9RSKbqfHA"
       }
     ]
   },
@@ -2584,7 +2589,7 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJV8HqWPL1XIYRYFmn-AoiCNs"
+        "place_id": "ChIJJYUNAYrBuWoR40ss96UbQ38"
       }
     ]
   },
