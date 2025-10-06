@@ -389,11 +389,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJa57QtyTjdWsRSo14BXRnPm8",
-        "latitude": -31.6348765,
-        "longitude": 152.7558053,
-        "address": "106 Sirius Dr, Lakewood NSW 2443, Australia",
-        "rating": 5
+        "place_id": "ChIJAfRu2l5Pc2sRCjVW8H7PTpM",
+        "latitude": -32.7124799,
+        "longitude": 151.5102413,
+        "address": "1/37 Shipley Dr, Rutherford NSW 2320, Australia",
+        "rating": 4.8
       }
     ]
   },
@@ -711,11 +711,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJV9eP2ZXLSYYR6xwpA4DcXZ8",
-        "latitude": 32.2711895,
-        "longitude": -95.3416369,
-        "address": "2251 Three Lakes Pkwy #107, Tyler, TX 75703, USA",
-        "rating": 4.6
+        "place_id": "ChIJx5XWJADPSYYRq4Hv7bGIWB8",
+        "latitude": 32.35140210000001,
+        "longitude": -95.30200099999999,
+        "address": "110 N College Ave #103, Tyler, TX 75702, USA",
+        "rating": 4.4
       }
     ]
   },
@@ -881,11 +881,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJt-jKTSbPsGoREdQDTJur4Mw",
-        "latitude": -34.9265182,
-        "longitude": 138.5959576,
-        "address": "9-17 Young St, Adelaide SA 5000, Australia",
-        "rating": 4.6
+        "place_id": "ChIJEdMxwSjPsGoRmpx3VKziEJc",
+        "latitude": -34.9235443,
+        "longitude": 138.5613382,
+        "address": "2 Jervois St, Torrensville SA 5031, Australia",
+        "rating": 4.5
       }
     ]
   },
@@ -1017,11 +1017,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJDUte93TLDWsRLZ_EIhGvgBc",
-        "latitude": -31.2532183,
-        "longitude": 146.921099,
-        "address": "New South Wales, Australia",
-        "rating": "N/A"
+        "place_id": "ChIJZ934S0KuEmsR_0lxV3PTR4M",
+        "latitude": -33.8615815,
+        "longitude": 151.2076503,
+        "address": "199 George St, The Rocks NSW 2000, Australia",
+        "rating": 4.5
       }
     ]
   },
@@ -1186,11 +1186,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ_VVvunEPU4gRQRhz0irfWco",
-        "latitude": 35.9945297,
-        "longitude": -79.9351806,
-        "address": "116 E Main St, Jamestown, NC 27282, USA",
-        "rating": 4.7
+        "place_id": "ChIJp7ODnLX_DogRpoSDGWWqMkI",
+        "latitude": 41.8839247,
+        "longitude": -88.2065439,
+        "address": "148 W Washington St, West Chicago, IL 60185, USA",
+        "rating": 4.8
       }
     ]
   },
@@ -1275,7 +1275,7 @@
         "latitude": -27.4941906,
         "longitude": 153.0412322,
         "address": "199 Logan Rd, Woolloongabba QLD 4102, Australia",
-        "rating": 4.8
+        "rating": 4.7
       }
     ]
   },
@@ -1347,11 +1347,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJtYDRceT3mWsRe0JkWvMlI4w",
-        "latitude": -28.88043609999999,
-        "longitude": 152.8209294,
-        "address": "48 Hayward Ridge, Hogarth Range NSW 2469, Australia",
-        "rating": 5
+        "place_id": "ChIJ__9vxOKWEmsRgYJFfKfYNjk",
+        "latitude": -33.8514576,
+        "longitude": 150.8943897,
+        "address": "6/1199 The Horsley Dr, Wetherill Park NSW 2164, Australia",
+        "rating": 4.9
       }
     ]
   },
@@ -1618,11 +1618,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJYyHMmwClEmsRrxuKJK2x-yI",
-        "latitude": -33.7943735,
-        "longitude": 151.1418075,
-        "address": "3 Plassey Rd, Macquarie Park NSW 2113, Australia",
-        "rating": 4.6
+        "place_id": "ChIJlQzbPT6uEmsRdMutKU9hWds",
+        "latitude": -33.8723764,
+        "longitude": 151.209149,
+        "address": "161 Castlereagh St, Sydney NSW 2000, Australia",
+        "rating": 4.3
       }
     ]
   },
@@ -2798,7 +2798,7 @@
         "latitude": -31.95559299999999,
         "longitude": 115.8637877,
         "address": "Shop 2/480 Hay St, Perth WA 6000, Australia",
-        "rating": 4.6
+        "rating": 4.5
       }
     ]
   },
@@ -3015,11 +3015,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJFW5RJ6lDkWsRbws2fgqlXHs",
-        "latitude": -27.6210789,
-        "longitude": 153.1145937,
-        "address": "b6/10/14 Compton Rd, Underwood QLD 4119, Australia",
-        "rating": 4.7
+        "place_id": "ChIJme0Qzb1qkWsRgG4cVLfHaFQ",
+        "latitude": -27.7455513,
+        "longitude": 153.2200233,
+        "address": "5 Commerce Cct, Yatala QLD 4207, Australia",
+        "rating": 5
       }
     ]
   },
@@ -3133,11 +3133,11 @@
       },
       {
         "state": "VIC",
-        "place_id": "ChIJzX3YV0Q71moRlw9RSKbqfHA",
-        "latitude": -37.8131778,
-        "longitude": 145.2297543,
-        "address": "Kiosk K218/175 Maroondah Hwy, Ringwood VIC 3134, Australia",
-        "rating": 4.5
+        "place_id": "ChIJX7ZmCUNH1moRnqVKkByP9D4",
+        "latitude": -37.7851115,
+        "longitude": 145.1262028,
+        "address": "Westfield Doncaster, Kiosk K110/619 Doncaster Rd, Doncaster VIC 3108, Australia",
+        "rating": 4.2
       }
     ]
   },
@@ -3396,11 +3396,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJF8AJaNDIsGoREZStkSsOW98",
-        "latitude": -34.9055204,
-        "longitude": 138.5905655,
-        "address": "161 Jeffcott St, North Adelaide SA 5006, Australia",
-        "rating": 4.5
+        "place_id": "ChIJdxIJZOk2t2oR-isctLR0mLI",
+        "latitude": -34.9890968,
+        "longitude": 138.8246416,
+        "address": "24 Bridge St, Balhannah SA 5242, Australia",
+        "rating": 4.8
       }
     ]
   },
@@ -3413,10 +3413,10 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJJYUNAYrBuWoR40ss96UbQ38",
-        "latitude": -34.50108640000001,
-        "longitude": 139.0481575,
-        "address": "37a Murray St, Angaston SA 5353, Australia",
+        "place_id": "ChIJN0UshUH1XIYRKCo5hVtswG8",
+        "latitude": 29.4326697,
+        "longitude": -98.4841074,
+        "address": "203 8th St Bldg. 2, San Antonio, TX 78215, USA",
         "rating": 4.7
       }
     ]
@@ -3497,11 +3497,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJI8IHKXa1sGoRKMMsVCyL-L0",
-        "latitude": -34.8295232,
-        "longitude": 138.7065048,
-        "address": "132a Tolley Rd, St Agnes SA 5097, Australia",
-        "rating": 4.7
+        "place_id": "ChIJ76vEjKvJsGoRuKjHW-tgpWo",
+        "latitude": -34.8780035,
+        "longitude": 138.6024842,
+        "address": "219 Main N Rd, Sefton Park SA 5083, Australia",
+        "rating": 4.5
       }
     ]
   },
