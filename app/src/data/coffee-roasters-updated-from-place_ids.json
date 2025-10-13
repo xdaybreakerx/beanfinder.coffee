@@ -228,10 +228,10 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJzTYSmmLpST4RJt1g8yJvdeM",
-        "latitude": 26.3059554,
-        "longitude": 50.1902352,
-        "address": "6391 Prince Faisal Bin Fahd Road, Hizam Al Akhdar، Al Khobar 34436, Saudi Arabia",
+        "place_id": "ChIJJ5bS6P9n1moRx76U3LjtN1A",
+        "latitude": -37.8312475,
+        "longitude": 144.960354,
+        "address": "12-18 Yarra Pl, South Melbourne VIC 3205, Australia",
         "rating": 4.2
       }
     ]
@@ -356,8 +356,8 @@
       {
         "state": "WA",
         "place_id": "ChIJWT-rgHClMioRqGpcWYDsm_c",
-        "latitude": -31.9472796,
-        "longitude": 115.8248977,
+        "latitude": -31.9471314,
+        "longitude": 115.8248344,
         "address": "439D Hay St, Subiaco WA 6008, Australia",
         "rating": 4.7
       }
@@ -389,11 +389,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJAfRu2l5Pc2sRCjVW8H7PTpM",
-        "latitude": -32.7124799,
-        "longitude": 151.5102413,
-        "address": "1/37 Shipley Dr, Rutherford NSW 2320, Australia",
-        "rating": 4.8
+        "place_id": "ChIJa57QtyTjdWsRSo14BXRnPm8",
+        "latitude": -31.6348765,
+        "longitude": 152.7558053,
+        "address": "106 Sirius Dr, Lakewood NSW 2443, Australia",
+        "rating": 5
       }
     ]
   },
@@ -556,16 +556,7 @@
     "State": "TAS",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "TAS",
-        "place_id": "ChIJz30D0_vZbaoRFsVw1Pqzb0E",
-        "latitude": -42.9595314,
-        "longitude": 147.329415,
-        "address": "229 Albion Heights Dr, Kingston TAS 7050, Australia",
-        "rating": 5
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Cirelli Coffee Roasting Co",
@@ -708,16 +699,7 @@
     "State": "WA",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "WA",
-        "place_id": "ChIJx5XWJADPSYYRq4Hv7bGIWB8",
-        "latitude": 32.35140210000001,
-        "longitude": -95.30200099999999,
-        "address": "110 N College Ave #103, Tyler, TX 75702, USA",
-        "rating": 4.4
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Cruze",
@@ -881,11 +863,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJEdMxwSjPsGoRmpx3VKziEJc",
-        "latitude": -34.9235443,
-        "longitude": 138.5613382,
-        "address": "2 Jervois St, Torrensville SA 5031, Australia",
-        "rating": 4.5
+        "place_id": "ChIJt-jKTSbPsGoREdQDTJur4Mw",
+        "latitude": -34.9265182,
+        "longitude": 138.5959576,
+        "address": "9-17 Young St, Adelaide SA 5000, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -1017,11 +999,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJZ934S0KuEmsR_0lxV3PTR4M",
-        "latitude": -33.8615815,
-        "longitude": 151.2076503,
-        "address": "199 George St, The Rocks NSW 2000, Australia",
-        "rating": 4.5
+        "place_id": "ChIJDUte93TLDWsRLZ_EIhGvgBc",
+        "latitude": -31.2532183,
+        "longitude": 146.921099,
+        "address": "New South Wales, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -1186,11 +1168,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJp7ODnLX_DogRpoSDGWWqMkI",
-        "latitude": 41.8839247,
-        "longitude": -88.2065439,
-        "address": "148 W Washington St, West Chicago, IL 60185, USA",
-        "rating": 4.8
+        "place_id": "ChIJwb9WhU5RFGsRJ3KMrneonl8",
+        "latitude": -35.3173377,
+        "longitude": 150.4368073,
+        "address": "109 Princes Hwy, Milton NSW 2538, Australia",
+        "rating": 4.3
       }
     ]
   },
@@ -1203,10 +1185,10 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJGw59ddbRsGoRLpV_oBAA-8U",
-        "latitude": -34.9975161,
-        "longitude": 138.5774868,
-        "address": "12 Denis St, St Marys SA 5042, Australia",
+        "place_id": "ChIJ2wNPCxXQsGoRhSSM5dC7e2s",
+        "latitude": -34.9970498,
+        "longitude": 138.5773256,
+        "address": "8 Denis St, St Marys SA 5042, Australia",
         "rating": 4.6
       }
     ]
@@ -1268,16 +1250,7 @@
     "State": "QLD",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "QLD",
-        "place_id": "ChIJAdIocJVbkWsRif5TkFupK7w",
-        "latitude": -27.4941906,
-        "longitude": 153.0412322,
-        "address": "199 Logan Rd, Woolloongabba QLD 4102, Australia",
-        "rating": 4.7
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Lime Blue Coffee",
@@ -1618,11 +1591,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJlQzbPT6uEmsRdMutKU9hWds",
-        "latitude": -33.8723764,
-        "longitude": 151.209149,
-        "address": "161 Castlereagh St, Sydney NSW 2000, Australia",
-        "rating": 4.3
+        "place_id": "ChIJYyHMmwClEmsRrxuKJK2x-yI",
+        "latitude": -33.7943735,
+        "longitude": 151.1418075,
+        "address": "3 Plassey Rd, Macquarie Park NSW 2113, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -2107,16 +2080,7 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "VIC",
-        "place_id": "ChIJT8vM84Zn1moRRK6blnQpCn4",
-        "latitude": -37.8219832,
-        "longitude": 144.9264802,
-        "address": "Unit 2 B/706 Lorimer St, Port Melbourne VIC 3207, Australia",
-        "rating": 4.1
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Seven Miles Roasters",
@@ -2798,7 +2762,7 @@
         "latitude": -31.95559299999999,
         "longitude": 115.8637877,
         "address": "Shop 2/480 Hay St, Perth WA 6000, Australia",
-        "rating": 4.5
+        "rating": 4.6
       }
     ]
   },
@@ -3015,11 +2979,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJme0Qzb1qkWsRgG4cVLfHaFQ",
-        "latitude": -27.7455513,
-        "longitude": 153.2200233,
-        "address": "5 Commerce Cct, Yatala QLD 4207, Australia",
-        "rating": 5
+        "place_id": "ChIJpyuarUJbkWsRi-fbrlxp19A",
+        "latitude": -27.5449743,
+        "longitude": 153.0384899,
+        "address": "655 Toohey Rd, Salisbury QLD 4107, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -3133,11 +3097,11 @@
       },
       {
         "state": "VIC",
-        "place_id": "ChIJX7ZmCUNH1moRnqVKkByP9D4",
-        "latitude": -37.7851115,
-        "longitude": 145.1262028,
-        "address": "Westfield Doncaster, Kiosk K110/619 Doncaster Rd, Doncaster VIC 3108, Australia",
-        "rating": 4.2
+        "place_id": "ChIJzX3YV0Q71moRlw9RSKbqfHA",
+        "latitude": -37.8131778,
+        "longitude": 145.2297543,
+        "address": "Kiosk K218/175 Maroondah Hwy, Ringwood VIC 3134, Australia",
+        "rating": 4.5
       }
     ]
   },
@@ -3379,11 +3343,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ4_pYsdEox2oRUPuOYlQ2AwU",
-        "latitude": -34.2726441,
-        "longitude": 140.6065832,
-        "address": "Berri SA 5343, Australia",
-        "rating": "N/A"
+        "place_id": "ChIJ16cqjSGuEmsRgzuSZ7za4i0",
+        "latitude": -33.8844681,
+        "longitude": 151.2093771,
+        "address": "Shop 3/26/44 Kippax St, Surry Hills NSW 2010, Australia",
+        "rating": 5
       }
     ]
   },
@@ -3417,7 +3381,7 @@
         "latitude": 29.4326697,
         "longitude": -98.4841074,
         "address": "203 8th St Bldg. 2, San Antonio, TX 78215, USA",
-        "rating": 4.7
+        "rating": 4.8
       }
     ]
   },
@@ -3461,7 +3425,16 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ31U7Lzw9sWoRbjtlLCSt-b0",
+        "latitude": -35.2836941,
+        "longitude": 138.4678338,
+        "address": "22 Moss Ct, Aldinga Beach SA 5173, Australia",
+        "rating": 5
+      }
+    ]
   },
   {
     "Name": "+55 (Plus Fifty Five)",
@@ -3497,11 +3470,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ76vEjKvJsGoRuKjHW-tgpWo",
-        "latitude": -34.8780035,
-        "longitude": 138.6024842,
-        "address": "219 Main N Rd, Sefton Park SA 5083, Australia",
-        "rating": 4.5
+        "place_id": "ChIJI8IHKXa1sGoRKMMsVCyL-L0",
+        "latitude": -34.8295232,
+        "longitude": 138.7065048,
+        "address": "132a Tolley Rd, St Agnes SA 5097, Australia",
+        "rating": 4.7
       }
     ]
   },
