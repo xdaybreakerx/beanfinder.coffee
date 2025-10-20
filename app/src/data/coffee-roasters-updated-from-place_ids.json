@@ -228,11 +228,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJJ5bS6P9n1moRx76U3LjtN1A",
-        "latitude": -37.8312475,
-        "longitude": 144.960354,
-        "address": "12-18 Yarra Pl, South Melbourne VIC 3205, Australia",
-        "rating": 4.2
+        "place_id": "ChIJzTYSmmLpST4RJt1g8yJvdeM",
+        "latitude": 26.3059554,
+        "longitude": 50.1902352,
+        "address": "6391 Prince Faisal Bin Fahd Road, Hizam Al Akhdar، Al Khobar 34436, Saudi Arabia",
+        "rating": 4.3
       }
     ]
   },
@@ -389,11 +389,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJa57QtyTjdWsRSo14BXRnPm8",
-        "latitude": -31.6348765,
-        "longitude": 152.7558053,
-        "address": "106 Sirius Dr, Lakewood NSW 2443, Australia",
-        "rating": 5
+        "place_id": "ChIJAfRu2l5Pc2sRCjVW8H7PTpM",
+        "latitude": -32.7124799,
+        "longitude": 151.5102413,
+        "address": "1/37 Shipley Dr, Rutherford NSW 2320, Australia",
+        "rating": 4.8
       }
     ]
   },
@@ -999,11 +999,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJDUte93TLDWsRLZ_EIhGvgBc",
-        "latitude": -31.2532183,
-        "longitude": 146.921099,
-        "address": "New South Wales, Australia",
-        "rating": "N/A"
+        "place_id": "ChIJZ934S0KuEmsR_0lxV3PTR4M",
+        "latitude": -33.8615815,
+        "longitude": 151.2076503,
+        "address": "199 George St, The Rocks NSW 2000, Australia",
+        "rating": 4.5
       }
     ]
   },
@@ -1168,11 +1168,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJwb9WhU5RFGsRJ3KMrneonl8",
-        "latitude": -35.3173377,
-        "longitude": 150.4368073,
-        "address": "109 Princes Hwy, Milton NSW 2538, Australia",
-        "rating": 4.3
+        "place_id": "ChIJp7ODnLX_DogRpoSDGWWqMkI",
+        "latitude": 41.8839247,
+        "longitude": -88.2065439,
+        "address": "148 W Washington St, West Chicago, IL 60185, USA",
+        "rating": 4.8
       }
     ]
   },
@@ -1273,7 +1273,7 @@
         "latitude": -33.86483,
         "longitude": 151.1774597,
         "address": "26D Mansfield St, Rozelle NSW 2039, Australia",
-        "rating": 4.2
+        "rating": 4.3
       }
     ]
   },
@@ -1320,10 +1320,10 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ__9vxOKWEmsRgYJFfKfYNjk",
-        "latitude": -33.8514576,
-        "longitude": 150.8943897,
-        "address": "6/1199 The Horsley Dr, Wetherill Park NSW 2164, Australia",
+        "place_id": "ChIJEQFWu1qIEmsRTfwhTEUPWJk",
+        "latitude": -33.7419967,
+        "longitude": 150.6936035,
+        "address": "4/2187 Castlereagh Rd, Penrith NSW 2750, Australia",
         "rating": 4.9
       }
     ]
@@ -1337,11 +1337,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJfX8VVbCrEmsRsL8yFmh9AQU",
-        "latitude": -33.7968627,
-        "longitude": 151.2850167,
-        "address": "Manly NSW 2095, Australia",
-        "rating": "N/A"
+        "place_id": "ChIJMSdqujerEmsRwsJI--zIxw0",
+        "latitude": -33.7971416,
+        "longitude": 151.2871504,
+        "address": "Unit 4/10 Sydney Rd, Manly NSW 2095, Australia",
+        "rating": 4.9
       }
     ]
   },
@@ -1591,11 +1591,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJYyHMmwClEmsRrxuKJK2x-yI",
-        "latitude": -33.7943735,
-        "longitude": 151.1418075,
-        "address": "3 Plassey Rd, Macquarie Park NSW 2113, Australia",
-        "rating": 4.6
+        "place_id": "ChIJlQzbPT6uEmsRdMutKU9hWds",
+        "latitude": -33.8723764,
+        "longitude": 151.209149,
+        "address": "161 Castlereagh St, Sydney NSW 2000, Australia",
+        "rating": 4.3
       }
     ]
   },
@@ -1803,11 +1803,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJ3R3_lY_h1WoR4MZj3p49kr8",
-        "latitude": -38.2866445,
-        "longitude": 145.1840318,
-        "address": "Unit 1/1855 Frankston - Flinders Rd, Hastings VIC 3915, Australia",
-        "rating": 5
+        "place_id": "ChIJc0iJzTbh1WoRvBF3VluPhIQ",
+        "latitude": -38.2618737,
+        "longitude": 145.190106,
+        "address": "1549 Frankston - Flinders Rd Service Rd, Tyabb VIC 3913, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -2297,7 +2297,7 @@
         "latitude": -33.8834258,
         "longitude": 151.1951103,
         "address": "80 Bay St, Ultimo NSW 2007, Australia",
-        "rating": 4.6
+        "rating": 4.5
       }
     ]
   },
@@ -3097,11 +3097,11 @@
       },
       {
         "state": "VIC",
-        "place_id": "ChIJzX3YV0Q71moRlw9RSKbqfHA",
-        "latitude": -37.8131778,
-        "longitude": 145.2297543,
-        "address": "Kiosk K218/175 Maroondah Hwy, Ringwood VIC 3134, Australia",
-        "rating": 4.5
+        "place_id": "ChIJX7ZmCUNH1moRnqVKkByP9D4",
+        "latitude": -37.7851115,
+        "longitude": 145.1262028,
+        "address": "Westfield Doncaster, Kiosk K110/619 Doncaster Rd, Doncaster VIC 3108, Australia",
+        "rating": 4.2
       }
     ]
   },
@@ -3542,7 +3542,7 @@
         "latitude": -38.017264,
         "longitude": 145.3050076,
         "address": "K131/25-55 Magid Dr, Narre Warren VIC 3805, Australia",
-        "rating": 3.9
+        "rating": 3.8
       }
     ]
   },
@@ -3664,10 +3664,10 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJJ8fMLwBD1moRSaK6mwaQEUM",
-        "latitude": -37.7798158,
-        "longitude": 144.9870757,
-        "address": "336 St Georges Rd, Fitzroy North VIC 3068, Australia",
+        "place_id": "ChIJWR4AJIpD1moRqnRC9abE3To",
+        "latitude": -37.8175798,
+        "longitude": 144.9658243,
+        "address": "7a Degraves St, Melbourne VIC 3000, Australia",
         "rating": 4.8
       }
     ]
