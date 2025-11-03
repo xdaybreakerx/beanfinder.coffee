@@ -346,10 +346,10 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJ12DBA2i7MioRr0TBxQNMpc4",
-        "latitude": -31.9943514,
-        "longitude": 115.9187976,
-        "address": "41 Welshpool Rd, Welshpool WA 6106, Australia",
+        "place_id": "ChIJWT-rgHClMioRqGpcWYDsm_c",
+        "latitude": -31.9471314,
+        "longitude": 115.8248344,
+        "address": "439D Hay St, Subiaco WA 6008, Australia",
         "rating": 4.7
       }
     ]
@@ -690,16 +690,7 @@
     "State": "WA",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "WA",
-        "place_id": "ChIJx5XWJADPSYYRq4Hv7bGIWB8",
-        "latitude": 32.35140210000001,
-        "longitude": -95.30200099999999,
-        "address": "110 N College Ave #103, Tyler, TX 75702, USA",
-        "rating": 4.4
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Cruze",
@@ -948,11 +939,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJ88h-Ec66MioRtW_8mGqhg_0",
-        "latitude": -31.944086,
-        "longitude": 115.859032,
-        "address": "135 Lake St, Northbridge WA 6003, Australia",
-        "rating": 5
+        "place_id": "ChIJ0dK-wK2EMioRhWTIPhQwXe0",
+        "latitude": -32.2761111,
+        "longitude": 115.7675,
+        "address": "3 Arkwright Rd, Rockingham WA 6168, Australia",
+        "rating": 4.8
       }
     ]
   },
@@ -999,11 +990,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJZ934S0KuEmsR_0lxV3PTR4M",
-        "latitude": -33.8615815,
-        "longitude": 151.2076503,
-        "address": "199 George St, The Rocks NSW 2000, Australia",
-        "rating": 4.5
+        "place_id": "ChIJDUte93TLDWsRLZ_EIhGvgBc",
+        "latitude": -31.2532183,
+        "longitude": 146.921099,
+        "address": "New South Wales, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -1168,11 +1159,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJp7ODnLX_DogRpoSDGWWqMkI",
-        "latitude": 41.8839247,
-        "longitude": -88.2065439,
-        "address": "148 W Washington St, West Chicago, IL 60185, USA",
-        "rating": 4.8
+        "place_id": "ChIJxRQt-2jWTYYR9hEqtfVueZM",
+        "latitude": 32.903244,
+        "longitude": -97.19726299999999,
+        "address": "8700 N Tarrant Pkwy #109, North Richland Hills, TX 76182, USA",
+        "rating": 4.6
       }
     ]
   },
@@ -1273,7 +1264,7 @@
         "latitude": -33.86483,
         "longitude": 151.1774597,
         "address": "26D Mansfield St, Rozelle NSW 2039, Australia",
-        "rating": 4.3
+        "rating": 4.2
       }
     ]
   },
@@ -1320,11 +1311,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ_36JuaakEmsRG08QSuYNtQU",
-        "latitude": -33.834486,
-        "longitude": 151.051854,
-        "address": "26 Fariola St, Silverwater NSW 2128, Australia",
-        "rating": 4.7
+        "place_id": "ChIJV4QzSJWxEmsR0ODiJI4LWBU",
+        "latitude": -33.8847324,
+        "longitude": 151.1726697,
+        "address": "77 Nelson St, Annandale NSW 2038, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -1405,11 +1396,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJMzrwAslC1moRKuXaN2eeaXw",
-        "latitude": -37.8118922,
-        "longitude": 144.9693252,
-        "address": "Market Ln, Melbourne VIC 3000, Australia",
-        "rating": "N/A"
+        "place_id": "ChIJT-tyjjRd1moRqeXlykOTVQc",
+        "latitude": -37.8062804,
+        "longitude": 144.9580131,
+        "address": "83-85 Victoria St, Melbourne VIC 3000, Australia",
+        "rating": 4.3
       }
     ]
   },
@@ -1591,11 +1582,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJlQzbPT6uEmsRdMutKU9hWds",
-        "latitude": -33.8723764,
-        "longitude": 151.209149,
-        "address": "161 Castlereagh St, Sydney NSW 2000, Australia",
-        "rating": 4.3
+        "place_id": "ChIJYyHMmwClEmsRrxuKJK2x-yI",
+        "latitude": -33.7943735,
+        "longitude": 151.1418075,
+        "address": "3 Plassey Rd, Macquarie Park NSW 2113, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -1913,11 +1904,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJU6iaAuDT1moRqKo0oL6lEOU",
-        "latitude": -37.768881,
-        "longitude": 144.9993745,
-        "address": "378 High St, Northcote VIC 3070, Australia",
-        "rating": 4.7
+        "place_id": "ChIJt7-JPBld1moRjMAqzh7ZieM",
+        "latitude": -37.6696285,
+        "longitude": 144.9608051,
+        "address": "30/30A Colbert Rd, Campbellfield VIC 3061, Australia",
+        "rating": 5
       }
     ]
   },
@@ -2095,7 +2086,7 @@
         "latitude": -37.8456958,
         "longitude": 144.9824638,
         "address": "55 Commercial Rd, Melbourne VIC 3004, Australia",
-        "rating": "N/A"
+        "rating": 5
       },
       {
         "state": "NSW",
@@ -2889,7 +2880,7 @@
         "latitude": -34.9134166,
         "longitude": 138.5723377,
         "address": "2 W Thebarton Rd, Thebarton SA 5031, Australia",
-        "rating": 4.8
+        "rating": 4.7
       }
     ]
   },
@@ -3334,11 +3325,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ16cqjSGuEmsRgzuSZ7za4i0",
-        "latitude": -33.8844681,
-        "longitude": 151.2093771,
-        "address": "Shop 3/26/44 Kippax St, Surry Hills NSW 2010, Australia",
-        "rating": 5
+        "place_id": "ChIJ4_pYsdEox2oRUPuOYlQ2AwU",
+        "latitude": -34.2726441,
+        "longitude": 140.6065832,
+        "address": "Berri SA 5343, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -3368,10 +3359,10 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJN0UshUH1XIYRKCo5hVtswG8",
-        "latitude": 29.4326697,
-        "longitude": -98.4841074,
-        "address": "203 8th St Bldg. 2, San Antonio, TX 78215, USA",
+        "place_id": "ChIJV8HqWPL1XIYRYFmn-AoiCNs",
+        "latitude": 29.4464843,
+        "longitude": -98.4752338,
+        "address": "2202 Broadway, San Antonio, TX 78215, USA",
         "rating": 4.8
       }
     ]
@@ -3563,11 +3554,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJFfuagElD1moRfHn5PWOZDqE",
-        "latitude": -37.8171645,
-        "longitude": 144.9648549,
-        "address": "Shop 1D/289 Flinders Ln, Melbourne VIC 3000, Australia",
-        "rating": 4.6
+        "place_id": "ChIJs8sfHx9D1moRJnTIRru0bxk",
+        "latitude": -37.7982136,
+        "longitude": 144.9857192,
+        "address": "30 Sackville St, Collingwood VIC 3066, Australia",
+        "rating": 4.7
       }
     ]
   },
@@ -3584,7 +3575,7 @@
         "latitude": -37.832185,
         "longitude": 144.958095,
         "address": "300 Coventry St, South Melbourne VIC 3205, Australia",
-        "rating": 4.5
+        "rating": 4.6
       }
     ]
   },
@@ -3655,10 +3646,10 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJWR4AJIpD1moRqnRC9abE3To",
-        "latitude": -37.8175798,
-        "longitude": 144.9658243,
-        "address": "7a Degraves St, Melbourne VIC 3000, Australia",
+        "place_id": "ChIJJ8fMLwBD1moRSaK6mwaQEUM",
+        "latitude": -37.7798158,
+        "longitude": 144.9870757,
+        "address": "336 St Georges Rd, Fitzroy North VIC 3068, Australia",
         "rating": 4.8
       }
     ]
