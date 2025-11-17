@@ -117,11 +117,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJO3rqvldNrlIRdN8X7uCSi8Y",
-        "latitude": 46.768511,
-        "longitude": -92.12276899999999,
-        "address": "1917 W Superior St, Duluth, MN 55806, USA",
-        "rating": 5
+        "place_id": "ChIJ9QX4tKtjgmkR2Ryu7NSeddw",
+        "latitude": -17.009931,
+        "longitude": 145.3003544,
+        "address": "441 Tyrconnell Rd, Arriga QLD 4880, Australia",
+        "rating": 4.8
       }
     ]
   },
@@ -219,11 +219,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJzTYSmmLpST4RJt1g8yJvdeM",
-        "latitude": 26.3059554,
-        "longitude": 50.1902352,
-        "address": "6391 Prince Faisal Bin Fahd Road, Hizam Al Akhdar، Al Khobar 34436, Saudi Arabia",
-        "rating": 4.3
+        "place_id": "ChIJn1FUnktd1moRgZCDC6aPCcw",
+        "latitude": -37.8146708,
+        "longitude": 144.9582346,
+        "address": "Rear of, 493-495 Little Bourke St, Melbourne VIC 3000, Australia",
+        "rating": 4.8
       }
     ]
   },
@@ -380,11 +380,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJa57QtyTjdWsRSo14BXRnPm8",
-        "latitude": -31.6348765,
-        "longitude": 152.7558053,
-        "address": "106 Sirius Dr, Lakewood NSW 2443, Australia",
-        "rating": 5
+        "place_id": "ChIJQ2y1cK5Xv4kRuKsqY1n2iFQ",
+        "latitude": 38.98075499999999,
+        "longitude": -74.82044599999999,
+        "address": "4800 Ocean Ave, Wildwood, NJ 08260, USA",
+        "rating": 4.7
       }
     ]
   },
@@ -547,7 +547,16 @@
     "State": "TAS",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "TAS",
+        "place_id": "ChIJz30D0_vZbaoRFsVw1Pqzb0E",
+        "latitude": -42.9596685,
+        "longitude": 147.3294076,
+        "address": "229 Albion Heights Dr, Kingston TAS 7050, Australia",
+        "rating": 5
+      }
+    ]
   },
   {
     "Name": "Cirelli Coffee Roasting Co",
@@ -914,11 +923,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJ7fLSHJ6vMioRvSa6tpVcb68",
-        "latitude": -31.845606,
-        "longitude": 116.0053002,
-        "address": "80 Yukich Cl, Middle Swan WA 6056, Australia",
-        "rating": 3.5
+        "place_id": "ChIJXfHFveqlMioRBVfgK5Nlc3c",
+        "latitude": -31.9209269,
+        "longitude": 115.8394015,
+        "address": "21/148 Scarborough Beach Rd, Mount Hawthorn WA 6016, Australia",
+        "rating": 3
       }
     ]
   },
@@ -948,11 +957,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJ0dK-wK2EMioRhWTIPhQwXe0",
-        "latitude": -32.2761111,
-        "longitude": 115.7675,
-        "address": "3 Arkwright Rd, Rockingham WA 6168, Australia",
-        "rating": 4.8
+        "place_id": "ChIJ88h-Ec66MioRtW_8mGqhg_0",
+        "latitude": -31.944086,
+        "longitude": 115.859032,
+        "address": "135 Lake St, Northbridge WA 6003, Australia",
+        "rating": 5
       }
     ]
   },
@@ -1172,7 +1181,7 @@
         "latitude": -35.3173377,
         "longitude": 150.4368073,
         "address": "109 Princes Hwy, Milton NSW 2538, Australia",
-        "rating": 4.3
+        "rating": 4.4
       }
     ]
   },
@@ -1371,11 +1380,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJfwM3SFFC1moRqHiTyaepYTQ",
-        "latitude": -37.8161665,
-        "longitude": 145.0113816,
-        "address": "47 North St, Richmond VIC 3121, Australia",
-        "rating": 4.8
+        "place_id": "ChIJw3ZAzdJD1moRdTHBsWBAcao",
+        "latitude": -37.8137885,
+        "longitude": 144.9613945,
+        "address": "387 Little Bourke St, Melbourne VIC 3000, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -1900,7 +1909,7 @@
         "latitude": -33.8828778,
         "longitude": 151.2110278,
         "address": "61 Albion St, Surry Hills NSW 2010, Australia",
-        "rating": 4.3
+        "rating": 4.2
       }
     ]
   },
@@ -2080,7 +2089,16 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ38TMTZxD1moRlZFbupPM9Rk",
+        "latitude": -37.811271,
+        "longitude": 144.9648975,
+        "address": "Shop L18.1 Queen Victoria, 31 Albert Coates Ln, Melbourne VIC 3000, Australia",
+        "rating": 5
+      }
+    ]
   },
   {
     "Name": "Seven Miles Roasters",
@@ -2936,11 +2954,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJNZsvUd9C1moRY00nWdYBy9k",
-        "latitude": -37.799384,
-        "longitude": 144.9781281,
-        "address": "267 Brunswick St, Fitzroy VIC 3065, Australia",
-        "rating": 4.6
+        "place_id": "ChIJwRNQEh1D1moR9CGBmWaxvoc",
+        "latitude": -37.7986379,
+        "longitude": 144.9940429,
+        "address": "UNit 3, Rear/260 Hoddle St, Collingwood VIC 3066, Australia",
+        "rating": 4.8
       }
     ]
   },
@@ -3092,7 +3110,7 @@
         "latitude": -37.7851115,
         "longitude": 145.1262028,
         "address": "Westfield Doncaster, Kiosk K110/619 Doncaster Rd, Doncaster VIC 3108, Australia",
-        "rating": 4.2
+        "rating": 4.1
       }
     ]
   },
@@ -3563,11 +3581,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJs8sfHx9D1moRJnTIRru0bxk",
-        "latitude": -37.7982136,
-        "longitude": 144.9857192,
-        "address": "30 Sackville St, Collingwood VIC 3066, Australia",
-        "rating": 4.7
+        "place_id": "ChIJFfuagElD1moRfHn5PWOZDqE",
+        "latitude": -37.8171645,
+        "longitude": 144.9648549,
+        "address": "Shop 1D/289 Flinders Ln, Melbourne VIC 3000, Australia",
+        "rating": 4.6
       }
     ]
   },
