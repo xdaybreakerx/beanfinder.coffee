@@ -56,16 +56,7 @@
     "State": "QLD",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "QLD",
-        "place_id": "ChIJf2tsB1jqrkwRy6lf_8QnHSU",
-        "latitude": -27.6200901,
-        "longitude": 153.1232136,
-        "address": "Unit 3/9 Allgas St, Slacks Creek QLD 4127, Australia",
-        "rating": "N/A"
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Alchemy Coffee",
@@ -231,7 +222,7 @@
         "place_id": "ChIJzTYSmmLpST4RJt1g8yJvdeM",
         "latitude": 26.3059554,
         "longitude": 50.1902352,
-        "address": "6391 Prince Faisal Bin Fahd Road, Hizam Al Akhdar، Al Khobar 34436, Saudi Arabia",
+        "address": "6391 Prince Faisal Bin Fahd Road, Al Hizam Al Akhdar, Al Khobar 34436, Saudi Arabia",
         "rating": 4.3
       }
     ]
@@ -720,11 +711,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJV9eP2ZXLSYYR6xwpA4DcXZ8",
-        "latitude": 32.2711895,
-        "longitude": -95.3416369,
-        "address": "2251 Three Lakes Pkwy #107, Tyler, TX 75703, USA",
-        "rating": 4.5
+        "place_id": "ChIJtbERhvmDMioRUeIcPPux54U",
+        "latitude": -32.2899689,
+        "longitude": 115.7436128,
+        "address": "GO41, 1 Council Ave, Rockingham WA 6168, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -768,7 +759,16 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJ_c_h1EKqEmsRDqk19J_F-Sk",
+        "latitude": -33.763324,
+        "longitude": 151.268433,
+        "address": "28 Dale St, Brookvale NSW 2100, Australia",
+        "rating": 4.6
+      }
+    ]
   },
   {
     "Name": "Darkstar Coffee",
@@ -953,7 +953,7 @@
         "latitude": -33.413571,
         "longitude": 149.540967,
         "address": "67 Corporation Ave, Robin Hill NSW 2795, Australia",
-        "rating": 4.7
+        "rating": 4.8
       }
     ]
   },
@@ -1017,11 +1017,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJZ934S0KuEmsR_0lxV3PTR4M",
-        "latitude": -33.8615815,
-        "longitude": 151.2076503,
-        "address": "199 George St, The Rocks NSW 2000, Australia",
-        "rating": 4.5
+        "place_id": "ChIJDUte93TLDWsRLZ_EIhGvgBc",
+        "latitude": -31.2532183,
+        "longitude": 146.921099,
+        "address": "New South Wales, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -1156,7 +1156,7 @@
         "latitude": -37.8982775,
         "longitude": 145.1403857,
         "address": "23 Lionel Rd, Mount Waverley VIC 3149, Australia",
-        "rating": 4.2
+        "rating": 4.1
       }
     ]
   },
@@ -1186,11 +1186,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJp7ODnLX_DogRpoSDGWWqMkI",
-        "latitude": 41.8839247,
-        "longitude": -88.2065439,
-        "address": "148 W Washington St, West Chicago, IL 60185, USA",
-        "rating": 4.8
+        "place_id": "ChIJwb9WhU5RFGsRJ3KMrneonl8",
+        "latitude": -35.3173377,
+        "longitude": 150.4368073,
+        "address": "109 Princes Hwy, Milton NSW 2538, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -1276,7 +1276,16 @@
     "State": "VIC",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJbWru9PugFIIRIxSappPmeDg",
+        "latitude": -37.9418454,
+        "longitude": 145.0641757,
+        "address": "15 Cochranes Rd, Moorabbin VIC 3189, Australia",
+        "rating": 5
+      }
+    ]
   },
   {
     "Name": "Little Marionette",
@@ -1338,11 +1347,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJV4QzSJWxEmsR0ODiJI4LWBU",
-        "latitude": -33.8847324,
-        "longitude": 151.1726697,
-        "address": "77 Nelson St, Annandale NSW 2038, Australia",
-        "rating": 4.4
+        "place_id": "ChIJ__9vxOKWEmsRgYJFfKfYNjk",
+        "latitude": -33.8514576,
+        "longitude": 150.8943897,
+        "address": "6/1199 The Horsley Dr, Wetherill Park NSW 2164, Australia",
+        "rating": 4.9
       }
     ]
   },
@@ -1355,11 +1364,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJIdaGSgGrEmsRA5A4TQaNXWI",
-        "latitude": -33.7979783,
-        "longitude": 151.2869726,
-        "address": "66 The Corso, Manly NSW 2095, Australia",
-        "rating": 4.3
+        "place_id": "ChIJMSdqujerEmsRwsJI--zIxw0",
+        "latitude": -33.7971416,
+        "longitude": 151.2871504,
+        "address": "Unit 4/10 Sydney Rd, Manly NSW 2095, Australia",
+        "rating": 4.9
       }
     ]
   },
@@ -1855,11 +1864,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJQZ-aOeBC1moRuuo3eAh3hGE",
-        "latitude": -37.8023383,
-        "longitude": 144.9851717,
-        "address": "172 Oxford St, Collingwood VIC 3066, Australia",
-        "rating": 4.4
+        "place_id": "ChIJEdoKxOFC1moRZ-K00LuVvyQ",
+        "latitude": -37.8028134,
+        "longitude": 144.9869912,
+        "address": "200 Wellington St, Collingwood VIC 3066, Australia",
+        "rating": 4.8
       }
     ]
   },
@@ -1918,7 +1927,7 @@
         "latitude": -33.8828778,
         "longitude": 151.2110278,
         "address": "61 Albion St, Surry Hills NSW 2010, Australia",
-        "rating": 4.2
+        "rating": 4.3
       }
     ]
   },
@@ -1931,11 +1940,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJt7-JPBld1moRjMAqzh7ZieM",
-        "latitude": -37.6696285,
-        "longitude": 144.9608051,
-        "address": "30/30A Colbert Rd, Campbellfield VIC 3061, Australia",
-        "rating": 5
+        "place_id": "ChIJLSOIc_FC1moREb_FWCG-T-8",
+        "latitude": -37.818553,
+        "longitude": 144.997332,
+        "address": "198 Bridge Rd, Richmond VIC 3121, Australia",
+        "rating": 4.9
       }
     ]
   },
@@ -2295,10 +2304,10 @@
       {
         "state": "VIC",
         "place_id": "ChIJAVlqTQBD1moRIqxHMC6JK8I",
-        "latitude": -37.7654825,
-        "longitude": 144.9638067,
+        "latitude": -37.8004411,
+        "longitude": 144.9627509,
         "address": "183 Grattan St, Carlton VIC 3053, Australia",
-        "rating": 4.2
+        "rating": 4.3
       }
     ]
   },
@@ -2492,7 +2501,7 @@
         "latitude": -27.4838301,
         "longitude": 153.0026543,
         "address": "369 Montague Rd, West End QLD 4101, Australia",
-        "rating": 4.5
+        "rating": 4.4
       },
       {
         "state": "SA",
@@ -2688,16 +2697,7 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "NSW",
-        "place_id": "ChIJgQgzLSD9Z0sRfh11onLJ8NY",
-        "latitude": 46.1130714,
-        "longitude": -60.1720174,
-        "address": "121 Reservoir Rd, Sydney, NS B1P 3H6, Canada",
-        "rating": 5
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Supernumerary Coffee",
@@ -3035,7 +3035,7 @@
         "latitude": -27.9455261,
         "longitude": 153.3864623,
         "address": "129 Olsen Ave, Labrador QLD 4215, Australia",
-        "rating": 4.6
+        "rating": 4.7
       }
     ]
   },
@@ -3361,11 +3361,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ4_pYsdEox2oRUPuOYlQ2AwU",
-        "latitude": -34.2726441,
-        "longitude": 140.6065832,
-        "address": "Berri SA 5343, Australia",
-        "rating": "N/A"
+        "place_id": "ChIJ16cqjSGuEmsRgzuSZ7za4i0",
+        "latitude": -33.8844681,
+        "longitude": 151.2093771,
+        "address": "Shop 3/26/44 Kippax St, Surry Hills NSW 2010, Australia",
+        "rating": 5
       }
     ]
   },
@@ -3395,10 +3395,10 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJN0UshUH1XIYRKCo5hVtswG8",
-        "latitude": 29.4326697,
-        "longitude": -98.4841074,
-        "address": "203 8th St Bldg. 2, San Antonio, TX 78215, USA",
+        "place_id": "ChIJV8HqWPL1XIYRYFmn-AoiCNs",
+        "latitude": 29.4464843,
+        "longitude": -98.4752338,
+        "address": "2202 Broadway, San Antonio, TX 78215, USA",
         "rating": 4.8
       }
     ]
@@ -3553,16 +3553,7 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "VIC",
-        "place_id": "ChIJQc1_I1IX1moRxoKRQkgK6-o",
-        "latitude": -38.017264,
-        "longitude": 145.3050076,
-        "address": "K131/25-55 Magid Dr, Narre Warren VIC 3805, Australia",
-        "rating": 3.7
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Coffee in Common",
