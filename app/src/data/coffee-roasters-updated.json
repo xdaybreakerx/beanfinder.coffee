@@ -172,7 +172,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJzTYSmmLpST4RJt1g8yJvdeM"
+        "place_id": "ChIJn1FUnktd1moRgZCDC6aPCcw"
       }
     ]
   },
@@ -548,7 +548,7 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJ90mc0AvTD4gRjOgxYKxxprM"
+        "place_id": "ChIJ8RvSwm63MioRpXpPWzYe0dM"
       }
     ]
   },
@@ -584,12 +584,7 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "NSW",
-        "place_id": "ChIJ_c_h1EKqEmsRDqk19J_F-Sk"
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Darkstar Coffee",
@@ -782,7 +777,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJDUte93TLDWsRLZ_EIhGvgBc"
+        "place_id": "ChIJZ934S0KuEmsR_0lxV3PTR4M"
       }
     ]
   },
@@ -907,7 +902,7 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJp7ODnLX_DogRpoSDGWWqMkI"
+        "place_id": "ChIJ0y5wru60t4kRDdR-4bIjTdk"
       }
     ]
   },
@@ -1032,7 +1027,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJZRKHO5dbkWsRsdkXMwySRT0"
+        "place_id": "ChIJV4QzSJWxEmsR0ODiJI4LWBU"
       }
     ]
   },
@@ -1045,7 +1040,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJYw3RdhCuEmsRqZcvClvzEJU"
+        "place_id": "ChIJfX8VVbCrEmsRsL8yFmh9AQU"
       }
     ]
   },
@@ -1071,7 +1066,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJw3ZAzdJD1moRdTHBsWBAcao"
+        "place_id": "ChIJfwM3SFFC1moRqHiTyaepYTQ"
       }
     ]
   },
@@ -1097,7 +1092,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJT-tyjjRd1moRqeXlykOTVQc"
+        "place_id": "ChIJMzrwAslC1moRKuXaN2eeaXw"
       }
     ]
   },
@@ -1201,7 +1196,7 @@
     "place_ids": [
       {
         "state": "ACT",
-        "place_id": "ChIJk0gvbjNMFmsRmIOvIOLv8CI"
+        "place_id": "ChIJ-YH_UXdNFmsR1H9R2cxdZdQ"
       },
       {
         "state": "NSW",
@@ -1611,7 +1606,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJOe1qurVC1moRB6GePnOdy-E"
+        "place_id": "ChIJT8vM84Zn1moRRK6blnQpCn4"
       }
     ]
   },
@@ -1856,7 +1851,7 @@
       },
       {
         "state": "NSW",
-        "place_id": "ChIJR-S-I9axEmsRGjjcmNfvx6k"
+        "place_id": "ChIJXcaCVeqwEmsRfPB4BGh1-Gs"
       }
     ]
   },
@@ -2055,7 +2050,12 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJgQgzLSD9Z0sRfh11onLJ8NY"
+      }
+    ]
   },
   {
     "Name": "Supernumerary Coffee",
@@ -2105,7 +2105,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJO3mOYPRF0WoRHHIKsOnr0Vw"
+        "place_id": "ChIJPy754pPgeyYRqIaAhfy4fas"
       }
     ]
   },
@@ -2417,7 +2417,12 @@
     "State": "SA",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJr2lqNyfPsGoRbfDgHwM5WXM"
+      }
+    ]
   },
   {
     "Name": "SoHo Coffee Roasters",
@@ -2558,7 +2563,7 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ16cqjSGuEmsRgzuSZ7za4i0"
+        "place_id": "ChIJ4_pYsdEox2oRUPuOYlQ2AwU"
       }
     ]
   },
@@ -2584,7 +2589,7 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJN0UshUH1XIYRKCo5hVtswG8"
+        "place_id": "ChIJV8HqWPL1XIYRYFmn-AoiCNs"
       }
     ]
   },
@@ -2696,7 +2701,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJnZUptp1C1moRMOdeTMfQOs8"
+        "place_id": "ChIJG0U9S6je1WoRJ98FU1986fA"
       }
     ]
   },
@@ -2706,7 +2711,12 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJQc1_I1IX1moRxoKRQkgK6-o"
+      }
+    ]
   },
   {
     "Name": "Coffee in Common",

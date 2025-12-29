@@ -228,11 +228,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJzTYSmmLpST4RJt1g8yJvdeM",
-        "latitude": 26.3059554,
-        "longitude": 50.1902352,
-        "address": "6391 Prince Faisal Bin Fahd Road, Al Hizam Al Akhdar, Al Khobar 34436, Saudi Arabia",
-        "rating": 4.3
+        "place_id": "ChIJn1FUnktd1moRgZCDC6aPCcw",
+        "latitude": -37.8146934,
+        "longitude": 144.9582383,
+        "address": "Rear of, 493-495 Little Bourke St, Melbourne VIC 3000, Australia",
+        "rating": 4.8
       }
     ]
   },
@@ -720,11 +720,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJ90mc0AvTD4gRjOgxYKxxprM",
-        "latitude": 41.9650971,
-        "longitude": -87.6656979,
-        "address": "1401 W Wilson Ave, Chicago, IL 60640, USA",
-        "rating": 4.6
+        "place_id": "ChIJ8RvSwm63MioRpXpPWzYe0dM",
+        "latitude": -31.8732624,
+        "longitude": 115.9777724,
+        "address": "W Swan Rd, Caversham WA 6055, Australia",
+        "rating": 4.8
       }
     ]
   },
@@ -768,16 +768,7 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "NSW",
-        "place_id": "ChIJ_c_h1EKqEmsRDqk19J_F-Sk",
-        "latitude": -33.763324,
-        "longitude": 151.268433,
-        "address": "28 Dale St, Brookvale NSW 2100, Australia",
-        "rating": 4.6
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Darkstar Coffee",
@@ -860,7 +851,7 @@
         "latitude": -37.81679099999999,
         "longitude": 144.966162,
         "address": "247 Flinders Ln, Melbourne VIC 3000, Australia",
-        "rating": 4.6
+        "rating": 4.5
       }
     ]
   },
@@ -1026,11 +1017,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJDUte93TLDWsRLZ_EIhGvgBc",
-        "latitude": -31.2532183,
-        "longitude": 146.921099,
-        "address": "New South Wales, Australia",
-        "rating": "N/A"
+        "place_id": "ChIJZ934S0KuEmsR_0lxV3PTR4M",
+        "latitude": -33.8615815,
+        "longitude": 151.2076503,
+        "address": "199 George St, The Rocks NSW 2000, Australia",
+        "rating": 4.5
       }
     ]
   },
@@ -1195,11 +1186,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJp7ODnLX_DogRpoSDGWWqMkI",
-        "latitude": 41.8839247,
-        "longitude": -88.2065439,
-        "address": "148 W Washington St, West Chicago, IL 60185, USA",
-        "rating": 4.8
+        "place_id": "ChIJ0y5wru60t4kRDdR-4bIjTdk",
+        "latitude": 38.8851972,
+        "longitude": -77.1653556,
+        "address": "450 N Washington St Ste F, Falls Church, VA 22046, USA",
+        "rating": 4.5
       }
     ]
   },
@@ -1356,11 +1347,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJZRKHO5dbkWsRsdkXMwySRT0",
-        "latitude": -27.4772189,
-        "longitude": 153.0156228,
-        "address": "62 Manning St, South Brisbane QLD 4101, Australia",
-        "rating": 4.6
+        "place_id": "ChIJV4QzSJWxEmsR0ODiJI4LWBU",
+        "latitude": -33.8847324,
+        "longitude": 151.1726697,
+        "address": "77 Nelson St, Annandale NSW 2038, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -1373,11 +1364,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJYw3RdhCuEmsRqZcvClvzEJU",
-        "latitude": -33.8814163,
-        "longitude": 151.2109532,
-        "address": "Level 3/69 Reservoir St, Surry Hills NSW 2010, Australia",
-        "rating": 5
+        "place_id": "ChIJfX8VVbCrEmsRsL8yFmh9AQU",
+        "latitude": -33.7968627,
+        "longitude": 151.2850167,
+        "address": "Manly NSW 2095, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -1407,11 +1398,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJw3ZAzdJD1moRdTHBsWBAcao",
-        "latitude": -37.8137885,
-        "longitude": 144.9613945,
-        "address": "387 Little Bourke St, Melbourne VIC 3000, Australia",
-        "rating": 4.5
+        "place_id": "ChIJfwM3SFFC1moRqHiTyaepYTQ",
+        "latitude": -37.8161665,
+        "longitude": 145.0113816,
+        "address": "47 North St, Richmond VIC 3121, Australia",
+        "rating": 4.8
       }
     ]
   },
@@ -1441,11 +1432,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJT-tyjjRd1moRqeXlykOTVQc",
-        "latitude": -37.8062804,
-        "longitude": 144.9580131,
-        "address": "83-85 Victoria St, Melbourne VIC 3000, Australia",
-        "rating": 4.3
+        "place_id": "ChIJMzrwAslC1moRKuXaN2eeaXw",
+        "latitude": -37.8118922,
+        "longitude": 144.9693252,
+        "address": "Market Ln, Melbourne VIC 3000, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -1513,7 +1504,7 @@
         "latitude": -37.7752765,
         "longitude": 144.7537277,
         "address": "Factory 2, 17/21 Barretta Rd, Ravenhall VIC 3023, Australia",
-        "rating": 4.6
+        "rating": 4.7
       }
     ]
   },
@@ -1577,11 +1568,11 @@
     "place_ids": [
       {
         "state": "ACT",
-        "place_id": "ChIJk0gvbjNMFmsRmIOvIOLv8CI",
-        "latitude": -35.3240623,
-        "longitude": 149.1798537,
-        "address": "68 Wollongong St, Fyshwick ACT 2603, Australia",
-        "rating": 4.2
+        "place_id": "ChIJ-YH_UXdNFmsR1H9R2cxdZdQ",
+        "latitude": -35.323984,
+        "longitude": 149.179988,
+        "address": "3/68 Wollongong St, Fyshwick ACT 2609, Australia",
+        "rating": 5
       },
       {
         "state": "NSW",
@@ -1894,7 +1885,7 @@
         "latitude": -37.8146309,
         "longitude": 144.965933,
         "address": "133 Swanston St, Melbourne VIC 3000, Australia",
-        "rating": 4.2
+        "rating": 4.1
       }
     ]
   },
@@ -2119,10 +2110,10 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJOe1qurVC1moRB6GePnOdy-E",
-        "latitude": -37.81309,
-        "longitude": 144.9643672,
-        "address": "310 Bourke St, Melbourne VIC 3000, Australia",
+        "place_id": "ChIJT8vM84Zn1moRRK6blnQpCn4",
+        "latitude": -37.8219832,
+        "longitude": 144.9264802,
+        "address": "Unit 2 B/706 Lorimer St, Port Melbourne VIC 3207, Australia",
         "rating": 4.1
       }
     ]
@@ -2448,11 +2439,11 @@
       },
       {
         "state": "NSW",
-        "place_id": "ChIJR-S-I9axEmsRGjjcmNfvx6k",
-        "latitude": -33.8858584,
-        "longitude": 151.1944136,
-        "address": "32-36 City Rd, Chippendale NSW 2008, Australia",
-        "rating": 4.1
+        "place_id": "ChIJXcaCVeqwEmsRfPB4BGh1-Gs",
+        "latitude": -33.9373648,
+        "longitude": 151.1665751,
+        "address": "Sydney NSW 2020, Australia",
+        "rating": 4.8
       }
     ]
   },
@@ -2715,7 +2706,16 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJgQgzLSD9Z0sRfh11onLJ8NY",
+        "latitude": 46.1130714,
+        "longitude": -60.1720174,
+        "address": "121 Reservoir Rd, Sydney, NS B1P 3H6, Canada",
+        "rating": 5
+      }
+    ]
   },
   {
     "Name": "Supernumerary Coffee",
@@ -2777,11 +2777,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJO3mOYPRF0WoRHHIKsOnr0Vw",
-        "latitude": -37.56228900000001,
-        "longitude": 143.8575021,
-        "address": "2 Lydiard St S, Ballarat Central VIC 3350, Australia",
-        "rating": 4.9
+        "place_id": "ChIJPy754pPgeyYRqIaAhfy4fas",
+        "latitude": -37.5293461,
+        "longitude": 143.8449344,
+        "address": "Co located @ Karon Farm Coffee, 10 Builders Cl, Wendouree VIC 3355, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -3189,7 +3189,16 @@
     "State": "SA",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJr2lqNyfPsGoRbfDgHwM5WXM",
+        "latitude": -34.92956220000001,
+        "longitude": 138.5972388,
+        "address": "58-59/44/60 Gouger St, Adelaide SA 5000, Australia",
+        "rating": 4.3
+      }
+    ]
   },
   {
     "Name": "SoHo Coffee Roasters",
@@ -3370,11 +3379,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ16cqjSGuEmsRgzuSZ7za4i0",
-        "latitude": -33.8844681,
-        "longitude": 151.2093771,
-        "address": "Shop 3/26/44 Kippax St, Surry Hills NSW 2010, Australia",
-        "rating": 5
+        "place_id": "ChIJ4_pYsdEox2oRUPuOYlQ2AwU",
+        "latitude": -34.2726441,
+        "longitude": 140.6065832,
+        "address": "Berri SA 5343, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -3404,11 +3413,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJN0UshUH1XIYRKCo5hVtswG8",
-        "latitude": 29.4326697,
-        "longitude": -98.4841074,
-        "address": "203 8th St Bldg. 2, San Antonio, TX 78215, USA",
-        "rating": 4.7
+        "place_id": "ChIJV8HqWPL1XIYRYFmn-AoiCNs",
+        "latitude": 29.4464843,
+        "longitude": -98.4752338,
+        "address": "2202 Broadway, San Antonio, TX 78215, USA",
+        "rating": 4.8
       }
     ]
   },
@@ -3501,7 +3510,7 @@
         "latitude": -34.8295232,
         "longitude": 138.7065048,
         "address": "132a Tolley Rd, St Agnes SA 5097, Australia",
-        "rating": 4.7
+        "rating": 4.6
       }
     ]
   },
@@ -3548,10 +3557,10 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJnZUptp1C1moRMOdeTMfQOs8",
-        "latitude": -37.838518,
-        "longitude": 144.990105,
-        "address": "1C Murphy St, South Yarra VIC 3141, Australia",
+        "place_id": "ChIJG0U9S6je1WoRJ98FU1986fA",
+        "latitude": -38.2347384,
+        "longitude": 145.0576498,
+        "address": "16 Progress St, Mornington VIC 3931, Australia",
         "rating": 4.4
       }
     ]
@@ -3562,7 +3571,16 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJQc1_I1IX1moRxoKRQkgK6-o",
+        "latitude": -38.017264,
+        "longitude": 145.3050076,
+        "address": "K131/25-55 Magid Dr, Narre Warren VIC 3805, Australia",
+        "rating": 3.6
+      }
+    ]
   },
   {
     "Name": "Coffee in Common",
