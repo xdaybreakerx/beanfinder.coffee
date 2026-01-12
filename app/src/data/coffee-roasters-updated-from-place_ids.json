@@ -228,11 +228,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJn1FUnktd1moRgZCDC6aPCcw",
-        "latitude": -37.8146934,
-        "longitude": 144.9582383,
-        "address": "Rear of, 493-495 Little Bourke St, Melbourne VIC 3000, Australia",
-        "rating": 4.8
+        "place_id": "ChIJzTYSmmLpST4RJt1g8yJvdeM",
+        "latitude": 26.3059554,
+        "longitude": 50.1902352,
+        "address": "6391 Prince Faisal Bin Fahd Road, Al Hizam Al Akhdar, Al Khobar 34436, Saudi Arabia",
+        "rating": 4.3
       }
     ]
   },
@@ -1407,11 +1407,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJfwM3SFFC1moRqHiTyaepYTQ",
-        "latitude": -37.8161665,
-        "longitude": 145.0113816,
-        "address": "47 North St, Richmond VIC 3121, Australia",
-        "rating": 4.8
+        "place_id": "ChIJw3ZAzdJD1moRdTHBsWBAcao",
+        "latitude": -37.8137885,
+        "longitude": 144.9613945,
+        "address": "387 Little Bourke St, Melbourne VIC 3000, Australia",
+        "rating": 4.5
       }
     ]
   },
@@ -1894,7 +1894,7 @@
         "latitude": -37.8146309,
         "longitude": 144.965933,
         "address": "133 Swanston St, Melbourne VIC 3000, Australia",
-        "rating": 4.2
+        "rating": 4.1
       }
     ]
   },
@@ -2119,11 +2119,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJ2dph0aJD1moRhxS2CC34T5c",
-        "latitude": -37.8133829,
-        "longitude": 144.9725598,
-        "address": "Shop 1, 30 Collins Street Melbourne Entrance via Collins Street or, Ridgway Pl, Melbourne VIC 3000, Australia",
-        "rating": 4.4
+        "place_id": "ChIJL8xyz272SIMR9tIVFC-XsXA",
+        "latitude": -37.957193,
+        "longitude": 145.0334153,
+        "address": "4/35 Wangara Rd, Cheltenham VIC 3192, Australia",
+        "rating": 4.9
       }
     ]
   },
@@ -2134,6 +2134,14 @@
     "hasCafe": true,
     "multiRoaster": false,
     "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ2U1SUQBp1moR6OrPzeZn8T4",
+        "latitude": -37.8456958,
+        "longitude": 144.9824638,
+        "address": "55 Commercial Rd, Melbourne VIC 3004, Australia",
+        "rating": 4.5
+      },
       {
         "state": "NSW",
         "place_id": "ChIJXYZl8bGrEmsRKpC6MUMYXEY",
@@ -2153,11 +2161,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJvdx3kjJd1moRHnjYhByshFo",
-        "latitude": -37.8029711,
-        "longitude": 144.9590027,
-        "address": "114 Berkeley St, Carlton VIC 3053, Australia",
-        "rating": 4.4
+        "place_id": "ChIJZ19eqLhF1moRZ9LmazYfTak",
+        "latitude": -37.76901,
+        "longitude": 145.024248,
+        "address": "7 Montefiore St, Fairfield VIC 3078, Australia",
+        "rating": 4.7
       }
     ]
   },
@@ -2230,8 +2238,8 @@
       {
         "state": "NSW",
         "place_id": "ChIJa7nJTj-uEmsRwbabmz9toOI",
-        "latitude": -33.8687444,
-        "longitude": 151.2049307,
+        "latitude": -33.8687275,
+        "longitude": 151.2049205,
         "address": "Skittle Ln, Sydney NSW 2000, Australia",
         "rating": "N/A"
       }
@@ -2495,7 +2503,7 @@
         "latitude": -37.8169555,
         "longitude": 145.0131324,
         "address": "16 River St, Richmond VIC 3121, Australia",
-        "rating": 4.2
+        "rating": 4.1
       },
       {
         "state": "NSW",
@@ -2625,11 +2633,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ4_Ak3iKtEmsR6uPK8jv_Z7I",
-        "latitude": -33.8886573,
-        "longitude": 151.2756322,
-        "address": "Corner Of Beach Road And, Gould St, Bondi Beach NSW 2026, Australia",
-        "rating": 4.4
+        "place_id": "ChIJQw3XQS-uEmsRWSAo6K-Jx28",
+        "latitude": -33.8798342,
+        "longitude": 151.1973423,
+        "address": "103 Jones St, Ultimo NSW 2007, Australia",
+        "rating": 3.9
       }
     ]
   },
@@ -2707,7 +2715,16 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJgQgzLSD9Z0sRfh11onLJ8NY",
+        "latitude": 46.1130714,
+        "longitude": -60.1720174,
+        "address": "121 Reservoir Rd, Sydney, NS B1P 3H6, Canada",
+        "rating": 5
+      }
+    ]
   },
   {
     "Name": "Supernumerary Coffee",
@@ -2939,11 +2956,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ5UhHhAtF1moRmPMz5ZahtwE",
-        "latitude": -37.7152908,
-        "longitude": 145.0003315,
-        "address": "126-128 Edwardes St, Reservoir VIC 3073, Australia",
-        "rating": 4.5
+        "place_id": "ChIJg8oIOW3IsGoR3TCZpqztIDQ",
+        "latitude": -34.9233513,
+        "longitude": 138.5715741,
+        "address": "100A Henley Beach Rd, Mile End SA 5031, Australia",
+        "rating": 5
       }
     ]
   },
@@ -3371,11 +3388,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ4_pYsdEox2oRUPuOYlQ2AwU",
-        "latitude": -34.2726441,
-        "longitude": 140.6065832,
-        "address": "Berri SA 5343, Australia",
-        "rating": "N/A"
+        "place_id": "ChIJ16cqjSGuEmsRgzuSZ7za4i0",
+        "latitude": -33.8844681,
+        "longitude": 151.2093771,
+        "address": "Shop 3/26/44 Kippax St, Surry Hills NSW 2010, Australia",
+        "rating": 5
       }
     ]
   },
@@ -3405,10 +3422,10 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJN0UshUH1XIYRKCo5hVtswG8",
-        "latitude": 29.4326697,
-        "longitude": -98.4841074,
-        "address": "203 8th St Bldg. 2, San Antonio, TX 78215, USA",
+        "place_id": "ChIJJYUNAYrBuWoR40ss96UbQ38",
+        "latitude": -34.50108640000001,
+        "longitude": 139.0481575,
+        "address": "37a Murray St, Angaston SA 5353, Australia",
         "rating": 4.7
       }
     ]

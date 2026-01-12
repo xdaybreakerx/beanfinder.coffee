@@ -172,7 +172,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJn1FUnktd1moRgZCDC6aPCcw"
+        "place_id": "ChIJzTYSmmLpST4RJt1g8yJvdeM"
       }
     ]
   },
@@ -1071,7 +1071,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJfwM3SFFC1moRqHiTyaepYTQ"
+        "place_id": "ChIJw3ZAzdJD1moRdTHBsWBAcao"
       }
     ]
   },
@@ -1611,7 +1611,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJ2dph0aJD1moRhxS2CC34T5c"
+        "place_id": "ChIJL8xyz272SIMR9tIVFC-XsXA"
       }
     ]
   },
@@ -1622,6 +1622,10 @@
     "hasCafe": true,
     "multiRoaster": false,
     "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ2U1SUQBp1moR6OrPzeZn8T4"
+      },
       {
         "state": "NSW",
         "place_id": "ChIJXYZl8bGrEmsRKpC6MUMYXEY"
@@ -1637,7 +1641,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJvdx3kjJd1moRHnjYhByshFo"
+        "place_id": "ChIJZ19eqLhF1moRZ9LmazYfTak"
       }
     ]
   },
@@ -1989,7 +1993,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ4_Ak3iKtEmsR6uPK8jv_Z7I"
+        "place_id": "ChIJQw3XQS-uEmsRWSAo6K-Jx28"
       }
     ]
   },
@@ -2051,7 +2055,12 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJgQgzLSD9Z0sRfh11onLJ8NY"
+      }
+    ]
   },
   {
     "Name": "Supernumerary Coffee",
@@ -2231,7 +2240,7 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ5UhHhAtF1moRmPMz5ZahtwE"
+        "place_id": "ChIJg8oIOW3IsGoR3TCZpqztIDQ"
       }
     ]
   },
@@ -2559,7 +2568,7 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ4_pYsdEox2oRUPuOYlQ2AwU"
+        "place_id": "ChIJ16cqjSGuEmsRgzuSZ7za4i0"
       }
     ]
   },
@@ -2585,7 +2594,7 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJN0UshUH1XIYRKCo5hVtswG8"
+        "place_id": "ChIJJYUNAYrBuWoR40ss96UbQ38"
       }
     ]
   },
