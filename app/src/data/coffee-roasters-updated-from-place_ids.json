@@ -327,7 +327,16 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJKRXBsD2xEmsRVe81SfhddGM",
+        "latitude": -33.9103851,
+        "longitude": 151.1657653,
+        "address": "24 Cadogan St, Marrickville NSW 2204, Australia",
+        "rating": 4.9
+      }
+    ]
   },
   {
     "Name": "Blackbird Espresso",
@@ -624,7 +633,16 @@
     "State": "QLD",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJ1_Uj6TICkWsRZa0vRjjVaJ0",
+        "latitude": -28.1054439,
+        "longitude": 153.4295492,
+        "address": "Unit 4/15a Leda Dr, Burleigh Heads QLD 4220, Australia",
+        "rating": 4.9
+      }
+    ]
   },
   {
     "Name": "Coffee Chakra ",
@@ -711,10 +729,10 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJ90mc0AvTD4gRjOgxYKxxprM",
-        "latitude": 41.9650971,
-        "longitude": -87.6656979,
-        "address": "1401 W Wilson Ave, Chicago, IL 60640, USA",
+        "place_id": "ChIJtbERhvmDMioRUeIcPPux54U",
+        "latitude": -32.2899689,
+        "longitude": 115.7436128,
+        "address": "GO41, 1 Council Ave, Rockingham WA 6168, Australia",
         "rating": 4.6
       }
     ]
@@ -759,16 +777,7 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "NSW",
-        "place_id": "ChIJ_c_h1EKqEmsRDqk19J_F-Sk",
-        "latitude": -33.763324,
-        "longitude": 151.268433,
-        "address": "28 Dale St, Brookvale NSW 2100, Australia",
-        "rating": 4.6
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Darkstar Coffee",
@@ -864,11 +873,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJJeRjRtmvEmsRvku-OhXBVAI",
-        "latitude": -33.8785445,
-        "longitude": 151.2011511,
-        "address": "60 Darling Dr, Haymarket NSW 2000, Australia",
-        "rating": 4.3
+        "place_id": "ChIJdX00lm6vEmsRyFFwJCyH73o",
+        "latitude": -33.8770861,
+        "longitude": 151.206333,
+        "address": "World Square Shopping Centre, Shop 10.10/644 George St, Sydney NSW 2000, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -1017,11 +1026,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJDUte93TLDWsRLZ_EIhGvgBc",
-        "latitude": -31.2532183,
-        "longitude": 146.921099,
-        "address": "New South Wales, Australia",
-        "rating": "N/A"
+        "place_id": "ChIJZ934S0KuEmsR_0lxV3PTR4M",
+        "latitude": -33.8615815,
+        "longitude": 151.2076503,
+        "address": "199 George St, The Rocks NSW 2000, Australia",
+        "rating": 4.5
       }
     ]
   },
@@ -1034,11 +1043,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ74bN_uqwEmsRUJGiH1rKwPI",
-        "latitude": -33.937385,
-        "longitude": 151.1663381,
-        "address": "Departure Plaza, Sydney NSW 2020, Australia",
-        "rating": 4.8
+        "place_id": "ChIJQWKMHaipEmsRGAyZW4Cwg6g",
+        "latitude": -33.7903172,
+        "longitude": 151.2009465,
+        "address": "7/3 Gibbes St, Chatswood NSW 2067, Australia",
+        "rating": 4
       }
     ]
   },
@@ -1114,7 +1123,7 @@
         "latitude": -33.8693274,
         "longitude": 151.2062418,
         "address": "Shop 2/40 York St, Sydney NSW 2000, Australia",
-        "rating": 4.6
+        "rating": 4.5
       },
       {
         "state": "QLD",
@@ -1186,11 +1195,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJp7ODnLX_DogRpoSDGWWqMkI",
-        "latitude": 41.8839247,
-        "longitude": -88.2065439,
-        "address": "148 W Washington St, West Chicago, IL 60185, USA",
-        "rating": 4.8
+        "place_id": "ChIJwb9WhU5RFGsRJ3KMrneonl8",
+        "latitude": -35.3173377,
+        "longitude": 150.4368073,
+        "address": "109 Princes Hwy, Milton NSW 2538, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -1364,11 +1373,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJMSdqujerEmsRwsJI--zIxw0",
-        "latitude": -33.7971416,
-        "longitude": 151.2871504,
-        "address": "Unit 4/10 Sydney Rd, Manly NSW 2095, Australia",
-        "rating": 4.9
+        "place_id": "ChIJYw3RdhCuEmsRqZcvClvzEJU",
+        "latitude": -33.8814163,
+        "longitude": 151.2109532,
+        "address": "Level 3/69 Reservoir St, Surry Hills NSW 2010, Australia",
+        "rating": 5
       }
     ]
   },
@@ -1714,7 +1723,7 @@
         "place_id": "ChIJPbM1M5PPsGoRj9ulonJk6KQ",
         "latitude": -34.9423599,
         "longitude": 138.5601891,
-        "address": "217/219 Richmond Rd, Richmond SA 5033, Australia",
+        "address": "217-219 Richmond Rd, Richmond SA 5033, Australia",
         "rating": 4.7
       }
     ]
@@ -2063,7 +2072,7 @@
         "latitude": -37.8177555,
         "longitude": 145.2216268,
         "address": "8 Olive Grove, Ringwood VIC 3134, Australia",
-        "rating": 4.8
+        "rating": 4.7
       }
     ]
   },
@@ -2172,7 +2181,7 @@
         "latitude": -27.4456934,
         "longitude": 153.0440937,
         "address": "16 Austin St, Newstead QLD 4006, Australia",
-        "rating": 4.4
+        "rating": 4.5
       }
     ]
   },
@@ -2430,11 +2439,11 @@
       },
       {
         "state": "NSW",
-        "place_id": "ChIJR-S-I9axEmsRGjjcmNfvx6k",
-        "latitude": -33.8858584,
-        "longitude": 151.1944136,
-        "address": "32-36 City Rd, Chippendale NSW 2008, Australia",
-        "rating": 4.1
+        "place_id": "ChIJXcaCVeqwEmsRfPB4BGh1-Gs",
+        "latitude": -33.9373648,
+        "longitude": 151.1665751,
+        "address": "Sydney NSW 2020, Australia",
+        "rating": 4.8
       }
     ]
   },
@@ -2530,11 +2539,11 @@
     "place_ids": [
       {
         "state": "TAS",
-        "place_id": "ChIJLVVHO5t1bqoRx2GfeboXBcU",
-        "latitude": -42.8813589,
-        "longitude": 147.3256386,
-        "address": "30 Criterion St, Hobart TAS 7000, Australia",
-        "rating": 4.7
+        "place_id": "ChIJbS_0zcZ1bqoRLsA2vhSd0UE",
+        "latitude": -42.8395283,
+        "longitude": 147.2947843,
+        "address": "43 Sunderland St, Moonah TAS 7009, Australia",
+        "rating": 4.9
       }
     ]
   },
@@ -2615,11 +2624,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJQw3XQS-uEmsRWSAo6K-Jx28",
-        "latitude": -33.8798342,
-        "longitude": 151.1973423,
-        "address": "103 Jones St, Ultimo NSW 2007, Australia",
-        "rating": 4
+        "place_id": "ChIJ4_Ak3iKtEmsR6uPK8jv_Z7I",
+        "latitude": -33.8886573,
+        "longitude": 151.2756322,
+        "address": "Corner Of Beach Road And, Gould St, Bondi Beach NSW 2026, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -2963,11 +2972,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJwRNQEh1D1moR9CGBmWaxvoc",
-        "latitude": -37.7986379,
-        "longitude": 144.9940429,
-        "address": "UNit 3, Rear/260 Hoddle St, Collingwood VIC 3066, Australia",
-        "rating": 4.8
+        "place_id": "ChIJNZsvUd9C1moRY00nWdYBy9k",
+        "latitude": -37.799384,
+        "longitude": 144.9781281,
+        "address": "267 Brunswick St, Fitzroy VIC 3065, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -3361,11 +3370,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ4_pYsdEox2oRUPuOYlQ2AwU",
-        "latitude": -34.2726441,
-        "longitude": 140.6065832,
-        "address": "Berri SA 5343, Australia",
-        "rating": "N/A"
+        "place_id": "ChIJ16cqjSGuEmsRgzuSZ7za4i0",
+        "latitude": -33.8844681,
+        "longitude": 151.2093771,
+        "address": "Shop 3/26/44 Kippax St, Surry Hills NSW 2010, Australia",
+        "rating": 5
       }
     ]
   },
@@ -3378,11 +3387,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJy0_L1zLsuWoRSBDWzfbJwSY",
-        "latitude": -34.4587865,
-        "longitude": 138.919122,
-        "address": "13 Branson Rd, Greenock SA 5360, Australia",
-        "rating": 4.8
+        "place_id": "ChIJ6ycGOuPsuWoRaslMR5lt8q0",
+        "latitude": -34.4169992,
+        "longitude": 138.9218495,
+        "address": "521 Greenock Rd, Greenock SA 5360, Australia",
+        "rating": 3.7
       }
     ]
   },
@@ -3395,11 +3404,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJV8HqWPL1XIYRYFmn-AoiCNs",
-        "latitude": 29.4464843,
-        "longitude": -98.4752338,
-        "address": "2202 Broadway, San Antonio, TX 78215, USA",
-        "rating": 4.8
+        "place_id": "ChIJN0UshUH1XIYRKCo5hVtswG8",
+        "latitude": 29.4326697,
+        "longitude": -98.4841074,
+        "address": "203 8th St Bldg. 2, San Antonio, TX 78215, USA",
+        "rating": 4.7
       }
     ]
   },
@@ -3488,11 +3497,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJI8IHKXa1sGoRKMMsVCyL-L0",
-        "latitude": -34.8295232,
-        "longitude": 138.7065048,
-        "address": "132a Tolley Rd, St Agnes SA 5097, Australia",
-        "rating": 4.6
+        "place_id": "ChIJ76vEjKvJsGoRuKjHW-tgpWo",
+        "latitude": -34.8780035,
+        "longitude": 138.6024842,
+        "address": "219 Main N Rd, Sefton Park SA 5083, Australia",
+        "rating": 4.5
       }
     ]
   },
@@ -3525,7 +3534,7 @@
         "place_id": "ChIJ4QcD4Bd5c2sRGevBoPnVTsg",
         "latitude": -32.7279697,
         "longitude": 152.0780748,
-        "address": "11/9 George Rd, Salamander Bay NSW 2317, Australia",
+        "address": "9 George Rd, Salamander Bay NSW 2317, Australia",
         "rating": 5
       }
     ]
@@ -3539,11 +3548,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJG0U9S6je1WoRJ98FU1986fA",
-        "latitude": -38.2347384,
-        "longitude": 145.0576498,
-        "address": "16 Progress St, Mornington VIC 3931, Australia",
-        "rating": 4.4
+        "place_id": "ChIJWQmrSqje1WoRAHdFfPHU3gw",
+        "latitude": -38.2348961,
+        "longitude": 145.0576163,
+        "address": "14 Progress St, Mornington VIC 3931, Australia",
+        "rating": 5
       }
     ]
   },
@@ -3553,7 +3562,16 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJQc1_I1IX1moRxoKRQkgK6-o",
+        "latitude": -38.017264,
+        "longitude": 145.3050076,
+        "address": "K131/25-55 Magid Dr, Narre Warren VIC 3805, Australia",
+        "rating": 3.6
+      }
+    ]
   },
   {
     "Name": "Coffee in Common",
@@ -3581,10 +3599,10 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJFfuagElD1moRfHn5PWOZDqE",
-        "latitude": -37.8171645,
-        "longitude": 144.9648549,
-        "address": "Shop 1D/289 Flinders Ln, Melbourne VIC 3000, Australia",
+        "place_id": "ChIJs8sfHx9D1moRJnTIRru0bxk",
+        "latitude": -37.7982136,
+        "longitude": 144.9857192,
+        "address": "30 Sackville St, Collingwood VIC 3066, Australia",
         "rating": 4.6
       }
     ]
@@ -3629,7 +3647,16 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJs8sfHx9D1moRJnTIRru0bxk",
+        "latitude": -37.7982136,
+        "longitude": 144.9857192,
+        "address": "30 Sackville St, Collingwood VIC 3066, Australia",
+        "rating": 4.6
+      }
+    ]
   },
   {
     "Name": "Acuratore",
