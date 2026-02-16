@@ -228,11 +228,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJzTYSmmLpST4RJt1g8yJvdeM",
-        "latitude": 26.3059554,
-        "longitude": 50.1902352,
-        "address": "6391 Prince Faisal Bin Fahd Road, Al Hizam Al Akhdar, Al Khobar 34436, Saudi Arabia",
-        "rating": 4.3
+        "place_id": "ChIJJ5bS6P9n1moRx76U3LjtN1A",
+        "latitude": -37.8312475,
+        "longitude": 144.960354,
+        "address": "12-18 Yarra Pl, South Melbourne VIC 3205, Australia",
+        "rating": 4.2
       }
     ]
   },
@@ -338,11 +338,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJo0UDfrZbkWsRH9DAyoI73tQ",
-        "latitude": -27.4975,
-        "longitude": 153.0680556,
-        "address": "4 Newman Ave, Camp Hill QLD 4152, Australia",
-        "rating": 4.7
+        "place_id": "ChIJZcEztpNmeGkRBAzqOEqHgNk",
+        "latitude": -16.9236687,
+        "longitude": 145.776031,
+        "address": "Oceana Walk Arcade, 13/62 Grafton St, Cairns City QLD 4870, Australia",
+        "rating": 4.8
       }
     ]
   },
@@ -372,10 +372,10 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJGWawcEKuEmsRAZpnB16LmXs",
-        "latitude": -33.867247,
-        "longitude": 151.2115647,
-        "address": "l20/126 Phillip St, Sydney NSW 2000, Australia",
+        "place_id": "ChIJ326-kNq0lmsRsIDe81qjAgU",
+        "latitude": -27.6259862,
+        "longitude": 152.8077665,
+        "address": "Blackstone QLD 4304, Australia",
         "rating": "N/A"
       }
     ]
@@ -610,11 +610,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJ__k7MDFd1moRjnVCIJLqaq8",
-        "latitude": -37.804227,
-        "longitude": 144.953643,
-        "address": "119 Howard St, North Melbourne VIC 3051, Australia",
-        "rating": 4.5
+        "place_id": "ChIJT3I-okpD1moRBNshH62Qt7Q",
+        "latitude": -37.774643,
+        "longitude": 144.962468,
+        "address": "15/17 Weston St, Brunswick VIC 3056, Australia",
+        "rating": 4.3
       }
     ]
   },
@@ -624,16 +624,7 @@
     "State": "QLD",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "QLD",
-        "place_id": "ChIJ1_Uj6TICkWsRZa0vRjjVaJ0",
-        "latitude": -28.1054439,
-        "longitude": 153.4295492,
-        "address": "Unit 4/15a Leda Dr, Burleigh Heads QLD 4220, Australia",
-        "rating": 4.9
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Coffee Chakra ",
@@ -738,9 +729,9 @@
       {
         "state": "QLD",
         "place_id": "ChIJz7-F1JNmeGkRyCqSSG5AcD8",
-        "latitude": -16.9233378,
-        "longitude": 145.7748839,
-        "address": "105 Grafton St, Cairns City QLD 4870, Australia",
+        "latitude": -16.9173656,
+        "longitude": 145.735935,
+        "address": "27 Reservoir Rd, Manoora QLD 4870, Australia",
         "rating": 4.8
       }
     ]
@@ -966,11 +957,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJ0dK-wK2EMioRhWTIPhQwXe0",
-        "latitude": -32.2761111,
-        "longitude": 115.7675,
-        "address": "3 Arkwright Rd, Rockingham WA 6168, Australia",
-        "rating": 4.8
+        "place_id": "ChIJ88h-Ec66MioRtW_8mGqhg_0",
+        "latitude": -31.944086,
+        "longitude": 115.859032,
+        "address": "135 Lake St, Northbridge WA 6003, Australia",
+        "rating": 5
       }
     ]
   },
@@ -1364,11 +1355,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJYw3RdhCuEmsRqZcvClvzEJU",
-        "latitude": -33.8814163,
-        "longitude": 151.2109532,
-        "address": "Level 3/69 Reservoir St, Surry Hills NSW 2010, Australia",
-        "rating": 5
+        "place_id": "ChIJMSdqujerEmsRwsJI--zIxw0",
+        "latitude": -33.7971416,
+        "longitude": 151.2871504,
+        "address": "Unit 4/10 Sydney Rd, Manly NSW 2095, Australia",
+        "rating": 4.9
       }
     ]
   },
@@ -1398,11 +1389,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJfwM3SFFC1moRqHiTyaepYTQ",
-        "latitude": -37.8161665,
-        "longitude": 145.0113816,
-        "address": "47 North St, Richmond VIC 3121, Australia",
-        "rating": 4.8
+        "place_id": "ChIJw3ZAzdJD1moRdTHBsWBAcao",
+        "latitude": -37.8137885,
+        "longitude": 144.9613945,
+        "address": "387 Little Bourke St, Melbourne VIC 3000, Australia",
+        "rating": 4.5
       }
     ]
   },
@@ -1940,11 +1931,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJU6iaAuDT1moRqKo0oL6lEOU",
-        "latitude": -37.768881,
-        "longitude": 144.9993745,
-        "address": "378 High St, Northcote VIC 3070, Australia",
-        "rating": 4.8
+        "place_id": "ChIJt7-JPBld1moRjMAqzh7ZieM",
+        "latitude": -37.6696285,
+        "longitude": 144.9608051,
+        "address": "30/30A Colbert Rd, Campbellfield VIC 3061, Australia",
+        "rating": 5
       }
     ]
   },
@@ -2063,7 +2054,7 @@
         "latitude": -37.8177555,
         "longitude": 145.2216268,
         "address": "8 Olive Grove, Ringwood VIC 3134, Australia",
-        "rating": 4.7
+        "rating": 4.8
       }
     ]
   },
@@ -2742,11 +2733,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJE5TUVHjnaC4REz6pHj7o2Yg",
-        "latitude": -6.907484299999999,
-        "longitude": 107.6159513,
-        "address": "Jl. Halmahera No.2, Citarum, Kec. Bandung Wetan, Kota Bandung, Jawa Barat 40115, Indonesia",
-        "rating": 5
+        "place_id": "ChIJTVN4VlilMioRq4WBRtvJA7g",
+        "latitude": -31.920182,
+        "longitude": 115.837642,
+        "address": "77 Coogee St, Mount Hawthorn WA 6016, Australia",
+        "rating": 4.7
       }
     ]
   },
@@ -2848,7 +2839,7 @@
         "latitude": -38.0998056,
         "longitude": 144.3484792,
         "address": "59 Morgan St, North Geelong VIC 3215, Australia",
-        "rating": 4.9
+        "rating": 4.8
       }
     ]
   },
@@ -3378,11 +3369,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJdxIJZOk2t2oR-isctLR0mLI",
-        "latitude": -34.9890968,
-        "longitude": 138.8246416,
-        "address": "24 Bridge St, Balhannah SA 5242, Australia",
-        "rating": 4.8
+        "place_id": "ChIJ6ycGOuPsuWoRaslMR5lt8q0",
+        "latitude": -34.4169992,
+        "longitude": 138.9218495,
+        "address": "521 Greenock Rd, Greenock SA 5360, Australia",
+        "rating": 3.7
       }
     ]
   },
@@ -3395,11 +3386,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJV8HqWPL1XIYRYFmn-AoiCNs",
-        "latitude": 29.4464843,
-        "longitude": -98.4752338,
-        "address": "2202 Broadway, San Antonio, TX 78215, USA",
-        "rating": 4.8
+        "place_id": "ChIJN0UshUH1XIYRKCo5hVtswG8",
+        "latitude": 29.4326697,
+        "longitude": -98.4841074,
+        "address": "203 8th St Bldg. 2, San Antonio, TX 78215, USA",
+        "rating": 4.7
       }
     ]
   },
@@ -3638,7 +3629,16 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ095uC7lD1moRpd-EZMWaVCU",
+        "latitude": -37.8132786,
+        "longitude": 144.9685245,
+        "address": "Shop2, Shop2/130 Russell St, Melbourne VIC 3000, Australia",
+        "rating": 4.4
+      }
+    ]
   },
   {
     "Name": "Acuratore",
