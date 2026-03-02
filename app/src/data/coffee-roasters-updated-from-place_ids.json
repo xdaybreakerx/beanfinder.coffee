@@ -97,7 +97,7 @@
         "latitude": -37.8065523,
         "longitude": 144.9893899,
         "address": "80 Rupert St, Collingwood VIC 3066, Australia",
-        "rating": 4.5
+        "rating": 4.4
       },
       {
         "state": "QLD",
@@ -610,11 +610,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJ__k7MDFd1moRjnVCIJLqaq8",
-        "latitude": -37.804227,
-        "longitude": 144.953643,
-        "address": "119 Howard St, North Melbourne VIC 3051, Australia",
-        "rating": 4.5
+        "place_id": "ChIJT3I-okpD1moRBNshH62Qt7Q",
+        "latitude": -37.774643,
+        "longitude": 144.962468,
+        "address": "15/17 Weston St, Brunswick VIC 3056, Australia",
+        "rating": 4.3
       }
     ]
   },
@@ -711,11 +711,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJASf7QV3Lj4ARSLxJNklJsSc",
-        "latitude": 37.3317526,
-        "longitude": -121.9117863,
-        "address": "1202 The Alameda, San Jose, CA 95126, USA",
-        "rating": 4.3
+        "place_id": "ChIJtbERhvmDMioRUeIcPPux54U",
+        "latitude": -32.2899689,
+        "longitude": 115.7436128,
+        "address": "GO41, 1 Council Ave, Rockingham WA 6168, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -1008,11 +1008,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJDUte93TLDWsRLZ_EIhGvgBc",
-        "latitude": -31.2532183,
-        "longitude": 146.921099,
-        "address": "New South Wales, Australia",
-        "rating": "N/A"
+        "place_id": "ChIJZ934S0KuEmsR_0lxV3PTR4M",
+        "latitude": -33.8615815,
+        "longitude": 151.2076503,
+        "address": "199 George St, The Rocks NSW 2000, Australia",
+        "rating": 4.5
       }
     ]
   },
@@ -1093,11 +1093,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJ_7ffMiFD1moR5NCnlSFhECk",
-        "latitude": -37.7948113,
-        "longitude": 144.9781341,
-        "address": "70-76 Westgarth St, Fitzroy VIC 3065, Australia",
-        "rating": 4.4
+        "place_id": "ChIJgRXO-rRC1moRwcB73rcSyIE",
+        "latitude": -37.8154635,
+        "longitude": 144.963264,
+        "address": "345 Little Collins St, Melbourne VIC 3000, Australia",
+        "rating": 4.3
       },
       {
         "state": "NSW",
@@ -1355,11 +1355,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJYw3RdhCuEmsRqZcvClvzEJU",
-        "latitude": -33.8814163,
-        "longitude": 151.2109532,
-        "address": "Level 3/69 Reservoir St, Surry Hills NSW 2010, Australia",
-        "rating": 5
+        "place_id": "ChIJMSdqujerEmsRwsJI--zIxw0",
+        "latitude": -33.7971416,
+        "longitude": 151.2871504,
+        "address": "Unit 4/10 Sydney Rd, Manly NSW 2095, Australia",
+        "rating": 4.9
       }
     ]
   },
@@ -1423,11 +1423,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJT-tyjjRd1moRqeXlykOTVQc",
-        "latitude": -37.8062804,
-        "longitude": 144.9580131,
-        "address": "83-85 Victoria St, Melbourne VIC 3000, Australia",
-        "rating": 4.3
+        "place_id": "ChIJMzrwAslC1moRKuXaN2eeaXw",
+        "latitude": -37.8118922,
+        "longitude": 144.9693252,
+        "address": "Market Ln, Melbourne VIC 3000, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -1855,11 +1855,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJEdoKxOFC1moRZ-K00LuVvyQ",
-        "latitude": -37.8028134,
-        "longitude": 144.9869912,
-        "address": "200 Wellington St, Collingwood VIC 3066, Australia",
-        "rating": 4.9
+        "place_id": "ChIJQZ-aOeBC1moRuuo3eAh3hGE",
+        "latitude": -37.8023383,
+        "longitude": 144.9851717,
+        "address": "172 Oxford St, Collingwood VIC 3066, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -2311,11 +2311,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJrapq5cixEmsRZA6bZZman5Q",
-        "latitude": -33.9031262,
-        "longitude": 151.1963115,
-        "address": "42/112 McEvoy St, Alexandria NSW 2015, Australia",
-        "rating": 3.9
+        "place_id": "ChIJf-5n3HWvEmsRwrzJ27_9NYs",
+        "latitude": -33.8834258,
+        "longitude": 151.1951103,
+        "address": "80 Bay St, Ultimo NSW 2007, Australia",
+        "rating": 4.5
       }
     ]
   },
@@ -2733,11 +2733,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJE5TUVHjnaC4REz6pHj7o2Yg",
-        "latitude": -6.907484299999999,
-        "longitude": 107.6159513,
-        "address": "Jl. Halmahera No.2, Citarum, Kec. Bandung Wetan, Kota Bandung, Jawa Barat 40115, Indonesia",
-        "rating": 5
+        "place_id": "ChIJTVN4VlilMioRq4WBRtvJA7g",
+        "latitude": -31.920182,
+        "longitude": 115.837642,
+        "address": "77 Coogee St, Mount Hawthorn WA 6016, Australia",
+        "rating": 4.7
       }
     ]
   },
@@ -3106,11 +3106,11 @@
       },
       {
         "state": "VIC",
-        "place_id": "ChIJX7ZmCUNH1moRnqVKkByP9D4",
-        "latitude": -37.7851115,
-        "longitude": 145.1262028,
-        "address": "Westfield Doncaster, Kiosk K110/619 Doncaster Rd, Doncaster VIC 3108, Australia",
-        "rating": 4.1
+        "place_id": "ChIJAU6Yrb-rEmsRAnA9BCpYcYk",
+        "latitude": -33.7670481,
+        "longitude": 151.2653916,
+        "address": "Kiosk 10K02, Westfield Warringah Mall, Brookvale NSW 2100, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -3352,11 +3352,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ4_pYsdEox2oRUPuOYlQ2AwU",
-        "latitude": -34.2726441,
-        "longitude": 140.6065832,
-        "address": "Berri SA 5343, Australia",
-        "rating": "N/A"
+        "place_id": "ChIJ16cqjSGuEmsRgzuSZ7za4i0",
+        "latitude": -33.8844681,
+        "longitude": 151.2093771,
+        "address": "Shop 3/26/44 Kippax St, Surry Hills NSW 2010, Australia",
+        "rating": 5
       }
     ]
   },
@@ -3581,10 +3581,10 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJs8sfHx9D1moRJnTIRru0bxk",
-        "latitude": -37.7982136,
-        "longitude": 144.9857192,
-        "address": "30 Sackville St, Collingwood VIC 3066, Australia",
+        "place_id": "ChIJFfuagElD1moRfHn5PWOZDqE",
+        "latitude": -37.8171645,
+        "longitude": 144.9648549,
+        "address": "Shop 1D/289 Flinders Ln, Melbourne VIC 3000, Australia",
         "rating": 4.6
       }
     ]
@@ -3636,7 +3636,7 @@
         "latitude": -37.8132786,
         "longitude": 144.9685245,
         "address": "Shop2, Shop2/130 Russell St, Melbourne VIC 3000, Australia",
-        "rating": 4.4
+        "rating": 4.5
       }
     ]
   },
