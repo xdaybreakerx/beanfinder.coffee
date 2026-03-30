@@ -56,7 +56,16 @@
     "State": "QLD",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJf2tsB1jqrkwRy6lf_8QnHSU",
+        "latitude": -27.6200901,
+        "longitude": 153.1232136,
+        "address": "Unit 3/9 Allgas St, Slacks Creek QLD 4127, Australia",
+        "rating": "N/A"
+      }
+    ]
   },
   {
     "Name": "Alchemy Coffee",
@@ -329,11 +338,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJo0UDfrZbkWsRH9DAyoI73tQ",
-        "latitude": -27.4975,
-        "longitude": 153.0680556,
-        "address": "4 Newman Ave, Camp Hill QLD 4152, Australia",
-        "rating": 4.7
+        "place_id": "ChIJZcEztpNmeGkRBAzqOEqHgNk",
+        "latitude": -16.9236687,
+        "longitude": 145.776031,
+        "address": "Oceana Walk Arcade, 13/62 Grafton St, Cairns City QLD 4870, Australia",
+        "rating": 4.8
       }
     ]
   },
@@ -486,7 +495,7 @@
         "latitude": -37.8403038,
         "longitude": 144.995597,
         "address": "572 Chapel St, South Yarra VIC 3141, Australia",
-        "rating": 4.7
+        "rating": 4.6
       }
     ]
   },
@@ -503,7 +512,7 @@
         "latitude": -38.1480474,
         "longitude": 144.358973,
         "address": "1/80 Little Malop St, Geelong VIC 3220, Australia",
-        "rating": 4.3
+        "rating": 4.2
       }
     ]
   },
@@ -750,16 +759,7 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "NSW",
-        "place_id": "ChIJ_c_h1EKqEmsRDqk19J_F-Sk",
-        "latitude": -33.763324,
-        "longitude": 151.268433,
-        "address": "28 Dale St, Brookvale NSW 2100, Australia",
-        "rating": 4.6
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Darkstar Coffee",
@@ -1338,11 +1338,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJZRKHO5dbkWsRsdkXMwySRT0",
-        "latitude": -27.4772189,
-        "longitude": 153.0156228,
-        "address": "62 Manning St, South Brisbane QLD 4101, Australia",
-        "rating": 4.6
+        "place_id": "ChIJ__9vxOKWEmsRgYJFfKfYNjk",
+        "latitude": -33.8514576,
+        "longitude": 150.8943897,
+        "address": "6/1199 The Horsley Dr, Wetherill Park NSW 2164, Australia",
+        "rating": 4.9
       }
     ]
   },
@@ -1423,11 +1423,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJMzrwAslC1moRKuXaN2eeaXw",
-        "latitude": -37.8118922,
-        "longitude": 144.9693252,
-        "address": "Market Ln, Melbourne VIC 3000, Australia",
-        "rating": "N/A"
+        "place_id": "ChIJT-tyjjRd1moRqeXlykOTVQc",
+        "latitude": -37.8062804,
+        "longitude": 144.9580131,
+        "address": "83-85 Victoria St, Melbourne VIC 3000, Australia",
+        "rating": 4.3
       }
     ]
   },
@@ -1495,7 +1495,7 @@
         "latitude": -37.7752765,
         "longitude": 144.7537277,
         "address": "Factory 2, 17/21 Barretta Rd, Ravenhall VIC 3023, Australia",
-        "rating": 4.7
+        "rating": 4.6
       }
     ]
   },
@@ -1647,7 +1647,7 @@
         "latitude": -33.7709446,
         "longitude": 150.9404277,
         "address": "3/167 Prospect Hwy, Seven Hills NSW 2147, Australia",
-        "rating": 4.7
+        "rating": 4.6
       },
       {
         "state": "QLD",
@@ -1872,11 +1872,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJKX5tnkBD1moRwt30NN8sXWU",
-        "latitude": -37.8146309,
-        "longitude": 144.965933,
-        "address": "133 Swanston St, Melbourne VIC 3000, Australia",
-        "rating": 4.1
+        "place_id": "ChIJcY8EpTtD1moRfdZIbMy-FX0",
+        "latitude": -37.8102488,
+        "longitude": 144.9634241,
+        "address": "140 La Trobe St, Melbourne VIC 3000, Australia",
+        "rating": 4
       }
     ]
   },
@@ -2109,11 +2109,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJXYZl8bGrEmsRKpC6MUMYXEY",
-        "latitude": -33.7869368,
-        "longitude": 151.2677137,
-        "address": "75 Kenneth Rd, Balgowlah NSW 2093, Australia",
-        "rating": 4.2
+        "place_id": "ChIJ2U1SUQBp1moR6OrPzeZn8T4",
+        "latitude": -37.8456958,
+        "longitude": 144.9824638,
+        "address": "55 Commercial Rd, Melbourne VIC 3004, Australia",
+        "rating": 4.5
       },
       {
         "state": "NSW",
@@ -2211,8 +2211,8 @@
       {
         "state": "NSW",
         "place_id": "ChIJa7nJTj-uEmsRwbabmz9toOI",
-        "latitude": -33.8687275,
-        "longitude": 151.2049205,
+        "latitude": -33.8687282,
+        "longitude": 151.2049088,
         "address": "Skittle Ln, Sydney NSW 2000, Australia",
         "rating": "N/A"
       }
@@ -2510,7 +2510,16 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJU4NCID011moRLsHU_g9lhww",
+        "latitude": -37.63703,
+        "longitude": 145.196518,
+        "address": "946 Heidelberg - Kinglake Rd, Hurstbridge VIC 3099, Australia",
+        "rating": 4.5
+      }
+    ]
   },
   {
     "Name": "Villino Coffee Roasters",
@@ -2610,7 +2619,7 @@
         "latitude": -33.8798342,
         "longitude": 151.1973423,
         "address": "103 Jones St, Ultimo NSW 2007, Australia",
-        "rating": 4
+        "rating": 3.8
       }
     ]
   },
@@ -2733,11 +2742,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJTVN4VlilMioRq4WBRtvJA7g",
-        "latitude": -31.920182,
-        "longitude": 115.837642,
-        "address": "77 Coogee St, Mount Hawthorn WA 6016, Australia",
-        "rating": 4.7
+        "place_id": "ChIJKVfMiTQZ2jERk7IpVMwaF4c",
+        "latitude": 1.2819562,
+        "longitude": 103.8439381,
+        "address": "34 Sago St, #01-01, Singapore 059026",
+        "rating": 4.6
       }
     ]
   },
@@ -2920,11 +2929,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJg8oIOW3IsGoR3TCZpqztIDQ",
-        "latitude": -34.9233513,
-        "longitude": 138.5715741,
-        "address": "100A Henley Beach Rd, Mile End SA 5031, Australia",
-        "rating": 5
+        "place_id": "ChIJ5UhHhAtF1moRmPMz5ZahtwE",
+        "latitude": -37.7152908,
+        "longitude": 145.0003315,
+        "address": "126-128 Edwardes St, Reservoir VIC 3073, Australia",
+        "rating": 4.5
       }
     ]
   },
@@ -3098,19 +3107,19 @@
       },
       {
         "state": "NSW",
-        "place_id": "ChIJAU6Yrb-rEmsRAnA9BCpYcYk",
-        "latitude": -33.7670481,
-        "longitude": 151.2653916,
-        "address": "Kiosk 10K02, Westfield Warringah Mall, Brookvale NSW 2100, Australia",
-        "rating": 4.6
+        "place_id": "ChIJW9F8FIVZkWsR_dCAeLdJnk8",
+        "latitude": -27.4510021,
+        "longitude": 153.0399387,
+        "address": "628 Wickham St, Fortitude Valley QLD 4006, Australia",
+        "rating": 4.7
       },
       {
         "state": "VIC",
-        "place_id": "ChIJkYOrU0wX1moRUSU57Zhw2Lc",
-        "latitude": -38.0175702,
-        "longitude": 145.3042624,
-        "address": "K127, Westfield Fountain Gate, 25/55 Overland Dr, Narre Warren VIC 3805, Australia",
-        "rating": 4.4
+        "place_id": "ChIJW9F8FIVZkWsR_dCAeLdJnk8",
+        "latitude": -27.4510021,
+        "longitude": 153.0399387,
+        "address": "628 Wickham St, Fortitude Valley QLD 4006, Australia",
+        "rating": 4.7
       }
     ]
   },
@@ -3186,7 +3195,7 @@
         "latitude": -34.9286507,
         "longitude": 138.5934349,
         "address": "Addie Pl, Adelaide SA 5000, Australia",
-        "rating": 4.8
+        "rating": 4.7
       }
     ]
   },
@@ -3369,11 +3378,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJdxIJZOk2t2oR-isctLR0mLI",
-        "latitude": -34.9890968,
-        "longitude": 138.8246416,
-        "address": "24 Bridge St, Balhannah SA 5242, Australia",
-        "rating": 4.8
+        "place_id": "ChIJ6ycGOuPsuWoRaslMR5lt8q0",
+        "latitude": -34.4169992,
+        "longitude": 138.9218495,
+        "address": "521 Greenock Rd, Greenock SA 5360, Australia",
+        "rating": 3.7
       }
     ]
   },
@@ -3505,9 +3514,9 @@
       {
         "state": "NSW",
         "place_id": "ChIJ4QcD4Bd5c2sRGevBoPnVTsg",
-        "latitude": -32.7279697,
-        "longitude": 152.0780748,
-        "address": "9 George Rd, Salamander Bay NSW 2317, Australia",
+        "latitude": -32.7279583,
+        "longitude": 152.0783715,
+        "address": "11/9 George Rd, Salamander Bay NSW 2317, Australia",
         "rating": 5
       }
     ]
@@ -3668,7 +3677,7 @@
         "latitude": -37.8175798,
         "longitude": 144.9658243,
         "address": "7a Degraves St, Melbourne VIC 3000, Australia",
-        "rating": 4.8
+        "rating": 4.7
       }
     ]
   }
