@@ -97,7 +97,7 @@
         "latitude": -37.8065523,
         "longitude": 144.9893899,
         "address": "80 Rupert St, Collingwood VIC 3066, Australia",
-        "rating": 4.4
+        "rating": 4.5
       },
       {
         "state": "QLD",
@@ -228,11 +228,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJzTYSmmLpST4RJt1g8yJvdeM",
-        "latitude": 26.3059554,
-        "longitude": 50.1902352,
-        "address": "6391 Prince Faisal Bin Fahd Road, Al Hizam Al Akhdar, Al Khobar 34436, Saudi Arabia",
-        "rating": 4.3
+        "place_id": "ChIJn1FUnktd1moRgZCDC6aPCcw",
+        "latitude": -37.8146934,
+        "longitude": 144.9582383,
+        "address": "Rear of, 493-495 Little Bourke St, Melbourne VIC 3000, Australia",
+        "rating": 4.8
       }
     ]
   },
@@ -338,11 +338,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJZcEztpNmeGkRBAzqOEqHgNk",
-        "latitude": -16.9236687,
-        "longitude": 145.776031,
-        "address": "Oceana Walk Arcade, 13/62 Grafton St, Cairns City QLD 4870, Australia",
-        "rating": 4.8
+        "place_id": "ChIJo0UDfrZbkWsRH9DAyoI73tQ",
+        "latitude": -27.4975,
+        "longitude": 153.0680556,
+        "address": "4 Newman Ave, Camp Hill QLD 4152, Australia",
+        "rating": 4.7
       }
     ]
   },
@@ -372,10 +372,10 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJGWawcEKuEmsRAZpnB16LmXs",
-        "latitude": -33.867247,
-        "longitude": 151.2115647,
-        "address": "l20/126 Phillip St, Sydney NSW 2000, Australia",
+        "place_id": "ChIJ326-kNq0lmsRsIDe81qjAgU",
+        "latitude": -27.6259862,
+        "longitude": 152.8077665,
+        "address": "Blackstone QLD 4304, Australia",
         "rating": "N/A"
       }
     ]
@@ -495,7 +495,7 @@
         "latitude": -37.8403038,
         "longitude": 144.995597,
         "address": "572 Chapel St, South Yarra VIC 3141, Australia",
-        "rating": 4.6
+        "rating": 4.7
       }
     ]
   },
@@ -711,11 +711,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJtbERhvmDMioRUeIcPPux54U",
-        "latitude": -32.2899689,
-        "longitude": 115.7436128,
-        "address": "GO41, 1 Council Ave, Rockingham WA 6168, Australia",
-        "rating": 4.6
+        "place_id": "ChIJASf7QV3Lj4ARSLxJNklJsSc",
+        "latitude": 37.3317526,
+        "longitude": -121.9117863,
+        "address": "1202 The Alameda, San Jose, CA 95126, USA",
+        "rating": 4.4
       }
     ]
   },
@@ -944,7 +944,7 @@
         "latitude": -33.413571,
         "longitude": 149.540967,
         "address": "67 Corporation Ave, Robin Hill NSW 2795, Australia",
-        "rating": 4.8
+        "rating": 4.7
       }
     ]
   },
@@ -1093,11 +1093,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJgRXO-rRC1moRwcB73rcSyIE",
-        "latitude": -37.8154635,
-        "longitude": 144.963264,
-        "address": "345 Little Collins St, Melbourne VIC 3000, Australia",
-        "rating": 4.3
+        "place_id": "ChIJ_7ffMiFD1moR5NCnlSFhECk",
+        "latitude": -37.7948113,
+        "longitude": 144.9781341,
+        "address": "70-76 Westgarth St, Fitzroy VIC 3065, Australia",
+        "rating": 4.4
       },
       {
         "state": "NSW",
@@ -1338,11 +1338,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ__9vxOKWEmsRgYJFfKfYNjk",
-        "latitude": -33.8514576,
-        "longitude": 150.8943897,
-        "address": "6/1199 The Horsley Dr, Wetherill Park NSW 2164, Australia",
-        "rating": 4.9
+        "place_id": "ChIJZRKHO5dbkWsRsdkXMwySRT0",
+        "latitude": -27.4772189,
+        "longitude": 153.0156228,
+        "address": "62 Manning St, South Brisbane QLD 4101, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -1647,7 +1647,7 @@
         "latitude": -33.7709446,
         "longitude": 150.9404277,
         "address": "3/167 Prospect Hwy, Seven Hills NSW 2147, Australia",
-        "rating": 4.6
+        "rating": 4.7
       },
       {
         "state": "QLD",
@@ -1872,11 +1872,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJcY8EpTtD1moRfdZIbMy-FX0",
-        "latitude": -37.8102488,
-        "longitude": 144.9634241,
-        "address": "140 La Trobe St, Melbourne VIC 3000, Australia",
-        "rating": 4
+        "place_id": "ChIJKX5tnkBD1moRwt30NN8sXWU",
+        "latitude": -37.8146309,
+        "longitude": 144.965933,
+        "address": "133 Swanston St, Melbourne VIC 3000, Australia",
+        "rating": 4.1
       }
     ]
   },
@@ -2510,16 +2510,7 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "SA",
-        "place_id": "ChIJU4NCID011moRLsHU_g9lhww",
-        "latitude": -37.63703,
-        "longitude": 145.196518,
-        "address": "946 Heidelberg - Kinglake Rd, Hurstbridge VIC 3099, Australia",
-        "rating": 4.5
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Villino Coffee Roasters",
@@ -2615,11 +2606,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJQw3XQS-uEmsRWSAo6K-Jx28",
-        "latitude": -33.8798342,
-        "longitude": 151.1973423,
-        "address": "103 Jones St, Ultimo NSW 2007, Australia",
-        "rating": 3.8
+        "place_id": "ChIJ4_Ak3iKtEmsR6uPK8jv_Z7I",
+        "latitude": -33.8886573,
+        "longitude": 151.2756322,
+        "address": "Corner Of Beach Road And, Gould St, Bondi Beach NSW 2026, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -2742,11 +2733,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJKVfMiTQZ2jERk7IpVMwaF4c",
-        "latitude": 1.2819562,
-        "longitude": 103.8439381,
-        "address": "34 Sago St, #01-01, Singapore 059026",
-        "rating": 4.6
+        "place_id": "ChIJE5TUVHjnaC4REz6pHj7o2Yg",
+        "latitude": -6.907484299999999,
+        "longitude": 107.6159513,
+        "address": "Jl. Halmahera No.2, Citarum, Kec. Bandung Wetan, Kota Bandung, Jawa Barat 40115, Indonesia",
+        "rating": 5
       }
     ]
   },
@@ -2929,11 +2920,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ5UhHhAtF1moRmPMz5ZahtwE",
-        "latitude": -37.7152908,
-        "longitude": 145.0003315,
-        "address": "126-128 Edwardes St, Reservoir VIC 3073, Australia",
-        "rating": 4.5
+        "place_id": "ChIJg8oIOW3IsGoR3TCZpqztIDQ",
+        "latitude": -34.9233513,
+        "longitude": 138.5715741,
+        "address": "100A Henley Beach Rd, Mile End SA 5031, Australia",
+        "rating": 5
       }
     ]
   },
@@ -2963,10 +2954,10 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJNZsvUd9C1moRY00nWdYBy9k",
-        "latitude": -37.799384,
-        "longitude": 144.9781281,
-        "address": "267 Brunswick St, Fitzroy VIC 3065, Australia",
+        "place_id": "ChIJwRNQEh1D1moR9CGBmWaxvoc",
+        "latitude": -37.7986379,
+        "longitude": 144.9940429,
+        "address": "UNit 3, Rear/260 Hoddle St, Collingwood VIC 3066, Australia",
         "rating": 4.6
       }
     ]
@@ -3107,11 +3098,11 @@
       },
       {
         "state": "NSW",
-        "place_id": "ChIJW9F8FIVZkWsR_dCAeLdJnk8",
-        "latitude": -27.4510021,
-        "longitude": 153.0399387,
-        "address": "628 Wickham St, Fortitude Valley QLD 4006, Australia",
-        "rating": 4.7
+        "place_id": "ChIJAU6Yrb-rEmsRAnA9BCpYcYk",
+        "latitude": -33.7670481,
+        "longitude": 151.2653916,
+        "address": "Kiosk 10K02, Westfield Warringah Mall, Brookvale NSW 2100, Australia",
+        "rating": 4.6
       },
       {
         "state": "VIC",
@@ -3195,7 +3186,7 @@
         "latitude": -34.9286507,
         "longitude": 138.5934349,
         "address": "Addie Pl, Adelaide SA 5000, Australia",
-        "rating": 4.7
+        "rating": 4.8
       }
     ]
   },
@@ -3581,11 +3572,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJFfuagElD1moRfHn5PWOZDqE",
-        "latitude": -37.8171645,
-        "longitude": 144.9648549,
-        "address": "Shop 1D/289 Flinders Ln, Melbourne VIC 3000, Australia",
-        "rating": 4.6
+        "place_id": "ChIJsRY0YdOnlVQR0SYQOMiMVb4",
+        "latitude": 45.5774705,
+        "longitude": -122.7001692,
+        "address": "3233 N Lombard St Suite B, Portland, OR 97217, USA",
+        "rating": 5
       }
     ]
   },
