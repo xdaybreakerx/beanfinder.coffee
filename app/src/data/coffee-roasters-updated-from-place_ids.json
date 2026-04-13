@@ -56,16 +56,7 @@
     "State": "QLD",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "QLD",
-        "place_id": "ChIJf2tsB1jqrkwRy6lf_8QnHSU",
-        "latitude": -27.6200901,
-        "longitude": 153.1232136,
-        "address": "Unit 3/9 Allgas St, Slacks Creek QLD 4127, Australia",
-        "rating": "N/A"
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Alchemy Coffee",
@@ -338,11 +329,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJo0UDfrZbkWsRH9DAyoI73tQ",
-        "latitude": -27.4975,
-        "longitude": 153.0680556,
-        "address": "4 Newman Ave, Camp Hill QLD 4152, Australia",
-        "rating": 4.7
+        "place_id": "ChIJZcEztpNmeGkRBAzqOEqHgNk",
+        "latitude": -16.9236687,
+        "longitude": 145.776031,
+        "address": "Oceana Walk Arcade, 13/62 Grafton St, Cairns City QLD 4870, Australia",
+        "rating": 4.8
       }
     ]
   },
@@ -372,10 +363,10 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ326-kNq0lmsRsIDe81qjAgU",
-        "latitude": -27.6259862,
-        "longitude": 152.8077665,
-        "address": "Blackstone QLD 4304, Australia",
+        "place_id": "ChIJGWawcEKuEmsRAZpnB16LmXs",
+        "latitude": -33.867247,
+        "longitude": 151.2115647,
+        "address": "l20/126 Phillip St, Sydney NSW 2000, Australia",
         "rating": "N/A"
       }
     ]
@@ -759,7 +750,16 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJ_c_h1EKqEmsRDqk19J_F-Sk",
+        "latitude": -33.763324,
+        "longitude": 151.268433,
+        "address": "28 Dale St, Brookvale NSW 2100, Australia",
+        "rating": 4.6
+      }
+    ]
   },
   {
     "Name": "Darkstar Coffee",
@@ -923,11 +923,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJ7fLSHJ6vMioRvSa6tpVcb68",
-        "latitude": -31.845606,
-        "longitude": 116.0053002,
-        "address": "80 Yukich Cl, Middle Swan WA 6056, Australia",
-        "rating": 3.5
+        "place_id": "ChIJXfHFveqlMioRBVfgK5Nlc3c",
+        "latitude": -31.9209269,
+        "longitude": 115.8394015,
+        "address": "21/148 Scarborough Beach Rd, Mount Hawthorn WA 6016, Australia",
+        "rating": 3
       }
     ]
   },
@@ -1008,11 +1008,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJDUte93TLDWsRLZ_EIhGvgBc",
-        "latitude": -31.2532183,
-        "longitude": 146.921099,
-        "address": "New South Wales, Australia",
-        "rating": "N/A"
+        "place_id": "ChIJZ934S0KuEmsR_0lxV3PTR4M",
+        "latitude": -33.8615815,
+        "longitude": 151.2076503,
+        "address": "199 George St, The Rocks NSW 2000, Australia",
+        "rating": 4.5
       }
     ]
   },
@@ -1093,11 +1093,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJ_7ffMiFD1moR5NCnlSFhECk",
-        "latitude": -37.7948113,
-        "longitude": 144.9781341,
-        "address": "70-76 Westgarth St, Fitzroy VIC 3065, Australia",
-        "rating": 4.4
+        "place_id": "ChIJgRXO-rRC1moRwcB73rcSyIE",
+        "latitude": -37.8154635,
+        "longitude": 144.963264,
+        "address": "345 Little Collins St, Melbourne VIC 3000, Australia",
+        "rating": 4.3
       },
       {
         "state": "NSW",
@@ -1423,11 +1423,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJT-tyjjRd1moRqeXlykOTVQc",
-        "latitude": -37.8062804,
-        "longitude": 144.9580131,
-        "address": "83-85 Victoria St, Melbourne VIC 3000, Australia",
-        "rating": 4.3
+        "place_id": "ChIJMzrwAslC1moRKuXaN2eeaXw",
+        "latitude": -37.8118922,
+        "longitude": 144.9693252,
+        "address": "Market Ln, Melbourne VIC 3000, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -1740,7 +1740,7 @@
         "latitude": -38.005824,
         "longitude": 145.111876,
         "address": "58 Industrial Dr, Braeside VIC 3195, Australia",
-        "rating": 4.7
+        "rating": 4.8
       }
     ]
   },
@@ -1825,7 +1825,7 @@
         "latitude": -38.2866445,
         "longitude": 145.1840318,
         "address": "Unit 1/1855 Frankston - Flinders Rd, Hastings VIC 3915, Australia",
-        "rating": 4.9
+        "rating": 5
       }
     ]
   },
@@ -2542,7 +2542,7 @@
         "latitude": -34.0343329,
         "longitude": 151.0719338,
         "address": "Unit 10/44-46 Flora St, Kirrawee NSW 2232, Australia",
-        "rating": 4.7
+        "rating": 4.6
       }
     ]
   },
@@ -2606,11 +2606,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ4_Ak3iKtEmsR6uPK8jv_Z7I",
-        "latitude": -33.8886573,
-        "longitude": 151.2756322,
-        "address": "Corner Of Beach Road And, Gould St, Bondi Beach NSW 2026, Australia",
-        "rating": 4.4
+        "place_id": "ChIJQw3XQS-uEmsRWSAo6K-Jx28",
+        "latitude": -33.8798342,
+        "longitude": 151.1973423,
+        "address": "103 Jones St, Ultimo NSW 2007, Australia",
+        "rating": 3.8
       }
     ]
   },
@@ -2733,11 +2733,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJE5TUVHjnaC4REz6pHj7o2Yg",
-        "latitude": -6.907484299999999,
-        "longitude": 107.6159513,
-        "address": "Jl. Halmahera No.2, Citarum, Kec. Bandung Wetan, Kota Bandung, Jawa Barat 40115, Indonesia",
-        "rating": 5
+        "place_id": "ChIJKVfMiTQZ2jERk7IpVMwaF4c",
+        "latitude": 1.2819562,
+        "longitude": 103.8439381,
+        "address": "34 Sago St, #01-01, Singapore 059026",
+        "rating": 4.6
       }
     ]
   },
@@ -2750,11 +2750,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJPy754pPgeyYRqIaAhfy4fas",
-        "latitude": -37.5293461,
-        "longitude": 143.8449344,
-        "address": "Co located @ Karon Farm Coffee, 10 Builders Cl, Wendouree VIC 3355, Australia",
-        "rating": "N/A"
+        "place_id": "ChIJO3mOYPRF0WoRHHIKsOnr0Vw",
+        "latitude": -37.56228900000001,
+        "longitude": 143.8575021,
+        "address": "2 Lydiard St S, Ballarat Central VIC 3350, Australia",
+        "rating": 4.9
       }
     ]
   },
@@ -2954,10 +2954,10 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJwRNQEh1D1moR9CGBmWaxvoc",
-        "latitude": -37.7986379,
-        "longitude": 144.9940429,
-        "address": "UNit 3, Rear/260 Hoddle St, Collingwood VIC 3066, Australia",
+        "place_id": "ChIJNZsvUd9C1moRY00nWdYBy9k",
+        "latitude": -37.799384,
+        "longitude": 144.9781281,
+        "address": "267 Brunswick St, Fitzroy VIC 3065, Australia",
         "rating": 4.6
       }
     ]
@@ -3102,7 +3102,7 @@
         "latitude": -33.7670481,
         "longitude": 151.2653916,
         "address": "Kiosk 10K02, Westfield Warringah Mall, Brookvale NSW 2100, Australia",
-        "rating": 4.6
+        "rating": 4.7
       },
       {
         "state": "VIC",
@@ -3535,16 +3535,7 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "VIC",
-        "place_id": "ChIJQc1_I1IX1moRxoKRQkgK6-o",
-        "latitude": -38.017264,
-        "longitude": 145.3050076,
-        "address": "K131/25-55 Magid Dr, Narre Warren VIC 3805, Australia",
-        "rating": 3.5
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Coffee in Common",
@@ -3572,11 +3563,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJsRY0YdOnlVQR0SYQOMiMVb4",
-        "latitude": 45.5774705,
-        "longitude": -122.7001692,
-        "address": "3233 N Lombard St Suite B, Portland, OR 97217, USA",
-        "rating": 5
+        "place_id": "ChIJFfuagElD1moRfHn5PWOZDqE",
+        "latitude": -37.8171645,
+        "longitude": 144.9648549,
+        "address": "Shop 1D/289 Flinders Ln, Melbourne VIC 3000, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -3620,7 +3611,16 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ095uC7lD1moRpd-EZMWaVCU",
+        "latitude": -37.8132786,
+        "longitude": 144.9685245,
+        "address": "Shop2, Shop2/130 Russell St, Melbourne VIC 3000, Australia",
+        "rating": 4.5
+      }
+    ]
   },
   {
     "Name": "Acuratore",
