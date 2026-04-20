@@ -538,7 +538,7 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJASf7QV3Lj4ARSLxJNklJsSc"
+        "place_id": "ChIJV9eP2ZXLSYYR6xwpA4DcXZ8"
       }
     ]
   },
@@ -574,12 +574,7 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "NSW",
-        "place_id": "ChIJ_c_h1EKqEmsRDqk19J_F-Sk"
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Darkstar Coffee",
@@ -1022,7 +1017,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJZRKHO5dbkWsRsdkXMwySRT0"
+        "place_id": "ChIJ__9vxOKWEmsRgYJFfKfYNjk"
       }
     ]
   },
@@ -1913,7 +1908,7 @@
     "place_ids": [
       {
         "state": "TAS",
-        "place_id": "ChIJLVVHO5t1bqoRx2GfeboXBcU"
+        "place_id": "ChIJbS_0zcZ1bqoRLsA2vhSd0UE"
       }
     ]
   },
@@ -1978,7 +1973,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJQw3XQS-uEmsRWSAo6K-Jx28"
+        "place_id": "ChIJ4_Ak3iKtEmsR6uPK8jv_Z7I"
       }
     ]
   },
@@ -2040,7 +2035,12 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJgQgzLSD9Z0sRfh11onLJ8NY"
+      }
+    ]
   },
   {
     "Name": "Supernumerary Coffee",
@@ -2354,7 +2354,7 @@
       },
       {
         "state": "NSW",
-        "place_id": "ChIJAU6Yrb-rEmsRAnA9BCpYcYk"
+        "place_id": "ChIJW9F8FIVZkWsR_dCAeLdJnk8"
       },
       {
         "state": "VIC",
@@ -2691,7 +2691,12 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJQc1_I1IX1moRxoKRQkgK6-o"
+      }
+    ]
   },
   {
     "Name": "Coffee in Common",
@@ -2715,7 +2720,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJFfuagElD1moRfHn5PWOZDqE"
+        "place_id": "ChIJsRY0YdOnlVQR0SYQOMiMVb4"
       }
     ]
   },
@@ -2751,12 +2756,7 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "VIC",
-        "place_id": "ChIJ095uC7lD1moRpd-EZMWaVCU"
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Acuratore",

@@ -702,11 +702,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJASf7QV3Lj4ARSLxJNklJsSc",
-        "latitude": 37.3317526,
-        "longitude": -121.9117863,
-        "address": "1202 The Alameda, San Jose, CA 95126, USA",
-        "rating": 4.4
+        "place_id": "ChIJV9eP2ZXLSYYR6xwpA4DcXZ8",
+        "latitude": 32.2711895,
+        "longitude": -95.3416369,
+        "address": "2251 Three Lakes Pkwy #107, Tyler, TX 75703, USA",
+        "rating": 4.5
       }
     ]
   },
@@ -750,16 +750,7 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "NSW",
-        "place_id": "ChIJ_c_h1EKqEmsRDqk19J_F-Sk",
-        "latitude": -33.763324,
-        "longitude": 151.268433,
-        "address": "28 Dale St, Brookvale NSW 2100, Australia",
-        "rating": 4.6
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Darkstar Coffee",
@@ -1338,11 +1329,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJZRKHO5dbkWsRsdkXMwySRT0",
-        "latitude": -27.4772189,
-        "longitude": 153.0156228,
-        "address": "62 Manning St, South Brisbane QLD 4101, Australia",
-        "rating": 4.6
+        "place_id": "ChIJ__9vxOKWEmsRgYJFfKfYNjk",
+        "latitude": -33.8514576,
+        "longitude": 150.8943897,
+        "address": "6/1199 The Horsley Dr, Wetherill Park NSW 2164, Australia",
+        "rating": 4.9
       }
     ]
   },
@@ -2054,7 +2045,7 @@
         "latitude": -37.8177555,
         "longitude": 145.2216268,
         "address": "8 Olive Grove, Ringwood VIC 3134, Australia",
-        "rating": 4.7
+        "rating": 4.8
       }
     ]
   },
@@ -2256,7 +2247,7 @@
         "latitude": -32.1501699,
         "longitude": 116.0185929,
         "address": "89B Jull St, Armadale WA 6112, Australia",
-        "rating": 5
+        "rating": 4.8
       }
     ]
   },
@@ -2400,7 +2391,7 @@
         "latitude": -26.729457,
         "longitude": 153.1223552,
         "address": "9 Machinery Ave, Warana QLD 4575, Australia",
-        "rating": 4.5
+        "rating": 4.6
       }
     ]
   },
@@ -2521,11 +2512,11 @@
     "place_ids": [
       {
         "state": "TAS",
-        "place_id": "ChIJLVVHO5t1bqoRx2GfeboXBcU",
-        "latitude": -42.8813589,
-        "longitude": 147.3256386,
-        "address": "30 Criterion St, Hobart TAS 7000, Australia",
-        "rating": 4.8
+        "place_id": "ChIJbS_0zcZ1bqoRLsA2vhSd0UE",
+        "latitude": -42.8395283,
+        "longitude": 147.2947843,
+        "address": "43 Sunderland St, Moonah TAS 7009, Australia",
+        "rating": 4.9
       }
     ]
   },
@@ -2606,11 +2597,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJQw3XQS-uEmsRWSAo6K-Jx28",
-        "latitude": -33.8798342,
-        "longitude": 151.1973423,
-        "address": "103 Jones St, Ultimo NSW 2007, Australia",
-        "rating": 3.8
+        "place_id": "ChIJ4_Ak3iKtEmsR6uPK8jv_Z7I",
+        "latitude": -33.8886573,
+        "longitude": 151.2756322,
+        "address": "Corner Of Beach Road And, Gould St, Bondi Beach NSW 2026, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -2688,7 +2679,16 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJgQgzLSD9Z0sRfh11onLJ8NY",
+        "latitude": 46.1130714,
+        "longitude": -60.1720174,
+        "address": "121 Reservoir Rd, Sydney, NS B1P 3H6, Canada",
+        "rating": 5
+      }
+    ]
   },
   {
     "Name": "Supernumerary Coffee",
@@ -3098,10 +3098,10 @@
       },
       {
         "state": "NSW",
-        "place_id": "ChIJAU6Yrb-rEmsRAnA9BCpYcYk",
-        "latitude": -33.7670481,
-        "longitude": 151.2653916,
-        "address": "Kiosk 10K02, Westfield Warringah Mall, Brookvale NSW 2100, Australia",
+        "place_id": "ChIJW9F8FIVZkWsR_dCAeLdJnk8",
+        "latitude": -27.4510021,
+        "longitude": 153.0399387,
+        "address": "628 Wickham St, Fortitude Valley QLD 4006, Australia",
         "rating": 4.7
       },
       {
@@ -3535,7 +3535,16 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJQc1_I1IX1moRxoKRQkgK6-o",
+        "latitude": -38.017264,
+        "longitude": 145.3050076,
+        "address": "K131/25-55 Magid Dr, Narre Warren VIC 3805, Australia",
+        "rating": 3.5
+      }
+    ]
   },
   {
     "Name": "Coffee in Common",
@@ -3563,11 +3572,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJFfuagElD1moRfHn5PWOZDqE",
-        "latitude": -37.8171645,
-        "longitude": 144.9648549,
-        "address": "Shop 1D/289 Flinders Ln, Melbourne VIC 3000, Australia",
-        "rating": 4.6
+        "place_id": "ChIJsRY0YdOnlVQR0SYQOMiMVb4",
+        "latitude": 45.5774705,
+        "longitude": -122.7001692,
+        "address": "3233 N Lombard St Suite B, Portland, OR 97217, USA",
+        "rating": 5
       }
     ]
   },
@@ -3611,16 +3620,7 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "VIC",
-        "place_id": "ChIJ095uC7lD1moRpd-EZMWaVCU",
-        "latitude": -37.8132786,
-        "longitude": 144.9685245,
-        "address": "Shop2, Shop2/130 Russell St, Melbourne VIC 3000, Australia",
-        "rating": 4.5
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Acuratore",
