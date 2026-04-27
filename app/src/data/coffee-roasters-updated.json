@@ -167,7 +167,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJn1FUnktd1moRgZCDC6aPCcw"
+        "place_id": "ChIJzTYSmmLpST4RJt1g8yJvdeM"
       }
     ]
   },
@@ -276,12 +276,7 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "NSW",
-        "place_id": "ChIJGWawcEKuEmsRAZpnB16LmXs"
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Bliss Coffee Roasters",
@@ -461,7 +456,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJ__k7MDFd1moRjnVCIJLqaq8"
+        "place_id": "ChIJbyGMaTpn1moRDl-Dj_Zv_hI"
       }
     ]
   },
@@ -767,7 +762,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJZ934S0KuEmsR_0lxV3PTR4M"
+        "place_id": "ChIJDUte93TLDWsRLZ_EIhGvgBc"
       }
     ]
   },
@@ -1017,7 +1012,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ__9vxOKWEmsRgYJFfKfYNjk"
+        "place_id": "ChIJEQFWu1qIEmsRTfwhTEUPWJk"
       }
     ]
   },
@@ -1030,7 +1025,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJMSdqujerEmsRwsJI--zIxw0"
+        "place_id": "ChIJIdaGSgGrEmsRA5A4TQaNXWI"
       }
     ]
   },
@@ -1056,7 +1051,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJw3ZAzdJD1moRdTHBsWBAcao"
+        "place_id": "ChIJfwM3SFFC1moRqHiTyaepYTQ"
       }
     ]
   },
@@ -2035,12 +2030,7 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "NSW",
-        "place_id": "ChIJgQgzLSD9Z0sRfh11onLJ8NY"
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Supernumerary Coffee",
@@ -2077,7 +2067,7 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJKVfMiTQZ2jERk7IpVMwaF4c"
+        "place_id": "ChIJTVN4VlilMioRq4WBRtvJA7g"
       }
     ]
   },
@@ -2354,11 +2344,11 @@
       },
       {
         "state": "NSW",
-        "place_id": "ChIJW9F8FIVZkWsR_dCAeLdJnk8"
+        "place_id": "ChIJAU6Yrb-rEmsRAnA9BCpYcYk"
       },
       {
         "state": "VIC",
-        "place_id": "ChIJW9F8FIVZkWsR_dCAeLdJnk8"
+        "place_id": "ChIJX7ZmCUNH1moRnqVKkByP9D4"
       }
     ]
   },
@@ -2618,7 +2608,12 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ0cg8_mbbsGoRRCR2QlRXVgM"
+      }
+    ]
   },
   {
     "Name": "Bray St Roasters",
@@ -2691,12 +2686,7 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "VIC",
-        "place_id": "ChIJQc1_I1IX1moRxoKRQkgK6-o"
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Coffee in Common",
