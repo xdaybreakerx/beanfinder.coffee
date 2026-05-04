@@ -96,7 +96,7 @@
         "latitude": -27.4879431,
         "longitude": 153.0393798,
         "address": "26 Wellington Rd, East Brisbane QLD 4102, Australia",
-        "rating": 4.6
+        "rating": 4.5
       },
       {
         "state": "NSW",
@@ -219,11 +219,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJzTYSmmLpST4RJt1g8yJvdeM",
-        "latitude": 26.3059554,
-        "longitude": 50.1902352,
-        "address": "6391 Prince Faisal Bin Fahd Road, Al Hizam Al Akhdar, Al Khobar 34436, Saudi Arabia",
-        "rating": 4.3
+        "place_id": "ChIJJ5bS6P9n1moRx76U3LjtN1A",
+        "latitude": -37.8312475,
+        "longitude": 144.960354,
+        "address": "12-18 Yarra Pl, South Melbourne VIC 3205, Australia",
+        "rating": 4.2
       }
     ]
   },
@@ -329,11 +329,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJZcEztpNmeGkRBAzqOEqHgNk",
-        "latitude": -16.9236687,
-        "longitude": 145.776031,
-        "address": "Oceana Walk Arcade, 13/62 Grafton St, Cairns City QLD 4870, Australia",
-        "rating": 4.8
+        "place_id": "ChIJo0UDfrZbkWsRH9DAyoI73tQ",
+        "latitude": -27.4975,
+        "longitude": 153.0680556,
+        "address": "4 Newman Ave, Camp Hill QLD 4152, Australia",
+        "rating": 4.7
       }
     ]
   },
@@ -360,7 +360,16 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJc70YQhKjEmsRN36B2EvsSAA",
+        "latitude": -33.7310415,
+        "longitude": 150.9693732,
+        "address": "4 Columbia Ct, Norwest NSW 2153, Australia",
+        "rating": 5
+      }
+    ]
   },
   {
     "Name": "Bliss Coffee Roasters",
@@ -606,7 +615,16 @@
     "State": "QLD",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJ1_Uj6TICkWsRZa0vRjjVaJ0",
+        "latitude": -28.1054439,
+        "longitude": 153.4295492,
+        "address": "Unit 4/15a Leda Dr, Burleigh Heads QLD 4220, Australia",
+        "rating": 4.9
+      }
+    ]
   },
   {
     "Name": "Coffee Chakra ",
@@ -690,16 +708,7 @@
     "State": "WA",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "WA",
-        "place_id": "ChIJV9eP2ZXLSYYR6xwpA4DcXZ8",
-        "latitude": 32.2711895,
-        "longitude": -95.3416369,
-        "address": "2251 Three Lakes Pkwy #107, Tyler, TX 75703, USA",
-        "rating": 4.5
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Cruze",
@@ -1091,11 +1100,11 @@
       },
       {
         "state": "QLD",
-        "place_id": "ChIJc8Lw97pbkWsRcoV4OzfDIf4",
-        "latitude": -27.4675273,
-        "longitude": 153.0265775,
-        "address": "Shop 6/243 Edward St, Brisbane City QLD 4000, Australia",
-        "rating": 4.3
+        "place_id": "ChIJLT2riqFZkWsRN1Y6UYR6rcs",
+        "latitude": -27.4541007,
+        "longitude": 153.0417814,
+        "address": "18 Proe St, Newstead QLD 4006, Australia",
+        "rating": 4.1
       }
     ]
   },
@@ -1303,11 +1312,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJNx0qvBlo1moREbaZuYZoCCI",
-        "latitude": -37.8446381,
-        "longitude": 144.9792762,
-        "address": "517 St Kilda Rd, Melbourne VIC 3004, Australia",
-        "rating": 4.5
+        "place_id": "ChIJmRrb-FC5MioRhlhDMCHzAIw",
+        "latitude": -31.8997516,
+        "longitude": 115.9685197,
+        "address": "159-161 James St, Guildford WA 6055, Australia",
+        "rating": 4.7
       }
     ]
   },
@@ -2293,11 +2302,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJf-5n3HWvEmsRwrzJ27_9NYs",
-        "latitude": -33.8834258,
-        "longitude": 151.1951103,
-        "address": "80 Bay St, Ultimo NSW 2007, Australia",
-        "rating": 4.5
+        "place_id": "ChIJ6WOL2kyxEmsRVrkIY-MMkvw",
+        "latitude": -33.9116948,
+        "longitude": 151.1633057,
+        "address": "15 Sydney St, Marrickville NSW 2204, Australia",
+        "rating": 5
       }
     ]
   },
@@ -2606,8 +2615,8 @@
       {
         "state": "SA",
         "place_id": "ChIJ_XAxQxjJsGoRIBGeNraBipo",
-        "latitude": -34.8967114,
-        "longitude": 138.5652598,
+        "latitude": -34.8967475,
+        "longitude": 138.5653037,
         "address": "22 Elizabeth St, Croydon SA 5008, Australia",
         "rating": 4.8
       }
@@ -2715,11 +2724,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJTVN4VlilMioRq4WBRtvJA7g",
-        "latitude": -31.920182,
-        "longitude": 115.837642,
-        "address": "77 Coogee St, Mount Hawthorn WA 6016, Australia",
-        "rating": 4.7
+        "place_id": "ChIJKVfMiTQZ2jERk7IpVMwaF4c",
+        "latitude": 1.2819562,
+        "longitude": 103.8439381,
+        "address": "34 Sago St, #01-01, Singapore 059026",
+        "rating": 4.6
       }
     ]
   },
@@ -2732,11 +2741,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJO3mOYPRF0WoRHHIKsOnr0Vw",
-        "latitude": -37.56228900000001,
-        "longitude": 143.8575021,
-        "address": "2 Lydiard St S, Ballarat Central VIC 3350, Australia",
-        "rating": 4.9
+        "place_id": "ChIJPy754pPgeyYRqIaAhfy4fas",
+        "latitude": -37.5293461,
+        "longitude": 143.8449344,
+        "address": "Co located @ Karon Farm Coffee, 10 Builders Cl, Wendouree VIC 3355, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -3424,16 +3433,7 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "SA",
-        "place_id": "ChIJ0cg8_mbbsGoRRCR2QlRXVgM",
-        "latitude": -34.9649596,
-        "longitude": 138.5094753,
-        "address": "52 N Esplanade, Glenelg North SA 5045, Australia",
-        "rating": 5
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Bray St Roasters",
