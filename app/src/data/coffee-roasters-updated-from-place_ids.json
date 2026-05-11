@@ -219,11 +219,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJJ5bS6P9n1moRx76U3LjtN1A",
-        "latitude": -37.8312475,
-        "longitude": 144.960354,
-        "address": "12-18 Yarra Pl, South Melbourne VIC 3205, Australia",
-        "rating": 4.2
+        "place_id": "ChIJzTYSmmLpST4RJt1g8yJvdeM",
+        "latitude": 26.3059554,
+        "longitude": 50.1902352,
+        "address": "6391 Prince Faisal Bin Fahd Road, Al Hizam Al Akhdar, Al Khobar 34436, Saudi Arabia",
+        "rating": 4.3
       }
     ]
   },
@@ -329,11 +329,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJo0UDfrZbkWsRH9DAyoI73tQ",
-        "latitude": -27.4975,
-        "longitude": 153.0680556,
-        "address": "4 Newman Ave, Camp Hill QLD 4152, Australia",
-        "rating": 4.7
+        "place_id": "ChIJZcEztpNmeGkRBAzqOEqHgNk",
+        "latitude": -16.9236687,
+        "longitude": 145.776031,
+        "address": "Oceana Walk Arcade, 13/62 Grafton St, Cairns City QLD 4870, Australia",
+        "rating": 4.8
       }
     ]
   },
@@ -346,10 +346,10 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJWT-rgHClMioRqGpcWYDsm_c",
-        "latitude": -31.9471314,
-        "longitude": 115.8248344,
-        "address": "439D Hay St, Subiaco WA 6008, Australia",
+        "place_id": "ChIJ12DBA2i7MioRr0TBxQNMpc4",
+        "latitude": -31.9943514,
+        "longitude": 115.9187976,
+        "address": "41 Welshpool Rd, Welshpool WA 6106, Australia",
         "rating": 4.6
       }
     ]
@@ -363,11 +363,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJc70YQhKjEmsRN36B2EvsSAA",
-        "latitude": -33.7310415,
-        "longitude": 150.9693732,
-        "address": "4 Columbia Ct, Norwest NSW 2153, Australia",
-        "rating": 5
+        "place_id": "ChIJGWawcEKuEmsRAZpnB16LmXs",
+        "latitude": -33.867247,
+        "longitude": 151.2115647,
+        "address": "l20/126 Phillip St, Sydney NSW 2000, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -380,11 +380,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJa57QtyTjdWsRSo14BXRnPm8",
-        "latitude": -31.6348765,
-        "longitude": 152.7558053,
-        "address": "106 Sirius Dr, Lakewood NSW 2443, Australia",
-        "rating": 5
+        "place_id": "ChIJu1VUdS1_MioRJgmqI4JN1_w",
+        "latitude": -32.5309542,
+        "longitude": 115.721655,
+        "address": "29 Sholl St, Mandurah WA 6210, Australia",
+        "rating": 4.8
       }
     ]
   },
@@ -503,7 +503,7 @@
         "latitude": -38.1480474,
         "longitude": 144.358973,
         "address": "1/80 Little Malop St, Geelong VIC 3220, Australia",
-        "rating": 4.3
+        "rating": 4.2
       }
     ]
   },
@@ -708,7 +708,16 @@
     "State": "WA",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJASf7QV3Lj4ARSLxJNklJsSc",
+        "latitude": 37.3317526,
+        "longitude": -121.9117863,
+        "address": "1202 The Alameda, San Jose, CA 95126, USA",
+        "rating": 4.3
+      }
+    ]
   },
   {
     "Name": "Cruze",
@@ -914,11 +923,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJXfHFveqlMioRBVfgK5Nlc3c",
-        "latitude": -31.9209269,
-        "longitude": 115.8394015,
-        "address": "21/148 Scarborough Beach Rd, Mount Hawthorn WA 6016, Australia",
-        "rating": 3
+        "place_id": "ChIJ7fLSHJ6vMioRvSa6tpVcb68",
+        "latitude": -31.845606,
+        "longitude": 116.0053002,
+        "address": "80 Yukich Cl, Middle Swan WA 6056, Australia",
+        "rating": 3.5
       }
     ]
   },
@@ -1312,11 +1321,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJmRrb-FC5MioRhlhDMCHzAIw",
-        "latitude": -31.8997516,
-        "longitude": 115.9685197,
-        "address": "159-161 James St, Guildford WA 6055, Australia",
-        "rating": 4.7
+        "place_id": "ChIJXUd-h7Zd1moRM3s1x9By5t8",
+        "latitude": -37.8001948,
+        "longitude": 144.9276888,
+        "address": "1 Lennon St, West Melbourne VIC 3003, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -1329,10 +1338,10 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJEQFWu1qIEmsRTfwhTEUPWJk",
-        "latitude": -33.7419967,
-        "longitude": 150.6936035,
-        "address": "4/2187 Castlereagh Rd, Penrith NSW 2750, Australia",
+        "place_id": "ChIJ__9vxOKWEmsRgYJFfKfYNjk",
+        "latitude": -33.8514576,
+        "longitude": 150.8943897,
+        "address": "6/1199 The Horsley Dr, Wetherill Park NSW 2164, Australia",
         "rating": 4.9
       }
     ]
@@ -1346,11 +1355,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJIdaGSgGrEmsRA5A4TQaNXWI",
-        "latitude": -33.7979783,
-        "longitude": 151.2869726,
-        "address": "66 The Corso, Manly NSW 2095, Australia",
-        "rating": 4.1
+        "place_id": "ChIJMSdqujerEmsRwsJI--zIxw0",
+        "latitude": -33.7971416,
+        "longitude": 151.2871504,
+        "address": "Unit 4/10 Sydney Rd, Manly NSW 2095, Australia",
+        "rating": 4.9
       }
     ]
   },
@@ -1411,16 +1420,7 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "VIC",
-        "place_id": "ChIJMzrwAslC1moRKuXaN2eeaXw",
-        "latitude": -37.8118922,
-        "longitude": 144.9693252,
-        "address": "Market Ln, Melbourne VIC 3000, Australia",
-        "rating": "N/A"
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Mecca Coffee",
@@ -2247,7 +2247,7 @@
         "latitude": -32.1501699,
         "longitude": 116.0185929,
         "address": "89B Jull St, Armadale WA 6112, Australia",
-        "rating": 4.8
+        "rating": 4.7
       }
     ]
   },
@@ -2929,8 +2929,8 @@
       {
         "state": "ACT",
         "place_id": "ChIJ7wlSM9ZNFmsRy_jffbrG4oQ",
-        "latitude": -35.3234704,
-        "longitude": 149.1649785,
+        "latitude": -35.3234654,
+        "longitude": 149.1649686,
         "address": "Building 2, Tenancy 5/1 Dairy Rd, Fyshwick ACT 2609, Australia",
         "rating": 4.5
       }
@@ -3093,7 +3093,7 @@
         "latitude": -33.7670481,
         "longitude": 151.2653916,
         "address": "Kiosk 10K02, Westfield Warringah Mall, Brookvale NSW 2100, Australia",
-        "rating": 4.6
+        "rating": 4.7
       },
       {
         "state": "VIC",
@@ -3207,11 +3207,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ3YfhmsfEsGoR368LZAxTsqU",
-        "latitude": -34.9379536,
-        "longitude": 138.4995354,
-        "address": "1 Seaview Rd, West Beach SA 5024, Australia",
-        "rating": 4.6
+        "place_id": "ChIJb07Tn1LFsGoRECB7MRT8DtM",
+        "latitude": -34.937329,
+        "longitude": 138.5012272,
+        "address": "89 Military Rd, West Beach SA 5024, Australia",
+        "rating": 5
       }
     ]
   },
@@ -3433,7 +3433,16 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ0cg8_mbbsGoRRCR2QlRXVgM",
+        "latitude": -34.9649596,
+        "longitude": 138.5094753,
+        "address": "52 N Esplanade, Glenelg North SA 5045, Australia",
+        "rating": 5
+      }
+    ]
   },
   {
     "Name": "Bray St Roasters",
@@ -3526,7 +3535,16 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJQc1_I1IX1moRxoKRQkgK6-o",
+        "latitude": -38.017264,
+        "longitude": 145.3050076,
+        "address": "K131/25-55 Magid Dr, Narre Warren VIC 3805, Australia",
+        "rating": 3.5
+      }
+    ]
   },
   {
     "Name": "Coffee in Common",

@@ -167,7 +167,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJJ5bS6P9n1moRx76U3LjtN1A"
+        "place_id": "ChIJzTYSmmLpST4RJt1g8yJvdeM"
       }
     ]
   },
@@ -253,7 +253,7 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJo0UDfrZbkWsRH9DAyoI73tQ"
+        "place_id": "ChIJZcEztpNmeGkRBAzqOEqHgNk"
       }
     ]
   },
@@ -266,7 +266,7 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJWT-rgHClMioRqGpcWYDsm_c"
+        "place_id": "ChIJ12DBA2i7MioRr0TBxQNMpc4"
       }
     ]
   },
@@ -279,7 +279,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJc70YQhKjEmsRN36B2EvsSAA"
+        "place_id": "ChIJGWawcEKuEmsRAZpnB16LmXs"
       }
     ]
   },
@@ -292,7 +292,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJa57QtyTjdWsRSo14BXRnPm8"
+        "place_id": "ChIJu1VUdS1_MioRJgmqI4JN1_w"
       }
     ]
   },
@@ -540,7 +540,12 @@
     "State": "WA",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "WA",
+        "place_id": "ChIJASf7QV3Lj4ARSLxJNklJsSc"
+      }
+    ]
   },
   {
     "Name": "Cruze",
@@ -702,7 +707,7 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJXfHFveqlMioRBVfgK5Nlc3c"
+        "place_id": "ChIJ7fLSHJ6vMioRvSa6tpVcb68"
       }
     ]
   },
@@ -1004,7 +1009,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJmRrb-FC5MioRhlhDMCHzAIw"
+        "place_id": "ChIJXUd-h7Zd1moRM3s1x9By5t8"
       }
     ]
   },
@@ -1017,7 +1022,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJEQFWu1qIEmsRTfwhTEUPWJk"
+        "place_id": "ChIJ__9vxOKWEmsRgYJFfKfYNjk"
       }
     ]
   },
@@ -1030,7 +1035,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJIdaGSgGrEmsRA5A4TQaNXWI"
+        "place_id": "ChIJMSdqujerEmsRwsJI--zIxw0"
       }
     ]
   },
@@ -1079,12 +1084,7 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "VIC",
-        "place_id": "ChIJMzrwAslC1moRKuXaN2eeaXw"
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Mecca Coffee",
@@ -2439,7 +2439,7 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ3YfhmsfEsGoR368LZAxTsqU"
+        "place_id": "ChIJb07Tn1LFsGoRECB7MRT8DtM"
       }
     ]
   },
@@ -2613,7 +2613,12 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ0cg8_mbbsGoRRCR2QlRXVgM"
+      }
+    ]
   },
   {
     "Name": "Bray St Roasters",
@@ -2686,7 +2691,12 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJQc1_I1IX1moRxoKRQkgK6-o"
+      }
+    ]
   },
   {
     "Name": "Coffee in Common",
