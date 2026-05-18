@@ -266,7 +266,7 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJ12DBA2i7MioRr0TBxQNMpc4"
+        "place_id": "ChIJWT-rgHClMioRqGpcWYDsm_c"
       }
     ]
   },
@@ -279,7 +279,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJGWawcEKuEmsRAZpnB16LmXs"
+        "place_id": "ChIJ326-kNq0lmsRsIDe81qjAgU"
       }
     ]
   },
@@ -292,7 +292,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJu1VUdS1_MioRJgmqI4JN1_w"
+        "place_id": "ChIJa57QtyTjdWsRSo14BXRnPm8"
       }
     ]
   },
@@ -471,12 +471,7 @@
     "State": "QLD",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "QLD",
-        "place_id": "ChIJ1_Uj6TICkWsRZa0vRjjVaJ0"
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Coffee Chakra ",
@@ -543,7 +538,7 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJASf7QV3Lj4ARSLxJNklJsSc"
+        "place_id": "ChIJtbERhvmDMioRUeIcPPux54U"
       }
     ]
   },
@@ -707,7 +702,7 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJ7fLSHJ6vMioRvSa6tpVcb68"
+        "place_id": "ChIJXfHFveqlMioRBVfgK5Nlc3c"
       }
     ]
   },
@@ -845,7 +840,7 @@
       },
       {
         "state": "QLD",
-        "place_id": "ChIJLT2riqFZkWsRN1Y6UYR6rcs"
+        "place_id": "ChIJc8Lw97pbkWsRcoV4OzfDIf4"
       }
     ]
   },
@@ -1022,7 +1017,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ__9vxOKWEmsRgYJFfKfYNjk"
+        "place_id": "ChIJu4qpwvYDkWsRQ15btVYnX70"
       }
     ]
   },
@@ -1061,7 +1056,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJfwM3SFFC1moRqHiTyaepYTQ"
+        "place_id": "ChIJw3ZAzdJD1moRdTHBsWBAcao"
       }
     ]
   },
@@ -1084,7 +1079,12 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJT-tyjjRd1moRqeXlykOTVQc"
+      }
+    ]
   },
   {
     "Name": "Mecca Coffee",
@@ -2072,7 +2072,7 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJKVfMiTQZ2jERk7IpVMwaF4c"
+        "place_id": "ChIJTVN4VlilMioRq4WBRtvJA7g"
       }
     ]
   },
@@ -2566,12 +2566,7 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "SA",
-        "place_id": "ChIJV8HqWPL1XIYRYFmn-AoiCNs"
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Fleurieu Roast",
@@ -2691,12 +2686,7 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "VIC",
-        "place_id": "ChIJQc1_I1IX1moRxoKRQkgK6-o"
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Coffee in Common",
