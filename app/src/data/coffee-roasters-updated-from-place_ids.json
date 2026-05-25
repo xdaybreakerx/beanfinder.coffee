@@ -88,7 +88,7 @@
         "latitude": -37.8065523,
         "longitude": 144.9893899,
         "address": "80 Rupert St, Collingwood VIC 3066, Australia",
-        "rating": 4.5
+        "rating": 4.4
       },
       {
         "state": "QLD",
@@ -346,10 +346,10 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJWT-rgHClMioRqGpcWYDsm_c",
-        "latitude": -31.9471314,
-        "longitude": 115.8248344,
-        "address": "439D Hay St, Subiaco WA 6008, Australia",
+        "place_id": "ChIJ12DBA2i7MioRr0TBxQNMpc4",
+        "latitude": -31.9943514,
+        "longitude": 115.9187976,
+        "address": "41 Welshpool Rd, Welshpool WA 6106, Australia",
         "rating": 4.6
       }
     ]
@@ -605,7 +605,7 @@
         "latitude": -37.8330718,
         "longitude": 144.9567603,
         "address": "321 Coventry St, South Melbourne VIC 3205, Australia",
-        "rating": 4.2
+        "rating": 4.1
       }
     ]
   },
@@ -615,7 +615,16 @@
     "State": "QLD",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "QLD",
+        "place_id": "ChIJ1_Uj6TICkWsRZa0vRjjVaJ0",
+        "latitude": -28.1054439,
+        "longitude": 153.4295492,
+        "address": "Unit 4/15a Leda Dr, Burleigh Heads QLD 4220, Australia",
+        "rating": 4.9
+      }
+    ]
   },
   {
     "Name": "Coffee Chakra ",
@@ -702,11 +711,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJtbERhvmDMioRUeIcPPux54U",
-        "latitude": -32.2899689,
-        "longitude": 115.7436128,
-        "address": "GO41, 1 Council Ave, Rockingham WA 6168, Australia",
-        "rating": 4.6
+        "place_id": "ChIJV9eP2ZXLSYYR6xwpA4DcXZ8",
+        "latitude": 32.2711895,
+        "longitude": -95.3416369,
+        "address": "2251 Three Lakes Pkwy #107, Tyler, TX 75703, USA",
+        "rating": 4.5
       }
     ]
   },
@@ -1084,11 +1093,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJgRXO-rRC1moRwcB73rcSyIE",
-        "latitude": -37.8154635,
-        "longitude": 144.963264,
-        "address": "345 Little Collins St, Melbourne VIC 3000, Australia",
-        "rating": 4.3
+        "place_id": "ChIJ_7ffMiFD1moR5NCnlSFhECk",
+        "latitude": -37.7948113,
+        "longitude": 144.9781341,
+        "address": "70-76 Westgarth St, Fitzroy VIC 3065, Australia",
+        "rating": 4.4
       },
       {
         "state": "NSW",
@@ -1282,7 +1291,7 @@
         "latitude": -33.86483,
         "longitude": 151.1774597,
         "address": "26D Mansfield St, Rozelle NSW 2039, Australia",
-        "rating": 4.2
+        "rating": 4.3
       }
     ]
   },
@@ -1329,11 +1338,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJu4qpwvYDkWsRQ15btVYnX70",
-        "latitude": -28.1045549,
-        "longitude": 153.4272369,
-        "address": "4/18 Prosper Cres, Burleigh Heads QLD 4220, Australia",
-        "rating": 4.3
+        "place_id": "ChIJEQFWu1qIEmsRTfwhTEUPWJk",
+        "latitude": -33.7419967,
+        "longitude": 150.6936035,
+        "address": "4/2187 Castlereagh Rd, Penrith NSW 2750, Australia",
+        "rating": 4.9
       }
     ]
   },
@@ -1414,11 +1423,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJT-tyjjRd1moRqeXlykOTVQc",
-        "latitude": -37.8062804,
-        "longitude": 144.9580131,
-        "address": "83-85 Victoria St, Melbourne VIC 3000, Australia",
-        "rating": 4.3
+        "place_id": "ChIJMzrwAslC1moRKuXaN2eeaXw",
+        "latitude": -37.8118922,
+        "longitude": 144.9693252,
+        "address": "Market Ln, Melbourne VIC 3000, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -1587,7 +1596,7 @@
         "latitude": -33.8243287,
         "longitude": 151.200812,
         "address": "Shop 2/118 Willoughby Rd, Crows Nest NSW 2065, Australia",
-        "rating": 4.7
+        "rating": 4.5
       }
     ]
   },
@@ -2302,11 +2311,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ6WOL2kyxEmsRVrkIY-MMkvw",
-        "latitude": -33.9116948,
-        "longitude": 151.1633057,
-        "address": "15 Sydney St, Marrickville NSW 2204, Australia",
-        "rating": 5
+        "place_id": "ChIJf-5n3HWvEmsRwrzJ27_9NYs",
+        "latitude": -33.8834258,
+        "longitude": 151.1951103,
+        "address": "80 Bay St, Ultimo NSW 2007, Australia",
+        "rating": 4.5
       }
     ]
   },
@@ -2724,11 +2733,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJTVN4VlilMioRq4WBRtvJA7g",
-        "latitude": -31.920182,
-        "longitude": 115.837642,
-        "address": "77 Coogee St, Mount Hawthorn WA 6016, Australia",
-        "rating": 4.7
+        "place_id": "ChIJKVfMiTQZ2jERk7IpVMwaF4c",
+        "latitude": 1.2819562,
+        "longitude": 103.8439381,
+        "address": "34 Sago St, #01-01, Singapore 059026",
+        "rating": 4.6
       }
     ]
   },
@@ -2762,7 +2771,7 @@
         "latitude": -31.95559299999999,
         "longitude": 115.8637877,
         "address": "Shop 2/480 Hay St, Perth WA 6000, Australia",
-        "rating": 4.5
+        "rating": 4.6
       }
     ]
   },
@@ -3093,7 +3102,7 @@
         "latitude": -33.7670481,
         "longitude": 151.2653916,
         "address": "Kiosk 10K02, Westfield Warringah Mall, Brookvale NSW 2100, Australia",
-        "rating": 4.6
+        "rating": 4.5
       },
       {
         "state": "VIC",
@@ -3262,7 +3271,7 @@
         "latitude": -34.9137796,
         "longitude": 138.6304913,
         "address": "22 Nelson St, Stepney SA 5069, Australia",
-        "rating": 4.1
+        "rating": 4.2
       }
     ]
   },
@@ -3526,7 +3535,16 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJQc1_I1IX1moRxoKRQkgK6-o",
+        "latitude": -38.017264,
+        "longitude": 145.3050076,
+        "address": "K131/25-55 Magid Dr, Narre Warren VIC 3805, Australia",
+        "rating": 3.5
+      }
+    ]
   },
   {
     "Name": "Coffee in Common",
