@@ -34,7 +34,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJs8sfHx9D1moRJnTIRru0bxk"
+        "place_id": "ChIJn1FUnktd1moRgZCDC6aPCcw"
       }
     ]
   },
@@ -242,7 +242,12 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJKRXBsD2xEmsRVe81SfhddGM"
+      }
+    ]
   },
   {
     "Name": "Blackbird Espresso",
@@ -579,7 +584,12 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJ_c_h1EKqEmsRDqk19J_F-Sk"
+      }
+    ]
   },
   {
     "Name": "Darkstar Coffee",
@@ -837,7 +847,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJ_7ffMiFD1moR5NCnlSFhECk"
+        "place_id": "ChIJgRXO-rRC1moRwcB73rcSyIE"
       },
       {
         "state": "NSW",
@@ -897,7 +907,7 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJwb9WhU5RFGsRJ3KMrneonl8"
+        "place_id": "ChIJp7ODnLX_DogRpoSDGWWqMkI"
       }
     ]
   },
@@ -1061,7 +1071,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJw3ZAzdJD1moRdTHBsWBAcao"
+        "place_id": "ChIJfwM3SFFC1moRqHiTyaepYTQ"
       }
     ]
   },
@@ -1238,7 +1248,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJYeSX8llD1moReVgb27XXvqY"
+        "place_id": "ChIJK_V6t_5n1moR_TcAscymyIw"
       }
     ]
   },
@@ -1598,7 +1608,12 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJBfYI0plDkYARapsAuDAxxTQ"
+      }
+    ]
   },
   {
     "Name": "Seven Miles Roasters",
@@ -1913,7 +1928,7 @@
     "place_ids": [
       {
         "state": "TAS",
-        "place_id": "ChIJbS_0zcZ1bqoRLsA2vhSd0UE"
+        "place_id": "ChIJLVVHO5t1bqoRx2GfeboXBcU"
       }
     ]
   },
@@ -2040,7 +2055,12 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJgQgzLSD9Z0sRfh11onLJ8NY"
+      }
+    ]
   },
   {
     "Name": "Supernumerary Coffee",
@@ -2354,11 +2374,11 @@
       },
       {
         "state": "NSW",
-        "place_id": "ChIJJ0yyRhStEmsR53eIn0gPuvE"
+        "place_id": "ChIJAU6Yrb-rEmsRAnA9BCpYcYk"
       },
       {
         "state": "VIC",
-        "place_id": "ChIJX7ZmCUNH1moRnqVKkByP9D4"
+        "place_id": "ChIJZY6qGeVD1moR7zhYqXUAK0Y"
       }
     ]
   },
@@ -2571,7 +2591,12 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJV8HqWPL1XIYRYFmn-AoiCNs"
+      }
+    ]
   },
   {
     "Name": "Fleurieu Roast",
@@ -2613,12 +2638,7 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "SA",
-        "place_id": "ChIJ0cg8_mbbsGoRRCR2QlRXVgM"
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Bray St Roasters",
@@ -2756,7 +2776,12 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJ095uC7lD1moRpd-EZMWaVCU"
+      }
+    ]
   },
   {
     "Name": "Acuratore",
