@@ -117,11 +117,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJO4vwXFhFkWsREv9U7-YV-4E",
-        "latitude": -27.562479,
-        "longitude": 153.016765,
-        "address": "2/4 Willingdon St, Archerfield QLD 4108, Australia",
-        "rating": 4.3
+        "place_id": "ChIJgyGay0pZkWsRZCUO_x09CIk",
+        "latitude": -27.6742565,
+        "longitude": 153.1890687,
+        "address": "Unit 4, 14/16 Cairns St, Loganholme QLD 4129, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -369,7 +369,16 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJGWawcEKuEmsRAZpnB16LmXs",
+        "latitude": -33.867247,
+        "longitude": 151.2115647,
+        "address": "l20/126 Phillip St, Sydney NSW 2000, Australia",
+        "rating": "N/A"
+      }
+    ]
   },
   {
     "Name": "Bliss Coffee Roasters",
@@ -711,11 +720,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJtbERhvmDMioRUeIcPPux54U",
-        "latitude": -32.2899689,
-        "longitude": 115.7436128,
-        "address": "GO41, 1 Council Ave, Rockingham WA 6168, Australia",
-        "rating": 4.6
+        "place_id": "ChIJV9eP2ZXLSYYR6xwpA4DcXZ8",
+        "latitude": 32.2711895,
+        "longitude": -95.3416369,
+        "address": "2251 Three Lakes Pkwy #107, Tyler, TX 75703, USA",
+        "rating": 4.5
       }
     ]
   },
@@ -762,11 +771,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJy4dSVt6xEmsRf3GEV4uBxUg",
-        "latitude": -33.8861186,
-        "longitude": 151.2294379,
-        "address": "344 Oxford St, Paddington NSW 2021, Australia",
-        "rating": 3.7
+        "place_id": "ChIJ_c_h1EKqEmsRDqk19J_F-Sk",
+        "latitude": -33.763324,
+        "longitude": 151.268433,
+        "address": "28 Dale St, Brookvale NSW 2100, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -987,7 +996,7 @@
         "latitude": -32.9279771,
         "longitude": 151.766802,
         "address": "398 King St, Newcastle West NSW 2302, Australia",
-        "rating": 4.9
+        "rating": 4.8
       }
     ]
   },
@@ -1186,11 +1195,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJKWIlutUW1GoR9FxZadJT5UU",
-        "latitude": -38.1057749,
-        "longitude": 144.3503194,
-        "address": "42 Cowie St, North Geelong VIC 3215, Australia",
-        "rating": 5
+        "place_id": "ChIJp7ODnLX_DogRpoSDGWWqMkI",
+        "latitude": 41.8839247,
+        "longitude": -88.2065439,
+        "address": "148 W Washington St, West Chicago, IL 60185, USA",
+        "rating": 4.8
       }
     ]
   },
@@ -1258,7 +1267,7 @@
         "latitude": -32.9252851,
         "longitude": 151.7107703,
         "address": "21 Carrington Parade, New Lambton NSW 2305, Australia",
-        "rating": 5
+        "rating": 4.9
       }
     ]
   },
@@ -1347,11 +1356,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJu4qpwvYDkWsRQ15btVYnX70",
-        "latitude": -28.1045549,
-        "longitude": 153.4272369,
-        "address": "4/18 Prosper Cres, Burleigh Heads QLD 4220, Australia",
-        "rating": 4.3
+        "place_id": "ChIJ_36JuaakEmsRG08QSuYNtQU",
+        "latitude": -33.834486,
+        "longitude": 151.051854,
+        "address": "26 Fariola St, Silverwater NSW 2128, Australia",
+        "rating": 4.7
       }
     ]
   },
@@ -1635,11 +1644,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJYeSX8llD1moReVgb27XXvqY",
-        "latitude": -37.7641144,
-        "longitude": 144.9732824,
-        "address": "438 Lygon St, Brunswick East VIC 3057, Australia",
-        "rating": 4.5
+        "place_id": "ChIJK_V6t_5n1moR_TcAscymyIw",
+        "latitude": -37.8325381,
+        "longitude": 144.9563457,
+        "address": "South Melbourne Market, 33/322-326 Coventry St, South Melbourne VIC 3205, Australia",
+        "rating": 4
       }
     ]
   },
@@ -2063,7 +2072,7 @@
         "latitude": -37.8177555,
         "longitude": 145.2216268,
         "address": "8 Olive Grove, Ringwood VIC 3134, Australia",
-        "rating": 4.8
+        "rating": 4.7
       }
     ]
   },
@@ -2316,7 +2325,7 @@
         "latitude": -37.8004411,
         "longitude": 144.9627509,
         "address": "183 Grattan St, Carlton VIC 3053, Australia",
-        "rating": 4.5
+        "rating": 4.4
       }
     ]
   },
@@ -2539,11 +2548,11 @@
     "place_ids": [
       {
         "state": "TAS",
-        "place_id": "ChIJbS_0zcZ1bqoRLsA2vhSd0UE",
-        "latitude": -42.8395283,
-        "longitude": 147.2947843,
-        "address": "43 Sunderland St, Moonah TAS 7009, Australia",
-        "rating": 4.9
+        "place_id": "ChIJLVVHO5t1bqoRx2GfeboXBcU",
+        "latitude": -42.8813589,
+        "longitude": 147.3256386,
+        "address": "30 Criterion St, Hobart TAS 7000, Australia",
+        "rating": 4.8
       }
     ]
   },
@@ -2628,7 +2637,7 @@
         "latitude": -33.8798342,
         "longitude": 151.1973423,
         "address": "103 Jones St, Ultimo NSW 2007, Australia",
-        "rating": 4
+        "rating": 3.9
       }
     ]
   },
@@ -2760,11 +2769,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJKVfMiTQZ2jERk7IpVMwaF4c",
-        "latitude": 1.2819562,
-        "longitude": 103.8439381,
-        "address": "34 Sago St, #01-01, Singapore 059026",
-        "rating": 4.6
+        "place_id": "ChIJIaOzeQClMioRrhoiM-Au9kw",
+        "latitude": -31.9848258,
+        "longitude": 115.8146581,
+        "address": "8/114 Broadway, Crawley WA 6009, Australia",
+        "rating": 5
       }
     ]
   },
@@ -2777,11 +2786,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJpQ8_w8ZM0WoRi7zVVdrumOA",
-        "latitude": -37.5292973,
-        "longitude": 143.844958,
-        "address": "10 Builders Cl, Wendouree VIC 3355, Australia",
-        "rating": 5
+        "place_id": "ChIJPy754pPgeyYRqIaAhfy4fas",
+        "latitude": -37.5293461,
+        "longitude": 143.8449344,
+        "address": "Co located @ Karon Farm Coffee, 10 Builders Cl, Wendouree VIC 3355, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -2879,11 +2888,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJkxjDBPxTDWsR3xCjQyjChKA",
-        "latitude": -33.664956,
-        "longitude": 151.2987183,
-        "address": "24 Beaumont Cres, Bayview NSW 2104, Australia",
-        "rating": "N/A"
+        "place_id": "ChIJHbBL-dqHkGsRoU8_AEYM_60",
+        "latitude": -28.7077255,
+        "longitude": 153.5477294,
+        "address": "193 Broken Head Rd, Newrybar NSW 2479, Australia",
+        "rating": 4.9
       }
     ]
   },
@@ -3410,7 +3419,16 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJV8HqWPL1XIYRYFmn-AoiCNs",
+        "latitude": 29.4464843,
+        "longitude": -98.4752338,
+        "address": "2202 Broadway, San Antonio, TX 78215, USA",
+        "rating": 4.8
+      }
+    ]
   },
   {
     "Name": "Fleurieu Roast",
@@ -3688,6 +3706,15 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJWR4AJIpD1moRqnRC9abE3To",
+        "latitude": -37.8175798,
+        "longitude": 144.9658243,
+        "address": "7a Degraves St, Melbourne VIC 3000, Australia",
+        "rating": 4.7
+      }
+    ]
   }
 ]
