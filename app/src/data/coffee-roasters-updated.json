@@ -271,7 +271,7 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJ12DBA2i7MioRr0TBxQNMpc4"
+        "place_id": "ChIJWT-rgHClMioRqGpcWYDsm_c"
       }
     ]
   },
@@ -281,12 +281,7 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "NSW",
-        "place_id": "ChIJGWawcEKuEmsRAZpnB16LmXs"
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Bliss Coffee Roasters",
@@ -587,7 +582,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ_c_h1EKqEmsRDqk19J_F-Sk"
+        "place_id": "ChIJy4dSVt6xEmsRf3GEV4uBxUg"
       }
     ]
   },
@@ -782,7 +777,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJS846Ux6uEmsRyRjCkgLwEos"
+        "place_id": "ChIJZ934S0KuEmsR_0lxV3PTR4M"
       }
     ]
   },
@@ -1032,7 +1027,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ_36JuaakEmsRG08QSuYNtQU"
+        "place_id": "ChIJ__9vxOKWEmsRgYJFfKfYNjk"
       }
     ]
   },
@@ -1045,7 +1040,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJMSdqujerEmsRwsJI--zIxw0"
+        "place_id": "ChIJYw3RdhCuEmsRqZcvClvzEJU"
       }
     ]
   },
@@ -1071,7 +1066,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJfwM3SFFC1moRqHiTyaepYTQ"
+        "place_id": "ChIJw3ZAzdJD1moRdTHBsWBAcao"
       }
     ]
   },
@@ -1248,7 +1243,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJK_V6t_5n1moR_TcAscymyIw"
+        "place_id": "ChIJYeSX8llD1moReVgb27XXvqY"
       }
     ]
   },
@@ -1611,7 +1606,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJBfYI0plDkYARapsAuDAxxTQ"
+        "place_id": "ChIJ2dph0aJD1moRhxS2CC34T5c"
       }
     ]
   },
@@ -2058,7 +2053,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ1asfSdidV4gRJxlDQnv7Idk"
+        "place_id": "ChIJgQgzLSD9Z0sRfh11onLJ8NY"
       }
     ]
   },
@@ -2188,7 +2183,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJHbBL-dqHkGsRoU8_AEYM_60"
+        "place_id": "ChIJE8XYJB4plzMRg3gYOmA8YAI"
       }
     ]
   },
@@ -2374,11 +2369,11 @@
       },
       {
         "state": "NSW",
-        "place_id": "ChIJAU6Yrb-rEmsRAnA9BCpYcYk"
+        "place_id": "ChIJJ0yyRhStEmsR53eIn0gPuvE"
       },
       {
         "state": "VIC",
-        "place_id": "ChIJX7ZmCUNH1moRnqVKkByP9D4"
+        "place_id": "ChIJZY6qGeVD1moR7zhYqXUAK0Y"
       }
     ]
   },
@@ -2591,12 +2586,7 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "SA",
-        "place_id": "ChIJV8HqWPL1XIYRYFmn-AoiCNs"
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Fleurieu Roast",
@@ -2821,7 +2811,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJWR4AJIpD1moRqnRC9abE3To"
+        "place_id": "ChIJl27gH2bjdWsRejZN9fhn2PI"
       }
     ]
   }

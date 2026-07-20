@@ -274,7 +274,7 @@
         "latitude": -35.2717067,
         "longitude": 149.1332419,
         "address": "59/30 Lonsdale St, Braddon ACT 2612, Australia",
-        "rating": 4.4
+        "rating": 4.5
       }
     ]
   },
@@ -355,10 +355,10 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJ12DBA2i7MioRr0TBxQNMpc4",
-        "latitude": -31.9943514,
-        "longitude": 115.9187976,
-        "address": "41 Welshpool Rd, Welshpool WA 6106, Australia",
+        "place_id": "ChIJWT-rgHClMioRqGpcWYDsm_c",
+        "latitude": -31.9471314,
+        "longitude": 115.8248344,
+        "address": "439D Hay St, Subiaco WA 6008, Australia",
         "rating": 4.6
       }
     ]
@@ -369,16 +369,7 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "NSW",
-        "place_id": "ChIJGWawcEKuEmsRAZpnB16LmXs",
-        "latitude": -33.867247,
-        "longitude": 151.2115647,
-        "address": "l20/126 Phillip St, Sydney NSW 2000, Australia",
-        "rating": "N/A"
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Bliss Coffee Roasters",
@@ -771,11 +762,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ_c_h1EKqEmsRDqk19J_F-Sk",
-        "latitude": -33.763324,
-        "longitude": 151.268433,
-        "address": "28 Dale St, Brookvale NSW 2100, Australia",
-        "rating": 4.6
+        "place_id": "ChIJy4dSVt6xEmsRf3GEV4uBxUg",
+        "latitude": -33.8861186,
+        "longitude": 151.2294379,
+        "address": "344 Oxford St, Paddington NSW 2021, Australia",
+        "rating": 3.7
       }
     ]
   },
@@ -874,8 +865,8 @@
       {
         "state": "NSW",
         "place_id": "ChIJJeRjRtmvEmsRvku-OhXBVAI",
-        "latitude": -33.8785445,
-        "longitude": 151.2011511,
+        "latitude": -33.8785454,
+        "longitude": 151.2011615,
         "address": "60 Darling Dr, Haymarket NSW 2000, Australia",
         "rating": 4.3
       }
@@ -1026,10 +1017,10 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJS846Ux6uEmsRyRjCkgLwEos",
-        "latitude": -33.8881135,
-        "longitude": 151.2132272,
-        "address": "485 Crown St, Surry Hills NSW 2010, Australia",
+        "place_id": "ChIJZ934S0KuEmsR_0lxV3PTR4M",
+        "latitude": -33.8614491,
+        "longitude": 151.207588,
+        "address": "199 George St, The Rocks NSW 2000, Australia",
         "rating": 4.5
       }
     ]
@@ -1131,7 +1122,7 @@
         "latitude": -27.4675273,
         "longitude": 153.0265775,
         "address": "Shop 6/243 Edward St, Brisbane City QLD 4000, Australia",
-        "rating": 4.3
+        "rating": 4.4
       }
     ]
   },
@@ -1343,7 +1334,7 @@
         "latitude": -37.8446381,
         "longitude": 144.9792762,
         "address": "517 St Kilda Rd, Melbourne VIC 3004, Australia",
-        "rating": 4.6
+        "rating": 4.5
       }
     ]
   },
@@ -1356,11 +1347,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ_36JuaakEmsRG08QSuYNtQU",
-        "latitude": -33.834486,
-        "longitude": 151.051854,
-        "address": "26 Fariola St, Silverwater NSW 2128, Australia",
-        "rating": 4.7
+        "place_id": "ChIJ__9vxOKWEmsRgYJFfKfYNjk",
+        "latitude": -33.8514576,
+        "longitude": 150.8943897,
+        "address": "6/1199 The Horsley Dr, Wetherill Park NSW 2164, Australia",
+        "rating": 4.9
       }
     ]
   },
@@ -1373,11 +1364,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJMSdqujerEmsRwsJI--zIxw0",
-        "latitude": -33.7971416,
-        "longitude": 151.2871504,
-        "address": "Unit 4/10 Sydney Rd, Manly NSW 2095, Australia",
-        "rating": 4.8
+        "place_id": "ChIJYw3RdhCuEmsRqZcvClvzEJU",
+        "latitude": -33.8814163,
+        "longitude": 151.2109532,
+        "address": "Level 3/69 Reservoir St, Surry Hills NSW 2010, Australia",
+        "rating": 5
       }
     ]
   },
@@ -1407,11 +1398,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJfwM3SFFC1moRqHiTyaepYTQ",
-        "latitude": -37.8161665,
-        "longitude": 145.0113816,
-        "address": "47 North St, Richmond VIC 3121, Australia",
-        "rating": 4.8
+        "place_id": "ChIJw3ZAzdJD1moRdTHBsWBAcao",
+        "latitude": -37.8137885,
+        "longitude": 144.9613945,
+        "address": "387 Little Bourke St, Melbourne VIC 3000, Australia",
+        "rating": 4.5
       }
     ]
   },
@@ -1644,11 +1635,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJK_V6t_5n1moR_TcAscymyIw",
-        "latitude": -37.8325381,
-        "longitude": 144.9563457,
-        "address": "South Melbourne Market, 33/322-326 Coventry St, South Melbourne VIC 3205, Australia",
-        "rating": 4
+        "place_id": "ChIJYeSX8llD1moReVgb27XXvqY",
+        "latitude": -37.7641144,
+        "longitude": 144.9732824,
+        "address": "438 Lygon St, Brunswick East VIC 3057, Australia",
+        "rating": 4.5
       }
     ]
   },
@@ -2119,11 +2110,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJBfYI0plDkYARapsAuDAxxTQ",
-        "latitude": 37.3036422,
-        "longitude": -120.488861,
-        "address": "847 W Main St, Merced, CA 95340, USA",
-        "rating": 4.6
+        "place_id": "ChIJ2dph0aJD1moRhxS2CC34T5c",
+        "latitude": -37.8133829,
+        "longitude": 144.9725598,
+        "address": "Shop 1, 30 Collins Street Melbourne Entrance via Collins Street or, Ridgway Pl, Melbourne VIC 3000, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -2718,11 +2709,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ1asfSdidV4gRJxlDQnv7Idk",
-        "latitude": 34.9501041,
-        "longitude": -81.9956229,
-        "address": "121 Bellew Carver Rd, Spartanburg, SC 29301, USA",
-        "rating": 4.8
+        "place_id": "ChIJgQgzLSD9Z0sRfh11onLJ8NY",
+        "latitude": 46.1130714,
+        "longitude": -60.1720174,
+        "address": "121 Reservoir Rd, Sydney, NS B1P 3H6, Canada",
+        "rating": 4.9
       }
     ]
   },
@@ -2888,10 +2879,10 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJHbBL-dqHkGsRoU8_AEYM_60",
-        "latitude": -28.7077255,
-        "longitude": 153.5477294,
-        "address": "193 Broken Head Rd, Newrybar NSW 2479, Australia",
+        "place_id": "ChIJE8XYJB4plzMRg3gYOmA8YAI",
+        "latitude": 15.4884788,
+        "longitude": 120.9685077,
+        "address": "Gabaldon Street, Cabanatuan City, Nueva Ecija, Philippines",
         "rating": 4.9
       }
     ]
@@ -3134,19 +3125,19 @@
       },
       {
         "state": "NSW",
-        "place_id": "ChIJAU6Yrb-rEmsRAnA9BCpYcYk",
-        "latitude": -33.7670481,
-        "longitude": 151.2653916,
-        "address": "Kiosk 10K02, Westfield Warringah Mall, Brookvale NSW 2100, Australia",
-        "rating": 4.5
+        "place_id": "ChIJJ0yyRhStEmsR53eIn0gPuvE",
+        "latitude": -33.8918138,
+        "longitude": 151.2511162,
+        "address": "level 2/500 Oxford St, Bondi Junction NSW 2022, Australia",
+        "rating": 5
       },
       {
         "state": "VIC",
-        "place_id": "ChIJX7ZmCUNH1moRnqVKkByP9D4",
-        "latitude": -37.7851115,
-        "longitude": 145.1262028,
-        "address": "Westfield Doncaster, Kiosk K110/619 Doncaster Rd, Doncaster VIC 3108, Australia",
-        "rating": 4
+        "place_id": "ChIJZY6qGeVD1moR7zhYqXUAK0Y",
+        "latitude": -37.8116466,
+        "longitude": 144.963515,
+        "address": "L1/Cnr LaTrobe and Swanston Streets, Melbourne VIC 3000, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -3188,7 +3179,7 @@
         "latitude": -34.931827,
         "longitude": 138.6689063,
         "address": "Unit 1/38 Hallett Rd, Stonyfell SA 5066, Australia",
-        "rating": 4.4
+        "rating": 4.5
       }
     ]
   },
@@ -3419,16 +3410,7 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "SA",
-        "place_id": "ChIJV8HqWPL1XIYRYFmn-AoiCNs",
-        "latitude": 29.4464843,
-        "longitude": -98.4752338,
-        "address": "2202 Broadway, San Antonio, TX 78215, USA",
-        "rating": 4.8
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Fleurieu Roast",
@@ -3709,11 +3691,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJWR4AJIpD1moRqnRC9abE3To",
-        "latitude": -37.8175798,
-        "longitude": 144.9658243,
-        "address": "7a Degraves St, Melbourne VIC 3000, Australia",
-        "rating": 4.7
+        "place_id": "ChIJl27gH2bjdWsRejZN9fhn2PI",
+        "latitude": -31.6510707,
+        "longitude": 152.7971824,
+        "address": "55 Bold St, Laurieton NSW 2443, Australia",
+        "rating": 4.8
       }
     ]
   }
