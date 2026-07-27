@@ -355,11 +355,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJWT-rgHClMioRqGpcWYDsm_c",
-        "latitude": -31.9471314,
-        "longitude": 115.8248344,
-        "address": "439D Hay St, Subiaco WA 6008, Australia",
-        "rating": 4.6
+        "place_id": "ChIJ12DBA2i7MioRr0TBxQNMpc4",
+        "latitude": -31.9943514,
+        "longitude": 115.9187976,
+        "address": "41 Welshpool Rd, Welshpool WA 6106, Australia",
+        "rating": 4.7
       }
     ]
   },
@@ -369,7 +369,16 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJc70YQhKjEmsRN36B2EvsSAA",
+        "latitude": -33.7310415,
+        "longitude": 150.9693732,
+        "address": "4 Columbia Ct, Norwest NSW 2153, Australia",
+        "rating": 5
+      }
+    ]
   },
   {
     "Name": "Bliss Coffee Roasters",
@@ -571,7 +580,7 @@
         "latitude": -34.8941892,
         "longitude": 138.5541761,
         "address": "568 Port Rd, Allenby Gardens SA 5009, Australia",
-        "rating": 4.7
+        "rating": 4.8
       }
     ]
   },
@@ -711,11 +720,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJV9eP2ZXLSYYR6xwpA4DcXZ8",
-        "latitude": 32.2711895,
-        "longitude": -95.3416369,
-        "address": "2251 Three Lakes Pkwy #107, Tyler, TX 75703, USA",
-        "rating": 4.5
+        "place_id": "ChIJASf7QV3Lj4ARSLxJNklJsSc",
+        "latitude": 37.3317526,
+        "longitude": -121.9117863,
+        "address": "1202 The Alameda, San Jose, CA 95126, USA",
+        "rating": 4.4
       }
     ]
   },
@@ -1186,11 +1195,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJp7ODnLX_DogRpoSDGWWqMkI",
-        "latitude": 41.8839247,
-        "longitude": -88.2065439,
-        "address": "148 W Washington St, West Chicago, IL 60185, USA",
-        "rating": 4.8
+        "place_id": "ChIJwb9WhU5RFGsRJ3KMrneonl8",
+        "latitude": -35.3173377,
+        "longitude": 150.4368073,
+        "address": "109 Princes Hwy, Milton NSW 2538, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -1224,7 +1233,7 @@
         "latitude": -32.0959011,
         "longitude": 115.8125355,
         "address": "1/12 Horus Bend, Bibra Lake WA 6163, Australia",
-        "rating": 4.9
+        "rating": 4.8
       }
     ]
   },
@@ -1347,11 +1356,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ__9vxOKWEmsRgYJFfKfYNjk",
-        "latitude": -33.8514576,
-        "longitude": 150.8943897,
-        "address": "6/1199 The Horsley Dr, Wetherill Park NSW 2164, Australia",
-        "rating": 4.9
+        "place_id": "ChIJ_36JuaakEmsRG08QSuYNtQU",
+        "latitude": -33.834486,
+        "longitude": 151.051854,
+        "address": "26 Fariola St, Silverwater NSW 2128, Australia",
+        "rating": 4.7
       }
     ]
   },
@@ -1432,11 +1441,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJMzrwAslC1moRKuXaN2eeaXw",
-        "latitude": -37.8118922,
-        "longitude": 144.9693252,
-        "address": "Market Ln, Melbourne VIC 3000, Australia",
-        "rating": "N/A"
+        "place_id": "ChIJT-tyjjRd1moRqeXlykOTVQc",
+        "latitude": -37.8062804,
+        "longitude": 144.9580131,
+        "address": "83-85 Victoria St, Melbourne VIC 3000, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -2110,11 +2119,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJ2dph0aJD1moRhxS2CC34T5c",
-        "latitude": -37.8133829,
-        "longitude": 144.9725598,
-        "address": "Shop 1, 30 Collins Street Melbourne Entrance via Collins Street or, Ridgway Pl, Melbourne VIC 3000, Australia",
-        "rating": 4.4
+        "place_id": "ChIJBfYI0plDkYARapsAuDAxxTQ",
+        "latitude": 37.3036422,
+        "longitude": -120.488861,
+        "address": "847 W Main St, Merced, CA 95340, USA",
+        "rating": 4.6
       }
     ]
   },
@@ -2329,11 +2338,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ6WOL2kyxEmsRVrkIY-MMkvw",
-        "latitude": -33.9116948,
-        "longitude": 151.1633057,
-        "address": "15 Sydney St, Marrickville NSW 2204, Australia",
-        "rating": 4.7
+        "place_id": "ChIJf-5n3HWvEmsRwrzJ27_9NYs",
+        "latitude": -33.8834258,
+        "longitude": 151.1951103,
+        "address": "80 Bay St, Ultimo NSW 2007, Australia",
+        "rating": 4.5
       }
     ]
   },
@@ -2539,11 +2548,11 @@
     "place_ids": [
       {
         "state": "TAS",
-        "place_id": "ChIJLVVHO5t1bqoRx2GfeboXBcU",
-        "latitude": -42.8813589,
-        "longitude": 147.3256386,
-        "address": "30 Criterion St, Hobart TAS 7000, Australia",
-        "rating": 4.8
+        "place_id": "ChIJbS_0zcZ1bqoRLsA2vhSd0UE",
+        "latitude": -42.8395283,
+        "longitude": 147.2947843,
+        "address": "43 Sunderland St, Moonah TAS 7009, Australia",
+        "rating": 4.9
       }
     ]
   },
@@ -2760,11 +2769,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJIaOzeQClMioRrhoiM-Au9kw",
-        "latitude": -31.9848258,
-        "longitude": 115.8146581,
-        "address": "8/114 Broadway, Crawley WA 6009, Australia",
-        "rating": 5
+        "place_id": "ChIJTVN4VlilMioRq4WBRtvJA7g",
+        "latitude": -31.920182,
+        "longitude": 115.837642,
+        "address": "77 Coogee St, Mount Hawthorn WA 6016, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -2777,11 +2786,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJPy754pPgeyYRqIaAhfy4fas",
-        "latitude": -37.5293461,
-        "longitude": 143.8449344,
-        "address": "Co located @ Karon Farm Coffee, 10 Builders Cl, Wendouree VIC 3355, Australia",
-        "rating": "N/A"
+        "place_id": "ChIJO3mOYPRF0WoRHHIKsOnr0Vw",
+        "latitude": -37.56228900000001,
+        "longitude": 143.8575021,
+        "address": "2 Lydiard St S, Ballarat Central VIC 3350, Australia",
+        "rating": 4.9
       }
     ]
   },
@@ -3460,7 +3469,16 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ-zOhsbzMj4AR-bC3P-1vrrs",
+        "latitude": 37.3347628,
+        "longitude": -121.8902183,
+        "address": "55 S 1st St, San Jose, CA 95113, USA",
+        "rating": 4.4
+      }
+    ]
   },
   {
     "Name": "Bray St Roasters",

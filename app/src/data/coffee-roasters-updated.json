@@ -271,7 +271,7 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJWT-rgHClMioRqGpcWYDsm_c"
+        "place_id": "ChIJ12DBA2i7MioRr0TBxQNMpc4"
       }
     ]
   },
@@ -281,7 +281,12 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJc70YQhKjEmsRN36B2EvsSAA"
+      }
+    ]
   },
   {
     "Name": "Bliss Coffee Roasters",
@@ -543,7 +548,7 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJV9eP2ZXLSYYR6xwpA4DcXZ8"
+        "place_id": "ChIJASf7QV3Lj4ARSLxJNklJsSc"
       }
     ]
   },
@@ -902,7 +907,7 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJp7ODnLX_DogRpoSDGWWqMkI"
+        "place_id": "ChIJwb9WhU5RFGsRJ3KMrneonl8"
       }
     ]
   },
@@ -1027,7 +1032,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ__9vxOKWEmsRgYJFfKfYNjk"
+        "place_id": "ChIJ_36JuaakEmsRG08QSuYNtQU"
       }
     ]
   },
@@ -1092,7 +1097,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJMzrwAslC1moRKuXaN2eeaXw"
+        "place_id": "ChIJT-tyjjRd1moRqeXlykOTVQc"
       }
     ]
   },
@@ -1606,7 +1611,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJ2dph0aJD1moRhxS2CC34T5c"
+        "place_id": "ChIJBfYI0plDkYARapsAuDAxxTQ"
       }
     ]
   },
@@ -1769,7 +1774,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ6WOL2kyxEmsRVrkIY-MMkvw"
+        "place_id": "ChIJf-5n3HWvEmsRwrzJ27_9NYs"
       }
     ]
   },
@@ -1923,7 +1928,7 @@
     "place_ids": [
       {
         "state": "TAS",
-        "place_id": "ChIJLVVHO5t1bqoRx2GfeboXBcU"
+        "place_id": "ChIJbS_0zcZ1bqoRLsA2vhSd0UE"
       }
     ]
   },
@@ -2092,7 +2097,7 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJIaOzeQClMioRrhoiM-Au9kw"
+        "place_id": "ChIJTVN4VlilMioRq4WBRtvJA7g"
       }
     ]
   },
@@ -2105,7 +2110,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJPy754pPgeyYRqIaAhfy4fas"
+        "place_id": "ChIJO3mOYPRF0WoRHHIKsOnr0Vw"
       }
     ]
   },
@@ -2628,7 +2633,12 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ-zOhsbzMj4AR-bC3P-1vrrs"
+      }
+    ]
   },
   {
     "Name": "Bray St Roasters",
