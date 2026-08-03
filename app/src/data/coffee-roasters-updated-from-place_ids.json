@@ -219,11 +219,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJzTYSmmLpST4RJt1g8yJvdeM",
-        "latitude": 26.3059554,
-        "longitude": 50.1902352,
-        "address": "6391 Prince Faisal Bin Fahd Road, Al Hizam Al Akhdar, Al Khobar 34436, Saudi Arabia",
-        "rating": 4.3
+        "place_id": "ChIJJ5bS6P9n1moRx76U3LjtN1A",
+        "latitude": -37.8312475,
+        "longitude": 144.960354,
+        "address": "12-18 Yarra Pl, South Melbourne VIC 3205, Australia",
+        "rating": 4.2
       }
     ]
   },
@@ -355,11 +355,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJ12DBA2i7MioRr0TBxQNMpc4",
-        "latitude": -31.9943514,
-        "longitude": 115.9187976,
-        "address": "41 Welshpool Rd, Welshpool WA 6106, Australia",
-        "rating": 4.7
+        "place_id": "ChIJWT-rgHClMioRqGpcWYDsm_c",
+        "latitude": -31.9471314,
+        "longitude": 115.8248344,
+        "address": "439D Hay St, Subiaco WA 6008, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -372,11 +372,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJc70YQhKjEmsRN36B2EvsSAA",
-        "latitude": -33.7310415,
-        "longitude": 150.9693732,
-        "address": "4 Columbia Ct, Norwest NSW 2153, Australia",
-        "rating": 5
+        "place_id": "ChIJGWawcEKuEmsRAZpnB16LmXs",
+        "latitude": -33.867247,
+        "longitude": 151.2115647,
+        "address": "l20/126 Phillip St, Sydney NSW 2000, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -720,11 +720,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJASf7QV3Lj4ARSLxJNklJsSc",
-        "latitude": 37.3317526,
-        "longitude": -121.9117863,
-        "address": "1202 The Alameda, San Jose, CA 95126, USA",
-        "rating": 4.4
+        "place_id": "ChIJ2wNPCxXQsGoRhSSM5dC7e2s",
+        "latitude": -34.9970498,
+        "longitude": 138.5773256,
+        "address": "8 Denis St, St Marys SA 5042, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -771,11 +771,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJy4dSVt6xEmsRf3GEV4uBxUg",
-        "latitude": -33.8861186,
-        "longitude": 151.2294379,
-        "address": "344 Oxford St, Paddington NSW 2021, Australia",
-        "rating": 3.7
+        "place_id": "ChIJHe7h6EbslmsRPjicQtSSAvo",
+        "latitude": -27.636584,
+        "longitude": 152.32546,
+        "address": "19 Salt Springs Rd, Blenheim QLD 4341, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -1026,11 +1026,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJZ934S0KuEmsR_0lxV3PTR4M",
-        "latitude": -33.8614491,
-        "longitude": 151.207588,
-        "address": "199 George St, The Rocks NSW 2000, Australia",
-        "rating": 4.5
+        "place_id": "ChIJ-a0dSOdUDWsR9K8DLYDE_cY",
+        "latitude": -33.7009046,
+        "longitude": 151.3026408,
+        "address": "38 Lake Park Rd, North Narrabeen NSW 2101, Australia",
+        "rating": 4.1
       }
     ]
   },
@@ -1165,7 +1165,7 @@
         "latitude": -37.8982775,
         "longitude": 145.1403857,
         "address": "23 Lionel Rd, Mount Waverley VIC 3149, Australia",
-        "rating": 4
+        "rating": 4.1
       }
     ]
   },
@@ -1441,11 +1441,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJT-tyjjRd1moRqeXlykOTVQc",
-        "latitude": -37.8062804,
-        "longitude": 144.9580131,
-        "address": "83-85 Victoria St, Melbourne VIC 3000, Australia",
-        "rating": 4.4
+        "place_id": "ChIJMzrwAslC1moRKuXaN2eeaXw",
+        "latitude": -37.8118922,
+        "longitude": 144.9693252,
+        "address": "Market Ln, Melbourne VIC 3000, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -1648,7 +1648,7 @@
         "latitude": -37.7641144,
         "longitude": 144.9732824,
         "address": "438 Lygon St, Brunswick East VIC 3057, Australia",
-        "rating": 4.5
+        "rating": 4.4
       }
     ]
   },
@@ -2140,7 +2140,7 @@
         "latitude": -37.8456958,
         "longitude": 144.9824638,
         "address": "55 Commercial Rd, Melbourne VIC 3004, Australia",
-        "rating": 4.5
+        "rating": 3.3
       },
       {
         "state": "NSW",
@@ -2283,7 +2283,7 @@
         "latitude": -32.1501699,
         "longitude": 116.0185929,
         "address": "89B Jull St, Armadale WA 6112, Australia",
-        "rating": 4.7
+        "rating": 4.8
       }
     ]
   },
@@ -2342,7 +2342,7 @@
         "latitude": -33.8834258,
         "longitude": 151.1951103,
         "address": "80 Bay St, Ultimo NSW 2007, Australia",
-        "rating": 4.5
+        "rating": 4.4
       }
     ]
   },
@@ -2769,11 +2769,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJTVN4VlilMioRq4WBRtvJA7g",
-        "latitude": -31.920182,
-        "longitude": 115.837642,
-        "address": "77 Coogee St, Mount Hawthorn WA 6016, Australia",
-        "rating": 4.6
+        "place_id": "ChIJIaOzeQClMioRrhoiM-Au9kw",
+        "latitude": -31.9848258,
+        "longitude": 115.8146581,
+        "address": "8/114 Broadway, Crawley WA 6009, Australia",
+        "rating": 4.9
       }
     ]
   },
@@ -3011,7 +3011,7 @@
         "latitude": -27.5234011,
         "longitude": 153.254215,
         "address": "5/30 Shore St W, Ormiston QLD 4160, Australia",
-        "rating": 4.9
+        "rating": 4.8
       }
     ]
   },
@@ -3138,15 +3138,15 @@
         "latitude": -33.8918138,
         "longitude": 151.2511162,
         "address": "level 2/500 Oxford St, Bondi Junction NSW 2022, Australia",
-        "rating": 5
+        "rating": 4.7
       },
       {
         "state": "VIC",
-        "place_id": "ChIJZY6qGeVD1moR7zhYqXUAK0Y",
-        "latitude": -37.8116466,
-        "longitude": 144.963515,
-        "address": "L1/Cnr LaTrobe and Swanston Streets, Melbourne VIC 3000, Australia",
-        "rating": 4.6
+        "place_id": "ChIJX7ZmCUNH1moRnqVKkByP9D4",
+        "latitude": -37.7851115,
+        "longitude": 145.1262028,
+        "address": "Westfield Doncaster, Kiosk K110/619 Doncaster Rd, Doncaster VIC 3108, Australia",
+        "rating": 4
       }
     ]
   },
@@ -3222,7 +3222,7 @@
         "latitude": -34.9286507,
         "longitude": 138.5934349,
         "address": "Addie Pl, Adelaide SA 5000, Australia",
-        "rating": 4.8
+        "rating": 4.7
       }
     ]
   },
@@ -3469,16 +3469,7 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "SA",
-        "place_id": "ChIJ-zOhsbzMj4AR-bC3P-1vrrs",
-        "latitude": 37.3347628,
-        "longitude": -121.8902183,
-        "address": "55 S 1st St, San Jose, CA 95113, USA",
-        "rating": 4.4
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Bray St Roasters",
@@ -3557,11 +3548,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJG0U9S6je1WoRJ98FU1986fA",
-        "latitude": -38.2347384,
-        "longitude": 145.0576498,
-        "address": "16 Progress St, Mornington VIC 3931, Australia",
-        "rating": 4.4
+        "place_id": "ChIJWQmrSqje1WoRAHdFfPHU3gw",
+        "latitude": -38.2348961,
+        "longitude": 145.0576163,
+        "address": "14 Progress St, Mornington VIC 3931, Australia",
+        "rating": 4.9
       }
     ]
   },
@@ -3706,15 +3697,6 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "VIC",
-        "place_id": "ChIJl27gH2bjdWsRejZN9fhn2PI",
-        "latitude": -31.6510707,
-        "longitude": 152.7971824,
-        "address": "55 Bold St, Laurieton NSW 2443, Australia",
-        "rating": 4.8
-      }
-    ]
+    "place_ids": []
   }
 ]
