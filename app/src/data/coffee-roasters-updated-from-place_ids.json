@@ -219,11 +219,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJJ5bS6P9n1moRx76U3LjtN1A",
-        "latitude": -37.8312475,
-        "longitude": 144.960354,
-        "address": "12-18 Yarra Pl, South Melbourne VIC 3205, Australia",
-        "rating": 4.2
+        "place_id": "ChIJzTYSmmLpST4RJt1g8yJvdeM",
+        "latitude": 26.3059554,
+        "longitude": 50.1902352,
+        "address": "6391 Prince Faisal Bin Fahd Road, Al Hizam Al Akhdar, Al Khobar 34436, Saudi Arabia",
+        "rating": 4.3
       }
     ]
   },
@@ -720,11 +720,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJ2wNPCxXQsGoRhSSM5dC7e2s",
-        "latitude": -34.9970498,
-        "longitude": 138.5773256,
-        "address": "8 Denis St, St Marys SA 5042, Australia",
-        "rating": 4.6
+        "place_id": "ChIJV9eP2ZXLSYYR6xwpA4DcXZ8",
+        "latitude": 32.2711895,
+        "longitude": -95.3416369,
+        "address": "2251 Three Lakes Pkwy #107, Tyler, TX 75703, USA",
+        "rating": 4.4
       }
     ]
   },
@@ -771,10 +771,10 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJHe7h6EbslmsRPjicQtSSAvo",
-        "latitude": -27.636584,
-        "longitude": 152.32546,
-        "address": "19 Salt Springs Rd, Blenheim QLD 4341, Australia",
+        "place_id": "ChIJ_c_h1EKqEmsRDqk19J_F-Sk",
+        "latitude": -33.763324,
+        "longitude": 151.268433,
+        "address": "28 Dale St, Brookvale NSW 2100, Australia",
         "rating": 4.6
       }
     ]
@@ -945,7 +945,7 @@
         "latitude": -31.8456425,
         "longitude": 116.0059117,
         "address": "80 Yukich Cl, Middle Swan WA 6056, Australia",
-        "rating": 3.5
+        "rating": 3.6
       }
     ]
   },
@@ -1026,11 +1026,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ-a0dSOdUDWsR9K8DLYDE_cY",
-        "latitude": -33.7009046,
-        "longitude": 151.3026408,
-        "address": "38 Lake Park Rd, North Narrabeen NSW 2101, Australia",
-        "rating": 4.1
+        "place_id": "ChIJS846Ux6uEmsRyRjCkgLwEos",
+        "latitude": -33.8881135,
+        "longitude": 151.2132272,
+        "address": "485 Crown St, Surry Hills NSW 2010, Australia",
+        "rating": 4.5
       }
     ]
   },
@@ -1131,7 +1131,7 @@
         "latitude": -27.4675273,
         "longitude": 153.0265775,
         "address": "Shop 6/243 Edward St, Brisbane City QLD 4000, Australia",
-        "rating": 4.4
+        "rating": 4.3
       }
     ]
   },
@@ -1195,11 +1195,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJwb9WhU5RFGsRJ3KMrneonl8",
-        "latitude": -35.3173377,
-        "longitude": 150.4368073,
-        "address": "109 Princes Hwy, Milton NSW 2538, Australia",
-        "rating": 4.4
+        "place_id": "ChIJp7ODnLX_DogRpoSDGWWqMkI",
+        "latitude": 41.8839247,
+        "longitude": -88.2065439,
+        "address": "148 W Washington St, West Chicago, IL 60185, USA",
+        "rating": 4.8
       }
     ]
   },
@@ -1407,11 +1407,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJw3ZAzdJD1moRdTHBsWBAcao",
-        "latitude": -37.8137885,
-        "longitude": 144.9613945,
-        "address": "387 Little Bourke St, Melbourne VIC 3000, Australia",
-        "rating": 4.5
+        "place_id": "ChIJfwM3SFFC1moRqHiTyaepYTQ",
+        "latitude": -37.8161665,
+        "longitude": 145.0113816,
+        "address": "47 North St, Richmond VIC 3121, Australia",
+        "rating": 4.8
       }
     ]
   },
@@ -1644,11 +1644,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJYeSX8llD1moReVgb27XXvqY",
-        "latitude": -37.7641144,
-        "longitude": 144.9732824,
-        "address": "438 Lygon St, Brunswick East VIC 3057, Australia",
-        "rating": 4.4
+        "place_id": "ChIJK_V6t_5n1moR_TcAscymyIw",
+        "latitude": -37.8325381,
+        "longitude": 144.9563457,
+        "address": "South Melbourne Market, 33/322-326 Coventry St, South Melbourne VIC 3205, Australia",
+        "rating": 4
       }
     ]
   },
@@ -2342,7 +2342,7 @@
         "latitude": -33.8834258,
         "longitude": 151.1951103,
         "address": "80 Bay St, Ultimo NSW 2007, Australia",
-        "rating": 4.4
+        "rating": 4.5
       }
     ]
   },
@@ -2602,7 +2602,7 @@
         "place_id": "ChIJ8cfu6LBmeGkRe1o1y6fwnqI",
         "latitude": -16.9425092,
         "longitude": 145.7730616,
-        "address": "Shed 2, 4/16 Tingira St, Portsmith QLD 4870, Australia",
+        "address": "4, Shed 2/16 Tingira St, Portsmith QLD 4870, Australia",
         "rating": 4.9
       }
     ]
@@ -2620,7 +2620,7 @@
         "latitude": -37.7763047,
         "longitude": 144.9612147,
         "address": "274 Barkly St, Brunswick VIC 3056, Australia",
-        "rating": 4.3
+        "rating": 4.2
       }
     ]
   },
@@ -3142,11 +3142,11 @@
       },
       {
         "state": "VIC",
-        "place_id": "ChIJX7ZmCUNH1moRnqVKkByP9D4",
-        "latitude": -37.7851115,
-        "longitude": 145.1262028,
-        "address": "Westfield Doncaster, Kiosk K110/619 Doncaster Rd, Doncaster VIC 3108, Australia",
-        "rating": 4
+        "place_id": "ChIJZY6qGeVD1moR7zhYqXUAK0Y",
+        "latitude": -37.8116466,
+        "longitude": 144.963515,
+        "address": "L1/Cnr LaTrobe and Swanston Streets, Melbourne VIC 3000, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -3419,7 +3419,16 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJN0UshUH1XIYRKCo5hVtswG8",
+        "latitude": 29.4326697,
+        "longitude": -98.4841074,
+        "address": "203 8th St Bldg. 2, San Antonio, TX 78215, USA",
+        "rating": 4.7
+      }
+    ]
   },
   {
     "Name": "Fleurieu Roast",
@@ -3548,11 +3557,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJWQmrSqje1WoRAHdFfPHU3gw",
-        "latitude": -38.2348961,
-        "longitude": 145.0576163,
-        "address": "14 Progress St, Mornington VIC 3931, Australia",
-        "rating": 4.9
+        "place_id": "ChIJG0U9S6je1WoRJ98FU1986fA",
+        "latitude": -38.2347384,
+        "longitude": 145.0576498,
+        "address": "16 Progress St, Mornington VIC 3931, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -3689,7 +3698,16 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJDZSsCZiuEmsRk4ZKguZeI_0",
+        "latitude": -33.8311583,
+        "longitude": 151.2229672,
+        "address": "2/214 Military Rd, Neutral Bay NSW 2089, Australia",
+        "rating": 4.3
+      }
+    ]
   },
   {
     "Name": "Fieldwork Coffee",
@@ -3697,6 +3715,15 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJJ8fMLwBD1moRSaK6mwaQEUM",
+        "latitude": -37.7798158,
+        "longitude": 144.9870757,
+        "address": "336 St Georges Rd, Fitzroy North VIC 3068, Australia",
+        "rating": 4.8
+      }
+    ]
   }
 ]

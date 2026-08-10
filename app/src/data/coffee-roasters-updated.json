@@ -167,7 +167,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJJ5bS6P9n1moRx76U3LjtN1A"
+        "place_id": "ChIJzTYSmmLpST4RJt1g8yJvdeM"
       }
     ]
   },
@@ -548,7 +548,7 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJ2wNPCxXQsGoRhSSM5dC7e2s"
+        "place_id": "ChIJV9eP2ZXLSYYR6xwpA4DcXZ8"
       }
     ]
   },
@@ -587,7 +587,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJHe7h6EbslmsRPjicQtSSAvo"
+        "place_id": "ChIJ_c_h1EKqEmsRDqk19J_F-Sk"
       }
     ]
   },
@@ -782,7 +782,7 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ-a0dSOdUDWsR9K8DLYDE_cY"
+        "place_id": "ChIJS846Ux6uEmsRyRjCkgLwEos"
       }
     ]
   },
@@ -907,7 +907,7 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJwb9WhU5RFGsRJ3KMrneonl8"
+        "place_id": "ChIJp7ODnLX_DogRpoSDGWWqMkI"
       }
     ]
   },
@@ -1071,7 +1071,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJw3ZAzdJD1moRdTHBsWBAcao"
+        "place_id": "ChIJfwM3SFFC1moRqHiTyaepYTQ"
       }
     ]
   },
@@ -1248,7 +1248,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJYeSX8llD1moReVgb27XXvqY"
+        "place_id": "ChIJK_V6t_5n1moR_TcAscymyIw"
       }
     ]
   },
@@ -2378,7 +2378,7 @@
       },
       {
         "state": "VIC",
-        "place_id": "ChIJX7ZmCUNH1moRnqVKkByP9D4"
+        "place_id": "ChIJZY6qGeVD1moR7zhYqXUAK0Y"
       }
     ]
   },
@@ -2591,7 +2591,12 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJN0UshUH1XIYRKCo5hVtswG8"
+      }
+    ]
   },
   {
     "Name": "Fleurieu Roast",
@@ -2696,7 +2701,7 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJWQmrSqje1WoRAHdFfPHU3gw"
+        "place_id": "ChIJG0U9S6je1WoRJ98FU1986fA"
       }
     ]
   },
@@ -2805,7 +2810,12 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "NSW",
+        "place_id": "ChIJDZSsCZiuEmsRk4ZKguZeI_0"
+      }
+    ]
   },
   {
     "Name": "Fieldwork Coffee",
@@ -2813,6 +2823,11 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJJ8fMLwBD1moRSaK6mwaQEUM"
+      }
+    ]
   }
 ]
