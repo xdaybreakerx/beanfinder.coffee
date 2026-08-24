@@ -389,11 +389,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJa57QtyTjdWsRSo14BXRnPm8",
-        "latitude": -31.6348765,
-        "longitude": 152.7558053,
-        "address": "106 Sirius Dr, Lakewood NSW 2443, Australia",
-        "rating": 5
+        "place_id": "ChIJDQ-DqZ4Vc2sRb9KZOnR7dc0",
+        "latitude": -32.8754394,
+        "longitude": 151.7104757,
+        "address": "4/10 Guernsey St, Sandgate NSW 2304, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -610,11 +610,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJbyGMaTpn1moRDl-Dj_Zv_hI",
-        "latitude": -37.8330718,
-        "longitude": 144.9567603,
-        "address": "321 Coventry St, South Melbourne VIC 3205, Australia",
-        "rating": 4.1
+        "place_id": "ChIJT3I-okpD1moRBNshH62Qt7Q",
+        "latitude": -37.774643,
+        "longitude": 144.962468,
+        "address": "15/17 Weston St, Brunswick VIC 3056, Australia",
+        "rating": 4.3
       }
     ]
   },
@@ -720,11 +720,11 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJV9eP2ZXLSYYR6xwpA4DcXZ8",
-        "latitude": 32.2711895,
-        "longitude": -95.3416369,
-        "address": "2251 Three Lakes Pkwy #107, Tyler, TX 75703, USA",
-        "rating": 4.4
+        "place_id": "ChIJ2wNPCxXQsGoRhSSM5dC7e2s",
+        "latitude": -34.9970498,
+        "longitude": 138.5773256,
+        "address": "8 Denis St, St Marys SA 5042, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -771,10 +771,10 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ_c_h1EKqEmsRDqk19J_F-Sk",
-        "latitude": -33.763324,
-        "longitude": 151.268433,
-        "address": "28 Dale St, Brookvale NSW 2100, Australia",
+        "place_id": "ChIJHe7h6EbslmsRPjicQtSSAvo",
+        "latitude": -27.636584,
+        "longitude": 152.32546,
+        "address": "19 Salt Springs Rd, Blenheim QLD 4341, Australia",
         "rating": 4.6
       }
     ]
@@ -1195,11 +1195,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJp7ODnLX_DogRpoSDGWWqMkI",
-        "latitude": 41.8839247,
-        "longitude": -88.2065439,
-        "address": "148 W Washington St, West Chicago, IL 60185, USA",
-        "rating": 4.8
+        "place_id": "ChIJwb9WhU5RFGsRJ3KMrneonl8",
+        "latitude": -35.3173377,
+        "longitude": 150.4368073,
+        "address": "109 Princes Hwy, Milton NSW 2538, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -1644,11 +1644,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJK_V6t_5n1moR_TcAscymyIw",
-        "latitude": -37.8325381,
-        "longitude": 144.9563457,
-        "address": "South Melbourne Market, 33/322-326 Coventry St, South Melbourne VIC 3205, Australia",
-        "rating": 4
+        "place_id": "ChIJYeSX8llD1moReVgb27XXvqY",
+        "latitude": -37.7641144,
+        "longitude": 144.9732824,
+        "address": "438 Lygon St, Brunswick East VIC 3057, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -2072,7 +2072,7 @@
         "latitude": -37.8177555,
         "longitude": 145.2216268,
         "address": "8 Olive Grove, Ringwood VIC 3134, Australia",
-        "rating": 4.8
+        "rating": 4.7
       }
     ]
   },
@@ -2119,11 +2119,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJY4Cio6I91moRDAwsna73ups",
-        "latitude": -37.8744628,
-        "longitude": 145.2843042,
-        "address": "Unit 3/95 Dorset Rd, Ferntree Gully VIC 3156, Australia",
-        "rating": 4.9
+        "place_id": "ChIJ2dph0aJD1moRhxS2CC34T5c",
+        "latitude": -37.8133829,
+        "longitude": 144.9725598,
+        "address": "Shop 1, 30 Collins Street Melbourne Entrance via Collins Street or, Ridgway Pl, Melbourne VIC 3000, Australia",
+        "rating": 4.4
       }
     ]
   },
@@ -2268,7 +2268,16 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJP3dIJtbv2okRlfQIvBh_0_g",
+        "latitude": 42.1151309,
+        "longitude": -75.9556194,
+        "address": "250 Main St, Johnson City, NY 13790, USA",
+        "rating": 4.9
+      }
+    ]
   },
   {
     "Name": "Sparks Coffee Roasters",
@@ -2620,7 +2629,7 @@
         "latitude": -37.7763047,
         "longitude": 144.9612147,
         "address": "274 Barkly St, Brunswick VIC 3056, Australia",
-        "rating": 4.3
+        "rating": 4.2
       }
     ]
   },
@@ -2786,11 +2795,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJO3mOYPRF0WoRHHIKsOnr0Vw",
-        "latitude": -37.56228900000001,
-        "longitude": 143.8575021,
-        "address": "2 Lydiard St S, Ballarat Central VIC 3350, Australia",
-        "rating": 4.9
+        "place_id": "ChIJPy754pPgeyYRqIaAhfy4fas",
+        "latitude": -37.5293461,
+        "longitude": 143.8449344,
+        "address": "Co located @ Karon Farm Coffee, 10 Builders Cl, Wendouree VIC 3355, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -3142,11 +3151,11 @@
       },
       {
         "state": "VIC",
-        "place_id": "ChIJZY6qGeVD1moR7zhYqXUAK0Y",
-        "latitude": -37.8116466,
-        "longitude": 144.963515,
-        "address": "L1/Cnr LaTrobe and Swanston Streets, Melbourne VIC 3000, Australia",
-        "rating": 4.6
+        "place_id": "ChIJX7ZmCUNH1moRnqVKkByP9D4",
+        "latitude": -37.7851115,
+        "longitude": 145.1262028,
+        "address": "Westfield Doncaster, Kiosk K110/619 Doncaster Rd, Doncaster VIC 3108, Australia",
+        "rating": 3.9
       }
     ]
   },
@@ -3273,7 +3282,7 @@
         "latitude": -34.9129118,
         "longitude": 138.5748483,
         "address": "35 Cawthorne St, Thebarton SA 5031, Australia",
-        "rating": 4.7
+        "rating": 4.8
       }
     ]
   },
@@ -3307,7 +3316,7 @@
         "latitude": -34.9137796,
         "longitude": 138.6304913,
         "address": "22 Nelson St, Stepney SA 5069, Australia",
-        "rating": 4.2
+        "rating": 4.3
       }
     ]
   },
@@ -3419,16 +3428,7 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "SA",
-        "place_id": "ChIJV8HqWPL1XIYRYFmn-AoiCNs",
-        "latitude": 29.4464843,
-        "longitude": -98.4752338,
-        "address": "2202 Broadway, San Antonio, TX 78215, USA",
-        "rating": 4.8
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Fleurieu Roast",
