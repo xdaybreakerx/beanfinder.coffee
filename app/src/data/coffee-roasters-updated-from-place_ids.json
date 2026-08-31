@@ -338,11 +338,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJo0UDfrZbkWsRH9DAyoI73tQ",
-        "latitude": -27.4975,
-        "longitude": 153.0680556,
-        "address": "4 Newman Ave, Camp Hill QLD 4152, Australia",
-        "rating": 4.7
+        "place_id": "ChIJZcEztpNmeGkRBAzqOEqHgNk",
+        "latitude": -16.9236687,
+        "longitude": 145.776031,
+        "address": "Oceana Walk Arcade, 13/62 Grafton St, Cairns City QLD 4870, Australia",
+        "rating": 4.8
       }
     ]
   },
@@ -610,11 +610,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJT3I-okpD1moRBNshH62Qt7Q",
-        "latitude": -37.774643,
-        "longitude": 144.962468,
-        "address": "15/17 Weston St, Brunswick VIC 3056, Australia",
-        "rating": 4.3
+        "place_id": "ChIJbyGMaTpn1moRDl-Dj_Zv_hI",
+        "latitude": -37.8330718,
+        "longitude": 144.9567603,
+        "address": "321 Coventry St, South Melbourne VIC 3205, Australia",
+        "rating": 4.1
       }
     ]
   },
@@ -1064,7 +1064,7 @@
         "latitude": -37.9058648,
         "longitude": 145.1580306,
         "address": "Wurundjeri Country, 10-11 Rosemary Ct, Mulgrave VIC 3170, Australia",
-        "rating": 4.6
+        "rating": 4.7
       }
     ]
   },
@@ -1195,11 +1195,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJwb9WhU5RFGsRJ3KMrneonl8",
-        "latitude": -35.3173377,
-        "longitude": 150.4368073,
-        "address": "109 Princes Hwy, Milton NSW 2538, Australia",
-        "rating": 4.4
+        "place_id": "ChIJKWIlutUW1GoR9FxZadJT5UU",
+        "latitude": -38.1057749,
+        "longitude": 144.3503194,
+        "address": "42 Cowie St, North Geelong VIC 3215, Australia",
+        "rating": 5
       }
     ]
   },
@@ -1644,11 +1644,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJYeSX8llD1moReVgb27XXvqY",
-        "latitude": -37.7641144,
-        "longitude": 144.9732824,
-        "address": "438 Lygon St, Brunswick East VIC 3057, Australia",
-        "rating": 4.4
+        "place_id": "ChIJK_V6t_5n1moR_TcAscymyIw",
+        "latitude": -37.8325381,
+        "longitude": 144.9563457,
+        "address": "South Melbourne Market, 33/322-326 Coventry St, South Melbourne VIC 3205, Australia",
+        "rating": 4
       }
     ]
   },
@@ -2271,11 +2271,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJP3dIJtbv2okRlfQIvBh_0_g",
-        "latitude": 42.1151309,
-        "longitude": -75.9556194,
-        "address": "250 Main St, Johnson City, NY 13790, USA",
-        "rating": 4.9
+        "place_id": "ChIJnw8fWQCrsGoRluxlWvSLpm8",
+        "latitude": -34.6473868,
+        "longitude": 138.6429686,
+        "address": "Angle Vale Rd, Angle Vale SA 5117, Australia",
+        "rating": 5
       }
     ]
   },
@@ -3663,7 +3663,7 @@
         "latitude": -37.8132786,
         "longitude": 144.9685245,
         "address": "Shop2, Shop2/130 Russell St, Melbourne VIC 3000, Australia",
-        "rating": 4.5
+        "rating": 4.6
       }
     ]
   },
