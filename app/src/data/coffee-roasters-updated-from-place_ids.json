@@ -720,10 +720,10 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJ2wNPCxXQsGoRhSSM5dC7e2s",
-        "latitude": -34.9970498,
-        "longitude": 138.5773256,
-        "address": "8 Denis St, St Marys SA 5042, Australia",
+        "place_id": "ChIJH4pgGx95bIcRUArM77N9zr0",
+        "latitude": 39.7611858,
+        "longitude": -104.9817125,
+        "address": "2862 Larimer St, Denver, CO 80205, USA",
         "rating": 4.6
       }
     ]
@@ -771,10 +771,10 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJHe7h6EbslmsRPjicQtSSAvo",
-        "latitude": -27.636584,
-        "longitude": 152.32546,
-        "address": "19 Salt Springs Rd, Blenheim QLD 4341, Australia",
+        "place_id": "ChIJ_c_h1EKqEmsRDqk19J_F-Sk",
+        "latitude": -33.763324,
+        "longitude": 151.268433,
+        "address": "28 Dale St, Brookvale NSW 2100, Australia",
         "rating": 4.6
       }
     ]
@@ -1195,11 +1195,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJKWIlutUW1GoR9FxZadJT5UU",
-        "latitude": -38.1057749,
-        "longitude": 144.3503194,
-        "address": "42 Cowie St, North Geelong VIC 3215, Australia",
-        "rating": 5
+        "place_id": "ChIJp7ODnLX_DogRpoSDGWWqMkI",
+        "latitude": 41.8839247,
+        "longitude": -88.2065439,
+        "address": "148 W Washington St, West Chicago, IL 60185, USA",
+        "rating": 4.8
       }
     ]
   },
@@ -1877,7 +1877,7 @@
         "latitude": -37.8023383,
         "longitude": 144.9851717,
         "address": "172 Oxford St, Collingwood VIC 3066, Australia",
-        "rating": 4.5
+        "rating": 4.4
       }
     ]
   },
@@ -2271,11 +2271,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJnw8fWQCrsGoRluxlWvSLpm8",
-        "latitude": -34.6473868,
-        "longitude": 138.6429686,
-        "address": "Angle Vale Rd, Angle Vale SA 5117, Australia",
-        "rating": 5
+        "place_id": "ChIJ1_P6GACtsGoReC9w88NoCMA",
+        "latitude": -34.647183,
+        "longitude": 138.642579,
+        "address": "121/123 Heaslip Rd, Angle Vale SA 5117, Australia",
+        "rating": 3.9
       }
     ]
   },
@@ -2317,7 +2317,7 @@
         "latitude": -27.4573701,
         "longitude": 153.0841514,
         "address": "Unit 3/471 Lytton Rd, Morningside QLD 4170, Australia",
-        "rating": 4.7
+        "rating": 4.8
       }
     ]
   },
@@ -3428,7 +3428,16 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJV8HqWPL1XIYRYFmn-AoiCNs",
+        "latitude": 29.4464843,
+        "longitude": -98.4752338,
+        "address": "2202 Broadway, San Antonio, TX 78215, USA",
+        "rating": 4.8
+      }
+    ]
   },
   {
     "Name": "Fleurieu Roast",
@@ -3701,11 +3710,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJDZSsCZiuEmsRk4ZKguZeI_0",
-        "latitude": -33.8311583,
-        "longitude": 151.2229672,
-        "address": "2/214 Military Rd, Neutral Bay NSW 2089, Australia",
-        "rating": 4.3
+        "place_id": "ChIJh3liotCHkGsR84MN8PwJNq0",
+        "latitude": -28.7057,
+        "longitude": 153.544652,
+        "address": "169 Broken Head Rd, Newrybar NSW 2479, Australia",
+        "rating": 4.2
       }
     ]
   },
