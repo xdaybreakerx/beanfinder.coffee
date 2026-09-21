@@ -42,11 +42,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJn1FUnktd1moRgZCDC6aPCcw",
-        "latitude": -37.8146934,
-        "longitude": 144.9582383,
-        "address": "Rear of, 493-495 Little Bourke St, Melbourne VIC 3000, Australia",
-        "rating": 4.8
+        "place_id": "ChIJs8sfHx9D1moRJnTIRru0bxk",
+        "latitude": -37.7982136,
+        "longitude": 144.9857192,
+        "address": "30 Sackville St, Collingwood VIC 3066, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -610,11 +610,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJ__k7MDFd1moRjnVCIJLqaq8",
-        "latitude": -37.804227,
-        "longitude": 144.953643,
-        "address": "119 Howard St, North Melbourne VIC 3051, Australia",
-        "rating": 4.4
+        "place_id": "ChIJbyGMaTpn1moRDl-Dj_Zv_hI",
+        "latitude": -37.8330718,
+        "longitude": 144.9567603,
+        "address": "321 Coventry St, South Melbourne VIC 3205, Australia",
+        "rating": 4.1
       }
     ]
   },
@@ -771,10 +771,10 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ_c_h1EKqEmsRDqk19J_F-Sk",
-        "latitude": -33.763324,
-        "longitude": 151.268433,
-        "address": "28 Dale St, Brookvale NSW 2100, Australia",
+        "place_id": "ChIJHe7h6EbslmsRPjicQtSSAvo",
+        "latitude": -27.636584,
+        "longitude": 152.32546,
+        "address": "19 Salt Springs Rd, Blenheim QLD 4341, Australia",
         "rating": 4.6
       }
     ]
@@ -1026,10 +1026,10 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJS846Ux6uEmsRyRjCkgLwEos",
-        "latitude": -33.8881135,
-        "longitude": 151.2132272,
-        "address": "485 Crown St, Surry Hills NSW 2010, Australia",
+        "place_id": "ChIJZ934S0KuEmsR_0lxV3PTR4M",
+        "latitude": -33.8614491,
+        "longitude": 151.207588,
+        "address": "199 George St, The Rocks NSW 2000, Australia",
         "rating": 4.5
       }
     ]
@@ -1064,7 +1064,7 @@
         "latitude": -37.9058648,
         "longitude": 145.1580306,
         "address": "Wurundjeri Country, 10-11 Rosemary Ct, Mulgrave VIC 3170, Australia",
-        "rating": 4.7
+        "rating": 4.6
       }
     ]
   },
@@ -1195,11 +1195,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJp7ODnLX_DogRpoSDGWWqMkI",
-        "latitude": 41.8839247,
-        "longitude": -88.2065439,
-        "address": "148 W Washington St, West Chicago, IL 60185, USA",
-        "rating": 4.8
+        "place_id": "ChIJwb9WhU5RFGsRJ3KMrneonl8",
+        "latitude": -35.3173377,
+        "longitude": 150.4368073,
+        "address": "109 Princes Hwy, Milton NSW 2538, Australia",
+        "rating": 4.5
       }
     ]
   },
@@ -1644,11 +1644,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJK_V6t_5n1moR_TcAscymyIw",
-        "latitude": -37.8325381,
-        "longitude": 144.9563457,
-        "address": "South Melbourne Market, 33/322-326 Coventry St, South Melbourne VIC 3205, Australia",
-        "rating": 4
+        "place_id": "ChIJYeSX8llD1moReVgb27XXvqY",
+        "latitude": -37.7641144,
+        "longitude": 144.9732824,
+        "address": "438 Lygon St, Brunswick East VIC 3057, Australia",
+        "rating": 4.5
       }
     ]
   },
@@ -2271,11 +2271,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJnw8fWQCrsGoRluxlWvSLpm8",
-        "latitude": -34.6473868,
-        "longitude": 138.6429686,
-        "address": "Angle Vale Rd, Angle Vale SA 5117, Australia",
-        "rating": 5
+        "place_id": "ChIJoQNIEM3PsGoRaT5uJQxfhF0",
+        "latitude": -34.9239664,
+        "longitude": 138.6012514,
+        "address": "Kiosk 01/31-39 Rundle Mall, Adelaide SA 5000, Australia",
+        "rating": 3.2
       }
     ]
   },
@@ -2317,7 +2317,7 @@
         "latitude": -27.4573701,
         "longitude": 153.0841514,
         "address": "Unit 3/471 Lytton Rd, Morningside QLD 4170, Australia",
-        "rating": 4.8
+        "rating": 4.7
       }
     ]
   },
@@ -2557,11 +2557,11 @@
     "place_ids": [
       {
         "state": "TAS",
-        "place_id": "ChIJLVVHO5t1bqoRx2GfeboXBcU",
-        "latitude": -42.8813589,
-        "longitude": 147.3256386,
-        "address": "30 Criterion St, Hobart TAS 7000, Australia",
-        "rating": 4.8
+        "place_id": "ChIJbS_0zcZ1bqoRLsA2vhSd0UE",
+        "latitude": -42.8395283,
+        "longitude": 147.2947843,
+        "address": "43 Sunderland St, Moonah TAS 7009, Australia",
+        "rating": 4.9
       }
     ]
   },
@@ -2642,11 +2642,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJ4_Ak3iKtEmsR6uPK8jv_Z7I",
-        "latitude": -33.88910389999999,
-        "longitude": 151.2755971,
-        "address": "The Pacific, 180-186 Campbell Parade, Bondi Beach NSW 2026, Australia",
-        "rating": 4.4
+        "place_id": "ChIJQw3XQS-uEmsRWSAo6K-Jx28",
+        "latitude": -33.8798342,
+        "longitude": 151.1973423,
+        "address": "103 Jones St, Ultimo NSW 2007, Australia",
+        "rating": 3.9
       }
     ]
   },
@@ -2986,7 +2986,7 @@
         "latitude": -35.3234654,
         "longitude": 149.1649686,
         "address": "Bldg 2, Tenancy 5/1 Dairy Rd, Fyshwick ACT 2609, Australia",
-        "rating": 4.6
+        "rating": 4.7
       }
     ]
   },
@@ -3151,11 +3151,11 @@
       },
       {
         "state": "VIC",
-        "place_id": "ChIJX7ZmCUNH1moRnqVKkByP9D4",
-        "latitude": -37.7851115,
-        "longitude": 145.1262028,
-        "address": "Westfield Doncaster, Kiosk K110/619 Doncaster Rd, Doncaster VIC 3108, Australia",
-        "rating": 3.9
+        "place_id": "ChIJZY6qGeVD1moR7zhYqXUAK0Y",
+        "latitude": -37.8116466,
+        "longitude": 144.963515,
+        "address": "L1/Cnr LaTrobe and Swanston Streets, Melbourne VIC 3000, Australia",
+        "rating": 4.5
       }
     ]
   },
@@ -3428,16 +3428,7 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "SA",
-        "place_id": "ChIJV8HqWPL1XIYRYFmn-AoiCNs",
-        "latitude": 29.4464843,
-        "longitude": -98.4752338,
-        "address": "2202 Broadway, San Antonio, TX 78215, USA",
-        "rating": 4.8
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Fleurieu Roast",
@@ -3487,7 +3478,16 @@
     "State": "SA",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "SA",
+        "place_id": "ChIJ0cg8_mbbsGoRRCR2QlRXVgM",
+        "latitude": -34.9649596,
+        "longitude": 138.5094753,
+        "address": "52 N Esplanade, Glenelg North SA 5045, Australia",
+        "rating": 5
+      }
+    ]
   },
   {
     "Name": "Bray St Roasters",
@@ -3710,11 +3710,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJDZSsCZiuEmsRk4ZKguZeI_0",
-        "latitude": -33.8311583,
-        "longitude": 151.2229672,
-        "address": "2/214 Military Rd, Neutral Bay NSW 2089, Australia",
-        "rating": 4.3
+        "place_id": "ChIJh3liotCHkGsR84MN8PwJNq0",
+        "latitude": -28.7057,
+        "longitude": 153.544652,
+        "address": "169 Broken Head Rd, Newrybar NSW 2479, Australia",
+        "rating": 4.1
       }
     ]
   },
