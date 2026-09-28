@@ -274,7 +274,7 @@
         "latitude": -35.2717067,
         "longitude": 149.1332419,
         "address": "59/30 Lonsdale St, Braddon ACT 2612, Australia",
-        "rating": 4.4
+        "rating": 4.5
       }
     ]
   },
@@ -308,7 +308,7 @@
         "latitude": -27.4557236,
         "longitude": 153.0406345,
         "address": "30 Wandoo St, Fortitude Valley QLD 4006, Australia",
-        "rating": 4.6
+        "rating": 4.5
       }
     ]
   },
@@ -338,11 +338,11 @@
     "place_ids": [
       {
         "state": "QLD",
-        "place_id": "ChIJWUUcYNJFkWsRajgDPjxT750",
-        "latitude": -27.5544207,
-        "longitude": 153.0317315,
-        "address": "230 Lillian Ave, Salisbury QLD 4107, Australia",
-        "rating": 4.5
+        "place_id": "ChIJo0UDfrZbkWsRH9DAyoI73tQ",
+        "latitude": -27.4975,
+        "longitude": 153.0680556,
+        "address": "4 Newman Ave, Camp Hill QLD 4152, Australia",
+        "rating": 4.7
       }
     ]
   },
@@ -614,7 +614,7 @@
         "latitude": -37.8330718,
         "longitude": 144.9567603,
         "address": "321 Coventry St, South Melbourne VIC 3205, Australia",
-        "rating": 4.1
+        "rating": 4.2
       }
     ]
   },
@@ -720,10 +720,10 @@
     "place_ids": [
       {
         "state": "WA",
-        "place_id": "ChIJH4pgGx95bIcRUArM77N9zr0",
-        "latitude": 39.7611858,
-        "longitude": -104.9817125,
-        "address": "2862 Larimer St, Denver, CO 80205, USA",
+        "place_id": "ChIJtbERhvmDMioRUeIcPPux54U",
+        "latitude": -32.2899689,
+        "longitude": 115.7436128,
+        "address": "GO41, 1 Council Ave, Rockingham WA 6168, Australia",
         "rating": 4.6
       }
     ]
@@ -1026,10 +1026,10 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJZ934S0KuEmsR_0lxV3PTR4M",
-        "latitude": -33.8614491,
-        "longitude": 151.207588,
-        "address": "199 George St, The Rocks NSW 2000, Australia",
+        "place_id": "ChIJS846Ux6uEmsRyRjCkgLwEos",
+        "latitude": -33.8881135,
+        "longitude": 151.2132272,
+        "address": "485 Crown St, Surry Hills NSW 2010, Australia",
         "rating": 4.5
       }
     ]
@@ -1292,7 +1292,7 @@
         "latitude": -37.9418454,
         "longitude": 145.0641757,
         "address": "15 Cochranes Rd, Moorabbin VIC 3189, Australia",
-        "rating": 5
+        "rating": 4.8
       }
     ]
   },
@@ -2119,11 +2119,11 @@
     "place_ids": [
       {
         "state": "VIC",
-        "place_id": "ChIJ2dph0aJD1moRhxS2CC34T5c",
-        "latitude": -37.8133829,
-        "longitude": 144.9725598,
-        "address": "Shop 1, 30 Collins Street Melbourne Entrance via Collins Street or, Ridgway Pl, Melbourne VIC 3000, Australia",
-        "rating": 4.4
+        "place_id": "ChIJl3eJXbhp1moRA_i9x9BYWE0",
+        "latitude": -37.8432768,
+        "longitude": 144.9957066,
+        "address": "6 Garden St, South Yarra VIC 3141, Australia",
+        "rating": 4.9
       }
     ]
   },
@@ -2727,11 +2727,11 @@
     "place_ids": [
       {
         "state": "NSW",
-        "place_id": "ChIJgQgzLSD9Z0sRfh11onLJ8NY",
-        "latitude": 46.1130714,
-        "longitude": -60.1720174,
-        "address": "121 Reservoir Rd, Sydney, NS B1P 3H6, Canada",
-        "rating": 4.9
+        "place_id": "ChIJ1asfSdidV4gRJxlDQnv7Idk",
+        "latitude": 34.9501041,
+        "longitude": -81.9956229,
+        "address": "121 Bellew Carver Rd, Spartanburg, SC 29301, USA",
+        "rating": 4.8
       }
     ]
   },
@@ -3182,7 +3182,16 @@
     "State": "VIC",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": []
+    "place_ids": [
+      {
+        "state": "VIC",
+        "place_id": "ChIJe0VprrBZkWsRwvB25mfKZ1k",
+        "latitude": -27.4549944,
+        "longitude": 153.0352622,
+        "address": "111 Constance St, Fortitude Valley QLD 4006, Australia",
+        "rating": 5
+      }
+    ]
   },
   {
     "Name": "Taylor's Blend",
@@ -3261,11 +3270,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJb07Tn1LFsGoRECB7MRT8DtM",
-        "latitude": -34.937329,
-        "longitude": 138.5012272,
-        "address": "89 Military Rd, West Beach SA 5024, Australia",
-        "rating": 5
+        "place_id": "ChIJ3YfhmsfEsGoR368LZAxTsqU",
+        "latitude": -34.9379536,
+        "longitude": 138.4995354,
+        "address": "1 Seaview Rd, West Beach SA 5024, Australia",
+        "rating": 4.6
       }
     ]
   },
@@ -3397,11 +3406,11 @@
     "place_ids": [
       {
         "state": "SA",
-        "place_id": "ChIJ16cqjSGuEmsRgzuSZ7za4i0",
-        "latitude": -33.8844681,
-        "longitude": 151.2093771,
-        "address": "Shop 3/26/44 Kippax St, Surry Hills NSW 2010, Australia",
-        "rating": 5
+        "place_id": "ChIJ4_pYsdEox2oRUPuOYlQ2AwU",
+        "latitude": -34.2726441,
+        "longitude": 140.6065832,
+        "address": "Berri SA 5343, Australia",
+        "rating": "N/A"
       }
     ]
   },
@@ -3672,7 +3681,7 @@
         "latitude": -37.8132786,
         "longitude": 144.9685245,
         "address": "Shop2, Shop2/130 Russell St, Melbourne VIC 3000, Australia",
-        "rating": 4.6
+        "rating": 4.5
       }
     ]
   },
