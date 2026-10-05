@@ -1,0 +1,17 @@
+{
+  "submission": {
+    "id": "6ac22b9ad4314ac18e7a05fd",
+    "type": "recommendation",
+    "name": "Leaping Goat Coffee",
+    "website": "https://www.leapinggoatcoffee.com.au/",
+    "state": "TAS",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "details": "Historical Netlify submission reviewed for backfill."
+  },
+  "explanationOnly": false,
+  "backfill": true,
+  "sources": [
+    "https://www.leapinggoatcoffee.com.au/pages/cafe"
+  ]
+}

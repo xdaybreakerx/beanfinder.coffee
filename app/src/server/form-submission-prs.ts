@@ -97,6 +97,9 @@ export function proposeChange(submission: Submission, files: Record<string, stri
   const matches = submission.originalWebsite ? byWebsite : [...new Set([...byWebsite, ...byName])];
   if (matches.length > 1) throw new SubmissionError("Multiple roasters match; supply the original website");
   if (submission.type === "recommendation" && matches.length) return undefined;
+  if (submission.type === "recommendation" && (!submission.state || submission.hasCafe === undefined || submission.multiRoaster === undefined)) {
+    throw new SubmissionError("Recommendations require state, cafe and multi-roaster status");
+  }
   if (submission.type === "issue" && !matches.length) throw new SubmissionError("No existing roaster matches this correction");
   const match = matches[0];
   if (submission.type === "issue" && entries.some(entry => entry !== match && identity(entry.roaster.Website) === identity(submission.website))) {

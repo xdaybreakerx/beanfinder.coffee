@@ -14,6 +14,13 @@
         "multiRoaster": true
     },
     {
+        "Name": "BeanHub",
+        "Website": "https://www.beanhub.com.au/",
+        "State": "all",
+        "hasCafe": false,
+        "multiRoaster": true
+    },
+    {
         "Name": "Beanz",
         "Website": "https://www.beanz.com/en-au",
         "State": "all",
@@ -25,6 +32,13 @@
         "Website": "https://www.directcoffee.com.au/",
         "State": "all",
         "hasCafe": false,
+        "multiRoaster": true
+    },
+    {
+        "Name": "Path Melbourne",
+        "Website": "https://www.pathmelbourne.com/",
+        "State": "VIC",
+        "hasCafe": true,
         "multiRoaster": true
     },
     {

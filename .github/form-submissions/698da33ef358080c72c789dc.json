@@ -1,0 +1,18 @@
+{
+  "submission": {
+    "id": "698da33ef358080c72c789dc",
+    "type": "recommendation",
+    "name": "BeanHub",
+    "website": "https://www.beanhub.com.au/",
+    "state": "all",
+    "hasCafe": false,
+    "multiRoaster": true,
+    "details": "Historical Netlify submission reviewed for backfill."
+  },
+  "explanationOnly": false,
+  "backfill": true,
+  "sources": [
+    "https://beanhub.com.au/",
+    "https://beanhub.com.au/shipping-policy"
+  ]
+}

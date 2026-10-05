@@ -1,0 +1,135 @@
+{
+  "6755856249114c0bb1d3e7d1": {
+    "fields": {
+      "has-cafe": "true",
+      "multi-roaster": "false",
+      "roaster-name": "Klim Coffee Roasting Co",
+      "roaster-website": "https://www.klimcoffee.com.au/"
+    },
+    "sources": [
+      "https://klimcoffee.com.au/about"
+    ]
+  },
+  "67887a254d19840659a7202f": {
+    "fields": {
+      "has-cafe": "true",
+      "multi-roaster": "false"
+    },
+    "sources": [
+      "https://project281.com/about/"
+    ]
+  },
+  "67998d48108ac500a35a0b03": {
+    "fields": {
+      "has-cafe": "true",
+      "multi-roaster": "false"
+    },
+    "sources": [
+      "https://firstlovecoffee.com.au/pages/cafe",
+      "https://firstlovecoffee.com.au/pages/rustica"
+    ]
+  },
+  "67998ddc6b685500bd26266b": {
+    "fields": {
+      "has-cafe": "true",
+      "multi-roaster": "false"
+    },
+    "sources": [
+      "https://www.fourkilofish.com.au/pages/four-kilo-fish-coffee-and-tea-hawthorn"
+    ]
+  },
+  "67998f9970fd7200b2ba9fff": {
+    "fields": {
+      "has-cafe": "true",
+      "multi-roaster": "false"
+    },
+    "sources": [
+      "https://benchcoffee.co/",
+      "https://benchcoffee.co/pages/bench-coffee-co-green-st"
+    ]
+  },
+  "67aac702e5d81b00ca9368c1": {
+    "fields": {
+      "has-cafe": "false",
+      "multi-roaster": "false",
+      "state": "VIC, NSW",
+      "roaster-website": "https://www.zestcoffee.com.au/"
+    },
+    "sources": [
+      "https://www.zestcoffee.com.au/pages/contact-us",
+      "https://www.zestcoffee.com.au/app/uploads/2022/11/Richmond-menu.pdf"
+    ]
+  },
+  "687f7c6717f92a05e1dbea57": {
+    "fields": {
+      "has-cafe": "true",
+      "multi-roaster": "false",
+      "roaster-name": "Red Bean Coffee Roasters",
+      "roaster-website": "https://www.redbeancoffee.com.au/"
+    },
+    "sources": [
+      "https://www.redbeancoffee.com.au/preston-cafe/"
+    ]
+  },
+  "68a0247e500c1e0091a894f9": {
+    "fields": {
+      "has-cafe": "true",
+      "multi-roaster": "true"
+    },
+    "sources": [
+      "https://www.pathmelbourne.com/",
+      "https://www.pathmelbourne.com/uploads/b/877bdfe0-e45d-11ea-8ba8-d5837b2ee97d/0a31ca10-56b1-11ef-9a47-c9a69f402c37.pdf"
+    ]
+  },
+  "68a0256eb17f2700841af7c0": {
+    "fields": {
+      "has-cafe": "true",
+      "multi-roaster": "false"
+    },
+    "sources": [
+      "https://www.coreroasters.cc/roasterycafe"
+    ]
+  },
+  "697b4326f5b10a0c3614bedf": {
+    "fields": {
+      "has-cafe": "true",
+      "multi-roaster": "false",
+      "roaster-website": "https://beatcoffee.com.au/"
+    },
+    "sources": [
+      "https://beatcoffee.com.au/pages/link-page"
+    ]
+  },
+  "698da33ef358080c72c789dc": {
+    "fields": {
+      "has-cafe": "false",
+      "multi-roaster": "true"
+    },
+    "sources": [
+      "https://beanhub.com.au/",
+      "https://beanhub.com.au/shipping-policy"
+    ]
+  },
+  "6ac22b9ad4314ac18e7a05fd": {
+    "fields": {
+      "has-cafe": "true",
+      "multi-roaster": "false"
+    },
+    "sources": [
+      "https://www.leapinggoatcoffee.com.au/pages/cafe"
+    ]
+  },
+  "68901e30e3420f40bfe8cea1": {
+    "fields": {
+      "roaster-website": "https://fieldworkcoffee.com.au/",
+      "details": "Correct the Fieldwork Coffee listing, which currently links to Bay Beans. Cafe status is preserved from the existing directory."
+    },
+    "sources": [
+      "https://fieldworkcoffee.com.au/"
+    ]
+  },
+  "6ac34a2edd47674b1906198d": {
+    "action": "skip",
+    "reason": "Test submission; its PR #13 was closed without merging."
+  }
+}

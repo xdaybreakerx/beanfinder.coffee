@@ -153,7 +153,18 @@ GitHub/network failures fail the function visibly in Netlify logs; malformed sub
 }
 ```
 
-From `app/`, run `node src/scripts/replay-form-submission.mjs /path/to/payload.json --dry-run` to validate against local directory data without API calls. To create or resume the real PR, securely set `FORM_PR_GITHUB_TOKEN` in your shell and run the same command without `--dry-run`. Do not paste tokens into command history. Historical submissions lacking the new structured fields require manual review and completion before replaying; this release processes new events, not the existing backlog automatically.
+From `app/`, run `node src/scripts/replay-form-submission.mjs /path/to/payload.json --dry-run` to validate against local directory data without API calls. To create or resume the real PR, securely set `FORM_PR_GITHUB_TOKEN` in your shell and run the same command without `--dry-run`. Do not paste tokens into command history. This event function handles new events; installing it does not replay the existing backlog.
+
+For older verified submissions, use the maintainer batch command from a clean branch based on current main:
+
+```sh
+node src/scripts/backfill-form-submissions.mjs /private/path/verified-submissions.json src/data/form-backfill-reviews-2026-10-05.json
+node src/scripts/backfill-form-submissions.mjs /private/path/verified-submissions.json src/data/form-backfill-reviews-2026-10-05.json --write
+```
+
+The input is an array of verified payloads exported from Netlify's form submissions API, ordered oldest first. Keep the export outside the repository. The review file maps submission IDs to `fields` overrides, optional official website `sources`, or `{ "action": "skip", "reason": "..." }`. Fields use the form's names and string values, including `"true"`/`"false"` for cafe and multi-roaster status. Legacy checkbox selections are converted into the new submission type; ambiguous selections and missing classifications remain `needs-review`. Supply reviewed `details` for corrections; historical free text and private metadata are excluded automatically.
+
+The command defaults to a dry run. `--write` prepares only local directory, receipt, and version files; review the diff and open a PR before merging. All data changes share one patch bump. Recommendations already listed and repeated backlog recommendations are skipped; existing receipts make subsequent runs idempotent. Review conflicts with other pending data PRs before merging. The initial backlog audit and remaining classifications are recorded in [the backfill report](docs/form-backfill-2026-10-05.md).
 
 ## 📜 License
 

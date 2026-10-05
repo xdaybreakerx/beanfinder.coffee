@@ -119,9 +119,23 @@
     "multiRoaster": false
   },
   {
+    "Name": "Beat Coffee",
+    "Website": "https://beatcoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false
+  },
+  {
     "Name": "Bellissimo Coffee",
     "Website": "https://www.bellissimocoffee.com.au/",
     "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false
+  },
+  {
+    "Name": "Bench Coffee Co",
+    "Website": "https://benchcoffee.co/",
+    "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false
   },
@@ -287,6 +301,13 @@
     "multiRoaster": false
   },
   {
+    "Name": "Core Roasters",
+    "Website": "https://www.coreroasters.cc/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false
+  },
+  {
     "Name": "Crema Coffee Co",
     "Website": "https://cremacoffeeco.com.au/",
     "State": "WA",
@@ -385,6 +406,13 @@
     "multiRoaster": false
   },
   {
+    "Name": "First Love Coffee",
+    "Website": "https://firstlovecoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false
+  },
+  {
     "Name": "Fish River Roasters",
     "Website": "https://www.fishriverroasters.com.au/",
     "State": "NSW",
@@ -417,6 +445,13 @@
     "Website": "https://fourcoffee.com.au/",
     "State": "NSW",
     "hasCafe": false,
+    "multiRoaster": false
+  },
+  {
+    "Name": "Four Kilo Fish",
+    "Website": "https://www.fourkilofish.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
     "multiRoaster": false
   },
   {
@@ -483,6 +518,13 @@
     "multiRoaster": false
   },
   {
+    "Name": "Klim Coffee Roasting Co",
+    "Website": "https://www.klimcoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false
+  },
+  {
     "Name": "La Crema",
     "Website": "https://www.lacremacoffee.com.au/",
     "State": "SA",
@@ -493,6 +535,13 @@
     "Name": "Leaf Bean Machine",
     "Website": "https://www.leafbeanmachine.com.au/",
     "State": "WA",
+    "hasCafe": true,
+    "multiRoaster": false
+  },
+  {
+    "Name": "Leaping Goat Coffee",
+    "Website": "https://www.leapinggoatcoffee.com.au/",
+    "State": "TAS",
     "hasCafe": true,
     "multiRoaster": false
   },
@@ -742,6 +791,13 @@
     "multiRoaster": false
   },
   {
+    "Name": "Project 281",
+    "Website": "https://project281.com/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false
+  },
+  {
     "Name": "Project Zero Coffee",
     "Website": "https://www.instagram.com/projectzero.coffee/",
     "State": "VIC",
@@ -774,6 +830,13 @@
     "Website": "https://rebelroasters.com.au/",
     "State": "SA",
     "hasCafe": false,
+    "multiRoaster": false
+  },
+  {
+    "Name": "Red Bean Coffee Roasters",
+    "Website": "https://www.redbeancoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
     "multiRoaster": false
   },
   {
@@ -1506,7 +1569,7 @@
   },
   {
     "Name": "Fieldwork Coffee",
-    "Website": "https://www.baybeans.com.au/",
+    "Website": "https://fieldworkcoffee.com.au/",
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false
