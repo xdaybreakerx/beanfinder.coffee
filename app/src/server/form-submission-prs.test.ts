@@ -3,12 +3,17 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 import type { Context } from "@netlify/functions";
 import handler from "../../netlify/functions/submission-created.mts";
 import { createSubmissionPR, parseSubmission, proposeChange, SubmissionError } from "./form-submission-prs";
+import { LOCK_PATH, PACKAGE_PATH } from "./release-version";
 
 const ROASTERS = "app/src/data/coffee-roasters.json";
 const MULTI = "app/src/data/coffee-roasters-multi.json";
 const existing = { Name: "Existing Coffee", Website: "https://existing.coffee/", State: "VIC, NSW", hasCafe: true, multiRoaster: false };
 const multi = { Name: "Coffee Club", Website: "https://club.coffee/", State: "all", hasCafe: false, multiRoaster: true };
-const data = () => ({ [ROASTERS]: JSON.stringify([existing], null, 2), [MULTI]: JSON.stringify([multi], null, 4) });
+const data = () => ({
+  [ROASTERS]: JSON.stringify([existing], null, 2), [MULTI]: JSON.stringify([multi], null, 4),
+  [PACKAGE_PATH]: JSON.stringify({ name: "test-site", version: "1.0.0" }),
+  [LOCK_PATH]: JSON.stringify({ name: "test-site", version: "1.0.0", lockfileVersion: 3, packages: { "": { name: "test-site", version: "1.0.0" } } }),
+});
 function payload(overrides: Record<string, unknown> = {}, id = "submission-123") {
   return {
     id, form_name: "roaster-form",
@@ -146,6 +151,9 @@ describe("GitHub ingestion", () => {
     expect(gh.refs.get("main")).toBe("main-sha");
     const files = gh.commits.get(gh.refs.get("forms/submission-123")!)!;
     expect(JSON.parse(files[ROASTERS])).toHaveLength(2);
+    expect(JSON.parse(files[PACKAGE_PATH]).version).toBe("1.0.1");
+    expect(JSON.parse(files[LOCK_PATH]).packages[""].version).toBe("1.0.1");
+    expect(gh.prs[0].body).toContain("`v1.0.0` → `v1.0.1`");
     expect(gh.prs[0].body).toContain("&lt;script&gt;");
     expect(gh.prs[0].body).toContain("&#64;reviewer");
     expect(gh.prs[0].body).not.toContain("private@example.com");
@@ -160,6 +168,7 @@ describe("GitHub ingestion", () => {
     expect((await createSubmissionPR(payload(), options)).status).toBe("existing");
     expect(gh.prs).toHaveLength(1);
     expect(gh.commits.size).toBe(2);
+    expect(gh.prs[0].body).toContain("`v1.0.0` → `v1.0.1`");
   });
 
   it("recovers from failure after branch creation without overwriting reviewer edits", async () => {
@@ -193,6 +202,33 @@ describe("GitHub ingestion", () => {
   it("does not create a branch for an already listed recommendation", async () => {
     const gh = github();
     expect((await createSubmissionPR(payload({ "roaster-name": existing.Name, "roaster-website": existing.Website }), { token: "test-token", fetch: gh.fetcher })).status).toBe("duplicate");
+    expect(gh.refs.size).toBe(1);
+    expect(gh.prs).toHaveLength(0);
+  });
+
+  it("reads the main snapshot's current version rather than a deployed function's old version", async () => {
+    const gh = github();
+    const main = gh.commits.get("main-sha")!;
+    main[PACKAGE_PATH] = JSON.stringify({ name: "test-site", version: "2.4.8" });
+    main[LOCK_PATH] = JSON.stringify({ name: "test-site", version: "2.4.8", packages: { "": { name: "test-site", version: "2.4.8" } } });
+    await createSubmissionPR(payload(), { token: "test-token", fetch: gh.fetcher });
+    const files = gh.commits.get(gh.refs.get("forms/submission-123")!)!;
+    expect(JSON.parse(files[PACKAGE_PATH]).version).toBe("2.4.9");
+  });
+
+  it("keeps explanation-only corrections unversioned", async () => {
+    const gh = github();
+    await createSubmissionPR(payload({ "submission-type": "issue", "roaster-name": existing.Name, "roaster-website": existing.Website, state: "", "has-cafe": "", "multi-roaster": "" }), { token: "test-token", fetch: gh.fetcher });
+    const files = gh.commits.get(gh.refs.get("forms/submission-123")!)!;
+    expect(files[PACKAGE_PATH]).toBe(data()[PACKAGE_PATH]);
+    expect(files[LOCK_PATH]).toBe(data()[LOCK_PATH]);
+    expect(gh.prs[0].body).not.toContain("Proposed patch version");
+  });
+
+  it("does not create a branch when release files are inconsistent", async () => {
+    const gh = github();
+    gh.commits.get("main-sha")![PACKAGE_PATH] = JSON.stringify({ name: "test-site", version: "1.0.2" });
+    await expect(createSubmissionPR(payload(), { token: "test-token", fetch: gh.fetcher })).rejects.toThrow("must match");
     expect(gh.refs.size).toBe(1);
     expect(gh.prs).toHaveLength(0);
   });

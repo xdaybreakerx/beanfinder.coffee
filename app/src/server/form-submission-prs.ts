@@ -183,6 +183,7 @@ export async function createSubmissionPR(payload: Payload, options: { token: str
   try { await api(`/git/ref/heads/${branch}`); branchExists = true; }
   catch (error) { if (!(error instanceof GitHubError) || error.status !== 404) throw error; }
   let explanationOnly = false;
+  let release: { previousVersion: string; version: string } | undefined;
   if (!branchExists) {
     const base = await api(`/git/ref/heads/${MAIN}`);
     const sha = base.object.sha;
@@ -190,6 +191,13 @@ export async function createSubmissionPR(payload: Payload, options: { token: str
     const proposal = proposeChange(submission, { [ROASTERS]: contents[0], [MULTI]: contents[1] });
     if (!proposal) return { status: "duplicate" };
     explanationOnly = proposal.explanationOnly;
+    if (!explanationOnly) {
+      const versions = await Promise.all([PACKAGE_PATH, LOCK_PATH].map(path => readFile(path, sha)));
+      const patch = patchReleaseFiles({ [PACKAGE_PATH]: versions[0], [LOCK_PATH]: versions[1] });
+      release = { previousVersion: patch.previousVersion, version: patch.version };
+      Object.assign(proposal.contents, patch.contents);
+      proposal.contents[receiptPath(submission.id)] = JSON.stringify({ submission, explanationOnly, release }, null, 2) + "\n";
+    }
     const commit = await api(`/git/commits/${sha}`);
     const tree = await api("/git/trees", "POST", {
       base_tree: commit.tree.sha,
@@ -210,16 +218,18 @@ export async function createSubmissionPR(payload: Payload, options: { token: str
     const receipt = JSON.parse(await readFile(receiptPath(submission.id), branch));
     if (JSON.stringify(receipt.submission) !== JSON.stringify(submission)) throw new Error("Submission branch receipt differs; refusing to overwrite it");
     explanationOnly = receipt.explanationOnly;
+    release = receipt.release;
   }
   const body = [
     "Proposed directory update from a verified Netlify form submission.",
     `Submission: \`${submission.id}\` · Type: ${submission.type}`,
     `Roaster: ${escapeMarkdown(submission.name)}`,
     `Website: ${escapeMarkdown(submission.website)}`,
+    release ? `Proposed patch version: \`v${release.previousVersion}\` → \`v${release.version}\`. Package and lockfile root versions are updated together. Publish the release manually after review; this automation does not create tags or releases.` : "",
     submission.originalWebsite ? `Original website: ${escapeMarkdown(submission.originalWebsite)}` : "",
     submission.details ? `Submitter's notes:\n\n${submission.details.split("\n").map(line => `> ${escapeMarkdown(line)}`).join("\n")}` : "",
     explanationOnly ? "The structured fields are unchanged. Review the notes and edit the directory in this branch if necessary." : "Review the proposed data before merging. Cafe locations are enriched by the existing weekly Maps workflow after merge.",
-    "Only directory data and the whitelisted submission receipt are committed. No contact details or raw Netlify payload are copied.",
+    "The PR contains directory data, release version files when data changes, and the whitelisted submission receipt. No contact details or raw Netlify payload are copied.",
   ].filter(Boolean).join("\n\n");
   try {
     const pr = await api("/pulls", "POST", {
@@ -235,3 +245,4 @@ export async function createSubmissionPR(payload: Payload, options: { token: str
     return { status: "existing", url: raced.html_url };
   }
 }
+import { LOCK_PATH, PACKAGE_PATH, patchReleaseFiles } from "./release-version.ts";

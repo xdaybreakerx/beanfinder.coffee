@@ -112,7 +112,17 @@ After a production form submission is verified, Netlify invokes `app/netlify/fun
 
 Recommendations require a name, HTTP(S) website, state, cafe status, and multi-roaster status. Corrections identify the existing listing by website/name; the optional original website supports renamed listings and changed URLs. Blank state/status fields preserve existing values. Corrections with only explanatory notes open a PR containing a review receipt, so a maintainer can make the corresponding edit. Unmatched or ambiguous corrections are rejected and logged for manual follow-up. Recommendations already in the directory are skipped.
 
-Each PR commits only directory changes and a whitelisted receipt under `.github/form-submissions/`. Names, websites, and notes become public, as explained on the form; contact details, IP addresses, and other raw submission metadata are excluded. Duplicate deliveries reuse an existing open or closed PR. A retry after a branch was created resumes PR creation without overwriting the branch. Distinct submissions can propose overlapping edits; review conflicts and duplicate proposals before merging. Individual roasters enter the map through the existing weekly enrichment workflow after merge.
+Each PR commits directory changes, the release version files when data changes, and a whitelisted receipt under `.github/form-submissions/`. Names, websites, and notes become public, as explained on the form; contact details, IP addresses, and other raw submission metadata are excluded. Duplicate deliveries reuse an existing open or closed PR. A retry after a branch was created resumes PR creation without overwriting the branch. Distinct submissions can propose overlapping edits; review conflicts and duplicate proposals before merging. Individual roasters enter the map through the existing weekly enrichment workflow after merge.
+
+### Release versioning
+
+App releases choose the major/minor numbers manually; form data updates increment only the final patch number. For example, after a manual app release sets `1.1.0`, subsequent data PRs propose `1.1.1`, `1.1.2`, and so on. A patch increment from `1.1.9` produces `1.1.10`, without changing the app's major/minor numbers. GitHub tags use the canonical `v1.1.0`/`v1.1.1` form.
+
+A data-changing PR reads `app/package.json` and `app/package-lock.json` from the same latest-main commit as the directory data, then updates the package version, lockfile version, and lockfile root package version atomically with its data changes. The PR description and receipt record the proposed version. Retries reuse that version rather than incrementing again. Duplicate recommendations and explanation-only corrections do not bump the version. If a maintainer adds a directory edit to an explanation-only correction, include the appropriate patch bump before merging.
+
+If main's version advances while a PR is open, update that PR's package and lockfile versions to the next patch after main before merging. Two pending PRs can initially propose the same patch; the automation leaves reviewed branches untouched. Release publication remains manual: the function never creates tags or publishes GitHub releases, and merging a version bump follows the existing Netlify main-branch deployment behavior.
+
+For a larger app release, use `npm version minor --no-git-tag-version --ignore-scripts` from `app/` (or select another stable version explicitly), commit both version files, and publish the matching GitHub release after review. Keep package and lockfile root versions aligned; mismatched files and prerelease versions stop automated data PR creation instead of guessing the next version.
 
 ### Activation
 
