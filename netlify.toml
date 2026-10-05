@@ -1,0 +1,11 @@
+[build]
+  base = "app"
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "26.10.0"
+
+# The Netlify Vite plugin treats the Astro app directory as its repository root.
+[context.dev]
+  base = "."

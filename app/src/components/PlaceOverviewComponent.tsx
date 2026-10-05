@@ -5,7 +5,10 @@ import {
 } from "@googlemaps/extended-component-library/react";
 import { loadGoogleMaps } from "../utils/googleMapsLoader";
 
-const PlaceOverviewComponent = ({ apiKey, placeId }) => {
+const PlaceOverviewComponent = ({ apiKey, placeId }: {
+  apiKey: string;
+  placeId: string;
+}) => {
   const [mapLoaded, setMapLoaded] = useState(false);
   // Logic in place to change PlaceOverview size depending on device - currently hardcoded value, however may change in future
   const [size, setSize] = useState<

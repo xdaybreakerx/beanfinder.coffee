@@ -2,38 +2,47 @@
   "name": "australian-coffee-roasters",
   "type": "module",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=26.10.0 <27"
+  },
   "scripts": {
     "test": "vitest run",
+    "test:e2e": "playwright test",
+    "check": "astro sync && tsc --noEmit",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "update-roasters": "src "
+    "update-roasters": "node src/scripts/fetch-roaster-place_id.js && node src/scripts/fetch-roaster-place_details.js"
   },
   "dependencies": {
-    "@astrojs/netlify": "^5.4.0",
-    "@astrojs/react": "^3.6.2",
-    "@astrojs/sitemap": "^3.1.6",
-    "@astrojs/tailwind": "^5.1.0",
-    "@googlemaps/extended-component-library": "^0.6.11",
-    "@react-google-maps/api": "^2.19.3",
-    "@types/react": "^18.3.4",
-    "@types/react-dom": "^18.3.0",
-    "@vis.gl/react-google-maps": "^1.1.0",
-    "astro": "^4.13.0",
-    "dotenv": "^16.4.5",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "tailwindcss": "^3.4.10",
-    "theme-change": "^2.5.0",
-    "typescript": "^5.5.4"
+    "@astrojs/netlify": "^8.2.6",
+    "@astrojs/react": "^7.0.0",
+    "@astrojs/sitemap": "^3.7.4",
+    "@googlemaps/extended-component-library": "^0.7.0",
+    "@googlemaps/js-api-loader": "^2.1.3",
+    "@googlemaps/markerclusterer": "^2.6.2",
+    "@vis.gl/react-google-maps": "^1.10.1",
+    "astro": "^7.3.5",
+    "dotenv": "^18.0.5",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
   },
   "devDependencies": {
-    "@types/react-test-renderer": "^18.3.1",
-    "accessible-astro-components": "^2.3.6",
-    "daisyui": "^4.12.10",
-    "react-test-renderer": "^18.3.1",
-    "vitest": "^3.2.7"
+    "@playwright/test": "^1.63.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "@testing-library/dom": "^10.4.2",
+    "@testing-library/react": "^16.3.3",
+    "@types/google.maps": "^3.66.5",
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@typescript/native": "npm:typescript@^7.0.2",
+    "daisyui": "^5.7.47",
+    "jsdom": "^30.1.2",
+    "tailwindcss": "^4.3.3",
+    "typescript": "npm:@typescript/typescript6@^6.0.2",
+    "vitest": "^5.0.3"
   }
 }

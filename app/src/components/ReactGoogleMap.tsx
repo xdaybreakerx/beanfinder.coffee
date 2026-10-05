@@ -1,8 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import {
   APIProvider,
-  ControlPosition,
-  MapControl,
   Map,
   useMap,
   useMapsLibrary,
@@ -14,7 +12,7 @@ import { useGeolocation } from "../hooks/useGeolocation";
 import { useMarkers } from "../hooks/useMarkers";
 import { usePoiCreation } from "../hooks/usePoiCreation";
 
-const MonolithicGoogleMap = ({ apiKey }) => {
+const MonolithicGoogleMap = ({ apiKey }: { apiKey: string }) => {
   const mapLoaded = useMapLoading(apiKey);
   const roastersPois = usePoiCreation();
   const { location: userLocation } = useGeolocation();
@@ -134,7 +132,10 @@ const PlaceAutocomplete = ({ onPlaceSelect }: PlaceAutocompleteProps) => {
   );
 };
 
-const PoiMarkers = ({ pois, onMarkerClick }) => {
+const PoiMarkers = ({ pois, onMarkerClick }: {
+  pois: ReturnType<typeof usePoiCreation>;
+  onMarkerClick: (placeId: string) => void;
+}) => {
   const map = useMap();
 
   useMarkers(map, pois, onMarkerClick);

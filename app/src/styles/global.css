@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, coffee, cupcake, sunset;
+}
+
+/* Preserve Tailwind 3's default border color for existing form separators. */
+@layer base {
+  *, ::before, ::after, ::backdrop, ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}

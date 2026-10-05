@@ -1,5 +1,5 @@
 import { defineConfig } from 'astro/config';
-import tailwind from "@astrojs/tailwind";
+import tailwindcss from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
 import react from "@astrojs/react";
 import netlify from "@astrojs/netlify";
@@ -9,14 +9,20 @@ const isProduction = process.env.NODE_ENV === 'production';
 
 // Use different site URLs based on the environment
 const siteUrl = isProduction ? 'https://www.beanfinder.coffee' // Production site URL
-: 'http://localhost:4321'; // Local development URL
+: process.env.DEV_SITE_URL || 'http://localhost:4321'; // Local development URL
 
 
 // https://astro.build/config
 export default defineConfig({
   site: siteUrl,
   // Use the dynamically selected site URL
-  integrations: [tailwind(), sitemap(), react()],
+  integrations: [sitemap(), react()],
+  vite: {
+    plugins: [tailwindcss()],
+  },
   output: "server",
-  adapter: netlify()
+  adapter: netlify({
+    // This app uses serverless rendering and has no edge functions to emulate.
+    devFeatures: { edgeFunctions: false },
+  })
 });

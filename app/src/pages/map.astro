@@ -2,8 +2,9 @@
 import Layout from "../layouts/Layout.astro";
 import FilterDrawer from "../components/FilterDrawer.astro";
 import MonolithicGoogleMap from "../components/ReactGoogleMap";
+import { getSecret } from "astro:env/server";
 
-const apiKey = import.meta.env.GOOGLE_MAPS_API_KEY;
+const apiKey = getSecret("GOOGLE_MAPS_API_KEY");
 ---
 
 <Layout title="Australian Coffee Roasters">

@@ -1,5 +1,5 @@
 import React from "react";
-import { act, create, type ReactTestRenderer } from "react-test-renderer";
+import { act, cleanup, render, type RenderResult } from "@testing-library/react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import MonolithicGoogleMap from "./ReactGoogleMap";
 
@@ -31,7 +31,11 @@ vi.mock("@vis.gl/react-google-maps", async () => {
 
   return {
     APIProvider: ({ children }: { children: React.ReactNode }) => children,
-    Map: ({ defaultCenter, defaultZoom, children }) => {
+    Map: ({ defaultCenter, defaultZoom, children }: {
+      defaultCenter: google.maps.LatLngLiteral;
+      defaultZoom: number;
+      children: React.ReactNode;
+    }) => {
       // Match the library's uncontrolled map: defaults apply only at mount.
       useEffect(() => {
         mocks.camera.center = defaultCenter;
@@ -48,12 +52,12 @@ const australia = { lat: -24.670940951770845, lng: 134.52585021148653 };
 const melbourne = { lat: -37.8136, lng: 144.9631 };
 const sydney = { lat: -33.8688, lng: 151.2093 };
 let resolveMaps: () => void;
-let renderer: ReactTestRenderer | undefined;
+let renderer: RenderResult | undefined;
 let getCurrentPosition: ReturnType<typeof vi.fn>;
 let map: {
-  panTo: ReturnType<typeof vi.fn>;
-  setZoom: ReturnType<typeof vi.fn>;
-  fitBounds: ReturnType<typeof vi.fn>;
+  panTo: ReturnType<typeof vi.fn<(center: unknown) => void>>;
+  setZoom: ReturnType<typeof vi.fn<(zoom: number) => void>>;
+  fitBounds: ReturnType<typeof vi.fn<(bounds: google.maps.LatLngBounds) => void>>;
 };
 
 beforeEach(() => {
@@ -69,13 +73,13 @@ beforeEach(() => {
     }),
   );
   map = {
-    panTo: vi.fn((center) => {
+    panTo: vi.fn((center: unknown) => {
       mocks.camera.center = center;
     }),
-    setZoom: vi.fn((zoom) => {
+    setZoom: vi.fn((zoom: number) => {
       mocks.camera.zoom = zoom;
     }),
-    fitBounds: vi.fn(),
+    fitBounds: vi.fn<(bounds: google.maps.LatLngBounds) => void>(),
   };
   mocks.useMap.mockReturnValue(map);
   getCurrentPosition = vi.fn();
@@ -83,7 +87,7 @@ beforeEach(() => {
 });
 
 afterEach(() => {
-  act(() => renderer?.unmount());
+  cleanup();
   renderer = undefined;
   vi.unstubAllGlobals();
   vi.restoreAllMocks();
@@ -91,9 +95,7 @@ afterEach(() => {
 
 function mount() {
   act(() => {
-    renderer = create(<MonolithicGoogleMap apiKey="test-key" />, {
-      createNodeMock: () => ({}),
-    });
+    renderer = render(<MonolithicGoogleMap apiKey="test-key" />);
   });
 }
 
@@ -119,7 +121,7 @@ function failLocation(code: number) {
 }
 
 function rerender() {
-  act(() => renderer!.update(<MonolithicGoogleMap apiKey="test-key" />));
+  act(() => renderer!.rerender(<MonolithicGoogleMap apiKey="test-key" />));
 }
 
 function selectPlace(place: google.maps.places.PlaceResult) {
