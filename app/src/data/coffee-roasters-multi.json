@@ -35,13 +35,6 @@
         "multiRoaster": true
     },
     {
-        "Name": "Path Melbourne",
-        "Website": "https://www.pathmelbourne.com/",
-        "State": "VIC",
-        "hasCafe": true,
-        "multiRoaster": true
-    },
-    {
         "Name": "Play-Ground",
         "Website": "https://play-ground.com.au/",
         "State": "all",
