@@ -26,5 +26,9 @@ pnpm-debug.log*
 # vs code setting folder
 .vscode
 
+# browser test artifacts
+playwright-report/
+test-results/
+
 # Local netlify folder 
 .netlify

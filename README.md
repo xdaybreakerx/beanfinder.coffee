@@ -115,8 +115,14 @@ This project is licensed under the [MIT license.](https://github.com/xdaybreaker
 ### Getting Started
 
 1. Clone this repo
-2. Install the dependencies: `npm install`
-3. Start a local dev server: `npm run dev`
+2. Use Node.js 26.10.0 (the pinned Current release): `nvm install && nvm use`
+3. Change to the app directory: `cd app`
+4. Install the locked dependencies: `npm ci`
+5. Start a local dev server: `npm run dev`
+
+The Node version is pinned in `.nvmrc` and Netlify's build configuration, and the GitHub workflows use that same pin. [Netlify Functions currently fall back to Node 24](https://docs.netlify.com/build/functions/configuration/#nodejs-version-for-runtime) when the build uses Node 26; the application uses APIs supported by both versions.
+
+The application checks use TypeScript 7's native compiler. Netlify's dependency analyzer still requires the classic compiler API, so the project also installs Microsoft's TypeScript 6 compatibility package using their [recommended npm aliases](https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/#running-side-by-side-with-typescript-6.0).
 
 ### Commands
 
@@ -127,10 +133,16 @@ All commands are run from the `app/` directory, from a terminal:
 | `npm install`          | Installs dependencies                            |
 | `npm run dev`          | Starts local dev server at `localhost:4321`      |
 | `npm run build`        | Build your production site to `./dist/`          |
-| `npm test`             | Run map geolocation and search regression tests |
+| `npm test`             | Run map geolocation, search, and loader tests     |
+| `npm run check`        | Check TypeScript after generating Astro types    |
+| `npm run test:e2e`     | Run desktop and mobile browser smoke tests       |
 | `npm run preview`      | Preview your build locally, before deploying     |
 | `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro --help` | Get help using the Astro CLI                     |
+
+Before the first browser test run, install Chromium with `npx playwright install chromium`.
+
+For a different development port, set `DEV_SITE_URL` to that server's origin so pagination links use the same server. The browser tests set this for their dedicated port automatically.
 
 ## ✅ My To-Do List
 

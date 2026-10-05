@@ -1,5 +1,4 @@
 import fs from 'fs';
-import fetch from 'node-fetch';
 import path from 'path';
 
 // Import Maps API key
@@ -10,7 +9,7 @@ dotenv.config();
 const apiKey = process.env.GOOGLE_MAPS_API_KEY;
 
 // Load existing JSON data
-import coffeeRoasters from '../data/coffee-roasters-updated.json' assert { type: 'json' };
+import coffeeRoasters from '../data/coffee-roasters-updated.json' with { type: 'json' };
 
 // Function to fetch additional place details using place_id
 async function fetchPlaceDetails(placeId) {

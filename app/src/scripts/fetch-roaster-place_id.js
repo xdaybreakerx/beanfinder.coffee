@@ -1,5 +1,4 @@
 import fs from 'fs';
-import fetch from 'node-fetch';
 import path from 'path';
 
 // Import API key
@@ -11,7 +10,7 @@ const apiKey = process.env.GOOGLE_MAPS_API_KEY;
 
 
 // Load existing JSON data
-import coffeeRoasters from '../data/coffee-roasters.json' assert { type: 'json' };
+import coffeeRoasters from '../data/coffee-roasters.json' with { type: 'json' };
 
 
 /**
