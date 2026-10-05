@@ -17,6 +17,15 @@ export function useMarkers(map, pois, onMarkerClick) {
       marker.addEventListener("gmp-click", () => {
         onMarkerClick(poi.place_id);
       });
+      // Also handle keyboard activation directly: the beta Maps API does not
+      // consistently emit gmp-click for keyboard input on clustered markers.
+      marker.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          event.stopPropagation();
+          onMarkerClick(poi.place_id);
+        }
+      });
 
       return marker;
     });

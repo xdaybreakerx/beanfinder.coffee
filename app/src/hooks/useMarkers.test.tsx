@@ -30,6 +30,15 @@ describe("accessible map markers", () => {
     expect(cluster.addMarkers).toHaveBeenCalledWith(markers);
     markers[1].dispatchEvent(new Event("gmp-click"));
     expect(onClick).toHaveBeenCalledExactlyOnceWith("sydney-place");
+    onClick.mockClear();
+    for (const key of ["Enter", " "]) {
+      const event = new KeyboardEvent("keydown", { key, cancelable: true });
+      markers[0].dispatchEvent(event);
+      expect(event.defaultPrevented).toBe(true);
+    }
+    expect(onClick.mock.calls).toEqual([["melbourne-place"], ["melbourne-place"]]);
+    markers[0].dispatchEvent(new KeyboardEvent("keydown", { key: "ArrowRight" }));
+    expect(onClick).toHaveBeenCalledTimes(2);
     unmount();
     expect(cluster.clearMarkers).toHaveBeenCalledOnce();
   });
