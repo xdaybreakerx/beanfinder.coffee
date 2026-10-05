@@ -1,99 +1,24 @@
 ---
-const states = ["NSW", "VIC", "QLD", "WA", "SA", "TAS", "ACT", "NT"];
+import { states } from "../data/states";
+const pathname = Astro.url.pathname;
+const { showStateFilter = true } = Astro.props;
 ---
-
-<!-- General drawer config -->
-<div class="drawer">
-  <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
-  <div class="drawer-content flex flex-col">
-    <!-- Navbar -->
-    <div class="navbar bg-base-100 w-full">
-      <div class="flex-none lg:hidden">
-        <label
-          for="my-drawer-3"
-          aria-label="open sidebar"
-          class="btn btn-square btn-ghost"
-        >
-          <!-- Hamburger Menu Icon for Mobile -->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            class="inline-block h-6 w-6 stroke-current"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </label>
-      </div>
-
-      <!-- Horizontal Menu for Desktop -->
-      <div class="p-4 flex-1">Search Filters</div>
-      <div class="hidden flex-none lg:block">
-        <ul class="menu menu-horizontal rounded-box">
-          <li>
-            <a href="/roasters/">All Roasters</a>
-          </li>
-          <li>
-            <a href="/roasters/online-subscriptions/1"
-              >Multi-Roaster Subscriptions</a
-            >
-          </li>
-          <li>
-            <a href="/map/">Map View</a>
-          </li>
-          <!-- State Selection submenu -->
-          <h2 class="menu-title">Roaster by State:</h2>
-          {
-            states.map((state) => (
-              <li>
-                <a href={`/roasters/${state}/false/1`}>{state}</a>
-              </li>
-            ))
-          }
-        </ul>
-      </div>
-    </div>
-
-    <!-- Drawers are required to be wrapped around the main content of the page -->
-    <!-- As such we can use slot to tell Astro where to put our content when using this component elsewhere -->
-    <slot name="main-content" />
-    <!-- dont delete this div otherwise the drawer does not open / close on mobile -->
-  </div>
-  <!-- Drawer menu for mobile -->
-  <div class="drawer-side z-30">
-    <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"
-    ></label>
-    <ul class="menu bg-base-200 min-h-full w-80 p-4 flex-col">
-      <li class="w-full sm:w-auto pt-8 pb-8">
-        <a href="/">Home</a>
-      </li>
-      <li class="w-full sm:w-auto pb-8">
-        <a href="/roasters/">All Roasters</a>
-      </li>
-      <li class="w-full sm:w-auto pb-8">
-        <a href="/roasters/online-subscriptions/1"
-          >Multi-Roaster Subscriptions</a
-        >
-      </li>
-      <li class="w-full sm:w-auto pb-8">
-        <a href="/map/">Map View</a>
-      </li>
-      <li class="w-full sm:w-auto">
-        <summary>View Roasters by State</summary>
-        <ul class="menu bg-base-200 rounded-box w-56">
-          {
-            states.map((state) => (
-              <li>
-                <a href={`/roasters/${state}/false/1`}>{state}</a>
-              </li>
-            ))
-          }
-        </ul>
-      </li>
-    </ul>
-  </div>
+<div class="directory-layout">
+  <nav aria-label="Directory navigation" class="directory-nav">
+    <a href="/roasters/" aria-current={pathname === '/roasters/' ? 'page' : undefined}>All listings</a>
+    <a href="/roasters/online-subscriptions/1" aria-current={pathname.includes('online-subscriptions') ? 'page' : undefined}>Multi-roaster sellers</a>
+    {showStateFilter && <details class="state-menu">
+      <summary>Browse by state</summary>
+      <ul>{states.map(state => <li><a href={`/roasters/${state.code}/false/1`} aria-current={pathname.includes(`/${state.code}/`) ? 'page' : undefined}>{state.name} <span>{state.code}</span></a></li>)}</ul>
+    </details>}
+  </nav>
+  <slot name="main-content" />
 </div>
+<script>
+  for (const menu of document.querySelectorAll<HTMLDetailsElement>('.state-menu')) {
+    menu.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && menu.open) { menu.open = false; menu.querySelector('summary').focus(); }
+    });
+    document.addEventListener('click', event => { if (!menu.contains(event.target as Node)) menu.open = false; });
+  }
+</script>

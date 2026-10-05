@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import {
   APIProvider,
   Map,
@@ -13,7 +13,7 @@ import { useMarkers } from "../hooks/useMarkers";
 import { usePoiCreation } from "../hooks/usePoiCreation";
 
 const MonolithicGoogleMap = ({ apiKey }: { apiKey: string }) => {
-  const mapLoaded = useMapLoading(apiKey);
+  const { mapLoaded, error } = useMapLoading(apiKey);
   const roastersPois = usePoiCreation();
   const { location: userLocation } = useGeolocation();
 
@@ -21,18 +21,13 @@ const MonolithicGoogleMap = ({ apiKey }: { apiKey: string }) => {
   const [selectedPlace, setSelectedPlace] =
     useState<google.maps.places.PlaceResult | null>(null);
 
-  if (!mapLoaded) {
-    return <div>Loading...</div>;
-  }
-
-  const handleMarkerClick = (placeId: string) => {
-    console.log("ReactGoogleMap: Marker clicked, placeId:", placeId);
-    setSelectedPlaceId(placeId);
-  };
+  const handleMarkerClick = useCallback((placeId: string) => setSelectedPlaceId(placeId), []);
+  if (!apiKey || error) return <p role="status">The map is unavailable right now. <a className="text-button" href="/roasters/">Explore the directory</a></p>;
+  if (!mapLoaded) return <p role="status">Loading the Australian roaster map…</p>;
 
   return (
     <APIProvider apiKey={apiKey}>
-      <div className="relative flex flex-col">
+      <div className="map-shell">
         {/* Custom Search Input with Australia Restriction */}
         <PlaceAutocomplete onPlaceSelect={setSelectedPlace} />
 
@@ -46,15 +41,20 @@ const MonolithicGoogleMap = ({ apiKey }: { apiKey: string }) => {
             }
           }
           defaultZoom={userLocation ? 10 : 3}
-          gestureHandling={"greedy"}
+          gestureHandling={"cooperative"}
           disableDefaultUI={true}
+          zoomControl={true}
+          fullscreenControl={true}
           mapId="7b1c394057aa4afc"
         >
           <PoiMarkers pois={roastersPois} onMarkerClick={handleMarkerClick} />
         </Map>
         <MapHandler place={selectedPlace} userLocation={userLocation} />
         {selectedPlaceId && (
-          <PlaceOverviewComponent apiKey={apiKey} placeId={selectedPlaceId} />
+          <div className="map-overview">
+            <button type="button" className="text-button" onClick={() => { setSelectedPlaceId(null); document.getElementById('map-location-search')?.focus(); }}>Close place details</button>
+            <PlaceOverviewComponent apiKey={apiKey} placeId={selectedPlaceId} />
+          </div>
         )}
       </div>
     </APIProvider>
@@ -116,19 +116,24 @@ const PlaceAutocomplete = ({ onPlaceSelect }: PlaceAutocompleteProps) => {
   useEffect(() => {
     if (!placeAutocomplete) return;
 
-    placeAutocomplete.addListener("place_changed", () => {
+    const listener = placeAutocomplete.addListener("place_changed", () => {
       onPlaceSelect(placeAutocomplete.getPlace());
     });
+    return () => listener?.remove();
   }, [onPlaceSelect, placeAutocomplete]);
 
   return (
+    <div className="map-search">
+    <label htmlFor="map-location-search">Search an Australian location</label>
     <input
+      id="map-location-search"
       ref={inputRef}
       type="text"
       placeholder="Search for a location"
-      className="absolute top-4 left-1/2 transform -translate-x-1/2 z-10 bg-white p-2 rounded-lg shadow-lg w-3/4"
-      onFocus={() => console.log("ReactGoogleMap: Search input focused")}
+      aria-describedby="map-search-hint"
     />
+    <p id="map-search-hint">Search a suburb or town, then select a roaster on the map.</p>
+    </div>
   );
 };
 

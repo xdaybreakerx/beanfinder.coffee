@@ -1636,5 +1636,12 @@
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false
+  },
+  {
+    "Name": "Path Melbourne",
+    "Website": "https://www.pathmelbourne.com/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false
   }
 ]

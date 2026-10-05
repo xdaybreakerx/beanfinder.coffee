@@ -9,28 +9,8 @@ export interface Props {
 const { currentPage, lastPage, prevUrl, nextUrl } = Astro.props;
 ---
 
-<div class="flex justify-center mt-8">
-  <div class="join grid grid-cols-2 max-w-64 center">
-    {
-      currentPage > 1 ? (
-        <a href={prevUrl} class="join-item btn btn-outline">
-          Previous page
-        </a>
-      ) : (
-        <span class="join-item btn btn-outline btn-disabled">
-          Previous page
-        </span>
-      )
-    }
-
-    {
-      currentPage < lastPage ? (
-        <a href={nextUrl} class="join-item btn btn-outline">
-          Next
-        </a>
-      ) : (
-        <span class="join-item btn btn-outline btn-disabled">Next</span>
-      )
-    }
-  </div>
-</div>
+<nav aria-label="Pagination" class="pagination">
+  {currentPage > 1 ? <a href={prevUrl} class="btn btn-outline" rel="prev">Previous</a> : <span class="btn btn-outline btn-disabled" aria-disabled="true">Previous</span>}
+  <p>Page {currentPage} of {lastPage}</p>
+  {currentPage < lastPage ? <a href={nextUrl} class="btn btn-outline" rel="next">Next</a> : <span class="btn btn-outline btn-disabled" aria-disabled="true">Next</span>}
+</nav>

@@ -4,9 +4,16 @@ import FooterComponent from "../components/FooterComponent.astro";
 import "../styles/global.css";
 ---
 
-<html lang="en" transition:animate="fade">
+<html lang="en-AU">
   <head>
     <meta charset="utf-8" />
+    <script is:inline>
+      (() => {
+        let theme;
+        try { theme = localStorage.getItem('theme'); } catch {}
+        document.documentElement.dataset.theme = theme === 'coffee' || theme === 'dark' ? 'coffee' : theme === 'caramellatte' || theme === 'light' ? 'caramellatte' : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'coffee' : 'caramellatte');
+      })();
+    </script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
@@ -48,13 +55,14 @@ import "../styles/global.css";
     </script>
   </head>
 
-  <body class="flex flex-col min-h-svh mx-auto">
+  <body class="site-shell">
+    <a href="#main-content" class="skip-link">Skip to content</a>
     <header>
       <Header />
       <!-- Named slot for dynamic content -->
       <slot name="header-content" />
     </header>
-    <main class="flex-grow p-4">
+    <main id="main-content" class="site-main" tabindex="-1">
       <slot />
     </main>
     <footer>

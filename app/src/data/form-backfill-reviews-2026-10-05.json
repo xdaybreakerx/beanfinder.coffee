@@ -74,7 +74,7 @@
   "68a0247e500c1e0091a894f9": {
     "fields": {
       "has-cafe": "true",
-      "multi-roaster": "true"
+      "multi-roaster": "false"
     },
     "sources": [
       "https://www.pathmelbourne.com/",

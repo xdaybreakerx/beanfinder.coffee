@@ -6,7 +6,7 @@ import { getRoaster, getRoasterFilter } from "../../../../utils/utils.js";
 import Layout from "../../../../layouts/Layout.astro";
 
 import FilterDrawer from "../../../../components/FilterDrawer.astro";
-import RoasterCard from "../../../../components/RoasterCard.astro";
+import RoasterRow from "../../../../components/RoasterRow.astro";
 import Pagination from "../../../../components/Pagination.astro";
 
 // Define the interface for the Roaster data
@@ -77,17 +77,7 @@ const nextUrl = `${baseUrl}/roasters/${state}/${hasCafe}/${page.currentPage + 1}
 ---
 
 <Layout title="Australian Coffee Roasters">
-  <!-- Dynamic Page Heading -->
-  <div class="text-right p-4 sm:text-left w-full sm:w-auto">
-    <h1 class="text-3xl font-bold">You're currently viewing:</h1>
-    <h2 class="text-xl font-bold">
-      {
-        hasCafe
-          ? `Roasters in ${state} with a Cafe`
-          : `All Roasters in ${state}`
-      }
-    </h2>
-  </div>
+  <div class="page-intro"><p class="eyebrow">Explore Australian coffee</p><h1>{hasCafe ? `Roasters in ${state} with a Cafe` : `All Roasters in ${state}`}</h1><p>Find a local roaster, explore its beans, and plan your next coffee stop.</p></div>
 
   <FilterDrawer>
     <div slot="main-content" id="wrapper">
@@ -96,7 +86,7 @@ const nextUrl = `${baseUrl}/roasters/${state}/${hasCafe}/${page.currentPage + 1}
         <a href={`/roasters/${state}/${!hasCafe}/1`} class="btn btn-accent">
           {
             hasCafe
-              ? "Show Roasters without a Cafe"
+              ? "Show all Roasters"
               : "Show Roasters with a Cafe"
           }
         </a>
@@ -108,9 +98,9 @@ const nextUrl = `${baseUrl}/roasters/${state}/${hasCafe}/${page.currentPage + 1}
           <p>No roasters found for the selected filters.</p>
         ) : (
           <section id="list-of-roasters">
-            <div class="flex flex-wrap sm:flex-col md:flex-row gap-4 justify-center">
+            <div class="roaster-list">
               {page.data.map((roaster) => (
-                <RoasterCard roaster={roaster} />
+                <RoasterRow roaster={roaster} />
               ))}
             </div>
           </section>

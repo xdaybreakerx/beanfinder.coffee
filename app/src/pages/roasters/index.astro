@@ -1,16 +1,8 @@
 ---
-import Layout from "../../layouts/Layout.astro"
-
-import AllRoasters from "../../components/AllRoasters.astro"
-import FilterDrawer from "../../components/FilterDrawer.astro"
+import Layout from "../../layouts/Layout.astro";
+import AllRoasters from "../../components/AllRoasters.astro";
 ---
-
-<Layout title="Australian Coffee Roasters">
-  <h1 class="text-3xl font-bold p-4">All Coffee Roasters in Australia*</h1>
-  <FilterDrawer>
-    <div slot="main-content">
-        <AllRoasters />
-        <p class="p-8 text-xl font-thin">* probably</p>
-    </div>
-  </FilterDrawer>
+<Layout title="Coffee directory · BeanFinder">
+  <div class="page-intro"><p class="eyebrow">The Australian coffee directory</p><h1>Find a roast worth knowing.</h1><p>Explore local roasters, places to have a coffee, and sellers bringing several roasters together.</p></div>
+  <AllRoasters />
 </Layout>
