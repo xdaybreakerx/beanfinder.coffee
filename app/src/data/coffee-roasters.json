@@ -196,6 +196,27 @@
     "multiRoaster": false
   },
   {
+    "Name": "Boof-Pa Beans",
+    "Website": "https://boofpabeans.com.au/",
+    "State": "ACT",
+    "hasCafe": false,
+    "multiRoaster": false
+  },
+  {
+    "Name": "Born And Raised",
+    "Website": "https://bornandraised.coffee/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false
+  },
+  {
+    "Name": "Brewno Specialty Coffee",
+    "Website": "https://www.brewnospecialtycoffee.com.au/",
+    "State": "QLD",
+    "hasCafe": false,
+    "multiRoaster": false
+  },
+  {
     "Name": "Brightside Coffee Co",
     "Website": "https://brightside.coffee/",
     "State": "VIC",
@@ -308,6 +329,13 @@
     "multiRoaster": false
   },
   {
+    "Name": "Cortado Coffee Roasters",
+    "Website": "https://cortadocoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false
+  },
+  {
     "Name": "Crema Coffee Co",
     "Website": "https://cremacoffeeco.com.au/",
     "State": "WA",
@@ -347,6 +375,13 @@
     "Website": "https://www.dawnpatrolcoffee.com.au/",
     "State": "SA",
     "hasCafe": true,
+    "multiRoaster": false
+  },
+  {
+    "Name": "DC Coffee",
+    "Website": "https://dccoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": false,
     "multiRoaster": false
   },
   {
@@ -452,6 +487,13 @@
     "Website": "https://www.fourkilofish.com.au/",
     "State": "VIC",
     "hasCafe": true,
+    "multiRoaster": false
+  },
+  {
+    "Name": "Good Hustle Coffee Roasters",
+    "Website": "https://goodhustlecoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": false,
     "multiRoaster": false
   },
   {
@@ -938,6 +980,13 @@
     "multiRoaster": false
   },
   {
+    "Name": "Siboni's Coffee",
+    "Website": "https://www.siboniscoffee.com.au/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false
+  },
+  {
     "Name": "Single O",
     "Website": "https://singleo.com.au/",
     "State": "NSW, QLD",
@@ -1036,6 +1085,13 @@
     "multiRoaster": false
   },
   {
+    "Name": "The Flour",
+    "Website": "https://www.theflourmelbourne.com/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false
+  },
+  {
     "Name": "Tim Adams",
     "Website": "https://www.timadams.net.au/",
     "State": "QLD",
@@ -1046,6 +1102,13 @@
     "Name": "Toby's Estate",
     "Website": "https://www.tobysestate.com.au/",
     "State": "QLD, NSW",
+    "hasCafe": true,
+    "multiRoaster": false
+  },
+  {
+    "Name": "Tone Coffee Roasters",
+    "Website": "https://www.tonecoffeeroasters.au/",
+    "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false
   },

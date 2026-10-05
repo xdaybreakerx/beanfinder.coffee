@@ -131,5 +131,102 @@
   "6ac34a2edd47674b1906198d": {
     "action": "skip",
     "reason": "Test submission; its PR #13 was closed without merging."
+  },
+  "67379af3beef7800c9bb6f89": {
+    "fields": {
+      "has-cafe": "false",
+      "multi-roaster": "false",
+      "details": "Cafe and roaster classifications confirmed by maintainer manual research on 5 October 2026."
+    },
+    "sources": [
+      "https://boofpabeans.com.au/"
+    ]
+  },
+  "67998d69bdb79800c37a9da3": {
+    "fields": {
+      "has-cafe": "false",
+      "multi-roaster": "false",
+      "details": "Cafe and roaster classifications confirmed by maintainer manual research on 5 October 2026."
+    },
+    "sources": [
+      "https://goodhustlecoffee.com.au/"
+    ]
+  },
+  "67998f7a5b7918009ea20baa": {
+    "fields": {
+      "has-cafe": "true",
+      "multi-roaster": "false",
+      "details": "Maintainer manual research: Humble Tigers has rebranded to Tone Coffee Roasters; it sells its own roasts online and has two cafes.",
+      "roaster-name": "Tone Coffee Roasters",
+      "roaster-website": "https://www.tonecoffeeroasters.au/"
+    },
+    "sources": [
+      "https://www.tonecoffeeroasters.au/"
+    ]
+  },
+  "67aac73647fcef0076696ba0": {
+    "fields": {
+      "has-cafe": "false",
+      "multi-roaster": "false",
+      "details": "Cafe and roaster classifications confirmed by maintainer manual research on 5 October 2026."
+    },
+    "sources": [
+      "https://dccoffee.com.au/"
+    ]
+  },
+  "686fa272e96aae009e8d9f93": {
+    "fields": {
+      "has-cafe": "false",
+      "multi-roaster": "false",
+      "details": "Cafe and roaster classifications confirmed by maintainer manual research on 5 October 2026."
+    },
+    "sources": [
+      "https://cortadocoffee.com.au/"
+    ]
+  },
+  "68a024a5f62f2c0070d79ba8": {
+    "fields": {
+      "has-cafe": "true",
+      "multi-roaster": "false",
+      "details": "Cafe and roaster classifications confirmed by maintainer manual research on 5 October 2026."
+    },
+    "sources": [
+      "https://www.theflourmelbourne.com/"
+    ]
+  },
+  "68a025b5faebf90079e6585d": {
+    "fields": {
+      "has-cafe": "false",
+      "multi-roaster": "false",
+      "details": "Cafe and roaster classifications confirmed by maintainer manual research on 5 October 2026."
+    },
+    "sources": [
+      "https://bornandraised.coffee/"
+    ]
+  },
+  "6a44ed3d007aa419ab6a2cac": {
+    "fields": {
+      "has-cafe": "true",
+      "multi-roaster": "false",
+      "details": "Cafe and roaster classifications confirmed by maintainer manual research on 5 October 2026.",
+      "submission-type": "recommendation"
+    },
+    "sources": [
+      "https://www.siboniscoffee.com.au/"
+    ]
+  },
+  "6a69c4633fe6be0e4c2aa499": {
+    "fields": {
+      "has-cafe": "false",
+      "multi-roaster": "false",
+      "details": "Maintainer manual research: Brewno roasts its own coffee and operates a coffee cart, with no fixed cafe location."
+    },
+    "sources": [
+      "https://www.brewnospecialtycoffee.com.au/"
+    ]
+  },
+  "67049c62cd9390007dae6a6a": {
+    "action": "skip",
+    "reason": "Excluded by maintainer manual review: Vittoria is outside the specialty coffee directory scope."
   }
 }

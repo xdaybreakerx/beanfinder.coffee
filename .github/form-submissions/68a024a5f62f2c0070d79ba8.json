@@ -1,0 +1,17 @@
+{
+  "submission": {
+    "id": "68a024a5f62f2c0070d79ba8",
+    "type": "recommendation",
+    "name": "The Flour",
+    "website": "https://www.theflourmelbourne.com/",
+    "state": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "details": "Cafe and roaster classifications confirmed by maintainer manual research on 5 October 2026."
+  },
+  "explanationOnly": false,
+  "backfill": true,
+  "sources": [
+    "https://www.theflourmelbourne.com/"
+  ]
+}

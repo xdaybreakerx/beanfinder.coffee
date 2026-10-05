@@ -1,0 +1,17 @@
+{
+  "submission": {
+    "id": "6a44ed3d007aa419ab6a2cac",
+    "type": "recommendation",
+    "name": "Siboni's Coffee",
+    "website": "https://www.siboniscoffee.com.au/",
+    "state": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "details": "Cafe and roaster classifications confirmed by maintainer manual research on 5 October 2026."
+  },
+  "explanationOnly": false,
+  "backfill": true,
+  "sources": [
+    "https://www.siboniscoffee.com.au/"
+  ]
+}
