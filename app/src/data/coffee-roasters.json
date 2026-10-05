@@ -973,6 +973,13 @@
     "multiRoaster": false
   },
   {
+    "Name": "tester",
+    "Website": "https://test.com/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false
+  },
+  {
     "Name": "Tim Adams",
     "Website": "https://www.timadams.net.au/",
     "State": "QLD",

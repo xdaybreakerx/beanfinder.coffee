@@ -1,0 +1,17 @@
+{
+  "submission": {
+    "id": "6ac34a2edd47674b1906198d",
+    "type": "recommendation",
+    "name": "tester",
+    "website": "https://test.com/",
+    "state": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "details": ""
+  },
+  "explanationOnly": false,
+  "release": {
+    "previousVersion": "1.0.0",
+    "version": "1.0.1"
+  }
+}
