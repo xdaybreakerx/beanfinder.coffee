@@ -130,6 +130,21 @@ function selectPlace(place: google.maps.places.PlaceResult) {
 }
 
 describe("geolocation and map readiness", () => {
+  it("offers the directory when the Maps API cannot load", async () => {
+    mocks.loadGoogleMaps.mockRejectedValue(new Error("Network unavailable"));
+    await act(async () => {
+      renderer = render(<MonolithicGoogleMap apiKey="test-key" />);
+    });
+    expect(renderer!.getByRole("status").textContent).toContain("unavailable");
+    expect(renderer!.getByRole("link", { name: "Explore the directory" }).getAttribute("href")).toBe("/roasters/");
+  });
+
+  it("offers the directory without trying to load an unconfigured map", () => {
+    renderer = render(<MonolithicGoogleMap apiKey="" />);
+    expect(renderer.getByRole("link", { name: "Explore the directory" })).toBeTruthy();
+    expect(mocks.loadGoogleMaps).not.toHaveBeenCalled();
+  });
+
   it("recenters and zooms when geolocation arrives after the map", async () => {
     mount();
     await loadMaps();

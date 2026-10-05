@@ -6,7 +6,7 @@ import { getRoaster, getRoasterFilter } from "../../../utils/utils.js";
 import Layout from "../../../layouts/Layout.astro";
 
 import FilterDrawer from "../../../components/FilterDrawer.astro";
-import RoasterCard from "../../../components/RoasterCard.astro";
+import RoasterRow from "../../../components/RoasterRow.astro";
 import Pagination from "../../../components/Pagination.astro";
 
 // Define the interface for the Roaster data
@@ -41,24 +41,23 @@ export async function getStaticPaths({ paginate }) {
 
 // Explicitly define the `page` variable
 const page = Astro.props.page as PaginatedPage;
+const prevUrl = `/roasters/online-subscriptions/${page.currentPage - 1}`;
+const nextUrl = `/roasters/online-subscriptions/${page.currentPage + 1}`;
 const totalResults = page.data.length; // Assuming this holds the total number of roasters
 const pageSize = 12;
 ---
 
 <Layout title="Australian Coffee Roasters">
-  <div class="text-right p-4 sm:text-left w-full sm:w-auto">
-    <h1 class="text-3xl font-bold">Multi-Roaster Subscriptions:</h1>
-    <h2 class="text-xl font-bold">Want to try a bit of everything? This is the page for you.</h2>
-  </div>
+  <div class="page-intro"><p class="eyebrow">More roasters. More to discover.</p><h1>Explore multi-roaster sellers.</h1><p>Find services and shops bringing beans from different roasters together.</p></div>
 
   <FilterDrawer>
     <div slot="main-content" id="wrapper">
       <!-- Roaster Cards -->
       <section id="list-of-roasters">
         <div
-          class="flex flex-wrap sm:flex-col md:flex-row gap-4 justify-center"
+          class="roaster-list"
         >
-          {page.data.map((roaster) => <RoasterCard roaster={roaster} />)}
+          {page.data.map((roaster) => <RoasterRow roaster={roaster} />)}
         </div>
       </section>
 

@@ -3,27 +3,27 @@ import { loadGoogleMaps } from "../utils/googleMapsLoader.js";
 
 export function useMapLoading(apiKey) {
   const [mapLoaded, setMapLoaded] = useState(false);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
-    console.log("useMapLoading: Attempting to load Google Maps API");
+    let active = true;
+    setMapLoaded(false);
+    setError(false);
 
     const loadMaps = async () => {
       try {
         await loadGoogleMaps(apiKey);
-        console.log("useMapLoading: Google Maps API successfully loaded");
-        setMapLoaded(true);
+        if (active) setMapLoaded(true);
       } catch (error) {
-        console.error("useMapLoading: Error loading Google Maps API", error);
-        setMapLoaded(false);  // handle the error by setting mapLoaded to false
+        if (active) setError(true);
       }
     };
 
     if (apiKey) {
       loadMaps();
-    } else {
-      console.error("useMapLoading: API key is missing");
     }
+    return () => { active = false; };
   }, [apiKey]);
 
-  return mapLoaded;
+  return { mapLoaded, error };
 }

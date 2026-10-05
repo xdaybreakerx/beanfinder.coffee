@@ -164,12 +164,7 @@
     "State": "VIC",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "VIC",
-        "place_id": "ChIJzTYSmmLpST4RJt1g8yJvdeM"
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Axil Coffee Roasters",
@@ -2060,12 +2055,7 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "NSW",
-        "place_id": "ChIJgQgzLSD9Z0sRfh11onLJ8NY"
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Supernumerary Coffee",
@@ -2190,12 +2180,7 @@
     "State": "NSW",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "NSW",
-        "place_id": "ChIJE8XYJB4plzMRg3gYOmA8YAI"
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Altura Coffee",
@@ -2747,12 +2732,7 @@
     "State": "VIC",
     "hasCafe": false,
     "multiRoaster": false,
-    "place_ids": [
-      {
-        "state": "VIC",
-        "place_id": "ChIJsRY0YdOnlVQR0SYQOMiMVb4"
-      }
-    ]
+    "place_ids": []
   },
   {
     "Name": "Cottle Coffee",

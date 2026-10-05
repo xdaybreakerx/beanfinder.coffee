@@ -1,26 +1,27 @@
 import { expect, test } from "@playwright/test";
+import AxeBuilder from "@axe-core/playwright";
 
 test.beforeEach(async ({ page }) => {
   await page.route("https://www.googletagmanager.com/**", (route) => route.abort());
 });
 
-test("home navigation and migrated button styles", async ({ page }) => {
+test("home navigation and state browsing", async ({ page }) => {
   await page.goto("/");
   await expect(page.locator('meta[name="generator"]')).toHaveAttribute("content", /^Astro v7\./);
-  await expect(page.getByRole("heading", { name: "Welcome to BeanFinder" })).toBeVisible();
-  const state = page.getByRole("link", { name: "VIC", exact: true });
+  await expect(page.getByRole("heading", { name: "Find your next favourite roast." })).toBeVisible();
+  const state = page.getByRole("link", { name: "VIC — Victoria", exact: true });
   await expect(state).toHaveCSS("align-items", "center");
-  await expect(state).toHaveCSS("border-top-style", "solid");
+  await expect(state).toHaveCSS("border-bottom-style", "solid");
   await state.click();
   await expect(page.getByRole("heading", { name: "All Roasters in VIC" })).toBeVisible();
-  await expect(page.locator("#list-of-roasters .card")).toHaveCount(12);
+  await expect(page.locator("#list-of-roasters .roaster-row")).toHaveCount(12);
 });
 
 test("pagination and cafe filtering", async ({ page }) => {
   await page.goto("/roasters/VIC/false/1");
   await page.getByRole("link", { name: "Next", exact: true }).click();
   await expect(page).toHaveURL(/\/roasters\/VIC\/false\/2\/?$/);
-  await expect(page.locator("#list-of-roasters .card")).toHaveCount(12);
+  await expect(page.locator("#list-of-roasters .roaster-row")).toHaveCount(12);
   await page.getByRole("link", { name: "Show Roasters with a Cafe", exact: true }).click();
   await expect(page).toHaveURL(/\/roasters\/VIC\/true\/1\/?$/);
   await expect(page.getByRole("heading", { name: "Roasters in VIC with a Cafe" })).toBeVisible();
@@ -106,12 +107,74 @@ test("static detection form mirrors the visible submission fields", async ({ pag
   expect(staticFields).toEqual(fields);
 });
 
-test("filter drawer opens and closes on mobile", async ({ page }, testInfo) => {
-  test.skip(testInfo.project.name !== "mobile", "Mobile drawer behavior");
+test("state navigation opens by keyboard and closes with Escape", async ({ page }) => {
   await page.goto("/roasters/VIC/false/1");
-  await page.locator('label[for="my-drawer-3"]').first().click();
-  await expect(page.locator("#my-drawer-3")).toBeChecked();
-  await expect(page.locator(".drawer-side")).toBeVisible();
-  await page.locator('label[aria-label="close sidebar"]').click({ position: { x: 350, y: 100 } });
-  await expect(page.locator("#my-drawer-3")).not.toBeChecked();
+  const summary = page.locator('.state-menu summary');
+  await summary.focus();
+  await page.keyboard.press('Enter');
+  await expect(page.locator('.state-menu')).toHaveAttribute('open', '');
+  await expect(page.getByRole('link', { name: 'Tasmania TAS' })).toBeVisible();
+  await page.keyboard.press('Escape');
+  await expect(page.locator('.state-menu')).not.toHaveAttribute('open');
+  await expect(summary).toBeFocused();
+});
+
+test("directory search, filters, bookmarks, and clear state", async ({ page }) => {
+  await page.goto('/roasters/');
+  const rows = page.locator('#list-of-roasters .roaster-row:visible');
+  await page.getByLabel('Find a roaster').fill('Tone Coffee');
+  await expect(rows).toHaveCount(1);
+  await expect(rows.first()).toContainText('Tone Coffee Roasters');
+  await page.getByLabel('State or territory').selectOption('VIC');
+  await page.getByLabel('With a cafe', { exact: true }).check();
+  await page.reload();
+  await expect(rows).toHaveCount(1);
+  await expect(page.getByLabel('Find a roaster')).toHaveValue('Tone Coffee');
+  await expect(page.getByLabel('With a cafe', { exact: true })).toBeChecked();
+  await page.getByLabel('State or territory').selectOption('NSW');
+  await expect(rows).toHaveCount(0);
+  await expect(page.locator('#directory-empty')).toBeVisible();
+  await expect(page.locator('#directory-count')).toHaveText('0 listings');
+  await page.getByRole('button', { name: 'Clear filters' }).click();
+  await expect(page.getByLabel('Find a roaster')).toBeFocused();
+  await expect(rows).not.toHaveCount(0);
+  await page.getByLabel('Listing type', { exact: true }).selectOption('multi');
+  await expect(rows.filter({ hasText: 'BeanHub' })).toHaveCount(1);
+  await expect(rows.filter({ hasText: 'Tone Coffee Roasters' })).toHaveCount(0);
+  await expect(rows.first().getByRole('link')).toHaveAttribute('rel', 'noopener noreferrer');
+});
+
+test("theme follows the system and works when storage is blocked", async ({ page }) => {
+  await page.emulateMedia({ colorScheme: 'dark' });
+  await page.addInitScript(() => { Object.defineProperty(window, 'localStorage', { get() { throw new Error('Storage blocked'); } }); });
+  await page.goto('/');
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+  const toggle = page.getByRole('checkbox', { name: 'Toggle dark mode' });
+  await toggle.focus();
+  await page.keyboard.press('Space');
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
+});
+
+test("skip link and responsive layout support keyboard and zoom", async ({ page }) => {
+  await page.goto('/roasters/');
+  await page.keyboard.press('Tab');
+  await expect(page.getByRole('link', { name: 'Skip to content' })).toBeFocused();
+  await page.keyboard.press('Enter');
+  await expect(page.locator('#main-content')).toBeFocused();
+  await page.setViewportSize({ width: 320, height: 800 });
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await expect(page.getByLabel('Find a roaster')).toBeVisible();
+});
+
+test("light and dark core pages pass automated WCAG checks", async ({ page }) => {
+  for (const theme of ['light', 'dark']) {
+    await page.addInitScript(value => localStorage.setItem('theme', value), theme);
+    for (const path of ['/', '/roasters/', '/roasters/VIC/false/1', '/roasters/online-subscriptions/1', '/submit/', '/success/', '/404']) {
+      await page.goto(path);
+      await expect(page.locator('html')).toHaveAttribute('data-theme', theme);
+      const results = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze();
+      expect(results.violations.map(violation => ({ id: violation.id, nodes: violation.nodes.map(node => ({ target: node.target, summary: node.failureSummary })) })), `${path} (${theme})`).toEqual([]);
+      expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth), `${path} has horizontal overflow`).toBe(true);
+    }
+  }
 });

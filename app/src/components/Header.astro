@@ -1,12 +1,13 @@
 ---
-import ThemeController from "./ThemeController.astro"
+import ThemeController from "./ThemeController.astro";
+const pathname = Astro.url.pathname;
 ---
-
-<div class="navbar bg-base-100 p-4">
-    <div class="flex-1">
-      <a href="/" class="btn btn-ghost text-xl">BeanFinder <img src="/favicon.svg" alt="favicon"></a> 
-    </div>
-    <div class="flex-none">
-      <ThemeController />
-    </div>
-  </div>
+<div class="site-header">
+  <a href="/" class="brand" aria-label="BeanFinder home"><img src="/favicon.svg" width="36" height="36" alt="" /><span>BeanFinder<span class="brand-note">Australian coffee directory</span></span></a>
+  <nav aria-label="Main navigation" class="main-nav">
+    <a href="/roasters/" aria-current={pathname.startsWith('/roasters/') ? 'page' : undefined}>Directory</a>
+    <a href="/map/" aria-current={pathname === '/map/' ? 'page' : undefined}>Map</a>
+    <a href="/submit/" aria-current={pathname === '/submit/' ? 'page' : undefined}>Suggest a roaster</a>
+  </nav>
+  <ThemeController />
+</div>

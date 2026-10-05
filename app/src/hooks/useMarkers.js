@@ -11,9 +11,10 @@ export function useMarkers(map, pois, onMarkerClick) {
       const marker = new google.maps.marker.AdvancedMarkerElement({
         position: poi.location,
         title: `${i + 1}. ${poi.name}`,
+        gmpClickable: true,
       });
 
-      marker.addListener("gmp-click", () => {
+      marker.addEventListener("gmp-click", () => {
         onMarkerClick(poi.place_id);
       });
 

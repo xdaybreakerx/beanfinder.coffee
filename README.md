@@ -8,6 +8,12 @@ BeanFinder is a curated directory of Australian coffee roasters designed to help
 - [x] Nested Dynamic routing for pagination
 - [x] SEO Optimized
 - [x] Theme toggle and memory
+- [x] Searchable A–Z directory with state, cafe, and multi-roaster filters
+- [x] Australian-only map locations
+
+The directory filters are saved in the URL so searches can be bookmarked or shared. Light and dark themes follow the system preference until a visitor chooses a theme. Both themes include visible keyboard focus and a skip link.
+
+The weekly Places enrichment checks Australian formatted addresses when choosing candidates, then requires Google's `AU` country component and valid coordinates before saving details. The map also filters cached data: older records without a country code must end their formatted address with `Australia`. A location that fails verification is omitted from the map; its roaster remains in the directory. API failures stop enrichment before replacing the corresponding data file.
 
 ## 💻 Tech Stack and tools
 
@@ -193,14 +199,16 @@ All commands are run from the `app/` directory, from a terminal:
 | `npm install`          | Installs dependencies                            |
 | `npm run dev`          | Starts local dev server at `localhost:4321`      |
 | `npm run build`        | Build your production site to `./dist/`          |
-| `npm test`             | Run map geolocation, search, and loader tests     |
+| `npm test`             | Run map, country validation, and form automation tests |
 | `npm run check`        | Check TypeScript after generating Astro types    |
-| `npm run test:e2e`     | Run desktop and mobile browser smoke tests       |
+| `npm run test:e2e`     | Run desktop/mobile flows and automated accessibility checks |
 | `npm run preview`      | Preview your build locally, before deploying     |
 | `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro --help` | Get help using the Astro CLI                     |
 
 Before the first browser test run, install Chromium with `npx playwright install chromium`.
+
+Browser tests scan the homepage, directory, state listings, multi-roaster listings, submission form, success page, and 404 page in both themes with axe-core. These automated checks complement keyboard and responsive-layout tests; the live third-party Google Maps interface still needs manual review in the deploy preview.
 
 For a different development port, set `DEV_SITE_URL` to that server's origin so pagination links use the same server. The browser tests set this for their dedicated port automatically.
 
