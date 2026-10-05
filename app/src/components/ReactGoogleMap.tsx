@@ -54,7 +54,7 @@ const MonolithicGoogleMap = ({ apiKey }) => {
         >
           <PoiMarkers pois={roastersPois} onMarkerClick={handleMarkerClick} />
         </Map>
-        <MapHandler place={selectedPlace} />
+        <MapHandler place={selectedPlace} userLocation={userLocation} />
         {selectedPlaceId && (
           <PlaceOverviewComponent apiKey={apiKey} placeId={selectedPlaceId} />
         )}
@@ -65,10 +65,20 @@ const MonolithicGoogleMap = ({ apiKey }) => {
 
 interface MapHandlerProps {
   place: google.maps.places.PlaceResult | null;
+  userLocation: google.maps.LatLngLiteral | null;
 }
 
-const MapHandler = ({ place }: MapHandlerProps) => {
+const MapHandler = ({ place, userLocation }: MapHandlerProps) => {
   const map = useMap();
+
+  useEffect(() => {
+    // defaultCenter/defaultZoom only apply at creation. Geolocation can arrive
+    // later, so update the live map once both are ready. Keep searches in control.
+    if (!map || !userLocation || place) return;
+
+    map.panTo(userLocation);
+    map.setZoom(10);
+  }, [map, userLocation, place]);
 
   useEffect(() => {
     if (!map || !place) return;
