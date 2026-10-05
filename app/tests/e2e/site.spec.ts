@@ -227,15 +227,15 @@ test("skip link and responsive layout support keyboard and zoom", async ({ page 
   await expect(page.getByLabel('Find a roaster')).toBeVisible();
 });
 
-test("light and dark core pages pass automated WCAG checks", async ({ page }) => {
-  for (const theme of ['caramellatte', 'coffee']) {
-    await page.addInitScript(value => localStorage.setItem('theme', value), theme);
-    for (const path of ['/', '/roasters/', '/roasters/VIC/false/1', '/roasters/online-subscriptions/1', '/submit/', '/success/', '/404']) {
+for (const theme of ['caramellatte', 'coffee']) {
+  for (const path of ['/', '/roasters/', '/roasters/VIC/false/1', '/roasters/online-subscriptions/1', '/submit/', '/success/', '/404']) {
+    test(`${path} (${theme}) passes automated WCAG checks`, async ({ page }) => {
+      await page.addInitScript(value => localStorage.setItem('theme', value), theme);
       await page.goto(path);
       await expect(page.locator('html')).toHaveAttribute('data-theme', theme);
       const results = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze();
       expect(results.violations.map(violation => ({ id: violation.id, nodes: violation.nodes.map(node => ({ target: node.target, summary: node.failureSummary })) })), `${path} (${theme})`).toEqual([]);
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth), `${path} has horizontal overflow`).toBe(true);
-    }
+    });
   }
-});
+}
