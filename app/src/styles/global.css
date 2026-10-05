@@ -9,9 +9,24 @@
   --control-border: color-mix(in oklab, var(--color-base-content) 75%, var(--color-base-100));
   --focus: var(--color-primary);
   --status-error: var(--color-error-content);
+  --home-action-color: var(--color-secondary);
+  --home-action-content: var(--color-secondary-content);
+  --home-link-color: var(--color-base-content);
 }
-[data-theme="coffee"] { --status-error: var(--color-error); }
-@media (prefers-color-scheme: dark) { :root:not([data-theme]) { --status-error: var(--color-error); } }
+[data-theme="coffee"] {
+  --status-error: var(--color-error);
+  --home-action-color: var(--color-primary);
+  --home-action-content: var(--color-primary-content);
+  --home-link-color: var(--color-primary);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --status-error: var(--color-error);
+    --home-action-color: var(--color-primary);
+    --home-action-content: var(--color-primary-content);
+    --home-link-color: var(--color-primary);
+  }
+}
 @layer base {
   body { margin: 0; background: var(--color-base-100); color: var(--color-base-content); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; }
   *, ::before, ::after { border-color: var(--line); box-sizing: border-box; }
@@ -46,7 +61,9 @@ h1, .section-heading h2, .discovery-note h2 { font-family: Georgia, "Times New R
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; }
 .btn { min-height: 48px; height: auto; padding: 12px 22px; border-radius: 999px; font-size: 0.9rem; font-weight: 600; }
 .btn-outline { border-color: var(--control-border); }
+.home-action { --btn-color: var(--home-action-color); --btn-fg: var(--home-action-content); }
 .text-button { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; gap: 12px; padding: 8px 0; color: var(--color-primary); font-weight: 600; cursor: pointer; text-decoration: underline; }
+.home-link { color: var(--home-link-color); }
 .directory-stats { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); display: grid; grid-template-columns: repeat(3, 1fr); padding: 25px 0; }
 .directory-stats div { display: flex; flex-direction: column-reverse; padding-left: 30px; border-left: 1px solid var(--line); }
 .directory-stats div:first-child { padding-left: 0; border-left: 0; }
