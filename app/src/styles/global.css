@@ -178,7 +178,7 @@ h1, .section-heading h2, .discovery-note h2 { font-family: Georgia, "Times New R
 .map-search label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 8px; }
 .map-search input { width: 100%; min-height: 48px; padding: 10px 12px; border: 1px solid var(--control-border); border-radius: 6px; background: var(--color-base-100); }
 .map-search p { margin-top: 8px; color: var(--muted); font-size: 0.78rem; }
-.map-overview { --gmpx-color-surface: var(--color-base-100); --gmpx-color-on-surface: var(--color-base-content); --gmpx-color-on-surface-variant: var(--muted); --gmpx-color-outline: var(--control-border); --gmpx-color-primary: var(--color-primary); --gmpx-color-on-primary: var(--color-primary-content); padding: 16px; }
+.map-overview { --gmpx-color-surface: var(--color-base-100); --gmpx-color-on-surface: var(--color-base-content); --gmpx-color-on-surface-variant: var(--muted); --gmpx-color-outline: var(--control-border); --gmpx-color-primary: var(--color-primary); --gmpx-color-on-primary: var(--color-primary-content); --gmpx-hours-color-closed: var(--color-error); --gmpx-hours-color-open: var(--color-success); padding: 16px; }
 .site-footer { width: min(1120px, calc(100% - 64px)); margin: auto; padding: 36px 0; display: flex; justify-content: space-between; gap: 24px; font-size: 0.85rem; }
 .site-shell > footer { background: var(--color-base-200); border-top: 1px solid var(--line); }
 .footer-brand { font-size: 1.25rem; font-weight: 700; }
