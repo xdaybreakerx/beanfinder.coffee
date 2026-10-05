@@ -106,6 +106,55 @@ If I've missed a roaster in the site, let me know [via email](mailto:hello@xande
 
 [This Google Sheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vQMtPdz_le8HBLjTgAMK80IEoeZpZZGlZjcAdXh7Xd9Ld0Zy7zRV9duKyB7u_zHifi8nB9LiZogjXtb/pubhtml) (also by me)
 
+## Form submission pull requests
+
+After a production form submission is verified, Netlify invokes `app/netlify/functions/submission-created.mts`. The function validates the directory fields, reads the latest `main` data through GitHub's API, and creates a `forms/<submission-id>` branch and review PR. It never writes to `main` or merges PRs. The Netlify platform [verifies event signatures](https://docs.netlify.com/build/functions/trigger-on-events/#signature) before invocation; no webhook notification needs to be configured.
+
+Recommendations require a name, HTTP(S) website, state, cafe status, and multi-roaster status. Corrections identify the existing listing by website/name; the optional original website supports renamed listings and changed URLs. Blank state/status fields preserve existing values. Corrections with only explanatory notes open a PR containing a review receipt, so a maintainer can make the corresponding edit. Unmatched or ambiguous corrections are rejected and logged for manual follow-up. Recommendations already in the directory are skipped.
+
+Each PR commits directory changes, the release version files when data changes, and a whitelisted receipt under `.github/form-submissions/`. Names, websites, and notes become public, as explained on the form; contact details, IP addresses, and other raw submission metadata are excluded. Duplicate deliveries reuse an existing open or closed PR. A retry after a branch was created resumes PR creation without overwriting the branch. Distinct submissions can propose overlapping edits; review conflicts and duplicate proposals before merging. Individual roasters enter the map through the existing weekly enrichment workflow after merge.
+
+### Release versioning
+
+App releases choose the major/minor numbers manually; form data updates increment only the final patch number. For example, after a manual app release sets `1.1.0`, subsequent data PRs propose `1.1.1`, `1.1.2`, and so on. A patch increment from `1.1.9` produces `1.1.10`, without changing the app's major/minor numbers. GitHub tags use the canonical `v1.1.0`/`v1.1.1` form.
+
+A data-changing PR reads `app/package.json` and `app/package-lock.json` from the same latest-main commit as the directory data, then updates the package version, lockfile version, and lockfile root package version atomically with its data changes. The PR description and receipt record the proposed version. Retries reuse that version rather than incrementing again. Duplicate recommendations and explanation-only corrections do not bump the version. If a maintainer adds a directory edit to an explanation-only correction, include the appropriate patch bump before merging.
+
+If main's version advances while a PR is open, update that PR's package and lockfile versions to the next patch after main before merging. Two pending PRs can initially propose the same patch; the automation leaves reviewed branches untouched. Release publication remains manual: the function never creates tags or publishes GitHub releases, and merging a version bump follows the existing Netlify main-branch deployment behavior.
+
+For a larger app release, use `npm version minor --no-git-tag-version --ignore-scripts` from `app/` (or select another stable version explicitly), commit both version files, and publish the matching GitHub release after review. Keep package and lockfile root versions aligned; mismatched files and prerelease versions stop automated data PR creation instead of guessing the next version.
+
+### Activation
+
+1. Create a GitHub fine-grained personal access token restricted to `xdaybreakerx/beanfinder.coffee`, with **Contents: read/write** and **Pull requests: read/write** permissions. Metadata read access is automatic. Set an appropriate expiry and rotate the token before it expires.
+2. In the Netlify project's environment variables, add `FORM_PR_GITHUB_TOKEN` for the **production** deploy context, including the **Functions** scope (or all scopes on plans without scope selection). Keep the token out of Git and local payload files. The repository name and target branch are fixed in the implementation.
+3. Merge and deploy this branch, or trigger a new production deploy after changing the variable. Netlify snapshots function environment variables at deployment time; [`netlify.toml` variables are not available at function runtime](https://docs.netlify.com/build/functions/environment-variables/).
+4. Submit a real recommendation and confirm its PR and CI/Netlify checks. Preview events are ignored. PRs created with this token trigger normal review checks rather than using the Actions `GITHUB_TOKEN`.
+
+The legacy event filename intentionally retains the submission ID, which the newer typed form event omits, so the automation can deduplicate deliveries. The static form in `app/public/__forms.html` must mirror the visible field names; browser tests check this.
+
+### Recovery and local testing
+
+GitHub/network failures fail the function visibly in Netlify logs; malformed submissions log a rejection without their raw data. Netlify retains the submission independently of PR creation. Do not assume failed events are automatically retried. A maintainer can retry using a local JSON file containing the event's `payload` object (or `{ "payload": ... }`). Only retry submissions confirmed as verified in Netlify. For example:
+
+```json
+{
+  "id": "netlify-submission-id",
+  "form_name": "roaster-form",
+  "data": {
+    "submission-type": "recommendation",
+    "roaster-name": "Example Coffee",
+    "roaster-website": "https://example.coffee/",
+    "state": "VIC",
+    "has-cafe": "true",
+    "multi-roaster": "false",
+    "details": "Suggested directory addition"
+  }
+}
+```
+
+From `app/`, run `node src/scripts/replay-form-submission.mjs /path/to/payload.json --dry-run` to validate against local directory data without API calls. To create or resume the real PR, securely set `FORM_PR_GITHUB_TOKEN` in your shell and run the same command without `--dry-run`. Do not paste tokens into command history. Historical submissions lacking the new structured fields require manual review and completion before replaying; this release processes new events, not the existing backlog automatically.
+
 ## 📜 License
 
 This project is licensed under the [MIT license.](https://github.com/xdaybreakerx/beanfinder.coffee/blob/main/LICENSE)
