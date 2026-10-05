@@ -40,17 +40,13 @@
 .skip-link:focus { transform: translateY(0); }
 .eyebrow { color: var(--color-primary); text-transform: uppercase; letter-spacing: 0.16em; font-size: 0.72rem; font-weight: 700; margin-bottom: 18px; }
 h1, .section-heading h2, .discovery-note h2 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; letter-spacing: -0.04em; line-height: 1.1; }
-.home-hero { display: grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items: center; padding: 40px 0 56px; }
+.home-hero { padding: 40px 0 56px; }
 .home-hero h1 { font-size: clamp(3rem, 6vw, 5.5rem); }
 .hero-description { max-width: 450px; font-size: 1.08rem; color: var(--muted); margin: 28px 0; }
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; }
 .btn { min-height: 48px; height: auto; padding: 12px 22px; border-radius: 999px; font-size: 0.9rem; font-weight: 600; }
 .btn-outline { border-color: var(--control-border); }
 .text-button { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; gap: 12px; padding: 8px 0; color: var(--color-primary); font-weight: 600; cursor: pointer; text-decoration: underline; }
-.hero-art { position: relative; min-height: 330px; display: grid; place-items: center; color: var(--color-primary); background: radial-gradient(ellipse at center, var(--color-base-300), transparent 70%); }
-.hero-art svg { width: 100%; max-width: 340px; z-index: 1; }
-.coffee-orbit { position: absolute; width: 85%; aspect-ratio: 1; border: 1px dashed var(--line); border-radius: 50%; transform: rotate(-20deg) scaleY(0.84); }
-.art-caption { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.14em; margin-top: 12px; }
 .directory-stats { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); display: grid; grid-template-columns: repeat(3, 1fr); padding: 25px 0; }
 .directory-stats div { display: flex; flex-direction: column-reverse; padding-left: 30px; border-left: 1px solid var(--line); }
 .directory-stats div:first-child { padding-left: 0; border-left: 0; }
@@ -84,6 +80,8 @@ h1, .section-heading h2, .discovery-note h2 { font-family: Georgia, "Times New R
 .roaster-name h2 { font-size: 1.07rem; font-weight: 650; line-height: 1.4; }
 .roaster-domain { display: block; font-size: 0.75rem; margin-top: 3px; overflow-wrap: anywhere; }
 .roaster-location, .roaster-type { font-size: 0.82rem; }
+.cafe-locations { margin-top: 4px; }
+.cafe-map-link { display: inline-flex; align-items: center; min-height: 44px; gap: 6px; color: var(--color-primary); text-decoration: underline; overflow-wrap: anywhere; }
 .cafe-note { display: block; color: var(--color-base-content); font-weight: 600; margin-top: 4px; }
 .roaster-link { display: flex; gap: 10px; align-items: center; justify-content: end; min-height: 44px; color: var(--color-primary); font-size: 0.82rem; font-weight: 600; text-decoration: underline; }
 .empty-state { text-align: center; padding: 64px 24px; color: var(--muted); }
@@ -132,8 +130,7 @@ h1, .section-heading h2, .discovery-note h2 { font-family: Georgia, "Times New R
   .brand { flex: 1; }
   .main-nav { order: 3; width: 100%; margin: 0; justify-content: space-between; gap: 12px; }
   .site-main { width: calc(100% - 40px); padding-top: 24px; }
-  .home-hero { grid-template-columns: 1fr; gap: 24px; padding-top: 24px; }
-  .hero-art { display: none; }
+  .home-hero { padding-top: 24px; }
   .hero-description { max-width: 550px; }
   .hero-actions { align-items: start; flex-direction: column; }
   .directory-stats div { padding-left: 16px; }

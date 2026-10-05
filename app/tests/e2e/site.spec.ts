@@ -9,6 +9,12 @@ test("home navigation and state browsing", async ({ page }) => {
   await page.goto("/");
   await expect(page.locator('meta[name="generator"]')).toHaveAttribute("content", /^Astro v7\./);
   await expect(page.getByRole("heading", { name: "Find your next favourite roast." })).toBeVisible();
+  await expect(page.locator('.hero-art')).toHaveCount(0);
+  await expect(page.getByText('Roasted here. Enjoyed anywhere.')).toHaveCount(0);
+  await expect(page.locator('.directory-stats dd').last()).toHaveText('All');
+  await expect(page.locator('footer')).toContainText('A good place to find your next great coffee.');
+  await expect(page.locator('footer')).toContainText('Made with');
+  await expect(page.getByRole('img', { name: 'love', exact: true })).toBeVisible();
   const state = page.getByRole("link", { name: "VIC — Victoria", exact: true });
   await expect(state).toHaveCSS("align-items", "center");
   await expect(state).toHaveCSS("border-bottom-style", "solid");
@@ -160,7 +166,36 @@ test("directory search, filters, bookmarks, and clear state", async ({ page }) =
   await page.getByLabel('Listing type', { exact: true }).selectOption('multi');
   await expect(rows.filter({ hasText: 'BeanHub' })).toHaveCount(1);
   await expect(rows.filter({ hasText: 'Tone Coffee Roasters' })).toHaveCount(0);
-  await expect(rows.first().getByRole('link')).toHaveAttribute('rel', 'noopener noreferrer');
+  await expect(page.getByLabel('State or territory')).toBeHidden();
+  await expect(page).not.toHaveURL(/state=/);
+  await expect(rows.first().getByRole('link', { name: /Visit website/ })).toHaveAttribute('rel', 'noopener noreferrer');
+});
+
+test("multi-roaster sellers are Australia-only online listings without a state menu", async ({ page }) => {
+  await page.goto('/roasters/online-subscriptions/1');
+  const labels = page.locator('.roaster-row .roaster-location > span');
+  await expect(labels).not.toHaveCount(0);
+  const sellerCount = await labels.count();
+  expect((await labels.allTextContents()).every(label => label === 'Online - Australia Only')).toBe(true);
+  await expect(page.getByText('Browse by state', { exact: true })).toHaveCount(0);
+  await page.goto('/roasters/?type=multi&state=VIC');
+  await expect(page.getByLabel('State or territory')).toBeHidden();
+  await expect(page.locator('.roaster-row:visible')).toHaveCount(sellerCount);
+  await expect(page).not.toHaveURL(/state=/);
+});
+
+test("cafe listings expose locality searches and exact Google Maps links", async ({ page }) => {
+  await page.goto('/roasters/');
+  await page.getByLabel('Find a roaster').fill('Mount Hawthorn');
+  const listing = page.locator('.roaster-row:visible').filter({ hasText: '2 Keys Coffee Boutique' });
+  await expect(listing).toHaveCount(1);
+  const link = listing.getByRole('link', { name: /View 2 Keys Coffee Boutique on Google Maps/ });
+  await expect(link).toContainText('Mount Hawthorn WA 6016');
+  const url = new URL((await link.getAttribute('href'))!);
+  expect(url.searchParams.get('query_place_id')).toBe('ChIJiyYa1pylMioRKk-alGO0RYc');
+  await expect(link).toHaveAttribute('rel', 'noopener noreferrer');
+  await page.getByLabel('Find a roaster').fill('Tone Coffee');
+  await expect(page.locator('.roaster-row:visible').getByRole('link', { name: /Search for Tone Coffee Roasters on Google Maps/ })).toContainText('Search on map');
 });
 
 test("theme follows the system and works when storage is blocked", async ({ page }) => {

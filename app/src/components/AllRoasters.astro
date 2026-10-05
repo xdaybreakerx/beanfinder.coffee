@@ -6,8 +6,8 @@ import { states } from "../data/states";
 const listings = [...roasters, ...sellers].sort((a, b) => a.Name.localeCompare(b.Name));
 ---
 <div class="directory-tools">
-  <div class="search-field"><label for="directory-search">Find a roaster</label><input id="directory-search" type="search" placeholder="Search by name or website" autocomplete="off" /></div>
-  <div><label for="directory-state">State or territory</label><select id="directory-state"><option value="">All Australia</option>{states.map(state => <option value={state.code}>{state.name}</option>)}</select></div>
+  <div class="search-field"><label for="directory-search">Find a roaster</label><input id="directory-search" type="search" placeholder="Search by name, suburb or website" autocomplete="off" /></div>
+  <div id="directory-state-field"><label for="directory-state">State or territory</label><select id="directory-state"><option value="">All Australia</option>{states.map(state => <option value={state.code}>{state.name}</option>)}</select></div>
   <div><label for="directory-type">Listing type</label><select id="directory-type"><option value="">All listings</option><option value="roaster">Coffee roasters</option><option value="multi">Multi-roaster sellers</option></select></div>
   <label class="cafe-filter" for="directory-cafe"><input type="checkbox" id="directory-cafe" class="checkbox checkbox-sm" />With a cafe</label>
   <button id="directory-reset" type="button" class="text-button">Clear filters</button>
@@ -25,6 +25,10 @@ const listings = [...roasters, ...sellers].sort((a, b) => a.Name.localeCompare(b
   const empty = document.querySelector<HTMLElement>('#directory-empty');
   const rows = [...document.querySelectorAll<HTMLElement>('#list-of-roasters .roaster-row')];
   function filter(updateUrl = true) {
+    const onlineOnly = type.value === 'multi';
+    state.disabled = onlineOnly;
+    document.querySelector<HTMLElement>('#directory-state-field').hidden = onlineOnly;
+    if (onlineOnly) state.value = '';
     const terms = search.value.toLocaleLowerCase().trim().split(/\s+/).filter(Boolean);
     let visible = 0;
     for (const row of rows) {
@@ -37,7 +41,7 @@ const listings = [...roasters, ...sellers].sort((a, b) => a.Name.localeCompare(b
     }
     count.textContent = `${visible} ${visible === 1 ? 'listing' : 'listings'}`;
     empty.hidden = visible !== 0;
-    if (updateUrl) {
+    if (updateUrl || onlineOnly) {
       const url = new URL(window.location.href);
       for (const [key, value] of Object.entries({ q: search.value, state: state.value, type: type.value, cafe: cafe.checked ? 'true' : '' })) {
         if (value) url.searchParams.set(key, value); else url.searchParams.delete(key);

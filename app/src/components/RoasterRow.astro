@@ -1,13 +1,15 @@
 ---
+import { getCafeMapLinks } from "../utils/cafeMapLinks";
 interface Roaster { Name: string; Website: string; State: string; hasCafe: boolean; multiRoaster: boolean; }
 interface Props { roaster: Roaster; }
 const { roaster } = Astro.props;
 const domain = new URL(roaster.Website).hostname.replace(/^www\./, '');
-const region = roaster.State.toLowerCase() === 'all' ? 'Online · Australia-wide' : roaster.State;
+const region = roaster.multiRoaster || roaster.State.toLowerCase() === 'all' ? 'Online - Australia Only' : roaster.State;
+const cafeLinks = getCafeMapLinks(roaster, Astro.params.state);
 ---
-<article class="roaster-row" data-search={`${roaster.Name} ${domain}`.toLowerCase()} data-state={roaster.State} data-cafe={String(roaster.hasCafe)} data-multi={String(roaster.multiRoaster)}>
+<article class="roaster-row" data-search={`${roaster.Name} ${domain} ${cafeLinks.map(link => link.address ?? '').join(' ')}`.toLowerCase()} data-state={roaster.multiRoaster ? 'all' : roaster.State} data-cafe={String(roaster.hasCafe)} data-multi={String(roaster.multiRoaster)}>
   <div class="roaster-name"><h2>{roaster.Name}</h2><span class="roaster-domain">{domain}</span></div>
-  <div class="roaster-location">{region}</div>
+  <div class="roaster-location"><span>{region}</span>{cafeLinks.length > 0 && <ul class="cafe-locations">{cafeLinks.map(link => <li><a href={link.href} target="_blank" rel="noopener noreferrer" class="cafe-map-link" title={link.address}>{link.locality ?? (link.placeId ? 'View on map' : 'Search on map')}<span aria-hidden="true">↗</span><span class="sr-only"> — {link.placeId ? 'View' : 'Search for'} {roaster.Name} on Google Maps (opens in a new tab)</span></a></li>)}</ul>}</div>
   <div class="roaster-type"><span>{roaster.multiRoaster ? 'Multi-roaster seller' : 'Coffee roaster'}</span>{roaster.hasCafe && <span class="cafe-note">Cafe available</span>}</div>
   <a class="roaster-link" href={roaster.Website} target="_blank" rel="noopener noreferrer">Visit website<span aria-hidden="true">↗</span><span class="sr-only"> for {roaster.Name} (opens in a new tab)</span></a>
 </article>

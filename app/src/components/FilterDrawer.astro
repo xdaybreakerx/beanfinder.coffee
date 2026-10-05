@@ -1,15 +1,16 @@
 ---
 import { states } from "../data/states";
 const pathname = Astro.url.pathname;
+const { showStateFilter = true } = Astro.props;
 ---
 <div class="directory-layout">
   <nav aria-label="Directory navigation" class="directory-nav">
     <a href="/roasters/" aria-current={pathname === '/roasters/' ? 'page' : undefined}>All listings</a>
     <a href="/roasters/online-subscriptions/1" aria-current={pathname.includes('online-subscriptions') ? 'page' : undefined}>Multi-roaster sellers</a>
-    <details class="state-menu">
+    {showStateFilter && <details class="state-menu">
       <summary>Browse by state</summary>
       <ul>{states.map(state => <li><a href={`/roasters/${state.code}/false/1`} aria-current={pathname.includes(`/${state.code}/`) ? 'page' : undefined}>{state.name} <span>{state.code}</span></a></li>)}</ul>
-    </details>
+    </details>}
   </nav>
   <slot name="main-content" />
 </div>
