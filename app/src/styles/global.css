@@ -1,76 +1,17 @@
 @import "tailwindcss";
-@plugin "daisyui" { themes: false; }
+@plugin "daisyui" {
+  themes: caramellatte --default, coffee --prefersdark;
+}
 
-@plugin "daisyui/theme" {
-  name: "light";
-  default: true;
-  prefersdark: false;
-  color-scheme: light;
-  --color-base-100: #fcf8f2;
-  --color-base-200: #f4ede3;
-  --color-base-300: #e8dccd;
-  --color-base-content: #30251f;
-  --color-primary: #70412d;
-  --color-primary-content: #fff9f0;
-  --color-secondary: #315749;
-  --color-secondary-content: #fff9f0;
-  --color-accent: #744120;
-  --color-accent-content: #fff9f0;
-  --color-neutral: #30251f;
-  --color-neutral-content: #fff9f0;
-  --color-info: #275574;
-  --color-info-content: #fff9f0;
-  --color-success: #315749;
-  --color-success-content: #fff9f0;
-  --color-warning: #835000;
-  --color-warning-content: #fff9f0;
-  --color-error: #993729;
-  --color-error-content: #fff9f0;
-  --radius-selector: 0.5rem;
-  --radius-field: 0.5rem;
-  --radius-box: 1rem;
-  --size-selector: 0.25rem;
-  --size-field: 0.25rem;
-  --border: 1px;
-  --depth: 0;
-  --noise: 0;
+:root {
+  --muted: color-mix(in oklab, var(--color-base-content) 85%, var(--color-base-100));
+  --line: color-mix(in oklab, var(--color-base-content) 50%, var(--color-base-100));
+  --control-border: color-mix(in oklab, var(--color-base-content) 75%, var(--color-base-100));
+  --focus: var(--color-primary);
+  --status-error: var(--color-error-content);
 }
-@plugin "daisyui/theme" {
-  name: "dark";
-  default: false;
-  prefersdark: true;
-  color-scheme: dark;
-  --color-base-100: #171b19;
-  --color-base-200: #202823;
-  --color-base-300: #303a34;
-  --color-base-content: #f4ece1;
-  --color-primary: #eac59c;
-  --color-primary-content: #271b13;
-  --color-secondary: #adcaba;
-  --color-secondary-content: #13271d;
-  --color-accent: #efbd8a;
-  --color-accent-content: #271b13;
-  --color-neutral: #f4ece1;
-  --color-neutral-content: #171b19;
-  --color-info: #b1cced;
-  --color-info-content: #142838;
-  --color-success: #9ccbac;
-  --color-success-content: #12301d;
-  --color-warning: #f2cf85;
-  --color-warning-content: #302307;
-  --color-error: #f3b1a7;
-  --color-error-content: #3d1711;
-  --radius-selector: 0.5rem;
-  --radius-field: 0.5rem;
-  --radius-box: 1rem;
-  --size-selector: 0.25rem;
-  --size-field: 0.25rem;
-  --border: 1px;
-  --depth: 0;
-  --noise: 0;
-}
-:root, [data-theme="light"] { --muted: #66584e; --line: #ad9786; --control-border: #927765; --focus: #315749; }
-[data-theme="dark"] { --muted: #c3bbaf; --line: #738277; --control-border: #86958a; --focus: #adcaba; }
+[data-theme="coffee"] { --status-error: var(--color-error); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme]) { --status-error: var(--color-error); } }
 @layer base {
   body { margin: 0; background: var(--color-base-100); color: var(--color-base-content); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; }
   *, ::before, ::after { border-color: var(--line); box-sizing: border-box; }
@@ -143,7 +84,7 @@ h1, .section-heading h2, .discovery-note h2 { font-family: Georgia, "Times New R
 .roaster-name h2 { font-size: 1.07rem; font-weight: 650; line-height: 1.4; }
 .roaster-domain { display: block; font-size: 0.75rem; margin-top: 3px; overflow-wrap: anywhere; }
 .roaster-location, .roaster-type { font-size: 0.82rem; }
-.cafe-note { display: block; color: var(--color-secondary); font-weight: 600; margin-top: 4px; }
+.cafe-note { display: block; color: var(--color-base-content); font-weight: 600; margin-top: 4px; }
 .roaster-link { display: flex; gap: 10px; align-items: center; justify-content: end; min-height: 44px; color: var(--color-primary); font-size: 0.82rem; font-weight: 600; text-decoration: underline; }
 .empty-state { text-align: center; padding: 64px 24px; color: var(--muted); }
 .directory-nav { display: flex; align-items: center; flex-wrap: wrap; gap: 24px; padding: 16px 0 24px; border-bottom: 1px solid var(--line); margin-bottom: 24px; font-size: 0.88rem; }
@@ -167,6 +108,7 @@ h1, .section-heading h2, .discovery-note h2 { font-family: Georgia, "Times New R
 .roaster-form .dropdown-content { width: 100%; padding: 0; background: transparent; box-shadow: none; }
 .roaster-form > form > .space-y-12 > .border-b { border-bottom: 0; padding-bottom: 0; }
 .roaster-form label:has(input[type="radio"]) { min-height: 44px; }
+.roaster-form #submission-error { color: var(--status-error); }
 .roaster-form input[type="radio"], .roaster-form input[type="checkbox"], .cafe-filter input { border-color: var(--control-border); }
 .success-page { max-width: 720px; margin: 48px auto; }
 .success-page > p:not(.eyebrow) { color: var(--muted); margin: 24px 0; }
@@ -178,7 +120,7 @@ h1, .section-heading h2, .discovery-note h2 { font-family: Georgia, "Times New R
 .map-search label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 8px; }
 .map-search input { width: 100%; min-height: 48px; padding: 10px 12px; border: 1px solid var(--control-border); border-radius: 6px; background: var(--color-base-100); }
 .map-search p { margin-top: 8px; color: var(--muted); font-size: 0.78rem; }
-.map-overview { --gmpx-color-surface: var(--color-base-100); --gmpx-color-on-surface: var(--color-base-content); --gmpx-color-on-surface-variant: var(--muted); --gmpx-color-outline: var(--control-border); --gmpx-color-primary: var(--color-primary); --gmpx-color-on-primary: var(--color-primary-content); --gmpx-hours-color-closed: var(--color-error); --gmpx-hours-color-open: var(--color-success); padding: 16px; }
+.map-overview { --gmpx-color-surface: var(--color-base-100); --gmpx-color-on-surface: var(--color-base-content); --gmpx-color-on-surface-variant: var(--muted); --gmpx-color-outline: var(--control-border); --gmpx-color-primary: var(--color-primary); --gmpx-color-on-primary: var(--color-primary-content); --gmpx-hours-color-closed: var(--status-error); --gmpx-hours-color-open: var(--color-success); padding: 16px; }
 .site-footer { width: min(1120px, calc(100% - 64px)); margin: auto; padding: 36px 0; display: flex; justify-content: space-between; gap: 24px; font-size: 0.85rem; }
 .site-shell > footer { background: var(--color-base-200); border-top: 1px solid var(--line); }
 .footer-brand { font-size: 1.25rem; font-weight: 700; }

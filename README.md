@@ -11,7 +11,7 @@ BeanFinder is a curated directory of Australian coffee roasters designed to help
 - [x] Searchable A–Z directory with state, cafe, and multi-roaster filters
 - [x] Australian-only map locations
 
-The directory filters are saved in the URL so searches can be bookmarked or shared. Light and dark themes follow the system preference until a visitor chooses a theme. Both themes include visible keyboard focus and a skip link.
+The directory filters are saved in the URL so searches can be bookmarked or shared. The daisyUI `caramellatte` (light) and `coffee` (dark) themes follow the system preference until a visitor chooses a theme. Existing saved light/dark choices are retained. Both themes include visible keyboard focus and a skip link.
 
 The weekly Places enrichment checks Australian formatted addresses when choosing candidates, then requires Google's `AU` country component and valid coordinates before saving details. The map also filters cached data: older records without a country code must end their formatted address with `Australia`. A location that fails verification is omitted from the map; its roaster remains in the directory. API failures stop enrichment before replacing the corresponding data file.
 

@@ -29,15 +29,27 @@ test("pagination and cafe filtering", async ({ page }) => {
 
 test("theme toggle persists across reloads", async ({ page }) => {
   await page.goto("/");
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "caramellatte");
   const toggle = page.getByRole("checkbox", { name: "Toggle dark mode" });
   await page.locator('label[for="theme-controller"]').click();
-  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "coffee");
+  expect(await page.evaluate(() => localStorage.getItem('theme'))).toBe('coffee');
   await page.reload();
   await expect(toggle).toBeChecked();
-  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "coffee");
   await page.locator('label[for="theme-controller"]').click();
-  await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "caramellatte");
 });
+
+for (const [saved, theme] of [['light', 'caramellatte'], ['dark', 'coffee']]) {
+  test(`retains the saved ${saved} preference with the new theme`, async ({ page }) => {
+    await page.emulateMedia({ colorScheme: saved === 'light' ? 'dark' : 'light' });
+    await page.addInitScript(value => localStorage.setItem('theme', value), saved);
+    await page.goto('/');
+    await expect(page.locator('html')).toHaveAttribute('data-theme', theme);
+    await expect(page.getByRole('checkbox', { name: 'Toggle dark mode' })).toBeChecked({ checked: saved === 'dark' });
+  });
+}
 
 test("submission form remains detectable and usable", async ({ page }) => {
   await page.goto("/submit/");
@@ -97,6 +109,13 @@ test("submission failures show an error and allow retry", async ({ page }) => {
   await page.getByRole("button", { name: "Submit", exact: true }).click();
   await expect(page.getByRole("alert")).toHaveText("We could not submit your update. Please try again.");
   await expect(page.getByRole("button", { name: "Submit", exact: true })).toBeEnabled();
+  for (const theme of ['caramellatte', 'coffee']) {
+    await page.getByRole('checkbox', { name: 'Toggle dark mode' }).setChecked(theme === 'coffee');
+    // daisyUI animates button colours; scan after the theme transition settles.
+    await expect(page.getByRole('button', { name: 'Cancel', exact: true })).toHaveCSS('color', await page.locator('body').evaluate(element => getComputedStyle(element).color));
+    const results = await new AxeBuilder({ page }).include('.roaster-form').withTags(['wcag2a', 'wcag2aa']).analyze();
+    expect(results.violations.map(violation => ({ id: violation.id, nodes: violation.nodes.map(node => ({ target: node.target, summary: node.failureSummary })) })), `Submission error in ${theme}`).toEqual([]);
+  }
 });
 
 test("static detection form mirrors the visible submission fields", async ({ page, request }) => {
@@ -148,11 +167,18 @@ test("theme follows the system and works when storage is blocked", async ({ page
   await page.emulateMedia({ colorScheme: 'dark' });
   await page.addInitScript(() => { Object.defineProperty(window, 'localStorage', { get() { throw new Error('Storage blocked'); } }); });
   await page.goto('/');
-  await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'coffee');
+  await page.emulateMedia({ colorScheme: 'light' });
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'caramellatte');
+  await page.emulateMedia({ colorScheme: 'dark' });
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'coffee');
   const toggle = page.getByRole('checkbox', { name: 'Toggle dark mode' });
   await toggle.focus();
   await page.keyboard.press('Space');
-  await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'caramellatte');
+  await page.emulateMedia({ colorScheme: 'light' });
+  await page.emulateMedia({ colorScheme: 'dark' });
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'caramellatte');
 });
 
 test("skip link and responsive layout support keyboard and zoom", async ({ page }) => {
@@ -167,7 +193,7 @@ test("skip link and responsive layout support keyboard and zoom", async ({ page 
 });
 
 test("light and dark core pages pass automated WCAG checks", async ({ page }) => {
-  for (const theme of ['light', 'dark']) {
+  for (const theme of ['caramellatte', 'coffee']) {
     await page.addInitScript(value => localStorage.setItem('theme', value), theme);
     for (const path of ['/', '/roasters/', '/roasters/VIC/false/1', '/roasters/online-subscriptions/1', '/submit/', '/success/', '/404']) {
       await page.goto(path);

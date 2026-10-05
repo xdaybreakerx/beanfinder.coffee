@@ -7,16 +7,16 @@
   const toggle = document.querySelector<HTMLInputElement>('#theme-controller');
   const system = window.matchMedia('(prefers-color-scheme: dark)');
   let explicit = false;
-  try { explicit = ['light', 'dark'].includes(localStorage.getItem('theme')); } catch { /* Storage can be unavailable. */ }
-  const sync = () => { toggle.checked = document.documentElement.dataset.theme === 'dark'; };
+  try { explicit = ['light', 'dark', 'caramellatte', 'coffee'].includes(localStorage.getItem('theme')); } catch { /* Storage can be unavailable. */ }
+  const sync = () => { toggle.checked = document.documentElement.dataset.theme === 'coffee'; };
   sync();
   toggle.addEventListener('change', () => {
     explicit = true;
-    const theme = toggle.checked ? 'dark' : 'light';
+    const theme = toggle.checked ? 'coffee' : 'caramellatte';
     document.documentElement.dataset.theme = theme;
     try { localStorage.setItem('theme', theme); } catch { /* The current visit still updates. */ }
   });
   system.addEventListener('change', event => {
-    if (!explicit) { document.documentElement.dataset.theme = event.matches ? 'dark' : 'light'; sync(); }
+    if (!explicit) { document.documentElement.dataset.theme = event.matches ? 'coffee' : 'caramellatte'; sync(); }
   });
 </script>
