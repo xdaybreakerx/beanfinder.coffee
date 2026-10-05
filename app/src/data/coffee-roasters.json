@@ -119,9 +119,23 @@
     "multiRoaster": false
   },
   {
+    "Name": "Beat Coffee",
+    "Website": "https://beatcoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false
+  },
+  {
     "Name": "Bellissimo Coffee",
     "Website": "https://www.bellissimocoffee.com.au/",
     "State": "QLD",
+    "hasCafe": true,
+    "multiRoaster": false
+  },
+  {
+    "Name": "Bench Coffee Co",
+    "Website": "https://benchcoffee.co/",
+    "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false
   },
@@ -179,6 +193,27 @@
     "Website": "https://blumecoffee.com/",
     "State": "VIC",
     "hasCafe": true,
+    "multiRoaster": false
+  },
+  {
+    "Name": "Boof-Pa Beans",
+    "Website": "https://boofpabeans.com.au/",
+    "State": "ACT",
+    "hasCafe": false,
+    "multiRoaster": false
+  },
+  {
+    "Name": "Born And Raised",
+    "Website": "https://bornandraised.coffee/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false
+  },
+  {
+    "Name": "Brewno Specialty Coffee",
+    "Website": "https://www.brewnospecialtycoffee.com.au/",
+    "State": "QLD",
+    "hasCafe": false,
     "multiRoaster": false
   },
   {
@@ -287,6 +322,20 @@
     "multiRoaster": false
   },
   {
+    "Name": "Core Roasters",
+    "Website": "https://www.coreroasters.cc/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false
+  },
+  {
+    "Name": "Cortado Coffee Roasters",
+    "Website": "https://cortadocoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false
+  },
+  {
     "Name": "Crema Coffee Co",
     "Website": "https://cremacoffeeco.com.au/",
     "State": "WA",
@@ -326,6 +375,13 @@
     "Website": "https://www.dawnpatrolcoffee.com.au/",
     "State": "SA",
     "hasCafe": true,
+    "multiRoaster": false
+  },
+  {
+    "Name": "DC Coffee",
+    "Website": "https://dccoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": false,
     "multiRoaster": false
   },
   {
@@ -385,6 +441,13 @@
     "multiRoaster": false
   },
   {
+    "Name": "First Love Coffee",
+    "Website": "https://firstlovecoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false
+  },
+  {
     "Name": "Fish River Roasters",
     "Website": "https://www.fishriverroasters.com.au/",
     "State": "NSW",
@@ -416,6 +479,20 @@
     "Name": "Four",
     "Website": "https://fourcoffee.com.au/",
     "State": "NSW",
+    "hasCafe": false,
+    "multiRoaster": false
+  },
+  {
+    "Name": "Four Kilo Fish",
+    "Website": "https://www.fourkilofish.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false
+  },
+  {
+    "Name": "Good Hustle Coffee Roasters",
+    "Website": "https://goodhustlecoffee.com.au/",
+    "State": "VIC",
     "hasCafe": false,
     "multiRoaster": false
   },
@@ -483,6 +560,13 @@
     "multiRoaster": false
   },
   {
+    "Name": "Klim Coffee Roasting Co",
+    "Website": "https://www.klimcoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false
+  },
+  {
     "Name": "La Crema",
     "Website": "https://www.lacremacoffee.com.au/",
     "State": "SA",
@@ -493,6 +577,13 @@
     "Name": "Leaf Bean Machine",
     "Website": "https://www.leafbeanmachine.com.au/",
     "State": "WA",
+    "hasCafe": true,
+    "multiRoaster": false
+  },
+  {
+    "Name": "Leaping Goat Coffee",
+    "Website": "https://www.leapinggoatcoffee.com.au/",
+    "State": "TAS",
     "hasCafe": true,
     "multiRoaster": false
   },
@@ -742,6 +833,13 @@
     "multiRoaster": false
   },
   {
+    "Name": "Project 281",
+    "Website": "https://project281.com/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false
+  },
+  {
     "Name": "Project Zero Coffee",
     "Website": "https://www.instagram.com/projectzero.coffee/",
     "State": "VIC",
@@ -774,6 +872,13 @@
     "Website": "https://rebelroasters.com.au/",
     "State": "SA",
     "hasCafe": false,
+    "multiRoaster": false
+  },
+  {
+    "Name": "Red Bean Coffee Roasters",
+    "Website": "https://www.redbeancoffee.com.au/",
+    "State": "VIC",
+    "hasCafe": true,
     "multiRoaster": false
   },
   {
@@ -871,6 +976,13 @@
     "Name": "Seven Seeds",
     "Website": "https://sevenseeds.com.au/",
     "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false
+  },
+  {
+    "Name": "Siboni's Coffee",
+    "Website": "https://www.siboniscoffee.com.au/",
+    "State": "NSW",
     "hasCafe": true,
     "multiRoaster": false
   },
@@ -973,6 +1085,13 @@
     "multiRoaster": false
   },
   {
+    "Name": "The Flour",
+    "Website": "https://www.theflourmelbourne.com/",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false
+  },
+  {
     "Name": "Tim Adams",
     "Website": "https://www.timadams.net.au/",
     "State": "QLD",
@@ -983,6 +1102,13 @@
     "Name": "Toby's Estate",
     "Website": "https://www.tobysestate.com.au/",
     "State": "QLD, NSW",
+    "hasCafe": true,
+    "multiRoaster": false
+  },
+  {
+    "Name": "Tone Coffee Roasters",
+    "Website": "https://www.tonecoffeeroasters.au/",
+    "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false
   },
@@ -1506,7 +1632,7 @@
   },
   {
     "Name": "Fieldwork Coffee",
-    "Website": "https://www.baybeans.com.au/",
+    "Website": "https://fieldworkcoffee.com.au/",
     "State": "VIC",
     "hasCafe": true,
     "multiRoaster": false

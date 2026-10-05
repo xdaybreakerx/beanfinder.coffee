@@ -1,0 +1,17 @@
+{
+  "submission": {
+    "id": "67379af3beef7800c9bb6f89",
+    "type": "recommendation",
+    "name": "Boof-Pa Beans",
+    "website": "https://boofpabeans.com.au/",
+    "state": "ACT",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "details": "Cafe and roaster classifications confirmed by maintainer manual research on 5 October 2026."
+  },
+  "explanationOnly": false,
+  "backfill": true,
+  "sources": [
+    "https://boofpabeans.com.au/"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "submission": {
+    "id": "67998d69bdb79800c37a9da3",
+    "type": "recommendation",
+    "name": "Good Hustle Coffee Roasters",
+    "website": "https://goodhustlecoffee.com.au/",
+    "state": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "details": "Cafe and roaster classifications confirmed by maintainer manual research on 5 October 2026."
+  },
+  "explanationOnly": false,
+  "backfill": true,
+  "sources": [
+    "https://goodhustlecoffee.com.au/"
+  ]
+}

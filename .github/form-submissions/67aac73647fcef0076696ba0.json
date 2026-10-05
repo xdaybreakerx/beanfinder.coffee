@@ -1,0 +1,17 @@
+{
+  "submission": {
+    "id": "67aac73647fcef0076696ba0",
+    "type": "recommendation",
+    "name": "DC Coffee",
+    "website": "https://dccoffee.com.au/",
+    "state": "VIC",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "details": "Cafe and roaster classifications confirmed by maintainer manual research on 5 October 2026."
+  },
+  "explanationOnly": false,
+  "backfill": true,
+  "sources": [
+    "https://dccoffee.com.au/"
+  ]
+}

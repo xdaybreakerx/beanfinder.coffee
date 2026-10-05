@@ -1,0 +1,17 @@
+{
+  "submission": {
+    "id": "68a0256eb17f2700841af7c0",
+    "type": "recommendation",
+    "name": "Core Roasters",
+    "website": "https://www.coreroasters.cc/",
+    "state": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "details": "Historical Netlify submission reviewed for backfill."
+  },
+  "explanationOnly": false,
+  "backfill": true,
+  "sources": [
+    "https://www.coreroasters.cc/roasterycafe"
+  ]
+}

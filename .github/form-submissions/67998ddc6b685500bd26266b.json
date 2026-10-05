@@ -1,0 +1,17 @@
+{
+  "submission": {
+    "id": "67998ddc6b685500bd26266b",
+    "type": "recommendation",
+    "name": "Four Kilo Fish",
+    "website": "https://www.fourkilofish.com.au/",
+    "state": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "details": "Historical Netlify submission reviewed for backfill."
+  },
+  "explanationOnly": false,
+  "backfill": true,
+  "sources": [
+    "https://www.fourkilofish.com.au/pages/four-kilo-fish-coffee-and-tea-hawthorn"
+  ]
+}

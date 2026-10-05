@@ -1,0 +1,15 @@
+{
+  "submission": {
+    "id": "68901e30e3420f40bfe8cea1",
+    "type": "issue",
+    "name": "Fieldwork Coffee",
+    "website": "https://fieldworkcoffee.com.au/",
+    "state": "VIC",
+    "details": "Correct the Fieldwork Coffee listing, which currently links to Bay Beans. Cafe status is preserved from the existing directory."
+  },
+  "explanationOnly": false,
+  "backfill": true,
+  "sources": [
+    "https://fieldworkcoffee.com.au/"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "submission": {
+    "id": "6755856249114c0bb1d3e7d1",
+    "type": "recommendation",
+    "name": "Klim Coffee Roasting Co",
+    "website": "https://www.klimcoffee.com.au/",
+    "state": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "details": "Historical Netlify submission reviewed for backfill."
+  },
+  "explanationOnly": false,
+  "backfill": true,
+  "sources": [
+    "https://klimcoffee.com.au/about"
+  ]
+}
