@@ -2,7 +2,7 @@ import { AU_STATES, validId, validPastDate, websiteIdentity, type Business } fro
 
 export type LegacyIdentity = { locationId: string; placeId: string; businessId: string | null; candidateBusinessIds?: string[] };
 export type ReviewedLocation = {
-  locationId: string; businessId: string; placeId: string; Name: string; state: string;
+  locationId: string; businessId: string; placeId?: string; address?: string; Name: string; state: string;
   countryCode: 'AU'; hasCafe: boolean;
   source: { url: string; reviewedAt: string };
 };
@@ -24,15 +24,21 @@ export function validateLocations(legacy: unknown, reviewed: unknown, businesses
   }
   const seen = new Set<string>();
   for (const location of reviewed) {
-    if (!location || !validId(location.locationId, 'loc') || !validPlace(location.placeId) || seen.has(location.locationId) || !businessIds.has(location.businessId) ||
-        (ids.has(location.locationId) && ids.get(location.locationId) !== location.placeId) || (places.has(location.placeId) && places.get(location.placeId) !== location.locationId) ||
+    if (!location || !validId(location.locationId, 'loc') ||
+        (location.placeId !== undefined && !validPlace(location.placeId)) || (!location.placeId && !location.address) ||
+        (location.address !== undefined && (typeof location.address !== 'string' || location.address !== location.address.trim() || location.address.length > 300 ||
+          /[\x00-\x1f\x7f]/.test(location.address) || !/\d/.test(location.address.split(',')[0]) ||
+          !new RegExp(`,\\s*[^,]+ ${location.state}(?: \\d{4})?, Australia$`).test(location.address))) ||
+        seen.has(location.locationId) || !businessIds.has(location.businessId) ||
+        (ids.has(location.locationId) && ids.get(location.locationId) !== location.placeId) || (location.placeId && places.has(location.placeId) && places.get(location.placeId) !== location.locationId) ||
         typeof location.Name !== 'string' || !location.Name.trim() || /[\x00-\x1f\x7f]/.test(location.Name) || !AU_STATES.has(location.state) || location.countryCode !== 'AU' || typeof location.hasCafe !== 'boolean' ||
         !location.source || !validPastDate(location.source.reviewedAt) || Object.keys(location.source).some(key => !['url', 'reviewedAt'].includes(key)) ||
-        Object.keys(location).some(key => !['locationId', 'businessId', 'placeId', 'Name', 'state', 'countryCode', 'hasCafe', 'source'].includes(key))) throw new Error('Invalid reviewed location identity, source or business reference');
+        Object.keys(location).some(key => !['locationId', 'businessId', 'placeId', 'address', 'Name', 'state', 'countryCode', 'hasCafe', 'source'].includes(key))) throw new Error('Invalid reviewed location identity, source or business reference');
     websiteIdentity(location.source.url);
     const previous = legacy.find(item => item.locationId === location.locationId);
     if (previous?.businessId && previous.businessId !== location.businessId) throw new Error('Reviewed location belongs to another business');
-    ids.set(location.locationId, location.placeId); places.set(location.placeId, location.locationId); seen.add(location.locationId);
+    if (location.placeId) { ids.set(location.locationId, location.placeId); places.set(location.placeId, location.locationId); }
+    seen.add(location.locationId);
   }
   return { legacy: legacy as LegacyIdentity[], reviewed: reviewed as ReviewedLocation[] };
 }

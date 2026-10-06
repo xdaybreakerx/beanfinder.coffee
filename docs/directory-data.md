@@ -4,7 +4,7 @@ The curated directory contains 239 business records: 231 roasters and eight mult
 
 `legacy-place-identities.json` assigns immutable `locationId` values to all 218 accepted legacy place IDs. It stores associations only, with unknown historical verification recorded as null. Coordinates, addresses and scores remain in the unchanged legacy snapshot. Duplicate snapshot branches share one location identity. Ambiguous historical associations retain their candidates until an independently sourced reviewed location resolves them.
 
-`reviewed-places.json` references a business by `businessId`, rather than its mutable website. Each reviewed branch has its own `locationId`, Google `placeId`, name, AU state/country, explicit `hasCafe`, source URL and actual review date. Its website is derived from the current business record at runtime. Reviewed locations override historical association/state labels and have Google Maps links even before runtime coordinates are available. New provider coordinates and ratings cannot be written into this registry.
+`reviewed-places.json` references a business by `businessId`, rather than its mutable website. Each reviewed branch has its own `locationId`, name, AU state/country, explicit `hasCafe`, source URL and actual review date. It requires a confirmed Google `placeId`, an independently sourced street `address`, or both. Addresses use `street, locality STATE [postcode], Australia`; do not invent a postcode when the source omits it. Its website is derived from the current business record at runtime. Reviewed locations override historical association/state labels and addresses. Address-only branches appear in directory searches and link to Google Maps searches, with no invented score or marker. Only confirmed place IDs enter the provider coordinate refresh allowlist. New provider coordinates and ratings cannot be written into this registry.
 
 ## Review procedure
 
@@ -26,10 +26,12 @@ Rebase data PRs opened before this schema migration onto current main and retain
 | Exact duplicate Bear Bones records | Kept one record and assigned one business ID; existing QLD facts and locations retained. No new verification claimed. |
 | Exact duplicate Cherry Pickers Coffee records | Kept one record and assigned one business ID; existing SA facts retained. No new verification claimed. |
 | Coffee in Common listed as VIC and SA under the same normalized website | Consolidated as one SA business. Its [operator contact page](https://www.coffeeincommon.com.au/pages/contact-us) identifies the public cafe at 7 Bacon Street, Hindmarsh SA. Both historical entries use the same place ID and that same SA address. The reviewed branch corrects the state association without editing the snapshot. |
-| ACoffee and a.k.a. Coffee shared one Melbourne place ID | [ACOFFEE's operator site](https://acoffee.com.au/) lists its CBD showroom at 2/130 Russell Street, matching the saved address. The reviewed location assigns that existing ID to ACoffee. [a.k.a.'s operator site](https://akacoffee.com.au/) identifies Merrylands NSW; its directory state is corrected, and the unrelated Melbourne link/score is withheld. Its inherited cafe flag remains unverified. |
+| ACoffee and a.k.a. Coffee shared one Melbourne place ID | [ACOFFEE's operator site](https://acoffee.com.au/) lists its CBD showroom at 2/130 Russell Street, matching the saved address. The reviewed location assigns that existing ID to ACoffee. [a.k.a.'s operator site](https://akacoffee.com.au/) identifies Merrylands NSW; its directory state is corrected, and the unrelated Melbourne link/score is withheld. Its inherited cafe flag was subsequently removed in the [cafe/address audit](cafe-address-audit.md), based on the operator account of selling the earlier cafe. |
 | Five listing names had trailing whitespace | Trimmed display names; stable identities and website facts retained. |
 
 There were 242 records before consolidation and 239 afterward. All 218 accepted map markers remain available. This audit does not claim that every inherited business or branch has been independently verified; missing cafe/location evidence remains ordinary review work.
+
+The subsequent [cafe/address audit](cafe-address-audit.md) records missing-location reviews, source links and the outstanding Siboni's confirmation.
 
 ## Repository cleanup — 6 October 2026
 

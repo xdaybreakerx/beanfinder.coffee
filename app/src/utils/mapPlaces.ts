@@ -5,7 +5,7 @@ import { businesses } from './directory';
 import type { Business } from './directorySchema';
 import type { LegacyIdentity } from './locationSchema';
 
-export type MapPlace = Pick<ReviewedPlace, "placeId" | "Name" | "Website" | "state"> & { locationId?: string; businessId?: string | null; hasCafe: boolean | null };
+export type MapPlace = Pick<ReviewedPlace, "Name" | "Website" | "state"> & { placeId: string; locationId?: string; businessId?: string | null; hasCafe: boolean | null };
 type LegacyListing = { Name: string; Website: string; place_ids?: Array<PlaceLocation & { place_id?: string; state?: string }> };
 
 // Reuse the accepted snapshot's known Australian IDs without migrating its provider data.
@@ -20,6 +20,7 @@ export function createMapPlaces(snapshot: LegacyListing[], reviewed: ReviewedPla
       ...(identity ? { locationId: identity.locationId, businessId: identity.businessId } : {}) });
   }
   for (const place of reviewed) {
+    if (!place.placeId) continue;
     places.set(place.placeId, { placeId: place.placeId, Name: place.Name, Website: place.Website, state: place.state, locationId: place.locationId, businessId: place.businessId, hasCafe: place.hasCafe });
   }
   return [...places.values()];

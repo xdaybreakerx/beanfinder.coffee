@@ -5,6 +5,11 @@ import { createAustralianPois } from "./australianPlaces";
 import type { ReviewedPlace } from "./reviewedPlaces";
 
 describe("known map identities", () => {
+  it('keeps address-only reviews out of the provider coordinate refresh allowlist', () => {
+    const review: ReviewedPlace = { locationId: 'loc-address-only', businessId: 'biz-reviewed', Name: 'Coffee', Website: 'https://coffee.example/', state: 'VIC', countryCode: 'AU', hasCafe: true,
+      address: '10 High Street, Northcote VIC 3070, Australia', source: { url: 'https://coffee.example/locations', reviewedAt: '2026-10-01T00:00:00Z' } };
+    expect(createMapPlaces([], [review])).toEqual([]);
+  });
   it("covers every accepted legacy marker without carrying provider fields into the registry", () => {
     expect(mapPlaces.map(place => place.placeId)).toEqual(createAustralianPois(legacy).map(poi => poi.place_id));
     expect(mapPlaces).toHaveLength(218);

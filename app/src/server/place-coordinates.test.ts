@@ -3,7 +3,7 @@ import { describe, expect, it, vi } from "vitest";
 import { COORDINATE_TTL, getCoordinates, monthlyLimit, purgeExpiredCoordinates, readCachedCoordinates, refreshCoordinates, REFRESH_AHEAD, validCoordinates, type CoordinateStore } from "./place-coordinates";
 import { validateReviewedPlaces, type ReviewedPlace } from "../utils/reviewedPlaces";
 
-const place: ReviewedPlace = { locationId: "loc-reviewed", businessId: "biz-reviewed", hasCafe: true, placeId: "reviewed-id", Name: "Reviewed Coffee", Website: "https://coffee.example/", state: "VIC", countryCode: "AU", source: { url: "https://coffee.example/locations", reviewedAt: "2026-10-01T00:00:00Z" } };
+const place: ReviewedPlace & { placeId: string } = { locationId: "loc-reviewed", businessId: "biz-reviewed", hasCafe: true, placeId: "reviewed-id", Name: "Reviewed Coffee", Website: "https://coffee.example/", state: "VIC", countryCode: "AU", source: { url: "https://coffee.example/locations", reviewedAt: "2026-10-01T00:00:00Z" } };
 const start = Date.parse("2026-10-06T00:00:00Z");
 const provider = () => ({ id: place.placeId, location: { latitude: -37.8, longitude: 145 }, addressComponents: [{ shortText: "AU", types: ["country"] }], rating: 4.9, formattedAddress: "Never persist", userRatingCount: 10 });
 

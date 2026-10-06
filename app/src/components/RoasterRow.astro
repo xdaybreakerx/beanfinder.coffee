@@ -9,9 +9,9 @@ const { roaster, showRating = true } = Astro.props;
 const domain = new URL(roaster.Website).hostname.replace(/^www\./, '');
 const cafeLinks = getCafeMapLinks(roaster, Astro.params.state);
 const ratings = getListingRatings(roaster, Astro.params.state);
-const locations = ratings.length ? ratings : cafeLinks.filter(link => link.placeId).map(link => ({
+const locations = [...ratings, ...cafeLinks.filter(link => (link.placeId || link.locationId) && !ratings.some(rating => rating.placeId === link.placeId)).map(link => ({
   ...link, rating: null, locality: link.locality ?? 'Search on map',
-}));
+}))];
 const suburbs = locations.map(location => location.locality.replace(/\s+(NSW|VIC|QLD|WA|SA|TAS|ACT|NT)(\s+\d{4})?$/, '')).join(', ');
 ---
 <article class:list={['roaster-row py-4 border-b border-base-content/15 hover:bg-base-200/50', { 'has-rating': showRating }]} data-business-id={roaster.businessId} data-rating={ratings[0]?.rating ?? ''} data-name={roaster.Name} data-search={`${roaster.Name} ${domain} ${cafeLinks.map(link => link.address ?? '').join(' ')} ${ratings.map(location => location.locality).join(' ')}`.toLowerCase()} data-state={roaster.multiRoaster ? 'all' : roaster.State} data-cafe={String(roaster.hasCafe)} data-multi={String(roaster.multiRoaster)}>
