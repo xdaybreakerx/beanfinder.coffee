@@ -1,6 +1,6 @@
 // @vitest-environment node
 import { describe, expect, it } from "vitest";
-import { planBackfill } from "./form-submission-backfill";
+import { planBackfill, PROCESSED_SUBMISSIONS_PATH } from "./form-submission-backfill";
 import { LOCK_PATH, PACKAGE_PATH } from "./release-version";
 
 const ROASTERS = "app/src/data/coffee-roasters.json";
@@ -65,6 +65,19 @@ describe("historical form backfill", () => {
     const second = planBackfill(inputs, reviews, { ...original, ...first.contents });
     expect(second.results.map(row => row.status)).toEqual(["processed", "processed"]);
     expect(second.contents).toEqual({});
+  });
+  it("does not reapply compacted corrections while processing new submissions", () => {
+    const input = payload("old-123", { recommendation: "", issue: "on", "roaster-name": "Existing Coffee", "roaster-website": "https://outdated.coffee" });
+    const original = { ...files(), [PROCESSED_SUBMISSIONS_PATH]: JSON.stringify(["old-123"]) };
+    const plan = planBackfill([input, payload("new-456")], { "new-456": review }, original);
+    expect(plan.results.map(row => row.status)).toEqual(["processed", "proposed"]);
+    expect(JSON.parse(plan.contents[ROASTERS])[0]).toEqual(existing);
+    expect(plan.contents[".github/form-submissions/old-123.json"]).toBeUndefined();
+    expect(plan.contents[PROCESSED_SUBMISSIONS_PATH]).toBeUndefined();
+    expect(plan.release).toEqual({ previousVersion: "1.1.9", version: "1.1.10" });
+  });
+  it.each([{}, ["../main"], [123], ["old-123", "old-123"]])("rejects invalid compacted state %j before preparing changes", ids => {
+    expect(() => planBackfill([payload()], { "old-123": review }, { ...files(), [PROCESSED_SUBMISSIONS_PATH]: JSON.stringify(ids) })).toThrow("Invalid processed submission IDs");
   });
   it("ignores honeypots and other forms, validates IDs, and respects review exclusions", () => {
     const plan = planBackfill([payload("spam", { "bot-field": "spam" }), { ...payload("other"), form_name: "contact" }, payload("test")], { test: { action: "skip", reason: "Test submission" } }, files());
