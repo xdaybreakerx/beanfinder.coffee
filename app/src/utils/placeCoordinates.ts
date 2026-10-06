@@ -20,4 +20,3 @@ export function validCoordinates(value: unknown, placeId: string, now: number): 
   return Number.isFinite(retrieved) && Number.isFinite(expires) && retrieved <= now &&
     expires > now && expires > retrieved && expires - retrieved <= COORDINATE_TTL;
 }
-
