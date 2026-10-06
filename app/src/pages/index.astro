@@ -5,6 +5,7 @@ import roasters from "../data/coffee-roasters.json";
 import sellers from "../data/coffee-roasters-multi.json";
 const all = [...roasters, ...sellers];
 const cafes = all.filter(roaster => roaster.hasCafe).length;
+const stateListings = states.map(state => ({ ...state, count: all.filter(roaster => roaster.State.split(',').map(s => s.trim()).includes(state.code)).length }));
 ---
 <Layout>
   <section class="home-hero" aria-labelledby="home-heading">
@@ -12,6 +13,6 @@ const cafes = all.filter(roaster => roaster.hasCafe).length;
 
   </section>
   <dl class="directory-stats"><div><dt>Directory listings</dt><dd>{all.length}</dd></div><div><dt>With a cafe</dt><dd>{cafes}</dd></div><div><dt>States and territories</dt><dd>All</dd></div></dl>
-  <section class="state-section" aria-labelledby="states-heading"><div class="section-heading"><div><p class="eyebrow">Start close to home</p><h2 id="states-heading">Coffee, state by state.</h2></div><a href="/roasters/" class="text-button home-link">Browse all listings <span aria-hidden="true">→</span></a></div><ul class="state-index">{states.map(state => <li><a href={`/roasters/${state.code}/false/1`} aria-label={`${state.code} — ${state.name}`}><span class="state-code">{state.code}</span><span>{state.name}<small>{all.filter(roaster => roaster.State.split(',').map(s => s.trim()).includes(state.code)).length} listings</small></span><span aria-hidden="true">↗</span></a></li>)}</ul></section>
+  <section class="state-section" aria-labelledby="states-heading"><div class="section-heading"><div><p class="eyebrow">Start close to home</p><h2 id="states-heading">Coffee, state by state.</h2></div><a href="/roasters/" class="text-button home-link">Browse all roasters <span aria-hidden="true">→</span></a></div><ul class="state-index">{stateListings.map(state => <li><a href={`/roasters/?state=${state.code}`}><span class="state-code">{state.code}</span><span>{state.name}<small>{state.count} {state.count === 1 ? 'listing' : 'listings'}</small></span><span aria-hidden="true">↗</span></a></li>)}</ul></section>
   <section class="discovery-note"><div><p class="eyebrow">A different roast in every delivery</p><h2>Keep your coffee curious.</h2><p>Browse multi-roaster sellers to try beans from more than one roastery.</p></div><a href="/roasters/online-subscriptions/1" class="btn home-action">Explore multi-roaster sellers <span aria-hidden="true">↗</span></a></section>
 </Layout>

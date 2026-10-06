@@ -1,0 +1,13 @@
+---
+import { ratingStars, roundRating } from '../utils/ratings';
+interface Props { rating: number; }
+const { rating } = Astro.props;
+const rounded = roundRating(rating);
+const starPath = 'M12 2.5 14.9 8.4 21.4 9.4 16.7 14 17.8 20.5 12 17.4 6.2 20.5 7.3 14 2.6 9.4 9.1 8.4Z';
+---
+{rounded !== null && <span class="star-rating" role="img" aria-label={`${rounded.toFixed(1)} out of 5`}>
+  {ratingStars(rating).map(fill => <svg class="rating-star" data-fill={fill} viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+    <path class="rating-star-empty" d={starPath} fill="none" stroke="currentColor" stroke-width="1.5" />
+    {fill > 0 && <path class="rating-star-filled" d={starPath} fill="currentColor" style={fill === 0.5 ? 'clip-path: inset(0 50% 0 0)' : undefined} />}
+  </svg>)}
+</span>}
