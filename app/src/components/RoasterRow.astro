@@ -3,7 +3,7 @@ import { getCafeMapLinks } from "../utils/cafeMapLinks";
 import { getListingRatings } from "../utils/listingRatings";
 import ListingRating from './ListingRating.astro';
 import LocationLink from './LocationLink.astro';
-interface Roaster { Name: string; Website: string; State: string; hasCafe: boolean; multiRoaster: boolean; }
+import type { Business as Roaster } from '../utils/directorySchema';
 interface Props { roaster: Roaster; showRating?: boolean; }
 const { roaster, showRating = true } = Astro.props;
 const domain = new URL(roaster.Website).hostname.replace(/^www\./, '');
@@ -14,7 +14,7 @@ const locations = ratings.length ? ratings : cafeLinks.filter(link => link.place
 }));
 const suburbs = locations.map(location => location.locality.replace(/\s+(NSW|VIC|QLD|WA|SA|TAS|ACT|NT)(\s+\d{4})?$/, '')).join(', ');
 ---
-<article class:list={['roaster-row py-4 border-b border-base-content/15 hover:bg-base-200/50', { 'has-rating': showRating }]} data-rating={ratings[0]?.rating ?? ''} data-name={roaster.Name} data-search={`${roaster.Name} ${domain} ${cafeLinks.map(link => link.address ?? '').join(' ')} ${ratings.map(location => location.locality).join(' ')}`.toLowerCase()} data-state={roaster.multiRoaster ? 'all' : roaster.State} data-cafe={String(roaster.hasCafe)} data-multi={String(roaster.multiRoaster)}>
+<article class:list={['roaster-row py-4 border-b border-base-content/15 hover:bg-base-200/50', { 'has-rating': showRating }]} data-business-id={roaster.businessId} data-rating={ratings[0]?.rating ?? ''} data-name={roaster.Name} data-search={`${roaster.Name} ${domain} ${cafeLinks.map(link => link.address ?? '').join(' ')} ${ratings.map(location => location.locality).join(' ')}`.toLowerCase()} data-state={roaster.multiRoaster ? 'all' : roaster.State} data-cafe={String(roaster.hasCafe)} data-multi={String(roaster.multiRoaster)}>
   <div class="roaster-identity">
     <div class="roaster-name">
       <h2><a class="roaster-name-link link link-hover" href={roaster.Website} target="_blank" rel="noopener noreferrer"><span class="roaster-title">{roaster.Name}</span><span class="sr-only"> (opens in a new tab)</span></a></h2>

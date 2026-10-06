@@ -1,82 +1,168 @@
 [
     {
+        "businessId": "biz-acuratore",
         "Name": "Acuratore",
         "Website": "https://au.acuratore.com/",
         "State": "all",
         "hasCafe": false,
         "multiRoaster": true,
         "subscription": true,
-        "selection": ["surprise"],
-        "brew": ["filter", "espresso", "decaf"]
+        "selection": [
+            "surprise"
+        ],
+        "brew": [
+            "filter",
+            "espresso",
+            "decaf"
+        ],
+        "provenance": {
+            "source": "legacy-directory",
+            "verifiedAt": null
+        }
     },
     {
+        "businessId": "biz-allways-coffee",
         "Name": "Allways Coffee",
         "Website": "https://allways.coffee/",
         "State": "all",
         "hasCafe": false,
         "multiRoaster": true,
         "subscription": true,
-        "selection": ["surprise"],
-        "brew": ["espresso", "decaf"]
+        "selection": [
+            "surprise"
+        ],
+        "brew": [
+            "espresso",
+            "decaf"
+        ],
+        "provenance": {
+            "source": "legacy-directory",
+            "verifiedAt": null
+        }
     },
     {
+        "businessId": "biz-altdrop",
         "Name": "Altdrop",
         "Website": "https://altdrop.com.au/",
         "State": "all",
         "hasCafe": false,
         "multiRoaster": true,
         "subscription": true,
-        "selection": ["surprise", "choose"],
-        "brew": ["filter", "espresso", "decaf"]
+        "selection": [
+            "surprise",
+            "choose"
+        ],
+        "brew": [
+            "filter",
+            "espresso",
+            "decaf"
+        ],
+        "provenance": {
+            "source": "legacy-directory",
+            "verifiedAt": null
+        }
     },
     {
+        "businessId": "biz-beanhub",
         "Name": "BeanHub",
         "Website": "https://www.beanhub.com.au/",
         "State": "all",
         "hasCafe": false,
         "multiRoaster": true,
         "subscription": false,
-        "selection": ["choose"],
-        "brew": ["filter", "espresso", "decaf"]
+        "selection": [
+            "choose"
+        ],
+        "brew": [
+            "filter",
+            "espresso",
+            "decaf"
+        ],
+        "provenance": {
+            "source": "legacy-directory",
+            "verifiedAt": null
+        }
     },
     {
+        "businessId": "biz-beanz",
         "Name": "Beanz",
         "Website": "https://www.beanz.com/en-au",
         "State": "all",
         "hasCafe": false,
         "multiRoaster": true,
         "subscription": false,
-        "selection": ["choose"],
-        "brew": ["espresso", "decaf"]
+        "selection": [
+            "choose"
+        ],
+        "brew": [
+            "espresso",
+            "decaf"
+        ],
+        "provenance": {
+            "source": "legacy-directory",
+            "verifiedAt": null
+        }
     },
     {
+        "businessId": "biz-direct-coffee",
         "Name": "Direct Coffee",
         "Website": "https://www.directcoffee.com.au/",
         "State": "all",
         "hasCafe": false,
         "multiRoaster": true,
         "subscription": false,
-        "selection": ["choose"],
-        "brew": ["filter", "espresso", "decaf"]
+        "selection": [
+            "choose"
+        ],
+        "brew": [
+            "filter",
+            "espresso",
+            "decaf"
+        ],
+        "provenance": {
+            "source": "legacy-directory",
+            "verifiedAt": null
+        }
     },
     {
+        "businessId": "biz-play-ground",
         "Name": "Play-Ground",
         "Website": "https://play-ground.com.au/",
         "State": "all",
         "hasCafe": false,
         "multiRoaster": true,
         "subscription": true,
-        "selection": ["surprise"],
-        "brew": ["filter", "espresso"]
+        "selection": [
+            "surprise"
+        ],
+        "brew": [
+            "filter",
+            "espresso"
+        ],
+        "provenance": {
+            "source": "legacy-directory",
+            "verifiedAt": null
+        }
     },
     {
+        "businessId": "biz-three-thousand-thieves",
         "Name": "Three Thousand Thieves",
         "Website": "https://www.threethousandthieves.com/",
         "State": "all",
         "hasCafe": false,
         "multiRoaster": true,
         "subscription": true,
-        "selection": ["surprise"],
-        "brew": ["filter", "espresso", "decaf"]
+        "selection": [
+            "surprise"
+        ],
+        "brew": [
+            "filter",
+            "espresso",
+            "decaf"
+        ],
+        "provenance": {
+            "source": "legacy-directory",
+            "verifiedAt": null
+        }
     }
 ]

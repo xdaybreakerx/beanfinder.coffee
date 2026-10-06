@@ -5,7 +5,7 @@ import { LOCK_PATH, PACKAGE_PATH } from "./release-version";
 
 const ROASTERS = "app/src/data/coffee-roasters.json";
 const MULTI = "app/src/data/coffee-roasters-multi.json";
-const existing = { Name: "Existing Coffee", Website: "https://existing.coffee/", State: "VIC", hasCafe: true, multiRoaster: false };
+const existing = { businessId: "biz-existing", provenance: { source: "legacy-directory" as const, verifiedAt: null }, Name: "Existing Coffee", Website: "https://existing.coffee/", State: "VIC", hasCafe: true, multiRoaster: false };
 function files() {
   return {
     [ROASTERS]: JSON.stringify([existing], null, 2), [MULTI]: "[]\n",
@@ -44,7 +44,7 @@ describe("historical form backfill", () => {
   it("preserves unspecified correction flags and fixes a website", () => {
     const input = payload("old-123", { recommendation: "", issue: "on", "roaster-name": "Existing Coffee", "roaster-website": "https://correct.coffee" });
     const plan = planBackfill([input], {}, files());
-    expect(JSON.parse(plan.contents[ROASTERS])).toEqual([expect.objectContaining({ ...existing, Website: "https://correct.coffee/" })]);
+    expect(JSON.parse(plan.contents[ROASTERS])).toEqual([expect.objectContaining({ ...existing, provenance: expect.objectContaining({ source: "community-submission" }), Website: "https://correct.coffee/" })]);
   });
   it("groups repeated incomplete recommendations into one review task", () => {
     const plan = planBackfill([payload(), payload("old-456")], {}, files());

@@ -1,0 +1,1100 @@
+{
+  "source": "legacy-snapshot",
+  "verifiedAt": null,
+  "locations": [
+    {
+      "locationId": "loc-0001",
+      "placeId": "ChIJh9Su5zDKsGoRcGfjekhb2ew",
+      "businessId": "biz-1645-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0002",
+      "placeId": "ChIJiyYa1pylMioRKk-alGO0RYc",
+      "businessId": "biz-2-keys-coffee-boutique"
+    },
+    {
+      "locationId": "loc-0003",
+      "placeId": "ChIJ095uC7lD1moRpd-EZMWaVCU",
+      "businessId": null,
+      "candidateBusinessIds": [
+        "biz-acoffee",
+        "biz-a-k-a-coffee"
+      ]
+    },
+    {
+      "locationId": "loc-0004",
+      "placeId": "ChIJ_YbDfEGwEmsRANEuZjL_uSI",
+      "businessId": "biz-alchemy-coffee"
+    },
+    {
+      "locationId": "loc-0005",
+      "placeId": "ChIJ97GV_uNC1moRTHYYvdZInGk",
+      "businessId": "biz-allpress"
+    },
+    {
+      "locationId": "loc-0006",
+      "placeId": "ChIJbxln8T9akWsRONvz40xPu6w",
+      "businessId": "biz-allpress"
+    },
+    {
+      "locationId": "loc-0007",
+      "placeId": "ChIJb-fTM7-xEmsRt8Blg4FxvGk",
+      "businessId": "biz-allpress"
+    },
+    {
+      "locationId": "loc-0008",
+      "placeId": "ChIJO4vwXFhFkWsREv9U7-YV-4E",
+      "businessId": "biz-almanac-roasters"
+    },
+    {
+      "locationId": "loc-0009",
+      "placeId": "ChIJDWY59nMrwWoRpDLCHpM-1DI",
+      "businessId": "biz-arrosoto-coffee"
+    },
+    {
+      "locationId": "loc-0010",
+      "placeId": "ChIJX59nDaf-GWsRFyI44PAGHYE",
+      "businessId": "biz-art-of-espresso"
+    },
+    {
+      "locationId": "loc-0011",
+      "placeId": "ChIJs4Lblh6uEmsRlGsK1tv6qY8",
+      "businessId": "biz-artificer-coffee"
+    },
+    {
+      "locationId": "loc-0012",
+      "placeId": "ChIJcaUFRJMRnGsRKi_uVaIH5ag",
+      "businessId": "biz-artisti-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0013",
+      "placeId": "ChIJ2YdBdXivEmsRvesf9tONMsw",
+      "businessId": "biz-aslan-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0014",
+      "placeId": "ChIJ5bxHSPlD1moRq8xoxVC3llY",
+      "businessId": "biz-axil-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0015",
+      "placeId": "ChIJkRH7Y77RsGoR3ZK8JjCZoRQ",
+      "businessId": "biz-b3-coffee"
+    },
+    {
+      "locationId": "loc-0016",
+      "placeId": "ChIJSxCboN9MFmsRA3huXDhEWOc",
+      "businessId": "biz-barrio"
+    },
+    {
+      "locationId": "loc-0017",
+      "placeId": "ChIJX3UXcQ8V1moRb0oFu5rmxfk",
+      "businessId": "biz-bean-cartel"
+    },
+    {
+      "locationId": "loc-0018",
+      "placeId": "ChIJ1yRAg5JZkWsRqCZKC6rcNCU",
+      "businessId": "biz-bellissimo-coffee"
+    },
+    {
+      "locationId": "loc-0019",
+      "placeId": "ChIJKRXBsD2xEmsRVe81SfhddGM",
+      "businessId": "biz-black-mass-roasters"
+    },
+    {
+      "locationId": "loc-0020",
+      "placeId": "ChIJo0UDfrZbkWsRH9DAyoI73tQ",
+      "businessId": "biz-blackbird-espresso"
+    },
+    {
+      "locationId": "loc-0021",
+      "placeId": "ChIJWT-rgHClMioRqGpcWYDsm_c",
+      "businessId": "biz-blacklist-coffee"
+    },
+    {
+      "locationId": "loc-0022",
+      "placeId": "ChIJGWawcEKuEmsRAZpnB16LmXs",
+      "businessId": "biz-blackstone-road"
+    },
+    {
+      "locationId": "loc-0023",
+      "placeId": "ChIJDQ-DqZ4Vc2sRb9KZOnR7dc0",
+      "businessId": "biz-bliss-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0024",
+      "placeId": "ChIJiwk7YPPFsGoRY8ErQYondaI",
+      "businessId": "biz-blk-mrkt-coffee"
+    },
+    {
+      "locationId": "loc-0025",
+      "placeId": "ChIJGXnDNdOlEmsRnAvD8Z08gtU",
+      "businessId": "biz-block-coffee"
+    },
+    {
+      "locationId": "loc-0026",
+      "placeId": "ChIJ03KbrrhD1moRgjQPC-NYp6Y",
+      "businessId": "biz-blume-coffee"
+    },
+    {
+      "locationId": "loc-0027",
+      "placeId": "ChIJ10U3NNLZqQURLNbnYN5ui0I",
+      "businessId": "biz-brightside-coffee-co"
+    },
+    {
+      "locationId": "loc-0028",
+      "placeId": "ChIJZTOS4QtikGsRKHf4srByS80",
+      "businessId": "biz-bun-coffee"
+    },
+    {
+      "locationId": "loc-0029",
+      "placeId": "ChIJ0ej2JTRD1moRWDhsQ9v8R-U",
+      "businessId": "biz-campos-coffee"
+    },
+    {
+      "locationId": "loc-0030",
+      "placeId": "ChIJNQQO_14U1GoRFyUqiTsdokc",
+      "businessId": "biz-cartel-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0031",
+      "placeId": "ChIJEXZjw-LNcmsRfrtI6JQ0IS0",
+      "businessId": "biz-central-coast-coffee"
+    },
+    {
+      "locationId": "loc-0032",
+      "placeId": "ChIJAdDqAFTtuWoRm9_sW6Nt41Y",
+      "businessId": "biz-charlie-black-coffee-co"
+    },
+    {
+      "locationId": "loc-0033",
+      "placeId": "ChIJz30D0_vZbaoRFsVw1Pqzb0E",
+      "businessId": "biz-cheeky-devil-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0034",
+      "placeId": "ChIJ4Tl8H1jPsGoRX7eQY6mcSkE",
+      "businessId": "biz-cirelli-coffee-roasting-co"
+    },
+    {
+      "locationId": "loc-0035",
+      "placeId": "ChIJ80M2blFC1moRiIMpurSj1o0",
+      "businessId": "biz-clark-st-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0036",
+      "placeId": "ChIJbyGMaTpn1moRDl-Dj_Zv_hI",
+      "businessId": "biz-code-black-coffee"
+    },
+    {
+      "locationId": "loc-0037",
+      "placeId": "ChIJ1_Uj6TICkWsRZa0vRjjVaJ0",
+      "businessId": "biz-coffee-beans-delivered"
+    },
+    {
+      "locationId": "loc-0038",
+      "placeId": "ChIJY7i3xDu9JmsR2dj-yf1xeRk",
+      "businessId": "biz-coffee-chakra"
+    },
+    {
+      "locationId": "loc-0039",
+      "placeId": "ChIJh9DFoDfHsGoR_L_Jf8N-iZ4",
+      "businessId": "biz-coffee-in-common"
+    },
+    {
+      "locationId": "loc-0040",
+      "placeId": "ChIJLbC7N1VC1moRsxcEIQwt5DE",
+      "businessId": "biz-coffee-supreme"
+    },
+    {
+      "locationId": "loc-0041",
+      "placeId": "ChIJ4YBz0RRakWsREPnjwxmN24I",
+      "businessId": "biz-coffee-supreme"
+    },
+    {
+      "locationId": "loc-0042",
+      "placeId": "ChIJDb5G_kl8DWsRlH-0ve10q2w",
+      "businessId": "biz-coffee-warehouse"
+    },
+    {
+      "locationId": "loc-0043",
+      "placeId": "ChIJtbERhvmDMioRUeIcPPux54U",
+      "businessId": "biz-crema-coffee-co"
+    },
+    {
+      "locationId": "loc-0044",
+      "placeId": "ChIJz7-F1JNmeGkRyCqSSG5AcD8",
+      "businessId": "biz-cruze"
+    },
+    {
+      "locationId": "loc-0045",
+      "placeId": "ChIJTzhFUAAx1moR7-Rlpg-7fZQ",
+      "businessId": "biz-cup-kilsyth"
+    },
+    {
+      "locationId": "loc-0046",
+      "placeId": "ChIJ_c_h1EKqEmsRDqk19J_F-Sk",
+      "businessId": "biz-danes"
+    },
+    {
+      "locationId": "loc-0047",
+      "placeId": "ChIJT_wR1lGiMioR0WAc_j9sQLE",
+      "businessId": "biz-darkstar-coffee"
+    },
+    {
+      "locationId": "loc-0048",
+      "placeId": "ChIJNS6Ge_4psWoRpPMqe3XN9Zc",
+      "businessId": "biz-dawn-patrol-coffee"
+    },
+    {
+      "locationId": "loc-0049",
+      "placeId": "ChIJzRpCPvKtEmsRxgmAKlpcWnA",
+      "businessId": "biz-di-bartoli"
+    },
+    {
+      "locationId": "loc-0050",
+      "placeId": "ChIJ83RUYZSTwCwRsanfhSLEna8",
+      "businessId": "biz-dtown-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0051",
+      "placeId": "ChIJyaNNI7RC1moRQcMRU8Ucz8o",
+      "businessId": "biz-dukes-coffee"
+    },
+    {
+      "locationId": "loc-0052",
+      "placeId": "ChIJJeRjRtmvEmsRvku-OhXBVAI",
+      "businessId": "biz-edition-roasters"
+    },
+    {
+      "locationId": "loc-0053",
+      "placeId": "ChIJt-jKTSbPsGoREdQDTJur4Mw",
+      "businessId": "biz-elementary-coffee"
+    },
+    {
+      "locationId": "loc-0054",
+      "placeId": "ChIJhb8hqx9D1moREUdvGRuSNic",
+      "businessId": "biz-everyday-coffee"
+    },
+    {
+      "locationId": "loc-0055",
+      "placeId": "ChIJo4D3kmAPKWsRwzxb5JUSG7M",
+      "businessId": "biz-fat-cat-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0056",
+      "placeId": "ChIJ7fLSHJ6vMioRvSa6tpVcb68",
+      "businessId": "biz-fiori-coffee"
+    },
+    {
+      "locationId": "loc-0057",
+      "placeId": "ChIJzeGGS6_6EWsRGNT8OcgkWwk",
+      "businessId": "biz-fish-river-roasters"
+    },
+    {
+      "locationId": "loc-0058",
+      "placeId": "ChIJ88h-Ec66MioRtW_8mGqhg_0",
+      "businessId": "biz-five-senses-coffee"
+    },
+    {
+      "locationId": "loc-0059",
+      "placeId": "ChIJpW4F5ZwVc2sR1NXQJsrdz6Q",
+      "businessId": "biz-floozy-coffee"
+    },
+    {
+      "locationId": "loc-0060",
+      "placeId": "ChIJj-3v2LZZkWsRXG8ff--ORsw",
+      "businessId": "biz-fonzie-abbott"
+    },
+    {
+      "locationId": "loc-0061",
+      "placeId": "ChIJ-a0dSOdUDWsR9K8DLYDE_cY",
+      "businessId": "biz-four"
+    },
+    {
+      "locationId": "loc-0062",
+      "placeId": "ChIJQWKMHaipEmsRGAyZW4Cwg6g",
+      "businessId": "biz-grand-cru-coffee"
+    },
+    {
+      "locationId": "loc-0063",
+      "placeId": "ChIJuY8mOF0V1moRdTiqgEVv0GE",
+      "businessId": "biz-griffiths-bros-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0064",
+      "placeId": "ChIJP3FnbJPPsGoR0stb9gepBH8",
+      "businessId": "biz-hark-coffee"
+    },
+    {
+      "locationId": "loc-0065",
+      "placeId": "ChIJq2nh5cc9JGsRDrEOnVGXb8o",
+      "businessId": "biz-honeybird-coffee"
+    },
+    {
+      "locationId": "loc-0066",
+      "placeId": "ChIJgRXO-rRC1moRwcB73rcSyIE",
+      "businessId": "biz-industry-beans"
+    },
+    {
+      "locationId": "loc-0067",
+      "placeId": "ChIJeWDDDNOvEmsRF8SMPUwPbhw",
+      "businessId": "biz-industry-beans"
+    },
+    {
+      "locationId": "loc-0068",
+      "placeId": "ChIJLT2riqFZkWsRN1Y6UYR6rcs",
+      "businessId": "biz-industry-beans"
+    },
+    {
+      "locationId": "loc-0069",
+      "placeId": "ChIJ3amKAf1ZDWsRsfpMFJPFT44",
+      "businessId": "biz-infinity-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0070",
+      "placeId": "ChIJZdFtppVb1moRNnBrCcDJrwc",
+      "businessId": "biz-inglewood-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0071",
+      "placeId": "ChIJ_wEIeXJleGkRRXlhkaUM8FY",
+      "businessId": "biz-inka-coffee-lounge"
+    },
+    {
+      "locationId": "loc-0072",
+      "placeId": "ChIJwb9WhU5RFGsRJ3KMrneonl8",
+      "businessId": "biz-kindred-coffee"
+    },
+    {
+      "locationId": "loc-0073",
+      "placeId": "ChIJ2wNPCxXQsGoRhSSM5dC7e2s",
+      "businessId": "biz-la-crema"
+    },
+    {
+      "locationId": "loc-0074",
+      "placeId": "ChIJi1OUzISZMioR1TQ1Hr1gVoE",
+      "businessId": "biz-leaf-bean-machine"
+    },
+    {
+      "locationId": "loc-0075",
+      "placeId": "ChIJbTSUAYmwEmsR2QT8Yb-UE8c",
+      "businessId": "biz-leftfield-coffee"
+    },
+    {
+      "locationId": "loc-0076",
+      "placeId": "ChIJkQez_Tw9c2sRHXAohtTy8RQ",
+      "businessId": "biz-lifted-coffee-co"
+    },
+    {
+      "locationId": "loc-0077",
+      "placeId": "ChIJbWru9PugFIIRIxSappPmeDg",
+      "businessId": "biz-lime-blue-coffee"
+    },
+    {
+      "locationId": "loc-0078",
+      "placeId": "ChIJ_dMhPrSvEmsRIPQUB7ikav8",
+      "businessId": "biz-little-marionette"
+    },
+    {
+      "locationId": "loc-0079",
+      "placeId": "ChIJtRVgq6TF1WoRnytSstH091o",
+      "businessId": "biz-little-rebel-roastery"
+    },
+    {
+      "locationId": "loc-0080",
+      "placeId": "ChIJNx0qvBlo1moREbaZuYZoCCI",
+      "businessId": "biz-locale"
+    },
+    {
+      "locationId": "loc-0081",
+      "placeId": "ChIJ_36JuaakEmsRG08QSuYNtQU",
+      "businessId": "biz-loggerhead-coffee-co"
+    },
+    {
+      "locationId": "loc-0082",
+      "placeId": "ChIJYw3RdhCuEmsRqZcvClvzEJU",
+      "businessId": "biz-made-of-many"
+    },
+    {
+      "locationId": "loc-0083",
+      "placeId": "ChIJzdB8HM5bkWsRyAbTflt7dy0",
+      "businessId": "biz-maillard-project"
+    },
+    {
+      "locationId": "loc-0084",
+      "placeId": "ChIJw3ZAzdJD1moRdTHBsWBAcao",
+      "businessId": "biz-maker-coffee"
+    },
+    {
+      "locationId": "loc-0085",
+      "placeId": "ChIJ37upB_w51moRIazB4WhVRI8",
+      "businessId": "biz-manta-ray-coffee"
+    },
+    {
+      "locationId": "loc-0086",
+      "placeId": "ChIJMzrwAslC1moRKuXaN2eeaXw",
+      "businessId": "biz-market-lane"
+    },
+    {
+      "locationId": "loc-0087",
+      "placeId": "ChIJ92I17cexEmsRQMdkCcGReCI",
+      "businessId": "biz-mecca-coffee"
+    },
+    {
+      "locationId": "loc-0088",
+      "placeId": "ChIJ-y168Ca7MioRFct98K2D27E",
+      "businessId": "biz-micrology-coffee"
+    },
+    {
+      "locationId": "loc-0089",
+      "placeId": "ChIJr7h2-fa1sGoRhr34eOoE2Lc",
+      "businessId": "biz-monastery-coffee"
+    },
+    {
+      "locationId": "loc-0090",
+      "placeId": "ChIJpcUC9C4j12oRmmc0Bce1Ths",
+      "businessId": "biz-motobean"
+    },
+    {
+      "locationId": "loc-0091",
+      "placeId": "ChIJH4jdfnE71moRzj9OlhFmipE",
+      "businessId": "biz-my-cuppa"
+    },
+    {
+      "locationId": "loc-0092",
+      "placeId": "ChIJNc5x89G6MioRMv8URxYOH2s",
+      "businessId": "biz-northbridge-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0093",
+      "placeId": "ChIJ2eNpXeFt1GoRldHTEttmxBg",
+      "businessId": "biz-ocean-grind"
+    },
+    {
+      "locationId": "loc-0094",
+      "placeId": "ChIJk0gvbjNMFmsRmIOvIOLv8CI",
+      "businessId": "biz-ona-coffee"
+    },
+    {
+      "locationId": "loc-0095",
+      "placeId": "ChIJ9--VtvaxEmsR7dk5e90VOLI",
+      "businessId": "biz-ona-coffee"
+    },
+    {
+      "locationId": "loc-0096",
+      "placeId": "ChIJ0Rw8XyND1moRlQ3nyEFLcqk",
+      "businessId": "biz-ona-coffee"
+    },
+    {
+      "locationId": "loc-0097",
+      "placeId": "ChIJJWPz6M6vEmsR34uUIX1KxjA",
+      "businessId": "biz-only-coffee-project"
+    },
+    {
+      "locationId": "loc-0098",
+      "placeId": "ChIJYyHMmwClEmsRrxuKJK2x-yI",
+      "businessId": "biz-pablo-rusty-s-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0099",
+      "placeId": "ChIJK_V6t_5n1moR_TcAscymyIw",
+      "businessId": "biz-padre-coffee"
+    },
+    {
+      "locationId": "loc-0100",
+      "placeId": "ChIJe6c94LOZEmsRQps4EU8sxVE",
+      "businessId": "biz-paradox-roasters"
+    },
+    {
+      "locationId": "loc-0101",
+      "placeId": "ChIJ-3kJqhIFkWsRv2SeguNO9KY",
+      "businessId": "biz-paradox-roasters"
+    },
+    {
+      "locationId": "loc-0102",
+      "placeId": "ChIJXaG3YWZOkWsR-6j5O7jZvOk",
+      "businessId": "biz-parallel-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0103",
+      "placeId": "ChIJJU1PMB1akWsRQp5AB7MU_n8",
+      "businessId": "biz-passport"
+    },
+    {
+      "locationId": "loc-0104",
+      "placeId": "ChIJPbM1M5PPsGoRj9ulonJk6KQ",
+      "businessId": "biz-patio-coffee"
+    },
+    {
+      "locationId": "loc-0105",
+      "placeId": "ChIJn1FUnktd1moRgZCDC6aPCcw",
+      "businessId": "biz-patricia-s"
+    },
+    {
+      "locationId": "loc-0106",
+      "placeId": "ChIJsRiC5BZt1moR9T888kHE7kg",
+      "businessId": "biz-pillar-coffee"
+    },
+    {
+      "locationId": "loc-0107",
+      "placeId": "ChIJQ8CIW1tfIWsROqyEWnoJIaU",
+      "businessId": "biz-platform-9-coffee"
+    },
+    {
+      "locationId": "loc-0108",
+      "placeId": "ChIJyeNvrnXJsGoRvaxiTDxqcqg",
+      "businessId": "biz-pogo-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0109",
+      "placeId": "ChIJc-mDzEqiMioRbkieopcen2g",
+      "businessId": "biz-pound-coffee-roastery"
+    },
+    {
+      "locationId": "loc-0110",
+      "placeId": "ChIJB26t3gyuEmsRMwApf2WGBOE",
+      "businessId": "biz-primary-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0111",
+      "placeId": "ChIJ3R3_lY_h1WoR4MZj3p49kr8",
+      "businessId": "biz-prodigal-coffee"
+    },
+    {
+      "locationId": "loc-0112",
+      "placeId": "ChIJL7rkoN5D1moRQVyNGZ8jTPc",
+      "businessId": "biz-project-zero-coffee"
+    },
+    {
+      "locationId": "loc-0113",
+      "placeId": "ChIJQZ-aOeBC1moRuuo3eAh3hGE",
+      "businessId": "biz-proud-mary"
+    },
+    {
+      "locationId": "loc-0114",
+      "placeId": "ChIJKX5tnkBD1moRwt30NN8sXWU",
+      "businessId": "biz-puzzle-coffee"
+    },
+    {
+      "locationId": "loc-0115",
+      "placeId": "ChIJ8yplLA1ekWsRAJbe81qjAgU",
+      "businessId": "biz-ransom"
+    },
+    {
+      "locationId": "loc-0116",
+      "placeId": "ChIJm_F_mhiuEmsR3Ah4Quu1Odg",
+      "businessId": "biz-reuben-hills"
+    },
+    {
+      "locationId": "loc-0117",
+      "placeId": "ChIJLSOIc_FC1moREb_FWCG-T-8",
+      "businessId": "biz-reverence"
+    },
+    {
+      "locationId": "loc-0118",
+      "placeId": "ChIJC9eYcQ3_nWsRIZF3xnJ89Bg",
+      "businessId": "biz-revolving-door-roasters"
+    },
+    {
+      "locationId": "loc-0119",
+      "placeId": "ChIJYS7r7QencKoRpyK8JkXjPhU",
+      "businessId": "biz-ritual-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0120",
+      "placeId": "ChIJ5ZrhmG3ldWsRzk-sctyveHA",
+      "businessId": "biz-roadtrip-roasters"
+    },
+    {
+      "locationId": "loc-0121",
+      "placeId": "ChIJI8_EA2iwEmsRp0c2eElAdS8",
+      "businessId": "biz-roastville"
+    },
+    {
+      "locationId": "loc-0122",
+      "placeId": "ChIJPwIZUdNb1moR5zydvAV6nKU",
+      "businessId": "biz-rosso-roasting-co"
+    },
+    {
+      "locationId": "loc-0123",
+      "placeId": "ChIJ-0_d7Bld1moRAQmEA8DRWV8",
+      "businessId": "biz-rumble-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0124",
+      "placeId": "ChIJ_zOw5uY51moRwndkTFHKB84",
+      "businessId": "biz-saazaa"
+    },
+    {
+      "locationId": "loc-0125",
+      "placeId": "ChIJHUVSMyCuEmsRcOVnCCEwodc",
+      "businessId": "biz-sample-coffee"
+    },
+    {
+      "locationId": "loc-0126",
+      "placeId": "ChIJiZWJPBld1moRzRRnstRvi9k",
+      "businessId": "biz-san-pedro-coffee"
+    },
+    {
+      "locationId": "loc-0127",
+      "placeId": "ChIJY4Cio6I91moRDAwsna73ups",
+      "businessId": "biz-sensory-lab"
+    },
+    {
+      "locationId": "loc-0128",
+      "placeId": "ChIJ2U1SUQBp1moR6OrPzeZn8T4",
+      "businessId": "biz-seven-miles-roasters"
+    },
+    {
+      "locationId": "loc-0129",
+      "placeId": "ChIJXYZl8bGrEmsRKpC6MUMYXEY",
+      "businessId": "biz-seven-miles-roasters"
+    },
+    {
+      "locationId": "loc-0130",
+      "placeId": "ChIJvdx3kjJd1moRHnjYhByshFo",
+      "businessId": "biz-seven-seeds"
+    },
+    {
+      "locationId": "loc-0131",
+      "placeId": "ChIJNUOUhSKuEmsRj2F2Arcx_OQ",
+      "businessId": "biz-single-o"
+    },
+    {
+      "locationId": "loc-0132",
+      "placeId": "ChIJ26dpFAhakWsRgsJJVzlLAB4",
+      "businessId": "biz-single-o"
+    },
+    {
+      "locationId": "loc-0133",
+      "placeId": "ChIJZYrVCu5leGkRHMeUGvMBl88",
+      "businessId": "biz-sipping-duck-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0134",
+      "placeId": "ChIJJUiNQdcgJGsRrpOUQOEPLPM",
+      "businessId": "biz-sixpence-coffee"
+    },
+    {
+      "locationId": "loc-0135",
+      "placeId": "ChIJa7nJTj-uEmsRwbabmz9toOI",
+      "businessId": "biz-skittle-lane"
+    },
+    {
+      "locationId": "loc-0136",
+      "placeId": "ChIJ2zpQRjFd1moRr8ns-bIfQhY",
+      "businessId": "biz-small-batch-roasting-co"
+    },
+    {
+      "locationId": "loc-0137",
+      "placeId": "ChIJoQNIEM3PsGoRaT5uJQxfhF0",
+      "businessId": "biz-soul-city-roasters"
+    },
+    {
+      "locationId": "loc-0138",
+      "placeId": "ChIJjz_mxEGTMioR-r_JMV6p5iE",
+      "businessId": "biz-sparks-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0139",
+      "placeId": "ChIJJ5bS6P9n1moRx76U3LjtN1A",
+      "businessId": "biz-st-ali"
+    },
+    {
+      "locationId": "loc-0140",
+      "placeId": "ChIJK5iHlvVZkWsRy_2IO7kIC24",
+      "businessId": "biz-st-ali"
+    },
+    {
+      "locationId": "loc-0141",
+      "placeId": "ChIJAVlqTQBD1moRIqxHMC6JK8I",
+      "businessId": "biz-standing-room-coffee"
+    },
+    {
+      "locationId": "loc-0142",
+      "placeId": "ChIJ81mBlAqvEmsReFXdToAwS5w",
+      "businessId": "biz-stitch-coffee"
+    },
+    {
+      "locationId": "loc-0143",
+      "placeId": "ChIJ0-DTrPwl1moRWAcBXYg-cog",
+      "businessId": "biz-storehouse-roastery"
+    },
+    {
+      "locationId": "loc-0144",
+      "placeId": "ChIJw7GdXrQ41moRqGcQLPhfYeQ",
+      "businessId": "biz-symmetry-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0145",
+      "placeId": "ChIJrTAZb-zZbaoR1vfohdTtnIM",
+      "businessId": "biz-tasmanian-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0146",
+      "placeId": "ChIJm4fdhgRkeGkRoHUeOejKG7g",
+      "businessId": "biz-tattooed-sailor-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0147",
+      "placeId": "ChIJY4rm3uufk2sR-FlMsBt1LEY",
+      "businessId": "biz-tim-adams"
+    },
+    {
+      "locationId": "loc-0148",
+      "placeId": "ChIJK6KHMhFZkWsRD6hBg7FUto4",
+      "businessId": "biz-toby-s-estate"
+    },
+    {
+      "locationId": "loc-0149",
+      "placeId": "ChIJR-S-I9axEmsRGjjcmNfvx6k",
+      "businessId": "biz-toby-s-estate"
+    },
+    {
+      "locationId": "loc-0150",
+      "placeId": "ChIJOVUgaADPsGoRyeRfOJNy9Cc",
+      "businessId": "biz-twofish-coffee"
+    },
+    {
+      "locationId": "loc-0151",
+      "placeId": "ChIJT5UYfksx1GoRNJWCvuL8Tlo",
+      "businessId": "biz-vacation"
+    },
+    {
+      "locationId": "loc-0152",
+      "placeId": "ChIJvUxMiP9C1moRWm5_z4LcMAc",
+      "businessId": "biz-veneziano-coffee"
+    },
+    {
+      "locationId": "loc-0153",
+      "placeId": "ChIJq6qWLhquEmsRjiPx-mY99rQ",
+      "businessId": "biz-veneziano-coffee"
+    },
+    {
+      "locationId": "loc-0154",
+      "placeId": "ChIJe44AfJdQkWsRIFkjGqlNNzs",
+      "businessId": "biz-veneziano-coffee"
+    },
+    {
+      "locationId": "loc-0155",
+      "placeId": "ChIJNxj7oSTJsGoRDAikhSWQuMA",
+      "businessId": "biz-veneziano-coffee"
+    },
+    {
+      "locationId": "loc-0156",
+      "placeId": "ChIJLVVHO5t1bqoRx2GfeboXBcU",
+      "businessId": "biz-villino-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0157",
+      "placeId": "ChIJ0-Z1nHDHEmsRsXpyT0Rvjcs",
+      "businessId": "biz-white-horse-coffee"
+    },
+    {
+      "locationId": "loc-0158",
+      "placeId": "ChIJxbKM-Z1HIWsRDxDUW7W9pUg",
+      "businessId": "biz-white-owl-coffee"
+    },
+    {
+      "locationId": "loc-0159",
+      "placeId": "ChIJ8cfu6LBmeGkRe1o1y6fwnqI",
+      "businessId": "biz-white-whale-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0160",
+      "placeId": "ChIJt_EqLTVD1moRpkK9XYJ9y4A",
+      "businessId": "biz-wide-open-road"
+    },
+    {
+      "locationId": "loc-0161",
+      "placeId": "ChIJQw3XQS-uEmsRWSAo6K-Jx28",
+      "businessId": "biz-will-co"
+    },
+    {
+      "locationId": "loc-0162",
+      "placeId": "ChIJ_XAxQxjJsGoRIBGeNraBipo",
+      "businessId": "biz-willow-bend-coffee"
+    },
+    {
+      "locationId": "loc-0163",
+      "placeId": "ChIJKwCCfnZYDWsRb9b9WnoobZU",
+      "businessId": "biz-withams-coffee"
+    },
+    {
+      "locationId": "loc-0164",
+      "placeId": "ChIJR3dfIg7ik2sRhiPsuY04CjY",
+      "businessId": "biz-wolff-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0165",
+      "placeId": "ChIJfWVX5S1D1moRFXmqAP7fzaw",
+      "businessId": "biz-zest-coffee"
+    },
+    {
+      "locationId": "loc-0166",
+      "placeId": "ChIJUV8d8lBbkWsRa-W0jmcN6pM",
+      "businessId": "biz-supernumerary-coffee"
+    },
+    {
+      "locationId": "loc-0167",
+      "placeId": "ChIJpQ8_w8ZM0WoRi7zVVdrumOA",
+      "businessId": "biz-karon-farm-coffee"
+    },
+    {
+      "locationId": "loc-0168",
+      "placeId": "ChIJO3WzHue6MioRHj5EC5k8dbY",
+      "businessId": "biz-coffee-peeps-pty-ltd"
+    },
+    {
+      "locationId": "loc-0169",
+      "placeId": "ChIJPy754pPgeyYRqIaAhfy4fas",
+      "businessId": "biz-ballarat-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0170",
+      "placeId": "ChIJM-VbI8K7MioRjfdTbEtrN_0",
+      "businessId": "biz-offshoot-coffee"
+    },
+    {
+      "locationId": "loc-0171",
+      "placeId": "ChIJi0yu4jXJsGoR8m7ow_X4nHE",
+      "businessId": "biz-simply-coffee"
+    },
+    {
+      "locationId": "loc-0172",
+      "placeId": "ChIJ6zzfpKDFsGoRc08yfUks80I",
+      "businessId": "biz-cbtb-coffee"
+    },
+    {
+      "locationId": "loc-0173",
+      "placeId": "ChIJpUFv1RNv1GoRz6Jex4iJHCQ",
+      "businessId": "biz-mikro-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0174",
+      "placeId": "ChIJB5SKbCsX1GoR_RWGiuPBCR4",
+      "businessId": "biz-coffeesnobs-beanbay"
+    },
+    {
+      "locationId": "loc-0175",
+      "placeId": "ChIJp9uyyvrFsGoRNXqJm-F2kz0",
+      "businessId": "biz-altura-coffee"
+    },
+    {
+      "locationId": "loc-0176",
+      "placeId": "ChIJpxVQtUDFsGoRC48iV5p5nZQ",
+      "businessId": "biz-coffee-by-ross"
+    },
+    {
+      "locationId": "loc-0177",
+      "placeId": "ChIJ60X0GU_PsGoRdFCNCAlVomk",
+      "businessId": "biz-ricca-coffee"
+    },
+    {
+      "locationId": "loc-0178",
+      "placeId": "ChIJg8oIOW3IsGoR3TCZpqztIDQ",
+      "businessId": "biz-dimattina-coffee"
+    },
+    {
+      "locationId": "loc-0179",
+      "placeId": "ChIJ7wlSM9ZNFmsRy_jffbrG4oQ",
+      "businessId": "biz-lonsdale-roaster-st"
+    },
+    {
+      "locationId": "loc-0180",
+      "placeId": "ChIJNZsvUd9C1moRY00nWdYBy9k",
+      "businessId": "biz-jasper-coffee"
+    },
+    {
+      "locationId": "loc-0181",
+      "placeId": "ChIJyUUuJZVnkWsRb7Susbk4AIM",
+      "businessId": "biz-river-city-coffee"
+    },
+    {
+      "locationId": "loc-0182",
+      "placeId": "ChIJpyuarUJbkWsRi-fbrlxp19A",
+      "businessId": "biz-super-roast-coffee"
+    },
+    {
+      "locationId": "loc-0183",
+      "placeId": "ChIJq6qqqgHwk2sRHPPJPYovImo",
+      "businessId": "biz-cavalier-roasters"
+    },
+    {
+      "locationId": "loc-0184",
+      "placeId": "ChIJ-xalUiEQkWsRipkmRZjYDC8",
+      "businessId": "biz-first-fruit-coffee"
+    },
+    {
+      "locationId": "loc-0185",
+      "placeId": "ChIJk5ZUt5NZkWsRrsV-kqOBhU4",
+      "businessId": "biz-blue-sky-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0186",
+      "placeId": "ChIJTRJh5_JZkWsRKOpqv-0f_JM",
+      "businessId": "biz-bear-bones"
+    },
+    {
+      "locationId": "loc-0187",
+      "placeId": "ChIJW9F8FIVZkWsR_dCAeLdJnk8",
+      "businessId": "biz-foaster-and-black"
+    },
+    {
+      "locationId": "loc-0188",
+      "placeId": "ChIJAU6Yrb-rEmsRAnA9BCpYcYk",
+      "businessId": "biz-foaster-and-black"
+    },
+    {
+      "locationId": "loc-0189",
+      "placeId": "ChIJZY6qGeVD1moR7zhYqXUAK0Y",
+      "businessId": "biz-foaster-and-black"
+    },
+    {
+      "locationId": "loc-0190",
+      "placeId": "ChIJu7t0vkE31moRFjkPI4di-Jc",
+      "businessId": "biz-craftwork-roasting-co"
+    },
+    {
+      "locationId": "loc-0191",
+      "placeId": "ChIJmaEgJ88T1GoRUs1XYX2VIb4",
+      "businessId": "biz-constance-coffee"
+    },
+    {
+      "locationId": "loc-0192",
+      "placeId": "ChIJcY1R-ZjLsGoRze9TUKwj2Ok",
+      "businessId": "biz-taylor-s-blend"
+    },
+    {
+      "locationId": "loc-0193",
+      "placeId": "ChIJr2lqNyfPsGoRbfDgHwM5WXM",
+      "businessId": "biz-coffee-bean-trading-co"
+    },
+    {
+      "locationId": "loc-0194",
+      "placeId": "ChIJ829n_yPPsGoRiJ8ZmCogE38",
+      "businessId": "biz-soho-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0195",
+      "placeId": "ChIJ0TAxWqXFsGoRuDHhxlG_1Pw",
+      "businessId": "biz-kicco"
+    },
+    {
+      "locationId": "loc-0196",
+      "placeId": "ChIJb07Tn1LFsGoRECB7MRT8DtM",
+      "businessId": "biz-west-beach-coffee-co"
+    },
+    {
+      "locationId": "loc-0197",
+      "placeId": "ChIJ3SYKP0nPsGoR6NBdvS9kFWA",
+      "businessId": "biz-d-angelo-coffee"
+    },
+    {
+      "locationId": "loc-0198",
+      "placeId": "ChIJi4X7ASjPsGoRvk57ACvu8YE",
+      "businessId": "biz-my-kingdom-for-a-horse"
+    },
+    {
+      "locationId": "loc-0199",
+      "placeId": "ChIJ2bcWG13JsGoRZ5i7m0Hqjmc",
+      "businessId": "biz-rio-coffee"
+    },
+    {
+      "locationId": "loc-0200",
+      "placeId": "ChIJAQBsKVTasGoRHtd-4kR-EV0",
+      "businessId": "biz-faithful-hound"
+    },
+    {
+      "locationId": "loc-0201",
+      "placeId": "ChIJbUcfH5tLsWoR8CYfxqvSF2M",
+      "businessId": "biz-de-groot-coffee-co"
+    },
+    {
+      "locationId": "loc-0202",
+      "placeId": "ChIJBVkfhifPsGoRb-0ELYlWU-U",
+      "businessId": "biz-cherry-pickers-coffee"
+    },
+    {
+      "locationId": "loc-0203",
+      "placeId": "ChIJ4_pYsdEox2oRUPuOYlQ2AwU",
+      "businessId": "biz-red-berry"
+    },
+    {
+      "locationId": "loc-0204",
+      "placeId": "ChIJ6ycGOuPsuWoRaslMR5lt8q0",
+      "businessId": "biz-flying-chaff"
+    },
+    {
+      "locationId": "loc-0205",
+      "placeId": "ChIJu9XUMn47sWoRdseS8b2ifdI",
+      "businessId": "biz-fleurieu-roast"
+    },
+    {
+      "locationId": "loc-0206",
+      "placeId": "ChIJQa52MmLEsGoRJGxZJ_Nachw",
+      "businessId": "biz-coffee-journey"
+    },
+    {
+      "locationId": "loc-0207",
+      "placeId": "ChIJ0cg8_mbbsGoRRCR2QlRXVgM",
+      "businessId": "biz-55-plus-fifty-five"
+    },
+    {
+      "locationId": "loc-0208",
+      "placeId": "ChIJ0ToTLaXasGoR0XfX2ggYHDU",
+      "businessId": "biz-bray-st-roasters"
+    },
+    {
+      "locationId": "loc-0209",
+      "placeId": "ChIJI8IHKXa1sGoRKMMsVCyL-L0",
+      "businessId": "biz-coffee-barun"
+    },
+    {
+      "locationId": "loc-0210",
+      "placeId": "ChIJ4xyfmSKuEmsR4Q8cYHVhTlc",
+      "businessId": "biz-kwila-coffee"
+    },
+    {
+      "locationId": "loc-0211",
+      "placeId": "ChIJ4QcD4Bd5c2sRGevBoPnVTsg",
+      "businessId": "biz-pirate-coffee"
+    },
+    {
+      "locationId": "loc-0212",
+      "placeId": "ChIJxRGxLN901moRSUDfwUb32Cs",
+      "businessId": "biz-common-folk-coffee"
+    },
+    {
+      "locationId": "loc-0213",
+      "placeId": "ChIJQc1_I1IX1moRxoKRQkgK6-o",
+      "businessId": "biz-coffee-hit"
+    },
+    {
+      "locationId": "loc-0214",
+      "placeId": "ChIJ21Gq_v5n1moR1OdEz9HJ1c4",
+      "businessId": "biz-cottle-coffee"
+    },
+    {
+      "locationId": "loc-0215",
+      "placeId": "ChIJ0cLKLiVo1moRApTXKB5I_jM",
+      "businessId": "biz-niccolo-coffee-store"
+    },
+    {
+      "locationId": "loc-0216",
+      "placeId": "ChIJaYBieU9d1moRDzb_6sUdEFs",
+      "businessId": "biz-chalk-coffee-roasters"
+    },
+    {
+      "locationId": "loc-0217",
+      "placeId": "ChIJh3liotCHkGsR84MN8PwJNq0",
+      "businessId": "biz-bay-beans"
+    },
+    {
+      "locationId": "loc-0218",
+      "placeId": "ChIJJ8fMLwBD1moRSaK6mwaQEUM",
+      "businessId": "biz-bay-beans"
+    }
+  ]
+}

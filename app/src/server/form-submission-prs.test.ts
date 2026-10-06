@@ -7,8 +7,8 @@ import { LOCK_PATH, PACKAGE_PATH } from "./release-version";
 
 const ROASTERS = "app/src/data/coffee-roasters.json";
 const MULTI = "app/src/data/coffee-roasters-multi.json";
-const existing = { Name: "Existing Coffee", Website: "https://existing.coffee/", State: "VIC, NSW", hasCafe: true, multiRoaster: false };
-const multi = { Name: "Coffee Club", Website: "https://club.coffee/", State: "all", hasCafe: false, multiRoaster: true };
+const existing = { businessId: "biz-existing", provenance: { source: "legacy-directory" as const, verifiedAt: null }, Name: "Existing Coffee", Website: "https://existing.coffee/", State: "VIC, NSW", hasCafe: true, multiRoaster: false };
+const multi = { businessId: "biz-club", provenance: { source: "legacy-directory" as const, verifiedAt: null }, Name: "Coffee Club", Website: "https://club.coffee/", State: "all", hasCafe: false, multiRoaster: true };
 const data = () => ({
   [ROASTERS]: JSON.stringify([existing], null, 2), [MULTI]: JSON.stringify([multi], null, 4),
   [PACKAGE_PATH]: JSON.stringify({ name: "test-site", version: "1.0.0" }),
@@ -92,7 +92,8 @@ describe("submission validation and directory changes", () => {
       source: "community-submission", receipt: ".github/form-submissions/submission-123.json",
       proposedAt: expect.any(String), verifiedAt: null,
     });
-    expect(Number.isFinite(Date.parse(proposal.roaster.provenance!.proposedAt))).toBe(true);
+    if (proposal.roaster.provenance.source !== 'community-submission') throw new Error('Expected submission provenance');
+    expect(Number.isFinite(Date.parse(proposal.roaster.provenance.proposedAt))).toBe(true);
   });
 
   it.each([
@@ -123,14 +124,14 @@ describe("submission validation and directory changes", () => {
 
   it("preserves unspecified correction flags and multiple states, and finds a changed website", () => {
     const submission = parseSubmission(payload({ "submission-type": "issue", "roaster-name": "Renamed Coffee", "roaster-website": "https://renamed.coffee", "original-website": existing.Website, state: "", "has-cafe": "", "multi-roaster": "", details: "Changed name and website" }))!;
-    expect(proposeChange(submission, data())!.roaster).toMatchObject({ ...existing, Name: "Renamed Coffee", Website: "https://renamed.coffee/" });
+    expect(proposeChange(submission, data())!.roaster).toMatchObject({ ...existing, provenance: expect.objectContaining({ source: "community-submission" }), Name: "Renamed Coffee", Website: "https://renamed.coffee/" });
   });
 
   it("moves a corrected listing between directory files without duplicating it", () => {
     const submission = parseSubmission(payload({ "submission-type": "issue", "roaster-name": multi.Name, "roaster-website": multi.Website, state: "WA", "multi-roaster": "false" }))!;
     const proposal = proposeChange(submission, data())!;
     expect(JSON.parse(proposal.contents[MULTI])).toEqual([]);
-    expect(JSON.parse(proposal.contents[ROASTERS])).toContainEqual(expect.objectContaining({ ...multi, State: "WA", multiRoaster: false }));
+    expect(JSON.parse(proposal.contents[ROASTERS])).toContainEqual(expect.objectContaining({ ...multi, provenance: expect.objectContaining({ source: "community-submission" }), State: "WA", multiRoaster: false }));
   });
 
   it("rejects ambiguous and unmatched corrections rather than choosing a listing", () => {
@@ -144,8 +145,43 @@ describe("submission validation and directory changes", () => {
     const submission = parseSubmission(payload({ "submission-type": "issue", "roaster-name": existing.Name, "roaster-website": existing.Website, state: "", "has-cafe": "", "multi-roaster": "", details: "The cafe has moved to another address" }))!;
     const proposal = proposeChange(submission, data())!;
     expect(proposal.explanationOnly).toBe(true);
-    expect(proposal.roaster.provenance).toBeUndefined();
+    expect(proposal.roaster.provenance).toEqual(existing.provenance);
     expect(Object.keys(proposal.contents)).toEqual([".github/form-submissions/submission-123.json"]);
+  });
+
+  it('keeps the business ID and previous website across corrections and retries', () => {
+    const first = proposeChange(parseSubmission(payload({ 'submission-type': 'issue', 'roaster-name': 'Renamed', 'roaster-website': 'https://renamed.coffee/', 'original-website': existing.Website }))!, data())!;
+    expect(first.roaster.businessId).toBe(existing.businessId);
+    expect(first.roaster.websiteAliases).toEqual([existing.Website]);
+    const files = { ...data(), ...first.contents };
+    const second = proposeChange(parseSubmission(payload({ 'submission-type': 'issue', 'roaster-name': 'Another name', 'roaster-website': 'https://renamed.coffee/', 'original-website': existing.Website }))!, files)!;
+    expect(second.roaster.businessId).toBe(existing.businessId);
+    expect(second.roaster.websiteAliases).toEqual([existing.Website]);
+    const restore = proposeChange(parseSubmission(payload({ 'submission-type': 'issue', 'roaster-name': 'Another name', 'roaster-website': existing.Website, 'original-website': 'https://renamed.coffee/' }))!, { ...files, ...second.contents })!;
+    expect(restore.roaster.websiteAliases).toEqual(['https://renamed.coffee/']);
+  });
+
+  it('mints a stable ID from the submission and validates existing data before proposing', () => {
+    const parsed = parseSubmission(payload())!;
+    expect(proposeChange(parsed, data())!.roaster.businessId).toBe('biz-form-submission-123');
+    expect(proposeChange(parsed, data())!.roaster.businessId).toBe('biz-form-submission-123');
+    expect(() => proposeChange(parsed, { ...data(), [ROASTERS]: JSON.stringify([existing, existing]) })).toThrow('business ID');
+  });
+
+  it('requires review for distinct brands on the same domain', () => {
+    expect(() => proposeChange(parseSubmission(payload({ 'roaster-website': 'https://existing.coffee/other-brand' }))!, data())).toThrow('Same-domain business requires manual review');
+    const files = { ...data(), [ROASTERS]: JSON.stringify([{ ...existing, websiteAliases: ['https://old.coffee/'] }]) };
+    expect(() => proposeChange(parseSubmission(payload({ 'roaster-website': 'https://old.coffee/other-brand' }))!, files)).toThrow('Same-domain business requires manual review');
+    expect(() => proposeChange(parseSubmission(payload({ 'roaster-name': existing.Name }))!, data())).toThrow('Same-name business with a different website requires manual review');
+  });
+
+  it('clears seller-only options on reclassification while retaining identity', () => {
+    const input = { ...data(), [MULTI]: JSON.stringify([{ ...multi, subscription: true, selection: ['choose'], brew: ['filter'] }]) };
+    const proposal = proposeChange(parseSubmission(payload({ 'submission-type': 'issue', 'roaster-name': multi.Name, 'roaster-website': multi.Website, state: 'WA', 'multi-roaster': 'false' }))!, input)!;
+    expect(proposal.roaster.businessId).toBe(multi.businessId);
+    expect(proposal.roaster.subscription).toBeUndefined();
+    expect(proposal.roaster.selection).toBeUndefined();
+    expect(proposal.roaster.brew).toBeUndefined();
   });
 });
 

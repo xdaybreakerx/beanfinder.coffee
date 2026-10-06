@@ -11,10 +11,10 @@
     "check": "astro sync && tsc --noEmit",
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "npm run validate:data && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "update-roasters": "node src/scripts/fetch-roaster-place_id.js && node src/scripts/fetch-roaster-place_details.js"
+    "validate:data": "node src/scripts/validate-directory.mjs"
   },
   "dependencies": {
     "@astrojs/netlify": "^8.2.6",
