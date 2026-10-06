@@ -1,40 +1,53 @@
-# BeanFinder.coffee
+# ☕️ BeanFinder.coffee
 
-A curated Australian coffee directory for finding beans, nearby cafes and multi-roaster sellers.
+A curated directory of Australian coffee roasters, cafes and multi-roaster sellers. Find your next bag of beans, a nearby coffee stop or a subscription worth exploring.
+
+It started as a spreadsheet of roasters I wanted to try, then became an excuse to learn Astro and build something useful for fellow coffee drinkers.
 
 **[Visit BeanFinder](https://beanfinder.coffee)** · [Suggest a roaster or correction](https://beanfinder.coffee/submit/) · [Contributing](CONTRIBUTING.md)
 
-## Features
+## What's brewing
 
-- Search roasters by name, website or location; filter by state/cafe and sort by name or saved rating. Filters and pagination are shareable URLs.
-- Compare multi-roaster sellers by subscription, selection and brew options.
-- Browse Australian cafe/roaster locations on Google Maps, with location search, optional geolocation and place-specific directions.
-- Light/dark themes, keyboard navigation, responsive layouts, privacy/terms pages and social-sharing previews.
-- Recommendations and corrections become reviewed GitHub PRs with data validation and patch versioning.
+- **Find a roaster:** search by name or location, filter by state and cafe availability, and sort alphabetically or by Google rating. Bookmark or share your filtered results.
+- **Explore nearby:** browse the map, search a location or use your own, then get directions to a cafe or roaster.
+- **Compare subscriptions:** browse multi-roaster sellers by subscription availability, coffee selection and brew options.
+- **Make yourself comfortable:** light and dark themes, responsive layouts, keyboard navigation and previews for shared links.
+- **Help the directory grow:** suggest a roaster or correction through the site. Submissions become reviewable GitHub PRs.
 
-Saved Google ratings have unknown retrieval dates and can be out of date; current marker addresses are fetched only when selected. Cafe access and opening hours should be checked with the operator.
+## Built with
 
-## Stack
+Astro handles the pages, with React for interactive components and curated JSON for the directory. Data changes are reviewed in Git alongside the code.
 
-Astro, React, TypeScript, Tailwind CSS and daisyUI; deployed on Netlify with Google Maps and temporary coordinates in Netlify Blobs. Tests use Vitest, Playwright and axe-core. Curated business data stays in Git-reviewed JSON.
+| Layer | Tools |
+| --- | --- |
+| App | Astro, React, TypeScript |
+| Styling | Tailwind CSS, daisyUI |
+| Maps | Google Maps and Places |
+| Hosting | Netlify, Functions and Blobs |
+| Testing | Vitest, Playwright, axe-core |
 
 ## Run locally
 
-Use the Node version pinned in `.nvmrc`:
+Clone the repository, then use the Node version pinned in `.nvmrc`:
 
 ```sh
 nvm install
 nvm use
 cd app
 npm ci
+cp .env.example .env
 npm run dev
 ```
 
-The server starts at <http://localhost:4321>. Google Maps needs a browser API key; see [environment setup and checks](CONTRIBUTING.md). Directory browsing works without a key.
+Open <http://localhost:4321>. To enable the map locally, add your Google Maps browser key to `.env`; [CONTRIBUTING](CONTRIBUTING.md#local-setup) covers the environment setup. You can explore the directory without a key.
+
+From `app/`, use `npm run check` for TypeScript, `npm test` for unit tests and `npm run build` for a production build. The contributing guide includes data validation and browser test commands.
 
 ## Contributing
 
-See [CONTRIBUTING](CONTRIBUTING.md) for environment setup, test commands, data review and pull-request/versioning rules.
+Found a missing roaster, spotted a bug or have an improvement in mind? Contributions are welcome.
+
+Use the [suggestion form](https://beanfinder.coffee/submit/) for listings, or [open an issue](https://github.com/xdaybreakerx/beanfinder.coffee/issues) to discuss an idea. See [CONTRIBUTING](CONTRIBUTING.md) for the project layout, checks and PR workflow.
 
 ## License
 
