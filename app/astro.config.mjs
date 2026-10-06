@@ -8,7 +8,7 @@ import netlify from "@astrojs/netlify";
 const isProduction = process.env.NODE_ENV === 'production';
 
 // Use different site URLs based on the environment
-const siteUrl = isProduction ? 'https://www.beanfinder.coffee' // Production site URL
+const siteUrl = isProduction ? 'https://beanfinder.coffee' // Canonical production origin
 : process.env.DEV_SITE_URL || 'http://localhost:4321'; // Local development URL
 
 
@@ -16,7 +16,14 @@ const siteUrl = isProduction ? 'https://www.beanfinder.coffee' // Production sit
 export default defineConfig({
   site: siteUrl,
   // Use the dynamically selected site URL
-  integrations: [sitemap(), react()],
+  integrations: [sitemap({
+    // Server-rendered routes cannot be inferred by the sitemap integration.
+    customPages: ['/', '/roasters/', '/map/', '/submit/', '/privacy/', '/terms/'].map(path => new URL(path, siteUrl).href),
+    filter: page => {
+      const path = new URL(page).pathname;
+      return ['/', '/roasters/', '/map/', '/submit/', '/privacy/', '/terms/'].includes(path) || /^\/roasters\/online-subscriptions\/\d+\/?$/.test(path);
+    },
+  }), react()],
   vite: {
     plugins: [tailwindcss()],
   },

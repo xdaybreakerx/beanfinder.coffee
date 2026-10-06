@@ -2,6 +2,10 @@
 import Header from "../components/Header.astro";
 import FooterComponent from "../components/FooterComponent.astro";
 import "../styles/global.css";
+import { pageMetadata } from "../utils/pageMetadata";
+const metadata = pageMetadata(Astro.url.pathname);
+const title = Astro.props.title || metadata.title;
+const description = Astro.props.description || metadata.description;
 ---
 
 <html lang="en-AU">
@@ -17,42 +21,27 @@ import "../styles/global.css";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <meta
-      name="description"
-      content="Discover Australia's finest coffee roasters with BeanFinder. Explore a curated list of roasters by state or find exclusive online multi-roaster subscriptions. Whether you're looking for a local café or a unique online experience, BeanFinder connects you with the best in Australian coffee."
-    />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={metadata.canonical} />
+    {(Astro.props.noindex || metadata.noindex) && <meta name="robots" content="noindex, follow" />}
 
     <!-- Open Graph meta tags -->
     <meta
       property="og:title"
-      content="BeanFinder - Discover Australia's Finest Coffee Roasters"
+      content={title}
     />
     <meta
       property="og:description"
-      content="Explore a curated list of the best coffee roasters in Australia."
+      content={description}
     />
     <meta
       property="og:image"
       content="https://beanfinder.coffee/beanfinder-og-image.png"
     />
-    <meta property="og:url" content="https://beanfinder.coffee/" />
+    <meta property="og:url" content={metadata.canonical} />
     <meta property="og:type" content="website" />
 
-    <!-- Google Analytic tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XX128J4Z0N"
-    ></script>
-
-    <title>{Astro.props.title || "BeanFinder"}</title>
-    <!-- Google Analytics -->
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-XX128J4Z0N");
-    </script>
+    <title>{title}</title>
   </head>
 
   <body class="site-shell">

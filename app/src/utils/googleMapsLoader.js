@@ -2,6 +2,8 @@ import { setOptions, importLibrary } from "@googlemaps/js-api-loader";
 
 // Promise to load the Google Maps API
 let googleMapsLoadedPromise;
+export const MAPS_CHANNEL = "weekly";
+export const MAPS_AUTH_FAILURE_EVENT = "beanfinder:maps-auth-failure";
 
 /**
  * Loads the Google Maps API asynchronously using a provided API key.
@@ -11,9 +13,13 @@ let googleMapsLoadedPromise;
  */
 export function loadGoogleMaps(apiKey) {
   if (!googleMapsLoadedPromise) {
-    setOptions({ key: apiKey, v: "beta" });
+    // Authentication can fail after the loader promise has resolved.
+    if (typeof window !== "undefined") {
+      window.gm_authFailure = () => window.dispatchEvent(new Event(MAPS_AUTH_FAILURE_EVENT));
+    }
+    setOptions({ key: apiKey, v: MAPS_CHANNEL });
     googleMapsLoadedPromise = Promise.all(
-      ["maps", "places", "geometry", "marker"].map((library) =>
+      ["maps", "marker"].map((library) =>
         importLibrary(library)
       )
     );

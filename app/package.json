@@ -20,7 +20,6 @@
     "@astrojs/netlify": "^8.2.6",
     "@astrojs/react": "^7.0.0",
     "@astrojs/sitemap": "^3.7.4",
-    "@googlemaps/extended-component-library": "^0.7.0",
     "@googlemaps/js-api-loader": "^2.1.3",
     "@googlemaps/markerclusterer": "^2.6.2",
     "@netlify/blobs": "10.7.13",

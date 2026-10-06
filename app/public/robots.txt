@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /success/
+Disallow: /__forms
+Disallow: /404
+
+Sitemap: https://beanfinder.coffee/sitemap-index.xml

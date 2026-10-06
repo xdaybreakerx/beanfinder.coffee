@@ -2,16 +2,22 @@
 import Layout from "../layouts/Layout.astro";
 import FilterDrawer from "../components/FilterDrawer.astro";
 import MonolithicGoogleMap from "../components/ReactGoogleMap";
+import { MapPlaceholder } from "../components/MapShell";
 import { getSecret } from "astro:env/server";
 
 const apiKey = getSecret("GOOGLE_MAPS_API_KEY");
 ---
 
-<Layout title="Australian Coffee Roasters">
-  <div class="page-intro"><p class="eyebrow">Good coffee, on the map</p><h1>Find a roaster nearby.</h1><p>Explore verified Australian locations. Select a marker for details and directions.</p></div>
+<Layout>
+  <div class="page-intro"><p class="eyebrow">Good coffee, on the map</p><h1>Find a roaster nearby.</h1><p>Explore Australian cafe and roaster locations. Select a marker for details and directions.</p></div>
   <FilterDrawer>
     <div slot="main-content" id="wrapper">
-      <MonolithicGoogleMap apiKey={apiKey} client:only="react" />
+      <MonolithicGoogleMap apiKey={apiKey ?? ''} client:only="react">
+        <MapPlaceholder slot="fallback" />
+      </MonolithicGoogleMap>
+      <noscript><p class="map-note">JavaScript is needed for the interactive map. The directory has location links you can open in Google Maps.</p></noscript>
+      <p class="map-note">Cafe locations are shown first, using our directory information. Some locations may be roasteries or stores. Check opening hours and public access before visiting.</p>
+      <p class="map-note">Location information and saved ratings can be out of date. Current addresses come from Google Maps when you select a marker. <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms of use</a></p>
     </div>
   </FilterDrawer>
 </Layout>

@@ -24,6 +24,14 @@ The daisyUI `caramellatte` (light) and `coffee` (dark) themes follow the system 
 
 The map retains its historical Google snapshot by maintainer decision. Its retrieval dates are unknown, recorded separately in `legacy-map-snapshot.json`; directory ratings use the existing scores under the separate display decision above. Legacy markers still require valid coordinates and a formatted address ending with `Australia`. Known locations and new reviewed branches use a separate, expiry-aware runtime path described below. There is no weekly full-directory discovery or permanent enrichment.
 
+## Map browsing and site policies
+
+The map starts with cafe locations and can include all Australian roaster/store locations. Cafe access uses curated directory information, with reviewed branch overrides; check with the business before visiting. Location search uses Google's new Australian autocomplete on the weekly Maps channel. “Use my location” asks for permission only when activated, and location search remains available if permission is denied.
+
+Selected markers show curated names and operator links, a transient current Australian address from Google Maps, and place-ID-specific directions. Location selections and marker panels share a 20-attempt Place Details limit per mounted map; Cloud quotas still govern autocomplete, map loads and account-wide usage. Loading/error states reserve map space and provide a directory fallback, including without JavaScript. See the [implementation and verification notes](docs/maps-release-polish.md) for request fields, account checks and open dependency advisories.
+
+The footer links the public privacy and terms pages. Google Analytics has been removed. Page-specific titles/descriptions, canonical links and Open Graph URLs use `https://beanfinder.coffee`; the sitemap includes public routes and omits utility pages and retired redirects.
+
 ## 💻 Tech Stack and tools
 
 - **Main Framework** - [Astro](https://astro.build/)
