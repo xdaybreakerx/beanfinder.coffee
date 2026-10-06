@@ -5,9 +5,19 @@ import { patchReleaseFiles } from "./release-version.ts";
 type HistoricalPayload = Parameters<typeof parseSubmission>[0];
 type Review = { action?: "skip"; reason?: string; fields?: Record<string, string>; sources?: string[] };
 export type BackfillReviews = Record<string, Review>;
+export const PROCESSED_SUBMISSIONS_PATH = ".github/processed-form-submissions.json";
+
+export function readProcessedSubmissionIds(content?: string): Set<string> {
+  const ids: unknown = JSON.parse(content ?? "[]");
+  if (!Array.isArray(ids) || ids.some(id => typeof id !== "string" || !/^[a-zA-Z0-9-]{1,80}$/.test(id)) || new Set(ids).size !== ids.length) {
+    throw new SubmissionError("Invalid processed submission IDs");
+  }
+  return new Set(ids);
+}
 
 // Backfills are maintainer-reviewed batches. The live event parser remains strict.
 export function planBackfill(payloads: HistoricalPayload[], reviews: BackfillReviews, files: Record<string, string>) {
+  const processed = readProcessedSubmissionIds(files[PROCESSED_SUBMISSIONS_PATH]);
   const working = { ...files };
   const results: Array<{ id: string; status: string; reason?: string }> = [];
   let dataChanged = false;
@@ -19,7 +29,7 @@ export function planBackfill(payloads: HistoricalPayload[], reviews: BackfillRev
     if (seen.has(id)) continue;
     seen.add(id);
     const receipt = `.github/form-submissions/${id}.json`;
-    if (working[receipt]) { results.push({ id, status: "processed" }); continue; }
+    if (processed.has(id) || working[receipt]) { results.push({ id, status: "processed" }); continue; }
     const review = reviews[id] ?? {};
     if (review.action === "skip") {
       results.push({ id, status: "skipped", reason: review.reason ?? "Skipped by maintainer review" });

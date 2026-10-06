@@ -1,7 +1,7 @@
 import { readFile, writeFile, mkdir, readdir } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { resolve, dirname } from "node:path";
-import { planBackfill } from "../server/form-submission-backfill.ts";
+import { planBackfill, PROCESSED_SUBMISSIONS_PATH } from "../server/form-submission-backfill.ts";
 
 const args = process.argv.slice(2);
 const write = args.includes("--write");
@@ -12,6 +12,8 @@ if (!Array.isArray(payloads)) throw new Error("Expected an array of verified Net
 const reviews = JSON.parse(await readFile(paths[1], "utf8"));
 const root = fileURLToPath(new URL("../../../", import.meta.url));
 const files = {};
+try { files[PROCESSED_SUBMISSIONS_PATH] = await readFile(resolve(root, PROCESSED_SUBMISSIONS_PATH), "utf8"); }
+catch (error) { if (error.code !== "ENOENT") throw error; }
 for (const path of ["app/src/data/coffee-roasters.json", "app/src/data/coffee-roasters-multi.json", "app/package.json", "app/package-lock.json"]) files[path] = await readFile(resolve(root, path), "utf8");
 const receipts = resolve(root, ".github/form-submissions");
 try {
