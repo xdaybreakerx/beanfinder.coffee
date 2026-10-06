@@ -1,6 +1,6 @@
 # Maps modernization and release polish
 
-Implemented locally on 6 October 2026. This combines v2 plan steps 4 and 7; hosted-preview, production and manual Safari/iOS sign-off remain release work.
+Implemented and deployed on 6 October 2026, combining v2 plan steps 4 and 7. Hosted/production Maps, actual desktop Safari, maintainer iOS/VoiceOver review and the fresh Lighthouse baseline are complete; see [release verification](release-verification.md).
 
 ## Map behavior
 
@@ -30,7 +30,7 @@ References: [new autocomplete](https://developers.google.com/maps/documentation/
 
 Privacy and terms pages cover hosting/forms, community publication, Google Maps/location, theme storage, operator checks and external websites. They link Google's privacy policy and terms, and the footer and map link both pages. Google Analytics has been removed at the maintainer's request; there is no tracking script or consent UI.
 
-Each main route has its own title/description, canonical URL and matching Open Graph metadata using https://beanfinder.coffee. Filter query parameters are omitted from canonical URLs. Production sitemap generation includes server-rendered entry routes and public policy pages, and omits utility routes and retired state redirects. robots.txt points at the apex sitemap; submission-success, 404 and form-detection pages carry noindex metadata. A new cream/coffee-brown social image and explicit large-image card metadata are prepared for v2; see [release verification](release-verification.md) for the completed accessibility/performance checks and social-preview deployment status.
+Each main route has its own title/description, canonical URL and matching Open Graph metadata using https://beanfinder.coffee. Filter query parameters are omitted from canonical URLs. Production sitemap generation includes server-rendered entry routes and public policy pages, and omits utility routes and retired state redirects. robots.txt points at the apex sitemap; submission-success, 404 and form-detection pages carry noindex metadata. A new cream/coffee-brown social image and explicit large-image card metadata are deployed for v2; see [release verification](release-verification.md) for the completed accessibility/performance checks and social-preview deployment status.
 
 ## Dependency-advisory decision record
 
@@ -49,10 +49,10 @@ References: [braces](https://github.com/advisories/GHSA-vfj7-8cjw-p6xm), [extrac
 
 ## Verification and remaining release checks
 
-Validation passed: **185 unit tests and 124 desktop/mobile browser checks**, TypeScript, directory/location validation, the production build and diff checks. All four custom Netlify functions bundle for Node 24, and their esbuild input manifests contain none of the four affected leaf packages. Package/lock roots remain `1.1.0`; curated data, the accepted legacy snapshot and runtime coordinate lifecycle are unchanged.
+Validation passed: **185 unit tests and 124 desktop/mobile browser checks**, TypeScript, directory/location validation, the production build and diff checks. All four custom Netlify functions bundle for Node 24, and their esbuild input manifests contain none of the four affected leaf packages. At that implementation checkpoint, package/lock roots remained `1.1.0`; curated data, the accepted legacy snapshot and runtime coordinate lifecycle are unchanged.
 
 The compiled Netlify SSR/prerendered output passed live Chromium and installed WebKit checks under an isolated BeanFinder origin routed to localhost. Google loaded `3.66.7` on weekly; permission requests stayed at zero on arrival; the map canvas moved **0 px** between loading and readiness at mobile width. Keyboard Australian autocomplete and individual marker activation worked; a current AU address and place-ID directions loaded; the open panel had no automated WCAG violations. Cafe/all-location switching showed 146/218 locations. Both themes at 320, 375 and 414 CSS px, with normal and 200% text, fit without horizontal overflow. Production screenshots of the mobile map/details panel and desktop view were inspected. WebKit exposes hidden provider marker copies to some automation selectors, so its activation check explicitly selected a marker in the visible provider slot. Both engines passed a focused marker Enter activation and selected-address retrieval. Installed WebKit is not an actual Safari/iOS or assistive-technology sign-off. This exercise changed no hosted site/account setting and made only bounded interactive Maps/Details requests; it did not invoke runtime refresh or bulk discovery.
 
 Automated coverage includes new-widget fields/country checks, stale asynchronous responses, per-visit limits, explicit location permission/timeout/denial/unmount behavior, reviewed branch cafe precedence, fresh-coordinate replacement, authentication failures, selected-address failures and directions fallbacks, matching route metadata, no Analytics requests, stable loading/error geometry, no-JavaScript content, footer targets, policy pages, both themes, 320–414px layouts and enlarged text.
 
-Before merge/release, verify the hosted preview's permitted referrers, live map loading, autocomplete and marker/details/directions behavior, then production after the approved merge. Manual Safari/iOS and assistive-technology verification and a fresh Lighthouse baseline remain v2 release-verification work. Required checks, form-automation recovery and the 2.0.0 release remain their separate backlog steps.
+The subsequent hosted and production checks, actual desktop Safari, maintainer iOS/VoiceOver review and fresh Lighthouse baseline completed the accessibility/performance action item. Protected-branch checks and form-automation recovery are also implemented. The final documentation/version candidate sets `2.0.0`; its approved merge/deployment and tag/release publication remain separate release steps.
