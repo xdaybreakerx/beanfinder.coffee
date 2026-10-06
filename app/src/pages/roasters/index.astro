@@ -1,8 +1,11 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import AllRoasters from "../../components/AllRoasters.astro";
+if (Astro.url.searchParams.get('type') === 'multi') {
+  return Astro.redirect('/roasters/online-subscriptions/1', 301);
+}
 ---
 <Layout title="Coffee directory · BeanFinder">
-  <div class="page-intro"><p class="eyebrow">The Australian coffee directory</p><h1>Find a roast worth knowing.</h1><p>Explore local roasters, places to have a coffee, and sellers bringing several roasters together.</p></div>
+  <div class="page-intro"><p class="eyebrow">The Australian coffee directory</p><h1>Find a roast worth knowing.</h1><p>Explore local roasters, find beans for home, and plan your next cafe visit.</p></div>
   <AllRoasters />
 </Layout>

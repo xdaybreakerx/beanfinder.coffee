@@ -1,15 +1,42 @@
 ---
 import { getCafeMapLinks } from "../utils/cafeMapLinks";
+import { getListingRatings } from "../utils/listingRatings";
+import ListingRating from './ListingRating.astro';
+import LocationLink from './LocationLink.astro';
 interface Roaster { Name: string; Website: string; State: string; hasCafe: boolean; multiRoaster: boolean; }
-interface Props { roaster: Roaster; }
-const { roaster } = Astro.props;
+interface Props { roaster: Roaster; showRating?: boolean; }
+const { roaster, showRating = true } = Astro.props;
 const domain = new URL(roaster.Website).hostname.replace(/^www\./, '');
-const region = roaster.multiRoaster || roaster.State.toLowerCase() === 'all' ? 'Online - Australia Only' : roaster.State;
 const cafeLinks = getCafeMapLinks(roaster, Astro.params.state);
+const ratings = getListingRatings(roaster, Astro.params.state);
+const locations = ratings.length ? ratings : cafeLinks.filter(link => link.placeId).map(link => ({
+  ...link, rating: null, locality: link.locality ?? 'Search on map',
+}));
+const suburbs = locations.map(location => location.locality.replace(/\s+(NSW|VIC|QLD|WA|SA|TAS|ACT|NT)(\s+\d{4})?$/, '')).join(', ');
 ---
-<article class="roaster-row" data-search={`${roaster.Name} ${domain} ${cafeLinks.map(link => link.address ?? '').join(' ')}`.toLowerCase()} data-state={roaster.multiRoaster ? 'all' : roaster.State} data-cafe={String(roaster.hasCafe)} data-multi={String(roaster.multiRoaster)}>
-  <div class="roaster-name"><h2>{roaster.Name}</h2><span class="roaster-domain">{domain}</span></div>
-  <div class="roaster-location"><span>{region}</span>{cafeLinks.length > 0 && <ul class="cafe-locations">{cafeLinks.map(link => <li><a href={link.href} target="_blank" rel="noopener noreferrer" class="cafe-map-link" title={link.address}>{link.locality ?? (link.placeId ? 'View on map' : 'Search on map')}<span aria-hidden="true">↗</span><span class="sr-only"> — {link.placeId ? 'View' : 'Search for'} {roaster.Name} on Google Maps (opens in a new tab)</span></a></li>)}</ul>}</div>
-  <div class="roaster-type"><span>{roaster.multiRoaster ? 'Multi-roaster seller' : 'Coffee roaster'}</span>{roaster.hasCafe && <span class="cafe-note">Cafe available</span>}</div>
-  <a class="roaster-link" href={roaster.Website} target="_blank" rel="noopener noreferrer">Visit website<span aria-hidden="true">↗</span><span class="sr-only"> for {roaster.Name} (opens in a new tab)</span></a>
+<article class:list={['roaster-row py-4 border-b border-base-content/15 hover:bg-base-200/50', { 'has-rating': showRating }]} data-rating={ratings[0]?.rating ?? ''} data-name={roaster.Name} data-search={`${roaster.Name} ${domain} ${cafeLinks.map(link => link.address ?? '').join(' ')} ${ratings.map(location => location.locality).join(' ')}`.toLowerCase()} data-state={roaster.multiRoaster ? 'all' : roaster.State} data-cafe={String(roaster.hasCafe)} data-multi={String(roaster.multiRoaster)}>
+  <div class="roaster-identity">
+    <div class="roaster-name">
+      <h2><a class="roaster-name-link link link-hover" href={roaster.Website} target="_blank" rel="noopener noreferrer"><span class="roaster-title">{roaster.Name}</span><span class="sr-only"> (opens in a new tab)</span></a></h2>
+      <span class="roaster-domain text-base-content/80">{domain}</span>
+    </div>
+  </div>
+  <div class="roaster-tags flex flex-wrap gap-1.5">
+    <span class="badge badge-outline">{roaster.multiRoaster ? 'Multi-roaster seller' : 'Coffee roaster'}</span>
+    {roaster.hasCafe && <span class="badge badge-outline">Cafe</span>}
+  </div>
+  <div class="roaster-location text-base-content/80">
+    {locations.length === 0 && <span class="online-only">
+      <svg class="online-globe w-4 shrink-0" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" /><ellipse cx="12" cy="12" rx="4" ry="9" /><path d="M3 12h18" /></svg>
+      <span class="location-label">Online</span>
+    </span>}
+    {locations.length > 1 ? <details class="location-disclosure group">
+      <summary><span class="location-count">{locations.length} locations</span><span class="location-preview group-open:hidden">{suburbs}</span></summary>
+      <ul class="location-list">{locations.map(location => <li>
+        <LocationLink href={location.href} locality={location.locality} roasterName={roaster.Name} />
+        {showRating && <span class="location-rating"><ListingRating rating={location.rating} /></span>}
+      </li>)}</ul>
+    </details> : locations.map(location => <LocationLink href={location.href} locality={location.locality} roasterName={roaster.Name} />)}
+  </div>
+  {showRating && <div class="roaster-rating"><ListingRating rating={ratings[0]?.rating ?? null} /></div>}
 </article>

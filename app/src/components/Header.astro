@@ -1,11 +1,13 @@
 ---
 import ThemeController from "./ThemeController.astro";
 const pathname = Astro.url.pathname;
+const isMultiRoasterPage = pathname.startsWith('/roasters/online-subscriptions/');
 ---
 <div class="site-header">
-  <a href="/" class="brand" aria-label="BeanFinder home"><img src="/favicon.svg" width="36" height="36" alt="" /><span>BeanFinder<span class="brand-note">Australian coffee directory</span></span></a>
+  <a href="/" class="brand"><span>BeanFinder<span class="brand-note">Australian coffee directory</span></span></a>
   <nav aria-label="Main navigation" class="main-nav">
-    <a href="/roasters/" aria-current={pathname.startsWith('/roasters/') ? 'page' : undefined}>Directory</a>
+    <a href="/roasters/" aria-current={pathname.startsWith('/roasters/') && !isMultiRoasterPage ? 'page' : undefined}>Directory</a>
+    <a href="/roasters/online-subscriptions/1" aria-current={isMultiRoasterPage ? 'page' : undefined}>Multi-roaster</a>
     <a href="/map/" aria-current={pathname === '/map/' ? 'page' : undefined}>Map</a>
     <a href="/submit/" aria-current={pathname === '/submit/' ? 'page' : undefined}>Suggest a roaster</a>
   </nav>

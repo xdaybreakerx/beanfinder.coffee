@@ -1,51 +1,82 @@
 [
     {
+        "Name": "Acuratore",
+        "Website": "https://au.acuratore.com/",
+        "State": "all",
+        "hasCafe": false,
+        "multiRoaster": true,
+        "subscription": true,
+        "selection": ["surprise"],
+        "brew": ["filter", "espresso", "decaf"]
+    },
+    {
         "Name": "Allways Coffee",
         "Website": "https://allways.coffee/",
         "State": "all",
         "hasCafe": false,
-        "multiRoaster": true
+        "multiRoaster": true,
+        "subscription": true,
+        "selection": ["surprise"],
+        "brew": ["espresso", "decaf"]
     },
     {
         "Name": "Altdrop",
         "Website": "https://altdrop.com.au/",
         "State": "all",
         "hasCafe": false,
-        "multiRoaster": true
+        "multiRoaster": true,
+        "subscription": true,
+        "selection": ["surprise", "choose"],
+        "brew": ["filter", "espresso", "decaf"]
     },
     {
         "Name": "BeanHub",
         "Website": "https://www.beanhub.com.au/",
         "State": "all",
         "hasCafe": false,
-        "multiRoaster": true
+        "multiRoaster": true,
+        "subscription": false,
+        "selection": ["choose"],
+        "brew": ["filter", "espresso", "decaf"]
     },
     {
         "Name": "Beanz",
         "Website": "https://www.beanz.com/en-au",
         "State": "all",
         "hasCafe": false,
-        "multiRoaster": true
+        "multiRoaster": true,
+        "subscription": false,
+        "selection": ["choose"],
+        "brew": ["espresso", "decaf"]
     },
     {
         "Name": "Direct Coffee",
         "Website": "https://www.directcoffee.com.au/",
         "State": "all",
         "hasCafe": false,
-        "multiRoaster": true
+        "multiRoaster": true,
+        "subscription": false,
+        "selection": ["choose"],
+        "brew": ["filter", "espresso", "decaf"]
     },
     {
         "Name": "Play-Ground",
         "Website": "https://play-ground.com.au/",
         "State": "all",
         "hasCafe": false,
-        "multiRoaster": true
+        "multiRoaster": true,
+        "subscription": true,
+        "selection": ["surprise"],
+        "brew": ["filter", "espresso"]
     },
     {
         "Name": "Three Thousand Thieves",
         "Website": "https://www.threethousandthieves.com/",
         "State": "all",
         "hasCafe": false,
-        "multiRoaster": true
+        "multiRoaster": true,
+        "subscription": true,
+        "selection": ["surprise"],
+        "brew": ["filter", "espresso", "decaf"]
     }
 ]

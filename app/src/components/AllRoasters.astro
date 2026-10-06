@@ -1,66 +1,117 @@
 ---
 import RoasterRow from "./RoasterRow.astro";
+import RoasterListHeading from './RoasterListHeading.astro';
 import roasters from "../data/coffee-roasters.json";
-import sellers from "../data/coffee-roasters-multi.json";
 import { states } from "../data/states";
-const listings = [...roasters, ...sellers].sort((a, b) => a.Name.localeCompare(b.Name));
+const listings = [...roasters].sort((a, b) => a.Name.localeCompare(b.Name));
 ---
 <div class="directory-tools">
   <div class="search-field"><label for="directory-search">Find a roaster</label><input id="directory-search" type="search" placeholder="Search by name, suburb or website" autocomplete="off" /></div>
   <div id="directory-state-field"><label for="directory-state">State or territory</label><select id="directory-state"><option value="">All Australia</option>{states.map(state => <option value={state.code}>{state.name}</option>)}</select></div>
-  <div><label for="directory-type">Listing type</label><select id="directory-type"><option value="">All listings</option><option value="roaster">Coffee roasters</option><option value="multi">Multi-roaster sellers</option></select></div>
+  <div><label for="directory-sort">Sort listings</label><select id="directory-sort"><option value="">Name: A–Z</option><option value="rating-desc">Rating: highest first</option><option value="rating-asc">Rating: lowest first</option></select></div>
   <label class="cafe-filter" for="directory-cafe"><input type="checkbox" id="directory-cafe" class="checkbox checkbox-sm" />With a cafe</label>
   <button id="directory-reset" type="button" class="text-button">Clear filters</button>
 </div>
-<div class="results-heading"><p id="directory-count" role="status" aria-live="polite">{listings.length} listings</p><p class="muted">Listed A–Z</p></div>
-<div class="list-heading" aria-hidden="true"><span>Roaster</span><span>Where</span><span>Good to know</span><span>Explore</span></div>
-<section id="list-of-roasters" aria-label="Roaster results" class="roaster-list">{listings.map(roaster => <RoasterRow roaster={roaster} />)}</section>
+<div class="results-heading"><p id="directory-count" role="status" aria-live="polite">{listings.length} listings</p><p id="directory-order" class="muted">Listed A–Z</p></div>
+<div class="directory-table">
+  <RoasterListHeading />
+  <section id="list-of-roasters" aria-label="Roaster results" tabindex="-1" class="roaster-list">{listings.map(roaster => <RoasterRow roaster={roaster} />)}</section>
+</div>
 <p id="directory-empty" class="empty-state" hidden>No roasters match these filters. Try another name or clear the filters.</p>
+<nav id="directory-pagination" aria-label="Pagination" class="pagination" hidden>
+  <a id="directory-previous" class="btn btn-outline" rel="prev" hidden>Previous</a>
+  <span id="directory-previous-disabled" class="btn btn-outline btn-disabled" aria-disabled="true">Previous</span>
+  <p id="directory-page"></p>
+  <a id="directory-next" class="btn btn-outline" rel="next" hidden>Next</a>
+  <span id="directory-next-disabled" class="btn btn-outline btn-disabled" aria-disabled="true">Next</span>
+</nav>
 <script>
+  import { compareListingRatings } from '../utils/ratings';
+  const pageSize = 12;
   const search = document.querySelector<HTMLInputElement>('#directory-search');
   const state = document.querySelector<HTMLSelectElement>('#directory-state');
-  const type = document.querySelector<HTMLSelectElement>('#directory-type');
   const cafe = document.querySelector<HTMLInputElement>('#directory-cafe');
+  const sort = document.querySelector<HTMLSelectElement>('#directory-sort');
   const count = document.querySelector<HTMLElement>('#directory-count');
   const empty = document.querySelector<HTMLElement>('#directory-empty');
+  const results = document.querySelector<HTMLElement>('#list-of-roasters');
+  const pagination = document.querySelector<HTMLElement>('#directory-pagination');
+  const pageLabel = document.querySelector<HTMLElement>('#directory-page');
+  const previous = document.querySelector<HTMLAnchorElement>('#directory-previous');
+  const next = document.querySelector<HTMLAnchorElement>('#directory-next');
   const rows = [...document.querySelectorAll<HTMLElement>('#list-of-roasters .roaster-row')];
-  function filter(updateUrl = true) {
-    const onlineOnly = type.value === 'multi';
-    state.disabled = onlineOnly;
-    document.querySelector<HTMLElement>('#directory-state-field').hidden = onlineOnly;
-    if (onlineOnly) state.value = '';
+  let currentPage = 1;
+  function pageUrl(page: number) {
+    const url = new URL(window.location.href);
+    if (page > 1) url.searchParams.set('page', String(page)); else url.searchParams.delete('page');
+    return `${url.pathname}${url.search}${url.hash}`;
+  }
+  function filter(requestedPage = 1, navigation: 'replace' | 'push' = 'replace') {
     const terms = search.value.toLocaleLowerCase().trim().split(/\s+/).filter(Boolean);
-    let visible = 0;
-    for (const row of rows) {
-      const matches = terms.every(term => row.dataset.search.includes(term)) &&
+    // Search the entire directory before selecting the requested page.
+    const matches = rows.filter(row => terms.every(term => row.dataset.search.includes(term)) &&
         (!state.value || row.dataset.state.split(',').map(s => s.trim()).includes(state.value) || row.dataset.state === 'all') &&
-        (!type.value || row.dataset.multi === String(type.value === 'multi')) &&
-        (!cafe.checked || row.dataset.cafe === 'true');
-      row.hidden = !matches;
-      if (matches) visible++;
+        (!cafe.checked || row.dataset.cafe === 'true'));
+    if (sort.value) matches.sort((a, b) => compareListingRatings(
+      a.dataset.rating ? Number(a.dataset.rating) : null,
+      b.dataset.rating ? Number(b.dataset.rating) : null,
+      sort.value === 'rating-asc' ? 'asc' : 'desc'
+    ) || a.dataset.name.localeCompare(b.dataset.name));
+    const lastPage = Math.max(1, Math.ceil(matches.length / pageSize));
+    currentPage = Math.min(lastPage, Math.max(1, requestedPage));
+    const start = (currentPage - 1) * pageSize;
+    const visibleRows = new Set(matches.slice(start, start + pageSize));
+    for (const row of rows) row.hidden = !visibleRows.has(row);
+    // Move only the selected page into display order; the source array retains A–Z.
+    for (const row of visibleRows) results.append(row);
+    document.querySelector('#directory-order').textContent = sort.value ? `Rating: ${sort.value === 'rating-asc' ? 'lowest' : 'highest'} first` : 'Listed A–Z';
+    count.textContent = matches.length > 1
+      ? `${start + 1}–${Math.min(start + pageSize, matches.length)} of ${matches.length} listings`
+      : `${matches.length} ${matches.length === 1 ? 'listing' : 'listings'}`;
+    empty.hidden = matches.length !== 0;
+    pagination.hidden = matches.length === 0;
+    pageLabel.textContent = `Page ${currentPage} of ${lastPage}`;
+
+    const url = new URL(window.location.href);
+    url.searchParams.delete('type');
+    for (const [key, value] of Object.entries({ q: search.value, state: state.value, cafe: cafe.checked ? 'true' : '', sort: sort.value, page: currentPage > 1 ? String(currentPage) : '' })) {
+      if (value) url.searchParams.set(key, value); else url.searchParams.delete(key);
     }
-    count.textContent = `${visible} ${visible === 1 ? 'listing' : 'listings'}`;
-    empty.hidden = visible !== 0;
-    if (updateUrl || onlineOnly) {
-      const url = new URL(window.location.href);
-      for (const [key, value] of Object.entries({ q: search.value, state: state.value, type: type.value, cafe: cafe.checked ? 'true' : '' })) {
-        if (value) url.searchParams.set(key, value); else url.searchParams.delete(key);
-      }
-      history.replaceState(null, '', url);
+    if (url.href !== window.location.href) {
+      if (navigation === 'push') history.pushState(null, '', url);
+      else history.replaceState(null, '', url);
     }
+    previous.hidden = currentPage === 1;
+    next.hidden = currentPage === lastPage;
+    document.querySelector<HTMLElement>('#directory-previous-disabled').hidden = !previous.hidden;
+    document.querySelector<HTMLElement>('#directory-next-disabled').hidden = !next.hidden;
+    previous.href = pageUrl(currentPage - 1);
+    next.href = pageUrl(currentPage + 1);
   }
   function restore() {
     const params = new URLSearchParams(window.location.search);
     search.value = params.get('q') ?? '';
     state.value = statesFromOptions(state, params.get('state'));
-    type.value = statesFromOptions(type, params.get('type'));
     cafe.checked = params.get('cafe') === 'true';
-    filter(false);
+    sort.value = statesFromOptions(sort, params.get('sort'));
+    const page = params.get('page') ?? '1';
+    const requestedPage = /^\d+$/.test(page) && Number.isSafeInteger(Number(page)) ? Number(page) : 1;
+    filter(requestedPage);
   }
   function statesFromOptions(select: HTMLSelectElement, value: string | null) { return [...select.options].some(option => option.value === value) ? value : ''; }
   search.addEventListener('input', () => filter());
-  for (const control of [state, type, cafe]) control.addEventListener('change', () => filter());
-  document.querySelector('#directory-reset').addEventListener('click', () => { search.value = ''; state.value = ''; type.value = ''; cafe.checked = false; filter(); search.focus(); });
+  for (const control of [state, cafe, sort]) control.addEventListener('change', () => filter());
+  document.querySelector('#directory-reset').addEventListener('click', () => { search.value = ''; state.value = ''; cafe.checked = false; sort.value = ''; filter(); search.focus(); });
+  for (const [link, direction] of [[previous, -1], [next, 1]] as const) {
+    link.addEventListener('click', event => {
+      // Preserve native link behavior for opening a shared page in another tab.
+      if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      filter(currentPage + direction, 'push');
+      results.focus({ preventScroll: true });
+      results.scrollIntoView({ block: 'start' });
+    });
+  }
   window.addEventListener('popstate', restore);
   restore();
 </script>

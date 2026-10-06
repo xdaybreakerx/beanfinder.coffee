@@ -8,14 +8,21 @@ BeanFinder is a curated directory of Australian coffee roasters designed to help
 - [x] Nested Dynamic routing for pagination
 - [x] SEO Optimized
 - [x] Theme toggle and memory
-- [x] Searchable A–Z directory with state, cafe, and multi-roaster filters
+- [x] Searchable A–Z roaster directory with state/cafe filters and a separate multi-roaster comparison
+- [x] Google Maps rating column with half-star graphics and rating sorting
 - [x] Australian-only map locations
 
-The directory filters are saved in the URL so searches can be bookmarked or shared. Cafe listings show locality links to saved Australian Google Maps locations; their addresses can also be searched in the directory. Listings without a saved location have a labelled map search fallback. Multi-roaster sellers are presented as online services for Australia, with the state filter hidden when browsing sellers alone.
+The roaster directory shows 12 listings per page, with result ranges and Previous/Next controls. Search, state, cafe and rating-sort controls apply to every roaster before pagination. Multi-roaster stores have their own comparison page, so the directory no longer includes them or a listing-type filter. Filters and page position are saved in the URL so searches can be bookmarked or shared; changing a filter returns to page 1. Homepage state shortcuts use these same URLs, such as `/roasters/?state=TAS`. Old `/roasters/TAS/false/1` links redirect permanently to the filtered directory, preserving cafe/page settings; old `type=multi` links redirect to the seller page. Cafe listings show locality links to saved Australian Google Maps locations; their full addresses and postcodes can also be searched in the directory. Visible locality labels omit postcodes. Listings without a saved location display “Online” with a decorative globe icon and no link.
+
+The header's **Multi-roaster** link opens the dedicated multi-roaster sellers/subscriptions directory directly. Its eight-store comparison uses Store, Subscription, Selection and Brew columns: linked names and plain domains, five filled Subscription badges in coffee brown for light mode and gold for dark mode, three outline Store Only badges, outline Surprise me / Choose your own options, and small muted Filter / Espresso / Decaf badges. The page retains the visitor's chosen theme when navigating from the directory. Mobile cards show labels for each group. The page omits the redundant multi-roaster navigation option, Type, Locations and Rating columns, and pricing. Store details are curated in `coffee-roasters-multi.json` from the maintainer's supplied information. Acuratore has been moved from the regular-roaster collection into the nationwide seller collection, retaining one directory record.
+
+Listing names are prominent website links, with a plain domain beneath and equal-weight outline badges in a separate Type column. Names use cream in the dark theme, with gold reserved for stars and interactive states. External links include hidden new-tab notes and safe attributes, hover underlines and visible keyboard focus rings. Location links have leading map pins in fixed slots. Multiple locations use a native disclosure whose suburb preview and headline rating hide while open; compact branch lines align stars with the headline rating's right edge. Rows stack below 640 px. Larger screens use a top-aligned grid within a 64rem table, with an opaque sticky header and 16px row padding. Secondary text uses 80% base-content color, with rendered contrast checked in both themes and hover states.
+
+Ratings use the retained Google Maps scores, displayed as stars rounded to the nearest half star with an accessible score label. Numeric values and review counts are omitted; unrated rows show a muted en dash with hidden “Not rated” text in a fixed-width rating column. A visible explanatory line identifies Google Maps as the source and explains missing ratings. Full-directory sorting offers name A–Z, highest rating first, and lowest rating first using precise source scores, applied before pagination and retained in the URL. Unrated listings stay last. Multi-location listings consistently use their highest rated matched Australian branch as the headline rating; state filters select businesses while leaving their branch details available. Scores have unknown retrieval dates and no saved review counts. The maintainer has chosen to display these existing scores without an archive label. This display makes no new Google requests.
 
 The daisyUI `caramellatte` (light) and `coffee` (dark) themes follow the system preference until a visitor chooses a theme. Existing saved light/dark choices are retained. Both themes include visible keyboard focus and a skip link.
 
-The map retains its historical Google snapshot by maintainer decision. Its retrieval dates are unknown, recorded separately in `legacy-map-snapshot.json`; historical ratings are not used as current directory scores. Legacy markers still require valid coordinates and a formatted address ending with `Australia`. Known locations and new reviewed branches use a separate, expiry-aware runtime path described below. There is no weekly full-directory discovery or permanent enrichment.
+The map retains its historical Google snapshot by maintainer decision. Its retrieval dates are unknown, recorded separately in `legacy-map-snapshot.json`; directory ratings use the existing scores under the separate display decision above. Legacy markers still require valid coordinates and a formatted address ending with `Australia`. Known locations and new reviewed branches use a separate, expiry-aware runtime path described below. There is no weekly full-directory discovery or permanent enrichment.
 
 ## 💻 Tech Stack and tools
 
@@ -250,9 +257,9 @@ All commands are run from the `app/` directory, from a terminal:
 
 Before the first browser test run, install Chromium with `npx playwright install chromium`.
 
-Browser tests scan the homepage, directory, state listings, multi-roaster listings, submission form, success page, and 404 page in both themes with axe-core. These automated checks complement keyboard and responsive-layout tests; the live third-party Google Maps interface still needs manual review in the deploy preview.
+Browser tests scan the homepage, directory, state listings, multi-roaster listings, submission form, success page, and 404 page in both themes with axe-core, including a separate homepage label-content-name check. Keyboard and layout tests cover directory pagination and history, 320–414 px screens, and 200% text sizing. Safari/iOS and the live third-party Google Maps interface still need manual review in the deploy preview.
 
-For a different development port, set `DEV_SITE_URL` to that server's origin so pagination links use the same server. The browser tests set this for their dedicated port automatically.
+State and directory pagination links are relative, keeping navigation on the current development or deploy-preview origin. For other generated site metadata on a different development port, set `DEV_SITE_URL` to that server's origin. The browser tests set this for their dedicated port automatically.
 
 ## ✅ My To-Do List
 
@@ -277,6 +284,6 @@ For a different development port, set `DEV_SITE_URL` to that server's origin so 
 - [x] pagination for results array
 - [x] custom 404 page
 - [x] Google Maps integration
-- [ ] Sort by rating or alphabetical in list view
+- [x] Sort by rating or alphabetical in list view
 
 </details>

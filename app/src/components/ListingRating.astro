@@ -1,0 +1,6 @@
+---
+import StarRating from './StarRating.astro';
+interface Props { rating: number | null; }
+const { rating } = Astro.props;
+---
+{rating !== null ? <StarRating rating={rating} /> : <span class="not-rated"><span aria-hidden="true">–</span><span class="sr-only">Not rated</span></span>}

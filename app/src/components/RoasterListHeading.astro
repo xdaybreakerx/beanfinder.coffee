@@ -1,0 +1,6 @@
+---
+interface Props { showRating?: boolean; }
+const { showRating = true } = Astro.props;
+---
+{showRating && <p class="rating-note">Ratings come from Google Maps. A dash means no rating is available.</p>}
+<div class:list={['list-heading', { 'has-rating': showRating }]} aria-hidden="true"><span>Roaster</span><span>Type</span><span>Locations</span>{showRating && <span class="rating-heading">Rating</span>}</div>
