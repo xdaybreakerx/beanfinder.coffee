@@ -170,7 +170,7 @@ function escapeMarkdown(value: string) {
   return value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/@/g, "&#64;").replace(/[\\`*_{}\[\]()!|~]/g, "\\$&");
 }
 
-class GitHubError extends Error {
+export class GitHubError extends Error {
   status: number;
   constructor(status: number) {
     super(`GitHub API returned HTTP ${status}`);

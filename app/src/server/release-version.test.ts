@@ -1,6 +1,6 @@
 // @vitest-environment node
 import { describe, expect, it } from "vitest";
-import { LOCK_PATH, nextPatchVersion, PACKAGE_PATH, patchReleaseFiles } from "./release-version";
+import { LOCK_PATH, nextPatchVersion, PACKAGE_PATH, patchReleaseFiles, readReleaseVersion, validateDataRelease } from "./release-version";
 
 const pkg = { name: "test-site", version: "1.0.0", dependencies: { astro: "^7.3.5" } };
 const lock = { name: pkg.name, version: pkg.version, lockfileVersion: 3, packages: { "": { ...pkg }, "node_modules/astro": { version: "7.3.5", integrity: "existing-integrity" } } };
@@ -32,5 +32,26 @@ describe("data PR release versioning", () => {
     const input = files();
     input[LOCK_PATH] = JSON.stringify({ name: pkg.name, version: pkg.version, packages: {} });
     expect(() => patchReleaseFiles(input)).toThrow("must match");
+  });
+  it("rejects a stale data PR after another patch merges", () => {
+    const first = patchReleaseFiles(files()).contents;
+    expect(() => validateDataRelease(first, files(), true)).not.toThrow();
+    expect(() => validateDataRelease(first, first, true)).toThrow("must be 1.0.2");
+    expect(() => validateDataRelease(patchReleaseFiles(first).contents, first, true)).not.toThrow();
+  });
+  it("requires explanation-only PRs to keep the current main version", () => {
+    expect(() => validateDataRelease(files(), files(), false)).not.toThrow();
+    expect(() => validateDataRelease(patchReleaseFiles(files()).contents, files(), false)).toThrow("must be 1.0.0");
+  });
+  it("uses the new app release as the base for pending form PRs", () => {
+    const release = files();
+    const pkg = JSON.parse(release[PACKAGE_PATH]);
+    const lock = JSON.parse(release[LOCK_PATH]);
+    pkg.version = lock.version = lock.packages[""].version = "2.0.0";
+    release[PACKAGE_PATH] = JSON.stringify(pkg);
+    release[LOCK_PATH] = JSON.stringify(lock);
+    expect(readReleaseVersion(release)).toBe("2.0.0");
+    expect(() => validateDataRelease(patchReleaseFiles(files()).contents, release, true)).toThrow("must be 2.0.1");
+    expect(() => validateDataRelease(patchReleaseFiles(release).contents, release, true)).not.toThrow();
   });
 });

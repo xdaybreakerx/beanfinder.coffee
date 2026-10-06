@@ -8,14 +8,21 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 jobs:
   verify:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     defaults:
       run:
         working-directory: app
     steps:
       - uses: actions/checkout@v7
+        with:
+          fetch-depth: 2
       - uses: actions/setup-node@v7
         with:
           node-version-file: '.nvmrc'
@@ -23,8 +30,15 @@ jobs:
           cache-dependency-path: app/package-lock.json
       - run: npm ci
       - run: npm run validate:data
+      - run: npm run validate:release
+        env:
+          DATA_PR_BRANCH: ${{ github.head_ref }}
       - run: npm run check
       - run: npm test
       - run: npm run build
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
+      - name: Summarize verification failure
+        if: failure()
+        run: |
+          printf '%s\n' '## Verification failed' 'Inspect the failed step above, fix the branch, and rerun verification before merging. Data PRs must also use the next patch version after current main.' >> "$GITHUB_STEP_SUMMARY"

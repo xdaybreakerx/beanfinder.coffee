@@ -11,15 +11,30 @@ export function nextPatchVersion(version: unknown): string {
   return `${major}.${minor}.${patch + 1}`;
 }
 
-export function patchReleaseFiles(files: Record<string, string>) {
+export function readReleaseVersion(files: Record<string, string>): string {
   const pkg = JSON.parse(files[PACKAGE_PATH]);
   const lock = JSON.parse(files[LOCK_PATH]);
   const rootPackage = lock.packages?.[""];
   if (!rootPackage || lock.version !== pkg.version || rootPackage.version !== pkg.version || lock.name !== pkg.name || rootPackage.name !== pkg.name) {
     throw new Error("Package and lockfile root versions/names must match before proposing a release");
   }
+  nextPatchVersion(pkg.version);
+  return pkg.version;
+}
+
+export function validateDataRelease(files: Record<string, string>, base: Record<string, string>, dataChanged: boolean) {
+  const version = readReleaseVersion(files);
+  const baseVersion = readReleaseVersion(base);
+  const expected = dataChanged ? nextPatchVersion(baseVersion) : baseVersion;
+  if (version !== expected) throw new Error(`Form PR version must be ${expected} against current main; found ${version}. Update package and both lockfile roots before merging.`);
+}
+
+export function patchReleaseFiles(files: Record<string, string>) {
+  const previousVersion = readReleaseVersion(files);
+  const pkg = JSON.parse(files[PACKAGE_PATH]);
+  const lock = JSON.parse(files[LOCK_PATH]);
+  const rootPackage = lock.packages[""];
   const version = nextPatchVersion(pkg.version);
-  const previousVersion: string = pkg.version;
   pkg.version = version;
   lock.version = version;
   rootPackage.version = version;
