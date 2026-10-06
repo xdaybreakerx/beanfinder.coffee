@@ -6,6 +6,8 @@ import { pageMetadata } from "../utils/pageMetadata";
 const metadata = pageMetadata(Astro.url.pathname);
 const title = Astro.props.title || metadata.title;
 const description = Astro.props.description || metadata.description;
+const socialImage = "https://beanfinder.coffee/beanfinder-og-v2.jpg";
+const socialImageAlt = "BeanFinder — Australian coffee directory, beside a ceramic bowl of roasted coffee beans on a cream background.";
 ---
 
 <html lang="en-AU">
@@ -36,10 +38,22 @@ const description = Astro.props.description || metadata.description;
     />
     <meta
       property="og:image"
-      content="https://beanfinder.coffee/beanfinder-og-image.png"
+      content={socialImage}
     />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1730" />
+    <meta property="og:image:height" content="909" />
+    <meta property="og:image:alt" content={socialImageAlt} />
     <meta property="og:url" content={metadata.canonical} />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="BeanFinder" />
+    <meta property="og:locale" content="en_AU" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImage} />
+    <meta name="twitter:image:alt" content={socialImageAlt} />
 
     <title>{title}</title>
   </head>

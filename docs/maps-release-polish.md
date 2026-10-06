@@ -30,7 +30,7 @@ References: [new autocomplete](https://developers.google.com/maps/documentation/
 
 Privacy and terms pages cover hosting/forms, community publication, Google Maps/location, theme storage, operator checks and external websites. They link Google's privacy policy and terms, and the footer and map link both pages. Google Analytics has been removed at the maintainer's request; there is no tracking script or consent UI.
 
-Each main route has its own title/description, canonical URL and matching Open Graph metadata using https://beanfinder.coffee. Filter query parameters are omitted from canonical URLs. Production sitemap generation includes server-rendered entry routes and public policy pages, and omits utility routes and retired state redirects. robots.txt points at the apex sitemap; submission-success, 404 and form-detection pages carry noindex metadata. Existing coffee-themed social imagery is retained.
+Each main route has its own title/description, canonical URL and matching Open Graph metadata using https://beanfinder.coffee. Filter query parameters are omitted from canonical URLs. Production sitemap generation includes server-rendered entry routes and public policy pages, and omits utility routes and retired state redirects. robots.txt points at the apex sitemap; submission-success, 404 and form-detection pages carry noindex metadata. A new cream/coffee-brown social image and explicit large-image card metadata are prepared for v2; see [release verification](release-verification.md) for the completed accessibility/performance checks and social-preview deployment status.
 
 ## Dependency-advisory decision record
 
