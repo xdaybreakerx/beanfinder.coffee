@@ -2,11 +2,12 @@ import { cleanup, renderHook } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { useMarkers } from "./useMarkers";
 
-const cluster = vi.hoisted(() => ({ addMarkers: vi.fn(), clearMarkers: vi.fn() }));
+const cluster = vi.hoisted(() => ({ addMarkers: vi.fn(), clearMarkers: vi.fn(), setMap: vi.fn() }));
 vi.mock("@googlemaps/markerclusterer", () => ({
   MarkerClusterer: class {
     addMarkers = cluster.addMarkers;
     clearMarkers = cluster.clearMarkers;
+    setMap = cluster.setMap;
   },
 }));
 
@@ -31,15 +32,24 @@ describe("accessible map markers", () => {
     markers[1].dispatchEvent(new Event("gmp-click"));
     expect(onClick).toHaveBeenCalledExactlyOnceWith("sydney-place");
     onClick.mockClear();
-    for (const key of ["Enter", " "]) {
-      const event = new KeyboardEvent("keydown", { key, cancelable: true });
-      markers[0].dispatchEvent(event);
-      expect(event.defaultPrevented).toBe(true);
-    }
-    expect(onClick.mock.calls).toEqual([["melbourne-place"], ["melbourne-place"]]);
-    markers[0].dispatchEvent(new KeyboardEvent("keydown", { key: "ArrowRight" }));
-    expect(onClick).toHaveBeenCalledTimes(2);
+    markers[0].dispatchEvent(new Event("gmp-click"));
+    expect(onClick).toHaveBeenCalledExactlyOnceWith("melbourne-place");
     unmount();
     expect(cluster.clearMarkers).toHaveBeenCalledOnce();
+    expect(cluster.setMap).toHaveBeenCalledExactlyOnceWith(null);
+  });
+  it.each(["Enter", " "])("handles %s without a native click and suppresses the matching native event", keyName => {
+    const marker = new EventTarget();
+    vi.stubGlobal("google", { maps: { marker: { AdvancedMarkerElement: class { constructor() { return marker; } } } } });
+    const onClick = vi.fn();
+    renderHook(() => useMarkers({}, [{ place_id: "branch", name: "Coffee", location: { lat: -37.8, lng: 145 } }], onClick));
+    const key = new KeyboardEvent("keydown", { key: keyName, cancelable: true });
+    marker.dispatchEvent(key);
+    marker.dispatchEvent(new Event("gmp-click"));
+    expect(key.defaultPrevented).toBe(true);
+    expect(onClick).toHaveBeenCalledExactlyOnceWith("branch");
+    marker.dispatchEvent(new KeyboardEvent("keydown", { key: "ArrowRight" }));
+    marker.dispatchEvent(new KeyboardEvent("keydown", { key: "Enter", repeat: true }));
+    expect(onClick).toHaveBeenCalledTimes(1);
   });
 });

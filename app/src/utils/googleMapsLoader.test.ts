@@ -29,7 +29,8 @@ it("shares one initialization and waits for marker support before declaring the 
   resolveMarkers!({});
   await loading;
   expect(ready).toBe(true);
-  expect(loader.setOptions).toHaveBeenCalledExactlyOnceWith({ key: "test-key", v: "beta" });
+  expect(loader.setOptions).toHaveBeenCalledExactlyOnceWith({ key: "test-key", v: "weekly" });
+  expect(loader.importLibrary.mock.calls.map(call => call[0])).toEqual(["maps", "marker"]);
 });
 
 it("reports library-loading failures to the existing map loading error handler", async () => {

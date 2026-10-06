@@ -1,162 +1,152 @@
-import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import {
-  APIProvider,
-  Map,
-  useMap,
-  useMapsLibrary,
-} from "@vis.gl/react-google-maps";
-
-import PlaceOverviewComponent from "./PlaceOverviewComponent";
+import React, { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { APIProvider, Map, useMap, useMapsLibrary } from "@vis.gl/react-google-maps";
 import { useMapLoading } from "../hooks/useMapLoading";
 import { useGeolocation } from "../hooks/useGeolocation";
 import { useMarkers } from "../hooks/useMarkers";
 import { usePoiCreation } from "../hooks/usePoiCreation";
 import { useReviewedCoordinates } from "../hooks/useReviewedCoordinates";
+import { mapPlaces } from "../utils/mapPlaces";
 import { reviewedPlaces } from "../utils/reviewedPlaces";
+import { MapPlaceholder, MapToolbar } from "./MapShell";
+import { MAPS_CHANNEL } from "../utils/googleMapsLoader";
+import { createDetailsBudget, isAustralianSelection, mapsPlaceLink } from "../utils/browserPlaces";
+
+const PlaceOverviewComponent = lazy(() => import("./PlaceOverviewComponent"));
+const australia = { lat: -24.670940951770845, lng: 134.52585021148653 };
+type SearchPlace = Pick<google.maps.places.Place, "location" | "viewport">;
+type Camera = { place: SearchPlace } | { location: google.maps.LatLngLiteral } | null;
 
 const MonolithicGoogleMap = ({ apiKey }: { apiKey: string }) => {
   const { mapLoaded, error } = useMapLoading(apiKey);
-  const roastersPois = usePoiCreation();
+  const legacyPois = usePoiCreation();
   const fresh = useReviewedCoordinates(Boolean(apiKey) && mapLoaded && !error);
-  const pois = useMemo(() => [...roastersPois.filter(poi => !fresh.pois.some(place => place.place_id === poi.place_id)), ...fresh.pois], [roastersPois, fresh.pois]);
-  const { location: userLocation } = useGeolocation();
-
+  const [cafeOnly, setCafeOnly] = useState(true);
   const [selectedPlaceId, setSelectedPlaceId] = useState<string | null>(null);
-  const [selectedPlace, setSelectedPlace] =
-    useState<google.maps.places.PlaceResult | null>(null);
-
+  const [camera, setCamera] = useState<Camera>(null);
+  const location = useGeolocation();
+  const cameraAction = useRef(0);
+  const reserveDetails = useMemo(() => createDetailsBudget(), []);
+  const pois = useMemo(() => {
+    const freshIds = new Set(fresh.pois.map(place => place.place_id));
+    return [...legacyPois.filter(poi => !freshIds.has(poi.place_id)), ...fresh.pois]
+      .filter(poi => !cafeOnly || mapPlaces.find(place => place.placeId === poi.place_id)?.hasCafe === true);
+  }, [legacyPois, fresh.pois, cafeOnly]);
+  const selectedPlace = mapPlaces.find(place => place.placeId === selectedPlaceId);
   const handleMarkerClick = useCallback((placeId: string) => setSelectedPlaceId(placeId), []);
-  if (!apiKey || error) return <p role="status">The map is unavailable right now. <a className="text-button" href="/roasters/">Explore the directory</a></p>;
-  if (!mapLoaded) return <p role="status">Loading the Australian roaster map…</p>;
+  const startSearch = useCallback(() => ++cameraAction.current, []);
+  const selectSearch = useCallback((place: SearchPlace, action: number) => {
+    if (action !== cameraAction.current) return false;
+    setCamera({ place }); setSelectedPlaceId(null);
+    return true;
+  }, []);
+  const locate = async () => {
+    const action = ++cameraAction.current;
+    const result = await location.requestLocation();
+    if (result && action === cameraAction.current) { setCamera({ location: result }); setSelectedPlaceId(null); }
+  };
+  if (!apiKey || error) return <MapPlaceholder unavailable />;
+  if (!mapLoaded) return <MapPlaceholder />;
 
-  return (
-    <APIProvider apiKey={apiKey}>
-      <div className="map-shell">
-        {/* Custom Search Input with Australia Restriction */}
-        <PlaceAutocomplete onPlaceSelect={setSelectedPlace} />
-        {fresh.error && <p role="status">{fresh.error}</p>}
-        {reviewedPlaces.some(place => fresh.missingPlaceIds.includes(place.placeId) && !roastersPois.some(poi => poi.place_id === place.placeId)) && <div className="map-search">
-          <p>Some locations aren't available on this map yet. You can open them in Google Maps.</p>
-          <ul>{reviewedPlaces.filter(place => fresh.missingPlaceIds.includes(place.placeId) && !roastersPois.some(poi => poi.place_id === place.placeId)).map(place => <li key={place.placeId}>
-            <a className="text-button" href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(place.Name + " Australia")}&query_place_id=${encodeURIComponent(place.placeId)}`}>Open {place.Name} ({place.state}) in Google Maps</a>
-          </li>)}</ul>
-        </div>}
-
-        {/* Map Configuration */}
-        <Map
-          className="flex-grow h-[60vh]"
-          defaultCenter={
-            userLocation || {
-              lat: -24.670940951770845,
-              lng: 134.52585021148653,
-            }
-          }
-          defaultZoom={userLocation ? 10 : 3}
-          gestureHandling={"cooperative"}
-          disableDefaultUI={true}
-          zoomControl={true}
-          fullscreenControl={true}
-          mapId="7b1c394057aa4afc"
-        >
-          <PoiMarkers pois={pois} onMarkerClick={handleMarkerClick} />
-        </Map>
-        <MapHandler place={selectedPlace} userLocation={userLocation} />
-        {selectedPlaceId && (
-          <div className="map-overview">
-            <button type="button" className="text-button" onClick={() => { setSelectedPlaceId(null); document.getElementById('map-location-search')?.focus(); }}>Close place details</button>
-            <PlaceOverviewComponent apiKey={apiKey} placeId={selectedPlaceId} />
-          </div>
-        )}
-      </div>
-    </APIProvider>
-  );
-};
-
-interface MapHandlerProps {
-  place: google.maps.places.PlaceResult | null;
-  userLocation: google.maps.LatLngLiteral | null;
-}
-
-const MapHandler = ({ place, userLocation }: MapHandlerProps) => {
-  const map = useMap();
-
-  useEffect(() => {
-    // defaultCenter/defaultZoom only apply at creation. Geolocation can arrive
-    // later, so update the live map once both are ready. Keep searches in control.
-    if (!map || !userLocation || place) return;
-
-    map.panTo(userLocation);
-    map.setZoom(10);
-  }, [map, userLocation, place]);
-
-  useEffect(() => {
-    if (!map || !place) return;
-
-    if (place.geometry?.viewport) {
-      map.fitBounds(place.geometry?.viewport);
-    } else if (place.geometry?.location) {
-      map.panTo(place.geometry.location);
-      map.setZoom(14);
-    }
-  }, [map, place]);
-
-  return null;
-};
-
-interface PlaceAutocompleteProps {
-  onPlaceSelect: (place: google.maps.places.PlaceResult | null) => void;
-}
-
-const PlaceAutocomplete = ({ onPlaceSelect }: PlaceAutocompleteProps) => {
-  const [placeAutocomplete, setPlaceAutocomplete] =
-    useState<google.maps.places.Autocomplete | null>(null);
-  const inputRef = useRef<HTMLInputElement>(null);
-  const places = useMapsLibrary("places");
-
-  useEffect(() => {
-    if (!places || !inputRef.current) return;
-
-    const options = {
-      fields: ["geometry", "name", "formatted_address"],
-      componentRestrictions: { country: "au" }, // Restrict search to Australia
-    };
-
-    setPlaceAutocomplete(new places.Autocomplete(inputRef.current, options));
-  }, [places]);
-
-  useEffect(() => {
-    if (!placeAutocomplete) return;
-
-    const listener = placeAutocomplete.addListener("place_changed", () => {
-      onPlaceSelect(placeAutocomplete.getPlace());
-    });
-    return () => listener?.remove();
-  }, [onPlaceSelect, placeAutocomplete]);
-
-  return (
-    <div className="map-search">
-    <label htmlFor="map-location-search">Search an Australian location</label>
-    <input
-      id="map-location-search"
-      ref={inputRef}
-      type="text"
-      placeholder="Search for a location"
-      aria-describedby="map-search-hint"
-    />
-    <p id="map-search-hint">Search a suburb or town, then select a roaster on the map.</p>
+  const missing = reviewedPlaces.filter(place => fresh.missingPlaceIds.includes(place.placeId) &&
+    !legacyPois.some(poi => poi.place_id === place.placeId) && (!cafeOnly || place.hasCafe));
+  return <APIProvider apiKey={apiKey} version={MAPS_CHANNEL}>
+    <div className="map-shell">
+      <MapToolbar count={pois.length} cafeOnly={cafeOnly} pending={location.pending} error={location.error}
+        locate={() => void locate()} setCafeOnly={checked => { setCafeOnly(checked); setSelectedPlaceId(null); }}>
+        <PlaceAutocomplete onPlaceSelect={selectSearch} onSearchStart={startSearch} reserveDetails={reserveDetails} />
+      </MapToolbar>
+      <Map className="map-canvas" defaultCenter={australia} defaultZoom={3} gestureHandling="cooperative"
+        disableDefaultUI zoomControl fullscreenControl mapId="7b1c394057aa4afc">
+        <PoiMarkers pois={pois} onMarkerClick={handleMarkerClick} />
+      </Map>
+      <MapHandler camera={camera} />
+      {selectedPlace && <section className="map-overview" aria-label="Selected location">
+        <button type="button" className="text-button" onClick={() => { setSelectedPlaceId(null); document.getElementById("map-location-search")?.focus(); }}>Close place details</button>
+        <Suspense fallback={<p role="status">Loading place details…</p>}>
+          <PlaceOverviewComponent key={selectedPlace.placeId} place={selectedPlace} reserveDetails={reserveDetails} />
+        </Suspense>
+      </section>}
     </div>
-  );
+    <p className="map-note map-cache-status" role="status">{fresh.error}</p>
+    {missing.length > 0 && <div className="map-note"><p>Some locations aren't on this map yet. Open them in Google Maps:</p>
+      <ul>{missing.map(place => <li key={place.placeId}><a className="text-button" href={mapsPlaceLink(place.placeId, place.Name)}>Open {place.Name} ({place.state}) in Google Maps</a></li>)}</ul>
+    </div>}
+  </APIProvider>;
 };
 
-const PoiMarkers = ({ pois, onMarkerClick }: {
-  pois: ReturnType<typeof usePoiCreation>;
-  onMarkerClick: (placeId: string) => void;
-}) => {
+function MapHandler({ camera }: { camera: Camera }) {
   const map = useMap();
-
-  useMarkers(map, pois, onMarkerClick);
-
+  useEffect(() => {
+    if (!map || !camera) return;
+    if ("location" in camera) { map.panTo(camera.location); map.setZoom(10); }
+    else if (camera.place.viewport) map.fitBounds(camera.place.viewport);
+    else if (camera.place.location) { map.panTo(camera.place.location); map.setZoom(14); }
+  }, [map, camera]);
   return null;
-};
+}
 
+function PlaceAutocomplete({ onPlaceSelect, onSearchStart, reserveDetails }: {
+  onPlaceSelect: (place: SearchPlace, action: number) => boolean;
+  onSearchStart: () => number;
+  reserveDetails: () => boolean;
+}) {
+  const host = useRef<HTMLDivElement>(null);
+  const places = useMapsLibrary("places");
+  const [status, setStatus] = useState("");
+  useEffect(() => {
+    if (!places || !host.current) return;
+    let active = true;
+    let selection = 0;
+    let widget: google.maps.places.PlaceAutocompleteElement;
+    try {
+      widget = new places.PlaceAutocompleteElement({ includedRegionCodes: ["au"],
+        includedPrimaryTypes: ["(regions)"], requestedRegion: "au" });
+      widget.id = "map-location-search";
+      widget.placeholder = "Search an Australian suburb or town";
+      widget.setAttribute("aria-label", "Search an Australian location");
+      widget.description = "Search a suburb or town, choose a suggestion, then select a cafe or roaster on the map.";
+      host.current.append(widget);
+    } catch { setStatus("Location search is unavailable. You can still browse the map."); return; }
+    const start = () => { selection++; onSearchStart(); setStatus(""); };
+    const select = async (event: google.maps.places.PlacePredictionSelectEvent) => {
+      const current = ++selection;
+      const action = onSearchStart();
+      if (!reserveDetails()) {
+        widget.disabled = true;
+        setStatus("Location search has reached its limit for this visit. You can still browse the map or open Google Maps.");
+        return;
+      }
+      setStatus("Finding that location…");
+      try {
+        const place = event.placePrediction.toPlace();
+        await place.fetchFields({ fields: ["location", "viewport", "addressComponents"] });
+        if (!active || current !== selection) return;
+        if (!isAustralianSelection(place)) { setStatus("Choose an Australian suburb or town with an available location."); return; }
+        setStatus(onPlaceSelect(place, action) ? "Map moved to your selected location." : "");
+      } catch { if (active && current === selection) setStatus("That location couldn't be loaded. Try another suggestion or browse the map."); }
+    };
+    const fail = () => { selection++; onSearchStart(); setStatus("Location search is unavailable. You can still browse the map."); };
+    widget.addEventListener("input", start);
+    widget.addEventListener("gmp-select", select);
+    widget.addEventListener("gmp-error", fail);
+    return () => {
+      active = false;
+      widget.removeEventListener("input", start);
+      widget.removeEventListener("gmp-select", select);
+      widget.removeEventListener("gmp-error", fail);
+      widget.remove();
+    };
+  }, [places, onPlaceSelect, onSearchStart, reserveDetails]);
+  return <div className="map-search">
+    <label htmlFor="map-location-search">Search an Australian location</label>
+    <div ref={host} className="map-autocomplete">{!places && <input id="map-location-search" type="text" disabled placeholder="Search an Australian suburb or town" />}</div>
+    <p>Search a suburb or town, then select a cafe or roaster on the map.</p>
+    <p role="status" className="map-search-status">{status}</p>
+  </div>;
+}
+
+function PoiMarkers({ pois, onMarkerClick }: { pois: ReturnType<typeof usePoiCreation>; onMarkerClick: (placeId: string) => void }) {
+  useMarkers(useMap(), pois, onMarkerClick);
+  return null;
+}
 export default MonolithicGoogleMap;

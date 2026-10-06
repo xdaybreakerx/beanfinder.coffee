@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { loadGoogleMaps } from "../utils/googleMapsLoader.js";
+import { loadGoogleMaps, MAPS_AUTH_FAILURE_EVENT } from "../utils/googleMapsLoader.js";
 
 export function useMapLoading(apiKey) {
   const [mapLoaded, setMapLoaded] = useState(false);
@@ -9,6 +9,8 @@ export function useMapLoading(apiKey) {
     let active = true;
     setMapLoaded(false);
     setError(false);
+    const authFailure = () => { if (active) setError(true); };
+    window.addEventListener(MAPS_AUTH_FAILURE_EVENT, authFailure);
 
     const loadMaps = async () => {
       try {
@@ -22,7 +24,7 @@ export function useMapLoading(apiKey) {
     if (apiKey) {
       loadMaps();
     }
-    return () => { active = false; };
+    return () => { active = false; window.removeEventListener(MAPS_AUTH_FAILURE_EVENT, authFailure); };
   }, [apiKey]);
 
   return { mapLoaded, error };

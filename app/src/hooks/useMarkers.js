@@ -14,16 +14,21 @@ export function useMarkers(map, pois, onMarkerClick) {
         gmpClickable: true,
       });
 
-      marker.addEventListener("gmp-click", () => {
+      let lastActivation = -Infinity;
+      const activate = () => {
+        const now = performance.now();
+        // Some engines also emit gmp-click for the same keyboard gesture.
+        if (now - lastActivation < 100) return;
+        lastActivation = now;
         onMarkerClick(poi.place_id);
-      });
-      // Also handle keyboard activation directly: the beta Maps API does not
-      // consistently emit gmp-click for keyboard input on clustered markers.
-      marker.addEventListener("keydown", (event) => {
-        if (event.key === "Enter" || event.key === " ") {
+      };
+      marker.addEventListener("gmp-click", activate);
+      // Keep explicit keyboard activation for clustered markers across engines.
+      marker.addEventListener("keydown", event => {
+        if ((event.key === "Enter" || event.key === " ") && !event.repeat) {
           event.preventDefault();
           event.stopPropagation();
-          onMarkerClick(poi.place_id);
+          activate();
         }
       });
 
@@ -34,6 +39,7 @@ export function useMarkers(map, pois, onMarkerClick) {
 
     return () => {
       markerCluster.clearMarkers();
+      markerCluster.setMap(null);
     };
   }, [map, pois, onMarkerClick]);
 }

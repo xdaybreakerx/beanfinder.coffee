@@ -762,7 +762,7 @@ test("skip link and responsive layout support keyboard and zoom", async ({ page 
 });
 
 for (const theme of ['caramellatte', 'coffee']) {
-for (const path of ['/', '/roasters/', '/roasters/?state=VIC', '/roasters/online-subscriptions/1', '/submit/', '/success/', '/404']) {
+for (const path of ['/', '/roasters/', '/roasters/?state=VIC', '/roasters/online-subscriptions/1', '/submit/', '/success/', '/404', '/privacy/', '/terms/']) {
     test(`${path} (${theme}) passes automated WCAG checks`, async ({ page }) => {
       await page.addInitScript(value => localStorage.setItem('theme', value), theme);
       await page.goto(path);
