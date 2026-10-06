@@ -47,7 +47,7 @@ const MonolithicGoogleMap = ({ apiKey }: { apiKey: string }) => {
   if (!apiKey || error) return <MapPlaceholder unavailable />;
   if (!mapLoaded) return <MapPlaceholder />;
 
-  const missing = reviewedPlaces.filter(place => fresh.missingPlaceIds.includes(place.placeId) &&
+  const missing = reviewedPlaces.filter((place): place is typeof place & { placeId: string } => !!place.placeId && fresh.missingPlaceIds.includes(place.placeId) &&
     !legacyPois.some(poi => poi.place_id === place.placeId) && (!cafeOnly || place.hasCafe));
   return <APIProvider apiKey={apiKey} version={MAPS_CHANNEL}>
     <div className="map-shell">

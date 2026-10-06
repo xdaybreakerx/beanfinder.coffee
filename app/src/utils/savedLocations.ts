@@ -8,11 +8,11 @@ type Listing = { businessId?: string; Website: string; websiteAliases?: string[]
 export type SavedLocation = PlaceLocation & { place_id?: string; state?: string; rating?: unknown; locationId?: string; hasCafe?: boolean; label?: string };
 export type SavedListing = { Website: string; place_ids?: SavedLocation[] };
 
-// Index once for rendering. Keep every branch, deduplicate by place ID, and let
+// Index once for rendering. Keep every branch, deduplicate by durable identity, and let
 // independently reviewed associations resolve ambiguous legacy matches.
 export function indexSavedLocations(saved: SavedListing[], identities: LegacyIdentity[], reviewed: ReviewedLocation[]) {
   const byPlace = new Map(identities.map(item => [item.placeId, item]));
-  const reviewedByPlace = new Map(reviewed.map(item => [item.placeId, item]));
+  const reviewedByPlace = new Map(reviewed.filter(item => item.placeId).map(item => [item.placeId!, item]));
   const byBusiness = new Map<string, Map<string, SavedLocation>>();
   const add = (businessId: string, placeId: string, place: SavedLocation) => {
     const branches = byBusiness.get(businessId) ?? new Map<string, SavedLocation>();
@@ -26,12 +26,15 @@ export function indexSavedLocations(saved: SavedListing[], identities: LegacyIde
     const businessId = review?.businessId ?? identity?.businessId;
     if (businessId) add(businessId, place.place_id, { ...place,
       ...(identity ? { locationId: identity.locationId } : {}),
-      ...(review ? { locationId: review.locationId, state: review.state, hasCafe: review.hasCafe, label: review.Name } : {}),
+      ...(review ? { locationId: review.locationId, state: review.state, hasCafe: review.hasCafe, label: review.Name,
+        ...(review.address ? { address: review.address } : {}) } : {}),
     });
   }
-  // A confirmed branch still has a precise Maps link before coordinates exist.
-  for (const place of reviewed) add(place.businessId, place.placeId, {
-    place_id: place.placeId, locationId: place.locationId, state: place.state, hasCafe: place.hasCafe, label: place.Name,
+  // Independently sourced addresses work before a Google ID or coordinates exist.
+  for (const place of reviewed) add(place.businessId, place.placeId ?? place.locationId, {
+    ...(place.placeId ? { place_id: place.placeId } : {}),
+    ...(place.address ? { address: place.address } : {}),
+    locationId: place.locationId, state: place.state, hasCafe: place.hasCafe, label: place.Name,
   });
   return new Map([...byBusiness].map(([id, places]) => [id, [...places.values()]]));
 }

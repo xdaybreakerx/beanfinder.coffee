@@ -544,7 +544,11 @@ for (const theme of ['caramellatte', 'coffee']) {
     await row.locator('summary').click();
     expect(await renderedContrast(row.locator('.location-preview'))).toBeGreaterThanOrEqual(4.5);
     await page.getByLabel('Find a roaster').fill('Tone Coffee');
-    expect(await renderedContrast(page.locator('.roaster-row:visible .not-rated'))).toBeGreaterThanOrEqual(4.5);
+    expect(await renderedContrast(row.locator('.roaster-rating > .not-rated'))).toBeGreaterThanOrEqual(4.5);
+    await row.locator('summary').click();
+    for (const branchRating of await row.locator('.location-rating .not-rated').all()) {
+      expect(await renderedContrast(branchRating)).toBeGreaterThanOrEqual(4.5);
+    }
   });
 }
 
@@ -724,7 +728,7 @@ test("known locations link to Google Maps without postcodes and unspecified loca
   const url = new URL((await link.getAttribute('href'))!);
   expect(url.searchParams.get('query_place_id')).toBe('ChIJiyYa1pylMioRKk-alGO0RYc');
   await expect(link).toHaveAttribute('rel', 'noopener noreferrer');
-  await page.getByLabel('Find a roaster').fill('Tone Coffee');
+  await page.getByLabel('Find a roaster').fill('a.k.a');
   const unspecified = page.locator('.roaster-row:visible');
   await expect(unspecified.locator('.roaster-location')).toHaveText('Online');
   await expect(unspecified.locator('.online-globe')).toBeVisible();
@@ -773,3 +777,51 @@ for (const path of ['/', '/roasters/', '/roasters/?state=VIC', '/roasters/online
     });
   }
 }
+
+test('audited cafes expose searchable addresses, branch links and corrected cafe filters', async ({ page }) => {
+  await page.goto('/roasters/');
+  const search = page.getByLabel('Find a roaster');
+  const row = page.locator('.roaster-row:visible');
+  await search.fill('50 Gertz');
+  await expect(row).toHaveCount(1);
+  await expect(row).toHaveAttribute('data-business-id', 'biz-beat-coffee');
+  await expect(row.locator('.roaster-location')).toContainText('Reservoir VIC');
+  await expect(row.locator('.online-only')).toHaveCount(0);
+  const beatLink = new URL((await row.locator('.roaster-location a').getAttribute('href'))!);
+  expect(beatLink.searchParams.get('query')).toContain('50 Gertz Avenue, Reservoir VIC 3073, Australia');
+  expect(beatLink.searchParams.has('query_place_id')).toBe(false);
+  await expect(row.locator('.roaster-rating .star-rating')).toHaveCount(0);
+  await page.getByLabel('With a cafe', { exact: true }).check();
+  await expect(row).toHaveCount(1);
+  await search.fill('benchcoffee.co');
+  await expect(row).toHaveCount(1);
+  await expect(row.locator('summary')).toContainText('5 locations');
+  await row.locator('summary').click();
+  await expect(row.locator('.location-list a')).toHaveCount(5);
+  await expect(row.locator('.location-list')).toContainText('Brunswick VIC');
+  await expect(row.locator('.location-list')).not.toContainText('3056');
+  await search.fill('7a Degraves');
+  await expect(row).toHaveAttribute('data-business-id', 'biz-fieldwork-coffee');
+  await search.fill('a.k.a');
+  await expect(row).toHaveCount(0);
+  await page.getByLabel('With a cafe', { exact: true }).uncheck();
+  await expect(row).toHaveCount(1);
+  await expect(row).toHaveAttribute('data-cafe', 'false');
+  await expect(row.locator('.roaster-location')).toHaveText('Online');
+  await search.fill('2 Ferguson');
+  await expect(row).toHaveAttribute('data-business-id', 'biz-leaping-goat-coffee');
+  await page.getByLabel('State or territory').selectOption('VIC');
+  await expect(row).toHaveCount(0);
+  await page.getByLabel('State or territory').selectOption('TAS');
+  await expect(row).toHaveCount(1);
+  await expect(row.locator('.roaster-location')).toContainText('Quoiba TAS');
+  await page.getByLabel('State or territory').selectOption('NSW');
+  await search.fill('975 Pacific');
+  await page.getByLabel('With a cafe', { exact: true }).check();
+  await expect(row).toHaveCount(1);
+  await expect(row).toHaveAttribute('data-business-id', 'biz-siboni-s-coffee');
+  await expect(row.locator('.roaster-location')).toContainText('Pymble NSW');
+  const sibonisLink = new URL((await row.locator('.roaster-location a').getAttribute('href'))!);
+  expect(sibonisLink.searchParams.get('query')).toContain('975 Pacific Highway, Pymble NSW 2073, Australia');
+  expect(sibonisLink.searchParams.has('query_place_id')).toBe(false);
+});

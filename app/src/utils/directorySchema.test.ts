@@ -44,6 +44,27 @@ describe('shared business schema', () => {
 });
 
 describe('location schema and durable associations', () => {
+  it('accepts sourced street addresses without inventing Google IDs and preserves mixed branches', () => {
+    const addressOnly = { ...reviewed, locationId: 'loc-address-only', placeId: undefined, address: '10 High Street, Northcote VIC 3070, Australia', countryCode: 'AU' as const };
+    expect(validateLocations([], [addressOnly], [business]).reviewed).toEqual([addressOnly]);
+    const saved = [{ Website: business.Website, place_ids: [{ place_id: identity.placeId, latitude: -37.8, longitude: 145, address: 'Melbourne, Australia', rating: 4.5 }] }];
+    const indexed = indexSavedLocations(saved, [identity], [addressOnly]).get(business.businessId)!;
+    expect(indexed).toHaveLength(2);
+    expect(indexed[0]).toMatchObject({ place_id: identity.placeId, rating: 4.5 });
+    expect(indexed[1]).toMatchObject({ locationId: addressOnly.locationId, address: addressOnly.address });
+    expect(indexed[1]).not.toHaveProperty('place_id');
+    expect(indexed[1]).not.toHaveProperty('rating');
+    for (const address of [undefined, '', 'Northcote VIC, Australia', '10 High Street, Northcote NSW 3070, Australia', '10 High Street, Northcote VIC 3070, Canada', '10 High Street\n, Northcote VIC 3070, Australia']) {
+      expect(() => validateLocations([], [{ ...addressOnly, address }], [business])).toThrow();
+    }
+    expect(() => validateLocations([identity], [{ ...addressOnly, locationId: identity.locationId }], [business])).toThrow();
+    expect(() => validateLocations([], [addressOnly, addressOnly], [business])).toThrow();
+  });
+  it('uses an independently reviewed address in preference to the accepted snapshot', () => {
+    const address = '10 High Street, Northcote VIC 3070, Australia';
+    const saved = [{ Website: business.Website, place_ids: [{ place_id: identity.placeId, latitude: -37.8, longitude: 145, address: 'Old address, Australia' }] }];
+    expect(indexSavedLocations(saved, [identity], [{ ...reviewed, countryCode: 'AU', address }]).get(business.businessId)![0].address).toBe(address);
+  });
   it('requires source-backed business references and location-level cafe status', () => {
     expect(validateLocations([identity], [reviewed], [business]).reviewed).toEqual([reviewed]);
     for (const fields of [{ businessId: 'biz-missing' }, { locationId: 'loc-other' }, { placeId: 'different' }, { hasCafe: undefined }, { rating: 5 }, { source: null }]) {

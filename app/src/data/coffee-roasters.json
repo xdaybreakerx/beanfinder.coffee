@@ -211,8 +211,12 @@
     "hasCafe": true,
     "multiRoaster": false,
     "provenance": {
-      "source": "legacy-directory",
-      "verifiedAt": null
+      "source": "operator-website",
+      "url": "https://beatcoffee.com.au/pages/say-hello",
+      "reviewedAt": "2026-10-06T06:54:28Z",
+      "fields": [
+        "hasCafe"
+      ]
     }
   },
   {
@@ -235,8 +239,12 @@
     "hasCafe": true,
     "multiRoaster": false,
     "provenance": {
-      "source": "legacy-directory",
-      "verifiedAt": null
+      "source": "operator-website",
+      "url": "https://benchcoffee.co/pages/stores",
+      "reviewedAt": "2026-10-06T06:54:28Z",
+      "fields": [
+        "hasCafe"
+      ]
     }
   },
   {
@@ -564,8 +572,12 @@
     "hasCafe": true,
     "multiRoaster": false,
     "provenance": {
-      "source": "legacy-directory",
-      "verifiedAt": null
+      "source": "operator-website",
+      "url": "https://www.coreroasters.cc/",
+      "reviewedAt": "2026-10-06T06:54:28Z",
+      "fields": [
+        "hasCafe"
+      ]
     }
   },
   {
@@ -768,8 +780,12 @@
     "hasCafe": true,
     "multiRoaster": false,
     "provenance": {
-      "source": "legacy-directory",
-      "verifiedAt": null
+      "source": "operator-website",
+      "url": "https://firstlovecoffee.com.au/pages/cafe",
+      "reviewedAt": "2026-10-06T06:54:28Z",
+      "fields": [
+        "hasCafe"
+      ]
     }
   },
   {
@@ -840,8 +856,12 @@
     "hasCafe": true,
     "multiRoaster": false,
     "provenance": {
-      "source": "legacy-directory",
-      "verifiedAt": null
+      "source": "operator-website",
+      "url": "https://www.fourkilofish.com.au/pages/four-kilo-fish-coffee-and-tea-hawthorn",
+      "reviewedAt": "2026-10-06T06:54:28Z",
+      "fields": [
+        "hasCafe"
+      ]
     }
   },
   {
@@ -972,8 +992,12 @@
     "hasCafe": true,
     "multiRoaster": false,
     "provenance": {
-      "source": "legacy-directory",
-      "verifiedAt": null
+      "source": "operator-website",
+      "url": "https://klimcoffee.com.au/about",
+      "reviewedAt": "2026-10-06T06:54:28Z",
+      "fields": [
+        "hasCafe"
+      ]
     }
   },
   {
@@ -1008,8 +1032,12 @@
     "hasCafe": true,
     "multiRoaster": false,
     "provenance": {
-      "source": "legacy-directory",
-      "verifiedAt": null
+      "source": "operator-website",
+      "url": "https://www.leapinggoatcoffee.com.au/pages/cafe",
+      "reviewedAt": "2026-10-06T06:54:28Z",
+      "fields": [
+        "hasCafe"
+      ]
     }
   },
   {
@@ -1440,8 +1468,12 @@
     "hasCafe": true,
     "multiRoaster": false,
     "provenance": {
-      "source": "legacy-directory",
-      "verifiedAt": null
+      "source": "operator-website",
+      "url": "https://project281.com/",
+      "reviewedAt": "2026-10-06T06:54:28Z",
+      "fields": [
+        "hasCafe"
+      ]
     }
   },
   {
@@ -1512,8 +1544,12 @@
     "hasCafe": true,
     "multiRoaster": false,
     "provenance": {
-      "source": "legacy-directory",
-      "verifiedAt": null
+      "source": "operator-website",
+      "url": "https://www.redbeancoffee.com.au/",
+      "reviewedAt": "2026-10-06T06:54:28Z",
+      "fields": [
+        "hasCafe"
+      ]
     }
   },
   {
@@ -1872,8 +1908,12 @@
     "hasCafe": true,
     "multiRoaster": false,
     "provenance": {
-      "source": "legacy-directory",
-      "verifiedAt": null
+      "source": "operator-website",
+      "url": "https://www.theflourmelbourne.com/",
+      "reviewedAt": "2026-10-06T06:54:28Z",
+      "fields": [
+        "hasCafe"
+      ]
     }
   },
   {
@@ -1908,8 +1948,12 @@
     "hasCafe": true,
     "multiRoaster": false,
     "provenance": {
-      "source": "legacy-directory",
-      "verifiedAt": null
+      "source": "operator-website",
+      "url": "https://www.tonecoffeeroasters.au/",
+      "reviewedAt": "2026-10-06T06:54:28Z",
+      "fields": [
+        "hasCafe"
+      ]
     }
   },
   {
@@ -2721,14 +2765,15 @@
     "Name": "a.k.a Coffee",
     "Website": "https://akacoffee.com.au/",
     "State": "NSW",
-    "hasCafe": true,
+    "hasCafe": false,
     "multiRoaster": false,
     "provenance": {
       "source": "operator-website",
-      "url": "https://akacoffee.com.au/",
-      "reviewedAt": "2026-10-06T05:16:56Z",
+      "url": "https://akacoffee.com.au/about-us-2/",
+      "reviewedAt": "2026-10-06T06:54:28Z",
       "fields": [
-        "State"
+        "State",
+        "hasCafe"
       ]
     }
   },
@@ -2764,8 +2809,12 @@
     "hasCafe": true,
     "multiRoaster": false,
     "provenance": {
-      "source": "legacy-directory",
-      "verifiedAt": null
+      "source": "operator-website",
+      "url": "https://fieldworkcoffee.com.au/pages/about",
+      "reviewedAt": "2026-10-06T06:54:28Z",
+      "fields": [
+        "hasCafe"
+      ]
     }
   },
   {
