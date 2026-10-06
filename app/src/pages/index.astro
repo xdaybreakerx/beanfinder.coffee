@@ -1,8 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { states } from "../data/states";
-import roasters from "../data/coffee-roasters.json";
-import sellers from "../data/coffee-roasters-multi.json";
+import { roasters } from "../utils/directory";
+import { sellers } from "../utils/directory";
 const all = [...roasters, ...sellers];
 const cafes = all.filter(roaster => roaster.hasCafe).length;
 const stateListings = states.map(state => ({ ...state, count: all.filter(roaster => roaster.State.split(',').map(s => s.trim()).includes(state.code)).length }));

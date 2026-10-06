@@ -1,1 +1,28 @@
-[]
+[
+  {
+    "locationId": "loc-0039",
+    "placeId": "ChIJh9DFoDfHsGoR_L_Jf8N-iZ4",
+    "businessId": "biz-coffee-in-common",
+    "Name": "Coffee in Common — Hindmarsh",
+    "state": "SA",
+    "countryCode": "AU",
+    "hasCafe": true,
+    "source": {
+      "url": "https://www.coffeeincommon.com.au/pages/contact-us",
+      "reviewedAt": "2026-10-06T05:12:32Z"
+    }
+  },
+  {
+    "locationId": "loc-0003",
+    "placeId": "ChIJ095uC7lD1moRpd-EZMWaVCU",
+    "businessId": "biz-acoffee",
+    "Name": "ACoffee — Melbourne CBD",
+    "state": "VIC",
+    "countryCode": "AU",
+    "hasCafe": true,
+    "source": {
+      "url": "https://acoffee.com.au/",
+      "reviewedAt": "2026-10-06T05:16:56Z"
+    }
+  }
+]

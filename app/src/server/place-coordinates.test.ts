@@ -3,7 +3,7 @@ import { describe, expect, it, vi } from "vitest";
 import { COORDINATE_TTL, getCoordinates, monthlyLimit, purgeExpiredCoordinates, readCachedCoordinates, refreshCoordinates, REFRESH_AHEAD, validCoordinates, type CoordinateStore } from "./place-coordinates";
 import { validateReviewedPlaces, type ReviewedPlace } from "../utils/reviewedPlaces";
 
-const place: ReviewedPlace = { placeId: "reviewed-id", Name: "Reviewed Coffee", Website: "https://coffee.example/", state: "VIC", countryCode: "AU", source: { url: "https://coffee.example/locations", reviewedAt: "2026-10-01T00:00:00Z" } };
+const place: ReviewedPlace = { locationId: "loc-reviewed", businessId: "biz-reviewed", hasCafe: true, placeId: "reviewed-id", Name: "Reviewed Coffee", Website: "https://coffee.example/", state: "VIC", countryCode: "AU", source: { url: "https://coffee.example/locations", reviewedAt: "2026-10-01T00:00:00Z" } };
 const start = Date.parse("2026-10-06T00:00:00Z");
 const provider = () => ({ id: place.placeId, location: { latitude: -37.8, longitude: 145 }, addressComponents: [{ shortText: "AU", types: ["country"] }], rating: 4.9, formattedAddress: "Never persist", userRatingCount: 10 });
 
@@ -138,12 +138,13 @@ describe("forward-looking coordinates", () => {
 
 describe("independently reviewed registry", () => {
   it("requires valid unique place IDs, a listing reference and a source, and rejects provider fields", () => {
-    const listings = [{ Website: place.Website }];
-    expect(validateReviewedPlaces([place], listings)).toEqual([place]);
-    for (const input of [[place, place], [{ ...place, latitude: -37.8 }], [{ ...place, rating: 5 }], [{ ...place, countryCode: "NZ" }], [{ ...place, source: null }]]) {
+    const listings = [{ businessId: place.businessId, Website: place.Website }];
+    const { Website, ...record } = place;
+    expect(validateReviewedPlaces([record], listings)).toEqual([place]);
+    for (const input of [[record, record], [{ ...record, latitude: -37.8 }], [{ ...record, rating: 5 }], [{ ...record, countryCode: "NZ" }], [{ ...record, source: null }]]) {
       expect(() => validateReviewedPlaces(input, listings)).toThrow();
     }
-    expect(() => validateReviewedPlaces([place], [])).toThrow();
+    expect(() => validateReviewedPlaces([record], [])).toThrow();
   });
 });
 

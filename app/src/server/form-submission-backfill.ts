@@ -1,3 +1,4 @@
+import { websiteIdentity } from '../utils/directorySchema.ts';
 import { parseSubmission, proposeChange, SubmissionError } from "./form-submission-prs.ts";
 import { patchReleaseFiles } from "./release-version.ts";
 
@@ -44,8 +45,7 @@ export function planBackfill(payloads: HistoricalPayload[], reviews: BackfillRev
       if (!parsed) { results.push({ id, status: "ignored" }); continue; }
       const submission: NonNullable<ReturnType<typeof parseSubmission>> = { ...parsed, type };
       if (type === "recommendation") {
-        const url = new URL(submission.website);
-        const identities = [`website:${url.hostname.replace(/^www\./, "")}:${url.port}${url.pathname.replace(/\/+$/, "")}${url.search}`, `name:${submission.name.toLowerCase()}`];
+        const identities = [`website:${websiteIdentity(submission.website)}`, `name:${submission.name.toLowerCase()}`];
         const prior = identities.map(key => recommendations.get(key)).find(Boolean);
         if (prior) {
           results.push({ id, status: "duplicate-backlog", reason: `Same recommendation as ${prior}` });

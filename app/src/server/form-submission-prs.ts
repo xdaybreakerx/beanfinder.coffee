@@ -1,11 +1,11 @@
+import { AU_STATES, businessWebsites, websiteIdentity, validateDirectory, DirectoryError, type Business } from '../utils/directorySchema.ts';
 const REPOSITORY = "xdaybreakerx/beanfinder.coffee";
 const MAIN = "main";
 const ROASTERS = "app/src/data/coffee-roasters.json";
 const MULTI = "app/src/data/coffee-roasters-multi.json";
-const STATES = new Set(["NSW", "VIC", "QLD", "WA", "SA", "TAS", "ACT", "NT"]);
+const STATES = AU_STATES;
 
-type Roaster = { Name: string; Website: string; State: string; hasCafe: boolean; multiRoaster: boolean;
-  provenance?: { source: "community-submission"; receipt: string; proposedAt: string; verifiedAt: null } };
+type Roaster = Business;
 type Submission = {
   id: string;
   type: "recommendation" | "issue";
@@ -84,30 +84,41 @@ export function parseSubmission(payload: Payload): Submission | undefined {
   return submission;
 }
 
-function identity(raw: string): string {
-  const url = new URL(raw);
-  return `${url.hostname.replace(/^www\./, "")}${url.port ? `:${url.port}` : ""}${url.pathname.replace(/\/+$/, "")}${url.search}`;
+function checkDirectory(roasters: Roaster[], sellers: Roaster[]) {
+  try { validateDirectory(roasters, sellers); }
+  catch (error) { if (error instanceof DirectoryError) throw new SubmissionError(error.message); throw error; }
 }
 
 export function proposeChange(submission: Submission, files: Record<string, string>) {
   const datasets = [ROASTERS, MULTI].map(path => ({ path, records: JSON.parse(files[path]) as Roaster[] }));
+  checkDirectory(datasets[0].records, datasets[1].records);
   const entries = datasets.flatMap(dataset => dataset.records.map((roaster, index) => ({ dataset, roaster, index })));
-  const url = identity(submission.originalWebsite ?? submission.website);
-  const byWebsite = entries.filter(entry => identity(entry.roaster.Website) === url);
+  const url = websiteIdentity(submission.originalWebsite ?? submission.website);
+  const byWebsite = entries.filter(entry => businessWebsites(entry.roaster).includes(url));
   const byName = entries.filter(entry => entry.roaster.Name.trim().toLowerCase() === submission.name.toLowerCase());
   const matches = submission.originalWebsite ? byWebsite : [...new Set([...byWebsite, ...byName])];
   if (matches.length > 1) throw new SubmissionError("Multiple roasters match; supply the original website");
-  if (submission.type === "recommendation" && matches.length) return undefined;
+  if (submission.type === "recommendation" && matches.length) {
+    if (!byWebsite.length) throw new SubmissionError('Same-name business with a different website requires manual review');
+    return undefined;
+  }
   if (submission.type === "recommendation" && (!submission.state || submission.hasCafe === undefined || submission.multiRoaster === undefined)) {
     throw new SubmissionError("Recommendations require state, cafe and multi-roaster status");
   }
   if (submission.type === "issue" && !matches.length) throw new SubmissionError("No existing roaster matches this correction");
   const match = matches[0];
-  if (submission.type === "issue" && entries.some(entry => entry !== match && identity(entry.roaster.Website) === identity(submission.website))) {
+  if (submission.type === "issue" && entries.some(entry => entry !== match && businessWebsites(entry.roaster).includes(websiteIdentity(submission.website)))) {
     throw new SubmissionError("The proposed website belongs to another listing");
+  }
+  if (submission.type === "recommendation" && entries.some(entry =>
+      [entry.roaster.Website, ...(entry.roaster.websiteAliases ?? [])].some(website =>
+        new URL(website).hostname.replace(/^www\./, '') === new URL(submission.website).hostname.replace(/^www\./, '')))) {
+    throw new SubmissionError("Same-domain business requires manual review");
   }
   const roaster: Roaster = {
     ...match?.roaster,
+    businessId: match?.roaster.businessId ?? `biz-form-${submission.id.toLowerCase()}`,
+    provenance: match?.roaster.provenance ?? { source: "legacy-directory", verifiedAt: null },
     Name: submission.name,
     Website: submission.website,
     State: submission.state ?? match?.roaster.State!,
@@ -115,6 +126,13 @@ export function proposeChange(submission: Submission, files: Record<string, stri
     multiRoaster: submission.multiRoaster ?? match?.roaster.multiRoaster!,
   };
   if (roaster.State.toLowerCase() === "all" && !roaster.multiRoaster) throw new SubmissionError("Select a state for an individual roaster");
+  if (match && websiteIdentity(match.roaster.Website) !== websiteIdentity(roaster.Website)) {
+    // Old URLs remain reserved for this identity, including its saved locations.
+    roaster.websiteAliases = [...new Set([...(match.roaster.websiteAliases ?? []), match.roaster.Website])]
+      .filter(alias => websiteIdentity(alias) !== websiteIdentity(roaster.Website));
+    if (!roaster.websiteAliases.length) delete roaster.websiteAliases;
+  }
+  if (!roaster.multiRoaster) { delete roaster.subscription; delete roaster.selection; delete roaster.brew; }
   const target = datasets.find(dataset => dataset.path === (roaster.multiRoaster ? MULTI : ROASTERS))!;
   const changed = new Set<string>();
   if (match && match.dataset === target) {
@@ -137,6 +155,7 @@ export function proposeChange(submission: Submission, files: Record<string, stri
       proposedAt: new Date().toISOString(), verifiedAt: null,
     };
   }
+  checkDirectory(datasets[0].records, datasets[1].records);
   const contents: Record<string, string> = {};
   for (const path of changed) {
     const indent = files[path].match(/\n( +)\{/)?.[1].length ?? 2;

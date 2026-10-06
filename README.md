@@ -125,7 +125,7 @@ If I've missed a roaster in the site, let me know [via email](mailto:hello@xande
 
 After a production form submission is verified, Netlify invokes `app/netlify/functions/submission-created.mts`. The function validates the directory fields, reads the latest `main` data through GitHub's API, and creates a `forms/<submission-id>` branch and review PR. It never writes to `main` or merges PRs. The Netlify platform [verifies event signatures](https://docs.netlify.com/build/functions/trigger-on-events/#signature) before invocation; no webhook notification needs to be configured.
 
-Recommendations require a name, HTTP(S) website, state, cafe status, and multi-roaster status. Corrections identify the existing listing by website/name; the optional original website supports renamed listings and changed URLs. Blank state/status fields preserve existing values. Corrections with only explanatory notes open a PR containing a review receipt, so a maintainer can make the corresponding edit. Unmatched or ambiguous corrections are rejected and logged for manual follow-up. Recommendations already in the directory are skipped.
+Recommendations require a name, HTTP(S) website, state, cafe status, and multi-roaster status. Corrections identify the existing listing by website/name; the optional original website supports renamed listings and changed URLs. Blank state/status fields preserve existing values. Corrections with only explanatory notes open a PR containing a review receipt, so a maintainer can make the corresponding edit. Unmatched or ambiguous corrections are rejected and logged for manual follow-up. Recommendations already in the directory are skipped. Corrections retain the immutable business ID and keep prior website identities as aliases; recommendations receive an ID derived from their submission. A different brand on an existing domain is rejected for manual review.
 
 Each PR commits directory changes, the release version files when data changes, and a whitelisted receipt under `.github/form-submissions/`. Names, websites, and notes become public, as explained on the form; contact details, IP addresses, and other raw submission metadata are excluded. Duplicate deliveries reuse an existing open or closed PR. A retry after a branch was created resumes PR creation without overwriting the branch. Distinct submissions can propose overlapping edits; review conflicts and duplicate proposals before merging. Future changed records include `provenance` with a community-submission receipt, proposal time, and an explicit unknown verification time (`verifiedAt: null`). Proposal time is not a claim of independent fact checking. Explanation-only and duplicate submissions do not refresh this metadata. A new map location requires separate place-ID/source review; form PRs never discover or retrieve Google locations.
 
@@ -135,10 +135,12 @@ Keep durable business facts in the reviewed directory, sourced from operators, t
 
 ```json
 {
+  "businessId": "biz-example-coffee",
+  "locationId": "loc-example-branch",
   "placeId": "confirmed-google-place-id",
   "Name": "Example Coffee — Melbourne branch",
-  "Website": "https://example.coffee/",
   "state": "VIC",
+  "hasCafe": true,
   "countryCode": "AU",
   "source": {
     "url": "https://example.coffee/locations",
@@ -147,7 +149,7 @@ Keep durable business facts in the reviewed directory, sourced from operators, t
 }
 ```
 
-The website must reference a current directory listing. Review business/branch identity and source facts before adding an ID; an Australian Google response alone does not prove the match. Preserve place IDs through corrections. The registry rejects duplicates, invalid references, missing sources, and provider coordinate/rating fields. It starts empty; the existing snapshot and its timestamps are not migrated or rewritten. Broader business IDs and schema consolidation remain separate work.
+The business ID must reference a current directory record. Review business/branch identity and cafe access before adding an ID; an Australian Google response alone does not prove the match. Preserve business, location and place IDs through corrections. The registry rejects duplicates, invalid references, missing sources, and provider coordinate/rating fields. A separate legacy identity manifest preserves all 218 accepted map places without rewriting their snapshot or timestamps. The registry now includes operator-reviewed Coffee in Common and ACoffee branches. See the [data review guide and consolidation audit](docs/directory-data.md) for the shared schema, source scopes and website aliases.
 
 The map automatically displays all valid cached locations. Its production-only `place-coordinates` endpoint reads the cache and never calls Google. Cached responses use `no-store` headers, remain only in the mounted map's memory, and are removed from that map at expiry. Fresh coordinates replace the matching legacy marker without duplication; accepted legacy markers remain the fallback. A new reviewed branch without cached coordinates has a Google Maps link until its first successful retrieval. Listings without a confirmed physical place ID still require review.
 
@@ -165,7 +167,7 @@ Production setup:
 
 Strong reads and conditional writes reserve the shared monthly budget before each provider attempt. Concurrent duplicate retrievals are suppressed; leases bound active requests to two across instances and are released on completion, with a 60-second cooldown per ID. Failed attempts count toward the budget. Storage/credential/API failures, exhausted limits and unmatched IDs leave ordinary browsing available. Only known map IDs can spend the budget, and visitor traffic cannot trigger lookups. Netlify hosting/storage quotas still need account monitoring. No new ratings cache or rating endpoint is introduced here.
 
-The old `npm run update-roasters` entry point and both bulk scripts fail immediately without network or file writes. The weekly GitHub update workflow has been removed; curated changes continue through reviewed PRs.
+The retired `update-roasters` command, bulk discovery/enrichment scripts and unused intermediate datasets have been removed. The weekly GitHub update workflow is also removed; curated changes continue through reviewed PRs, and runtime coordinates use the bounded worker above.
 
 References: [Netlify Blobs consistency and conditional writes](https://docs.netlify.com/build/data-and-storage/netlify-blobs/), [Place Details fields and billing tiers](https://developers.google.com/maps/documentation/places/web-service/place-details), and [Google Maps service-specific terms](https://cloud.google.com/maps-platform/terms/maps-service-terms), [place ID retention](https://developers.google.com/maps/documentation/places/web-service/place-id), and [Netlify scheduled functions](https://docs.netlify.com/build/functions/scheduled-functions/).
 
@@ -248,7 +250,8 @@ All commands are run from the `app/` directory, from a terminal:
 | `npm install`          | Installs dependencies                            |
 | `npm run dev`          | Starts local dev server at `localhost:4321`      |
 | `npm run build`        | Build your production site to `./dist/`          |
-| `npm test`             | Run map, country validation, and form automation tests |
+| `npm run validate:data` | Validate curated identities, locations, sources and classification |
+| `npm test`             | Run directory, map, country validation, and form automation tests |
 | `npm run check`        | Check TypeScript after generating Astro types    |
 | `npm run test:e2e`     | Run desktop/mobile flows and automated accessibility checks |
 | `npm run preview`      | Preview your build locally, before deploying     |

@@ -26,6 +26,38 @@ test("home navigation and state browsing", async ({ page }) => {
   await expect(page.locator("#list-of-roasters .roaster-row:visible")).toHaveCount(12);
 });
 
+test('curated identities produce unique rows, corrected state filters and preserved branch links', async ({ page }) => {
+  await page.goto('/');
+  await expect(page.locator('.directory-stats dd').first()).toHaveText('239');
+  await page.goto('/roasters/');
+  const ids = await page.locator('.roaster-row').evaluateAll(rows => rows.map(row => row.getAttribute('data-business-id')));
+  expect(ids).toHaveLength(231);
+  expect(new Set(ids).size).toBe(ids.length);
+  const search = page.getByLabel('Find a roaster');
+  await search.fill('Coffee in Common');
+  const row = page.locator('.roaster-row:visible');
+  await expect(row).toHaveCount(1);
+  await expect(row).toHaveAttribute('data-business-id', 'biz-coffee-in-common');
+  await expect(row.getByRole('link', { name: /Hindmarsh SA — View Coffee in Common on Google Maps/ })).toBeVisible();
+  await page.getByLabel('State or territory').selectOption('VIC');
+  await expect(row).toHaveCount(0);
+  await page.getByLabel('State or territory').selectOption('SA');
+  await expect(row).toHaveCount(1);
+  await page.getByLabel('State or territory').selectOption('');
+  await search.fill('a.k.a');
+  await expect(row).toHaveAttribute('data-state', 'NSW');
+  await expect(row.locator('.roaster-location')).toHaveText('Online');
+  await expect(row.locator('.roaster-rating .star-rating')).toHaveCount(0);
+  await search.fill('ACoffee');
+  await page.getByLabel('State or territory').selectOption('VIC');
+  const ac = page.locator('.roaster-row[data-business-id="biz-acoffee"]:visible');
+  await expect(ac).toHaveCount(1);
+  await expect(ac.getByRole('link', { name: /Melbourne VIC — View ACoffee on Google Maps/ })).toBeVisible();
+  await expect(ac.locator('.roaster-rating .star-rating')).toHaveCount(1);
+  await page.goto('/roasters/online-subscriptions/1');
+  await expect(page.locator('[data-business-id="biz-acuratore"]')).toHaveCount(1);
+});
+
 test("legacy state URLs redirect to consistent filters and pagination", async ({ page, request }) => {
   for (const [path, destination] of [
     ['/roasters/TAS/false/1', '/roasters/?state=TAS'],

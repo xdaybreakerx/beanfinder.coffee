@@ -1,7 +1,7 @@
 ---
 import RoasterRow from "./RoasterRow.astro";
 import RoasterListHeading from './RoasterListHeading.astro';
-import roasters from "../data/coffee-roasters.json";
+import { roasters } from "../utils/directory";
 import { states } from "../data/states";
 const listings = [...roasters].sort((a, b) => a.Name.localeCompare(b.Name));
 ---

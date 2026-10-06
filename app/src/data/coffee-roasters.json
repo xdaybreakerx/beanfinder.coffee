@@ -1,1640 +1,2783 @@
 [
   {
+    "businessId": "biz-1645-coffee-roasters",
     "Name": "1645 Coffee Roasters",
     "Website": "https://www.1645.com.au/",
     "State": "SA",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-2-keys-coffee-boutique",
     "Name": "2 Keys Coffee Boutique",
     "Website": "https://www.instagram.com/2_keyscoffee_boutique/",
     "State": "WA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-acoffee",
     "Name": "ACoffee",
     "Website": "https://acoffee.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-airjo",
     "Name": "Airjo",
     "Website": "https://airjo.com/",
     "State": "QLD",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-alchemy-coffee",
     "Name": "Alchemy Coffee",
     "Website": "https://coffeealchemy.com.au/",
     "State": "NSW",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-allpress",
     "Name": "Allpress",
     "Website": "https://www.allpressespresso.com/",
     "State": "VIC, QLD, NSW",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-almanac-roasters",
     "Name": "Almanac Roasters",
     "Website": "https://almanacroasters.com/",
     "State": "QLD",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-arrosoto-coffee",
     "Name": "Arrosoto Coffee",
     "Website": "https://arrostocoffee.com.au/",
     "State": "SA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-art-of-espresso",
     "Name": "Art Of Espresso",
     "Website": "https://artofespresso.com.au/",
     "State": "NSW",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
-    "Name": "Artificer Coffee ",
+    "businessId": "biz-artificer-coffee",
+    "Name": "Artificer Coffee",
     "Website": "https://artificercoffee.com/",
     "State": "NSW",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-artisti-coffee-roasters",
     "Name": "Artisti Coffee Roasters",
     "Website": "https://artisti.com.au/",
     "State": "NSW",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-aslan-coffee-roasters",
     "Name": "ASLAN Coffee Roasters",
     "Website": "https://www.aslancoffee.com.au/",
     "State": "NSW",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-atypical-coffee",
     "Name": "Atypical Coffee",
     "Website": "https://atypical.coffee/",
     "State": "VIC",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-axil-coffee-roasters",
     "Name": "Axil Coffee Roasters",
     "Website": "https://axilcoffee.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-b3-coffee",
     "Name": "b3 Coffee",
     "Website": "https://b3coffee.com.au/",
     "State": "SA",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-barrio",
     "Name": "Barrio",
     "Website": "https://www.barriocollective.com/",
     "State": "ACT",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-bean-cartel",
     "Name": "Bean Cartel",
     "Website": "https://www.thebeancartel.com.au/",
     "State": "VIC",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-beat-coffee",
     "Name": "Beat Coffee",
     "Website": "https://beatcoffee.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-bellissimo-coffee",
     "Name": "Bellissimo Coffee",
     "Website": "https://www.bellissimocoffee.com.au/",
     "State": "QLD",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-bench-coffee-co",
     "Name": "Bench Coffee Co",
     "Website": "https://benchcoffee.co/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-black-mass-roasters",
     "Name": "Black Mass Roasters",
     "Website": "https://blackmassroasters.com/",
     "State": "NSW",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-blackbird-espresso",
     "Name": "Blackbird Espresso",
     "Website": "https://blackbirdespresso.shop/",
     "State": "QLD",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-blacklist-coffee",
     "Name": "Blacklist Coffee",
     "Website": "https://blacklistcoffee.com.au/",
     "State": "WA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-blackstone-road",
     "Name": "Blackstone Road",
     "Website": "https://blackstoneroad.com.au/",
     "State": "NSW",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-bliss-coffee-roasters",
     "Name": "Bliss Coffee Roasters",
     "Website": "https://blisscoffeeroasters.com.au/",
     "State": "NSW",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-blk-mrkt-coffee",
     "Name": "BLK MRKT Coffee",
     "Website": "https://blkmrktcoffee.com/",
     "State": "SA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-block-coffee",
     "Name": "Block Coffee",
     "Website": "https://blockcoffee.au/",
     "State": "NSW",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-blume-coffee",
     "Name": "Blume Coffee",
     "Website": "https://blumecoffee.com/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-boof-pa-beans",
     "Name": "Boof-Pa Beans",
     "Website": "https://boofpabeans.com.au/",
     "State": "ACT",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-born-and-raised",
     "Name": "Born And Raised",
     "Website": "https://bornandraised.coffee/",
     "State": "VIC",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-brewno-specialty-coffee",
     "Name": "Brewno Specialty Coffee",
     "Website": "https://www.brewnospecialtycoffee.com.au/",
     "State": "QLD",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-brightside-coffee-co",
     "Name": "Brightside Coffee Co",
     "Website": "https://brightside.coffee/",
     "State": "VIC",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-bun-coffee",
     "Name": "Bun Coffee",
     "Website": "https://www.buncoffee.com.au/",
     "State": "NSW",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-campos-coffee",
     "Name": "Campos Coffee",
     "Website": "https://camposcoffee.com/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-cartel-coffee-roasters",
     "Name": "Cartel Coffee Roasters",
     "Website": "https://www.coffeecartel.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-central-coast-coffee",
     "Name": "Central Coast Coffee",
     "Website": "https://www.centralcoastcoffee.com.au/",
     "State": "NSW",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-charlie-black-coffee-co",
     "Name": "Charlie Black Coffee Co",
     "Website": "https://www.charlieblack.co/",
     "State": "SA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-cheeky-devil-coffee-roasters",
     "Name": "Cheeky Devil Coffee Roasters",
     "Website": "https://cheekydevilcoffee.com.au/",
     "State": "TAS",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-cirelli-coffee-roasting-co",
     "Name": "Cirelli Coffee Roasting Co",
     "Website": "https://www.cirellicoffee.com.au/",
     "State": "SA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-clark-st-coffee-roasters",
     "Name": "Clark St Coffee Roasters",
     "Website": "https://www.clarkst.coffee/",
     "State": "VIC",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-code-black-coffee",
     "Name": "Code Black Coffee",
     "Website": "https://codeblackcoffee.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-coffee-beans-delivered",
     "Name": "Coffee Beans Delivered",
     "Website": "https://coffeebeansdelivered.com.au/",
     "State": "QLD",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
-    "Name": "Coffee Chakra ",
+    "businessId": "biz-coffee-chakra",
+    "Name": "Coffee Chakra",
     "Website": "https://coffeechakra.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-coffee-in-common",
     "Name": "Coffee in Common",
     "Website": "https://www.coffeeincommon.com.au/",
-    "State": "VIC",
+    "State": "SA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "operator-website",
+      "url": "https://www.coffeeincommon.com.au/pages/contact-us",
+      "reviewedAt": "2026-10-06T05:12:32Z",
+      "fields": [
+        "State",
+        "hasCafe"
+      ]
+    }
   },
   {
+    "businessId": "biz-coffee-supreme",
     "Name": "Coffee Supreme",
     "Website": "https://shopau.coffeesupreme.com/",
     "State": "VIC, QLD",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-coffee-warehouse",
     "Name": "Coffee Warehouse",
     "Website": "https://www.coffeewarehouse.com.au/",
     "State": "NSW",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-core-roasters",
     "Name": "Core Roasters",
     "Website": "https://www.coreroasters.cc/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-cortado-coffee-roasters",
     "Name": "Cortado Coffee Roasters",
     "Website": "https://cortadocoffee.com.au/",
     "State": "VIC",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-crema-coffee-co",
     "Name": "Crema Coffee Co",
     "Website": "https://cremacoffeeco.com.au/",
     "State": "WA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-cruze",
     "Name": "Cruze",
     "Website": "https://www.cruzecoffee.com.au/",
     "State": "QLD",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-cup-kilsyth",
     "Name": "CUP. Kilsyth",
     "Website": "https://www.instagram.com/cup.kilsyth/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-danes",
     "Name": "Danes",
     "Website": "https://danes.com.au/",
     "State": "NSW",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-darkstar-coffee",
     "Name": "Darkstar Coffee",
     "Website": "https://www.darkstarcoffee.com.au/",
     "State": "WA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-dawn-patrol-coffee",
     "Name": "Dawn Patrol Coffee",
     "Website": "https://www.dawnpatrolcoffee.com.au/",
     "State": "SA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-dc-coffee",
     "Name": "DC Coffee",
     "Website": "https://dccoffee.com.au/",
     "State": "VIC",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-di-bartoli",
     "Name": "Di Bartoli",
     "Website": "https://dibartoli.com.au/",
     "State": "NSW",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-dtown-coffee-roasters",
     "Name": "Dtown Coffee Roasters",
     "Website": "https://dtowncoffeeroasters.com/",
     "State": "NT",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-dukes-coffee",
     "Name": "Dukes Coffee",
     "Website": "https://www.dukescoffee.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-edition-roasters",
     "Name": "Edition Roasters",
     "Website": "https://editionroasters.com/",
     "State": "NSW",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-elementary-coffee",
     "Name": "Elementary Coffee",
     "Website": "https://www.elementarycoffee.com.au/",
     "State": "SA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-everyday-coffee",
     "Name": "Everyday Coffee",
     "Website": "https://everyday-coffee.com/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-fat-cat-coffee-roasters",
     "Name": "Fat Cat Coffee Roasters",
     "Website": "https://www.fatcatcoffeeroasters.com/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-fiori-coffee",
     "Name": "FiORi Coffee",
     "Website": "https://fioricoffee.com/",
     "State": "WA",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-first-love-coffee",
     "Name": "First Love Coffee",
     "Website": "https://firstlovecoffee.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-fish-river-roasters",
     "Name": "Fish River Roasters",
     "Website": "https://www.fishriverroasters.com.au/",
     "State": "NSW",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-five-senses-coffee",
     "Name": "Five Senses Coffee",
     "Website": "https://fivesenses.com.au/",
     "State": "WA",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-floozy-coffee",
     "Name": "Floozy coffee",
     "Website": "https://floozycoffee.com/",
     "State": "NSW",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-fonzie-abbott",
     "Name": "Fonzie Abbott",
     "Website": "https://fonzieabbott.com/",
     "State": "QLD",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-four",
     "Name": "Four",
     "Website": "https://fourcoffee.com.au/",
     "State": "NSW",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-four-kilo-fish",
     "Name": "Four Kilo Fish",
     "Website": "https://www.fourkilofish.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-good-hustle-coffee-roasters",
     "Name": "Good Hustle Coffee Roasters",
     "Website": "https://goodhustlecoffee.com.au/",
     "State": "VIC",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-grand-cru-coffee",
     "Name": "Grand'Cru Coffee",
     "Website": "https://grandcru.coffee/",
     "State": "NSW",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-griffiths-bros-coffee-roasters",
     "Name": "Griffiths Bros. Coffee Roasters",
     "Website": "https://griffithsbros.com.au/",
     "State": "VIC",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-hark-coffee",
     "Name": "Hark! Coffee",
     "Website": "https://harkcoffee.com.au/",
     "State": "SA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-honeybird-coffee",
     "Name": "Honeybird Coffee",
     "Website": "https://honeybirdcoffee.com.au/",
     "State": "VIC",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-industry-beans",
     "Name": "Industry Beans",
     "Website": "https://industrybeans.com/",
     "State": "VIC, NSW, QLD",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-infinity-coffee-roasters",
     "Name": "Infinity Coffee Roasters",
     "Website": "https://www.infinitycoffeeroasters.org/",
     "State": "NSW",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-inglewood-coffee-roasters",
     "Name": "Inglewood Coffee Roasters",
     "Website": "https://inglewoodcoffeeroasters.com.au/",
     "State": "VIC",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-inka-coffee-lounge",
     "Name": "Inka Coffee Lounge",
     "Website": "https://inkacoffee.com.au/",
     "State": "QLD",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-kindred-coffee",
     "Name": "Kindred Coffee",
     "Website": "https://kindredcoffee.com.au/",
     "State": "SA",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-klim-coffee-roasting-co",
     "Name": "Klim Coffee Roasting Co",
     "Website": "https://www.klimcoffee.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-la-crema",
     "Name": "La Crema",
     "Website": "https://www.lacremacoffee.com.au/",
     "State": "SA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-leaf-bean-machine",
     "Name": "Leaf Bean Machine",
     "Website": "https://www.leafbeanmachine.com.au/",
     "State": "WA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-leaping-goat-coffee",
     "Name": "Leaping Goat Coffee",
     "Website": "https://www.leapinggoatcoffee.com.au/",
     "State": "TAS",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-leftfield-coffee",
     "Name": "Leftfield Coffee",
     "Website": "https://www.leftfieldcoffee.com/",
     "State": "WA",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-lifted-coffee-co",
     "Name": "Lifted Coffee Co",
     "Website": "https://www.liftedcoffeeco.com.au/",
     "State": "NSW",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-light-coffee",
     "Name": "Light Coffee",
     "Website": "https://www.lightcoffee.com.au/",
     "State": "QLD",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-lime-blue-coffee",
     "Name": "Lime Blue Coffee",
     "Website": "https://limebluecoffee.com/",
     "State": "VIC",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-little-marionette",
     "Name": "Little Marionette",
     "Website": "https://thelittlemarionette.com/",
     "State": "NSW",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-little-rebel-roastery",
     "Name": "Little Rebel Roastery",
     "Website": "https://littlerebel.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-locale",
     "Name": "Locale",
     "Website": "https://localeespresso.com.au/",
     "State": "VIC",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-loggerhead-coffee-co",
     "Name": "Loggerhead Coffee Co",
     "Website": "https://loggerheadcoffeeco.com/",
     "State": "NSW",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-made-of-many",
     "Name": "Made of Many",
     "Website": "https://madeofmany.com/",
     "State": "NSW",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-maillard-project",
     "Name": "Maillard Project",
     "Website": "https://themaillardproject.com.au/",
     "State": "QLD",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-maker-coffee",
     "Name": "Maker Coffee",
     "Website": "https://makercoffee.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-manta-ray-coffee",
     "Name": "Manta Ray Coffee",
     "Website": "https://mantaraycoffee.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
-    "Name": "Market Lane ",
+    "businessId": "biz-market-lane",
+    "Name": "Market Lane",
     "Website": "https://marketlane.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-mecca-coffee",
     "Name": "Mecca Coffee",
     "Website": "https://www.mecca.coffee/",
     "State": "NSW",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-micrology-coffee",
     "Name": "Micrology Coffee",
     "Website": "https://micrology.com.au/",
     "State": "WA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-monastery-coffee",
     "Name": "Monastery Coffee",
     "Website": "https://monastery.coffee/",
     "State": "SA",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-motobean",
     "Name": "Motobean",
     "Website": "https://www.motobean.com.au/",
     "State": "VIC",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-my-cuppa",
     "Name": "My Cuppa",
     "Website": "https://www.mycuppa.com.au/",
     "State": "VIC",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-northbridge-coffee-roasters",
     "Name": "Northbridge Coffee Roasters",
     "Website": "https://theroasters.com.au/",
     "State": "WA",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-ocean-grind",
     "Name": "Ocean Grind",
     "Website": "https://oceangrind.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-ona-coffee",
     "Name": "Ona Coffee",
     "Website": "https://onacoffee.com.au/",
     "State": "ACT, NSW, VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-only-coffee-project",
     "Name": "Only Coffee Project",
     "Website": "https://onlycoffeeproject.square.site/",
     "State": "NSW",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-pablo-rusty-s-coffee-roasters",
     "Name": "Pablo & Rusty's Coffee Roasters",
     "Website": "https://pabloandrustys.com.au/",
     "State": "NSW",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-padre-coffee",
     "Name": "Padre Coffee",
     "Website": "https://www.padrecoffee.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-paradox-roasters",
     "Name": "Paradox Roasters",
     "Website": "https://paradoxroasters.com/",
     "State": "NSW, QLD",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-parallel-coffee-roasters",
     "Name": "Parallel Coffee Roasters",
     "Website": "https://www.parallelroasters.com/",
     "State": "QLD",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-passport",
     "Name": "Passport",
     "Website": "https://passportcoffee.com.au/",
     "State": "QLD",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-patio-coffee",
     "Name": "Patio Coffee",
     "Website": "https://patiocoffee.com.au/",
     "State": "SA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
-    "Name": "Patricia's ",
+    "businessId": "biz-patricia-s",
+    "Name": "Patricia's",
     "Website": "https://www.patriciacoffee.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-pillar-coffee",
     "Name": "Pillar Coffee",
     "Website": "https://pillarcoffee.com.au/",
     "State": "VIC",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-platform-9-coffee",
     "Name": "Platform 9 Coffee",
     "Website": "https://p9coffee.com.au/",
     "State": "NSW",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-pogo-coffee-roasters",
     "Name": "Pogo Coffee Roasters",
     "Website": "https://pogocoffee.com.au/",
     "State": "SA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-pound-coffee-roastery",
     "Name": "Pound Coffee Roastery",
     "Website": "https://poundcoffeeroastery.com.au/",
     "State": "WA",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-primary-coffee-roasters",
     "Name": "Primary Coffee Roasters",
     "Website": "https://www.primarycoffeeroasters.com/",
     "State": "NSW",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-prodigal-coffee",
     "Name": "Prodigal Coffee",
     "Website": "https://prodigalcoffeeroasters.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-project-281",
     "Name": "Project 281",
     "Website": "https://project281.com/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-project-zero-coffee",
     "Name": "Project Zero Coffee",
     "Website": "https://www.instagram.com/projectzero.coffee/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-proud-mary",
     "Name": "Proud Mary",
     "Website": "https://www.proudmarycoffee.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-puzzle-coffee",
     "Name": "Puzzle Coffee",
     "Website": "https://www.puzzle.coffee/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-ransom",
     "Name": "Ransom",
     "Website": "https://ransomspecialtycoffee.com/",
     "State": "QLD",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-rebel-alliance-roasters",
     "Name": "Rebel Alliance Roasters",
     "Website": "https://rebelroasters.com.au/",
     "State": "SA",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-red-bean-coffee-roasters",
     "Name": "Red Bean Coffee Roasters",
     "Website": "https://www.redbeancoffee.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-reuben-hills",
     "Name": "Reuben Hills",
     "Website": "https://www.reubenhills.com.au/",
     "State": "NSW",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-reverence",
     "Name": "Reverence",
     "Website": "https://reverencecoffee.com.au/",
     "State": "VIC",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-revolving-door-roasters",
     "Name": "Revolving Door Roasters",
     "Website": "https://www.revolvingdoor.com.au/",
     "State": "NSW",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-ritual-coffee-roasters",
     "Name": "Ritual Coffee Roasters",
     "Website": "https://ritualcoffee.com.au/",
     "State": "TAS",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-roadtrip-roasters",
     "Name": "Roadtrip Roasters",
     "Website": "https://roadtriproasters.com.au/",
     "State": "NSW",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-roastville",
     "Name": "Roastville",
     "Website": "https://roastville.com.au/",
     "State": "NSW",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-rosso-roasting-co",
     "Name": "Rosso Roasting Co",
     "Website": "https://rossoroastingco.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-rumble-coffee-roasters",
     "Name": "Rumble Coffee Roasters",
     "Website": "https://www.rumblecoffee.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-saazaa",
     "Name": "Saazaa",
     "Website": "https://saazaa.coffee/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
-    "Name": "Sample Coffee ",
+    "businessId": "biz-sample-coffee",
+    "Name": "Sample Coffee",
     "Website": "https://samplecoffee.com.au/",
     "State": "NSW",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-san-pedro-coffee",
     "Name": "San Pedro Coffee",
     "Website": "https://sanpedrocoffee.com.au/",
     "State": "VIC",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-sensory-lab",
     "Name": "Sensory Lab",
     "Website": "https://sensorylab.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-seven-miles-roasters",
     "Name": "Seven Miles Roasters",
     "Website": "https://www.sevenmiles.com.au/",
     "State": "VIC, NSW",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-seven-seeds",
     "Name": "Seven Seeds",
     "Website": "https://sevenseeds.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-siboni-s-coffee",
     "Name": "Siboni's Coffee",
     "Website": "https://www.siboniscoffee.com.au/",
     "State": "NSW",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-single-o",
     "Name": "Single O",
     "Website": "https://singleo.com.au/",
     "State": "NSW, QLD",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-sipping-duck-coffee-roasters",
     "Name": "Sipping Duck Coffee Roasters",
     "Website": "https://www.sippingduck.com.au/",
     "State": "QLD",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-sixpence-coffee",
     "Name": "Sixpence Coffee",
     "Website": "https://sixpencecoffee.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-skittle-lane",
     "Name": "Skittle Lane",
     "Website": "https://skittlelane.com/",
     "State": "NSW",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-small-batch-roasting-co",
     "Name": "Small Batch Roasting Co",
     "Website": "https://www.smallbatch.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-soul-city-roasters",
     "Name": "Soul City Roasters",
     "Website": "https://soulcityroasters.com/",
     "State": "SA",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-sparks-coffee-roasters",
     "Name": "Sparks Coffee Roasters",
     "Website": "https://sparkscoffeeroasters.com/",
     "State": "WA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-st-ali",
     "Name": "St Ali",
     "Website": "https://stali.com.au/",
     "State": "VIC, QLD",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-standing-room-coffee",
     "Name": "Standing Room Coffee",
     "Website": "https://standingroomcoffee.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-stitch-coffee",
     "Name": "Stitch Coffee",
     "Website": "https://www.stitch.coffee/",
     "State": "NSW",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-storehouse-roastery",
     "Name": "Storehouse Roastery",
     "Website": "https://www.storehouseroastery.com/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-symmetry-coffee-roasters",
     "Name": "Symmetry Coffee Roasters",
     "Website": "https://symmetrycoffeeroasters.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-tasmanian-coffee-roasters",
     "Name": "Tasmanian Coffee Roasters",
     "Website": "https://tasmaniancoffee.com.au/",
     "State": "TAS",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-tattooed-sailor-coffee-roasters",
     "Name": "Tattooed Sailor Coffee Roasters",
     "Website": "https://www.tattooedsailor.com.au/",
     "State": "QLD",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-the-flour",
     "Name": "The Flour",
     "Website": "https://www.theflourmelbourne.com/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-tim-adams",
     "Name": "Tim Adams",
     "Website": "https://www.timadams.net.au/",
     "State": "QLD",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-toby-s-estate",
     "Name": "Toby's Estate",
     "Website": "https://www.tobysestate.com.au/",
     "State": "QLD, NSW",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-tone-coffee-roasters",
     "Name": "Tone Coffee Roasters",
     "Website": "https://www.tonecoffeeroasters.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-twofish-coffee",
     "Name": "Twofish Coffee",
     "Website": "https://twofishcoffee.com.au/",
     "State": "SA",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-vacation",
     "Name": "Vacation",
     "Website": "https://vacationcoffee.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-veneziano-coffee",
     "Name": "Veneziano Coffee",
     "Website": "https://venezianocoffee.com.au/",
     "State": "VIC, NSW, QLD, SA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-vice-coffee-roasters",
     "Name": "Vice Coffee Roasters",
     "Website": "https://shopvicecoffeeroasters.com/",
     "State": "SA",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-villino-coffee-roasters",
     "Name": "Villino Coffee Roasters",
     "Website": "https://villino.com.au/",
     "State": "TAS",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-white-horse-coffee",
     "Name": "White Horse Coffee",
     "Website": "https://whitehorsecoffee.com.au/",
     "State": "NSW",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-white-owl-coffee",
     "Name": "White Owl Coffee",
     "Website": "https://www.whiteowlcoffee.com.au/",
     "State": "VIC",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-white-whale-coffee-roasters",
     "Name": "White Whale Coffee Roasters",
     "Website": "https://whitewhalecoffee.com.au/",
     "State": "QLD",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-wide-open-road",
     "Name": "Wide Open Road",
     "Website": "https://wideopenroad.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-will-co",
     "Name": "Will & Co",
     "Website": "https://www.willandco.com.au/",
     "State": "NSW",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-willow-bend-coffee",
     "Name": "Willow Bend Coffee",
     "Website": "https://willowbendcoffee.com.au/",
     "State": "SA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-withams-coffee",
     "Name": "Withams Coffee",
     "Website": "https://withams.com.au/",
     "State": "NSW",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-wolff-coffee-roasters",
     "Name": "Wolff Coffee Roasters",
     "Website": "https://wolffcoffeeroasters.com.au/",
     "State": "QLD",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-zest-coffee",
     "Name": "Zest Coffee",
     "Website": "https://www.zestcoffee.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-121-coffee",
     "Name": "121 Coffee",
     "Website": "https://121coffee.com.au/",
     "State": "NSW",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-supernumerary-coffee",
     "Name": "Supernumerary Coffee",
     "Website": "https://www.facebook.com/supernumerarycoffee/",
     "State": "QLD",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-karon-farm-coffee",
     "Name": "Karon Farm Coffee",
     "Website": "https://karonfarmcoffee.com.au/",
     "State": "VIC",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-coffee-peeps-pty-ltd",
     "Name": "Coffee Peeps Pty Ltd",
     "Website": "https://coffeepeeps.com.au/",
     "State": "WA",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-ballarat-coffee-roasters",
     "Name": "Ballarat Coffee Roasters",
     "Website": "https://ballaratcoffeeroasters.com.au",
     "State": "VIC",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-offshoot-coffee",
     "Name": "Offshoot Coffee",
     "Website": "https://www.offshootcoffee.com.au/",
     "State": "WA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-simply-coffee",
     "Name": "Simply Coffee",
     "Website": "https://www.simplycoffee.com.au/",
     "State": "SA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-cbtb-coffee",
     "Name": "CBTB Coffee",
     "Website": "https://shop.cbtb.coffee/",
     "State": "SA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-mikro-coffee-roasters",
     "Name": "Mikro Coffee Roasters",
     "Website": "https://mikro.coffee/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-coffeesnobs-beanbay",
     "Name": "CoffeeSnobs BeanBay",
     "Website": "https://beanbay.coffeesnobs.com.au/",
     "State": "VIC",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-no-label-coffee",
     "Name": "No Label Coffee",
     "Website": "https://nolabelcoffee.com/",
     "State": "NSW",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-altura-coffee",
     "Name": "Altura Coffee",
     "Website": "https://alturacoffee.com.au/collections/coffee",
     "State": "SA",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-coffee-by-ross",
     "Name": "Coffee By Ross",
     "Website": "https://coffeebyross.com.au/",
     "State": "SA",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-ricca-coffee",
     "Name": "Ricca Coffee",
     "Website": "https://www.riccacoffee.com.au/",
     "State": "SA",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-dimattina-coffee",
     "Name": "Dimattina Coffee",
     "Website": "https://dimattinacoffee.com.au/",
     "State": "SA",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-lonsdale-roaster-st",
     "Name": "Lonsdale Roaster St",
     "Website": "https://lonsdalestreetroasters.com/",
     "State": "ACT",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-jasper-coffee",
     "Name": "Jasper Coffee",
     "Website": "https://www.jaspercoffee.com/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-river-city-coffee",
     "Name": "River City Coffee",
     "Website": "https://rivercitycoffee.com.au/",
     "State": "QLD",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-super-roast-coffee",
     "Name": "Super Roast Coffee",
     "Website": "https://superroast.com.au/",
     "State": "QLD",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-cavalier-roasters",
     "Name": "Cavalier Roasters",
     "Website": "https://www.cavalierroasters.com/",
     "State": "QLD",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-first-fruit-coffee",
     "Name": "First Fruit Coffee",
     "Website": "https://firstfruits.coffee/",
     "State": "QLD",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-blue-sky-coffee-roasters",
     "Name": "Blue Sky Coffee Roasters",
     "Website": "https://blueskycoffee.coffee/",
     "State": "QLD",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-bear-bones",
     "Name": "Bear Bones",
     "Website": "https://bearbones.com.au/",
     "State": "QLD",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
-    "Name": "Bear Bones",
-    "Website": "https://bearbones.com.au/",
-    "State": "QLD",
-    "hasCafe": true,
-    "multiRoaster": false
-  },
-  {
+    "businessId": "biz-foaster-and-black",
     "Name": "Foaster and Black",
     "Website": "https://fosterandblack.com/",
     "State": "QLD, NSW, VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-craftwork-roasting-co",
     "Name": "Craftwork Roasting Co",
     "Website": "https://www.craftworkroasting.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-constance-coffee",
     "Name": "Constance Coffee",
     "Website": "https://constance.coffee/",
     "State": "VIC",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-taylor-s-blend",
     "Name": "Taylor's Blend",
     "Website": "https://www.taylorblend.com.au/",
     "State": "SA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-coffee-bean-trading-co",
     "Name": "Coffee Bean Trading Co",
     "Website": "https://coffeebeantrading.com.au/",
     "State": "SA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-soho-coffee-roasters",
     "Name": "SoHo Coffee Roasters",
     "Website": "https://sohocoffeeroasters.com.au/",
     "State": "SA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-kicco",
     "Name": "Kicco",
     "Website": "https://www.kicco.com.au/",
     "State": "SA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-west-beach-coffee-co",
     "Name": "West Beach Coffee Co",
     "Website": "https://www.facebook.com/p/The-West-Beach-Coffee-Co-100092129446635/",
     "State": "SA",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-d-angelo-coffee",
     "Name": "D'Angelo Coffee",
     "Website": "https://dangelocoffee.com.au/",
     "State": "SA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-my-kingdom-for-a-horse",
     "Name": "My Kingdom For A Horse",
     "Website": "https://www.mykingdomforahorse.com.au/",
     "State": "SA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-rio-coffee",
     "Name": "Rio Coffee",
     "Website": "https://riocoffee.com.au/",
     "State": "SA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-faithful-hound",
     "Name": "Faithful Hound",
     "Website": "https://faithfulhoundcoffee.com.au/",
     "State": "SA",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-de-groot-coffee-co",
     "Name": "De Groot Coffee Co",
     "Website": "https://www.degrootcoffeeco.com.au/",
     "State": "SA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-cherry-pickers-coffee",
     "Name": "Cherry Pickers Coffee",
     "Website": "https://cherrypickerscoffee.com.au/",
     "State": "SA",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
-    "Name": "Cherry Pickers Coffee",
-    "Website": "https://cherrypickerscoffee.com.au/",
-    "State": "SA",
-    "hasCafe": false,
-    "multiRoaster": false
-  },
-  {
+    "businessId": "biz-red-berry",
     "Name": "Red Berry",
     "Website": "https://redberryespresso.com.au/",
     "State": "SA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-flying-chaff",
     "Name": "Flying Chaff",
     "Website": "https://www.theflyingchaff.com/",
     "State": "SA",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-mila-coffee-co",
     "Name": "Mila Coffee Co",
     "Website": "https://www.milacoffeeco.com.au/",
     "State": "SA",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-fleurieu-roast",
     "Name": "Fleurieu Roast",
     "Website": "https://fleurieuroast.com.au/",
     "State": "SA",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-coffee-journey",
     "Name": "Coffee Journey",
     "Website": "https://www.instagram.com/coffeejourneyadelaide/",
     "State": "SA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-mid-coast-coffee",
     "Name": "Mid Coast Coffee",
     "Website": "https://midcoastroast.ecwid.com/",
     "State": "SA",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-55-plus-fifty-five",
     "Name": "+55 (Plus Fifty Five)",
     "Website": "https://plusfiftyfive.com/",
     "State": "SA",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-bray-st-roasters",
     "Name": "Bray St Roasters",
     "Website": "https://www.braystcoffee.com.au/",
     "State": "SA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-coffee-barun",
     "Name": "Coffee Barun",
     "Website": "https://www.thecoffeebarun.com.au/",
     "State": "SA",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-kwila-coffee",
     "Name": "KWILA Coffee",
     "Website": "https://www.kwila.coffee/",
     "State": "NSW",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-pirate-coffee",
     "Name": "Pirate Coffee",
     "Website": "https://www.drinkpirate.coffee/",
     "State": "NSW",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-common-folk-coffee",
     "Name": "Common Folk Coffee",
     "Website": "https://www.commonfolkcoffee.com.au",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-coffee-hit",
     "Name": "Coffee Hit",
     "Website": "https://coffeehit.com.au",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
-    "Name": "Coffee in Common",
-    "Website": "https://www.coffeeincommon.com.au",
-    "State": "SA",
-    "hasCafe": true,
-    "multiRoaster": false
-  },
-  {
+    "businessId": "biz-a-coffee-roasters",
     "Name": "A+ Coffee Roasters",
     "Website": "https://apluscoffee.com.au",
     "State": "VIC",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-cottle-coffee",
     "Name": "Cottle Coffee",
     "Website": "https://www.cottlecoffee.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-niccolo-coffee-store",
     "Name": "Niccolo Coffee Store",
     "Website": "https://www.niccolo.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-a-k-a-coffee",
     "Name": "a.k.a Coffee",
     "Website": "https://akacoffee.com.au/",
-    "State": "VIC",
+    "State": "NSW",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "operator-website",
+      "url": "https://akacoffee.com.au/",
+      "reviewedAt": "2026-10-06T05:16:56Z",
+      "fields": [
+        "State"
+      ]
+    }
   },
   {
+    "businessId": "biz-chalk-coffee-roasters",
     "Name": "Chalk Coffee Roasters",
     "Website": "https://www.chalkcoffee.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-bay-beans",
     "Name": "Bay Beans",
     "Website": "https://www.baybeans.com.au/",
     "State": "NSW",
     "hasCafe": false,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-fieldwork-coffee",
     "Name": "Fieldwork Coffee",
     "Website": "https://fieldworkcoffee.com.au/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   },
   {
+    "businessId": "biz-path-melbourne",
     "Name": "Path Melbourne",
     "Website": "https://www.pathmelbourne.com/",
     "State": "VIC",
     "hasCafe": true,
-    "multiRoaster": false
+    "multiRoaster": false,
+    "provenance": {
+      "source": "legacy-directory",
+      "verifiedAt": null
+    }
   }
 ]
