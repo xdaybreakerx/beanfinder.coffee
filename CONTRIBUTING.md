@@ -40,7 +40,7 @@ Run commands from `app/`:
 | `npm run build` | Data validation and the production Netlify build |
 | `npm run test:e2e` | Desktop/mobile flows, keyboard behavior, responsive layouts and automated accessibility |
 
-Before the first browser run, install its browser with `npx playwright install chromium`. Browser tests launch an isolated local server on port 48765 and intercept form submissions; do not submit production forms as test data. Maps fixtures cover failures, limits and location-denial behavior. Live Google Maps, actual Safari/iOS and assistive technology need separate manual checks when their behavior changes. See the [completed v2 verification](docs/release-verification.md) for the current baseline and coverage limits.
+Before the first browser run, install its browser with `npx playwright install chromium`. Browser tests launch an isolated local server on port 48765 and intercept form submissions; do not submit production forms as test data. Maps fixtures cover failures, limits and location-denial behavior. Live Google Maps, actual Safari/iOS and assistive technology need separate manual checks when their behavior changes.
 
 ## Project layout
 
@@ -56,7 +56,7 @@ app/
   netlify/functions/  Form events, coordinate reads, refresh and purge
   public/             Static assets and Netlify form-detection file
   tests/e2e/          Browser and accessibility checks
-docs/                 Review, operational and release records
+docs/                 Data review and contribution operations
 ```
 
 ## Directory changes
@@ -69,7 +69,7 @@ The public form creates a `forms/<submission-id>` PR rather than editing main. R
 
 ## Pull requests and versions
 
-Use a focused branch based on current main. Describe the resulting behavior and relevant validation; attach screenshots for visible changes, including both themes and narrow layouts when affected. Keep credentials, raw provider responses, private submissions and generated build/test artifacts out of commits.
+Use a focused branch based on current main. Describe the resulting behavior and relevant validation; check both themes and narrow layouts for visible changes. Keep credentials, raw provider responses, private submissions and generated build/test artifacts out of commits.
 
 Main requires a reviewed PR and the `verify` check against current main. CI installs the lockfile and runs data/release validation, TypeScript, unit tests, build and desktop/mobile browser tests. Netlify supplies a deploy preview for hosted checks.
 
@@ -81,4 +81,4 @@ App major/minor releases are chosen manually. Data changes increment only the pa
 
 From `app/`, `npm version 2.0.0 --no-git-tag-version --ignore-scripts` selects an explicit release without creating a tag. This command does not update dependencies. Form automation reads current main and prepares the next patch atomically with its data/receipt; duplicates and explanation-only corrections do not bump. If main advances while a data PR is open, reconcile its data and versions to the next patch after main and rerun CI.
 
-Release publication is manual. After an approved merge, verify the production deployment and final main CI, review pending form-PR versions, then publish the matching `vX.Y.Z` tag/GitHub release when authorized. Runtime coordinate refreshes never change Git or release versions. See [v2 release notes](docs/releases/v2.0.0.md) and [operations](docs/operations.md#release-versioning).
+Release publication is manual. After an approved merge, verify the production deployment and final main CI, review pending form-PR versions, then publish the matching `vX.Y.Z` tag/GitHub release when authorized. Runtime coordinate refreshes never change Git or release versions. See [operations](docs/operations.md#release-versioning).

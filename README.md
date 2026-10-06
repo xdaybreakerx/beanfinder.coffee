@@ -1,10 +1,8 @@
 # BeanFinder.coffee
 
-A curated Australian coffee directory for finding beans, nearby cafes and multi-roaster sellers. Built and maintained by [Xander](https://github.com/xdaybreakerx).
+A curated Australian coffee directory for finding beans, nearby cafes and multi-roaster sellers.
 
 **[Visit BeanFinder](https://beanfinder.coffee)** · [Suggest a roaster or correction](https://beanfinder.coffee/submit/) · [Contributing](CONTRIBUTING.md)
-
-![BeanFinder homepage in the light theme](docs/screenshots/v2-home-desktop.jpg)
 
 ## Features
 
@@ -34,15 +32,9 @@ npm run dev
 
 The server starts at <http://localhost:4321>. Google Maps needs a browser API key; see [environment setup and checks](CONTRIBUTING.md). Directory browsing works without a key.
 
-## Verification and documentation
+## Contributing
 
-Accessibility and performance verification was signed off on 6 October 2026, including desktop Safari and the maintainer's iPhone/VoiceOver review. Production Lighthouse lab performance was 100 for the homepage/directory on mobile and 91 for the map; all measured accessibility, best-practices and SEO scores were 100. These are individual lab runs, not field performance guarantees.
-
-- [Release verification and measured results](docs/release-verification.md)
-- [v2.0.0 release notes](docs/releases/v2.0.0.md)
-- [Contributing, data review and test commands](CONTRIBUTING.md)
-- [Maintainer operations and recovery](docs/operations.md)
-- [Current screenshots](docs/screenshots/README.md)
+See [CONTRIBUTING](CONTRIBUTING.md) for environment setup, test commands, data review and pull-request/versioning rules.
 
 ## License
 
