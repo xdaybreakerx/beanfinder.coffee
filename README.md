@@ -187,6 +187,8 @@ A data-changing PR reads `app/package.json` and `app/package-lock.json` from the
 
 If main's version advances while a PR is open, update that PR's package and lockfile versions to the next patch after main before merging. Two pending PRs can initially propose the same patch; the automation leaves reviewed branches untouched. Release publication remains manual: the function never creates tags or publishes GitHub releases, and merging a version bump follows the existing Netlify main-branch deployment behavior.
 
+CI validates stable, matching package/lockfile root versions on every run. For `forms/` PRs it also compares the tested merge commit with current main: directory changes require exactly the next patch; explanation-only proposals keep main's version. If main advances, update the proposal branch from main, resolve the data conflicts, and set all three versions before rerunning verification. This also applies to pending form PRs when the application moves to `2.0.0`.
+
 For a larger app release, use `npm version minor --no-git-tag-version --ignore-scripts` from `app/` (or select another stable version explicitly), commit both version files, and publish the matching GitHub release after review. Keep package and lockfile root versions aligned; mismatched files and prerelease versions stop automated data PR creation instead of guessing the next version.
 
 ### Activation
@@ -219,6 +221,16 @@ GitHub/network failures fail the function visibly in Netlify logs; malformed sub
 ```
 
 From `app/`, run `node src/scripts/replay-form-submission.mjs /path/to/payload.json --dry-run` to validate against local directory data without API calls. To create or resume the real PR, securely set `FORM_PR_GITHUB_TOKEN` in your shell and run the same command without `--dry-run`. Do not paste tokens into command history. This event function handles new events; installing it does not replay the existing backlog.
+
+Production failures emit a fixed `Form ingestion failed` summary with a reason and recovery action, without raw payloads, credentials or provider response bodies. `missing-token` requires setting the production Functions variable. `github-401` generally requires renewing the token; `github-403` requires checking repository/permission access and rate limits; `github-429` or `github-5xx` requires waiting for recovery before replay. Other request/proposal failures require checking availability, version consistency and the existing branch before retrying. Rejected submissions return 422 for manual review; operational failures remain failed invocations.
+
+For token renewal, create a replacement fine-grained token with access to this repository and **Contents** and **Pull requests** read/write permissions. Replace `FORM_PR_GITHUB_TOKEN` in Netlify's production Functions environment, redeploy so Functions receives it, and securely use the replacement for the maintainer replay command. Replay the same verified submission ID: an existing PR is reused, and an interrupted proposal resumes without overwriting reviewer changes. After verifying recovery, revoke the old token and record the replacement's expiry in your private account reminders. Local fixture tests exercise authentication errors, duplicate/concurrent events, partial failure, replay and redaction without submitting a real form.
+
+### Repository protection and CI
+
+The default branch requires a PR and the GitHub Actions **`verify`** check, with the branch tested against current main and no bypass actors. The repository's default Actions token permissions are read; the verification workflow explicitly needs only `contents: read`. Netlify's form function uses the separately scoped production token so its PRs trigger ordinary checks. Default-token PR creation/approval stays disabled. See [GitHub's ruleset API](https://docs.github.com/en/rest/repos/rules) and [workflow permissions/concurrency](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax).
+
+The workflow cancels superseded runs for the same PR, keeps distinct PRs isolated, and allows main verification to finish. A bounded timeout and failed-run summary make failures visible. Form ingestion uses immutable Git trees/commits and atomic branch creation to publish directory, release files and receipt together; duplicate delivery races reuse the winning branch/PR. Distinct submissions remain independent proposals for manual conflict review. Local backfills prepare files on a clean review branch; commit the complete batch together and open a PR. Runtime coordinate workers never write Git or create release PRs.
 
 For older verified submissions, use the maintainer batch command from a clean branch based on current main:
 
@@ -259,6 +271,7 @@ All commands are run from the `app/` directory, from a terminal:
 | `npm run dev`          | Starts local dev server at `localhost:4321`      |
 | `npm run build`        | Build your production site to `./dist/`          |
 | `npm run validate:data` | Validate curated identities, locations, sources and classification |
+| `npm run validate:release` | Validate package/lock root versions and current-main patch versions for form PRs in CI |
 | `npm test`             | Run directory, map, country validation, and form automation tests |
 | `npm run check`        | Check TypeScript after generating Astro types    |
 | `npm run test:e2e`     | Run desktop/mobile flows and automated accessibility checks |

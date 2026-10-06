@@ -14,7 +14,8 @@
     "build": "npm run validate:data && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "validate:data": "node src/scripts/validate-directory.mjs"
+    "validate:data": "node src/scripts/validate-directory.mjs",
+    "validate:release": "node src/scripts/validate-release.mjs"
   },
   "dependencies": {
     "@astrojs/netlify": "^8.2.6",

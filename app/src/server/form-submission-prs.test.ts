@@ -219,8 +219,11 @@ describe("GitHub ingestion", () => {
     gh.failNextPR();
     await expect(createSubmissionPR(payload(), options)).rejects.toThrow("HTTP 503");
     const branchSha = gh.refs.get("forms/submission-123");
+    const reviewerEdit = "Reviewer-edited directory content";
+    gh.commits.get(branchSha!)![ROASTERS] = reviewerEdit;
     expect((await createSubmissionPR(payload(), options)).status).toBe("created");
     expect(gh.refs.get("forms/submission-123")).toBe(branchSha);
+    expect(gh.commits.get(branchSha!)![ROASTERS]).toBe(reviewerEdit);
     expect(gh.commits.size).toBe(2);
   });
 
@@ -239,6 +242,25 @@ describe("GitHub ingestion", () => {
     const results = await Promise.all([createSubmissionPR(payload(), options), createSubmissionPR(payload(), options)]);
     expect(results.map(result => result.status).sort()).toEqual(["created", "existing"]);
     expect(gh.prs).toHaveLength(1);
+  });
+
+  it("keeps distinct concurrent proposals isolated for review", async () => {
+    const gh = github();
+    const options = { token: "test-token", fetch: gh.fetcher };
+    const results = await Promise.all([
+      createSubmissionPR(payload(), options),
+      createSubmissionPR(payload({ "roaster-name": "Other Coffee", "roaster-website": "https://other.coffee" }, "submission-456"), options),
+    ]);
+    expect(results.every(result => result.status === "created")).toBe(true);
+    expect(gh.prs).toHaveLength(2);
+    for (const [id, name] of [["submission-123", "New Coffee"], ["submission-456", "Other Coffee"]]) {
+      const files = gh.commits.get(gh.refs.get(`forms/${id}`)!)!;
+      expect(JSON.parse(files[ROASTERS]).map((record: { Name: string }) => record.Name)).toEqual(["Existing Coffee", name]);
+      expect(JSON.parse(files[PACKAGE_PATH]).version).toBe("1.0.1");
+      expect(JSON.parse(files[LOCK_PATH]).version).toBe("1.0.1");
+      expect(JSON.parse(files[LOCK_PATH]).packages[""].version).toBe("1.0.1");
+    }
+    expect(gh.refs.get("main")).toBe("main-sha");
   });
 
   it("does not create a branch for an already listed recommendation", async () => {
@@ -287,6 +309,74 @@ describe("Netlify event boundary", () => {
 
   it("fails visibly when production credentials are missing", async () => {
     vi.stubEnv("FORM_PR_GITHUB_TOKEN", "");
+    const log = vi.spyOn(console, "error").mockImplementation(() => {});
+    const fetcher = vi.spyOn(globalThis, "fetch");
     await expect(handler(new Request("https://example.com"), { deploy: { context: "production" } } as Context)).rejects.toThrow("FORM_PR_GITHUB_TOKEN");
+    expect(fetcher).not.toHaveBeenCalled();
+    expect(log).toHaveBeenCalledWith("Form ingestion failed:", expect.objectContaining({ reason: "missing-token", recovery: expect.stringContaining("redeploy") }));
+  });
+
+  it.each([401, 403, 429, 503])("reports GitHub HTTP %i with recovery guidance and no private data", async (status) => {
+    vi.stubEnv("FORM_PR_GITHUB_TOKEN", "test-token");
+    vi.spyOn(globalThis, "fetch").mockResolvedValue(Response.json({ message: "private-provider-message" }, { status }));
+    const log = vi.spyOn(console, "error").mockImplementation(() => {});
+    const request = new Request("https://example.com", { method: "POST", body: JSON.stringify({ payload: payload({ email: "private@example.com" }) }) });
+    await expect(handler(request, { deploy: { context: "production" } } as Context)).rejects.toThrow(`github-${status}`);
+    expect(log).toHaveBeenCalledWith("Form ingestion failed:", expect.objectContaining({ reason: `github-${status}`, recovery: expect.stringContaining("replay") }));
+    expect(JSON.stringify(log.mock.calls)).not.toMatch(/test-token|private@example\.com|private-provider-message/);
+  });
+
+  it("redacts unexpected fetch errors from both logs and the thrown error", async () => {
+    vi.stubEnv("FORM_PR_GITHUB_TOKEN", "test-token");
+    vi.spyOn(globalThis, "fetch").mockRejectedValue(new Error("Bearer test-token private@example.com"));
+    const log = vi.spyOn(console, "error").mockImplementation(() => {});
+    const request = new Request("https://example.com", { method: "POST", body: JSON.stringify({ payload: payload() }) });
+    await expect(handler(request, { deploy: { context: "production" } } as Context)).rejects.toThrow(/^Form ingestion failed: request-or-proposal-failure\./);
+    expect(JSON.stringify(log.mock.calls)).not.toMatch(/test-token|private@example\.com/);
+  });
+
+  it("can replay the same verified event after replacing a rejected token", async () => {
+    vi.stubEnv("FORM_PR_GITHUB_TOKEN", "expired-token");
+    const gh = github();
+    const fetcher = vi.spyOn(globalThis, "fetch").mockResolvedValueOnce(Response.json({}, { status: 401 })).mockImplementation(gh.fetcher);
+    vi.spyOn(console, "error").mockImplementation(() => {});
+    vi.spyOn(console, "info").mockImplementation(() => {});
+    const request = () => new Request("https://example.com", { method: "POST", body: JSON.stringify({ payload: payload() }) });
+    const context = { deploy: { context: "production" } } as Context;
+    await expect(handler(request(), context)).rejects.toThrow("github-401");
+    expect(gh.refs.size).toBe(1);
+    vi.stubEnv("FORM_PR_GITHUB_TOKEN", "test-token");
+    expect((await handler(request(), context)).status).toBe(204);
+    expect((await handler(request(), context)).status).toBe(204);
+    expect(fetcher).toHaveBeenCalled();
+    expect(gh.prs).toHaveLength(1);
+  });
+
+  it("recovers an interrupted production event and then handles replay as a no-op", async () => {
+    vi.stubEnv("FORM_PR_GITHUB_TOKEN", "test-token");
+    const gh = github();
+    vi.spyOn(globalThis, "fetch").mockImplementation(gh.fetcher);
+    vi.spyOn(console, "error").mockImplementation(() => {});
+    const log = vi.spyOn(console, "info").mockImplementation(() => {});
+    const request = () => new Request("https://example.com", { method: "POST", body: JSON.stringify({ payload: payload() }) });
+    const context = { deploy: { context: "production" } } as Context;
+    gh.failNextPR();
+    await expect(handler(request(), context)).rejects.toThrow("github-503");
+    const sha = gh.refs.get("forms/submission-123");
+    expect((await handler(request(), context)).status).toBe(204);
+    expect((await handler(request(), context)).status).toBe(204);
+    expect(gh.refs.get("forms/submission-123")).toBe(sha);
+    expect(gh.prs).toHaveLength(1);
+    expect(log).toHaveBeenLastCalledWith("Form ingestion:", "existing", gh.prs[0].html_url);
+  });
+
+  it("rejects malformed event JSON without copying it into logs", async () => {
+    vi.stubEnv("FORM_PR_GITHUB_TOKEN", "test-token");
+    const log = vi.spyOn(console, "warn").mockImplementation(() => {});
+    const fetcher = vi.spyOn(globalThis, "fetch");
+    const response = await handler(new Request("https://example.com", { method: "POST", body: "private@example.com" }), { deploy: { context: "production" } } as Context);
+    expect(response.status).toBe(422);
+    expect(fetcher).not.toHaveBeenCalled();
+    expect(log).toHaveBeenCalledWith("Form ingestion rejected:", "Invalid event JSON");
   });
 });
