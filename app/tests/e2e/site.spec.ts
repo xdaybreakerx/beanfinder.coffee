@@ -815,4 +815,13 @@ test('audited cafes expose searchable addresses, branch links and corrected cafe
   await page.getByLabel('State or territory').selectOption('TAS');
   await expect(row).toHaveCount(1);
   await expect(row.locator('.roaster-location')).toContainText('Quoiba TAS');
+  await page.getByLabel('State or territory').selectOption('NSW');
+  await search.fill('975 Pacific');
+  await page.getByLabel('With a cafe', { exact: true }).check();
+  await expect(row).toHaveCount(1);
+  await expect(row).toHaveAttribute('data-business-id', 'biz-siboni-s-coffee');
+  await expect(row.locator('.roaster-location')).toContainText('Pymble NSW');
+  const sibonisLink = new URL((await row.locator('.roaster-location a').getAttribute('href'))!);
+  expect(sibonisLink.searchParams.get('query')).toContain('975 Pacific Highway, Pymble NSW 2073, Australia');
+  expect(sibonisLink.searchParams.has('query_place_id')).toBe(false);
 });

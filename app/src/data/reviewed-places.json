@@ -271,5 +271,18 @@
       "url": "https://whatson.melbourne.vic.gov.au/eat-and-drink/path",
       "reviewedAt": "2026-10-06T06:54:28Z"
     }
+  },
+  {
+    "locationId": "loc-sibonis-pymble",
+    "businessId": "biz-siboni-s-coffee",
+    "address": "975 Pacific Highway, Pymble NSW 2073, Australia",
+    "Name": "Siboni's Coffee",
+    "state": "NSW",
+    "countryCode": "AU",
+    "hasCafe": true,
+    "source": {
+      "url": "https://siboniscoffee.com.au/",
+      "reviewedAt": "2026-10-06T07:05:28Z"
+    }
   }
 ]

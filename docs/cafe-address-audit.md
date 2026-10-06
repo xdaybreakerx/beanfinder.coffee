@@ -2,7 +2,7 @@
 
 Scope: all 15 regular-roaster entries with `hasCafe: true` but no associated saved Australian location on main `b854c16`. These were displayed as Online while carrying a Cafe badge. This is an audit of that missing-location group, not a fresh verification of every historical marker or every cafe in the directory.
 
-Outcome: 13 roasters retain their cafe flags and gain 19 independently sourced street addresses; a.k.a Coffee loses its unsupported cafe flag; Siboni's remains unchanged pending direct confirmation of current cafe service. Business and legacy location identities remain stable. The historical Google snapshot and its 218-marker refresh allowlist are unchanged.
+Outcome: 14 roasters retain their cafe flags and gain 20 sourced street addresses; a.k.a Coffee loses its unsupported cafe flag. The maintainer confirmed Siboni's cafe service and address on 6 October 2026, closing the final inconclusive case. Business and legacy location identities remain stable. The historical Google snapshot and its 218-marker refresh allowlist are unchanged.
 
 ## Reviewed outcomes
 
@@ -22,7 +22,7 @@ Outcome: 13 roasters retain their cafe flags and gain 19 independently sourced s
 | Fieldwork Coffee | Cafe retained; 7a Degraves Street, Melbourne VIC 3000 | [Current operator about page](https://fieldworkcoffee.com.au/pages/about) explicitly says its coffee is served at Fieldwork Coffee on Degraves Street following the 2026 ownership change. [The event organiser's venue listing](https://lpv.org.au/event/gennext-photography-city-tour/) supplies the numbered address. The closed Fitzroy North branch and the production roastery in Arthurs Creek are excluded. |
 | Path Melbourne | Cafe retained; 362 Victoria Street, North Melbourne VIC 3051 | [City of Melbourne venue listing](https://whatson.melbourne.vic.gov.au/eat-and-drink/path) confirms the public brew bar and address. The [operator site](https://www.pathmelbourne.com/) also discusses the dine-in bar experience. The branch source records the municipal address evidence; business provenance does not claim operator verification of that address. |
 | a.k.a Coffee | Cafe flag removed; remains an online NSW roaster | [Operator about page](https://akacoffee.com.au/about-us-2/) says the owner sold her former cafe before establishing this roasting/delivery business. [Current contact page](https://akacoffee.com.au/contact-us/) describes wholesale supply without a public cafe or street address. Removal is an inference from that operator account, not an explicit operator statement that a cafe has closed today. The unrelated Melbourne place ID remains assigned to ACoffee. |
-| Siboni's Coffee | **Manual confirmation needed; no flag/location change** | [Current operator site](https://siboniscoffee.com.au/) confirms a public roastery/shop at 975 Pacific Highway, Pymble NSW 2073 with visitor hours; its [FAQ](https://siboniscoffee.com.au/about/) calls it a coffee shop but does not clearly establish ongoing prepared-drink cafe service. Older restaurant listings are insufficient to certify current cafe status or remove it. |
+| Siboni's Coffee | Cafe retained; 975 Pacific Highway, Pymble NSW 2073 | The maintainer explicitly confirmed cafe service and the street address on 6 October 2026. The [operator site](https://siboniscoffee.com.au/) independently corroborates the address, state and postcode. Cafe confirmation comes from the maintainer, rather than inferring service from a retail address or old restaurant listings. |
 
 ## Data and display behavior
 
@@ -32,7 +32,6 @@ Address-only cafes display locality links, participate in street/postcode search
 
 ## Remaining manual checks and release decisions
 
-- Confirm whether Siboni's serves coffee to the public at its Pymble shop. If confirmed, add its sourced street address with `hasCafe: true`; if it is retail/tasting only, remove the business cafe flag with supporting evidence. Contact details are on the operator site; no outreach was sent as part of this audit.
 - Check the new Google Maps address searches and branch labels in the hosted preview, particularly SAINT DREUX and Fieldwork after their business changes. Place-ID confirmation and map marker additions can be reviewed separately.
 - The maintainer explicitly accepted proceeding with the existing Netlify dev/build tooling advisories on 6 October 2026. Those known advisories are deferred, not a release blocker; their assessment remains in [maps-release-polish.md](maps-release-polish.md).
 - Final manual/account checks, release documentation and the v2 version update follow this audit. The package version remains 1.1.0 during this implementation branch.

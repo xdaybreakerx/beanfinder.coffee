@@ -31,7 +31,7 @@ Rebase data PRs opened before this schema migration onto current main and retain
 
 There were 242 records before consolidation and 239 afterward. All 218 accepted map markers remain available. This audit does not claim that every inherited business or branch has been independently verified; missing cafe/location evidence remains ordinary review work.
 
-The subsequent [cafe/address audit](cafe-address-audit.md) records missing-location reviews, source links and the outstanding Siboni's confirmation.
+The subsequent [cafe/address audit](cafe-address-audit.md) records missing-location reviews, source links and the maintainer's Siboni's cafe confirmation.
 
 ## Repository cleanup — 6 October 2026
 
