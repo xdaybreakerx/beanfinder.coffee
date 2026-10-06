@@ -15,7 +15,7 @@ The directory filters are saved in the URL so searches can be bookmarked or shar
 
 The daisyUI `caramellatte` (light) and `coffee` (dark) themes follow the system preference until a visitor chooses a theme. Existing saved light/dark choices are retained. Both themes include visible keyboard focus and a skip link.
 
-The weekly Places enrichment checks Australian formatted addresses when choosing candidates, then requires Google's `AU` country component and valid coordinates before saving details. The map also filters cached data: older records without a country code must end their formatted address with `Australia`. A location that fails verification is omitted from the map; its roaster remains in the directory. API failures stop enrichment before replacing the corresponding data file.
+The map retains its historical Google snapshot by maintainer decision. Its retrieval dates are unknown, recorded separately in `legacy-map-snapshot.json`; historical ratings are not used as current directory scores. Legacy markers still require valid coordinates and a formatted address ending with `Australia`. Known locations and new reviewed branches use a separate, expiry-aware runtime path described below. There is no weekly full-directory discovery or permanent enrichment.
 
 ## 💻 Tech Stack and tools
 
@@ -120,7 +120,47 @@ After a production form submission is verified, Netlify invokes `app/netlify/fun
 
 Recommendations require a name, HTTP(S) website, state, cafe status, and multi-roaster status. Corrections identify the existing listing by website/name; the optional original website supports renamed listings and changed URLs. Blank state/status fields preserve existing values. Corrections with only explanatory notes open a PR containing a review receipt, so a maintainer can make the corresponding edit. Unmatched or ambiguous corrections are rejected and logged for manual follow-up. Recommendations already in the directory are skipped.
 
-Each PR commits directory changes, the release version files when data changes, and a whitelisted receipt under `.github/form-submissions/`. Names, websites, and notes become public, as explained on the form; contact details, IP addresses, and other raw submission metadata are excluded. Duplicate deliveries reuse an existing open or closed PR. A retry after a branch was created resumes PR creation without overwriting the branch. Distinct submissions can propose overlapping edits; review conflicts and duplicate proposals before merging. Individual roasters enter the map through the existing weekly enrichment workflow after merge.
+Each PR commits directory changes, the release version files when data changes, and a whitelisted receipt under `.github/form-submissions/`. Names, websites, and notes become public, as explained on the form; contact details, IP addresses, and other raw submission metadata are excluded. Duplicate deliveries reuse an existing open or closed PR. A retry after a branch was created resumes PR creation without overwriting the branch. Distinct submissions can propose overlapping edits; review conflicts and duplicate proposals before merging. Future changed records include `provenance` with a community-submission receipt, proposal time, and an explicit unknown verification time (`verifiedAt: null`). Proposal time is not a claim of independent fact checking. Explanation-only and duplicate submissions do not refresh this metadata. A new map location requires separate place-ID/source review; form PRs never discover or retrieve Google locations.
+
+### Future map locations and temporary coordinates
+
+Keep durable business facts in the reviewed directory, sourced from operators, their websites or independent community submissions. Add a confirmed Australian branch to `app/src/data/reviewed-places.json` in a review PR, for example:
+
+```json
+{
+  "placeId": "confirmed-google-place-id",
+  "Name": "Example Coffee — Melbourne branch",
+  "Website": "https://example.coffee/",
+  "state": "VIC",
+  "countryCode": "AU",
+  "source": {
+    "url": "https://example.coffee/locations",
+    "reviewedAt": "2026-10-06T00:00:00Z"
+  }
+}
+```
+
+The website must reference a current directory listing. Review business/branch identity and source facts before adding an ID; an Australian Google response alone does not prove the match. Preserve place IDs through corrections. The registry rejects duplicates, invalid references, missing sources, and provider coordinate/rating fields. It starts empty; the existing snapshot and its timestamps are not migrated or rewritten. Broader business IDs and schema consolidation remain separate work.
+
+The map automatically displays all valid cached locations. Its production-only `place-coordinates` endpoint reads the cache and never calls Google. Cached responses use `no-store` headers, remain only in the mounted map's memory, and are removed from that map at expiry. Fresh coordinates replace the matching legacy marker without duplication; accepted legacy markers remain the fallback. A new reviewed branch without cached coordinates has a Google Maps link until its first successful retrieval. Listings without a confirmed physical place ID still require review.
+
+The hourly `refresh-place-coordinates` function uses the **218 unique Australian IDs** already represented by the accepted legacy markers, plus new reviewed IDs. It extracts only IDs and labels into its allowlist; it does not migrate historical Google fields or invent historical review dates. It processes up to four due locations per run, with at most two concurrent requests, using Place Details (New) with `id,location,addressComponents`. It validates response ID, Australian country and coordinates. Only coordinates, country/provider identity and actual retrieval/expiry times survive in the site-wide Netlify Blobs store `place-coordinates-v1`. Addresses, ratings, counts and raw responses are discarded. Existing selected-place details remain transient active displays.
+
+Coordinates renew from **day 27** and expire after **29 days**. Valid cached coordinates remain available if a renewal fails. Failed renewals retry after a day while the coordinates are still valid; missing or invalid IDs retry after ten days to protect the allowance. Retry timing survives a calendar-month change. The hourly worker also purges expired immutable retrieval keys; the daily `purge-place-coordinates` function independently deletes expired copies without making Google calls. Cache reads exclude expired entries immediately. Deleting an older key cannot remove a newer concurrent retrieval. Monitor scheduled function failures and restore cleanup within the one-day margin before 30 days; a prolonged hosting outage cannot guarantee physical deletion. No runtime refresh writes Git, changes the legacy snapshot, increments a package version, or creates a data PR.
+
+As checked on 6 October 2026, [Google's pricing](https://developers.google.com/maps/billing-and-pricing/pricing) includes **10,000 Place Details Essentials requests per month** at no charge; this coordinate/country field mask uses that SKU. ID-only requests have unlimited free usage, but adding coordinates uses Essentials. Refreshing 218 successful locations every 27 days averages roughly **250 requests per month**, plus initial loading and failed attempts. The first cache population takes about 55 hourly batches, or just over two days. IDs are retained and reused, not rediscovered monthly. Free usage is shared across projects linked to the same billing account; map loads, autocomplete and richer place details have separate SKUs, and Netlify usage is separate.
+
+Production setup:
+
+1. Enable Places API (New) and configure a separate server/API-restricted `GOOGLE_PLACES_SERVER_API_KEY` in the production Functions environment. Keep the existing browser key/referrer restrictions for Maps. Deploy previews cannot read, refresh or delete production runtime coordinates.
+2. Set `PLACE_COORDINATES_MONTHLY_LIMIT=1000` in the production Functions environment. The previous `100` allowance cannot cover all 218 locations. Missing/invalid/zero values disable new Google requests; valid cached coordinates can still be served. Values are capped at `1000` attempts per UTC calendar month for this site. Check billing-account usage and provider quotas before activation; this bounds the worker's requests, rather than all Google or Netlify charges.
+3. Deploy and verify the scheduled badges/logs for hourly refresh and daily purge, plus one location's retrieval/expiry timestamps on the map. Netlify supplies Blobs credentials to Functions; no personal token is required. The Netlify Functions UI's **Run now** action can start the first batch. Scheduled functions cannot be invoked through a public URL. Until configured, the map remains usable with its retained markers.
+
+Strong reads and conditional writes reserve the shared monthly budget before each provider attempt. Concurrent duplicate retrievals are suppressed; leases bound active requests to two across instances and are released on completion, with a 60-second cooldown per ID. Failed attempts count toward the budget. Storage/credential/API failures, exhausted limits and unmatched IDs leave ordinary browsing available. Only known map IDs can spend the budget, and visitor traffic cannot trigger lookups. Netlify hosting/storage quotas still need account monitoring. No new ratings cache or rating endpoint is introduced here.
+
+The old `npm run update-roasters` entry point and both bulk scripts fail immediately without network or file writes. The weekly GitHub update workflow has been removed; curated changes continue through reviewed PRs.
+
+References: [Netlify Blobs consistency and conditional writes](https://docs.netlify.com/build/data-and-storage/netlify-blobs/), [Place Details fields and billing tiers](https://developers.google.com/maps/documentation/places/web-service/place-details), and [Google Maps service-specific terms](https://cloud.google.com/maps-platform/terms/maps-service-terms), [place ID retention](https://developers.google.com/maps/documentation/places/web-service/place-id), and [Netlify scheduled functions](https://docs.netlify.com/build/functions/scheduled-functions/).
 
 ### Release versioning
 

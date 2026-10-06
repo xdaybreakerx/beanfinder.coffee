@@ -83,11 +83,16 @@ describe("submission validation and directory changes", () => {
     const input = payload({ email: "private@example.com", ip: "127.0.0.1", "bot-field": "" });
     const submission = parseSubmission(input)!;
     const proposal = proposeChange(submission, data())!;
-    expect(JSON.parse(proposal.contents[ROASTERS])).toContainEqual({ Name: "New Coffee", Website: "https://new.coffee/", State: "SA", hasCafe: false, multiRoaster: false });
+    expect(JSON.parse(proposal.contents[ROASTERS])).toContainEqual(expect.objectContaining({ Name: "New Coffee", Website: "https://new.coffee/", State: "SA", hasCafe: false, multiRoaster: false }));
     const receipt = proposal.contents[".github/form-submissions/submission-123.json"];
     expect(receipt).not.toContain("private@example.com");
     expect(receipt).not.toContain("127.0.0.1");
     expect(proposal.contents[MULTI]).toBeUndefined();
+    expect(proposal.roaster.provenance).toEqual({
+      source: "community-submission", receipt: ".github/form-submissions/submission-123.json",
+      proposedAt: expect.any(String), verifiedAt: null,
+    });
+    expect(Number.isFinite(Date.parse(proposal.roaster.provenance!.proposedAt))).toBe(true);
   });
 
   it.each([
@@ -118,14 +123,14 @@ describe("submission validation and directory changes", () => {
 
   it("preserves unspecified correction flags and multiple states, and finds a changed website", () => {
     const submission = parseSubmission(payload({ "submission-type": "issue", "roaster-name": "Renamed Coffee", "roaster-website": "https://renamed.coffee", "original-website": existing.Website, state: "", "has-cafe": "", "multi-roaster": "", details: "Changed name and website" }))!;
-    expect(proposeChange(submission, data())!.roaster).toEqual({ ...existing, Name: "Renamed Coffee", Website: "https://renamed.coffee/" });
+    expect(proposeChange(submission, data())!.roaster).toMatchObject({ ...existing, Name: "Renamed Coffee", Website: "https://renamed.coffee/" });
   });
 
   it("moves a corrected listing between directory files without duplicating it", () => {
     const submission = parseSubmission(payload({ "submission-type": "issue", "roaster-name": multi.Name, "roaster-website": multi.Website, state: "WA", "multi-roaster": "false" }))!;
     const proposal = proposeChange(submission, data())!;
     expect(JSON.parse(proposal.contents[MULTI])).toEqual([]);
-    expect(JSON.parse(proposal.contents[ROASTERS])).toContainEqual({ ...multi, State: "WA", multiRoaster: false });
+    expect(JSON.parse(proposal.contents[ROASTERS])).toContainEqual(expect.objectContaining({ ...multi, State: "WA", multiRoaster: false }));
   });
 
   it("rejects ambiguous and unmatched corrections rather than choosing a listing", () => {
@@ -139,6 +144,7 @@ describe("submission validation and directory changes", () => {
     const submission = parseSubmission(payload({ "submission-type": "issue", "roaster-name": existing.Name, "roaster-website": existing.Website, state: "", "has-cafe": "", "multi-roaster": "", details: "The cafe has moved to another address" }))!;
     const proposal = proposeChange(submission, data())!;
     expect(proposal.explanationOnly).toBe(true);
+    expect(proposal.roaster.provenance).toBeUndefined();
     expect(Object.keys(proposal.contents)).toEqual([".github/form-submissions/submission-123.json"]);
   });
 });
