@@ -1,0 +1,7 @@
+{
+  "file": "coffee-roasters-updated-from-place_ids.json",
+  "status": "retained-legacy-snapshot",
+  "retrievedAt": null,
+  "expiresAt": null,
+  "note": "Historical retrieval dates are unknown. Retained by maintainer decision; never overwrite with new provider responses or present cached scores as current ratings."
+}

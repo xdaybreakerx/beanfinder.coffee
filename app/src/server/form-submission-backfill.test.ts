@@ -44,7 +44,7 @@ describe("historical form backfill", () => {
   it("preserves unspecified correction flags and fixes a website", () => {
     const input = payload("old-123", { recommendation: "", issue: "on", "roaster-name": "Existing Coffee", "roaster-website": "https://correct.coffee" });
     const plan = planBackfill([input], {}, files());
-    expect(JSON.parse(plan.contents[ROASTERS])).toEqual([{ ...existing, Website: "https://correct.coffee/" }]);
+    expect(JSON.parse(plan.contents[ROASTERS])).toEqual([expect.objectContaining({ ...existing, Website: "https://correct.coffee/" })]);
   });
   it("groups repeated incomplete recommendations into one review task", () => {
     const plan = planBackfill([payload(), payload("old-456")], {}, files());

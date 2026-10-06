@@ -4,7 +4,8 @@ const ROASTERS = "app/src/data/coffee-roasters.json";
 const MULTI = "app/src/data/coffee-roasters-multi.json";
 const STATES = new Set(["NSW", "VIC", "QLD", "WA", "SA", "TAS", "ACT", "NT"]);
 
-type Roaster = { Name: string; Website: string; State: string; hasCafe: boolean; multiRoaster: boolean };
+type Roaster = { Name: string; Website: string; State: string; hasCafe: boolean; multiRoaster: boolean;
+  provenance?: { source: "community-submission"; receipt: string; proposedAt: string; verifiedAt: null } };
 type Submission = {
   id: string;
   type: "recommendation" | "issue";
@@ -130,6 +131,12 @@ export function proposeChange(submission: Submission, files: Record<string, stri
   }
   // Keep a correction's explanation reviewable even when its structured fields did not change.
   if (!changed.size && submission.type === "recommendation") return undefined;
+  if (changed.size) {
+    roaster.provenance = {
+      source: "community-submission", receipt: receiptPath(submission.id),
+      proposedAt: new Date().toISOString(), verifiedAt: null,
+    };
+  }
   const contents: Record<string, string> = {};
   for (const path of changed) {
     const indent = files[path].match(/\n( +)\{/)?.[1].length ?? 2;
@@ -231,7 +238,7 @@ export async function createSubmissionPR(payload: Payload, options: { token: str
     release ? `Proposed patch version: \`v${release.previousVersion}\` → \`v${release.version}\`. Package and lockfile root versions are updated together. Publish the release manually after review; this automation does not create tags or releases.` : "",
     submission.originalWebsite ? `Original website: ${escapeMarkdown(submission.originalWebsite)}` : "",
     submission.details ? `Submitter's notes:\n\n${submission.details.split("\n").map(line => `> ${escapeMarkdown(line)}`).join("\n")}` : "",
-    explanationOnly ? "The structured fields are unchanged. Review the notes and edit the directory in this branch if necessary." : "Review the proposed data before merging. Cafe locations are enriched by the existing weekly Maps workflow after merge.",
+    explanationOnly ? "The structured fields are unchanged. Review the notes and edit the directory in this branch if necessary." : "Review the proposed data before merging. Provenance records the community source and proposal time, not independent verification. Locations need separate review in reviewed-places.json; there is no automatic bulk Maps enrichment.",
     "The PR contains directory data, release version files when data changes, and the whitelisted submission receipt. No contact details or raw Netlify payload are copied.",
   ].filter(Boolean).join("\n\n");
   try {

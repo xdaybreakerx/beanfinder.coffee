@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   APIProvider,
   Map,
@@ -11,10 +11,14 @@ import { useMapLoading } from "../hooks/useMapLoading";
 import { useGeolocation } from "../hooks/useGeolocation";
 import { useMarkers } from "../hooks/useMarkers";
 import { usePoiCreation } from "../hooks/usePoiCreation";
+import { useReviewedCoordinates } from "../hooks/useReviewedCoordinates";
+import { reviewedPlaces } from "../utils/reviewedPlaces";
 
 const MonolithicGoogleMap = ({ apiKey }: { apiKey: string }) => {
   const { mapLoaded, error } = useMapLoading(apiKey);
   const roastersPois = usePoiCreation();
+  const fresh = useReviewedCoordinates(Boolean(apiKey) && mapLoaded && !error);
+  const pois = useMemo(() => [...roastersPois.filter(poi => !fresh.pois.some(place => place.place_id === poi.place_id)), ...fresh.pois], [roastersPois, fresh.pois]);
   const { location: userLocation } = useGeolocation();
 
   const [selectedPlaceId, setSelectedPlaceId] = useState<string | null>(null);
@@ -30,6 +34,13 @@ const MonolithicGoogleMap = ({ apiKey }: { apiKey: string }) => {
       <div className="map-shell">
         {/* Custom Search Input with Australia Restriction */}
         <PlaceAutocomplete onPlaceSelect={setSelectedPlace} />
+        {fresh.error && <p role="status">{fresh.error}</p>}
+        {reviewedPlaces.some(place => fresh.missingPlaceIds.includes(place.placeId) && !roastersPois.some(poi => poi.place_id === place.placeId)) && <div className="map-search">
+          <p>Some locations aren't available on this map yet. You can open them in Google Maps.</p>
+          <ul>{reviewedPlaces.filter(place => fresh.missingPlaceIds.includes(place.placeId) && !roastersPois.some(poi => poi.place_id === place.placeId)).map(place => <li key={place.placeId}>
+            <a className="text-button" href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(place.Name + " Australia")}&query_place_id=${encodeURIComponent(place.placeId)}`}>Open {place.Name} ({place.state}) in Google Maps</a>
+          </li>)}</ul>
+        </div>}
 
         {/* Map Configuration */}
         <Map
@@ -47,7 +58,7 @@ const MonolithicGoogleMap = ({ apiKey }: { apiKey: string }) => {
           fullscreenControl={true}
           mapId="7b1c394057aa4afc"
         >
-          <PoiMarkers pois={roastersPois} onMarkerClick={handleMarkerClick} />
+          <PoiMarkers pois={pois} onMarkerClick={handleMarkerClick} />
         </Map>
         <MapHandler place={selectedPlace} userLocation={userLocation} />
         {selectedPlaceId && (

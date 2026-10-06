@@ -9,7 +9,7 @@ export function isAustralianPlace(place: PlaceLocation): boolean {
   if (typeof place.latitude !== "number" || typeof place.longitude !== "number" ||
       !Number.isFinite(place.latitude) || !Number.isFinite(place.longitude) ||
       Math.abs(place.latitude) > 90 || Math.abs(place.longitude) > 180) return false;
-  // New enrichment uses Google's country component. Older checked-in records
+  // New runtime coordinates use Google's country component. Legacy records
   // have only a formatted address; accept its final country token, not substrings.
   if (place.countryCode !== undefined) return typeof place.countryCode === "string" && place.countryCode.toUpperCase() === "AU";
   return typeof place.address === "string" && /(?:^|,)\s*Australia\s*$/i.test(place.address);

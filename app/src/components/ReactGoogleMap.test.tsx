@@ -2,6 +2,9 @@ import React from "react";
 import { act, cleanup, render, type RenderResult } from "@testing-library/react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import MonolithicGoogleMap from "./ReactGoogleMap";
+import { useMarkers } from "../hooks/useMarkers";
+import { mapPlaces } from "../utils/mapPlaces";
+import { COORDINATE_TTL } from "../utils/placeCoordinates";
 
 const mocks = vi.hoisted(() => ({
   loadGoogleMaps: vi.fn(),
@@ -62,6 +65,7 @@ let map: {
 
 beforeEach(() => {
   vi.clearAllMocks();
+  vi.stubGlobal("fetch", vi.fn(async () => Response.json({ coordinates: [], missingPlaceIds: [] })));
   vi.spyOn(console, "log").mockImplementation(() => {});
   mocks.camera.center = null;
   mocks.camera.zoom = 0;
@@ -254,5 +258,20 @@ describe("location search", () => {
     expect(map.fitBounds).toHaveBeenCalledExactlyOnceWith(viewport);
     expect(map.panTo).not.toHaveBeenCalled();
     expect(map.setZoom).not.toHaveBeenCalled();
+  });
+});
+
+describe("automatic cached markers", () => {
+  it("replaces an existing location with fresh coordinates without duplicate markers", async () => {
+    const now = Date.now();
+    const place = mapPlaces[0];
+    vi.stubGlobal("fetch", vi.fn(async () => Response.json({ coordinates: [{ placeId: place.placeId, latitude: -37.8, longitude: 145, countryCode: "AU", provider: "google-maps", retrievedAt: new Date(now).toISOString(), expiresAt: new Date(now + COORDINATE_TTL).toISOString() }], missingPlaceIds: [] })));
+    mount();
+    expect(fetch).not.toHaveBeenCalled();
+    await loadMaps();
+    const markers: Array<{ place_id: string; location: google.maps.LatLngLiteral }> = vi.mocked(useMarkers).mock.lastCall![1];
+    expect(markers.filter(marker => marker.place_id === place.placeId)).toHaveLength(1);
+    expect(markers.find(marker => marker.place_id === place.placeId)?.location).toEqual({ lat: -37.8, lng: 145 });
+    expect(markers.length).toBeGreaterThan(200);
   });
 });
