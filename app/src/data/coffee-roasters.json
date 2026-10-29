@@ -204,6 +204,20 @@
     }
   },
   {
+    "businessId": "biz-form-6ae2dd8a328b6137b5c2d4c9",
+    "provenance": {
+      "source": "community-submission",
+      "receipt": ".github/form-submissions/6ae2dd8a328b6137b5c2d4c9.json",
+      "proposedAt": "2026-10-29T05:45:48.696Z",
+      "verifiedAt": null
+    },
+    "Name": "Bean Junction",
+    "Website": "https://www.beanjunction.coffee/",
+    "State": "WA",
+    "hasCafe": false,
+    "multiRoaster": false
+  },
+  {
     "businessId": "biz-beat-coffee",
     "Name": "Beat Coffee",
     "Website": "https://beatcoffee.com.au/",
