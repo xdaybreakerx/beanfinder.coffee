@@ -1,0 +1,17 @@
+{
+  "submission": {
+    "id": "6ae2dd8a328b6137b5c2d4c9",
+    "type": "recommendation",
+    "name": "Bean Junction",
+    "website": "https://www.beanjunction.coffee/",
+    "state": "WA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "details": ""
+  },
+  "explanationOnly": false,
+  "release": {
+    "previousVersion": "2.0.0",
+    "version": "2.0.1"
+  }
+}
