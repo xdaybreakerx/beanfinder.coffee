@@ -985,6 +985,20 @@
     }
   },
   {
+    "businessId": "biz-form-6aea9164aa10ce281fe46460",
+    "provenance": {
+      "source": "community-submission",
+      "receipt": ".github/form-submissions/6aea9164aa10ce281fe46460.json",
+      "proposedAt": "2026-11-04T01:59:02.615Z",
+      "verifiedAt": null
+    },
+    "Name": "King Carlos Coffee",
+    "Website": "https://kingcarloscoffee.com.au/",
+    "State": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false
+  },
+  {
     "businessId": "biz-klim-coffee-roasting-co",
     "Name": "Klim Coffee Roasting Co",
     "Website": "https://www.klimcoffee.com.au/",

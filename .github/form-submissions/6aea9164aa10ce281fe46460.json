@@ -1,0 +1,17 @@
+{
+  "submission": {
+    "id": "6aea9164aa10ce281fe46460",
+    "type": "recommendation",
+    "name": "King Carlos Coffee",
+    "website": "https://kingcarloscoffee.com.au/",
+    "state": "NSW",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "details": "The Hurstville Coffee Experience Lounge and Roastery is at 18 Weston Road, Hurstville NSW 2220, open Mon to Sat 6:30am to 2pm and Sun 7am to 1pm. Range: three blends (Re Firma, Gran Mezcla, Killer Ninja), a decaf and ten single origins, sold in 250 g to 2 kg bags online and in store. Wholesale supply to 80+ cafes, restaurants, pubs and clubs across NSW, VIC and QLD. Medals at the Sydney Royal Fine Food Show, Golden Bean Australasia and the Australian International Coffee Awards."
+  },
+  "explanationOnly": false,
+  "release": {
+    "previousVersion": "2.0.0",
+    "version": "2.0.1"
+  }
+}
