@@ -1,8 +1,8 @@
 import { expect, test } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { renderedContrast } from './rowContrast';
-import roasterRecords from '../../src/data/coffee-roasters.json';
-import sellerRecords from '../../src/data/coffee-roasters-multi.json';
+import roasterRecords from '../../src/data/coffee-roasters.json' with { type: 'json' };
+import sellerRecords from '../../src/data/coffee-roasters-multi.json' with { type: 'json' };
 
 test.beforeEach(async ({ page }) => {
   await page.route("https://www.googletagmanager.com/**", (route) => route.abort());
