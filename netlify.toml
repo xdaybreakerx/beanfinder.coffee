@@ -13,3 +13,8 @@
 # The Netlify Vite plugin treats the Astro app directory as its repository root.
 [context.dev]
   base = "."
+
+[[headers]]
+  for = "/release.json"
+  [headers.values]
+    Cache-Control = "no-store"

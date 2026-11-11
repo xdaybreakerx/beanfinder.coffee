@@ -4,6 +4,7 @@ on:
   pull_request:
   push:
     branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -41,4 +42,26 @@ jobs:
       - name: Summarize verification failure
         if: failure()
         run: |
-          printf '%s\n' '## Verification failed' 'Inspect the failed step above, fix the branch, and rerun verification before merging. Data PRs must also use the next patch version after current main.' >> "$GITHUB_STEP_SUMMARY"
+          printf '%s\n' '## Verification failed' 'Inspect the failed step above, fix the branch, and rerun verification before merging. PRs must bump the version against current main; data PRs use the next patch.' >> "$GITHUB_STEP_SUMMARY"
+
+  release:
+    needs: verify
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    concurrency:
+      group: publish-release
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: '.nvmrc'
+      - name: Wait for production and publish release
+        run: node app/src/scripts/publish-release.mjs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}

@@ -34,7 +34,7 @@ Run commands from `app/`:
 | Command | Checks |
 | --- | --- |
 | `npm run validate:data` | Business/location identities, websites, classification, sources and references |
-| `npm run validate:release` | Matching stable package/lockfile roots; next-patch rules for form PRs in CI |
+| `npm run validate:release` | Matching stable package/lockfile roots; version bumps against current main for PRs in CI |
 | `npm run check` | Astro type generation and TypeScript |
 | `npm test` | Directory, map and form/recovery unit tests |
 | `npm run build` | Data validation and the production Netlify build |
@@ -75,12 +75,12 @@ Use a focused branch based on current main. Describe the resulting behavior and 
 
 Main requires a reviewed PR and the `verify` check against current main. CI installs the lockfile and runs data/release validation, TypeScript, unit tests, build and desktop/mobile browser tests. Netlify supplies a deploy preview for hosted checks.
 
-App major/minor releases are chosen manually. Data changes increment only the patch: after `2.0.0`, the next data PR proposes `2.0.1`. Update these three roots together:
+Each code, documentation or configuration PR must include the next patch, minor or major version after current main. Use a patch by default, a minor for new features, and a major for breaking changes. Data changes increment only the patch: after `2.0.0`, the next data PR proposes `2.0.1`. Update these three roots together:
 
 - `app/package.json` → `version`
 - `app/package-lock.json` → `version`
 - `app/package-lock.json` → `packages[""].version`
 
-From `app/`, `npm version 2.0.0 --no-git-tag-version --ignore-scripts` selects an explicit release without creating a tag. This command does not update dependencies. Form automation reads current main and prepares the next patch atomically with its data/receipt; duplicates and explanation-only corrections do not bump. If main advances while a data PR is open, reconcile its data and versions to the next patch after main and rerun CI.
+From `app/`, run `npm version patch --no-git-tag-version --ignore-scripts` (or `minor`/`major`) and commit both version files with the PR. This command does not update dependencies or create a tag. Form automation reads current main and prepares the next patch atomically with its data/receipt; duplicates and explanation-only form corrections do not bump. If main advances while a PR is open, reconcile its changes and versions against current main and rerun CI.
 
-Release publication is manual. After an approved merge, verify the production deployment and final main CI, review pending form-PR versions, then publish the matching `vX.Y.Z` tag/GitHub release when authorized. Runtime coordinate refreshes never change Git or release versions. See [operations](docs/operations.md#release-versioning).
+After merge, the `release` job waits for main verification to pass and for production's `/release.json` build stamp to match that exact commit, version and production context. It then automatically creates the matching `vX.Y.Z` tag and GitHub release with generated notes. No extra release PR or token is required. Runtime coordinate refreshes never change Git or release versions. See [operations](docs/operations.md#release-versioning) for retries and deployment failures.
