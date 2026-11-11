@@ -1,5 +1,6 @@
 import { AU_STATES, validId, validPastDate, websiteIdentity, type Business } from './directorySchema.ts';
 import { isAustralianPlace } from './australianPlaces.ts';
+import { googleReviewUrl } from './googleReviewUrl.ts';
 
 export type LegacyIdentity = { locationId: string; placeId: string; businessId: string | null; candidateBusinessIds?: string[] };
 export type ReviewedLocation = {
@@ -28,12 +29,15 @@ export function validateLocations(legacy: unknown, reviewed: unknown, businesses
   }
   const seen = new Set<string>();
   const normalized: ReviewedLocation[] = [];
+  const reviewLinks = new Set<string>();
   for (const input of reviewed) {
     const location = input && typeof input === 'object' && !Array.isArray(input) ? { ...input } : null;
     // A review form can leave optional identity/coordinate fields blank.
     for (const key of ['address', 'placeId', 'latitude', 'longitude']) if (location?.[key] === null) delete location[key];
+    const ratingOnlyLink = location && typeof location.rating === 'number' && !location.placeId && !location.address
+      ? googleReviewUrl(location.source?.url) : undefined;
     if (!location || !validId(location.locationId, 'loc') ||
-        (location.placeId !== undefined && !validPlace(location.placeId)) || (!location.placeId && !location.address) ||
+        (location.placeId !== undefined && !validPlace(location.placeId)) || (!location.placeId && !location.address && !ratingOnlyLink) ||
         (location.address !== undefined && (typeof location.address !== 'string' || location.address !== location.address.trim() || location.address.length > 300 ||
           /[\x00-\x1f\x7f]/.test(location.address) || !/\d/.test(location.address.split(',')[0]) ||
           !new RegExp(`,\\s*[^,]+ ${location.state}(?: \\d{4})?, Australia$`).test(location.address))) ||
@@ -48,6 +52,11 @@ export function validateLocations(legacy: unknown, reviewed: unknown, businesses
       throw new Error('Reviewed map markers require a confirmed placeId and valid latitude/longitude');
     }
     websiteIdentity(location.source.url);
+    if (ratingOnlyLink) {
+      const reviewIdentity = new URL(ratingOnlyLink).hash.replace(/,+$/, '').toLowerCase() || ratingOnlyLink;
+      if (reviewLinks.has(reviewIdentity)) throw new Error('Duplicate rating-only review link');
+      reviewLinks.add(reviewIdentity);
+    }
     const previous = legacy.find(item => item.locationId === location.locationId);
     if (previous?.businessId && previous.businessId !== location.businessId) throw new Error('Reviewed location belongs to another business');
     if (location.placeId) { ids.set(location.locationId, location.placeId); places.set(location.placeId, location.locationId); }

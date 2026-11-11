@@ -10,6 +10,7 @@ const location = {
   source: { url: 'https://coffee.example/locations', reviewedAt: '2026-10-01T00:00:00Z' },
 };
 const validate = (fields = {}) => validateLocations([], [{ ...location, ...fields }], [business]).reviewed[0];
+const reviewSource = { url: 'https://www.google.com/search?q=bean+junction#lrd=0x2a32a2fb3471435f:0xd4dcbc0e8f299a74,1,,,,', reviewedAt: '2026-10-01T00:00:00Z' };
 
 describe('submission location review form', () => {
   it('accepts the filled template with unknown optional values and leaves its input unchanged', () => {
@@ -29,6 +30,22 @@ describe('submission location review form', () => {
     const normalized = validate({ address: null, placeId: 'confirmed-place', rating: 4.8 });
     expect(normalized).toMatchObject({ placeId: 'confirmed-place', rating: 4.8 });
     expect(normalized).not.toHaveProperty('address');
+  });
+
+  it('accepts a rating-only record backed by a specific review link without inventing location data', () => {
+    const normalized = validate({ address: null, rating: 4.5, source: reviewSource });
+    expect(normalized).toMatchObject({ rating: 4.5, source: reviewSource });
+    for (const key of ['address', 'placeId', 'latitude', 'longitude']) expect(normalized).not.toHaveProperty(key);
+  });
+
+  it('rejects a rating-only record with no score, a generic source or duplicate review target', () => {
+    expect(() => validate({ address: null, rating: null, source: reviewSource })).toThrow();
+    expect(() => validate({ address: null, rating: 4.5 })).toThrow();
+    expect(() => validateLocations([], [
+      { ...location, address: null, rating: 4.5, source: reviewSource },
+      { ...location, address: null, locationId: 'loc-other-review', rating: 4.5,
+        source: { ...reviewSource, url: reviewSource.url.replace('q=bean+junction', 'q=other+search') } },
+    ], [business])).toThrow('Duplicate rating-only review link');
   });
 
   it('accepts a sourced static marker and rating together', () => {

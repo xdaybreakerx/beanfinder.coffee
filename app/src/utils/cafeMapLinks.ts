@@ -10,7 +10,7 @@ export function getCafeMapLinks(listing: Listing, state?: string, locations: Sav
   const places = getSavedLocations(listing, locations);
   const links = places.flatMap(place => {
     const identity = place.place_id ?? place.locationId;
-    if (!identity || seen.has(identity) || place.hasCafe === false ||
+    if (!identity || (!place.place_id && !place.address) || seen.has(identity) || place.hasCafe === false ||
         (state && place.state !== state)) return [];
     seen.add(identity);
     const address = typeof place.address === "string" ? place.address : "";

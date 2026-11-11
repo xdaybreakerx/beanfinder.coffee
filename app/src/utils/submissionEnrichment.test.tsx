@@ -22,6 +22,8 @@ vi.mock('./reviewedPlaces', async original => {
       address: '20 Coffee Street, Melbourne VIC 3000, Australia', hasCafe: true, rating: 4.4 },
     { ...fixture, locationId: 'loc-template-unrated', placeId: null, latitude: null, longitude: null,
       address: '30 Coffee Street, Melbourne VIC 3000, Australia', hasCafe: true, rating: null },
+    { ...fixture, locationId: 'loc-template-review-only', placeId: null, latitude: null, longitude: null, address: null,
+      hasCafe: true, rating: 4.5, source: { ...fixture.source, url: 'https://www.google.com/maps?cid=15338341201634499188' } },
   ], [{ businessId: fixture.businessId, Website: 'https://coffee.example/' }]);
   return { ...actual, reviewedPlaces: [...actual.reviewedPlaces, ...filled] };
 });
@@ -31,13 +33,14 @@ afterEach(() => { cleanup(); vi.unstubAllGlobals(); });
 
 describe('filled submission template in the app', () => {
   it('joins the filled form by business ID and displays a non-cafe rating without coordinates or extra dataset edits', () => {
-    expect(getSavedLocations(business)).toHaveLength(3);
+    expect(getSavedLocations(business)).toHaveLength(4);
     const ratings = getListingRatings(business);
     expect(ratings.map(item => [item.locationId, item.rating])).toEqual([
-      ['loc-template-fixture', 4.7], ['loc-template-address', 4.4], ['loc-template-unrated', null],
+      ['loc-template-fixture', 4.7], ['loc-template-review-only', 4.5], ['loc-template-address', 4.4], ['loc-template-unrated', null],
     ]);
-    expect(new URL(ratings[1].href).searchParams.has('query_place_id')).toBe(false);
-    expect(new URL(ratings[1].href).searchParams.get('query')).toContain('20 Coffee Street');
+    expect(ratings[1]).toMatchObject({ ratingOnly: true, href: 'https://www.google.com/maps?cid=15338341201634499188' });
+    expect(new URL(ratings[2].href).searchParams.has('query_place_id')).toBe(false);
+    expect(new URL(ratings[2].href).searchParams.get('query')).toContain('20 Coffee Street');
     expect(getListingRatings({ ...business, Name: 'Renamed', Website: 'https://renamed.example/' })).toEqual(ratings);
     expect(getListingRatings(business, 'WA')).toEqual([]);
   });
@@ -57,6 +60,7 @@ describe('filled submission template in the app', () => {
     expect(mapPlaces.find(place => place.placeId === 'template-fixture-place'))
       .toMatchObject({ manualCoordinates: true, address: '10 Coffee Street, Melbourne VIC 3000, Australia', rating: 4.7, hasCafe: false });
     expect(fetcher).not.toHaveBeenCalled();
+    expect(mapPlaces.some(place => place.locationId === 'loc-template-review-only')).toBe(false);
     expect(createReviewedPois(reviewedPlaces).filter(poi => poi.place_id === 'template-fixture-place')).toHaveLength(1);
   });
 

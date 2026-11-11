@@ -3,7 +3,7 @@ import { getSavedLocations, type SavedListing } from './savedLocations';
 import { roundRating } from './ratings';
 
 type Listing = { businessId?: string; websiteAliases?: string[]; Name: string; Website: string };
-export type ListingRating = { placeId?: string; locationId?: string; rating: number | null; locality: string; address?: string; href: string };
+export type ListingRating = { placeId?: string; locationId?: string; rating: number | null; locality: string; address?: string; href: string; ratingOnly?: boolean };
 
 // Each score belongs to a location. Rank by the highest rated matched location,
 // and expose that location in the UI rather than averaging branch scores.
@@ -19,6 +19,9 @@ export function getListingRatings(listing: Listing, state?: string, saved: Saved
     const url = new URL('https://www.google.com/maps/search/');
     url.search = new URLSearchParams({ api: '1', query: `${place.label ?? listing.Name}, ${address || 'Australia'}`,
       ...(place.place_id ? { query_place_id: place.place_id } : {}) }).toString();
-    return [{ placeId: place.place_id, locationId: place.locationId, rating: typeof place.rating === 'number' && place.rating > 0 && roundRating(place.rating) !== null ? place.rating : null, locality: locality || place.label || place.state || 'Location', address, href: url.href }];
+    const ratingOnly = !place.place_id && !address && Boolean(place.ratingUrl);
+    return [{ placeId: place.place_id, locationId: place.locationId, rating: typeof place.rating === 'number' && place.rating > 0 && roundRating(place.rating) !== null ? place.rating : null, locality: locality || place.label || place.state || 'Location', address,
+      href: ratingOnly ? place.ratingUrl! : url.href, ...(ratingOnly ? { ratingOnly: true } : {}),
+    }];
   }).sort((a, b) => (b.rating ?? -1) - (a.rating ?? -1) || a.locality.localeCompare(b.locality) || (a.placeId ?? a.locationId ?? '').localeCompare(b.placeId ?? b.locationId ?? ''));
 }
