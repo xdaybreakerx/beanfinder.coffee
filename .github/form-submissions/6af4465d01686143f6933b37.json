@@ -1,0 +1,17 @@
+{
+  "submission": {
+    "id": "6af4465d01686143f6933b37",
+    "type": "recommendation",
+    "name": "Benji’s in Sassafras",
+    "website": "https://www.instagram.com/benjis.in.sassafras",
+    "state": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false,
+    "details": ""
+  },
+  "explanationOnly": false,
+  "release": {
+    "previousVersion": "2.0.0",
+    "version": "2.0.1"
+  }
+}

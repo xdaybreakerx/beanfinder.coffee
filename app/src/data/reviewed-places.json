@@ -318,5 +318,22 @@
             "url": "https://kingcarloscoffee.com.au/pages/hurstville",
             "reviewedAt": "2026-11-11T12:05:15Z"
         }
+    },
+    {
+        "locationId": "loc-benjis-sassafras",
+        "businessId": "biz-form-6af4465d01686143f6933b37",
+        "Name": "Benji’s in Sassafras",
+        "state": "VIC",
+        "countryCode": "AU",
+        "hasCafe": true,
+        "address": "372 Mount Dandenong Tourist Rd, Sassafras VIC 3787, Australia",
+        "placeId": "ChIJ-ZliEhEl1moRUGWAB0P3IA4",
+        "latitude": -37.8637221,
+        "longitude": 145.3532966,
+        "rating": 4.9,
+        "source": {
+            "url": "https://curateria.com.au/melbourne/restaurants/benjis-in-sassafras",
+            "reviewedAt": "2026-11-11T12:15:02Z"
+        }
     }
 ]

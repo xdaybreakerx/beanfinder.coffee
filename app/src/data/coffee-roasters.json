@@ -262,6 +262,20 @@
     }
   },
   {
+    "businessId": "biz-form-6af4465d01686143f6933b37",
+    "provenance": {
+      "source": "community-submission",
+      "receipt": ".github/form-submissions/6af4465d01686143f6933b37.json",
+      "proposedAt": "2026-11-11T10:41:35.169Z",
+      "verifiedAt": null
+    },
+    "Name": "Benji’s in Sassafras",
+    "Website": "https://www.instagram.com/benjis.in.sassafras",
+    "State": "VIC",
+    "hasCafe": true,
+    "multiRoaster": false
+  },
+  {
     "businessId": "biz-black-mass-roasters",
     "Name": "Black Mass Roasters",
     "Website": "https://blackmassroasters.com/",
