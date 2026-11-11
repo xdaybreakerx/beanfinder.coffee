@@ -47,7 +47,7 @@ An existing PR is reused; interrupted branch recovery preserves reviewer changes
 
 ## Temporary coordinates
 
-Reviewed place IDs and accepted legacy IDs form the refresh allowlist. The production-only `place-coordinates` endpoint reads Netlify Blobs without calling Google; cached responses use `no-store`. The hourly refresh processes at most four due locations, with at most two concurrent requests, reserving the monthly budget before every attempt. Failures count toward that budget. Visitor traffic cannot trigger coordinate retrieval.
+Reviewed place IDs and accepted legacy IDs form the refresh allowlist, excluding branches with manually reviewed static coordinates. Those markers are loaded directly from reviewed-places.json; they do not enter the coordinate cache or scheduled retrieval queue. The production-only `place-coordinates` endpoint reads Netlify Blobs without calling Google; cached responses use `no-store`. The hourly refresh processes at most four due locations, with at most two concurrent requests, reserving the monthly budget before every attempt. Failures count toward that budget. Visitor traffic cannot trigger coordinate retrieval.
 
 Coordinates renew from day 27 and expire after 29 days. Failed renewals retry after a day while valid; missing/invalid places retry after ten days. Cache reads exclude expired entries. Hourly refresh and daily purge delete expired retrieval keys; monitor scheduled failures and restore cleanup before the 30-day limit. Addresses, ratings and raw provider responses are not stored in the new cache. Provider place identity, Australian country, valid coordinates and actual retrieval/expiry timestamps are required.
 

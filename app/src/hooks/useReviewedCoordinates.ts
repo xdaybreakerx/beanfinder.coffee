@@ -11,10 +11,11 @@ export function useReviewedCoordinates(enabled = true) {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    if (!enabled || !mapPlaces.length) return;
+    const eligiblePlaces = mapPlaces.filter(place => !place.manualCoordinates);
+    if (!enabled || !eligiblePlaces.length) return;
     let controller: AbortController | undefined;
     let active = true;
-    const allowed = new Set(mapPlaces.map(place => place.placeId));
+    const allowed = new Set(eligiblePlaces.map(place => place.placeId));
     const update = async () => {
       if (controller) return;
       controller = new AbortController();
@@ -61,6 +62,6 @@ export function useReviewedCoordinates(enabled = true) {
     return { key: item.placeId, place_id: item.placeId, location: { lat: item.latitude, lng: item.longitude },
       name: place.state ? `${place.Name} (${place.state})` : place.Name, address: "", rating: "N/A" };
   }), [coordinates]);
-  const missingPlaceIds = loaded ? mapPlaces.filter(place => !pois.some(poi => poi.place_id === place.placeId)).map(place => place.placeId) : [];
+  const missingPlaceIds = loaded ? mapPlaces.filter(place => !place.manualCoordinates && !pois.some(poi => poi.place_id === place.placeId)).map(place => place.placeId) : [];
   return { pois, pending, error, missingPlaceIds };
 }

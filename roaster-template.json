@@ -1,0 +1,32 @@
+{
+  "_usage": "For location, map marker or rating updates, use PR-submission-template.json and copy the completed object into app/src/data/reviewed-places.json. This older business template is only needed to change the business fields already created by the PR; keep that submission's businessId and provenance.",
+  "business": {
+    "businessId": "biz-form-6ae2dd8a328b6137b5c2d4c9",
+    "Name": "Bean Junction",
+    "Website": "https://www.beanjunction.coffee/",
+    "State": "WA",
+    "hasCafe": false,
+    "multiRoaster": false,
+    "provenance": {
+      "source": "community-submission",
+      "receipt": ".github/form-submissions/6ae2dd8a328b6137b5c2d4c9.json",
+      "proposedAt": "2026-10-29T05:45:48.696Z",
+      "verifiedAt": null
+    }
+  },
+  "locations": [
+    {
+      "locationId": "loc-bean-junction-main",
+      "businessId": "biz-form-6ae2dd8a328b6137b5c2d4c9",
+      "Name": "Bean Junction",
+      "address": "STREET_NUMBER_AND_STREET, SUBURB WA POSTCODE, Australia",
+      "state": "WA",
+      "countryCode": "AU",
+      "hasCafe": false,
+      "source": {
+        "url": "https://www.beanjunction.coffee/",
+        "reviewedAt": "REPLACE_WITH_ACTUAL_REVIEW_TIME_UTC"
+      }
+    }
+  ]
+}
