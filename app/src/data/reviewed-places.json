@@ -301,5 +301,22 @@
       "url": "https://www.google.com/search?q=bean+junction#lrd=0x2a32a2fb3471435f:0xd4dcbc0e8f299a74,1,,,,",
             "reviewedAt": "2026-11-11T11:33:00Z"
         }
+    },
+    {
+        "locationId": "loc-king-carlos-hurstville",
+        "businessId": "biz-form-6aea9164aa10ce281fe46460",
+        "Name": "King Carlos Coffee Roasters",
+        "state": "NSW",
+        "countryCode": "AU",
+        "hasCafe": true,
+        "address": "18 Weston Road, Hurstville NSW 2220, Australia",
+        "placeId": "ChIJI8z-9RC5EmsRGK7-5XmSOCY",
+        "latitude": -33.9585104,
+        "longitude": 151.1034231,
+        "rating": 4.8,
+        "source": {
+            "url": "https://kingcarloscoffee.com.au/pages/hurstville",
+            "reviewedAt": "2026-11-11T12:05:15Z"
+        }
     }
 ]
