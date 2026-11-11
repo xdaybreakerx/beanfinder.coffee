@@ -7,12 +7,29 @@ import { getSavedLocations, indexSavedLocations } from './savedLocations';
 import { getCafeMapLinks } from './cafeMapLinks';
 import { getListingRatings } from './listingRatings';
 import { mapPlaces } from './mapPlaces';
+import roasterRecords from '../data/coffee-roasters.json';
+import sellerRecords from '../data/coffee-roasters-multi.json';
 
 const business: Business = { businessId: 'biz-example', Name: 'Example', Website: 'https://example.coffee/', State: 'VIC, NSW', hasCafe: true, multiRoaster: false, provenance: { source: 'legacy-directory', verifiedAt: null } };
 const identity = { locationId: 'loc-example', placeId: 'google-example', businessId: business.businessId };
 const reviewed = { ...identity, Name: 'Example branch', state: 'VIC', countryCode: 'AU', hasCafe: true, source: { url: 'https://example.coffee/locations', reviewedAt: '2026-10-01T00:00:00Z' } };
 
 describe('shared business schema', () => {
+  it('includes every source business in its directory classification as submissions grow', () => {
+    expect(businesses).toEqual([...roasterRecords, ...sellerRecords]);
+    expect(roasters).toEqual(roasterRecords);
+    expect(sellers).toEqual(sellerRecords);
+  });
+  it.each([1, 25, 250])('accepts %i additional roasters and sellers without a fixed directory size', count => {
+    const additions = Array.from({ length: count }, (_, index) => ({
+      ...business, businessId: `biz-added-${index}`, Website: `https://added-${index}.example/`,
+    }));
+    const sellerAdditions = additions.map(item => ({
+      ...item, businessId: `${item.businessId}-seller`, Website: `${item.Website}seller/`, multiRoaster: true, State: 'all',
+    }));
+    expect(validateDirectory([...roasterRecords, ...additions], [...sellerRecords, ...sellerAdditions]))
+      .toEqual([...roasterRecords, ...additions, ...sellerRecords, ...sellerAdditions]);
+  });
   it('normalizes URL variants while keeping distinct paths, ports and queries', () => {
     expect(websiteIdentity('http://WWW.EXAMPLE.coffee/#contact')).toBe(websiteIdentity(business.Website));
     expect(websiteIdentity('https://example.coffee/brand/')).not.toBe(websiteIdentity(business.Website));
@@ -92,8 +109,6 @@ describe('location schema and durable associations', () => {
     expect(reviewedPlaces[0].businessId).toBe(listing.businessId);
   });
   it('preserves all markers and resolves the shared legacy ID using operator evidence', () => {
-    expect(businesses).toHaveLength(239);
-    expect(sellers).toHaveLength(8);
     expect(legacyIdentities).toHaveLength(218);
     expect(mapPlaces).toHaveLength(218);
     const conflict = legacyIdentities.find(item => item.businessId === null)!;

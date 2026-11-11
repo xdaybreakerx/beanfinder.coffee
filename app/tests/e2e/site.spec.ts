@@ -1,6 +1,8 @@
 import { expect, test } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { renderedContrast } from './rowContrast';
+import roasterRecords from '../../src/data/coffee-roasters.json';
+import sellerRecords from '../../src/data/coffee-roasters-multi.json';
 
 test.beforeEach(async ({ page }) => {
   await page.route("https://www.googletagmanager.com/**", (route) => route.abort());
@@ -28,10 +30,10 @@ test("home navigation and state browsing", async ({ page }) => {
 
 test('curated identities produce unique rows, corrected state filters and preserved branch links', async ({ page }) => {
   await page.goto('/');
-  await expect(page.locator('.directory-stats dd').first()).toHaveText('239');
+  await expect(page.locator('.directory-stats dd').first()).toHaveText(String(roasterRecords.length + sellerRecords.length));
   await page.goto('/roasters/');
   const ids = await page.locator('.roaster-row').evaluateAll(rows => rows.map(row => row.getAttribute('data-business-id')));
-  expect(ids).toHaveLength(231);
+  expect(ids.sort()).toEqual(roasterRecords.map(record => record.businessId).sort());
   expect(new Set(ids).size).toBe(ids.length);
   const search = page.getByLabel('Find a roaster');
   await search.fill('Coffee in Common');
@@ -323,7 +325,7 @@ test('directory normalizes pages and old seller filter URLs open the dedicated p
   await expect(page).not.toHaveURL(/page=/);
   await page.goto('/roasters/?type=multi&state=VIC&page=99');
   await expect(page).toHaveURL(/\/roasters\/online-subscriptions\/1$/);
-  await expect(page.locator('.seller-row')).toHaveCount(8);
+  await expect(page.locator('.seller-row')).toHaveCount(sellerRecords.length);
   await page.getByRole('navigation', { name: 'Main navigation' }).getByRole('link', { name: 'Directory', exact: true }).click();
   await page.getByRole('button', { name: 'Clear filters' }).click();
   await expect(page.getByLabel('Find a roaster')).toBeFocused();
@@ -614,9 +616,10 @@ test("multi-roaster stores show the supplied subscription, selection and brew de
     { name: 'Three Thousand Thieves', domain: 'threethousandthieves.com', subscription: true, selection: ['Surprise me'], brew: ['Filter', 'Espresso', 'Decaf'] },
   ];
   const rows = page.locator('.seller-row');
-  await expect(rows).toHaveCount(8);
-  await expect(page.locator('.subscription-badge')).toHaveCount(5);
-  await expect(page.locator('.store-only')).toHaveCount(3);
+  expect((await rows.evaluateAll(elements => elements.map(row => row.getAttribute('data-business-id')))).sort())
+    .toEqual(sellerRecords.map(record => record.businessId).sort());
+  await expect(page.locator('.subscription-badge')).toHaveCount(sellerRecords.filter(record => record.subscription === true).length);
+  await expect(page.locator('.store-only')).toHaveCount(sellerRecords.filter(record => record.subscription === false).length);
   expect(await page.locator('.brew-badge').first().evaluate(element => parseFloat(getComputedStyle(element).fontSize))).toBeLessThan(
     await page.locator('.selection-badge').first().evaluate(element => parseFloat(getComputedStyle(element).fontSize))
   );
@@ -665,7 +668,7 @@ test("multi-roaster stores show the supplied subscription, selection and brew de
   }
   await page.goto('/roasters/?type=multi&state=VIC');
   await expect(page).toHaveURL(/\/roasters\/online-subscriptions\/1$/);
-  await expect(page.locator('.seller-row')).toHaveCount(8);
+  await expect(page.locator('.seller-row')).toHaveCount(sellerRecords.length);
   await expect(page.locator('.seller-row').filter({ hasText: 'Acuratore' })).toHaveCount(1);
   await page.goto('/roasters/VIC/false/1');
   await expect(page.getByRole('heading', { name: 'Acuratore (opens in a new tab)', exact: true })).toHaveCount(0);
