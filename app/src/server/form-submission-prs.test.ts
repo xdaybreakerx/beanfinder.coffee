@@ -175,6 +175,54 @@ describe("submission validation and directory changes", () => {
     expect(() => proposeChange(parseSubmission(payload({ 'roaster-name': existing.Name }))!, data())).toThrow('Same-name business with a different website requires manual review');
   });
 
+  it.each(['primary', 'alias', 'seller'])('accepts Benji’s Instagram profile alongside an existing %s profile', placement => {
+    const profile = 'https://www.instagram.com/other.coffee/';
+    const files = data();
+    if (placement === 'seller') files[MULTI] = JSON.stringify([{ ...multi, Website: profile }]);
+    else files[ROASTERS] = JSON.stringify([{ ...existing, ...(placement === 'primary' ? { Website: profile } : { websiteAliases: [profile] }) }]);
+    const submission = parseSubmission(payload({
+      'roaster-name': 'Benji’s in Sassafras', 'roaster-website': 'https://www.instagram.com/benjis.in.sassafras',
+      state: 'VIC', 'has-cafe': 'true', 'multi-roaster': 'false', details: '',
+    }))!;
+    const proposal = proposeChange(submission, files)!;
+    expect(proposal.roaster).toMatchObject({ Name: 'Benji’s in Sassafras', Website: submission.website, State: 'VIC', hasCafe: true });
+    expect(JSON.parse(proposal.contents[ROASTERS])).toHaveLength(2);
+    expect(proposeChange(submission, { ...files, ...proposal.contents })).toBeUndefined();
+  });
+
+  it.each([
+    'https://instagram.com/OTHER.coffee',
+    'http://www.instagram.com/other.coffee/',
+    'https://www.instagram.com/other.coffee/?igsh=tracking#profile',
+  ])('recognizes the same Instagram account as a duplicate: %s', website => {
+    const files = { ...data(), [ROASTERS]: JSON.stringify([{ ...existing, Website: 'https://www.instagram.com/other.coffee/' }]) };
+    expect(proposeChange(parseSubmission(payload({ 'roaster-website': website }))!, files)).toBeUndefined();
+  });
+
+  it('reserves Instagram aliases and rejects conflicting names and corrections', () => {
+    const files = { ...data(), [ROASTERS]: JSON.stringify([{ ...existing, websiteAliases: ['https://www.instagram.com/other.coffee/'] }]) };
+    expect(proposeChange(parseSubmission(payload({ 'roaster-website': 'https://instagram.com/OTHER.coffee/?igsh=tracking' }))!, files)).toBeUndefined();
+    expect(() => proposeChange(parseSubmission(payload({ 'roaster-name': existing.Name, 'roaster-website': 'https://instagram.com/new.coffee/' }))!, files))
+      .toThrow('Same-name business with a different website requires manual review');
+    expect(() => proposeChange(parseSubmission(payload({ 'submission-type': 'issue', 'original-website': multi.Website, 'roaster-website': 'https://instagram.com/OTHER.coffee/?igsh=tracking' }))!, files))
+      .toThrow('belongs to another listing');
+    const correction = proposeChange(parseSubmission(payload({ 'submission-type': 'issue', 'original-website': 'https://instagram.com/OTHER.coffee/?igsh=tracking' }))!, files)!;
+    expect(correction.roaster.businessId).toBe(existing.businessId);
+  });
+
+  it.each([
+    'https://www.instagram.com/',
+    'https://www.instagram.com/explore/',
+    'https://www.instagram.com/accounts/',
+    'https://www.instagram.com/p/coffee-photo/',
+    'https://www.instagram.com/reel/coffee-video/',
+    'https://www.instagram.com:8443/new.coffee/',
+  ])('keeps non-profile Instagram URLs subject to shared-domain review: %s', website => {
+    const files = { ...data(), [ROASTERS]: JSON.stringify([{ ...existing, Website: 'https://instagram.com/other.coffee/' }]) };
+    expect(() => proposeChange(parseSubmission(payload({ 'roaster-website': website }))!, files))
+      .toThrow('Same-domain business requires manual review');
+  });
+
   it('clears seller-only options on reclassification while retaining identity', () => {
     const input = { ...data(), [MULTI]: JSON.stringify([{ ...multi, subscription: true, selection: ['choose'], brew: ['filter'] }]) };
     const proposal = proposeChange(parseSubmission(payload({ 'submission-type': 'issue', 'roaster-name': multi.Name, 'roaster-website': multi.Website, state: 'WA', 'multi-roaster': 'false' }))!, input)!;
@@ -186,6 +234,23 @@ describe("submission validation and directory changes", () => {
 });
 
 describe("GitHub ingestion", () => {
+  it('creates an Instagram recommendation PR and skips later submissions for the same account', async () => {
+    const gh = github();
+    gh.commits.get('main-sha')![ROASTERS] = JSON.stringify([{ ...existing, Website: 'https://instagram.com/other.coffee/' }]);
+    const options = { token: 'test-token', fetch: gh.fetcher };
+    const input = payload({
+      'roaster-name': 'Benji’s in Sassafras', 'roaster-website': 'https://www.instagram.com/benjis.in.sassafras',
+      state: 'VIC', 'has-cafe': 'true', details: '',
+    });
+    expect((await createSubmissionPR(input, options)).status).toBe('created');
+    expect(gh.prs).toHaveLength(1);
+    // Model the first proposal being merged before another submission arrives.
+    gh.refs.set('main', gh.refs.get('forms/submission-123')!);
+    expect((await createSubmissionPR(payload({ 'roaster-website': 'https://instagram.com/BENJIS.IN.SASSAFRAS/?igsh=tracking' }, 'submission-456'), options)).status).toBe('duplicate');
+    expect(gh.prs).toHaveLength(1);
+    expect(gh.refs.has('forms/submission-456')).toBe(false);
+  });
+
   it("atomically creates a branch and review PR without modifying main or disclosing raw metadata", async () => {
     const gh = github();
     const result = await createSubmissionPR(payload({ email: "private@example.com", details: "<script>alert(1)</script> @reviewer" }), { token: "test-token", fetch: gh.fetcher });
