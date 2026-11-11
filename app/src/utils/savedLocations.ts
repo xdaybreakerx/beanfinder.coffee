@@ -3,9 +3,10 @@ import { legacyIdentities, reviewedPlaces } from './reviewedPlaces';
 import { businessWebsites, websiteIdentity } from './directorySchema';
 import { isAustralianPlace, type PlaceLocation } from './australianPlaces';
 import type { LegacyIdentity, ReviewedLocation } from './locationSchema';
+import { googleReviewUrl } from './googleReviewUrl';
 
 type Listing = { businessId?: string; Website: string; websiteAliases?: string[] };
-export type SavedLocation = PlaceLocation & { place_id?: string; state?: string; rating?: unknown; locationId?: string; hasCafe?: boolean; label?: string };
+export type SavedLocation = PlaceLocation & { place_id?: string; state?: string; rating?: unknown; locationId?: string; hasCafe?: boolean; label?: string; ratingUrl?: string };
 export type SavedListing = { Website: string; place_ids?: SavedLocation[] };
 
 // Index once for rendering. Keep every branch, deduplicate by durable identity, and let
@@ -28,12 +29,17 @@ export function indexSavedLocations(saved: SavedListing[], identities: LegacyIde
       ...(identity ? { locationId: identity.locationId } : {}),
       ...(review ? { locationId: review.locationId, state: review.state, hasCafe: review.hasCafe, label: review.Name,
         ...(review.address ? { address: review.address } : {}) } : {}),
+      ...(review?.rating !== undefined ? { rating: review.rating } : {}),
+      ...(review?.latitude !== undefined ? { latitude: review.latitude, longitude: review.longitude } : {}),
     });
   }
   // Independently sourced addresses work before a Google ID or coordinates exist.
   for (const place of reviewed) add(place.businessId, place.placeId ?? place.locationId, {
     ...(place.placeId ? { place_id: place.placeId } : {}),
     ...(place.address ? { address: place.address } : {}),
+    ...(place.rating !== undefined ? { rating: place.rating } : {}),
+    ...(place.latitude !== undefined ? { latitude: place.latitude, longitude: place.longitude } : {}),
+    ...(!place.placeId && !place.address ? { ratingUrl: googleReviewUrl(place.source.url) } : {}),
     locationId: place.locationId, state: place.state, hasCafe: place.hasCafe, label: place.Name,
   });
   return new Map([...byBusiness].map(([id, places]) => [id, [...places.values()]]));

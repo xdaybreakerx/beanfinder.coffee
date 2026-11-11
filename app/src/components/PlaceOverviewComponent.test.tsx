@@ -13,6 +13,23 @@ vi.mock("@vis.gl/react-google-maps", () => { const places = {
 }; return { useMapsLibrary: () => places }; });
 beforeEach(() => { mocks.country = "AU"; mocks.fetchFields.mockReset().mockResolvedValue(undefined); });
 afterEach(cleanup);
+it('shows reviewed address and rating without requesting Places details or reserving a request', async () => {
+  const reserveDetails = vi.fn(() => true);
+  const view = render(<PlaceOverviewComponent place={{ ...mapPlaces[0], address: '10 Coffee Street, Perth WA 6000, Australia', rating: 4.8 }} reserveDetails={reserveDetails} />);
+  await act(async () => {});
+  expect(view.getByText('10 Coffee Street, Perth WA 6000, Australia')).toBeTruthy();
+  expect(view.getByText('Google rating: 4.8 out of 5')).toBeTruthy();
+  expect(reserveDetails).not.toHaveBeenCalled();
+  expect(mocks.fetchFields).not.toHaveBeenCalled();
+});
+it('does not request Places details for a static marker without a supplied address', async () => {
+  const reserveDetails = vi.fn(() => true);
+  const view = render(<PlaceOverviewComponent place={{ ...mapPlaces[0], address: undefined, manualCoordinates: true }} reserveDetails={reserveDetails} />);
+  await act(async () => {});
+  expect(view.getByText('Open Google Maps for address details.')).toBeTruthy();
+  expect(reserveDetails).not.toHaveBeenCalled();
+  expect(mocks.fetchFields).not.toHaveBeenCalled();
+});
 it("fetches only current address/country and keeps curated identity and directions separate", async () => {
   const view = render(<PlaceOverviewComponent place={mapPlaces[0]} reserveDetails={() => true} />);
   await act(async () => {});

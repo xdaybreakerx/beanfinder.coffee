@@ -1,11 +1,14 @@
 import legacy from "../data/coffee-roasters-updated-from-place_ids.json";
-import { isAustralianPlace, type PlaceLocation } from "./australianPlaces";
+import { createAustralianPois, isAustralianPlace, type PlaceLocation } from "./australianPlaces";
 import { legacyIdentities, reviewedPlaces, type ReviewedPlace } from "./reviewedPlaces";
 import { businesses } from './directory';
 import type { Business } from './directorySchema';
 import type { LegacyIdentity } from './locationSchema';
 
-export type MapPlace = Pick<ReviewedPlace, "Name" | "Website" | "state"> & { placeId: string; locationId?: string; businessId?: string | null; hasCafe: boolean | null };
+export type MapPlace = Pick<ReviewedPlace, "Name" | "Website" | "state"> & {
+  placeId: string; locationId?: string; businessId?: string | null; hasCafe: boolean | null;
+  address?: string; rating?: number | null; manualCoordinates?: boolean;
+};
 type LegacyListing = { Name: string; Website: string; place_ids?: Array<PlaceLocation & { place_id?: string; state?: string }> };
 
 // Reuse the accepted snapshot's known Australian IDs without migrating its provider data.
@@ -21,9 +24,19 @@ export function createMapPlaces(snapshot: LegacyListing[], reviewed: ReviewedPla
   }
   for (const place of reviewed) {
     if (!place.placeId) continue;
-    places.set(place.placeId, { placeId: place.placeId, Name: place.Name, Website: place.Website, state: place.state, locationId: place.locationId, businessId: place.businessId, hasCafe: place.hasCafe });
+    places.set(place.placeId, { placeId: place.placeId, Name: place.Name, Website: place.Website, state: place.state, locationId: place.locationId, businessId: place.businessId, hasCafe: place.hasCafe,
+      ...(place.address ? { address: place.address } : {}),
+      ...(place.rating !== undefined ? { rating: place.rating } : {}),
+      ...(isAustralianPlace(place) ? { manualCoordinates: true } : {}),
+    });
   }
   return [...places.values()];
+}
+
+export function createReviewedPois(reviewed: ReviewedPlace[]) {
+  return createAustralianPois(reviewed.map(place => ({ Name: place.Name,
+    place_ids: [{ ...place, place_id: place.placeId, rating: place.rating ?? undefined }],
+  })));
 }
 
 export const mapPlaces = createMapPlaces(legacy, reviewedPlaces, legacyIdentities, businesses);

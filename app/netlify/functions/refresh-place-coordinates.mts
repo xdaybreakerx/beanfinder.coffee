@@ -6,7 +6,7 @@ import { mapPlaces } from "../../src/utils/mapPlaces";
 export default async function handler(_request: Request, context: Context) {
   if (context.deploy.context !== "production") return new Response(null, { status: 204 });
   const result = await refreshCoordinates({
-    places: mapPlaces, store: getStore({ name: "place-coordinates-v1", consistency: "strong" }),
+    places: mapPlaces.filter(place => !place.manualCoordinates), store: getStore({ name: "place-coordinates-v1", consistency: "strong" }),
     apiKey: process.env.GOOGLE_PLACES_SERVER_API_KEY,
     limit: monthlyLimit(process.env.PLACE_COORDINATES_MONTHLY_LIMIT),
   });

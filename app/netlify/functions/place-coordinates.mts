@@ -8,9 +8,10 @@ export default async function handler(request: Request, context: Context) {
   if (request.method !== "GET") return new Response(null, { status: 405, headers: { ...headers, Allow: "GET" } });
   if (context.deploy.context !== "production") return new Response(null, { status: 503, headers });
   const placeId = new URL(request.url).searchParams.get("place_id") ?? "";
-  if (placeId && !mapPlaces.some(place => place.placeId === placeId)) return new Response(null, { status: 404, headers });
+  const eligiblePlaces = mapPlaces.filter(place => !place.manualCoordinates);
+  if (placeId && !eligiblePlaces.some(place => place.placeId === placeId)) return new Response(null, { status: 404, headers });
   try {
-    const places = placeId ? mapPlaces.filter(place => place.placeId === placeId) : mapPlaces;
+    const places = placeId ? eligiblePlaces.filter(place => place.placeId === placeId) : eligiblePlaces;
     const coordinates = await readCachedCoordinates(getStore({ name: "place-coordinates-v1", consistency: "strong" }), places);
     const cached = new Set(coordinates.map(place => place.placeId));
     return Response.json({ coordinates, missingPlaceIds: places.filter(place => !cached.has(place.placeId)).map(place => place.placeId) }, { headers });

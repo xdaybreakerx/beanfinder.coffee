@@ -8,7 +8,7 @@ import refresh, { config } from "../../netlify/functions/refresh-place-coordinat
 const storage = vi.hoisted(() => ({ getStore: vi.fn(), readCachedCoordinates: vi.fn(), refreshCoordinates: vi.fn(), purgeExpiredCoordinates: vi.fn() }));
 vi.mock("@netlify/blobs", () => ({ getStore: storage.getStore }));
 vi.mock("./place-coordinates", async original => ({ ...await original<typeof import("./place-coordinates")>(), readCachedCoordinates: storage.readCachedCoordinates, refreshCoordinates: storage.refreshCoordinates, purgeExpiredCoordinates: storage.purgeExpiredCoordinates }));
-vi.mock("../utils/mapPlaces", () => ({ mapPlaces: [{ placeId: "reviewed" }, { placeId: "missing" }] }));
+vi.mock("../utils/mapPlaces", () => ({ mapPlaces: [{ placeId: "reviewed" }, { placeId: "missing" }, { placeId: "manual", manualCoordinates: true }] }));
 const context = (deploy: string) => ({ deploy: { context: deploy } }) as Context;
 const request = new Request("https://beanfinder.coffee/.netlify/functions/place-coordinates");
 afterEach(() => { vi.resetAllMocks(); vi.unstubAllEnvs(); vi.unstubAllGlobals(); vi.restoreAllMocks(); });
@@ -18,6 +18,7 @@ describe("production coordinate functions", () => {
     expect((await handler(request, context("deploy-preview"))).status).toBe(503);
     expect((await handler(new Request(request.url, { method: "POST" }), context("production"))).status).toBe(405);
     expect((await handler(new Request("https://beanfinder.coffee/?place_id=unknown"), context("production"))).status).toBe(404);
+    expect((await handler(new Request("https://beanfinder.coffee/?place_id=manual"), context("production"))).status).toBe(404);
     await purge(request, context("deploy-preview"));
     await refresh(request, context("deploy-preview"));
     expect(storage.getStore).not.toHaveBeenCalled();
@@ -54,6 +55,7 @@ describe("production coordinate functions", () => {
     storage.refreshCoordinates.mockResolvedValue({ processed: 4, refreshed: 4, failed: 0, disabled: false });
     expect((await refresh(request, context("production"))).status).toBe(204);
     expect(storage.refreshCoordinates).toHaveBeenCalledWith(expect.objectContaining({ apiKey: "private-server-key", limit: 1000 }));
+    expect(storage.refreshCoordinates.mock.lastCall![0].places).toEqual([{ placeId: 'reviewed' }, { placeId: 'missing' }]);
     expect(config.schedule).toBe("17 * * * *");
   });
 
