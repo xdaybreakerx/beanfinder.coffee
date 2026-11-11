@@ -1,4 +1,4 @@
-import { AU_STATES, businessWebsites, websiteIdentity, validateDirectory, DirectoryError, type Business } from '../utils/directorySchema.ts';
+import { AU_STATES, websiteIdentity, validateDirectory, DirectoryError, type Business } from '../utils/directorySchema.ts';
 const REPOSITORY = "xdaybreakerx/beanfinder.coffee";
 const MAIN = "main";
 const ROASTERS = "app/src/data/coffee-roasters.json";
@@ -89,12 +89,33 @@ function checkDirectory(roasters: Roaster[], sellers: Roaster[]) {
   catch (error) { if (error instanceof DirectoryError) throw new SubmissionError(error.message); throw error; }
 }
 
+// Instagram hosts independent businesses under account paths. Only profile URLs
+// qualify; platform pages and posts still need manual review on a shared domain.
+const INSTAGRAM_ROUTES = new Set(['about', 'accounts', 'ads', 'api', 'challenge', 'developer', 'developers', 'direct', 'directory', 'emails', 'explore', 'legal', 'login', 'oauth', 'p', 'privacy', 'reel', 'reels', 'stories', 'terms', 'web']);
+function instagramProfile(raw: string): string | undefined {
+  const url = new URL(raw);
+  if (url.hostname.replace(/^www\./, '') !== 'instagram.com' || url.port) return undefined;
+  const account = /^\/([a-z0-9._]{1,30})\/?$/i.exec(url.pathname)?.[1].toLowerCase();
+  return account && !INSTAGRAM_ROUTES.has(account) ? account : undefined;
+}
+function submissionWebsiteIdentity(raw: string): string {
+  const account = instagramProfile(raw);
+  return account ? `instagram.com/${account}` : websiteIdentity(raw);
+}
+function requiresSameDomainReview(existing: string, proposed: string): boolean {
+  if (new URL(existing).hostname.replace(/^www\./, '') !== new URL(proposed).hostname.replace(/^www\./, '')) return false;
+  const existingAccount = instagramProfile(existing);
+  const proposedAccount = instagramProfile(proposed);
+  return !existingAccount || !proposedAccount || existingAccount === proposedAccount;
+}
+
 export function proposeChange(submission: Submission, files: Record<string, string>) {
   const datasets = [ROASTERS, MULTI].map(path => ({ path, records: JSON.parse(files[path]) as Roaster[] }));
   checkDirectory(datasets[0].records, datasets[1].records);
   const entries = datasets.flatMap(dataset => dataset.records.map((roaster, index) => ({ dataset, roaster, index })));
-  const url = websiteIdentity(submission.originalWebsite ?? submission.website);
-  const byWebsite = entries.filter(entry => businessWebsites(entry.roaster).includes(url));
+  const url = submissionWebsiteIdentity(submission.originalWebsite ?? submission.website);
+  const websites = (roaster: Roaster) => [roaster.Website, ...(roaster.websiteAliases ?? [])];
+  const byWebsite = entries.filter(entry => websites(entry.roaster).some(website => submissionWebsiteIdentity(website) === url));
   const byName = entries.filter(entry => entry.roaster.Name.trim().toLowerCase() === submission.name.toLowerCase());
   const matches = submission.originalWebsite ? byWebsite : [...new Set([...byWebsite, ...byName])];
   if (matches.length > 1) throw new SubmissionError("Multiple roasters match; supply the original website");
@@ -107,12 +128,11 @@ export function proposeChange(submission: Submission, files: Record<string, stri
   }
   if (submission.type === "issue" && !matches.length) throw new SubmissionError("No existing roaster matches this correction");
   const match = matches[0];
-  if (submission.type === "issue" && entries.some(entry => entry !== match && businessWebsites(entry.roaster).includes(websiteIdentity(submission.website)))) {
+  if (submission.type === "issue" && entries.some(entry => entry !== match && websites(entry.roaster).some(website => submissionWebsiteIdentity(website) === submissionWebsiteIdentity(submission.website)))) {
     throw new SubmissionError("The proposed website belongs to another listing");
   }
   if (submission.type === "recommendation" && entries.some(entry =>
-      [entry.roaster.Website, ...(entry.roaster.websiteAliases ?? [])].some(website =>
-        new URL(website).hostname.replace(/^www\./, '') === new URL(submission.website).hostname.replace(/^www\./, '')))) {
+      websites(entry.roaster).some(website => requiresSameDomainReview(website, submission.website)))) {
     throw new SubmissionError("Same-domain business requires manual review");
   }
   const roaster: Roaster = {
@@ -126,10 +146,10 @@ export function proposeChange(submission: Submission, files: Record<string, stri
     multiRoaster: submission.multiRoaster ?? match?.roaster.multiRoaster!,
   };
   if (roaster.State.toLowerCase() === "all" && !roaster.multiRoaster) throw new SubmissionError("Select a state for an individual roaster");
-  if (match && websiteIdentity(match.roaster.Website) !== websiteIdentity(roaster.Website)) {
+  if (match && submissionWebsiteIdentity(match.roaster.Website) !== submissionWebsiteIdentity(roaster.Website)) {
     // Old URLs remain reserved for this identity, including its saved locations.
     roaster.websiteAliases = [...new Set([...(match.roaster.websiteAliases ?? []), match.roaster.Website])]
-      .filter(alias => websiteIdentity(alias) !== websiteIdentity(roaster.Website));
+      .filter(alias => submissionWebsiteIdentity(alias) !== submissionWebsiteIdentity(roaster.Website));
     if (!roaster.websiteAliases.length) delete roaster.websiteAliases;
   }
   if (!roaster.multiRoaster) { delete roaster.subscription; delete roaster.selection; delete roaster.brew; }
