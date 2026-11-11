@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import legacy from "../data/coffee-roasters-updated-from-place_ids.json";
 import { createMapPlaces, mapPlaces } from "./mapPlaces";
 import { createAustralianPois } from "./australianPlaces";
-import type { ReviewedPlace } from "./reviewedPlaces";
+import { reviewedPlaces, type ReviewedPlace } from "./reviewedPlaces";
 
 describe("known map identities", () => {
   it('keeps address-only reviews out of the provider coordinate refresh allowlist', () => {
@@ -11,9 +11,13 @@ describe("known map identities", () => {
     expect(createMapPlaces([], [review])).toEqual([]);
   });
   it("covers every accepted legacy marker without carrying provider fields into the registry", () => {
-    expect(mapPlaces.map(place => place.placeId)).toEqual(createAustralianPois(legacy).map(poi => poi.place_id));
-    expect(mapPlaces).toHaveLength(218);
-    expect(mapPlaces.every(place => Object.keys(place).sort().join(",") === "Name,Website,businessId,hasCafe,locationId,placeId,state")).toBe(true);
+    expect(mapPlaces.map(place => place.placeId)).toEqual([...new Set([
+      ...createAustralianPois(legacy).map(poi => poi.place_id),
+      ...reviewedPlaces.flatMap(place => place.placeId ? [place.placeId] : []),
+    ])]);
+    expect(new Set(mapPlaces.map(place => place.placeId)).size).toBe(mapPlaces.length);
+    const fields = ['Name', 'Website', 'businessId', 'hasCafe', 'locationId', 'placeId', 'state', 'address', 'rating', 'manualCoordinates'];
+    expect(mapPlaces.every(place => Object.keys(place).every(key => fields.includes(key)))).toBe(true);
   });
 
   it("excludes foreign and invalid locations, deduplicates IDs and applies reviewed labels", () => {

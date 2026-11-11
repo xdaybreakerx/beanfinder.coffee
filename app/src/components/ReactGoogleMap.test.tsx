@@ -3,7 +3,10 @@ import { act, cleanup, fireEvent, render, type RenderResult } from "@testing-lib
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import MonolithicGoogleMap from "./ReactGoogleMap";
 import { useMarkers } from "../hooks/useMarkers";
-import { mapPlaces } from "../utils/mapPlaces";
+import { createReviewedPois, mapPlaces } from "../utils/mapPlaces";
+import { createAustralianPois } from '../utils/australianPlaces';
+import { reviewedPlaces } from '../utils/reviewedPlaces';
+import legacySnapshot from '../data/coffee-roasters-updated-from-place_ids.json';
 import { COORDINATE_TTL } from "../utils/placeCoordinates";
 
 const mocks = vi.hoisted(() => ({
@@ -227,7 +230,9 @@ describe("cafe identities and cached markers", () => {
     expect(markers.every(poi => mapPlaces.find(place => place.placeId === poi.place_id)?.hasCafe === true)).toBe(true);
     fireEvent.click(renderer.getByLabelText("Cafe locations only"));
     markers = vi.mocked(useMarkers).mock.lastCall![1];
-    expect(markers).toHaveLength(218);
+    expect(new Set(markers.map(poi => poi.place_id))).toEqual(new Set([
+      ...createAustralianPois(legacySnapshot), ...createReviewedPois(reviewedPlaces),
+    ].map(poi => poi.place_id)));
   });
   it("replaces a known location with fresh coordinates without duplicates", async () => {
     const now = Date.now(); const known = mapPlaces.find(place => place.hasCafe === true)!;

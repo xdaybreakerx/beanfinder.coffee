@@ -14,7 +14,9 @@ describe("form PR release validation in an Actions checkout", () => {
     { base: "1.0.0", proposed: "1.0.1", changesData: true, succeeds: true },
     { base: "1.0.1", proposed: "1.0.1", changesData: true, succeeds: false },
     { base: "1.0.0", proposed: "1.0.0", changesData: false, succeeds: true },
-  ])("checks $proposed against $base (data change: $changesData)", ({ base, proposed, changesData, succeeds }) => {
+    { base: "1.0.0", proposed: "1.0.1", changesData: true, dataFile: 'reviewed-places', succeeds: true },
+    { base: "1.0.1", proposed: "1.0.1", changesData: true, dataFile: 'reviewed-places', succeeds: false },
+  ])("checks $proposed against $base (data change: $changesData)", ({ base, proposed, changesData, succeeds, dataFile = 'coffee-roasters' }) => {
     const temp = mkdtempSync(join(tmpdir(), "beanfinder-release-check-"));
     fixtures.push(temp);
     const repo = join(temp, "source");
@@ -34,12 +36,12 @@ describe("form PR release validation in an Actions checkout", () => {
       writeFileSync(join(repo, "app/package-lock.json"), JSON.stringify({ name: "fixture", version, packages: { "": { name: "fixture", version } } }));
     };
     writeVersions(base);
-    for (const name of ["coffee-roasters", "coffee-roasters-multi"]) writeFileSync(join(repo, `app/src/data/${name}.json`), "[]");
+    for (const name of ["coffee-roasters", "coffee-roasters-multi", "reviewed-places"]) writeFileSync(join(repo, `app/src/data/${name}.json`), "[]");
     git("add", ".");
     git("commit", "-m", "Current main");
     git("switch", "-c", "forms/fixture");
     writeVersions(proposed);
-    if (changesData) writeFileSync(join(repo, "app/src/data/coffee-roasters.json"), '[{"Name":"Fixture"}]');
+    if (changesData) writeFileSync(join(repo, `app/src/data/${dataFile}.json`), '[{"Name":"Fixture"}]');
     else writeFileSync(join(repo, "notes.txt"), "Explanation only");
     git("add", ".");
     git("commit", "-m", "Form proposal");

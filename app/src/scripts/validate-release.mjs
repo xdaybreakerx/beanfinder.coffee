@@ -13,7 +13,7 @@ if (process.env.GITHUB_EVENT_NAME === "pull_request" && process.env.DATA_PR_BRAN
   // Actions checks out the PR merge commit with depth 2: its first parent is current main.
   const readBase = path => execFileSync("git", ["show", `HEAD^1:${path}`], { cwd: root, encoding: "utf8" });
   const base = Object.fromEntries(paths.map(path => [path, readBase(path)]));
-  const dataPaths = ["app/src/data/coffee-roasters.json", "app/src/data/coffee-roasters-multi.json"];
+  const dataPaths = ["app/src/data/coffee-roasters.json", "app/src/data/coffee-roasters-multi.json", "app/src/data/reviewed-places.json"];
   const changed = await Promise.all(dataPaths.map(async path => (await readWorking(path)) !== readBase(path)));
   validateDataRelease(files, base, changed.some(Boolean));
 }

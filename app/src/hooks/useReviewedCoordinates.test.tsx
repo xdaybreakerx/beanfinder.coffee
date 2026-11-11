@@ -3,7 +3,7 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 import { useReviewedCoordinates } from "./useReviewedCoordinates";
 import { COORDINATE_TTL } from "../utils/placeCoordinates";
 
-vi.mock("../utils/mapPlaces", () => ({ mapPlaces: [{ placeId: "new-place", Name: "New Coffee", state: "VIC" }] }));
+vi.mock("../utils/mapPlaces", () => ({ mapPlaces: [{ placeId: "new-place", Name: "New Coffee", state: "VIC" }, { placeId: 'manual', manualCoordinates: true }] }));
 afterEach(() => { cleanup(); vi.unstubAllGlobals(); vi.useRealTimers(); vi.restoreAllMocks(); });
 const coordinate = (now = Date.now(), duration = COORDINATE_TTL) => ({ placeId: "new-place", latitude: -37.8, longitude: 145, countryCode: "AU", provider: "google-maps", retrievedAt: new Date(now).toISOString(), expiresAt: new Date(now + duration).toISOString() });
 const response = (coordinates: unknown[]) => Response.json({ coordinates, missingPlaceIds: [] });
@@ -35,6 +35,7 @@ describe("automatic cached map coordinates", () => {
     const good = coordinate();
     vi.stubGlobal("fetch", vi.fn(async () => response([
       { ...good, placeId: "unknown" }, { ...good, rating: 5 },
+      { ...good, placeId: 'manual' },
       { ...good, expiresAt: good.retrievedAt }, good, good,
     ])));
     const { result } = renderHook(() => useReviewedCoordinates());
