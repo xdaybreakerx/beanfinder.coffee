@@ -137,11 +137,11 @@ describe("forward-looking coordinates", () => {
 });
 
 describe("independently reviewed registry", () => {
-  it("requires valid unique place IDs, a listing reference and a source, and rejects provider fields", () => {
+  it("requires valid identities, a listing reference and a source, and rejects incomplete coordinates or invalid ratings", () => {
     const listings = [{ businessId: place.businessId, Website: place.Website }];
     const { Website, ...record } = place;
     expect(validateReviewedPlaces([record], listings)).toEqual([place]);
-    for (const input of [[record, record], [{ ...record, latitude: -37.8 }], [{ ...record, rating: 5 }], [{ ...record, countryCode: "NZ" }], [{ ...record, source: null }]]) {
+    for (const input of [[record, record], [{ ...record, latitude: -37.8 }], [{ ...record, rating: 6 }], [{ ...record, countryCode: "NZ" }], [{ ...record, source: null }]]) {
       expect(() => validateReviewedPlaces(input, listings)).toThrow();
     }
     expect(() => validateReviewedPlaces([record], [])).toThrow();

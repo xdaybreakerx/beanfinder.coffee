@@ -65,6 +65,8 @@ Read the [data review guide](docs/directory-data.md) before editing JSON. Preser
 
 Review branch identity and cafe access against operator information or independent submissions. Address-only branches can appear in the directory without a marker; only confirmed place IDs enter coordinate refresh. Do not invent scores, review counts, coordinates or historical retrieval dates. The accepted legacy snapshot stays separate from reviewed business facts and newly retrieved temporary coordinates.
 
+For branch addresses, ratings and static markers, fill [`PR-submission-template.json`](PR-submission-template.json) and copy the completed object into `app/src/data/reviewed-places.json`; the [data review guide](docs/directory-data.md#fill-in-a-submission) covers optional fields and validation.
+
 The public form creates a `forms/<submission-id>` PR rather than editing main. Review duplicate proposals, identity matches, classification, notes, sources and conflicts before merging. Receipts contain whitelisted public fields. [Operations](docs/operations.md) documents replay/backfill commands and partial-failure recovery; keep raw form exports outside the repository.
 
 ## Pull requests and versions

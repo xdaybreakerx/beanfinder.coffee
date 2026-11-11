@@ -84,7 +84,7 @@ describe('location schema and durable associations', () => {
   });
   it('requires source-backed business references and location-level cafe status', () => {
     expect(validateLocations([identity], [reviewed], [business]).reviewed).toEqual([reviewed]);
-    for (const fields of [{ businessId: 'biz-missing' }, { locationId: 'loc-other' }, { placeId: 'different' }, { hasCafe: undefined }, { rating: 5 }, { source: null }]) {
+    for (const fields of [{ businessId: 'biz-missing' }, { locationId: 'loc-other' }, { placeId: 'different' }, { hasCafe: undefined }, { rating: 6 }, { source: null }]) {
       expect(() => validateLocations([identity], [{ ...reviewed, ...fields }], [business])).toThrow();
     }
     expect(() => validateLocations([identity, identity], [], [business])).toThrow();
@@ -110,7 +110,9 @@ describe('location schema and durable associations', () => {
   });
   it('preserves all markers and resolves the shared legacy ID using operator evidence', () => {
     expect(legacyIdentities).toHaveLength(218);
-    expect(mapPlaces).toHaveLength(218);
+    expect(new Set(mapPlaces.map(place => place.placeId))).toEqual(new Set([
+      ...legacyIdentities.map(place => place.placeId), ...reviewedPlaces.flatMap(place => place.placeId ? [place.placeId] : []),
+    ]));
     const conflict = legacyIdentities.find(item => item.businessId === null)!;
     expect(mapPlaces.some(item => item.placeId === conflict.placeId)).toBe(true);
     const ac = businesses.find(item => item.businessId === 'biz-acoffee')!;

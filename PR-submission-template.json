@@ -1,0 +1,17 @@
+{
+  "locationId": "loc-bean-junction-main",
+  "businessId": "biz-form-6ae2dd8a328b6137b5c2d4c9",
+  "Name": "Bean Junction",
+  "state": "WA",
+  "countryCode": "AU",
+  "hasCafe": false,
+  "address": null,
+  "placeId": null,
+  "latitude": null,
+  "longitude": null,
+  "rating": null,
+  "source": {
+    "url": "https://www.beanjunction.coffee/",
+    "reviewedAt": null
+  }
+}

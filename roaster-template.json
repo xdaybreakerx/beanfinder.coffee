@@ -1,5 +1,5 @@
 {
-  "_usage": "Copy business over the existing entry in app/src/data/coffee-roasters.json. Add each locations entry to app/src/data/reviewed-places.json. For another submission, keep that PR's businessId and provenance, and use the same businessId in its locations. Replace the address and review-time placeholders before copying.",
+  "_usage": "For location, map marker or rating updates, use PR-submission-template.json and copy the completed object into app/src/data/reviewed-places.json. This older business template is only needed to change the business fields already created by the PR; keep that submission's businessId and provenance.",
   "business": {
     "businessId": "biz-form-6ae2dd8a328b6137b5c2d4c9",
     "Name": "Bean Junction",

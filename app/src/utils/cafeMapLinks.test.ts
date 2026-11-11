@@ -17,7 +17,8 @@ describe("cafe map links", () => {
     const saintDreux = new URL(links[4].href);
     expect(saintDreux.searchParams.get('query')).toContain('SAINT DREUX, LG-30 Emporium Melbourne 287 Lonsdale Street');
     expect(saintDreux.searchParams.has('query_place_id')).toBe(false);
-    expect(getListingRatings(bench)).toEqual([]);
+    expect(getListingRatings(bench)).toHaveLength(5);
+    expect(getListingRatings(bench).every(place => place.rating === null && !place.placeId)).toBe(true);
     expect(getCafeMapLinks(bench, 'NSW')[0].locationId).toBeUndefined();
   });
   it("links each saved Australian location precisely and exposes its locality", () => {
