@@ -1,112 +1,32 @@
 {
-  "_instructions": {
-    "purpose": "Reusable submission-review template. This file is not imported by the app. Replace every REPLACE placeholder, then copy only the business object and individual location objects into the destination arrays below. Do not copy instructions, optional-field examples or the ratings worksheet into the app's data files.",
-    "businessDestination": "app/src/data/coffee-roasters.json",
-    "sellerDestination": "app/src/data/coffee-roasters-multi.json",
-    "locationsDestination": "app/src/data/reviewed-places.json",
-    "existingSubmission": "Edit the business already created by the submission PR; do not append a second copy. Preserve its businessId, submission receipt and actual proposedAt timestamp. For a new submission, copy those values from that submission's PR, not from this template's branch.",
-    "thisBranchExample": {
-      "name": "Bean Junction",
-      "businessId": "biz-form-6ae2dd8a328b6137b5c2d4c9",
-      "receipt": ".github/form-submissions/6ae2dd8a328b6137b5c2d4c9.json"
-    },
-    "unknownValues": "The false booleans are examples, not verified facts. Set hasCafe and multiRoaster from the submission or reviewed source. Leave unknown optional information out; do not invent ratings, coordinates, place IDs, postcodes or review dates.",
-    "states": "Business State is one or more of NSW, VIC, QLD, WA, SA, TAS, ACT, NT, separated by comma and space. Lowercase all is allowed only for multi-roaster sellers. A location's lowercase state field must contain exactly one state code.",
-    "locations": "Use one locations object per physical branch, all linked to the same businessId. Use an empty locations array for a business without a reviewed physical location. Each new branch needs a unique loc-... ID. Reuse an existing locationId/placeId when editing an existing branch.",
-    "address": "Use an independently sourced street address formatted as street, locality STATE postcode, Australia. Omit the postcode if the source does not give one. The street portion must include a number. At least address or a confirmed placeId is required for each location.",
-    "source": "Set source.url to the page used to verify this branch's address and cafe access. Set source.reviewedAt to the actual review time in UTC ISO format, for example YYYY-MM-DDTHH:mm:ssZ. The timestamp cannot be in the future.",
-    "cafeAccess": "Business hasCafe indicates whether the business has a public cafe. Location hasCafe records public cafe access at that particular branch; a warehouse may be false even if another branch is a cafe.",
-    "visibility": "Business fields populate the directory. Address-only cafe locations can provide address search and Google Maps search links without a Places API call. A confirmed placeId makes a location eligible for coordinate refresh; a map marker also requires valid runtime coordinates and enabled production retrieval.",
-    "ratings": "Current ratings are read from the accepted legacy snapshot. New rating, latitude and longitude fields are not supported in business or reviewed-location records and fail validation. Filling the worksheet below does not display a rating or create a marker. Supporting new manual ratings or permanent coordinates requires an app/data-model change. Do not extend coffee-roasters-updated-from-place_ids.json as a workaround; it is the historical snapshot.",
-    "sellerOptions": "For multiRoaster true, use the seller destination and optionally merge the sellerOnly example fields into the business object after verifying them. Omit unverified options. Do not add sellerOnly fields to an individual roaster.",
-    "optionalFields": "Merge optionalFieldExamples.business into business for previous website aliases, or optionalFieldExamples.location into the relevant location for a confirmed Google place ID. Replace the example values first. If a branch has a confirmed placeId but no independently sourced address, omit address rather than leaving a placeholder.",
-    "release": "Before merging a data PR, update from main and use the next patch version after main in app/package.json, app/package-lock.json version, and app/package-lock.json packages[\"\"].version. Preserve the existing submission receipt as the record of the original proposal. Two pending data PRs cannot both keep the same next-patch version after the first merges.",
-    "checksFromAppDirectory": [
-      "npm run validate:data",
-      "npm run validate:release",
-      "npm run check",
-      "npm test",
-      "npm run build",
-      "npm run test:e2e"
-    ],
-    "reference": "docs/directory-data.md"
-  },
+  "_usage": "Copy business over the existing entry in app/src/data/coffee-roasters.json. Add each locations entry to app/src/data/reviewed-places.json. For another submission, keep that PR's businessId and provenance, and use the same businessId in its locations. Replace the address and review-time placeholders before copying.",
   "business": {
-    "businessId": "REPLACE_WITH_EXISTING_BIZ_ID",
-    "Name": "REPLACE_WITH_BUSINESS_NAME",
-    "Website": "https://replace-with-business-website.example/",
-    "websiteAliases": [],
-    "State": "REPLACE_WITH_STATE_CODES",
+    "businessId": "biz-form-6ae2dd8a328b6137b5c2d4c9",
+    "Name": "Bean Junction",
+    "Website": "https://www.beanjunction.coffee/",
+    "State": "WA",
     "hasCafe": false,
     "multiRoaster": false,
     "provenance": {
       "source": "community-submission",
-      "receipt": ".github/form-submissions/REPLACE_WITH_SUBMISSION_ID.json",
-      "proposedAt": "REPLACE_WITH_EXISTING_PROPOSED_AT",
+      "receipt": ".github/form-submissions/6ae2dd8a328b6137b5c2d4c9.json",
+      "proposedAt": "2026-10-29T05:45:48.696Z",
       "verifiedAt": null
     }
   },
   "locations": [
     {
-      "locationId": "REPLACE_WITH_UNIQUE_LOC_ID",
-      "businessId": "REPLACE_WITH_SAME_BIZ_ID_AS_BUSINESS",
-      "Name": "REPLACE_WITH_BUSINESS_AND_BRANCH_NAME",
-      "address": "REPLACE_WITH_STREET, REPLACE_WITH_LOCALITY STATE POSTCODE, Australia",
-      "state": "REPLACE_WITH_SINGLE_STATE_CODE",
+      "locationId": "loc-bean-junction-main",
+      "businessId": "biz-form-6ae2dd8a328b6137b5c2d4c9",
+      "Name": "Bean Junction",
+      "address": "STREET_NUMBER_AND_STREET, SUBURB WA POSTCODE, Australia",
+      "state": "WA",
       "countryCode": "AU",
       "hasCafe": false,
       "source": {
-        "url": "https://replace-with-branch-source.example/locations",
+        "url": "https://www.beanjunction.coffee/",
         "reviewedAt": "REPLACE_WITH_ACTUAL_REVIEW_TIME_UTC"
       }
     }
-  ],
-  "optionalFieldExamples": {
-    "business": {
-      "websiteAliases": [
-        "https://replace-with-previous-business-website.example/"
-      ]
-    },
-    "location": {
-      "placeId": "REPLACE_WITH_CONFIRMED_GOOGLE_PLACE_ID"
-    },
-    "sellerOnly": {
-      "subscription": false,
-      "selection": [
-        "surprise",
-        "choose"
-      ],
-      "brew": [
-        "filter",
-        "espresso",
-        "decaf"
-      ]
-    },
-    "operatorWebsiteProvenanceAlternative": {
-      "source": "operator-website",
-      "url": "https://replace-with-business-source.example/",
-      "reviewedAt": "REPLACE_WITH_ACTUAL_REVIEW_TIME_UTC",
-      "fields": [
-        "Name",
-        "Website",
-        "State",
-        "hasCafe",
-        "multiRoaster"
-      ]
-    },
-    "operatorProvenanceInstructions": "For independently reviewed business facts, this alternative replaces the entire provenance object. Keep only the fields actually verified at the source URL. Keep the original submission receipt file; do not change it to pretend the submitter supplied the reviewed facts."
-  },
-  "ratingAndCoordinatesWorksheet": {
-    "status": "REFERENCE ONLY: not consumed by the app; do not copy these fields into the business or location records. Duplicate this worksheet per branch if needed.",
-    "locationId": "REPLACE_WITH_RELEVANT_LOC_ID",
-    "rating": null,
-    "ratingScale": "1 to 5; null means unknown. Record a branch's sourced score, not a business-wide average.",
-    "ratingSourceUrl": null,
-    "ratingObservedAt": null,
-    "latitude": null,
-    "longitude": null,
-    "coordinateSourceUrl": null,
-    "coordinatesObservedAt": null,
-    "notes": "Record a source and actual observation time for any value collected. Leave unknown values null. This worksheet is planning material for a future supported enrichment workflow, not a way to add new ratings or stored coordinates today."
-  }
+  ]
 }
