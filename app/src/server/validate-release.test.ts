@@ -9,14 +9,18 @@ import { pathToFileURL } from "node:url";
 const fixtures: string[] = [];
 afterEach(() => { for (const path of fixtures.splice(0)) rmSync(path, { recursive: true, force: true }); });
 
-describe("form PR release validation in an Actions checkout", () => {
+describe("PR release validation in an Actions checkout", () => {
   it.each([
     { base: "1.0.0", proposed: "1.0.1", changesData: true, succeeds: true },
     { base: "1.0.1", proposed: "1.0.1", changesData: true, succeeds: false },
     { base: "1.0.0", proposed: "1.0.0", changesData: false, succeeds: true },
     { base: "1.0.0", proposed: "1.0.1", changesData: true, dataFile: 'reviewed-places', succeeds: true },
     { base: "1.0.1", proposed: "1.0.1", changesData: true, dataFile: 'reviewed-places', succeeds: false },
-  ])("checks $proposed against $base (data change: $changesData)", ({ base, proposed, changesData, succeeds, dataFile = 'coffee-roasters' }) => {
+    { base: "1.0.0", proposed: "1.0.0", changesData: false, branch: "feat/fixture", succeeds: false },
+    { base: "1.0.0", proposed: "1.0.1", changesData: false, branch: "fix/fixture", succeeds: true },
+    { base: "1.0.0", proposed: "1.1.0", changesData: false, branch: "feat/fixture", succeeds: true },
+    { base: "1.0.0", proposed: "2.0.0", changesData: false, branch: "feat/fixture", succeeds: true },
+  ])("checks $proposed against $base (data change: $changesData)", ({ base, proposed, changesData, succeeds, dataFile = 'coffee-roasters', branch = 'forms/fixture' }) => {
     const temp = mkdtempSync(join(tmpdir(), "beanfinder-release-check-"));
     fixtures.push(temp);
     const repo = join(temp, "source");
@@ -51,9 +55,9 @@ describe("form PR release validation in an Actions checkout", () => {
     expect(execFileSync("git", ["rev-parse", "--is-shallow-repository"], { cwd: checkout, encoding: "utf8" }).trim()).toBe("true");
     const result = spawnSync(process.execPath, ["app/src/scripts/validate-release.mjs"], {
       cwd: checkout, encoding: "utf8",
-      env: { ...process.env, GITHUB_EVENT_NAME: "pull_request", DATA_PR_BRANCH: "forms/fixture" },
+      env: { ...process.env, GITHUB_EVENT_NAME: "pull_request", DATA_PR_BRANCH: branch },
     });
     expect(result.status).toBe(succeeds ? 0 : 1);
-    expect(succeeds ? result.stdout : result.stderr).toContain(succeeds ? `root version ${proposed}` : "must be 1.0.2 against current main");
+    expect(succeeds ? result.stdout : result.stderr).toContain(succeeds ? `root version ${proposed}` : branch.startsWith("forms/") ? "must be 1.0.2 against current main" : "PR version must be the next");
   });
 });

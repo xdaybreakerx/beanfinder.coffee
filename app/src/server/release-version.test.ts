@@ -1,10 +1,29 @@
 // @vitest-environment node
 import { describe, expect, it } from "vitest";
-import { LOCK_PATH, nextPatchVersion, PACKAGE_PATH, patchReleaseFiles, readReleaseVersion, validateDataRelease } from "./release-version";
+import { LOCK_PATH, nextPatchVersion, PACKAGE_PATH, patchReleaseFiles, readReleaseVersion, validateAppRelease, validateDataRelease } from "./release-version";
 
 const pkg = { name: "test-site", version: "1.0.0", dependencies: { astro: "^7.3.5" } };
 const lock = { name: pkg.name, version: pkg.version, lockfileVersion: 3, packages: { "": { ...pkg }, "node_modules/astro": { version: "7.3.5", integrity: "existing-integrity" } } };
 const files = () => ({ [PACKAGE_PATH]: JSON.stringify(pkg, null, 2) + "\n", [LOCK_PATH]: JSON.stringify(lock, null, 2) + "\n" });
+
+describe("app PR release versioning", () => {
+  it.each(["1.0.1", "1.1.0", "2.0.0"])("accepts the next release %s", version => {
+    const proposed = files();
+    const nextLock = JSON.parse(proposed[LOCK_PATH]);
+    nextLock.version = nextLock.packages[""].version = version;
+    proposed[PACKAGE_PATH] = JSON.stringify({ ...pkg, version });
+    proposed[LOCK_PATH] = JSON.stringify(nextLock);
+    expect(() => validateAppRelease(proposed, files())).not.toThrow();
+  });
+  it.each(["1.0.0", "0.9.9", "1.0.2", "1.1.1", "2.0.1"])("rejects unchanged, stale or skipped versions: %s", version => {
+    const proposed = files();
+    const nextLock = JSON.parse(proposed[LOCK_PATH]);
+    nextLock.version = nextLock.packages[""].version = version;
+    proposed[PACKAGE_PATH] = JSON.stringify({ ...pkg, version });
+    proposed[LOCK_PATH] = JSON.stringify(nextLock);
+    expect(() => validateAppRelease(proposed, files())).toThrow("PR version must be the next");
+  });
+});
 
 describe("data PR release versioning", () => {
   it.each([["1.0.0", "1.0.1"], ["1.1.0", "1.1.1"], ["1.1.9", "1.1.10"], ["1.9.99", "1.9.100"], ["0.0.0", "0.0.1"]])("bumps %s to %s", (previous, next) => {

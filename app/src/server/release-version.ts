@@ -29,6 +29,16 @@ export function validateDataRelease(files: Record<string, string>, base: Record<
   if (version !== expected) throw new Error(`Form PR version must be ${expected} against current main; found ${version}. Update package and both lockfile roots before merging.`);
 }
 
+export function validateAppRelease(files: Record<string, string>, base: Record<string, string>) {
+  const version = readReleaseVersion(files);
+  const baseVersion = readReleaseVersion(base);
+  const [major, minor] = baseVersion.split(".").map(Number);
+  const allowed = [nextPatchVersion(baseVersion), `${major}.${minor + 1}.0`, `${major + 1}.0.0`];
+  if (!allowed.includes(version)) {
+    throw new Error(`PR version must be the next patch, minor or major after current main (${baseVersion}); found ${version}. Run npm version patch (or minor/major) --no-git-tag-version --ignore-scripts from app/ and commit both version files.`);
+  }
+}
+
 export function patchReleaseFiles(files: Record<string, string>) {
   const previousVersion = readReleaseVersion(files);
   const pkg = JSON.parse(files[PACKAGE_PATH]);

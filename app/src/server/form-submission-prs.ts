@@ -274,7 +274,7 @@ export async function createSubmissionPR(payload: Payload, options: { token: str
     `Submission: \`${submission.id}\` · Type: ${submission.type}`,
     `Roaster: ${escapeMarkdown(submission.name)}`,
     `Website: ${escapeMarkdown(submission.website)}`,
-    release ? `Proposed patch version: \`v${release.previousVersion}\` → \`v${release.version}\`. Package and lockfile root versions are updated together. Publish the release manually after review; this automation does not create tags or releases.` : "",
+    release ? `Proposed patch version: \`v${release.previousVersion}\` → \`v${release.version}\`. Package and lockfile root versions are updated together. After merge, CI publishes the matching tag and GitHub release once verification passes and this commit is live on production.` : "",
     submission.originalWebsite ? `Original website: ${escapeMarkdown(submission.originalWebsite)}` : "",
     submission.details ? `Submitter's notes:\n\n${submission.details.split("\n").map(line => `> ${escapeMarkdown(line)}`).join("\n")}` : "",
     explanationOnly ? "The structured fields are unchanged. Review the notes and edit the directory in this branch if necessary." : "Review the proposed data before merging. Provenance records the community source and proposal time, not independent verification. Locations need separate review in reviewed-places.json; there is no automatic bulk Maps enrichment.",
